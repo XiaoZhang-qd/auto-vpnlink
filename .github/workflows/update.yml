@@ -58,15 +58,29 @@ jobs:
             grep -cve '^\s*$' output/nodes.txt || true
           fi
 
-      - name: Commit generated results
+      - name: Commit generated results safely
         run: |
+          set -e
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+          # The scanner may run while another commit (for example a code fix)
+          # lands on main. Save generated files, move to the newest main, then
+          # restore the generated files before committing. This prevents the
+          # recurring "fetch first" / non-fast-forward failure.
+          rm -rf /tmp/auto-vpnlink-output
+          cp -a output /tmp/auto-vpnlink-output
+
+          git fetch origin main
+          git reset --hard origin/main
+
+          rm -rf output
+          cp -a /tmp/auto-vpnlink-output output
           git add output/
 
           if git diff --cached --quiet; then
             echo 'No output changes.'
           else
             git commit -m 'auto: update VPN sources'
-            git push
+            git push origin HEAD:main
           fi
