@@ -1,5 +1,5 @@
 proxy-providers:
-  source_1:
+  source_3:
     type: http
     url: http://101.255.166.134:80
     interval: 86400
