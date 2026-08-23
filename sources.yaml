@@ -1,0 +1,47 @@
+github_topics:
+  - freevpn
+  - vpn
+  - vpn-subscription
+  - vpn-config
+  - vpn-configs
+  - proxy
+  - proxies
+  - proxy-list
+  - clash
+  - clash-config
+  - sing-box
+  - v2ray
+  - vless
+  - vmess
+  - shadowsocks
+  - trojan
+  - hysteria
+  - devops
+  - automation
+  - networking
+  - self-hosted
+
+gitlab_topics:
+  - freevpn
+  - vpn
+  - vpn-subscription
+  - proxy
+  - clash
+  - sing-box
+  - v2ray
+  - vless
+  - vmess
+  - shadowsocks
+  - trojan
+  - devops
+  - automation
+  - networking
+
+extra_repositories: []
+
+scan:
+  max_repositories_per_topic: 30
+  max_files_per_repository: 80
+  max_file_size: 1500000
+  request_timeout: 15
+  workers: 4
