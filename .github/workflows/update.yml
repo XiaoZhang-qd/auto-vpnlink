@@ -38,17 +38,40 @@ jobs:
         run: python scanner.py
       - name: Convert verified nodes to client configs
         run: python converter.py
-      - name: Show generated files and counts
+      - name: Show generated files and validate counts
         run: |
+          set -e
           echo '=== Generated output ==='
           find output -maxdepth 2 -type f -print | sort
           echo '=== Converter counts ==='
-          grep '^CONVERT' /dev/null || true
-          for f in output/nodes.txt output/shadowrocket.txt output/verified-nodes.txt; do
-            printf '%s: ' "$f"; grep -cve '^\s*$' "$f" 2>/dev/null || true
-          done
+          # converter.py prints its summary; this step validates the actual files.
+          node_count=$(grep -cve '^\s*$' output/nodes.txt 2>/dev/null || true)
+          verified_count=$(grep -cve '^\s*$' output/verified-nodes.txt 2>/dev/null || true)
+          shadowrocket_count=$(grep -cve '^\s*$' output/shadowrocket.txt 2>/dev/null || true)
+          echo "verified-nodes.txt: ${verified_count}"
+          echo "nodes.txt: ${node_count}"
+          echo "shadowrocket.txt: ${shadowrocket_count}"
           echo '=== Clash proxy count ==='
-          grep -c '^  - name:' output/clash.yaml 2>/dev/null || true
+          # yaml.safe_dump emits each proxy as "- name:" under the proxies list.
+          # Count only entries inside the proxies section, not proxy-group entries.
+          clash_count=$(python - <<'PY'
+          import yaml
+          from pathlib import Path
+          p=yaml.safe_load(Path('output/clash.yaml').read_text(encoding='utf-8')) or {}
+          proxies=p.get('proxies') or []
+          print(len(proxies))
+          PY
+          )
+          echo "clash.yaml proxies: ${clash_count}"
+          echo '=== sing-box / Xray counts ==='
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          sb=json.loads(Path('output/sing-box.json').read_text(encoding='utf-8'))
+          xr=json.loads(Path('output/xray-outbounds.json').read_text(encoding='utf-8'))
+          print('sing-box outbounds:', len(sb.get('outbounds', [])))
+          print('xray outbounds:', len(xr.get('outbounds', [])))
+          PY
       - name: Commit generated results safely
         run: |
           set -e
