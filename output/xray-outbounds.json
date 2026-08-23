@@ -1,3 +1,331 @@
 {
-  "outbounds": []
+  "outbounds": [
+    {
+      "tag": "🇵🇱 Poland, Warsaw (Śródmieście) | [BL]",
+      "protocol": "hysteria",
+      "settings": {
+        "version": 2,
+        "address": "pipe-4854.internet-booster.com",
+        "port": 443,
+        "auth": "000081e1-c607-495c-b072-195323fa1113"
+      },
+      "streamSettings": {
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "pipe-4854.internet-booster.com",
+          "allowInsecure": false
+        },
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "000081e1-c607-495c-b072-195323fa1113"
+        }
+      }
+    },
+    {
+      "tag": "🇫🇮 Finland, Helsinki | [BL]",
+      "protocol": "hysteria",
+      "settings": {
+        "version": 2,
+        "address": "svetzen.nksconnect.xyz",
+        "port": 8443,
+        "auth": "00c0c6fc-2958-4395-91c3-7e61422f671f"
+      },
+      "streamSettings": {
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "svetzen.nksconnect.xyz",
+          "allowInsecure": false
+        },
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "00c0c6fc-2958-4395-91c3-7e61422f671f"
+        }
+      }
+    },
+    {
+      "tag": "🇬🇧 United Kingdom, London | [BL]",
+      "protocol": "hysteria",
+      "settings": {
+        "version": 2,
+        "address": "ake.fontanvpn.com",
+        "port": 443,
+        "auth": "0147bb62-7972-40ee-a86a-409e0a0fb838"
+      },
+      "streamSettings": {
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ake.fontanvpn.com",
+          "allowInsecure": false
+        },
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "0147bb62-7972-40ee-a86a-409e0a0fb838"
+        }
+      }
+    },
+    {
+      "tag": "🇳🇱 The Netherlands, Amsterdam | [BL]",
+      "protocol": "hysteria",
+      "settings": {
+        "version": 2,
+        "address": "cheat.fontanvpn.com",
+        "port": 443,
+        "auth": "0147bb62-7972-40ee-a86a-409e0a0fb838"
+      },
+      "streamSettings": {
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cheat.fontanvpn.com",
+          "allowInsecure": false
+        },
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "0147bb62-7972-40ee-a86a-409e0a0fb838"
+        }
+      }
+    },
+    {
+      "tag": "🇵🇱 Poland | 🌐 [*CIDR]",
+      "protocol": "hysteria",
+      "settings": {
+        "version": 2,
+        "address": "gogo.fontanvpn.com",
+        "port": 443,
+        "auth": "0147bb62-7972-40ee-a86a-409e0a0fb838"
+      },
+      "streamSettings": {
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "gogo.fontanvpn.com",
+          "allowInsecure": false
+        },
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "0147bb62-7972-40ee-a86a-409e0a0fb838"
+        }
+      }
+    },
+    {
+      "tag": "🇰🇿 Kazakhstan, Almaty | [BL]",
+      "protocol": "hysteria",
+      "settings": {
+        "version": 2,
+        "address": "koin.fontanvpn.com",
+        "port": 443,
+        "auth": "0147bb62-7972-40ee-a86a-409e0a0fb838"
+      },
+      "streamSettings": {
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "koin.fontanvpn.com",
+          "allowInsecure": false
+        },
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "0147bb62-7972-40ee-a86a-409e0a0fb838"
+        }
+      }
+    },
+    {
+      "tag": "🇩🇪 Germany [*CIDR]",
+      "protocol": "hysteria",
+      "settings": {
+        "version": 2,
+        "address": "kum.tokervpn.ru",
+        "port": 443,
+        "auth": "0147bb62-7972-40ee-a86a-409e0a0fb838"
+      },
+      "streamSettings": {
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "kum.tokervpn.ru",
+          "allowInsecure": false
+        },
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "0147bb62-7972-40ee-a86a-409e0a0fb838"
+        }
+      }
+    },
+    {
+      "tag": "🇮🇹 Italy | 🌐 [*CIDR]",
+      "protocol": "hysteria",
+      "settings": {
+        "version": 2,
+        "address": "tw1.tokervpn.ru",
+        "port": 443,
+        "auth": "0147bb62-7972-40ee-a86a-409e0a0fb838"
+      },
+      "streamSettings": {
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "tw1.tokervpn.ru",
+          "allowInsecure": false
+        },
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "0147bb62-7972-40ee-a86a-409e0a0fb838"
+        }
+      }
+    },
+    {
+      "tag": "🇵🇱 Poland | 🌐 [*CIDR]",
+      "protocol": "hysteria",
+      "settings": {
+        "version": 2,
+        "address": "twru1.fontanvpn.com",
+        "port": 443,
+        "auth": "0147bb62-7972-40ee-a86a-409e0a0fb838"
+      },
+      "streamSettings": {
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "twru1.fontanvpn.com",
+          "allowInsecure": false
+        },
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "0147bb62-7972-40ee-a86a-409e0a0fb838"
+        }
+      }
+    },
+    {
+      "tag": "EPODONIOS",
+      "protocol": "hysteria",
+      "settings": {
+        "version": 2,
+        "address": "144.31.234.58",
+        "port": 443,
+        "auth": "042a1881-44e4-4781-bd40-bf75164faf4f"
+      },
+      "streamSettings": {
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "nl1.noesissite.ru",
+          "allowInsecure": true
+        },
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "042a1881-44e4-4781-bd40-bf75164faf4f"
+        }
+      }
+    },
+    {
+      "tag": "🇩🇪 Germany, Frankfurt am Main | [BL]",
+      "protocol": "hysteria",
+      "settings": {
+        "version": 2,
+        "address": "178.215.238.30",
+        "port": 443,
+        "auth": "042a1881-44e4-4781-bd40-bf75164faf4f"
+      },
+      "streamSettings": {
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "germany1.noesissite.ru",
+          "allowInsecure": false
+        },
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "042a1881-44e4-4781-bd40-bf75164faf4f"
+        }
+      }
+    },
+    {
+      "tag": "hysteria2-12",
+      "protocol": "hysteria",
+      "settings": {
+        "version": 2,
+        "address": "assets.gateway-stream.com",
+        "port": 52000,
+        "auth": "09e4b638945d44bfa60b4fd00edad131"
+      },
+      "streamSettings": {
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "assets.gateway-stream.com",
+          "allowInsecure": false,
+          "alpn": [
+            "h3"
+          ]
+        },
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "09e4b638945d44bfa60b4fd00edad131"
+        }
+      }
+    },
+    {
+      "tag": "Proxy_mtm 33",
+      "protocol": "hysteria",
+      "settings": {
+        "version": 2,
+        "address": "assets.gateway-stream.com",
+        "port": 52000,
+        "auth": "09e4b638945d44bfa60b4fd00edad131"
+      },
+      "streamSettings": {
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "assets.gateway-stream.com",
+          "allowInsecure": false,
+          "alpn": [
+            "h3"
+          ]
+        },
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "09e4b638945d44bfa60b4fd00edad131"
+        }
+      }
+    },
+    {
+      "tag": "Proxy_mtm 33",
+      "protocol": "hysteria",
+      "settings": {
+        "version": 2,
+        "address": "assets.gateway-stream.com",
+        "port": 52000,
+        "auth": "09e4b638945d44bfa60b4fd00edad131"
+      },
+      "streamSettings": {
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "assets.gateway-stream.com",
+          "allowInsecure": false,
+          "alpn": [
+            "h3"
+          ]
+        },
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "09e4b638945d44bfa60b4fd00edad131"
+        }
+      }
+    },
+    {
+      "tag": "Proxy_mtm 33vless://302c2e89-6f2d-4500-90ce-26d075c7e84f@66.78.40.202:443?security=reality&encryption=none&pbk=8zJkTehTmhmgKWUIj-CyJP4gtMjNxLgBxPjHC1wwW3A&headerType=none&fp=firefox&spx=/b46a29a208a37d1&type=tcp&flow=xtls-rprx-vision&sni=www.samsung.com&sid=61#Proxy_mtm 34vless://7595cd50-9326-48e4-a7bc-802e85e643ec@162.19.156.14:6800?security=reality&encryption=none&pbk=lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo&headerType=none&fp=qq&type=tcp&sni=play.google.com#Proxy_mtm 35vless://b6c29ae7-4748-4049-b642-b695c0d2c776@191.44.118.250:2053?security=reality&encryption=none&pbk=E6u2RbffXIPvia5v5iIZVj6U_VpSBWmGTsHHNtH-5Rg&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=vk.ru&sid=417063feab794131#Proxy_mtm 36",
+      "protocol": "hysteria",
+      "settings": {
+        "version": 2,
+        "address": "assets.gateway-stream.com",
+        "port": 52000,
+        "auth": "09e4b638945d44bfa60b4fd00edad131"
+      },
+      "streamSettings": {
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "assets.gateway-stream.com",
+          "allowInsecure": false,
+          "alpn": [
+            "h3"
+          ]
+        },
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "09e4b638945d44bfa60b4fd00edad131"
+        }
+      }
+    }
+  ]
 }

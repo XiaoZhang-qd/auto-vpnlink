@@ -12,7 +12,7 @@
       "tls": {
         "enabled": true,
         "server_name": "pipe-4854.internet-booster.com",
-        "insecure": true
+        "insecure": false
       }
     },
     {
@@ -24,7 +24,7 @@
       "tls": {
         "enabled": true,
         "server_name": "svetzen.nksconnect.xyz",
-        "insecure": true
+        "insecure": false
       }
     },
     {
@@ -36,7 +36,7 @@
       "tls": {
         "enabled": true,
         "server_name": "ake.fontanvpn.com",
-        "insecure": true
+        "insecure": false
       }
     },
     {
@@ -48,7 +48,7 @@
       "tls": {
         "enabled": true,
         "server_name": "cheat.fontanvpn.com",
-        "insecure": true
+        "insecure": false
       }
     },
     {
@@ -60,7 +60,7 @@
       "tls": {
         "enabled": true,
         "server_name": "gogo.fontanvpn.com",
-        "insecure": true
+        "insecure": false
       }
     },
     {
@@ -72,7 +72,7 @@
       "tls": {
         "enabled": true,
         "server_name": "koin.fontanvpn.com",
-        "insecure": true
+        "insecure": false
       }
     },
     {
@@ -84,7 +84,7 @@
       "tls": {
         "enabled": true,
         "server_name": "kum.tokervpn.ru",
-        "insecure": true
+        "insecure": false
       }
     },
     {
@@ -96,7 +96,7 @@
       "tls": {
         "enabled": true,
         "server_name": "tw1.tokervpn.ru",
-        "insecure": true
+        "insecure": false
       }
     },
     {
@@ -108,11 +108,11 @@
       "tls": {
         "enabled": true,
         "server_name": "twru1.fontanvpn.com",
-        "insecure": true
+        "insecure": false
       }
     },
     {
-      "tag": "nukcrow",
+      "tag": "EPODONIOS",
       "server": "144.31.234.58",
       "server_port": 443,
       "type": "hysteria2",
@@ -132,79 +132,71 @@
       "tls": {
         "enabled": true,
         "server_name": "germany1.noesissite.ru",
-        "insecure": true
+        "insecure": false
       }
     },
     {
-      "tag": "nukcrow",
-      "server": "95.217.96.131",
+      "tag": "hysteria2-12",
+      "server": "assets.gateway-stream.com",
       "server_port": 52000,
       "type": "hysteria2",
       "password": "09e4b638945d44bfa60b4fd00edad131",
       "tls": {
         "enabled": true,
         "server_name": "assets.gateway-stream.com",
-        "insecure": true
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "gu74jg3ym0e21zco"
       }
     },
     {
-      "tag": "nukcrow",
+      "tag": "Proxy_mtm 33",
       "server": "assets.gateway-stream.com",
-      "server_port": 52079,
+      "server_port": 52000,
       "type": "hysteria2",
       "password": "09e4b638945d44bfa60b4fd00edad131",
       "tls": {
         "enabled": true,
         "server_name": "assets.gateway-stream.com",
-        "insecure": true
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "gu74jg3ym0e21zco"
       }
     },
     {
-      "tag": "🇵🇱 Poland | 🌐 [*CIDR]",
-      "server": "217.150.197.54",
-      "server_port": 8443,
+      "tag": "Proxy_mtm 33",
+      "server": "assets.gateway-stream.com",
+      "server_port": 52000,
       "type": "hysteria2",
-      "password": "12a9c8a7-4b08-4514-82f3-9a64bb9bd201",
+      "password": "09e4b638945d44bfa60b4fd00edad131",
       "tls": {
         "enabled": true,
-        "server_name": "quic.tyr-agentstvo.tech",
-        "insecure": true
+        "server_name": "assets.gateway-stream.com",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "gu74jg3ym0e21zco"
       }
     },
     {
-      "tag": "🌐 Anycast-IP | 🇩🇪 🇵🇱 [*CIDR]",
-      "server": "217.150.197.54",
-      "server_port": 8443,
+      "tag": "Proxy_mtm 33vless://302c2e89-6f2d-4500-90ce-26d075c7e84f@66.78.40.202:443?security=reality&encryption=none&pbk=8zJkTehTmhmgKWUIj-CyJP4gtMjNxLgBxPjHC1wwW3A&headerType=none&fp=firefox&spx=/b46a29a208a37d1&type=tcp&flow=xtls-rprx-vision&sni=www.samsung.com&sid=61#Proxy_mtm 34vless://7595cd50-9326-48e4-a7bc-802e85e643ec@162.19.156.14:6800?security=reality&encryption=none&pbk=lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo&headerType=none&fp=qq&type=tcp&sni=play.google.com#Proxy_mtm 35vless://b6c29ae7-4748-4049-b642-b695c0d2c776@191.44.118.250:2053?security=reality&encryption=none&pbk=E6u2RbffXIPvia5v5iIZVj6U_VpSBWmGTsHHNtH-5Rg&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=vk.ru&sid=417063feab794131#Proxy_mtm 36",
+      "server": "assets.gateway-stream.com",
+      "server_port": 52000,
       "type": "hysteria2",
-      "password": "12a9c8a7-4b08-4514-82f3-9a64bb9bd201",
+      "password": "09e4b638945d44bfa60b4fd00edad131",
       "tls": {
         "enabled": true,
-        "server_name": "quic.tyr-agentstvo.tech",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🌐 Anycast-IP | 🇵🇱 [*CIDR]",
-      "server": "217.150.197.54",
-      "server_port": 8443,
-      "type": "hysteria2",
-      "password": "12a9c8a7-4b08-4514-82f3-9a64bb9bd201",
-      "tls": {
-        "enabled": true,
-        "server_name": "quic.tyr-agentstvo.tech",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🌐 Anycast-IP | 🇩🇪 🇵🇱 [*CIDR]",
-      "server": "217.150.197.54",
-      "server_port": 8443,
-      "type": "hysteria2",
-      "password": "12a9c8a7-4b08-4514-82f3-9a64bb9bd201",
-      "tls": {
-        "enabled": true,
-        "server_name": "quic.tyr-agentstvo.tech",
-        "insecure": true
+        "server_name": "assets.gateway-stream.com",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "gu74jg3ym0e21zco"
       }
     },
     {
@@ -220,14 +212,12 @@
         "🇩🇪 Germany [*CIDR]",
         "🇮🇹 Italy | 🌐 [*CIDR]",
         "🇵🇱 Poland | 🌐 [*CIDR]",
-        "nukcrow",
+        "EPODONIOS",
         "🇩🇪 Germany, Frankfurt am Main | [BL]",
-        "nukcrow",
-        "nukcrow",
-        "🇵🇱 Poland | 🌐 [*CIDR]",
-        "🌐 Anycast-IP | 🇩🇪 🇵🇱 [*CIDR]",
-        "🌐 Anycast-IP | 🇵🇱 [*CIDR]",
-        "🌐 Anycast-IP | 🇩🇪 🇵🇱 [*CIDR]"
+        "hysteria2-12",
+        "Proxy_mtm 33",
+        "Proxy_mtm 33",
+        "Proxy_mtm 33vless://302c2e89-6f2d-4500-90ce-26d075c7e84f@66.78.40.202:443?security=reality&encryption=none&pbk=8zJkTehTmhmgKWUIj-CyJP4gtMjNxLgBxPjHC1wwW3A&headerType=none&fp=firefox&spx=/b46a29a208a37d1&type=tcp&flow=xtls-rprx-vision&sni=www.samsung.com&sid=61#Proxy_mtm 34vless://7595cd50-9326-48e4-a7bc-802e85e643ec@162.19.156.14:6800?security=reality&encryption=none&pbk=lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo&headerType=none&fp=qq&type=tcp&sni=play.google.com#Proxy_mtm 35vless://b6c29ae7-4748-4049-b642-b695c0d2c776@191.44.118.250:2053?security=reality&encryption=none&pbk=E6u2RbffXIPvia5v5iIZVj6U_VpSBWmGTsHHNtH-5Rg&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=vk.ru&sid=417063feab794131#Proxy_mtm 36"
       ]
     }
   ]
