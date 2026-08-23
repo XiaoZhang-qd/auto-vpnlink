@@ -7,10 +7,11 @@ hysteria2://0147bb62-7972-40ee-a86a-409e0a0fb838@koin.fontanvpn.com:443?sni=koin
 hysteria2://0147bb62-7972-40ee-a86a-409e0a0fb838@kum.tokervpn.ru:443?sni=kum.tokervpn.ru#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%5B%2ACIDR%5D
 hysteria2://0147bb62-7972-40ee-a86a-409e0a0fb838@tw1.tokervpn.ru:443?sni=tw1.tokervpn.ru#%F0%9F%87%AE%F0%9F%87%B9%20Italy%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D
 hysteria2://0147bb62-7972-40ee-a86a-409e0a0fb838@twru1.fontanvpn.com:443?sni=twru1.fontanvpn.com#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D
+hysteria2://042a1881-44e4-4781-bd40-bf75164faf4f@144.31.234.58:443?insecure=1&sni=nl1.noesissite.ru#nukcrow
 hysteria2://042a1881-44e4-4781-bd40-bf75164faf4f@178.215.238.30:443/?sni=germany1.noesissite.ru#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D
+hysteria2://09e4b638945d44bfa60b4fd00edad131@95.217.96.131:52000?obfs=salamander&obfs-password=gu74jg3ym0e21zco&sni=assets.gateway-stream.com#nukcrow
+hysteria2://09e4b638945d44bfa60b4fd00edad131@assets.gateway-stream.com:52079?insecure=0&sni=assets.gateway-stream.com#nukcrow
 hysteria2://12a9c8a7-4b08-4514-82f3-9a64bb9bd201@217.150.197.54:8443?sni=quic.tyr-agentstvo.tech#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D
 hysteria2://12a9c8a7-4b08-4514-82f3-9a64bb9bd201@217.150.197.54:8443?sni=quic.tyr-agentstvo.tech#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%87%B5%F0%9F%87%B1%20%5B%2ACIDR%5D
 hysteria2://12a9c8a7-4b08-4514-82f3-9a64bb9bd201@217.150.197.54:8443?sni=quic.tyr-agentstvo.tech#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%B5%F0%9F%87%B1%20%5B%2ACIDR%5D
 hysteria2://12a9c8a7-4b08-4514-82f3-9a64bb9bd201@217.150.197.54:8443?sni=quic.tyr-agentstvo.tech&alpn=h3#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%87%B5%F0%9F%87%B1%20%5B%2ACIDR%5D
-hysteria2://13259e0a-4850-4a12-8850-4ad7ded17770@91.185.83.48:8444?sni=testing8.nimarko.org#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%5B%2ACIDR%5D
-hysteria2://13259e0a-4850-4a12-8850-4ad7ded17770@91.185.83.48:8444?sni=testing8.nimarko.org&insecure=0#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%5B%2ACIDR%5D

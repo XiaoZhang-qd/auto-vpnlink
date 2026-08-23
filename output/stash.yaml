@@ -1,4 +1,145 @@
-proxies: []
-proxy-groups: []
+proxies:
+- name: 🇵🇱 Poland, Warsaw (Śródmieście) | [BL]
+  type: hysteria2
+  server: pipe-4854.internet-booster.com
+  port: 443
+  password: 000081e1-c607-495c-b072-195323fa1113
+  sni: pipe-4854.internet-booster.com
+  skip-cert-verify: true
+- name: 🇫🇮 Finland, Helsinki | [BL]
+  type: hysteria2
+  server: svetzen.nksconnect.xyz
+  port: 8443
+  password: 00c0c6fc-2958-4395-91c3-7e61422f671f
+  sni: svetzen.nksconnect.xyz
+  skip-cert-verify: true
+- name: 🇬🇧 United Kingdom, London | [BL]
+  type: hysteria2
+  server: ake.fontanvpn.com
+  port: 443
+  password: 0147bb62-7972-40ee-a86a-409e0a0fb838
+  sni: ake.fontanvpn.com
+  skip-cert-verify: true
+- name: 🇳🇱 The Netherlands, Amsterdam | [BL]
+  type: hysteria2
+  server: cheat.fontanvpn.com
+  port: 443
+  password: 0147bb62-7972-40ee-a86a-409e0a0fb838
+  sni: cheat.fontanvpn.com
+  skip-cert-verify: true
+- name: 🇵🇱 Poland | 🌐 [*CIDR]
+  type: hysteria2
+  server: gogo.fontanvpn.com
+  port: 443
+  password: 0147bb62-7972-40ee-a86a-409e0a0fb838
+  sni: gogo.fontanvpn.com
+  skip-cert-verify: true
+- name: 🇰🇿 Kazakhstan, Almaty | [BL]
+  type: hysteria2
+  server: koin.fontanvpn.com
+  port: 443
+  password: 0147bb62-7972-40ee-a86a-409e0a0fb838
+  sni: koin.fontanvpn.com
+  skip-cert-verify: true
+- name: 🇩🇪 Germany [*CIDR]
+  type: hysteria2
+  server: kum.tokervpn.ru
+  port: 443
+  password: 0147bb62-7972-40ee-a86a-409e0a0fb838
+  sni: kum.tokervpn.ru
+  skip-cert-verify: true
+- name: 🇮🇹 Italy | 🌐 [*CIDR]
+  type: hysteria2
+  server: tw1.tokervpn.ru
+  port: 443
+  password: 0147bb62-7972-40ee-a86a-409e0a0fb838
+  sni: tw1.tokervpn.ru
+  skip-cert-verify: true
+- name: 🇵🇱 Poland | 🌐 [*CIDR]
+  type: hysteria2
+  server: twru1.fontanvpn.com
+  port: 443
+  password: 0147bb62-7972-40ee-a86a-409e0a0fb838
+  sni: twru1.fontanvpn.com
+  skip-cert-verify: true
+- name: nukcrow
+  type: hysteria2
+  server: 144.31.234.58
+  port: 443
+  password: 042a1881-44e4-4781-bd40-bf75164faf4f
+  sni: nl1.noesissite.ru
+  skip-cert-verify: true
+- name: 🇩🇪 Germany, Frankfurt am Main | [BL]
+  type: hysteria2
+  server: 178.215.238.30
+  port: 443
+  password: 042a1881-44e4-4781-bd40-bf75164faf4f
+  sni: germany1.noesissite.ru
+  skip-cert-verify: true
+- name: nukcrow
+  type: hysteria2
+  server: 95.217.96.131
+  port: 52000
+  password: 09e4b638945d44bfa60b4fd00edad131
+  sni: assets.gateway-stream.com
+  skip-cert-verify: true
+- name: nukcrow
+  type: hysteria2
+  server: assets.gateway-stream.com
+  port: 52079
+  password: 09e4b638945d44bfa60b4fd00edad131
+  sni: assets.gateway-stream.com
+  skip-cert-verify: true
+- name: 🇵🇱 Poland | 🌐 [*CIDR]
+  type: hysteria2
+  server: 217.150.197.54
+  port: 8443
+  password: 12a9c8a7-4b08-4514-82f3-9a64bb9bd201
+  sni: quic.tyr-agentstvo.tech
+  skip-cert-verify: true
+- name: 🌐 Anycast-IP | 🇩🇪 🇵🇱 [*CIDR]
+  type: hysteria2
+  server: 217.150.197.54
+  port: 8443
+  password: 12a9c8a7-4b08-4514-82f3-9a64bb9bd201
+  sni: quic.tyr-agentstvo.tech
+  skip-cert-verify: true
+- name: 🌐 Anycast-IP | 🇵🇱 [*CIDR]
+  type: hysteria2
+  server: 217.150.197.54
+  port: 8443
+  password: 12a9c8a7-4b08-4514-82f3-9a64bb9bd201
+  sni: quic.tyr-agentstvo.tech
+  skip-cert-verify: true
+- name: 🌐 Anycast-IP | 🇩🇪 🇵🇱 [*CIDR]
+  type: hysteria2
+  server: 217.150.197.54
+  port: 8443
+  password: 12a9c8a7-4b08-4514-82f3-9a64bb9bd201
+  sni: quic.tyr-agentstvo.tech
+  skip-cert-verify: true
+proxy-groups:
+- name: AUTO
+  type: url-test
+  proxies:
+  - 🇵🇱 Poland, Warsaw (Śródmieście) | [BL]
+  - 🇫🇮 Finland, Helsinki | [BL]
+  - 🇬🇧 United Kingdom, London | [BL]
+  - 🇳🇱 The Netherlands, Amsterdam | [BL]
+  - 🇵🇱 Poland | 🌐 [*CIDR]
+  - 🇰🇿 Kazakhstan, Almaty | [BL]
+  - 🇩🇪 Germany [*CIDR]
+  - 🇮🇹 Italy | 🌐 [*CIDR]
+  - 🇵🇱 Poland | 🌐 [*CIDR]
+  - nukcrow
+  - 🇩🇪 Germany, Frankfurt am Main | [BL]
+  - nukcrow
+  - nukcrow
+  - 🇵🇱 Poland | 🌐 [*CIDR]
+  - 🌐 Anycast-IP | 🇩🇪 🇵🇱 [*CIDR]
+  - 🌐 Anycast-IP | 🇵🇱 [*CIDR]
+  - 🌐 Anycast-IP | 🇩🇪 🇵🇱 [*CIDR]
+  url: https://www.gstatic.com/generate_204
+  interval: 300
 rules:
-- MATCH,DIRECT
+- MATCH,AUTO
