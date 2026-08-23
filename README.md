@@ -169,4 +169,4 @@ GitHub Actions 使用内置的 `GITHUB_TOKEN` 访问 GitHub API，不需要把�
 
 ## 📜 License
 
-如果仓库中没有另外声明，建议根据你的实际使用方式补充许可证。
+目前仓库中没有开源协议声明
