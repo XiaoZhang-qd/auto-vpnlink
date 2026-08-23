@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Turn verified node URIs into usable client subscription/config files."""
+"""Turn verified node URIs into client-ready subscription/config files."""
 import base64,json,os
 from urllib.parse import urlparse,parse_qs,unquote
 import yaml
@@ -29,8 +29,8 @@ def clash(n):
     elif t=='vless': o.update(uuid=n['uuid'],tls=n['tls'],udp=True)
     elif t=='trojan': o.update(password=n['password'],sni=n['sni'],udp=True)
     elif t=='ss': o.update(cipher=n['cipher'],password=n['password'],udp=True)
-    elif t=='hysteria2': o.update(password=n['password'],sni=n['sni'],skip-cert-verify=True)
-    elif t=='tuic': o.update(uuid=n['uuid'],password=n['password'],congestion-controller=n['cc'],udp=True)
+    elif t=='hysteria2': o.update(password=n['password'],sni=n['sni'],**{'skip-cert-verify':True})
+    elif t=='tuic': o.update(uuid=n['uuid'],password=n['password'],**{'congestion-controller':n['cc']},udp=True)
     if n.get('sni') and t in ('vmess','vless'): o['servername']=n['sni']
     if n.get('net') not in (None,'tcp') and t in ('vmess','vless'): o['network']=n['net']
     if n.get('flow'): o['flow']=n['flow']
@@ -42,7 +42,7 @@ def sing(n):
     if t=='ss': o.update(type='shadowsocks',method=n['cipher'],password=n['password'])
     elif t=='trojan': o.update(type='trojan',password=n['password'],tls={'enabled':True,'server_name':n['sni'],'insecure':True})
     elif t=='vless':
-        o.update(type='vless',uuid=n['uuid']);
+        o.update(type='vless',uuid=n['uuid'])
         if n['tls']: o['tls']={'enabled':True,'server_name':n['sni'],'insecure':True}
         if n.get('flow'): o['flow']=n['flow']
     elif t=='vmess': o.update(type='vmess',uuid=n['uuid'],security='auto',alter_id=n['aid'],tls={'enabled':n['tls'],'server_name':n.get('sni',''),'insecure':True})
@@ -50,26 +50,34 @@ def sing(n):
     elif t=='tuic': o.update(type='tuic',uuid=n['uuid'],password=n['password'],congestion_control=n['cc'],tls={'enabled':True,'server_name':n['sni'],'insecure':True})
     return o
 
+def xray(n):
+    t=n['type']; out={}
+    if t=='vmess': out={'protocol':'vmess','settings':{'vnext':[{'address':n['server'],'port':n['port'],'users':[{'id':n['uuid'],'alterId':n['aid'],'security':'auto'}]}]}}
+    elif t=='vless': out={'protocol':'vless','settings':{'vnext':[{'address':n['server'],'port':n['port'],'users':[{'id':n['uuid'],'encryption':'none','flow':n.get('flow','')}]}]}}
+    elif t=='trojan': out={'protocol':'trojan','settings':{'servers':[{'address':n['server'],'port':n['port'],'password':n['password']}]}}
+    elif t=='ss': out={'protocol':'shadowsocks','settings':{'servers':[{'address':n['server'],'port':n['port'],'method':n['cipher'],'password':n['password']}]}}
+    return out
+
 def main():
     raw=[x.strip() for x in open(os.path.join(OUT,'verified-nodes.txt'),encoding='utf-8') if x.strip()]
     nodes=[]; parsed=[]
     for i,u in enumerate(raw,1):
         n=parse(u,i)
-        if n and n.get('server') and n.get('port'): nodes.append(n); parsed.append(u)
-    # Keep only parsed, verified URIs in client-ready text subscriptions.
+        if n and n.get('server') and n.get('port'):
+            nodes.append(n); parsed.append(u)
     text='\n'.join(parsed)+'\n' if parsed else ''
-    open(os.path.join(OUT,'nodes.txt'),'w',encoding='utf-8').write(text)
-    open(os.path.join(OUT,'shadowrocket.txt'),'w',encoding='utf-8').write(text)
+    for name in ('nodes.txt','shadowrocket.txt'):
+        open(os.path.join(OUT,name),'w',encoding='utf-8').write(text)
     encoded=base64.b64encode(text.encode()).decode()+'\n' if text else ''
-    open(os.path.join(OUT,'base64.txt'),'w',encoding='utf-8').write(encoded)
-    open(os.path.join(OUT,'v2ray.txt'),'w',encoding='utf-8').write(encoded)
+    for name in ('base64.txt','v2ray.txt'):
+        open(os.path.join(OUT,name),'w',encoding='utf-8').write(encoded)
     proxies=[clash(n) for n in nodes]; names=[x['name'] for x in proxies]
     cfg={'proxies':proxies,'proxy-groups':[{'name':'AUTO','type':'url-test','proxies':names,'url':'https://www.gstatic.com/generate_204','interval':300}],'rules':['MATCH,AUTO']}
-    with open(os.path.join(OUT,'clash.yaml'),'w',encoding='utf-8') as f: yaml.safe_dump(cfg,f,allow_unicode=True,sort_keys=False)
-    with open(os.path.join(OUT,'stash.yaml'),'w',encoding='utf-8') as f: yaml.safe_dump(cfg,f,allow_unicode=True,sort_keys=False)
-    sb= [sing(n) for n in nodes]
-    sbcfg={'log':{'level':'warn'},'outbounds':sb+[{'type':'selector','tag':'AUTO','outbounds':[x['tag'] for x in sb]}]} if sb else {'outbounds':[{'type':'direct','tag':'direct'}]}
-    json.dump(sbcfg,open(os.path.join(OUT,'sing-box.json'),'w',encoding='utf-8'),ensure_ascii=False,indent=2)
-    json.dump({'outbounds':[]},open(os.path.join(OUT,'xray-outbounds.json'),'w',encoding='utf-8'),indent=2)
-    print('CONVERT',{'verified':len(raw),'parsed_nodes':len(nodes),'clash_proxies':len(proxies),'singbox_outbounds':len(sb)})
+    for name in ('clash.yaml','stash.yaml'):
+        with open(os.path.join(OUT,name),'w',encoding='utf-8') as f: yaml.safe_dump(cfg,f,allow_unicode=True,sort_keys=False)
+    sb=[sing(n) for n in nodes]; sbcfg={'log':{'level':'warn'},'outbounds':sb+[{'type':'selector','tag':'AUTO','outbounds':[x['tag'] for x in sb]}]} if sb else {'outbounds':[{'type':'direct','tag':'direct'}]}
+    with open(os.path.join(OUT,'sing-box.json'),'w',encoding='utf-8') as f: json.dump(sbcfg,f,ensure_ascii=False,indent=2)
+    xo=[xray(n) for n in nodes if xray(n)]
+    with open(os.path.join(OUT,'xray-outbounds.json'),'w',encoding='utf-8') as f: json.dump({'outbounds':xo},f,ensure_ascii=False,indent=2)
+    print('CONVERT',{'verified':len(raw),'parsed_nodes':len(nodes),'clash_proxies':len(proxies),'singbox_outbounds':len(sb),'xray_outbounds':len(xo)})
 if __name__=='__main__': main()
