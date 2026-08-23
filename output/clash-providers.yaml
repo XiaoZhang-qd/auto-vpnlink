@@ -1,0 +1,9 @@
+proxy-providers:
+  source_28:
+    type: http
+    url: http://101.255.166.134:80
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
