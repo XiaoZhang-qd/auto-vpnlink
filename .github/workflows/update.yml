@@ -21,14 +21,17 @@ concurrency:
 
 jobs:
   scan:
+    name: Scan and publish sources
     runs-on: ubuntu-latest
     timeout-minutes: 45
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
-      - name: Setup Python
+      - name: Setup Python 3.12
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -37,16 +40,30 @@ jobs:
       - name: Install dependencies
         run: python -m pip install -r requirements.txt
 
-      - name: Scan GitHub, GitLab and configured Git sources
+      - name: Run multi-source scanner
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scanner.py
+
+      - name: Show generated files
+        run: |
+          echo '=== Generated output ==='
+          find output -maxdepth 2 -type f -print | sort || true
+          echo '=== Subscription count ==='
+          if [ -f output/subscriptions.txt ]; then
+            grep -cve '^\s*$' output/subscriptions.txt || true
+          fi
+          echo '=== Node count ==='
+          if [ -f output/nodes.txt ]; then
+            grep -cve '^\s*$' output/nodes.txt || true
+          fi
 
       - name: Commit generated results
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add output/
+
           if git diff --cached --quiet; then
             echo 'No output changes.'
           else
