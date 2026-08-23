@@ -1,5 +1,4 @@
 name: Update VPN Sources
-
 on:
   schedule:
     - cron: '15 2 * * *'
@@ -11,73 +10,57 @@ on:
         required: false
         default: true
         type: boolean
-
 permissions:
   contents: write
-
 concurrency:
   group: auto-vpnlink-update
   cancel-in-progress: true
-
 jobs:
   scan:
     name: Scan and publish sources
     runs-on: ubuntu-latest
     timeout-minutes: 45
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
-
       - name: Setup Python 3.12
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
           cache: pip
-
       - name: Install dependencies
         run: python -m pip install -r requirements.txt
-
       - name: Run multi-source scanner
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scanner.py
-
-      - name: Show generated files
+      - name: Convert verified nodes to client configs
+        run: python converter.py
+      - name: Show generated files and counts
         run: |
           echo '=== Generated output ==='
-          find output -maxdepth 2 -type f -print | sort || true
-          echo '=== Subscription count ==='
-          if [ -f output/subscriptions.txt ]; then
-            grep -cve '^\s*$' output/subscriptions.txt || true
-          fi
-          echo '=== Node count ==='
-          if [ -f output/nodes.txt ]; then
-            grep -cve '^\s*$' output/nodes.txt || true
-          fi
-
+          find output -maxdepth 2 -type f -print | sort
+          echo '=== Converter counts ==='
+          grep '^CONVERT' /dev/null || true
+          for f in output/nodes.txt output/shadowrocket.txt output/verified-nodes.txt; do
+            printf '%s: ' "$f"; grep -cve '^\s*$' "$f" 2>/dev/null || true
+          done
+          echo '=== Clash proxy count ==='
+          grep -c '^  - name:' output/clash.yaml 2>/dev/null || true
       - name: Commit generated results safely
         run: |
           set -e
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-
-          # The scanner may run while another commit (for example a code fix)
-          # lands on main. Save generated files, move to the newest main, then
-          # restore the generated files before committing. This prevents the
-          # recurring "fetch first" / non-fast-forward failure.
           rm -rf /tmp/auto-vpnlink-output
           cp -a output /tmp/auto-vpnlink-output
-
           git fetch origin main
           git reset --hard origin/main
-
           rm -rf output
           cp -a /tmp/auto-vpnlink-output output
           git add output/
-
           if git diff --cached --quiet; then
             echo 'No output changes.'
           else
