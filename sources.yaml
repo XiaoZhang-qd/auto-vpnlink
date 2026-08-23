@@ -10,7 +10,6 @@ github_topics:
   - shadowsocks
   - trojan
   - hysteria
-  # Broad topics are filtered by VPN/proxy keywords in repo name/description.
   - devops
   - automation
   - networking
@@ -30,13 +29,15 @@ gitlab_topics:
   - automation
   - networking
 
+# Add any public Git repository here. The scanner only reads text/config files;
+# it does not execute repository code.
 extra_repositories: []
 
 scan:
-  # Keep the scheduled job fast and predictable.
   max_repositories_per_topic: 15
   max_files_per_repository: 20
   max_file_size: 800000
   request_timeout: 8
   workers: 8
   max_subscription_checks: 300
+  max_aggregate_nodes: 5000
