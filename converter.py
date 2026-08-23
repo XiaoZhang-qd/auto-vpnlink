@@ -19,7 +19,8 @@ def parse(u,i):
             raw=unquote(u.split('://',1)[1].split('#',1)[0]); raw=b64(raw) if '@' not in raw else raw
             a,h=raw.rsplit('@',1); method,password=a.split(':',1); host,port=h.rsplit(':',1)
             return {'type':'ss','name':name,'server':host,'port':int(port),'cipher':method,'password':password}
-        if s in ('hysteria2','hy2'): return {'type':'hysteria2','name':name,'server':p.hostname,'port':p.port or 443,'password':unquote(p.username or ''),'sni':q.get('sni') or p.hostname}
+        if s in ('hysteria2','hy2'):
+            return {'type':'hysteria2','name':name,'server':p.hostname,'port':p.port or 443,'password':unquote(p.username or ''),'sni':q.get('sni') or p.hostname,'insecure':q.get('insecure','0').lower() in ('1','true'),'alpn':q.get('alpn'),'obfs':q.get('obfs'),'obfs_password':q.get('obfs-password')}
         if s=='tuic': return {'type':'tuic','name':name,'server':p.hostname,'port':p.port or 443,'uuid':unquote(p.username or ''),'password':unquote(p.password or ''),'sni':q.get('sni') or p.hostname,'cc':q.get('congestion_control','bbr')}
     except Exception: return None
 
@@ -29,7 +30,12 @@ def clash(n):
     elif t=='vless': o.update(uuid=n['uuid'],tls=n['tls'],udp=True)
     elif t=='trojan': o.update(password=n['password'],sni=n['sni'],udp=True)
     elif t=='ss': o.update(cipher=n['cipher'],password=n['password'],udp=True)
-    elif t=='hysteria2': o.update(password=n['password'],sni=n['sni'],**{'skip-cert-verify':True})
+    elif t=='hysteria2':
+        o.update(password=n['password'],sni=n['sni'],**{'skip-cert-verify':n['insecure']})
+        if n.get('alpn'): o['alpn']=[x.strip() for x in n['alpn'].split(',') if x.strip()]
+        if n.get('obfs'):
+            o['obfs']=n['obfs']
+            if n.get('obfs_password'): o['obfs-password']=n['obfs_password']
     elif t=='tuic': o.update(uuid=n['uuid'],password=n['password'],**{'congestion-controller':n['cc']},udp=True)
     if n.get('sni') and t in ('vmess','vless'): o['servername']=n['sni']
     if n.get('net') not in (None,'tcp') and t in ('vmess','vless'): o['network']=n['net']
@@ -46,16 +52,24 @@ def sing(n):
         if n['tls']: o['tls']={'enabled':True,'server_name':n['sni'],'insecure':True}
         if n.get('flow'): o['flow']=n['flow']
     elif t=='vmess': o.update(type='vmess',uuid=n['uuid'],security='auto',alter_id=n['aid'],tls={'enabled':n['tls'],'server_name':n.get('sni',''),'insecure':True})
-    elif t=='hysteria2': o.update(type='hysteria2',password=n['password'],tls={'enabled':True,'server_name':n['sni'],'insecure':True})
+    elif t=='hysteria2':
+        o.update(type='hysteria2',password=n['password'],tls={'enabled':True,'server_name':n['sni'],'insecure':n['insecure']})
+        if n.get('obfs'): o['obfs']={'type':n['obfs'],'password':n.get('obfs_password','')}
     elif t=='tuic': o.update(type='tuic',uuid=n['uuid'],password=n['password'],congestion_control=n['cc'],tls={'enabled':True,'server_name':n['sni'],'insecure':True})
     return o
 
 def xray(n):
-    t=n['type']; out={}
-    if t=='vmess': out={'protocol':'vmess','settings':{'vnext':[{'address':n['server'],'port':n['port'],'users':[{'id':n['uuid'],'alterId':n['aid'],'security':'auto'}]}]}}
-    elif t=='vless': out={'protocol':'vless','settings':{'vnext':[{'address':n['server'],'port':n['port'],'users':[{'id':n['uuid'],'encryption':'none','flow':n.get('flow','')}]}]}}
-    elif t=='trojan': out={'protocol':'trojan','settings':{'servers':[{'address':n['server'],'port':n['port'],'password':n['password']}]}}
-    elif t=='ss': out={'protocol':'shadowsocks','settings':{'servers':[{'address':n['server'],'port':n['port'],'method':n['cipher'],'password':n['password']}]}}
+    t=n['type']; out={'tag':n['name']}
+    if t=='vmess': out.update(protocol='vmess',settings={'vnext':[{'address':n['server'],'port':n['port'],'users':[{'id':n['uuid'],'alterId':n['aid'],'security':'auto'}]}]})
+    elif t=='vless': out.update(protocol='vless',settings={'vnext':[{'address':n['server'],'port':n['port'],'users':[{'id':n['uuid'],'encryption':'none','flow':n.get('flow','')}]}]})
+    elif t=='trojan': out.update(protocol='trojan',settings={'servers':[{'address':n['server'],'port':n['port'],'password':n['password']}]})
+    elif t=='ss': out.update(protocol='shadowsocks',settings={'servers':[{'address':n['server'],'port':n['port'],'method':n['cipher'],'password':n['password']}]})
+    elif t=='hysteria2':
+        # Xray exposes Hysteria2 through the "hysteria" outbound + hysteria
+        # transport. This is not a fake protocol name; it is Xray's documented
+        # representation of Hysteria2 (version=2).
+        out.update(protocol='hysteria',settings={'version':2,'address':n['server'],'port':n['port'],'auth':n['password']},streamSettings={'security':'tls','tlsSettings':{'serverName':n['sni'],'allowInsecure':n['insecure']},'hysteriaSettings':{'version':2,'auth':n['password']}})
+        if n.get('alpn'): out['streamSettings']['tlsSettings']['alpn']=[x.strip() for x in n['alpn'].split(',') if x.strip()]
     return out
 
 def main():
