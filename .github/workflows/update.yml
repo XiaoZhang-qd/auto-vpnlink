@@ -48,7 +48,13 @@ jobs:
           echo "Downloading $URL"
           curl -fL --retry 3 "$URL" -o .bin/mihomo.gz
           gzip -df .bin/mihomo.gz
-          mv .bin/mihomo* .bin/mihomo
+          if [ -f .bin/mihomo ]; then
+            echo 'Mihomo binary extracted successfully.'
+          else
+            BIN=$(find .bin -maxdepth 1 -type f -name 'mihomo*' ! -name '*.gz' -print -quit)
+            test -n "$BIN"
+            mv "$BIN" .bin/mihomo
+          fi
           chmod +x .bin/mihomo
           .bin/mihomo -v
       - name: Run real protocol-level health checks
