@@ -34,10 +34,10 @@ gitlab_topics:
 extra_repositories: []
 
 scan:
-  max_repositories_per_topic: 15
-  max_files_per_repository: 20
+  max_repositories_per_topic: 20
+  max_files_per_repository: 30
   max_file_size: 800000
   request_timeout: 8
   workers: 8
-  max_subscription_checks: 300
-  max_aggregate_nodes: 5000
+  max_subscription_checks: 600
+  max_aggregate_nodes: 20000
