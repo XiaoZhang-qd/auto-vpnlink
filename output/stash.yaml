@@ -5,83 +5,117 @@ proxies:
   port: 443
   password: 000081e1-c607-495c-b072-195323fa1113
   sni: pipe-4854.internet-booster.com
+  udp: true
   skip-cert-verify: false
+  alpn:
+  - h3
 - name: 🇫🇮 Finland, Helsinki | [BL]
   type: hysteria2
   server: svetzen.nksconnect.xyz
   port: 8443
   password: 00c0c6fc-2958-4395-91c3-7e61422f671f
   sni: svetzen.nksconnect.xyz
+  udp: true
   skip-cert-verify: false
+  alpn:
+  - h3
 - name: 🇬🇧 United Kingdom, London | [BL]
   type: hysteria2
   server: ake.fontanvpn.com
   port: 443
   password: 0147bb62-7972-40ee-a86a-409e0a0fb838
   sni: ake.fontanvpn.com
+  udp: true
   skip-cert-verify: false
+  alpn:
+  - h3
 - name: 🇳🇱 The Netherlands, Amsterdam | [BL]
   type: hysteria2
   server: cheat.fontanvpn.com
   port: 443
   password: 0147bb62-7972-40ee-a86a-409e0a0fb838
   sni: cheat.fontanvpn.com
+  udp: true
   skip-cert-verify: false
+  alpn:
+  - h3
 - name: 🇵🇱 Poland | 🌐 [*CIDR]
   type: hysteria2
   server: gogo.fontanvpn.com
   port: 443
   password: 0147bb62-7972-40ee-a86a-409e0a0fb838
   sni: gogo.fontanvpn.com
+  udp: true
   skip-cert-verify: false
+  alpn:
+  - h3
 - name: 🇰🇿 Kazakhstan, Almaty | [BL]
   type: hysteria2
   server: koin.fontanvpn.com
   port: 443
   password: 0147bb62-7972-40ee-a86a-409e0a0fb838
   sni: koin.fontanvpn.com
+  udp: true
   skip-cert-verify: false
+  alpn:
+  - h3
 - name: 🇩🇪 Germany [*CIDR]
   type: hysteria2
   server: kum.tokervpn.ru
   port: 443
   password: 0147bb62-7972-40ee-a86a-409e0a0fb838
   sni: kum.tokervpn.ru
+  udp: true
   skip-cert-verify: false
+  alpn:
+  - h3
 - name: 🇮🇹 Italy | 🌐 [*CIDR]
   type: hysteria2
   server: tw1.tokervpn.ru
   port: 443
   password: 0147bb62-7972-40ee-a86a-409e0a0fb838
   sni: tw1.tokervpn.ru
+  udp: true
   skip-cert-verify: false
+  alpn:
+  - h3
 - name: 🇵🇱 Poland | 🌐 [*CIDR]
   type: hysteria2
   server: twru1.fontanvpn.com
   port: 443
   password: 0147bb62-7972-40ee-a86a-409e0a0fb838
   sni: twru1.fontanvpn.com
+  udp: true
   skip-cert-verify: false
+  alpn:
+  - h3
 - name: EPODONIOS
   type: hysteria2
   server: 144.31.234.58
   port: 443
   password: 042a1881-44e4-4781-bd40-bf75164faf4f
   sni: nl1.noesissite.ru
+  udp: true
   skip-cert-verify: true
+  alpn:
+  - h3
 - name: 🇩🇪 Germany, Frankfurt am Main | [BL]
   type: hysteria2
   server: 178.215.238.30
   port: 443
   password: 042a1881-44e4-4781-bd40-bf75164faf4f
   sni: germany1.noesissite.ru
+  udp: true
   skip-cert-verify: false
+  alpn:
+  - h3
 - name: hysteria2-12
   type: hysteria2
   server: assets.gateway-stream.com
   port: 52000
   password: 09e4b638945d44bfa60b4fd00edad131
   sni: assets.gateway-stream.com
+  udp: true
   skip-cert-verify: false
   alpn:
   - h3
@@ -93,6 +127,7 @@ proxies:
   port: 52000
   password: 09e4b638945d44bfa60b4fd00edad131
   sni: assets.gateway-stream.com
+  udp: true
   skip-cert-verify: false
   alpn:
   - h3
@@ -104,20 +139,19 @@ proxies:
   port: 52000
   password: 09e4b638945d44bfa60b4fd00edad131
   sni: assets.gateway-stream.com
+  udp: true
   skip-cert-verify: false
   alpn:
   - h3
   obfs: salamander
   obfs-password: gu74jg3ym0e21zco
-- name: Proxy_mtm 33vless://302c2e89-6f2d-4500-90ce-26d075c7e84f@66.78.40.202:443?security=reality&encryption=none&pbk=8zJkTehTmhmgKWUIj-CyJP4gtMjNxLgBxPjHC1wwW3A&headerType=none&fp=firefox&spx=/b46a29a208a37d1&type=tcp&flow=xtls-rprx-vision&sni=www.samsung.com&sid=61#Proxy_mtm
-    34vless://7595cd50-9326-48e4-a7bc-802e85e643ec@162.19.156.14:6800?security=reality&encryption=none&pbk=lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo&headerType=none&fp=qq&type=tcp&sni=play.google.com#Proxy_mtm
-    35vless://b6c29ae7-4748-4049-b642-b695c0d2c776@191.44.118.250:2053?security=reality&encryption=none&pbk=E6u2RbffXIPvia5v5iIZVj6U_VpSBWmGTsHHNtH-5Rg&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=vk.ru&sid=417063feab794131#Proxy_mtm
-    36
+- name: Proxy_mtm 33vless://302c2e89-6f2d-4500-90ce-26d075c7e84f@66.78.40.202:443?security=reality&encryption=none&pbk=8zJkTehTm
   type: hysteria2
   server: assets.gateway-stream.com
   port: 52000
   password: 09e4b638945d44bfa60b4fd00edad131
   sni: assets.gateway-stream.com
+  udp: true
   skip-cert-verify: false
   alpn:
   - h3
@@ -141,10 +175,7 @@ proxy-groups:
   - hysteria2-12
   - Proxy_mtm 33
   - Proxy_mtm 33
-  - Proxy_mtm 33vless://302c2e89-6f2d-4500-90ce-26d075c7e84f@66.78.40.202:443?security=reality&encryption=none&pbk=8zJkTehTmhmgKWUIj-CyJP4gtMjNxLgBxPjHC1wwW3A&headerType=none&fp=firefox&spx=/b46a29a208a37d1&type=tcp&flow=xtls-rprx-vision&sni=www.samsung.com&sid=61#Proxy_mtm
-    34vless://7595cd50-9326-48e4-a7bc-802e85e643ec@162.19.156.14:6800?security=reality&encryption=none&pbk=lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo&headerType=none&fp=qq&type=tcp&sni=play.google.com#Proxy_mtm
-    35vless://b6c29ae7-4748-4049-b642-b695c0d2c776@191.44.118.250:2053?security=reality&encryption=none&pbk=E6u2RbffXIPvia5v5iIZVj6U_VpSBWmGTsHHNtH-5Rg&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=vk.ru&sid=417063feab794131#Proxy_mtm
-    36
+  - Proxy_mtm 33vless://302c2e89-6f2d-4500-90ce-26d075c7e84f@66.78.40.202:443?security=reality&encryption=none&pbk=8zJkTehTm
   url: https://www.gstatic.com/generate_204
   interval: 300
 rules:

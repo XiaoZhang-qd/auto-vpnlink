@@ -1,0 +1,11 @@
+{
+  "verified_input": 15,
+  "parsed": 15,
+  "rejected": 0,
+  "protocols": {
+    "hysteria2": 15
+  },
+  "clash_proxies": 15,
+  "singbox_outbounds": 15,
+  "xray_outbounds": 0
+}
