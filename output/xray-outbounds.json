@@ -1,35 +1,652 @@
 {
   "outbounds": [
     {
-      "tag": "https://t.me/ForceRunVPN-🇸🇬-Singapore-370ms-BrainStorm Network Inc",
-      "protocol": "shadowsocks",
+      "tag": "vless-1",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "167.150.100.115",
-            "port": 27755,
-            "method": "2022-blake3-aes-256-gcm",
-            "password": "fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0="
+            "address": "host.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "uuid",
+                "encryption": "none"
+              }
+            ]
           }
         ]
       }
     },
     {
-      "tag": "@Alirewa-565",
+      "tag": "trojan-2",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "172.66.46.215",
+            "port": 8443,
+            "password": "!d8jYnLU)"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "trojan-3",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "37.156.45.60",
+            "port": 4384,
+            "password": "------------BanV2ray-----------"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "EPODONIOS",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "oooooooooooooooo-00000000000000000.poki-pakipon.ir",
+            "port": 11332,
+            "password": "------BanV2ray-------"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "trojan-5",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "www.speedtest.net",
+            "port": 2083,
+            "password": "04ac3ce8-6512-4170-96d3-da6bffe84c1e"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "XX",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "micro-svc-2337e0.amiralihsp27.workers.dev",
+            "port": 8080,
+            "password": "09ca66181ccb484087d8e9ec6c7eb14e"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@DeltaKroneckerGithub",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "51.38.65.155",
+            "port": 443,
+            "password": "0ddc8080-d295-11ef-9213-1239d0255272"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "trojan-8",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "179.237.74.104",
+            "port": 41611,
+            "password": "1-----------------BanV2ray-----------------1"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@DeltaKroneckerGithub [2]",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "uk1.test3.net",
+            "port": 443,
+            "password": "179c5360-9538-11f1-9ff7-1239d0255272"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "trojan-10",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.18.21.18",
+            "port": 443,
+            "password": "20210200-49c6-11ed-a9ef-1239d0255272"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "trojan-11",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "kaizen-tw-2.mielink-dns2.com",
+            "port": 443,
+            "password": "265f092f-418b-30c9-a479-4800fd44dd19mielink"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🔒",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "172.67.174.10",
+            "port": 443,
+            "password": "2bcfbfba-b446-4ad5-93ad-72af9e008f61"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@DeltaKroneckerGithub [3]",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "51.38.65.155",
+            "port": 443,
+            "password": "32691370-fd1f-11ef-b261-1239d0255272"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "trojan-14",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "188.114.97.2",
+            "port": 2087,
+            "password": "3Ldo+,81m[h)3Lb+"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "trojan-15",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.17.238.76",
+            "port": 443,
+            "password": "407ecce0-dc85-465f-89f5-e520e9378baf"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "新加坡06|流媒体",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "sg006.421421.xyz",
+            "port": 20230,
+            "password": "4aa9ee7a-ffee-4ca4-a588-f5fa9e979c38"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🇬🇧  Great Britain  [02]  MIFA t.me/rjsxrd",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "154.197.121.27",
+            "port": 443,
+            "password": "521314"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "新加坡06|流媒体 [2]",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "sg006.421421.xyz",
+            "port": 20230,
+            "password": "5a81db08-7af3-49a4-b089-b7a5b2c24c38"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🇺🇸US-13.248.169.48-1979",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "hn.xiaohouzi.club",
+            "port": 61005,
+            "password": "64de1de7-e3bb-3dc4-ab04-d1e601e18ac5"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@DeltaKroneckerGithub [4]",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "uk1.test3.net",
+            "port": 443,
+            "password": "6cf097b0-0a7d-11f0-88f5-1239d0255272"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "EPODONIOS [2]",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "2c.fast9988.com",
+            "port": 50887,
+            "password": "6ec301428255a78a1d826988d86cc87e"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@DeltaKroneckerGithub [5]",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "51.38.65.155",
+            "port": 443,
+            "password": "7cbeb900-1939-11f0-ae81-1239d0255272"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🇭🇰HK(AzadNet.t.me) (29)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "45.67.201.210",
+            "port": 20045,
+            "password": "7e70223b-f331-41d5-9313-02b8d2df2885"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🇹🇷|土耳其-IEPL 01",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "iepl1.catcat321.com",
+            "port": 20017,
+            "password": "7e70223b-f331-41d5-9313-02b8d2df2885"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🇭🇰|香港家宽-中转 02",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "z-a.ioioioioioio.com",
+            "port": 9150,
+            "password": "7e70223b-f331-41d5-9313-02b8d2df2885"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@DeltaKroneckerGithub [6]",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "65.108.205.61",
+            "port": 443,
+            "password": "88939272-790a-441f-b12b-8ce531aca810"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🇩🇪DE(AzadNet.t.me) (2)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "46.225.121.230",
+            "port": 8443,
+            "password": "8r%3C%5B9%27l6hAO%238ZQi"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🇳🇱NL(AzadNet.t.me) (21)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "188.226.188.55",
+            "port": 443,
+            "password": "8r<[9'l6hAO#8ZQi"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🇵🇷PR(AzadNet.t.me)",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "74.50.11.24",
+            "port": 443,
+            "password": "8r<[9'l6hAO#8ZQi"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🇹🇼TW-125.227.152.109-3065",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "official.taipeicitygovernment.kyiv.ua",
+            "port": 8443,
+            "password": "96983eb4-c8f1-316e-ab00-500014ed3d8b"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "Channel id: @ShadowProxy66 🇯🇵",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "13.192.234.223",
+            "port": 443,
+            "password": "AE62539071"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@DeltaKroneckerGithub [7]",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "31.223.184.85",
+            "port": 443,
+            "password": "AE62539071"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@DeltaKroneckerGithub [8]",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "87.121.33.185",
+            "port": 443,
+            "password": "AE62539071"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🇯🇵",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "game-thrush.rooster465.autos",
+            "port": 443,
+            "password": "AE62539071"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🇯🇵JP_115|156KB/s",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "relevant-cicada.rooster465.autos",
+            "port": 443,
+            "password": "AE62539071"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@DeltaKroneckerGithub [9]",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "185.184.223.47",
+            "port": 443,
+            "password": "Aimer"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🇺🇸",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "52.194.255.244",
+            "port": 443,
+            "password": "CF68213490"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "trojan-38",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "3.113.30.133",
+            "port": 443,
+            "password": "EQ30679154"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "United+States",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "obliging-louse.rooster465.autos",
+            "port": 443,
+            "password": "EQ30679154"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@DeltaKroneckerGithub [10]",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "82.117.226.45",
+            "port": 443,
+            "password": "FC60532879"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@DeltaKroneckerGithub [11]",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "grown-rhino.rooster465.autos",
+            "port": 443,
+            "password": "FC60532879"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "trojan-42",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "13.114.70.20",
+            "port": 443,
+            "password": "FH72359861"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "DE",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "35.159.21.7",
+            "port": 443,
+            "password": "FH72359861"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "EPODONIOS [3]",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "absolute-bobcat.rooster465.autos",
+            "port": 443,
+            "password": "FH72359861"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@DeltaKroneckerGithub [12]",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "growing-oyster.rooster465.autos",
+            "port": 443,
+            "password": "FH72359861"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "trojan-46",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "summary-firefly.rooster465.autos",
+            "port": 443,
+            "password": "FH72359861"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🇮🇷IR",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
           {
-            "address": "144.24.160.250",
-            "port": 59924,
+            "address": "plusgum.lol",
+            "port": 888,
+            "method": "2022-blake3-aes-128-gcm",
+            "password": "bM7oNtOWU6N4CgenbB+W7g==:j+ddudexkbstk2A3x7+t6w=="
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🇧🇷BR_11|414KB/s|A004-260618",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "144.22.150.193",
+            "port": 59319,
             "method": "2022-blake3-chacha20-poly1305",
-            "password": "C1U/t2iR/+R2DqqWk+e6cFFEhaAdGJfGBR+GeNrkoME="
+            "password": "3c8tj0DA79hjfpioMZAadyGr/dNl4C6MTsJTNE8l8Mw="
           }
         ]
       }
     },
     {
-      "tag": "@Alirewa-564",
+      "tag": "🇸🇬SG - udptoos.com #2",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "129.150.48.175",
+            "port": 56927,
+            "method": "2022-blake3-chacha20-poly1305",
+            "password": "8C+C41HLztRjvq+sf6K94V2i+6SYGHN/ldg2UttNNY4="
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🇩🇪DE_79|163KB/s|A004-260618",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -43,7 +660,49 @@
       }
     },
     {
-      "tag": "@Alirewa-566",
+      "tag": "🇧🇷BR_7|166KB/s|R002-260618",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "129.159.49.64",
+            "port": 59319,
+            "method": "2022-blake3-chacha20-poly1305",
+            "password": "MdImM0QejAzcmEd6BKaoy1mr4hVAIqXF7LTY1EqzTL0="
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🇧🇷BR_13|297KB/s|A004-260618",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "64.181.171.113",
+            "port": 59319,
+            "method": "2022-blake3-chacha20-poly1305",
+            "password": "OYAoH+Rfx3SHm6POtoPiRHDXs/hWB8AviM1xxUek39c="
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🇳🇱NL_229|370KB/s|A003-260618",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "152.70.53.76",
+            "port": 45819,
+            "method": "2022-blake3-chacha20-poly1305",
+            "password": "YyppYr+19SFyy4WAU2OmSlq+NwKjR+L0oV2CCJ6rMAM="
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🇳🇱NL_256|244KB/s|M003-260806",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -52,6 +711,524 @@
             "port": 45819,
             "method": "2022-blake3-chacha20-poly1305",
             "password": "hbEvkzR93GX0boBpZKspRggjovWge9T+z/UPk69rIHg="
+          }
+        ]
+      }
+    },
+    {
+      "tag": "[005514",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "cccct.284.pics",
+            "port": 65011,
+            "method": "2022-blake3-aes-256-gcm",
+            "password": "ZTEyY2ViOGU0MWJiNDcwN2VlYjU3MzkzODlhNjliNGY=:ZjY2YzAxZWYtMjVkOC00N2ZkLWI1NTYtNTU2OTA2NDg="
+          }
+        ]
+      }
+    },
+    {
+      "tag": "INT🌍",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "185.39.204.27",
+            "port": 1080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "4xraAK1GXvht4-VeeECnQxHhahx1NGeC"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@Vip_Security",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "169.62.109.140",
+            "port": 8389,
+            "method": "chacha20-ietf-poly1305",
+            "password": "74cf7gsXJgd9Z4MAW42L"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🇨🇳_CN_中国->🇺🇸_US_美国",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "211.91.158.44",
+            "port": 21105,
+            "method": "chacha20-ietf-poly1305",
+            "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🇨🇳_CN_中国->🇬🇧_GB_英国",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "211.91.158.44",
+            "port": 21117,
+            "method": "chacha20-ietf-poly1305",
+            "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🇨🇳_CN_中国->🇸🇬_SG_新加坡",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "211.91.158.44",
+            "port": 21121,
+            "method": "chacha20-ietf-poly1305",
+            "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🇨🇳_CN_中国->🇹🇭_TH_泰国",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "211.91.158.44",
+            "port": 21123,
+            "method": "chacha20-ietf-poly1305",
+            "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🇨🇳_CN_中国->🇸🇬_SG_新加坡 [2]",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "211.91.158.26",
+            "port": 21121,
+            "method": "chacha20-ietf-poly1305",
+            "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🇧🇭_BH_巴林_2",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "series-a2-me.varzesh360.co",
+            "port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "Bog0ELmMM9DSxDdQ"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "hamedp71::🇳🇱",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "64.188.77.159",
+            "port": 8390,
+            "method": "chacha20-ietf-poly1305",
+            "password": "EyGy11BMfeP-6UHjsgajWw"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@Vip_Security [2]",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "185.104.184.78",
+            "port": 812,
+            "method": "chacha20-ietf-poly1305",
+            "password": "G!yBwPWH3Vao"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@Vip_Security [3]",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "51.159.30.61",
+            "port": 812,
+            "method": "chacha20-ietf-poly1305",
+            "password": "G!yBwPWH3Vao"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@Vip_Security [4]",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "93.186.201.158",
+            "port": 809,
+            "method": "chacha20-ietf-poly1305",
+            "password": "G!yBwPWH3Vao"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🇱🇹_LT_立陶宛",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "144.31.243.2",
+            "port": 16015,
+            "method": "chacha20-ietf-poly1305",
+            "password": "J1InuU6QRT5JOh1mQfkjU2"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "hamedp71::🇦🇺",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "45.77.232.213",
+            "port": 15675,
+            "method": "chacha20-ietf-poly1305",
+            "password": "TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🌐سرور",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "admin.c1.webramz.co",
+            "port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "W74XFALLLuw6m5IA"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "EPODONIOS [4]",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "193.29.139.227",
+            "port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "cvII85TrW6n0OGyfpHVS1u"
+          }
+        ]
+      }
+    },
+    {
+      "tag": ">>@yaney_01::GB",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "series-a2.samanehha.co",
+            "port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "mps3FwmDjLrWaOVg"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "EPODONIOS [5]",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "193.29.139.151",
+            "port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@Filter_breaker-LT```",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "45.87.175.28",
+            "port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "EPODONIOS [6]",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "82.38.31.35",
+            "port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "کانال+:+@V2rayNGvpni",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "series-a2-mec.samanehha.co",
+            "port": 443,
+            "method": "chacha20-poly1305",
+            "password": "u17T3BvpYaaiuW2c"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "⚠️ 旧订阅链接已停止使用",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "update-required.invalid",
+            "port": 443,
+            "method": "aes-128-gcm",
+            "password": "update-required"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🇨🇳_CN_中国->🇰🇷_KR_韩国",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "121.46.230.138",
+            "port": 65443,
+            "method": "aes-256-cfb",
+            "password": "7eadc6dbe2ae"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@Vip_Security [5]",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "92.38.139.95",
+            "port": 50003,
+            "method": "aes-256-cfb",
+            "password": "8460400130"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@Vip_Security [6]",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "141.98.119.180",
+            "port": 50003,
+            "method": "aes-256-cfb",
+            "password": "8460400130"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@Vip_Security [7]",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "3.249.52.148",
+            "port": 50003,
+            "method": "aes-256-cfb",
+            "password": "8460400130"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@Vip_Security [8]",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "54.37.136.249",
+            "port": 989,
+            "method": "aes-256-cfb",
+            "password": "f8f7aCzcPKbsF8p3"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@Vip_Security [9]",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "194.68.44.206",
+            "port": 989,
+            "method": "aes-256-cfb",
+            "password": "f8f7aCzcPKbsF8p3"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@Vip_Security [10]",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "37.235.55.84",
+            "port": 989,
+            "method": "aes-256-cfb",
+            "password": "f8f7aCzcPKbsF8p3"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "hamedp71::🇺🇸",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "15.204.246.132",
+            "port": 7307,
+            "method": "aes-256-gcm",
+            "password": "FoOiGlkAA9yPEGP"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@Vip_Security [11]",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "185.108.106.24",
+            "port": 40282,
+            "method": "aes-256-gcm",
+            "password": "Pvvaw486867D2w4yctL2ULTQ"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@Vip_Security [12]",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "149.202.82.172",
+            "port": 7002,
+            "method": "aes-256-gcm",
+            "password": "RexnBgU7EV5ADxG"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@Vip_Security [13]",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "38.91.102.72",
+            "port": 8008,
+            "method": "aes-256-gcm",
+            "password": "XKFKl2rULjIp74"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@Vip_Security [14]",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "142.202.48.58",
+            "port": 2376,
+            "method": "aes-256-gcm",
+            "password": "faBAoD54k87UJG7"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@Vip_Security [15]",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "146.70.27.12",
+            "port": 40093,
+            "method": "aes-256-gcm",
+            "password": "x23Z4LGkGDkThZ9Kaz4DURQp"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "filembad-33",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "94.245.92.85",
+            "port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "rKE5OchHqTrkamzx"
           }
         ]
       }

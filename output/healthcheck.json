@@ -1,11 +1,11 @@
 {
-  "tested": 27,
-  "healthy": 5,
-  "failed": 22,
+  "tested": 150,
+  "healthy": 14,
+  "failed": 136,
   "stable_required": true,
   "rounds": 3,
   "round_delay": 2.0,
-  "runner_public_ip": "20.171.20.61",
+  "runner_public_ip": "172.203.207.204",
   "internet_test_urls": [
     "https://www.gstatic.com/generate_204",
     "https://cp.cloudflare.com/generate_204",
@@ -13,21 +13,391 @@
   ],
   "results": [
     {
-      "uri": "ss://2022-blake3-aes-256-gcm:eVgEdD2UJXoP1O7qbSOz6A0FoSCYrwhV9hnPv6OQu9Q=%3AbvQihPJIpX+XX4PvARLDfGiPuZzQoiasvb0khfnKN4I=@111.15.84.201:2054#@Alirewa-549",
-      "name": "@Alirewa-549",
-      "type": "ss",
-      "server": "111.15.84.201",
-      "port": 2054,
+      "uri": "VLESS://uuid@host.com:443?security=tls",
+      "name": "vless-1",
+      "type": "vless",
+      "server": "host.com",
+      "port": 443,
       "ok": false,
       "reason": "no_proxied_public_ip",
       "checks": []
     },
     {
-      "uri": "ss://2022-blake3-aes-256-gcm:fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=@167.150.100.115:27755#https:%2F%2Ft.me%2FForceRunVPN-%F0%9F%87%B8%F0%9F%87%AC-Singapore-370ms-BrainStorm%20Network%20Inc",
-      "name": "https://t.me/ForceRunVPN-🇸🇬-Singapore-370ms-BrainStorm Network Inc",
-      "type": "ss",
-      "server": "167.150.100.115",
-      "port": 27755,
+      "uri": "trojan://!d8jYnLU)@172.66.46.215:8443/?type=tcp&security=tls&sni=K2ZFG80-8-0jEH9h-5wTKt43R92VJi0P.pageS.dEV#",
+      "name": "trojan-2",
+      "type": "trojan",
+      "server": "172.66.46.215",
+      "port": 8443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://------------BanV2ray-----------@37.156.45.60:4384?mode=gun&security=reality&pbk=TbFPp3kXrmos-f7Cfpm21TZcFtAEJwsF_G9CABhIlUc&fp=chrome&spx=/4de517c4e954d88&type=grpc&sni=world.yahoo.com:443&sid=fc1849f57be0#",
+      "name": "trojan-3",
+      "type": "trojan",
+      "server": "37.156.45.60",
+      "port": 4384,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://------BanV2ray-------@oooooooooooooooo-00000000000000000.poki-pakipon.ir:11332?fp=chrome&security=reality&pbk=nGBHollHWJxqRwTVBgsdU0DZZLVHexdntltRKyYNax4&type=grpc&sid=b9c6f2d116&sni=yahoo.com#EPODONIOS",
+      "name": "EPODONIOS",
+      "type": "trojan",
+      "server": "oooooooooooooooo-00000000000000000.poki-pakipon.ir",
+      "port": 11332,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://04ac3ce8-6512-4170-96d3-da6bffe84c1e@www.speedtest.net:2083?security=tls&sni=FreemnM.paNOtosu.StORe&alpn=http/1.1&fp=randomized&type=ws&path=/trLb3dWHIEtHE7MPUs/c2hpcmVuLnlhZW1pa28uZ2dmZi5uZXQ%3D&host=freemnm.panotosu.store#",
+      "name": "trojan-5",
+      "type": "trojan",
+      "server": "www.speedtest.net",
+      "port": 2083,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://09ca66181ccb484087d8e9ec6c7eb14e@micro-svc-2337e0.amiralihsp27.workers.dev:8080?security=none#XX",
+      "name": "XX",
+      "type": "trojan",
+      "server": "micro-svc-2337e0.amiralihsp27.workers.dev",
+      "port": 8080,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://0ddc8080-d295-11ef-9213-1239d0255272@51.38.65.155:443?security=tls&sni=uk1.test3.net&allowInsecure=1&fp=chrome&type=tcp#@DeltaKroneckerGithub",
+      "name": "@DeltaKroneckerGithub",
+      "type": "trojan",
+      "server": "51.38.65.155",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://1-----------------BanV2ray-----------------1@179.237.74.104:41611?mode=gun&security=reality&pbk=STMSSr7TuNNj8icCvugzrXFg_OCQz7EinmUnSl8__yE&fp=firefox&spx=%2F2c44c7453292bcc&type=grpc&sni=world.yahoo.com%3A443&sid=4f8ae614dd2c#",
+      "name": "trojan-8",
+      "type": "trojan",
+      "server": "179.237.74.104",
+      "port": 41611,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://179c5360-9538-11f1-9ff7-1239d0255272@uk1.test3.net:443/chatbuzzteam.ir?sni=chatbuzzteam.ir#@DeltaKroneckerGithub",
+      "name": "@DeltaKroneckerGithub",
+      "type": "trojan",
+      "server": "uk1.test3.net",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://20210200-49c6-11ed-a9ef-1239d0255272@104.18.21.18:443?security=tls&sni=corona.jakarta.go.id&allowInsecure=1&type=tcp#",
+      "name": "trojan-10",
+      "type": "trojan",
+      "server": "104.18.21.18",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://265f092f-418b-30c9-a479-4800fd44dd19mielink@kaizen-tw-2.mielink-dns2.com:443/?type=tcp&security=tls&sni=paydiu.com#",
+      "name": "trojan-11",
+      "type": "trojan",
+      "server": "kaizen-tw-2.mielink-dns2.com",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://2bcfbfba-b446-4ad5-93ad-72af9e008f61@172.67.174.10:443?sni=blackshadow.dpdns.org&type=ws&path=/195.123.218.174-443&fp=chrome#🔒",
+      "name": "🔒",
+      "type": "trojan",
+      "server": "172.67.174.10",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://32691370-fd1f-11ef-b261-1239d0255272@51.38.65.155:443?security=tls&sni=uk1.test3.net&allowInsecure=1&fp=chrome&type=tcp#@DeltaKroneckerGithub",
+      "name": "@DeltaKroneckerGithub",
+      "type": "trojan",
+      "server": "51.38.65.155",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://3Ldo+,81m%5Bh)3Lb+@188.114.97.2:2087/?type=tcp&security=tls&sni=AzADNet05.PaGES.deV#",
+      "name": "trojan-14",
+      "type": "trojan",
+      "server": "188.114.97.2",
+      "port": 2087,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://407ecce0-dc85-465f-89f5-e520e9378baf@104.17.238.76:443/?type=tcp&security=tls&sni=ld.223350.xyz#",
+      "name": "trojan-15",
+      "type": "trojan",
+      "server": "104.17.238.76",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://4aa9ee7a-ffee-4ca4-a588-f5fa9e979c38@sg006.421421.xyz:20230?allowInsecure=1&peer=www.alibaba.com&sni=www.alibaba.com&type=ws#%E6%96%B0%E5%8A%A0%E5%9D%A106%7C%E6%B5%81%E5%AA%92%E4%BD%93",
+      "name": "新加坡06|流媒体",
+      "type": "trojan",
+      "server": "sg006.421421.xyz",
+      "port": 20230,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://521314@154.197.121.27:443?type=ws&headerType=none&security=tls&encryption=none&sni=hhtj.hhllfly.kdns.fr&path=%2Fpyip%3DTelegram-WangCai2%F0%9F%87%A8%F0%9F%87%B3&host=hhtj.hhllfly.kdns.fr&insecure=0#%F0%9F%87%AC%F0%9F%87%A7%20%20Great%20Britain%20%20%5B02%5D%20%20MIFA%20t.me%2Frjsxrd",
+      "name": "🇬🇧  Great Britain  [02]  MIFA t.me/rjsxrd",
+      "type": "trojan",
+      "server": "154.197.121.27",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://5a81db08-7af3-49a4-b089-b7a5b2c24c38@sg006.421421.xyz:20230?allowInsecure=1&peer=www.alibaba.com&sni=www.alibaba.com&type=ws#%E6%96%B0%E5%8A%A0%E5%9D%A106%7C%E6%B5%81%E5%AA%92%E4%BD%93",
+      "name": "新加坡06|流媒体",
+      "type": "trojan",
+      "server": "sg006.421421.xyz",
+      "port": 20230,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://64de1de7-e3bb-3dc4-ab04-d1e601e18ac5@hn.xiaohouzi.club:61005?security=tls&sni=$$aru05.xiaohouzi.club#%F0%9F%87%BA%F0%9F%87%B8US-13.248.169.48-1979",
+      "name": "🇺🇸US-13.248.169.48-1979",
+      "type": "trojan",
+      "server": "hn.xiaohouzi.club",
+      "port": 61005,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://6cf097b0-0a7d-11f0-88f5-1239d0255272@uk1.test3.net:443?security=tls&headerType=none&type=tcp#@DeltaKroneckerGithub",
+      "name": "@DeltaKroneckerGithub",
+      "type": "trojan",
+      "server": "uk1.test3.net",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://6ec301428255a78a1d826988d86cc87e@2c.fast9988.com:50887/?type=tcp&security=tls&sni=www.nintendogames.net&allowInsecure=1#EPODONIOS",
+      "name": "EPODONIOS",
+      "type": "trojan",
+      "server": "2c.fast9988.com",
+      "port": 50887,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://7cbeb900-1939-11f0-ae81-1239d0255272@51.38.65.155:443?security=tls&headerType=none&type=tcp&sni=tgju.org#@DeltaKroneckerGithub",
+      "name": "@DeltaKroneckerGithub",
+      "type": "trojan",
+      "server": "51.38.65.155",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://7e70223b-f331-41d5-9313-02b8d2df2885@45.67.201.210:20045/?type=tcp&security=tls&sni=TW.catxstar.com&allowInsecure=1#%F0%9F%87%AD%F0%9F%87%B0HK%28AzadNet.t.me%29%20%2829%29",
+      "name": "🇭🇰HK(AzadNet.t.me) (29)",
+      "type": "trojan",
+      "server": "45.67.201.210",
+      "port": 20045,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://7e70223b-f331-41d5-9313-02b8d2df2885@iepl1.catcat321.com:20017?allowInsecure=1&peer=hk.catxstar.com&sni=hk.catxstar.com#%F0%9F%87%B9%F0%9F%87%B7%7C%E5%9C%9F%E8%80%B3%E5%85%B6-IEPL%2001",
+      "name": "🇹🇷|土耳其-IEPL 01",
+      "type": "trojan",
+      "server": "iepl1.catcat321.com",
+      "port": 20017,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://7e70223b-f331-41d5-9313-02b8d2df2885@z-a.ioioioioioio.com:9150?allowInsecure=1&peer=r.hk12.cat.bilibili.com&sni=r.hk12.cat.bilibili.com#%F0%9F%87%AD%F0%9F%87%B0%7C%E9%A6%99%E6%B8%AF%E5%AE%B6%E5%AE%BD-%E4%B8%AD%E8%BD%AC%2002",
+      "name": "🇭🇰|香港家宽-中转 02",
+      "type": "trojan",
+      "server": "z-a.ioioioioioio.com",
+      "port": 9150,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://88939272-790a-441f-b12b-8ce531aca810@65.108.205.61:443?security=tls&sni=polo01.kctr2038.icu&allowInsecure=1&fp=chrome&type=tcp#@DeltaKroneckerGithub",
+      "name": "@DeltaKroneckerGithub",
+      "type": "trojan",
+      "server": "65.108.205.61",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://8r%253C%255B9%2527l6hAO%25238ZQi@46.225.121.230:8443/?type=tcp&security=tls&sni=Koma-YT.PAGeS.Dev&allowInsecure=1#%F0%9F%87%A9%F0%9F%87%AADE%28AzadNet.t.me%29%20%282%29",
+      "name": "🇩🇪DE(AzadNet.t.me) (2)",
+      "type": "trojan",
+      "server": "46.225.121.230",
+      "port": 8443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://8r%3C%5B9%27l6hAO%238ZQi@188.226.188.55:443/?type=tcp&security=tls&sni=Koma-YT.PAGeS.Dev#%F0%9F%87%B3%F0%9F%87%B1NL%28AzadNet.t.me%29%20%2821%29",
+      "name": "🇳🇱NL(AzadNet.t.me) (21)",
+      "type": "trojan",
+      "server": "188.226.188.55",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://8r%3C%5B9%27l6hAO%238ZQi@74.50.11.24:443/?type=tcp&security=tls&sni=Koma-YT.PAGeS.Dev#%F0%9F%87%B5%F0%9F%87%B7PR%28AzadNet.t.me%29",
+      "name": "🇵🇷PR(AzadNet.t.me)",
+      "type": "trojan",
+      "server": "74.50.11.24",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://96983eb4-c8f1-316e-ab00-500014ed3d8b@official.taipeicitygovernment.kyiv.ua:8443?security=tls#%F0%9F%87%B9%F0%9F%87%BCTW-125.227.152.109-3065",
+      "name": "🇹🇼TW-125.227.152.109-3065",
+      "type": "trojan",
+      "server": "official.taipeicitygovernment.kyiv.ua",
+      "port": 8443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://AE62539071@13.192.234.223:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=intimate-koi.rooster465.autos#Channel%20id%3A%20%40ShadowProxy66%20%F0%9F%87%AF%F0%9F%87%B5",
+      "name": "Channel id: @ShadowProxy66 🇯🇵",
+      "type": "trojan",
+      "server": "13.192.234.223",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://AE62539071@31.223.184.85:443?sni=chief-cricket.rooster465.autos&type=tcp&fp=chrome#@DeltaKroneckerGithub",
+      "name": "@DeltaKroneckerGithub",
+      "type": "trojan",
+      "server": "31.223.184.85",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://AE62539071@87.121.33.185:443?allowInsecure=1&sni=humorous-llama.rooster465.autos#@DeltaKroneckerGithub",
+      "name": "@DeltaKroneckerGithub",
+      "type": "trojan",
+      "server": "87.121.33.185",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://AE62539071@game-thrush.rooster465.autos:443?allowInsecure=0&sni=game-thrush.rooster465.autos#🇯🇵",
+      "name": "🇯🇵",
+      "type": "trojan",
+      "server": "game-thrush.rooster465.autos",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://AE62539071@relevant-cicada.rooster465.autos:443?sni=relevant-cicada.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%AF%F0%9F%87%B5JP_115%7C156KB%2Fs",
+      "name": "🇯🇵JP_115|156KB/s",
+      "type": "trojan",
+      "server": "relevant-cicada.rooster465.autos",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://Aimer@185.184.223.47:443?sni=epme.ambercc.filegear-sg.me#@DeltaKroneckerGithub",
+      "name": "@DeltaKroneckerGithub",
+      "type": "trojan",
+      "server": "185.184.223.47",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://CF68213490@52.194.255.244:443?security=tls&sni=adapting-giraffe.rooster465.autos&path=/#🇺🇸",
+      "name": "🇺🇸",
+      "type": "trojan",
+      "server": "52.194.255.244",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://EQ30679154@3.113.30.133:443?security=tls&sni=definite-gazelle.rooster465.autos&type=tcp&path=/#",
+      "name": "trojan-38",
+      "type": "trojan",
+      "server": "3.113.30.133",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://EQ30679154@obliging-louse.rooster465.autos:443?fp=chrome&security=tls&sni=obliging-louse.rooster465.autos&type=tcp#United+States",
+      "name": "United+States",
+      "type": "trojan",
+      "server": "obliging-louse.rooster465.autos",
+      "port": 443,
       "ok": true,
       "reason": "internet_stable_real_egress",
       "checks": [
@@ -70,11 +440,101 @@
       ]
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:C1U%2Ft2iR%2F+R2DqqWk+e6cFFEhaAdGJfGBR+GeNrkoME=@144.24.160.250:59924#@Alirewa-565",
-      "name": "@Alirewa-565",
+      "uri": "trojan://FC60532879@82.117.226.45:443?sni=right-seahorse.rooster465.autos&fp=chrome&type=tcp&path=/#@DeltaKroneckerGithub",
+      "name": "@DeltaKroneckerGithub",
+      "type": "trojan",
+      "server": "82.117.226.45",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://FC60532879@grown-rhino.rooster465.autos:443?security=tls&sni=grown-rhino.rooster465.autos#@DeltaKroneckerGithub",
+      "name": "@DeltaKroneckerGithub",
+      "type": "trojan",
+      "server": "grown-rhino.rooster465.autos",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://FH72359861@13.114.70.20:443?sni=brave-cattle.rooster465.autos&type=tcp&fp=chrome#",
+      "name": "trojan-42",
+      "type": "trojan",
+      "server": "13.114.70.20",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://FH72359861@35.159.21.7:443?allowInsecure=0&sni=summary-lemming.rooster465.autos#DE",
+      "name": "DE",
+      "type": "trojan",
+      "server": "35.159.21.7",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://FH72359861@absolute-bobcat.rooster465.autos:443?allowInsecure=0#EPODONIOS",
+      "name": "EPODONIOS",
+      "type": "trojan",
+      "server": "absolute-bobcat.rooster465.autos",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://FH72359861@growing-oyster.rooster465.autos:443?sni=growing-oyster.rooster465.autos&type=tcp&path=/#@DeltaKroneckerGithub",
+      "name": "@DeltaKroneckerGithub",
+      "type": "trojan",
+      "server": "growing-oyster.rooster465.autos",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "trojan://FH72359861@summary-firefly.rooster465.autos:443#",
+      "name": "trojan-46",
+      "type": "trojan",
+      "server": "summary-firefly.rooster465.autos",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://2022-blake3-aes-128-gcm:bM7oNtOWU6N4CgenbB+W7g==%3Aj+ddudexkbstk2A3x7+t6w==@plusgum.lol:888#🇮🇷IR",
+      "name": "🇮🇷IR",
       "type": "ss",
-      "server": "144.24.160.250",
-      "port": 59924,
+      "server": "plusgum.lol",
+      "port": 888,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:3c8tj0DA79hjfpioMZAadyGr%2FdNl4C6MTsJTNE8l8Mw%3D@144.22.150.193:59319#%F0%9F%87%A7%F0%9F%87%B7BR_11%7C414KB%2Fs%7CA004-260618",
+      "name": "🇧🇷BR_11|414KB/s|A004-260618",
+      "type": "ss",
+      "server": "144.22.150.193",
+      "port": 59319,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:8C%2BC41HLztRjvq%2Bsf6K94V2i%2B6SYGHN%2Fldg2UttNNY4%3D@129.150.48.175:56927#%F0%9F%87%B8%F0%9F%87%ACSG%20-%20udptoos.com%20%232",
+      "name": "🇸🇬SG - udptoos.com #2",
+      "type": "ss",
+      "server": "129.150.48.175",
+      "port": 56927,
       "ok": true,
       "reason": "internet_stable_real_egress",
       "checks": [
@@ -117,65 +577,48 @@
       ]
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:Cem5PpJ66yTcbs+EKD4C2cDlCjGW5YSQCWkjhY8T%2FMY=@130.61.118.77:59924#@Alirewa-564",
-      "name": "@Alirewa-564",
+      "uri": "ss://2022-blake3-chacha20-poly1305:Cem5PpJ66yTcbs%2BEKD4C2cDlCjGW5YSQCWkjhY8T%2FMY%3D@130.61.118.77:59924#%F0%9F%87%A9%F0%9F%87%AADE_79%7C163KB%2Fs%7CA004-260618",
+      "name": "🇩🇪DE_79|163KB/s|A004-260618",
       "type": "ss",
       "server": "130.61.118.77",
       "port": 59924,
-      "ok": true,
-      "reason": "internet_stable_real_egress",
-      "checks": [
-        {
-          "url": "https://www.gstatic.com/generate_204",
-          "status": 204
-        },
-        {
-          "url": "https://cp.cloudflare.com/generate_204",
-          "status": 204
-        },
-        {
-          "url": "https://www.google.com/generate_204",
-          "status": 204
-        },
-        {
-          "url": "https://www.gstatic.com/generate_204",
-          "status": 204
-        },
-        {
-          "url": "https://cp.cloudflare.com/generate_204",
-          "status": 204
-        },
-        {
-          "url": "https://www.google.com/generate_204",
-          "status": 204
-        },
-        {
-          "url": "https://www.gstatic.com/generate_204",
-          "status": 204
-        },
-        {
-          "url": "https://cp.cloudflare.com/generate_204",
-          "status": 204
-        },
-        {
-          "url": "https://www.google.com/generate_204",
-          "status": 204
-        }
-      ]
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:TWbDvdQktmGst6N2Yc2%2FL5IC9e3+kttzFJOv6doxsPw=@130.61.113.169:59924#@Alirewa-551",
-      "name": "@Alirewa-551",
-      "type": "ss",
-      "server": "130.61.113.169",
-      "port": 59924,
       "ok": false,
       "reason": "no_proxied_public_ip",
       "checks": []
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:hbEvkzR93GX0boBpZKspRggjovWge9T+z%2FUPk69rIHg=@143.47.177.25:45819#@Alirewa-566",
-      "name": "@Alirewa-566",
+      "uri": "ss://2022-blake3-chacha20-poly1305:MdImM0QejAzcmEd6BKaoy1mr4hVAIqXF7LTY1EqzTL0%3D@129.159.49.64:59319#%F0%9F%87%A7%F0%9F%87%B7BR_7%7C166KB%2Fs%7CR002-260618",
+      "name": "🇧🇷BR_7|166KB/s|R002-260618",
+      "type": "ss",
+      "server": "129.159.49.64",
+      "port": 59319,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:OYAoH%2BRfx3SHm6POtoPiRHDXs%2FhWB8AviM1xxUek39c%3D@64.181.171.113:59319#%F0%9F%87%A7%F0%9F%87%B7BR_13%7C297KB%2Fs%7CA004-260618",
+      "name": "🇧🇷BR_13|297KB/s|A004-260618",
+      "type": "ss",
+      "server": "64.181.171.113",
+      "port": 59319,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:YyppYr%2B19SFyy4WAU2OmSlq%2BNwKjR%2BL0oV2CCJ6rMAM%3D@152.70.53.76:45819#%F0%9F%87%B3%F0%9F%87%B1NL_229%7C370KB%2Fs%7CA003-260618",
+      "name": "🇳🇱NL_229|370KB/s|A003-260618",
+      "type": "ss",
+      "server": "152.70.53.76",
+      "port": 45819,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:hbEvkzR93GX0boBpZKspRggjovWge9T%2Bz%2FUPk69rIHg%3D@143.47.177.25:45819#%F0%9F%87%B3%F0%9F%87%B1NL_256%7C244KB%2Fs%7CM003-260806",
+      "name": "🇳🇱NL_256|244KB/s|M003-260806",
       "type": "ss",
       "server": "143.47.177.25",
       "port": 45819,
@@ -221,153 +664,679 @@
       ]
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:qDuLP+56cM4kraLQoKuNGS+a4A+RbcidAw7iXWtddTE=@158.101.215.37:45819#@Alirewa-563",
-      "name": "@Alirewa-563",
+      "uri": "ss://MjAyMi1ibGFrZTMtYWVzLTI1Ni1nY206WlRFeVkyVmlPR1UwTVdKaU5EY3dOMlZsWWpVM016a3pPRGxoTmpsaU5HWT06WmpZMll6QXhaV1l0TWpWa09DMDBOMlprTFdJMU5UWXROVFUyT1RBMk5EZz1AY2NjY3QuMjg0LnBpY3M6NjUwMTE#[005514",
+      "name": "[005514",
       "type": "ss",
-      "server": "158.101.215.37",
-      "port": 45819,
+      "server": "cccct.284.pics",
+      "port": 65011,
       "ok": false,
       "reason": "no_proxied_public_ip",
       "checks": []
     },
     {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0eHJhQUsxR1h2aHQ0LVZlZUVDblF4SGhhaHgxTkdlQ0AxODUuMzkuMjA0LjI3OjEwODA=#INT🌍",
+      "name": "INT🌍",
+      "type": "ss",
+      "server": "185.39.204.27",
+      "port": 1080,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3NGNmN2dzWEpnZDlaNE1BVzQyTEAxNjkuNjIuMTA5LjE0MDo4Mzg5#@Vip_Security",
+      "name": "@Vip_Security",
+      "type": "ss",
+      "server": "169.62.109.140",
+      "port": 8389,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5MzI1YTM0NS1jNzJmLTQ2MzctYThmNC0zNGY5ZWZmYjdiYTZAMjExLjkxLjE1OC40NDoyMTEwNQ==#%F0%9F%87%A8%F0%9F%87%B3_CN_%E4%B8%AD%E5%9B%BD-%3E%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD",
+      "name": "🇨🇳_CN_中国->🇺🇸_US_美国",
+      "type": "ss",
+      "server": "211.91.158.44",
+      "port": 21105,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5MzI1YTM0NS1jNzJmLTQ2MzctYThmNC0zNGY5ZWZmYjdiYTZAMjExLjkxLjE1OC40NDoyMTExNw==#%F0%9F%87%A8%F0%9F%87%B3_CN_%E4%B8%AD%E5%9B%BD-%3E%F0%9F%87%AC%F0%9F%87%A7_GB_%E8%8B%B1%E5%9B%BD",
+      "name": "🇨🇳_CN_中国->🇬🇧_GB_英国",
+      "type": "ss",
+      "server": "211.91.158.44",
+      "port": 21117,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5MzI1YTM0NS1jNzJmLTQ2MzctYThmNC0zNGY5ZWZmYjdiYTZAMjExLjkxLjE1OC40NDoyMTEyMQ==#%F0%9F%87%A8%F0%9F%87%B3_CN_%E4%B8%AD%E5%9B%BD-%3E%F0%9F%87%B8%F0%9F%87%AC_SG_%E6%96%B0%E5%8A%A0%E5%9D%A1",
+      "name": "🇨🇳_CN_中国->🇸🇬_SG_新加坡",
+      "type": "ss",
+      "server": "211.91.158.44",
+      "port": 21121,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5MzI1YTM0NS1jNzJmLTQ2MzctYThmNC0zNGY5ZWZmYjdiYTZAMjExLjkxLjE1OC40NDoyMTEyMw==#%F0%9F%87%A8%F0%9F%87%B3_CN_%E4%B8%AD%E5%9B%BD-%3E%F0%9F%87%B9%F0%9F%87%AD_TH_%E6%B3%B0%E5%9B%BD",
+      "name": "🇨🇳_CN_中国->🇹🇭_TH_泰国",
+      "type": "ss",
+      "server": "211.91.158.44",
+      "port": 21123,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5MzI1YTM0NS1jNzJmLTQ2MzctYThmNC0zNGY5ZWZmYjdiYTZAMjExLjkxLjE1OC4yNjoyMTEyMQ==#%F0%9F%87%A8%F0%9F%87%B3_CN_%E4%B8%AD%E5%9B%BD-%3E%F0%9F%87%B8%F0%9F%87%AC_SG_%E6%96%B0%E5%8A%A0%E5%9D%A1",
+      "name": "🇨🇳_CN_中国->🇸🇬_SG_新加坡",
+      "type": "ss",
+      "server": "211.91.158.26",
+      "port": 21121,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCb2cwRUxtTU05RFN4RGRRQHNlcmllcy1hMi1tZS52YXJ6ZXNoMzYwLmNvOjQ0Mw==#%F0%9F%87%A7%F0%9F%87%AD_BH_%E5%B7%B4%E6%9E%97_2",
+      "name": "🇧🇭_BH_巴林_2",
+      "type": "ss",
+      "server": "series-a2-me.varzesh360.co",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpFeUd5MTFCTWZlUC02VUhqc2dhald3QDY0LjE4OC43Ny4xNTk6ODM5MA==#hamedp71%3A%3A%F0%9F%87%B3%F0%9F%87%B1",
+      "name": "hamedp71::🇳🇱",
+      "type": "ss",
+      "server": "64.188.77.159",
+      "port": 8390,
+      "ok": true,
+      "reason": "internet_stable_real_egress",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW9AMTg1LjEwNC4xODQuNzg6ODEy#@Vip_Security",
+      "name": "@Vip_Security",
+      "type": "ss",
+      "server": "185.104.184.78",
+      "port": 812,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW9ANTEuMTU5LjMwLjYxOjgxMg#@Vip_Security",
+      "name": "@Vip_Security",
+      "type": "ss",
+      "server": "51.159.30.61",
+      "port": 812,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW9AOTMuMTg2LjIwMS4xNTg6ODA5#@Vip_Security",
+      "name": "@Vip_Security",
+      "type": "ss",
+      "server": "93.186.201.158",
+      "port": 809,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpKMUludVU2UVJUNUpPaDFtUWZralUyQDE0NC4zMS4yNDMuMjoxNjAxNQ==#%F0%9F%87%B1%F0%9F%87%B9_LT_%E7%AB%8B%E9%99%B6%E5%AE%9B",
+      "name": "🇱🇹_LT_立陶宛",
+      "type": "ss",
+      "server": "144.31.243.2",
+      "port": 16015,
+      "ok": true,
+      "reason": "internet_stable_real_egress",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpUV0c3SjFLUjVLc1BhVjVxWkkrcmlldWVLeHhhZlpTcENIQDQ1Ljc3LjIzMi4yMTM6MTU2NzU=#hamedp71%3A%3A%F0%9F%87%A6%F0%9F%87%BA",
+      "name": "hamedp71::🇦🇺",
+      "type": "ss",
+      "server": "45.77.232.213",
+      "port": 15675,
+      "ok": true,
+      "reason": "internet_stable_real_egress",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlBQGFkbWluLmMxLndlYnJhbXouY286NDQz#🌐سرور",
+      "name": "🌐سرور",
+      "type": "ss",
+      "server": "admin.c1.webramz.co",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjdklJODVUclc2bjBPR3lmcEhWUzF1QDE5My4yOS4xMzkuMjI3OjgwODA=#EPODONIOS",
+      "name": "EPODONIOS",
+      "type": "ss",
+      "server": "193.29.139.227",
+      "port": 8080,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1ZnQHNlcmllcy1hMi5zYW1hbmVoaGEuY286NDQz#%3E%3E%40yaney_01%3A%3AGB",
+      "name": ">>@yaney_01::GB",
+      "type": "ss",
+      "server": "series-a2.samanehha.co",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNBQDE5My4yOS4xMzkuMTUxOjgwODA=#EPODONIOS",
+      "name": "EPODONIOS",
+      "type": "ss",
+      "server": "193.29.139.151",
+      "port": 8080,
+      "ok": true,
+      "reason": "internet_stable_real_egress",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNBQDQ1Ljg3LjE3NS4yODo4MDgw#@Filter_breaker-LT```",
+      "name": "@Filter_breaker-LT```",
+      "type": "ss",
+      "server": "45.87.175.28",
+      "port": 8080,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNBQDgyLjM4LjMxLjM1OjgwODA=#EPODONIOS",
+      "name": "EPODONIOS",
+      "type": "ss",
+      "server": "82.38.31.35",
+      "port": 8080,
+      "ok": true,
+      "reason": "internet_stable_real_egress",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtcG9seTEzMDU6dTE3VDNCdnBZYWFpdVcyY0BzZXJpZXMtYTItbWVjLnNhbWFuZWhoYS5jbzo0NDM=#%DA%A9%D8%A7%D9%86%D8%A7%D9%84+%3A+%40V2rayNGvpni",
+      "name": "کانال+:+@V2rayNGvpni",
+      "type": "ss",
+      "server": "series-a2-mec.samanehha.co",
+      "port": 443,
+      "ok": false,
+      "reason": "mihomo_not_ready",
+      "checks": []
+    },
+    {
+      "uri": "ss://YWVzLTEyOC1nY206dXBkYXRlLXJlcXVpcmVkQHVwZGF0ZS1yZXF1aXJlZC5pbnZhbGlkOjQ0Mw#%E2%9A%A0%EF%B8%8F%20%E6%97%A7%E8%AE%A2%E9%98%85%E9%93%BE%E6%8E%A5%E5%B7%B2%E5%81%9C%E6%AD%A2%E4%BD%BF%E7%94%A8",
+      "name": "⚠️ 旧订阅链接已停止使用",
+      "type": "ss",
+      "server": "update-required.invalid",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://YWVzLTI1Ni1jZmI6N2VhZGM2ZGJlMmFlQDEyMS40Ni4yMzAuMTM4OjY1NDQz#%F0%9F%87%A8%F0%9F%87%B3_CN_%E4%B8%AD%E5%9B%BD-%3E%F0%9F%87%B0%F0%9F%87%B7_KR_%E9%9F%A9%E5%9B%BD",
+      "name": "🇨🇳_CN_中国->🇰🇷_KR_韩国",
+      "type": "ss",
+      "server": "121.46.230.138",
+      "port": 65443,
+      "ok": true,
+      "reason": "internet_stable_real_egress",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://YWVzLTI1Ni1jZmI6ODQ2MDQwMDEzMEA5Mi4zOC4xMzkuOTU6NTAwMDM#@Vip_Security",
+      "name": "@Vip_Security",
+      "type": "ss",
+      "server": "92.38.139.95",
+      "port": 50003,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://YWVzLTI1Ni1jZmI6ODQ2MDQwMDEzMEAxNDEuOTguMTE5LjE4MDo1MDAwMw#@Vip_Security",
+      "name": "@Vip_Security",
+      "type": "ss",
+      "server": "141.98.119.180",
+      "port": 50003,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://YWVzLTI1Ni1jZmI6ODQ2MDQwMDEzMEAzLjI0OS41Mi4xNDg6NTAwMDM#@Vip_Security",
+      "name": "@Vip_Security",
+      "type": "ss",
+      "server": "3.249.52.148",
+      "port": 50003,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwM0A1NC4zNy4xMzYuMjQ5Ojk4OQ#@Vip_Security",
+      "name": "@Vip_Security",
+      "type": "ss",
+      "server": "54.37.136.249",
+      "port": 989,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwM0AxOTQuNjguNDQuMjA2Ojk4OQ#@Vip_Security",
+      "name": "@Vip_Security",
+      "type": "ss",
+      "server": "194.68.44.206",
+      "port": 989,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwM0AzNy4yMzUuNTUuODQ6OTg5#@Vip_Security",
+      "name": "@Vip_Security",
+      "type": "ss",
+      "server": "37.235.55.84",
+      "port": 989,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://YWVzLTI1Ni1nY206Rm9PaUdsa0FBOXlQRUdQQDE1LjIwNC4yNDYuMTMyOjczMDc=#hamedp71%3A%3A%F0%9F%87%BA%F0%9F%87%B8",
+      "name": "hamedp71::🇺🇸",
+      "type": "ss",
+      "server": "15.204.246.132",
+      "port": 7307,
+      "ok": true,
+      "reason": "internet_stable_real_egress",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://YWVzLTI1Ni1nY206UHZ2YXc0ODY4NjdEMnc0eWN0TDJVTFRRQDE4NS4xMDguMTA2LjI0OjQwMjgy#@Vip_Security",
+      "name": "@Vip_Security",
+      "type": "ss",
+      "server": "185.108.106.24",
+      "port": 40282,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhHQDE0OS4yMDIuODIuMTcyOjcwMDI=#@Vip_Security",
+      "name": "@Vip_Security",
+      "type": "ss",
+      "server": "149.202.82.172",
+      "port": 7002,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://YWVzLTI1Ni1nY206WEtGS2wyclVMaklwNzRAMzguOTEuMTAyLjcyOjgwMDg=#@Vip_Security",
+      "name": "@Vip_Security",
+      "type": "ss",
+      "server": "38.91.102.72",
+      "port": 8008,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3QDE0Mi4yMDIuNDguNTg6MjM3Ng#@Vip_Security",
+      "name": "@Vip_Security",
+      "type": "ss",
+      "server": "142.202.48.58",
+      "port": 2376,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://YWVzLTI1Ni1nY206eDIzWjRMR2tHRGtUaFo5S2F6NERVUlFwQDE0Ni43MC4yNy4xMjo0MDA5Mw==#@Vip_Security",
+      "name": "@Vip_Security",
+      "type": "ss",
+      "server": "146.70.27.12",
+      "port": 40093,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "ss://chacha20-ietf-poly1305:rKE5OchHqTrkamzx@94.245.92.85:443#filembad-33",
+      "name": "filembad-33",
+      "type": "ss",
+      "server": "94.245.92.85",
+      "port": 443,
+      "ok": false,
+      "reason": "egress_ip_changed_during_check",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
       "uri": "hysteria2://${config.sops.placeholder.hy2_password}@cdn.example.com:443?obfs=salamander&obfs-password=${config.sops.placeholder.hy2_obfs}&sni=cdn.example.com&alpn=h3",
-      "name": "hysteria2-8",
+      "name": "hysteria2-92",
       "type": "hysteria2",
       "server": "cdn.example.com",
       "port": 443,
       "ok": false,
       "reason": "placeholder_endpoint",
-      "checks": []
-    },
-    {
-      "uri": "hysteria2://%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi@77.90.52.69:35000?sni=pichondan.com&insecure=0&obfs=salamander#DE",
-      "name": "DE",
-      "type": "hysteria2",
-      "server": "77.90.52.69",
-      "port": 35000,
-      "ok": false,
-      "reason": "mihomo_not_ready",
-      "checks": []
-    },
-    {
-      "uri": "hysteria2://%40Tel%40Configvibes@198.105.123.106:11504?insecure=1&sni=archive.ubuntu.com&obfs=salamander&obfs-password=Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------#%40Configvibes%F0%9F%87%B9%F0%9F%87%B7",
-      "name": "@Configvibes🇹🇷",
-      "type": "hysteria2",
-      "server": "198.105.123.106",
-      "port": 11504,
-      "ok": false,
-      "reason": "no_proxied_public_ip",
-      "checks": []
-    },
-    {
-      "uri": "hysteria2://%40Telegram%40Configvibes@107.181.155.107:2096?insecure=1&sni=ftp.debian.org&obfs=salamander&obfs-password=Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes#%40Configvibes%F0%9F%87%B9%F0%9F%87%B7%20%231",
-      "name": "@Configvibes🇹🇷 #1",
-      "type": "hysteria2",
-      "server": "107.181.155.107",
-      "port": 2096,
-      "ok": false,
-      "reason": "no_proxied_public_ip",
-      "checks": []
-    },
-    {
-      "uri": "hysteria2://%40Telegram%40Configvibes@45.92.219.237:8486?insecure=1&sni=ftp.debian.org&obfs=salamander&obfs-password=Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------#%40Configvibes%F0%9F%87%B9%F0%9F%87%B7%20%231",
-      "name": "@Configvibes🇹🇷 #1",
-      "type": "hysteria2",
-      "server": "45.92.219.237",
-      "port": 8486,
-      "ok": false,
-      "reason": "no_proxied_public_ip",
-      "checks": []
-    },
-    {
-      "uri": "hysteria2://%40azadi_az_inja_migzare@all-v4.dgi000.store:443?insecure=0&sni=all-v4.dgi000.store&obfs=salamander&obfs-password=@azadi_az_inja_migzare#⚡",
-      "name": "⚡",
-      "type": "hysteria2",
-      "server": "all-v4.dgi000.store",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip",
-      "checks": []
-    },
-    {
-      "uri": "hysteria2://000081e1-c607-495c-b072-195323fa1113@pipe-4854.internet-booster.com:443?headerType=none&encryption=none&sni=pipe-4854.internet-booster.com&insecure=0#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Warsaw%20%28%C5%9Ar%C3%B3dmie%C5%9Bcie%29%20%7C%20%5BBL%5D",
-      "name": "🇵🇱 Poland, Warsaw (Śródmieście) | [BL]",
-      "type": "hysteria2",
-      "server": "pipe-4854.internet-booster.com",
-      "port": 443,
-      "ok": false,
-      "reason": "mihomo_not_ready",
-      "checks": []
-    },
-    {
-      "uri": "hysteria2://0004f8b0-df8e-4f3d-866a-e3547122933d@nexiaels.688997.xyz:20757?sni=nexiaels.688997.xyz&insecure=1&obfs=salamander#RU",
-      "name": "RU",
-      "type": "hysteria2",
-      "server": "nexiaels.688997.xyz",
-      "port": 20757,
-      "ok": false,
-      "reason": "mihomo_not_ready",
-      "checks": []
-    },
-    {
-      "uri": "hysteria2://00c0c6fc-2958-4395-91c3-7e61422f671f@svetzen.nksconnect.xyz:8443?headerType=none&encryption=none&sni=svetzen.nksconnect.xyz&insecure=0#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
-      "name": "🇫🇮 Finland, Helsinki | [BL]",
-      "type": "hysteria2",
-      "server": "svetzen.nksconnect.xyz",
-      "port": 8443,
-      "ok": false,
-      "reason": "mihomo_not_ready",
-      "checks": []
-    },
-    {
-      "uri": "hysteria2://0147bb62-7972-40ee-a86a-409e0a0fb838@ake.fontanvpn.com:443?sni=ake.fontanvpn.com#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
-      "name": "🇬🇧 United Kingdom, London | [BL]",
-      "type": "hysteria2",
-      "server": "ake.fontanvpn.com",
-      "port": 443,
-      "ok": false,
-      "reason": "mihomo_not_ready",
-      "checks": []
-    },
-    {
-      "uri": "hysteria2://0147bb62-7972-40ee-a86a-409e0a0fb838@cheat.fontanvpn.com:443?sni=cheat.fontanvpn.com#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
-      "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
-      "type": "hysteria2",
-      "server": "cheat.fontanvpn.com",
-      "port": 443,
-      "ok": false,
-      "reason": "mihomo_not_ready",
-      "checks": []
-    },
-    {
-      "uri": "hysteria2://0147bb62-7972-40ee-a86a-409e0a0fb838@gogo.fontanvpn.com:443?sni=gogo.fontanvpn.com#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D",
-      "name": "🇵🇱 Poland | 🌐 [*CIDR]",
-      "type": "hysteria2",
-      "server": "gogo.fontanvpn.com",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip",
-      "checks": []
-    },
-    {
-      "uri": "hysteria2://0147bb62-7972-40ee-a86a-409e0a0fb838@kisofer.fontanvpn.com:443?sni=kisofer.fontanvpn.com#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Eygelshoven%20%7C%20%5BBL%5D",
-      "name": "🇳🇱 The Netherlands, Eygelshoven | [BL]",
-      "type": "hysteria2",
-      "server": "kisofer.fontanvpn.com",
-      "port": 443,
-      "ok": false,
-      "reason": "mihomo_not_ready",
-      "checks": []
-    },
-    {
-      "uri": "hysteria2://0147bb62-7972-40ee-a86a-409e0a0fb838@koin.fontanvpn.com:443?sni=koin.fontanvpn.com#%F0%9F%87%B0%F0%9F%87%BF%20Kazakhstan%2C%20Almaty%20%7C%20%5BBL%5D",
-      "name": "🇰🇿 Kazakhstan, Almaty | [BL]",
-      "type": "hysteria2",
-      "server": "koin.fontanvpn.com",
-      "port": 443,
-      "ok": false,
-      "reason": "mihomo_not_ready",
       "checks": []
     },
     {
@@ -381,30 +1350,207 @@
       "checks": []
     },
     {
-      "uri": "hysteria2://0147bb62-7972-40ee-a86a-409e0a0fb838@tw1.tokervpn.ru:443?sni=tw1.tokervpn.ru#%F0%9F%87%AE%F0%9F%87%B9%20Italy%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D",
-      "name": "🇮🇹 Italy | 🌐 [*CIDR]",
+      "uri": "hysteria2://042a1881-44e4-4781-bd40-bf75164faf4f@usp.noesissite.ru:443/?sni=usp.noesissite.ru#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Draper%20%7C%20%5BBL%5D",
+      "name": "🇺🇸 United States, Draper | [BL]",
       "type": "hysteria2",
-      "server": "tw1.tokervpn.ru",
+      "server": "usp.noesissite.ru",
+      "port": 443,
+      "ok": false,
+      "reason": "mihomo_not_ready",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://0_Oms89nH82l_Ki813_Nxmw81_Rbt_Jq190Kl_m@167.150.100.133:8443?headerType=none&encryption=none&sni=grape-power-sg.roxa.org&insecure=0#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%7C%20%5BBL%5D",
+      "name": "🇸🇬 Singapore, Singapore | [BL]",
+      "type": "hysteria2",
+      "server": "167.150.100.133",
+      "port": 8443,
+      "ok": false,
+      "reason": "mihomo_not_ready",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://0e3ec08f-840e-46f8-b11e-3a5decbb97b6@united.hysteria.ltd:5443?headerType=none&encryption=none&sni=united.hysteria.ltd&insecure=0#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Buffalo%20%7C%20%5BBL%5D",
+      "name": "🇺🇸 United States, Buffalo | [BL]",
+      "type": "hysteria2",
+      "server": "united.hysteria.ltd",
+      "port": 5443,
+      "ok": false,
+      "reason": "mihomo_not_ready",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://1045aedf-053c-4585-875d-e2fc3f3ea6dd@172.252.236.213:56704/?sni=dxobg4azmk.gafnode.sbs#Marseille-GetAFreeNode",
+      "name": "Marseille-GetAFreeNode",
+      "type": "hysteria2",
+      "server": "172.252.236.213",
+      "port": 56704,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://10f02d23-1d74-4b6e-b830-815be053281d@jp06.459292.xyz:8443/?insecure=1&sni=localhost#%E6%97%A5%E6%9C%AC03aws",
+      "name": "日本03aws",
+      "type": "hysteria2",
+      "server": "jp06.459292.xyz",
+      "port": 8443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://10f02d23-1d74-4b6e-b830-815be053281d@tw1.459292.xyz:8443/?insecure=1&sni=tw1.459292.xyz#hy2%E5%8F%B0%E6%B9%BE01",
+      "name": "hy2台湾01",
+      "type": "hysteria2",
+      "server": "tw1.459292.xyz",
+      "port": 8443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://13259e0a-4850-4a12-8850-4ad7ded17770@91.185.83.48:8450?sni=testing6.nimarko.org#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%5B%2ACIDR%5D",
+      "name": "🇳🇱 The Netherlands [*CIDR]",
+      "type": "hysteria2",
+      "server": "91.185.83.48",
+      "port": 8450,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://1427eb10-7529-4d38-a6a2-01b337868b37@sg2.xiaoliyu.cyou:1935?insecure=1&sni=sg2.xiaoliyu.cyou#%F0%9F%87%B8%F0%9F%87%ACSG_49%7C119KB%2Fs%7CR002-260618",
+      "name": "🇸🇬SG_49|119KB/s|R002-260618",
+      "type": "hysteria2",
+      "server": "sg2.xiaoliyu.cyou",
+      "port": 1935,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://16ab4d4a-fd81-4535-9b7b-346677226ce8@olp.crsmaps.com:443?sni=127.0.0.1#%F0%9F%87%A7%F0%9F%87%B7BR_6%7C219KB%2Fs%7CA004-260618",
+      "name": "🇧🇷BR_6|219KB/s|A004-260618",
+      "type": "hysteria2",
+      "server": "olp.crsmaps.com",
       "port": 443,
       "ok": false,
       "reason": "no_proxied_public_ip",
       "checks": []
     },
     {
-      "uri": "hysteria2://0147bb62-7972-40ee-a86a-409e0a0fb838@twru1.fontanvpn.com:443?sni=twru1.fontanvpn.com#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D",
-      "name": "🇵🇱 Poland | 🌐 [*CIDR]",
+      "uri": "hysteria2://1aa84841-8701-4700-ad46-2923dc2900d0@hyfnjp03.459292.xyz:8443/?insecure=1&sni=localhost#%E6%97%A5%E6%9C%AC04aws",
+      "name": "日本04aws",
       "type": "hysteria2",
-      "server": "twru1.fontanvpn.com",
-      "port": 443,
+      "server": "hyfnjp03.459292.xyz",
+      "port": 8443,
       "ok": false,
       "reason": "no_proxied_public_ip",
       "checks": []
     },
     {
-      "uri": "hysteria2://023c40e3394dd2c2f1b5d12556db2a6f@38.180.190.215:50160?insecure=1&sni=www.bing.com#%F0%9F%87%B8%F0%9F%87%ACSG_4%7C1.1MB%2Fs%20%7C%20%E6%9B%B4%E5%A4%9A%E8%8A%82%E7%82%B9%3A%20https%3A%2F%2Ft.me%2Fbyxiaoxi",
-      "name": "🇸🇬SG_4|1.1MB/s | 更多节点: https://t.me/byxiaoxi",
+      "uri": "hysteria2://1aa84841-8701-4700-ad46-2923dc2900d0@tw06.459292.xyz:30001/?insecure=1&sni=tw06.459292.xyz#hy2%E5%8F%B0%E6%B9%BE02",
+      "name": "hy2台湾02",
       "type": "hysteria2",
-      "server": "38.180.190.215",
+      "server": "tw06.459292.xyz",
+      "port": 30001,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://1c74e77e-2a82-4932-8a08-429951c0df7c@1jp003.459292.xyz:30001/?insecure=1&sni=localhost#%E6%97%A5%E6%9C%AC01aws",
+      "name": "日本01aws",
+      "type": "hysteria2",
+      "server": "1jp003.459292.xyz",
+      "port": 30001,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://1c74e77e-2a82-4932-8a08-429951c0df7c@sg04.459292.xyz:8443/?insecure=1&sni=localhost#%E6%96%B0%E5%8A%A0%E5%9D%A104aws",
+      "name": "新加坡04aws",
+      "type": "hysteria2",
+      "server": "sg04.459292.xyz",
+      "port": 8443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://1c74e77e-2a82-4932-8a08-429951c0df7c@tw5.459921.xyz:30001/?insecure=1&sni=localhost#hy2%E5%8F%B0%E6%B9%BE03",
+      "name": "hy2台湾03",
+      "type": "hysteria2",
+      "server": "tw5.459921.xyz",
+      "port": 30001,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://1f619326-cd93-4d6b-aebe-e0b5f8831d02@79.137.205.35:10808/?sni=nl7.unlockvpn.online#",
+      "name": "hysteria2-108",
+      "type": "hysteria2",
+      "server": "79.137.205.35",
+      "port": 10808,
+      "ok": true,
+      "reason": "internet_stable_real_egress",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "hysteria2://22d891f5-ad85-4824-b0b8-e30cf3d37eb5@els1.mangshe.xyz:2056?insecure=1&security=tls&sni=els1.mangshe.xyz#%E4%BF%84%E7%BD%97%E6%96%AF+%E6%96%B0%E8%A5%BF%E4%BC%AF%E5%88%A9%E4%BA%9Ajusthost",
+      "name": "俄罗斯+新西伯利亚justhost",
+      "type": "hysteria2",
+      "server": "els1.mangshe.xyz",
+      "port": 2056,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://2544ad8a388f1b7e6d1c878f5a7d121c@213.35.114.141:50160?insecure=1&sni=www.bing.com#%F0%9F%87%B8%F0%9F%87%ACSG_87%7C284KB%2Fs%7CA004-260618",
+      "name": "🇸🇬SG_87|284KB/s|A004-260618",
+      "type": "hysteria2",
+      "server": "213.35.114.141",
       "port": 50160,
       "ok": true,
       "reason": "internet_stable_real_egress",
@@ -448,8 +1594,419 @@
       ]
     },
     {
-      "uri": "hysteria2://02bb46a8-3202-495c-a59d-95c60c4b93b2@tn.tmn141246.ru:443?sni=live.ok.ru&amp;insecure=1#%F0%9F%87%AE%F0%9F%87%B7%20t.me/rghoddoosi%20%D8%B1%D8%B3%D9%88%D9%84%20%D9%82%D8%AF%D9%88%D8%B3%DB%8C%20-%2082",
-      "name": "🇮🇷 t.me/rghoddoosi رسول قدوسی - 82",
+      "uri": "hysteria2://29794dae-06ca-4b62-94f2-220b5858d39b@kr-icn-dc12-001.node.valaccess.com:443/?sni=na.node.valaccess.com&insecure=0&obfs=salamander&obfs-password=TB3NFWHCbuXajqux&mport=20000-40000#KR-ICN-DC12-001%5BUDP%5D",
+      "name": "KR-ICN-DC12-001[UDP]",
+      "type": "hysteria2",
+      "server": "kr-icn-dc12-001.node.valaccess.com",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://2996a658-be2d-412c-9ba3-5b73d65a3df6@78.159.250.230:8443?sni=quic.tyr-agentstvo.tech#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D%20Beeline",
+      "name": "🇵🇱 Poland | 🌐 [*CIDR] Beeline",
+      "type": "hysteria2",
+      "server": "78.159.250.230",
+      "port": 8443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://2a9b85bd-27cc-4e3b-b77d-54dbe5bc23af@aws-linkhy2.liangxin1.xyz:443?insecure=1&sni=www.tesla.cn#%E6%9C%AA%E5%91%BD%E5%90%8D%20%231",
+      "name": "未命名 #1",
+      "type": "hysteria2",
+      "server": "aws-linkhy2.liangxin1.xyz",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://2ef4cf10-34df-4c0f-9d82-bf6ca9e45025@node-degame.bangboonet.ru:443/?sni=node-degame.bangboonet.ru#%F0%9F%87%B0%F0%9F%87%B7%20South%20Korea%2C%20Cheonan-si%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇰🇷 South Korea, Cheonan-si | 🌐 | [BL]",
+      "type": "hysteria2",
+      "server": "node-degame.bangboonet.ru",
+      "port": 443,
+      "ok": false,
+      "reason": "mihomo_not_ready",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://37d487cd-ca11-4658-9d76-ab0e2489b62c@ulyanovsk.gosgenarchive.com:8443?fm=%257B%250A%2520%2520%2522finalmask%2522%2520%3A%2520%257B%250A%2520%2520%2520%2520%2522udp%2522%2520%3A%2520%255B%250A%2520%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2522settings%2522%2520%3A%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2522packetSize%2522%2520%3A%2520%2522512-1200%2522%2C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2522password%2522%2520%3A%2520%2522x93vL5mP4nC72H3w%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%2C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2522type%2522%2520%3A%2520%2522salamander%2522%250A%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%255D%2C%250A%2520%2520%2520%2520%2522quicParams%2522%2520%3A%2520%257B%250A%2520%2520%2520%2520%2520%2520%2522debug%2522%2520%3A%2520false%2C%250A%2520%2520%2520%2520%2520%2520%2522congestion%2522%2520%3A%2520%2522bbr%2522%250A%2520%2520%2520%2520%257D%250A%2520%2520%257D%250A%257D&type=hysteria&security=tls&sni=ulyanovsk.gosgenarchive.com&alpn=h3&allowInsecure=0#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%2C%20Stockholm%20%7C%20%5BBL%5D",
+      "name": "🇸🇪 Sweden, Stockholm | [BL]",
+      "type": "hysteria2",
+      "server": "ulyanovsk.gosgenarchive.com",
+      "port": 8443,
+      "ok": false,
+      "reason": "mihomo_not_ready",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://3a2f9f47-dbd7-473d-98f9-4e918a7e1e54@hyfnjp03.459292.xyz:8443/?insecure=1&sni=localhost#%E6%97%A5%E6%9C%AC04aws",
+      "name": "日本04aws",
+      "type": "hysteria2",
+      "server": "hyfnjp03.459292.xyz",
+      "port": 8443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://3a2f9f47-dbd7-473d-98f9-4e918a7e1e54@tw06.459292.xyz:30001/?insecure=1&sni=tw06.459292.xyz#hy2%E5%8F%B0%E6%B9%BE02",
+      "name": "hy2台湾02",
+      "type": "hysteria2",
+      "server": "tw06.459292.xyz",
+      "port": 30001,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://3b8c82ed-fe66-472d-915e-034ccb57103f@us.frkn.org:443?insecure=false&up-mbps=0#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Westbury%20%7C%20%5BBL%5D",
+      "name": "🇺🇸 United States, Westbury | [BL]",
+      "type": "hysteria2",
+      "server": "us.frkn.org",
+      "port": 443,
+      "ok": false,
+      "reason": "mihomo_not_ready",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://425e9e31-b017-4e32-bbd3-656473466d5e@latvia.koalaexpress.ru:2443#%F0%9F%87%B1%F0%9F%87%B9%20Lithuania%2C%20%C5%A0iauliai%20%7C%20%5BBL%5D",
+      "name": "🇱🇹 Lithuania, Šiauliai | [BL]",
+      "type": "hysteria2",
+      "server": "latvia.koalaexpress.ru",
+      "port": 2443,
+      "ok": false,
+      "reason": "mihomo_not_ready",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://48139d20-931e-4e2b-83f5-8ea97d226c18@aestheticperforator.ru:8443?sni=aestheticperforator.ru&obfs-password=48139d20-931e-4e2b-83f5-8ea97d226c18#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%AC%F0%9F%87%A7%20%F0%9F%87%B8%F0%9F%87%AA%20%7C%20%5BBL%5D",
+      "name": "🌐 Anycast-IP | 🇬🇧 🇸🇪 | [BL]",
+      "type": "hysteria2",
+      "server": "aestheticperforator.ru",
+      "port": 8443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://52816135-d3bc-46bc-a915-09886a2e2b2e@172.252.236.213:56704/?sni=dxobg4azmk.gafnode.sbs#Marseille-GetAFreeNode",
+      "name": "Marseille-GetAFreeNode",
+      "type": "hysteria2",
+      "server": "172.252.236.213",
+      "port": 56704,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://53c76647-14d1-4df5-99cb-be99ad2e6bd9@de120.mechvpn.online:443?alpn=h3&sni=de120.mechvpn.online#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
+      "type": "hysteria2",
+      "server": "de120.mechvpn.online",
+      "port": 443,
+      "ok": false,
+      "reason": "mihomo_not_ready",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://53c76647-14d1-4df5-99cb-be99ad2e6bd9@nl174.mechvpn.online:443#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]",
+      "type": "hysteria2",
+      "server": "nl174.mechvpn.online",
+      "port": 443,
+      "ok": false,
+      "reason": "mihomo_not_ready",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://5424bc48-fd4a-4a17-b576-973423c3c33b@yjjdels.yunjijd.xyz:26123?insecure=1&sni=/V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS#Telegram%20%40v2rayng_fars%20%232",
+      "name": "Telegram @v2rayng_fars #2",
+      "type": "hysteria2",
+      "server": "yjjdels.yunjijd.xyz",
+      "port": 26123,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://55b71f97202647049ce999646de57c50@f1b.wareznet.ru:8444?alpn=h3&sni=f1b.wareznet.ru#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
+      "name": "🇬🇧 United Kingdom, London | [BL]",
+      "type": "hysteria2",
+      "server": "f1b.wareznet.ru",
+      "port": 8444,
+      "ok": false,
+      "reason": "mihomo_not_ready",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://57a9cf7d-bb6c-414e-97be-1985f7123c61@telenl.zapret-tg.ru:443#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Eygelshoven%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Eygelshoven | [BL]",
+      "type": "hysteria2",
+      "server": "telenl.zapret-tg.ru",
+      "port": 443,
+      "ok": false,
+      "reason": "mihomo_not_ready",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://5d110f18-5a37-4db3-8cf6-f0bced38a1ae@89.185.27.133:443?insecure=1&sni=www.bing.com#2%20%231",
+      "name": "2 #1",
+      "type": "hysteria2",
+      "server": "89.185.27.133",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://621187c3-859d-4682-aac1-cd4500f9690e@br.saigonfly.com:17383?insecure=0#%20%40game_file2020%20%233",
+      "name": " @game_file2020 #3",
+      "type": "hysteria2",
+      "server": "br.saigonfly.com",
+      "port": 17383,
+      "ok": false,
+      "reason": "mihomo_not_ready",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://621187c3-859d-4682-aac1-cd4500f9690e@us.saigonfly.com:17109?insecure=0#%20%40game_file2020%20%2319",
+      "name": " @game_file2020 #19",
+      "type": "hysteria2",
+      "server": "us.saigonfly.com",
+      "port": 17109,
+      "ok": false,
+      "reason": "mihomo_not_ready",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://67a1454f-5a95-4e30-9723-1ffcbe7e97f9@107.181.155.125:443/?sni=taga9.api3-max.ru#",
+      "name": "hysteria2-130",
+      "type": "hysteria2",
+      "server": "107.181.155.125",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://67a1454f-5a95-4e30-9723-1ffcbe7e97f9@taga4.api3-max.ru:443?insecure=0&sni=taga4.api3-max.ru#GB_1%7C1.9MB%2Fs",
+      "name": "GB_1|1.9MB/s",
+      "type": "hysteria2",
+      "server": "taga4.api3-max.ru",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://67a1454f-5a95-4e30-9723-1ffcbe7e97f9@wopa9.api3-max.ru:443?type=hysteria&mport=&security=tls&sni=wopa9.api3-max.ru&alpn=h3&fp=chrome&allowInsecure=0&echfq=none&descriptions=%D0%A1%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D1%83%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82%D1%8369#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20Slough%20%7C%20%5BBL%5D",
+      "name": "🇬🇧 United Kingdom, Slough | [BL]",
+      "type": "hysteria2",
+      "server": "wopa9.api3-max.ru",
+      "port": 443,
+      "ok": false,
+      "reason": "mihomo_not_ready",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://6a3fe9d0-0d68-4f29-ae99-5771d4217a45@de1.xiaoliyu.cyou:4433?insecure=1&sni=127.0.0.1#%E2%9D%93Other_83%7C101KB%2Fs%7CP001-260618",
+      "name": "❓Other_83|101KB/s|P001-260618",
+      "type": "hysteria2",
+      "server": "de1.xiaoliyu.cyou",
+      "port": 4433,
+      "ok": false,
+      "reason": "egress_ip_changed_during_check",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "hysteria2://6b5a9259-c7de-45f0-b4de-e89db7850d0c@dbb53608.459921.xyz:8443/?insecure=1&sni=localhost#%E7%BE%8E%E5%9B%BD01aws",
+      "name": "美国01aws",
+      "type": "hysteria2",
+      "server": "dbb53608.459921.xyz",
+      "port": 8443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://6b5a9259-c7de-45f0-b4de-e89db7850d0c@sg21.459921.xyz:8080/?insecure=1&sni=sg21.459921.xyz#%E6%96%B0%E5%8A%A0%E5%9D%A113aws",
+      "name": "新加坡13aws",
+      "type": "hysteria2",
+      "server": "sg21.459921.xyz",
+      "port": 8080,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://6c077487-06af-4fb1-9e46-d485d98f0a31@45.88.43.116:52454?insecure=1&sni=www.bing.com#%F0%9F%87%AF%F0%9F%87%B5JP_2%7C137KB%2Fs",
+      "name": "🇯🇵JP_2|137KB/s",
+      "type": "hysteria2",
+      "server": "45.88.43.116",
+      "port": 52454,
+      "ok": true,
+      "reason": "internet_stable_real_egress",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "hysteria2://71cada65-d23e-418c-88e4-a06188d14689@31.76.113.32:443/?sni=it-one.quiet-rogue.site#%F0%9F%87%AE%F0%9F%87%B9%20Italy%2C%20Milan%20%7C%20%5BBL%5D",
+      "name": "🇮🇹 Italy, Milan | [BL]",
+      "type": "hysteria2",
+      "server": "31.76.113.32",
+      "port": 443,
+      "ok": false,
+      "reason": "mihomo_not_ready",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://76713d07-5a6b-49c2-abd8-bc450a2fa7fc@138.124.68.188:443/?sni=usa1.spectrumproxy.shop#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20New%20York%20%7C%20%5BBL%5D",
+      "name": "🇺🇸 United States, New York | [BL]",
+      "type": "hysteria2",
+      "server": "138.124.68.188",
+      "port": 443,
+      "ok": false,
+      "reason": "mihomo_not_ready",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://7efc901f-7862-40e8-902b-4bfad8f8ca88@213.165.40.175.sslip.io:8444#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%AC%F0%9F%87%A7%20%F0%9F%87%B3%F0%9F%87%B1%20%7C%20%5BBL%5D",
+      "name": "🌐 Anycast-IP | 🇬🇧 🇳🇱 | [BL]",
+      "type": "hysteria2",
+      "server": "213.165.40.175.sslip.io",
+      "port": 8444,
+      "ok": true,
+      "reason": "internet_stable_real_egress",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "hysteria2://8569e507-8ef7-481d-9108-6bc7f040c2ff@cns.dodostarscoffee.ru:9443#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%5B%2ACIDR%5D",
+      "name": "🇩🇪 Germany [*CIDR]",
+      "type": "hysteria2",
+      "server": "cns.dodostarscoffee.ru",
+      "port": 9443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://88c6d0d5-00e1-45ec-9b2d-f116eb54767e@tn.tmn141246.ru:443?sni=live.ok.ru#0677",
+      "name": "0677",
       "type": "hysteria2",
       "server": "tn.tmn141246.ru",
       "port": 443,
@@ -458,13 +2015,93 @@
       "checks": []
     },
     {
-      "uri": "hysteria2://03114279-e38a-4d27-82a9-6a69dbb7f168@tn.tmn141246.ru:443?sni=live.ok.ru#4212",
-      "name": "4212",
+      "uri": "hysteria2://8bc63720-5ec8-45b5-b6a6-9a21ffb490e8@argg3.auragg.org:443?security=tls&insecure=0&sni=argg3.auragg.org#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
+      "name": "🇫🇷 France, Paris | [BL]",
       "type": "hysteria2",
-      "server": "tn.tmn141246.ru",
+      "server": "argg3.auragg.org",
+      "port": 443,
+      "ok": false,
+      "reason": "mihomo_not_ready",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://8d9ddfb4-7583-45b3-acf1-5343db385a38@d3e887dc.459292.xyz:8443/?insecure=1&sni=localhost#%E6%97%A5%E6%9C%AC11aws",
+      "name": "日本11aws",
+      "type": "hysteria2",
+      "server": "d3e887dc.459292.xyz",
+      "port": 8443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://8d9ddfb4-7583-45b3-acf1-5343db385a38@sg11.459921.xyz:8080/?insecure=1&sni=sg11.459921.xyz#%E6%96%B0%E5%8A%A0%E5%9D%A111aws",
+      "name": "新加坡11aws",
+      "type": "hysteria2",
+      "server": "sg11.459921.xyz",
+      "port": 8080,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://8e85752d-c04f-427d-9d70-b10d144c8492@31.177.111.213:443?sni=hy222.routeon.pro#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%5B%2ACIDR%5D",
+      "name": "🇳🇱 The Netherlands [*CIDR]",
+      "type": "hysteria2",
+      "server": "31.177.111.213",
       "port": 443,
       "ok": false,
       "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://8ffbff3b-12c9-4d49-af97-93a8d6cb4edb@lv1.sunconnecthub.com:443?headerType=none&encryption=none&sni=lv1.sunconnecthub.com&insecure=0#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Warsaw%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇵🇱 Poland, Warsaw | 🌐 | [BL]",
+      "type": "hysteria2",
+      "server": "lv1.sunconnecthub.com",
+      "port": 443,
+      "ok": false,
+      "reason": "mihomo_not_ready",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://942b9cb8-92fa-46ac-ae91-f69c8234434b@185.126.255.78:49720/?sni=dxobg4azmk.gafnode.sbs#Kyiv-GetAFreeNode",
+      "name": "Kyiv-GetAFreeNode",
+      "type": "hysteria2",
+      "server": "185.126.255.78",
+      "port": 49720,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://97a63a10-8e25-4425-883e-f2bc31c3f970@tw1.tokervpn.ru:443?sni=tw1.tokervpn.ru#%F0%9F%87%AE%F0%9F%87%B9%20Italy%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D",
+      "name": "🇮🇹 Italy | 🌐 [*CIDR]",
+      "type": "hysteria2",
+      "server": "tw1.tokervpn.ru",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z@162.249.124.104:8080?sni=mercedes-grape.yyuyy.com#%F0%9F%87%B9%F0%9F%87%B7%20Turkey%2C%20Ankara%20%7C%20%5BBL%5D",
+      "name": "🇹🇷 Turkey, Ankara | [BL]",
+      "type": "hysteria2",
+      "server": "162.249.124.104",
+      "port": 8080,
+      "ok": false,
+      "reason": "mihomo_not_ready",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z@76.164.202.215:8443?sni=mercedes-grape.yyuyy.com#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
+      "name": "🇫🇷 France, Paris | [BL]",
+      "type": "hysteria2",
+      "server": "76.164.202.215",
+      "port": 8443,
+      "ok": false,
+      "reason": "mihomo_not_ready",
       "checks": []
     }
   ]
