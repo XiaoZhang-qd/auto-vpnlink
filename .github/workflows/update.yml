@@ -17,9 +17,9 @@ concurrency:
   cancel-in-progress: true
 jobs:
   scan:
-    name: Scan and publish sources
+    name: Scan, health-check and publish sources
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -36,41 +36,55 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scanner.py
-      - name: Convert verified nodes to client configs
+      - name: Convert discovered nodes to Clash config
         run: python converter.py
+      - name: Install latest Mihomo for real protocol checks
+        run: |
+          set -euo pipefail
+          mkdir -p .bin
+          API='https://api.github.com/repos/MetaCubeX/mihomo/releases/latest'
+          URL=$(curl -fsSL "$API" | python -c "import json,sys; d=json.load(sys.stdin); print(next((a['browser_download_url'] for a in d.get('assets',[]) if 'linux-amd64' in a['name'] and a['name'].endswith('.gz')), ''))")
+          test -n "$URL"
+          echo "Downloading $URL"
+          curl -fL --retry 3 "$URL" -o .bin/mihomo.gz
+          gzip -df .bin/mihomo.gz
+          mv .bin/mihomo* .bin/mihomo
+          chmod +x .bin/mihomo
+          .bin/mihomo -v
+      - name: Run real protocol-level health checks
+        env:
+          MIHOMO_BIN: ${{ github.workspace }}/.bin/mihomo
+          HEALTHCHECK_MAX: '150'
+          HEALTHCHECK_TIMEOUT: '12'
+        run: python healthcheck.py
+      - name: Publish only protocol-verified nodes
+        run: |
+          set -e
+          if [ -s output/health-checked-nodes.txt ]; then
+            cp output/health-checked-nodes.txt output/verified-nodes.txt
+            python converter.py
+          else
+            echo 'No protocol-verified nodes; refusing to replace the previous published node set.'
+            exit 1
+          fi
       - name: Show generated files and validate counts
         run: |
           set -e
           echo '=== Generated output ==='
           find output -maxdepth 2 -type f -print | sort
-          echo '=== Converter counts ==='
-          # converter.py prints its summary; this step validates the actual files.
-          node_count=$(grep -cve '^\s*$' output/nodes.txt 2>/dev/null || true)
-          verified_count=$(grep -cve '^\s*$' output/verified-nodes.txt 2>/dev/null || true)
-          shadowrocket_count=$(grep -cve '^\s*$' output/shadowrocket.txt 2>/dev/null || true)
-          echo "verified-nodes.txt: ${verified_count}"
-          echo "nodes.txt: ${node_count}"
-          echo "shadowrocket.txt: ${shadowrocket_count}"
-          echo '=== Clash proxy count ==='
-          # yaml.safe_dump emits each proxy as "- name:" under the proxies list.
-          # Count only entries inside the proxies section, not proxy-group entries.
-          clash_count=$(python - <<'PY'
-          import yaml
-          from pathlib import Path
-          p=yaml.safe_load(Path('output/clash.yaml').read_text(encoding='utf-8')) or {}
-          proxies=p.get('proxies') or []
-          print(len(proxies))
-          PY
-          )
-          echo "clash.yaml proxies: ${clash_count}"
-          echo '=== sing-box / Xray counts ==='
+          echo '=== Health check ==='
+          cat output/healthcheck.json
+          echo '=== Counts ==='
           python - <<'PY'
-          import json
+          import json, yaml
           from pathlib import Path
-          sb=json.loads(Path('output/sing-box.json').read_text(encoding='utf-8'))
-          xr=json.loads(Path('output/xray-outbounds.json').read_text(encoding='utf-8'))
-          print('sing-box outbounds:', len(sb.get('outbounds', [])))
-          print('xray outbounds:', len(xr.get('outbounds', [])))
+          c=yaml.safe_load(Path('output/clash.yaml').read_text(encoding='utf-8')) or {}
+          h=json.loads(Path('output/healthcheck.json').read_text(encoding='utf-8'))
+          print('health-tested:', h.get('tested'))
+          print('health-healthy:', h.get('healthy'))
+          print('health-failed:', h.get('failed'))
+          print('clash proxies:', len(c.get('proxies') or []))
+          assert len(c.get('proxies') or []) == h.get('healthy'), 'published Clash count does not match health-check count'
           PY
       - name: Commit generated results safely
         run: |
@@ -87,6 +101,6 @@ jobs:
           if git diff --cached --quiet; then
             echo 'No output changes.'
           else
-            git commit -m 'auto: update VPN sources'
+            git commit -m 'auto: publish protocol-verified VPN sources'
             git push origin HEAD:main
           fi
