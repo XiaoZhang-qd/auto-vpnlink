@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
-"""Real, conservative protocol-level internet health check.
+"""Conservative real-internet health check for publishable proxy nodes.
 
-A TCP connect is not enough. Each candidate is converted to its exact
-Clash/Mihomo proxy configuration and Mihomo proxies real HTTPS requests.
-A node is published only after it passes a multi-endpoint check and a
-second independent stability check. TCP proxy protocols are preferred;
-QUIC-only protocols must pass the same stricter test.
+A node is publishable only when Mihomo can repeatedly proxy real HTTPS traffic
+and the traffic exits through a different public IP than the GitHub runner.
+This prevents cached/synthetic 204 responses and transient free-node passes.
 """
-import json, os, socket, subprocess, tempfile, time, hashlib
+import hashlib, ipaddress, json, os, socket, subprocess, tempfile, time
 from pathlib import Path
 import requests, yaml
 import converter
@@ -17,155 +15,155 @@ OUT=ROOT/'output'
 INPUT=OUT/'verified-nodes.txt'
 HEALTHY=OUT/'health-checked-nodes.txt'
 REPORT=OUT/'healthcheck.json'
-MAX=int(os.getenv('HEALTHCHECK_MAX','150'))
+MAX=int(os.getenv('HEALTHCHECK_MAX','120'))
 TIMEOUT=int(os.getenv('HEALTHCHECK_TIMEOUT','12'))
-MIHOMO=os.getenv('MIHOMO_BIN',str(ROOT/'mihomo'))
+MIHOMO=os.getenv('MIHOMO_BIN',str(ROOT/'.bin/mihomo'))
 TEST_URLS=[x.strip() for x in os.getenv('HEALTHCHECK_URLS','https://www.gstatic.com/generate_204,https://cp.cloudflare.com/generate_204,https://www.google.com/generate_204').split(',') if x.strip()]
-MIN_FIRST=int(os.getenv('HEALTHCHECK_MIN_FIRST','2'))
-MIN_SECOND=int(os.getenv('HEALTHCHECK_MIN_SECOND','2'))
+IP_URLS=['https://api.ipify.org','https://ifconfig.me/ip']
+ROUNDS=int(os.getenv('HEALTHCHECK_ROUNDS','3'))
+ROUND_DELAY=float(os.getenv('HEALTHCHECK_ROUND_DELAY','2'))
+MIN_PUBLIC_TESTS=int(os.getenv('HEALTHCHECK_MIN_PUBLIC_TESTS','2'))
 START_PORT=17890
 
-# TCP-capable protocols are preferred for Windows desktop clients. UDP/QUIC
-# protocols are still allowed, but only after the stricter two-round test.
-TCP_TYPES={'ss','vless','vmess','trojan'}
-UDP_TYPES={'hysteria2','hy2','tuic'}
+PLACEHOLDER_HOSTS={'example.com','example.org','example.net','localhost','localhost.localdomain','invalid','test','test.local'}
+PLACEHOLDER_WORDS=('placeholder','example','changeme','your-server','your_server','server_ip','<server>','${','{{','}}')
+
 
 def free_port():
-    for p in range(START_PORT,START_PORT+400):
+    for p in range(START_PORT,START_PORT+500):
         with socket.socket() as s:
             try:
                 s.bind(('127.0.0.1',p)); return p
-            except OSError:
-                pass
+            except OSError: pass
     raise RuntimeError('no free local port')
+
 
 def stop(proc):
     if not proc:return
-    try:
-        proc.terminate(); proc.wait(timeout=3)
+    try: proc.terminate(); proc.wait(timeout=3)
     except Exception:
         try: proc.kill(); proc.wait(timeout=2)
         except Exception: pass
 
-def request_round(port, urls):
-    passed=[]
-    for url in urls:
+
+def is_public_ip(value):
+    try:
+        ip=ipaddress.ip_address(value.strip())
+        return not (ip.is_private or ip.is_loopback or ip.is_reserved or ip.is_link_local or ip.is_multicast)
+    except Exception:
+        return False
+
+
+def direct_public_ip():
+    for url in IP_URLS:
         try:
-            r=requests.get(
-                url,
-                proxies={'http':f'http://127.0.0.1:{port}','https':f'http://127.0.0.1:{port}'},
-                timeout=TIMEOUT,
-                allow_redirects=False,
-                headers={'User-Agent':'auto-vpnlink-health/2.0'},
-            )
-            if r.status_code in (200,204):
-                passed.append({'url':url,'status':r.status_code})
-        except Exception:
-            pass
+            r=requests.get(url,timeout=8,headers={'User-Agent':'auto-vpnlink-direct/3.0'})
+            ip=r.text.strip().split()[0]
+            if is_public_ip(ip): return ip
+        except Exception: pass
+    return None
+
+
+def proxied_public_ip(port):
+    for url in IP_URLS:
+        try:
+            r=requests.get(url,proxies={'http':f'http://127.0.0.1:{port}','https':f'http://127.0.0.1:{port}'},timeout=TIMEOUT,headers={'User-Agent':'auto-vpnlink-proxy/3.0'})
+            ip=r.text.strip().split()[0]
+            if is_public_ip(ip): return ip
+        except Exception: pass
+    return None
+
+
+def public_round(port):
+    passed=[]
+    for url in TEST_URLS:
+        try:
+            r=requests.get(url,proxies={'http':f'http://127.0.0.1:{port}','https':f'http://127.0.0.1:{port}'},timeout=TIMEOUT,allow_redirects=False,headers={'User-Agent':'auto-vpnlink-health/3.0'})
+            if r.status_code in (200,204): passed.append({'url':url,'status':r.status_code})
+        except Exception: pass
     return passed
 
-def test_proxy(proxy):
+
+def test_proxy(proxy,direct_ip):
+    host=str(proxy.get('server','')).lower().strip('[]')
+    if host in PLACEHOLDER_HOSTS or any(w in host for w in PLACEHOLDER_WORDS):
+        return False,'placeholder_endpoint',[]
+    if any(w in str(proxy.get('name','')).lower() for w in PLACEHOLDER_WORDS):
+        return False,'placeholder_name',[]
+
     port=free_port()
     with tempfile.TemporaryDirectory(prefix='auto-vpnlink-health-') as td:
-        cfg={
-            'mixed-port':port,
-            'allow-lan':False,
-            'mode':'global',
-            'log-level':'error',
-            'ipv6':False,
-            'proxies':[proxy],
-            'rules':['MATCH,'+proxy['name']],
-        }
-        cp=Path(td)/'config.yaml'
-        cp.write_text(yaml.safe_dump(cfg,allow_unicode=True,sort_keys=False),encoding='utf-8')
-        log=open(Path(td)/'mihomo.log','w',encoding='utf-8')
-        proc=None
+        cfg={'mixed-port':port,'allow-lan':False,'mode':'global','log-level':'error','ipv6':False,'proxies':[proxy],'rules':['MATCH,'+proxy['name']]}
+        cp=Path(td)/'config.yaml'; cp.write_text(yaml.safe_dump(cfg,allow_unicode=True,sort_keys=False),encoding='utf-8')
+        log=open(Path(td)/'mihomo.log','w',encoding='utf-8'); proc=None
         try:
             proc=subprocess.Popen([MIHOMO,'-d',td,'-f',str(cp)],stdout=log,stderr=subprocess.STDOUT)
-            deadline=time.time()+8
-            ready=False
+            deadline=time.time()+8; ready=False
             while time.time()<deadline:
                 try:
-                    with socket.create_connection(('127.0.0.1',port),timeout=.3):
-                        ready=True; break
-                except OSError:
-                    time.sleep(.15)
-            if not ready:
-                return False,'mihomo_not_ready',[]
+                    with socket.create_connection(('127.0.0.1',port),timeout=.3): ready=True; break
+                except OSError: time.sleep(.15)
+            if not ready: return False,'mihomo_not_ready',[]
 
-            # First round: require at least 2 independent public endpoints.
-            first=request_round(port,TEST_URLS)
-            if len(first) < min(MIN_FIRST,len(TEST_URLS)):
-                return False,f'internet_first_only_{len(first)}',first
+            # Require actual proxied egress. A public IP must be returned and must
+            # differ from the GitHub runner's direct public IP.
+            pip=proxied_public_ip(port)
+            if not pip: return False,'no_proxied_public_ip',[]
+            if direct_ip and pip == direct_ip: return False,'proxy_equals_runner_ip',[]
 
-            # Second round after a short pause. This removes transient/free-node
-            # false positives that work once on a GitHub runner and immediately die.
-            time.sleep(1.0)
-            second_urls=TEST_URLS[:2] if len(TEST_URLS)>2 else TEST_URLS
-            second=request_round(port,second_urls)
-            if len(second) < min(MIN_SECOND,len(second_urls)):
-                return False,f'internet_second_only_{len(second)}',first+second
+            all_checks=[]
+            stable_ips=[]
+            for round_no in range(ROUNDS):
+                rip=proxied_public_ip(port)
+                if not rip or (direct_ip and rip==direct_ip):
+                    return False,f'round_{round_no+1}_bad_egress_ip',all_checks
+                stable_ips.append(rip)
+                checks=public_round(port); all_checks.extend(checks)
+                if len(checks) < min(MIN_PUBLIC_TESTS,len(TEST_URLS)):
+                    return False,f'round_{round_no+1}_only_{len(checks)}_public_tests',all_checks
+                if round_no+1 < ROUNDS: time.sleep(ROUND_DELAY)
 
-            return True,'internet_stable',first+second
+            # The same egress IP must remain stable during the health check. This
+            # filters many overloaded/free nodes that flap between requests.
+            if len(set(stable_ips)) != 1:
+                return False,'egress_ip_changed_during_check',all_checks
+            return True,'internet_stable_real_egress',all_checks
         except Exception as e:
             return False,type(e).__name__,[]
         finally:
             stop(proc); log.close()
 
+
 def stable_fingerprint(n):
     try:
         fp=converter.fingerprint(n) if hasattr(converter,'fingerprint') else None
         if fp:return fp
-    except Exception:
-        pass
+    except Exception: pass
     keys=('type','server','port','uuid','password','cipher','sni','security','pbk','sid','flow','net','path','host','aid')
     return hashlib.sha256('|'.join(str(n.get(k,'')) for k in keys).encode()).hexdigest()
 
+
 def main():
-    if not Path(MIHOMO).exists():
-        raise SystemExit(f'Mihomo binary not found: {MIHOMO}')
+    if not Path(MIHOMO).exists(): raise SystemExit(f'Mihomo binary not found: {MIHOMO}')
     raw=[x.strip() for x in INPUT.read_text(encoding='utf-8',errors='ignore').splitlines() if x.strip()] if INPUT.exists() else []
-    results=[]; good=[]; seen_fp=set()
+    direct_ip=direct_public_ip()
+    if not direct_ip: raise SystemExit('Cannot determine runner public IP; refusing to publish unverified nodes.')
+    results=[];good=[];seen_fp=set()
     for i,uri in enumerate(raw[:MAX],1):
         n=converter.parse(uri,i)
-        if not n:
-            results.append({'uri':uri,'ok':False,'reason':'parse_failed'}); continue
-
+        if not n: results.append({'uri':uri,'ok':False,'reason':'parse_failed'}); continue
         fp=stable_fingerprint(n)
-        if fp in seen_fp:
-            results.append({'uri':uri,'ok':False,'reason':'duplicate_credentials'}); continue
+        if fp in seen_fp: results.append({'uri':uri,'ok':False,'reason':'duplicate_credentials'}); continue
         seen_fp.add(fp)
-
         proxy=converter.clash(n)
-        ok,reason,checks=test_proxy(proxy)
-        item={
-            'uri':uri,
-            'name':proxy['name'],
-            'type':proxy['type'],
-            'server':proxy['server'],
-            'port':proxy['port'],
-            'ok':ok,
-            'reason':reason,
-            'checks':checks,
-        }
+        ok,reason,checks=test_proxy(proxy,direct_ip)
+        item={'uri':uri,'name':proxy['name'],'type':proxy['type'],'server':proxy['server'],'port':proxy['port'],'ok':ok,'reason':reason,'checks':checks}
         results.append(item)
         if ok: good.append(uri)
         print(f'[{i}/{min(len(raw),MAX)}] {proxy["name"]} [{proxy["type"]}]: {"PASS" if ok else "FAIL"} ({reason})',flush=True)
-
     HEALTHY.write_text('\n'.join(good)+('\n' if good else ''),encoding='utf-8')
-    REPORT.write_text(json.dumps({
-        'tested':len(results),
-        'healthy':len(good),
-        'failed':len(results)-len(good),
-        'stable_required':True,
-        'first_round_min_success':MIN_FIRST,
-        'second_round_min_success':MIN_SECOND,
-        'internet_test_urls':TEST_URLS,
-        'results':results,
-    },ensure_ascii=False,indent=2),encoding='utf-8')
+    REPORT.write_text(json.dumps({'tested':len(results),'healthy':len(good),'failed':len(results)-len(good),'stable_required':True,'rounds':ROUNDS,'round_delay':ROUND_DELAY,'runner_public_ip':direct_ip,'internet_test_urls':TEST_URLS,'results':results},ensure_ascii=False,indent=2),encoding='utf-8')
     print(f'HEALTHCHECK tested={len(results)} healthy={len(good)} failed={len(results)-len(good)}')
-    if raw and not good:
-        raise SystemExit('No node passed stable real internet health check; refusing to publish unverified nodes.')
+    if raw and not good: raise SystemExit('No node passed stable real-egress health check; refusing to publish unverified nodes.')
 
-if __name__=='__main__':
-    main()
+if __name__=='__main__': main()
