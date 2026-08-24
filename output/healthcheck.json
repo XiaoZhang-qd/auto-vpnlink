@@ -1,7 +1,10 @@
 {
-  "tested": 43,
-  "healthy": 34,
+  "tested": 53,
+  "healthy": 44,
   "failed": 9,
+  "stable_required": true,
+  "first_round_min_success": 2,
+  "second_round_min_success": 2,
   "internet_test_urls": [
     "https://www.gstatic.com/generate_204",
     "https://cp.cloudflare.com/generate_204",
@@ -9,13 +12,13 @@
   ],
   "results": [
     {
-      "uri": "ss://2022-blake3-aes-256-gcm:eVgEdD2UJXoP1O7qbSOz6A0FoSCYrwhV9hnPv6OQu9Q=%3AbvQihPJIpX+XX4PvARLDfGiPuZzQoiasvb0khfnKN4I=@111.15.84.201:2054#@Alirewa-565",
-      "name": "@Alirewa-565",
+      "uri": "ss://2022-blake3-aes-256-gcm:eVgEdD2UJXoP1O7qbSOz6A0FoSCYrwhV9hnPv6OQu9Q=%3AbvQihPJIpX+XX4PvARLDfGiPuZzQoiasvb0khfnKN4I=@111.15.84.201:2054#@Alirewa-560",
+      "name": "@Alirewa-560",
       "type": "ss",
       "server": "111.15.84.201",
       "port": 2054,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -27,6 +30,14 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
@@ -38,7 +49,7 @@
       "server": "167.150.100.115",
       "port": 27755,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -50,6 +61,14 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
@@ -61,7 +80,7 @@
       "server": "140.245.126.240",
       "port": 56927,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -73,6 +92,14 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
@@ -84,7 +111,7 @@
       "server": "144.22.150.193",
       "port": 59319,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -96,6 +123,45 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:5pt3YBp2pgKAqVFsb68mRl6eo8PJr0eTzvZm8Uf58fc=@129.151.83.171:61312#@npv_vpn11",
+      "name": "@npv_vpn11",
+      "type": "ss",
+      "server": "129.151.83.171",
+      "port": 61312,
+      "ok": true,
+      "reason": "internet_stable",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
@@ -107,7 +173,7 @@
       "server": "168.107.70.15",
       "port": 56927,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -119,6 +185,107 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:7CCOp1icO5ZfmmzSweQowSvA5+efeJ3HrKxHDAAJmUc=@129.151.88.180:61312#@OutlineReleasedKey",
+      "name": "@OutlineReleasedKey",
+      "type": "ss",
+      "server": "129.151.88.180",
+      "port": 61312,
+      "ok": true,
+      "reason": "internet_stable",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:8IpzGj+4Dz13GyB7G5h1DuG0klyKJ4Ku73CAYi6cs5Y=@134.65.61.49:61312#@npv_vpn11",
+      "name": "@npv_vpn11",
+      "type": "ss",
+      "server": "134.65.61.49",
+      "port": 61312,
+      "ok": true,
+      "reason": "internet_stable",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:BPLlwEf4Q5pBjnh9yaObDbz37IjYijvvrCSJL5CNaaY=@130.61.239.20:59924#@npv_vpn11",
+      "name": "@npv_vpn11",
+      "type": "ss",
+      "server": "130.61.239.20",
+      "port": 59924,
+      "ok": true,
+      "reason": "internet_stable",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
@@ -130,7 +297,7 @@
       "server": "129.159.51.192",
       "port": 59319,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -142,6 +309,14 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
@@ -153,7 +328,7 @@
       "server": "144.24.160.250",
       "port": 59924,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -165,18 +340,26 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:Cem5PpJ66yTcbs+EKD4C2cDlCjGW5YSQCWkjhY8T%2FMY=@130.61.118.77:59924#@Alirewa-578",
-      "name": "@Alirewa-578",
+      "uri": "ss://2022-blake3-chacha20-poly1305:Cem5PpJ66yTcbs+EKD4C2cDlCjGW5YSQCWkjhY8T%2FMY=@130.61.118.77:59924#@Alirewa-573",
+      "name": "@Alirewa-573",
       "type": "ss",
       "server": "130.61.118.77",
       "port": 59924,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -188,6 +371,45 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:HEZMw3e3ObzQ4hOH3EwEh3RsD3u7zzmSOHpVGDATZRk=@129.151.85.177:61312#@npv_vpn11",
+      "name": "@npv_vpn11",
+      "type": "ss",
+      "server": "129.151.85.177",
+      "port": 61312,
+      "ok": true,
+      "reason": "internet_stable",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
@@ -199,7 +421,7 @@
       "server": "161.118.225.224",
       "port": 56927,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -211,6 +433,45 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:KSTycVGjd3xduLQy+qjtbMoooeuMmJUs+MKs3ym39zg=@130.61.177.119:59924#@OutlineReleasedKey",
+      "name": "@OutlineReleasedKey",
+      "type": "ss",
+      "server": "130.61.177.119",
+      "port": 59924,
+      "ok": true,
+      "reason": "internet_stable",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
@@ -222,7 +483,7 @@
       "server": "129.159.49.64",
       "port": 59319,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -234,6 +495,14 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
@@ -245,7 +514,7 @@
       "server": "161.118.208.57",
       "port": 56927,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -257,18 +526,26 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:TWbDvdQktmGst6N2Yc2%2FL5IC9e3+kttzFJOv6doxsPw=@130.61.113.169:59924#@Alirewa-567",
-      "name": "@Alirewa-567",
+      "uri": "ss://2022-blake3-chacha20-poly1305:NRCtaF1KzHuVeQz0JfiEGsfP72SlFjXytrV/k6WqQ/g=@144.24.230.186:61312#@npv_vpn11",
+      "name": "@npv_vpn11",
       "type": "ss",
-      "server": "130.61.113.169",
-      "port": 59924,
+      "server": "144.24.230.186",
+      "port": 61312,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -280,6 +557,76 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:T8nDZA9hyAy2MrDlJBL1w5F6HMzfNNyN8Ysk1Se1INc=@158.180.13.253:45819#@npv_vpn11",
+      "name": "@npv_vpn11",
+      "type": "ss",
+      "server": "158.180.13.253",
+      "port": 45819,
+      "ok": true,
+      "reason": "internet_stable",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:TWbDvdQktmGst6N2Yc2%2FL5IC9e3+kttzFJOv6doxsPw=@130.61.113.169:59924#@Alirewa-562",
+      "name": "@Alirewa-562",
+      "type": "ss",
+      "server": "130.61.113.169",
+      "port": 59924,
+      "ok": true,
+      "reason": "internet_stable",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
@@ -291,7 +638,7 @@
       "server": "150.230.229.189",
       "port": 59319,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -303,6 +650,45 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:WdDHx+DT1TW08s5vMmHqa0dc56hUvgJKx877w3x3NpE=@152.70.50.59:45819#@npv_vpn11",
+      "name": "@npv_vpn11",
+      "type": "ss",
+      "server": "152.70.50.59",
+      "port": 45819,
+      "ok": true,
+      "reason": "internet_stable",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
@@ -314,7 +700,7 @@
       "server": "130.61.42.205",
       "port": 59924,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -326,18 +712,26 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:hbEvkzR93GX0boBpZKspRggjovWge9T+z%2FUPk69rIHg=@143.47.177.25:45819#@Alirewa-580",
-      "name": "@Alirewa-580",
+      "uri": "ss://2022-blake3-chacha20-poly1305:hbEvkzR93GX0boBpZKspRggjovWge9T+z%2FUPk69rIHg=@143.47.177.25:45819#@Alirewa-575",
+      "name": "@Alirewa-575",
       "type": "ss",
       "server": "143.47.177.25",
       "port": 45819,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -349,6 +743,14 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
@@ -360,7 +762,7 @@
       "server": "130.61.80.61",
       "port": 59924,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -372,6 +774,14 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
@@ -383,7 +793,7 @@
       "server": "130.61.40.100",
       "port": 59924,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -395,6 +805,45 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:kl3y4L+253t5duqM0xIkuYbiQS6Q/UL4fjXfuoqiG0I=@134.65.61.103:61312#@npv_vpn11",
+      "name": "@npv_vpn11",
+      "type": "ss",
+      "server": "134.65.61.103",
+      "port": 61312,
+      "ok": true,
+      "reason": "internet_stable",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
@@ -406,7 +855,7 @@
       "server": "130.61.231.169",
       "port": 59924,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -418,18 +867,26 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:qDuLP+56cM4kraLQoKuNGS+a4A+RbcidAw7iXWtddTE=@158.101.215.37:45819#@Alirewa-577",
-      "name": "@Alirewa-577",
+      "uri": "ss://2022-blake3-chacha20-poly1305:qDuLP+56cM4kraLQoKuNGS+a4A+RbcidAw7iXWtddTE=@158.101.215.37:45819#@Alirewa-572",
+      "name": "@Alirewa-572",
       "type": "ss",
       "server": "158.101.215.37",
       "port": 45819,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -441,6 +898,14 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
@@ -452,7 +917,7 @@
       "server": "168.75.66.122",
       "port": 59319,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -464,18 +929,26 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:sPH+tlbdXt4j6PJi6sUMuUq3fa6TT5375pmPak%2FbQds=@129.146.221.27:50356#@Alirewa-555",
-      "name": "@Alirewa-555",
+      "uri": "ss://2022-blake3-chacha20-poly1305:sPH+tlbdXt4j6PJi6sUMuUq3fa6TT5375pmPak%2FbQds=@129.146.221.27:50356#@Alirewa-550",
+      "name": "@Alirewa-550",
       "type": "ss",
       "server": "129.146.221.27",
       "port": 50356,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -487,6 +960,14 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
@@ -498,7 +979,7 @@
       "server": "140.245.117.116",
       "port": 56927,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -510,18 +991,26 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:z2Jh23bumSdistaAEcyEZiFiqEgmQa8jZyatjn7sn98=@130.61.32.138:59924#@Alirewa-540",
-      "name": "@Alirewa-540",
+      "uri": "ss://2022-blake3-chacha20-poly1305:z2Jh23bumSdistaAEcyEZiFiqEgmQa8jZyatjn7sn98=@130.61.32.138:59924#@Alirewa-1632",
+      "name": "@Alirewa-1632",
       "type": "ss",
       "server": "130.61.32.138",
       "port": 59924,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -533,18 +1022,26 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
     },
     {
       "uri": "hysteria2://${config.sops.placeholder.hy2_password}@cdn.example.com:443?obfs=salamander&obfs-password=${config.sops.placeholder.hy2_obfs}&sni=cdn.example.com&alpn=h3",
-      "name": "hysteria2-24",
+      "name": "hysteria2-34",
       "type": "hysteria2",
       "server": "cdn.example.com",
       "port": 443,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -556,6 +1053,14 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
@@ -567,7 +1072,7 @@
       "server": "198.105.123.106",
       "port": 11504,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -579,6 +1084,14 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
@@ -590,7 +1103,7 @@
       "server": "107.181.155.107",
       "port": 2096,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -602,6 +1115,14 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
@@ -613,7 +1134,7 @@
       "server": "45.92.219.237",
       "port": 8486,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -625,6 +1146,45 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "hysteria2://%40azadi_az_inja_migzare@all-v4.dgi000.store:443?insecure=0&sni=all-v4.dgi000.store&obfs=salamander&obfs-password=@azadi_az_inja_migzare#10%7C%40V2rayNG3%20%234",
+      "name": "10|@V2rayNG3 #4",
+      "type": "hysteria2",
+      "server": "all-v4.dgi000.store",
+      "port": 443,
+      "ok": true,
+      "reason": "internet_stable",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
@@ -676,7 +1236,7 @@
       "server": "gogo.fontanvpn.com",
       "port": 443,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -688,6 +1248,14 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
@@ -719,7 +1287,7 @@
       "server": "kum.tokervpn.ru",
       "port": 443,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -731,6 +1299,14 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
@@ -742,7 +1318,7 @@
       "server": "tw1.tokervpn.ru",
       "port": 443,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -754,6 +1330,14 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
@@ -765,7 +1349,7 @@
       "server": "twru1.fontanvpn.com",
       "port": 443,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -777,6 +1361,14 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
@@ -788,7 +1380,7 @@
       "server": "tn.tmn141246.ru",
       "port": 443,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -800,6 +1392,14 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
@@ -821,7 +1421,7 @@
       "server": "89.106.85.19",
       "port": 8444,
       "ok": true,
-      "reason": "internet_ok",
+      "reason": "internet_stable",
       "checks": [
         {
           "url": "https://www.gstatic.com/generate_204",
@@ -833,6 +1433,14 @@
         },
         {
           "url": "https://www.google.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
           "status": 204
         }
       ]
@@ -856,29 +1464,6 @@
       "ok": false,
       "reason": "mihomo_not_ready",
       "checks": []
-    },
-    {
-      "uri": "hysteria2://042a1881-44e4-4781-bd40-bf75164faf4f@144.31.234.58:443/?insecure=1&sni=nl1.noesissite.ru#EPODONIOS",
-      "name": "EPODONIOS",
-      "type": "hysteria2",
-      "server": "144.31.234.58",
-      "port": 443,
-      "ok": true,
-      "reason": "internet_ok",
-      "checks": [
-        {
-          "url": "https://www.gstatic.com/generate_204",
-          "status": 204
-        },
-        {
-          "url": "https://cp.cloudflare.com/generate_204",
-          "status": 204
-        },
-        {
-          "url": "https://www.google.com/generate_204",
-          "status": 204
-        }
-      ]
     }
   ]
 }

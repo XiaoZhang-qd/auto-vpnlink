@@ -1,7 +1,7 @@
 {
   "outbounds": [
     {
-      "tag": "@Alirewa-565",
+      "tag": "@Alirewa-560",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -57,6 +57,20 @@
       }
     },
     {
+      "tag": "@npv_vpn11",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "129.151.83.171",
+            "port": 61312,
+            "method": "2022-blake3-chacha20-poly1305",
+            "password": "5pt3YBp2pgKAqVFsb68mRl6eo8PJr0eTzvZm8Uf58fc="
+          }
+        ]
+      }
+    },
+    {
       "tag": "🇸🇬SG_98|294KB/s|A004-260618",
       "protocol": "shadowsocks",
       "settings": {
@@ -66,6 +80,48 @@
             "port": 56927,
             "method": "2022-blake3-chacha20-poly1305",
             "password": "6s2MubJw+Z4OgZ+StJ1L2M7htgCp0/tetpKBk1dHvJ0="
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@OutlineReleasedKey",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "129.151.88.180",
+            "port": 61312,
+            "method": "2022-blake3-chacha20-poly1305",
+            "password": "7CCOp1icO5ZfmmzSweQowSvA5+efeJ3HrKxHDAAJmUc="
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@npv_vpn11 [2]",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "134.65.61.49",
+            "port": 61312,
+            "method": "2022-blake3-chacha20-poly1305",
+            "password": "8IpzGj+4Dz13GyB7G5h1DuG0klyKJ4Ku73CAYi6cs5Y="
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@npv_vpn11 [3]",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "130.61.239.20",
+            "port": 59924,
+            "method": "2022-blake3-chacha20-poly1305",
+            "password": "BPLlwEf4Q5pBjnh9yaObDbz37IjYijvvrCSJL5CNaaY="
           }
         ]
       }
@@ -99,7 +155,7 @@
       }
     },
     {
-      "tag": "@Alirewa-578",
+      "tag": "@Alirewa-573",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -108,6 +164,20 @@
             "port": 59924,
             "method": "2022-blake3-chacha20-poly1305",
             "password": "Cem5PpJ66yTcbs+EKD4C2cDlCjGW5YSQCWkjhY8T/MY="
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@npv_vpn11 [4]",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "129.151.85.177",
+            "port": 61312,
+            "method": "2022-blake3-chacha20-poly1305",
+            "password": "HEZMw3e3ObzQ4hOH3EwEh3RsD3u7zzmSOHpVGDATZRk="
           }
         ]
       }
@@ -122,6 +192,20 @@
             "port": 56927,
             "method": "2022-blake3-chacha20-poly1305",
             "password": "KA1/OAHhawU2vWpzCWzboh5Sy7Pf5oJRaWpUUdVGnVw="
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@OutlineReleasedKey [2]",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "130.61.177.119",
+            "port": 59924,
+            "method": "2022-blake3-chacha20-poly1305",
+            "password": "KSTycVGjd3xduLQy+qjtbMoooeuMmJUs+MKs3ym39zg="
           }
         ]
       }
@@ -155,7 +239,35 @@
       }
     },
     {
-      "tag": "@Alirewa-567",
+      "tag": "@npv_vpn11 [5]",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "144.24.230.186",
+            "port": 61312,
+            "method": "2022-blake3-chacha20-poly1305",
+            "password": "NRCtaF1KzHuVeQz0JfiEGsfP72SlFjXytrV/k6WqQ/g="
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@npv_vpn11 [6]",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "158.180.13.253",
+            "port": 45819,
+            "method": "2022-blake3-chacha20-poly1305",
+            "password": "T8nDZA9hyAy2MrDlJBL1w5F6HMzfNNyN8Ysk1Se1INc="
+          }
+        ]
+      }
+    },
+    {
+      "tag": "@Alirewa-562",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -183,6 +295,20 @@
       }
     },
     {
+      "tag": "@npv_vpn11 [7]",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "152.70.50.59",
+            "port": 45819,
+            "method": "2022-blake3-chacha20-poly1305",
+            "password": "WdDHx+DT1TW08s5vMmHqa0dc56hUvgJKx877w3x3NpE="
+          }
+        ]
+      }
+    },
+    {
       "tag": "🇩🇪DE_130|149KB/s|A004-260618",
       "protocol": "shadowsocks",
       "settings": {
@@ -197,7 +323,7 @@
       }
     },
     {
-      "tag": "@Alirewa-580",
+      "tag": "@Alirewa-575",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -239,6 +365,20 @@
       }
     },
     {
+      "tag": "@npv_vpn11 [8]",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "134.65.61.103",
+            "port": 61312,
+            "method": "2022-blake3-chacha20-poly1305",
+            "password": "kl3y4L+253t5duqM0xIkuYbiQS6Q/UL4fjXfuoqiG0I="
+          }
+        ]
+      }
+    },
+    {
       "tag": "🇩🇪DE_120|217KB/s|A001-260618",
       "protocol": "shadowsocks",
       "settings": {
@@ -253,7 +393,7 @@
       }
     },
     {
-      "tag": "@Alirewa-577",
+      "tag": "@Alirewa-572",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -281,7 +421,7 @@
       }
     },
     {
-      "tag": "@Alirewa-555",
+      "tag": "@Alirewa-550",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
@@ -309,7 +449,7 @@
       }
     },
     {
-      "tag": "@Alirewa-540",
+      "tag": "@Alirewa-1632",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [

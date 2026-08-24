@@ -4,7 +4,7 @@
   },
   "outbounds": [
     {
-      "tag": "@Alirewa-565",
+      "tag": "@Alirewa-560",
       "server": "111.15.84.201",
       "server_port": 2054,
       "type": "shadowsocks",
@@ -36,12 +36,44 @@
       "password": "3c8tj0DA79hjfpioMZAadyGr/dNl4C6MTsJTNE8l8Mw="
     },
     {
+      "tag": "@npv_vpn11",
+      "server": "129.151.83.171",
+      "server_port": 61312,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "5pt3YBp2pgKAqVFsb68mRl6eo8PJr0eTzvZm8Uf58fc="
+    },
+    {
       "tag": "🇸🇬SG_98|294KB/s|A004-260618",
       "server": "168.107.70.15",
       "server_port": 56927,
       "type": "shadowsocks",
       "method": "2022-blake3-chacha20-poly1305",
       "password": "6s2MubJw+Z4OgZ+StJ1L2M7htgCp0/tetpKBk1dHvJ0="
+    },
+    {
+      "tag": "@OutlineReleasedKey",
+      "server": "129.151.88.180",
+      "server_port": 61312,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "7CCOp1icO5ZfmmzSweQowSvA5+efeJ3HrKxHDAAJmUc="
+    },
+    {
+      "tag": "@npv_vpn11 [2]",
+      "server": "134.65.61.49",
+      "server_port": 61312,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "8IpzGj+4Dz13GyB7G5h1DuG0klyKJ4Ku73CAYi6cs5Y="
+    },
+    {
+      "tag": "@npv_vpn11 [3]",
+      "server": "130.61.239.20",
+      "server_port": 59924,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "BPLlwEf4Q5pBjnh9yaObDbz37IjYijvvrCSJL5CNaaY="
     },
     {
       "tag": "🇧🇷BR_17|248KB/s|A004-260618",
@@ -60,12 +92,20 @@
       "password": "C1U/t2iR/+R2DqqWk+e6cFFEhaAdGJfGBR+GeNrkoME="
     },
     {
-      "tag": "@Alirewa-578",
+      "tag": "@Alirewa-573",
       "server": "130.61.118.77",
       "server_port": 59924,
       "type": "shadowsocks",
       "method": "2022-blake3-chacha20-poly1305",
       "password": "Cem5PpJ66yTcbs+EKD4C2cDlCjGW5YSQCWkjhY8T/MY="
+    },
+    {
+      "tag": "@npv_vpn11 [4]",
+      "server": "129.151.85.177",
+      "server_port": 61312,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "HEZMw3e3ObzQ4hOH3EwEh3RsD3u7zzmSOHpVGDATZRk="
     },
     {
       "tag": "🇸🇬SG_96|384KB/s|A004-260618",
@@ -74,6 +114,14 @@
       "type": "shadowsocks",
       "method": "2022-blake3-chacha20-poly1305",
       "password": "KA1/OAHhawU2vWpzCWzboh5Sy7Pf5oJRaWpUUdVGnVw="
+    },
+    {
+      "tag": "@OutlineReleasedKey [2]",
+      "server": "130.61.177.119",
+      "server_port": 59924,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "KSTycVGjd3xduLQy+qjtbMoooeuMmJUs+MKs3ym39zg="
     },
     {
       "tag": "🇧🇷BR_11|404KB/s|R002-260618",
@@ -92,7 +140,23 @@
       "password": "NPImXu1dvdMvgeuFx60flecCExTtkLUfQd7HqXbqJMs="
     },
     {
-      "tag": "@Alirewa-567",
+      "tag": "@npv_vpn11 [5]",
+      "server": "144.24.230.186",
+      "server_port": 61312,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "NRCtaF1KzHuVeQz0JfiEGsfP72SlFjXytrV/k6WqQ/g="
+    },
+    {
+      "tag": "@npv_vpn11 [6]",
+      "server": "158.180.13.253",
+      "server_port": 45819,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "T8nDZA9hyAy2MrDlJBL1w5F6HMzfNNyN8Ysk1Se1INc="
+    },
+    {
+      "tag": "@Alirewa-562",
       "server": "130.61.113.169",
       "server_port": 59924,
       "type": "shadowsocks",
@@ -108,6 +172,14 @@
       "password": "VNZU26yCu5J1TaXQ9IdJasKHopBUzc2xt+JUl9ECB+g="
     },
     {
+      "tag": "@npv_vpn11 [7]",
+      "server": "152.70.50.59",
+      "server_port": 45819,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "WdDHx+DT1TW08s5vMmHqa0dc56hUvgJKx877w3x3NpE="
+    },
+    {
       "tag": "🇩🇪DE_130|149KB/s|A004-260618",
       "server": "130.61.42.205",
       "server_port": 59924,
@@ -116,7 +188,7 @@
       "password": "bOY1mD99pB8lm1jW+mjwfwJyH3Il0ILCA5EUhDQPajI="
     },
     {
-      "tag": "@Alirewa-580",
+      "tag": "@Alirewa-575",
       "server": "143.47.177.25",
       "server_port": 45819,
       "type": "shadowsocks",
@@ -140,6 +212,14 @@
       "password": "jeFxHeDLdS3v1c6txqm38GivrrSQFTuxRBft80ewg6Q="
     },
     {
+      "tag": "@npv_vpn11 [8]",
+      "server": "134.65.61.103",
+      "server_port": 61312,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "kl3y4L+253t5duqM0xIkuYbiQS6Q/UL4fjXfuoqiG0I="
+    },
+    {
       "tag": "🇩🇪DE_120|217KB/s|A001-260618",
       "server": "130.61.231.169",
       "server_port": 59924,
@@ -148,7 +228,7 @@
       "password": "o6Revfjr6gF04IFOGg0ThUZ/fF4LeOPRjeiV0rL1lRY="
     },
     {
-      "tag": "@Alirewa-577",
+      "tag": "@Alirewa-572",
       "server": "158.101.215.37",
       "server_port": 45819,
       "type": "shadowsocks",
@@ -164,7 +244,7 @@
       "password": "s6RXknYLMS6vQPV6efRSoLoe45c8/Pp1+dB8CdfNlmY="
     },
     {
-      "tag": "@Alirewa-555",
+      "tag": "@Alirewa-550",
       "server": "129.146.221.27",
       "server_port": 50356,
       "type": "shadowsocks",
@@ -180,7 +260,7 @@
       "password": "y0lUf5WDcD0z4Vm/57XU5GWoPKS+07qwaHOhXiwQekA="
     },
     {
-      "tag": "@Alirewa-540",
+      "tag": "@Alirewa-1632",
       "server": "130.61.32.138",
       "server_port": 59924,
       "type": "shadowsocks",
@@ -188,7 +268,7 @@
       "password": "z2Jh23bumSdistaAEcyEZiFiqEgmQa8jZyatjn7sn98="
     },
     {
-      "tag": "hysteria2-24",
+      "tag": "hysteria2-34",
       "server": "cdn.example.com",
       "server_port": 443,
       "type": "hysteria2",
@@ -249,6 +329,22 @@
       "obfs": {
         "type": "salamander",
         "password": "Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------"
+      }
+    },
+    {
+      "tag": "10|@V2rayNG3 #4",
+      "server": "all-v4.dgi000.store",
+      "server_port": 443,
+      "type": "hysteria2",
+      "password": "@azadi_az_inja_migzare",
+      "tls": {
+        "enabled": true,
+        "server_name": "all-v4.dgi000.store",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "@azadi_az_inja_migzare"
       }
     },
     {
@@ -324,55 +420,53 @@
       }
     },
     {
-      "tag": "EPODONIOS",
-      "server": "144.31.234.58",
-      "server_port": 443,
-      "type": "hysteria2",
-      "password": "042a1881-44e4-4781-bd40-bf75164faf4f",
-      "tls": {
-        "enabled": true,
-        "server_name": "nl1.noesissite.ru",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "AUTO",
       "outbounds": [
-        "@Alirewa-565",
+        "@Alirewa-560",
         "🇸🇬SG_20|258KB/s",
         "🇸🇬SG_93|311KB/s|A004-260618",
         "🇧🇷BR_16|114KB/s|A004-260618",
+        "@npv_vpn11",
         "🇸🇬SG_98|294KB/s|A004-260618",
+        "@OutlineReleasedKey",
+        "@npv_vpn11 [2]",
+        "@npv_vpn11 [3]",
         "🇧🇷BR_17|248KB/s|A004-260618",
         "🇩🇪DE_118|341KB/s|M003-260806",
-        "@Alirewa-578",
+        "@Alirewa-573",
+        "@npv_vpn11 [4]",
         "🇸🇬SG_96|384KB/s|A004-260618",
+        "@OutlineReleasedKey [2]",
         "🇧🇷BR_11|404KB/s|R002-260618",
         "🇸🇬SG_97|344KB/s|A004-260618",
-        "@Alirewa-567",
+        "@npv_vpn11 [5]",
+        "@npv_vpn11 [6]",
+        "@Alirewa-562",
         "🇧🇷BR_12|275KB/s|S001-260618",
+        "@npv_vpn11 [7]",
         "🇩🇪DE_130|149KB/s|A004-260618",
-        "@Alirewa-580",
+        "@Alirewa-575",
         "🇩🇪DE_129|361KB/s|A004-260618",
         "🇩🇪DE_119|268KB/s|B007-260618",
+        "@npv_vpn11 [8]",
         "🇩🇪DE_120|217KB/s|A001-260618",
-        "@Alirewa-577",
+        "@Alirewa-572",
         "🇧🇷BR_18|79KB/s|T001-260618",
-        "@Alirewa-555",
+        "@Alirewa-550",
         "❓Other_79|236KB/s|A004-260618",
-        "@Alirewa-540",
-        "hysteria2-24",
+        "@Alirewa-1632",
+        "hysteria2-34",
         "@ConfigvibesрҹҮ№рҹҮ·",
         "@ConfigvibesрҹҮ№рҹҮ· #1",
         "@ConfigvibesрҹҮ№рҹҮ· #2",
+        "10|@V2rayNG3 #4",
         "🇵🇱 Poland | 🌐 [*CIDR]",
         "🇩🇪 Germany [*CIDR]",
         "🇮🇹 Italy | 🌐 [*CIDR]",
         "🇵🇱 Poland | 🌐 [*CIDR] [2]",
         "4212",
-        "🇩🇪 Germany | 🌐 | [BL]",
-        "EPODONIOS"
+        "🇩🇪 Germany | 🌐 | [BL]"
       ]
     }
   ]
