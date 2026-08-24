@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Convert verified VPN URIs into conservative client-ready outputs."""
-import base64,json,os
+"""Convert verified VPN URIs into conservative, Clash-safe client outputs."""
+import base64,json,os,re
 from urllib.parse import urlparse,parse_qs,unquote
 import yaml
 OUT='output';os.makedirs(OUT,exist_ok=True)
@@ -32,6 +32,22 @@ def parse(u,i):
   else:n={'type':'tuic','name':name,'server':p.hostname,'port':p.port or 443,'uuid':unquote(p.username or ''),'password':unquote(p.password or ''),'sni':q.get('sni') or p.hostname,'cc':q.get('congestion_control','bbr')}
   return n if valid(n) else None
  except Exception:return None
+
+def safe_name(value,fallback):
+ value=re.sub(r'[\x00-\x1f\x7f]','',str(value or '')).strip()
+ return value[:100] or fallback
+
+def unique_names(nodes):
+ """Clash/Mihomo requires every proxy name to be unique.
+    Some public subscriptions reuse the same remark (for example a country label),
+    so add a deterministic suffix instead of letting Clash Verge reject the whole file.
+ """
+ used={}
+ for n in nodes:
+  base=safe_name(n.get('name'),f"{n['type']}-{n['server']}:{n['port']}")
+  key=base.casefold();count=used.get(key,0)+1;used[key]=count
+  n['name']=base if count==1 else f'{base} [{count}]'
+ return nodes
 
 def transport(o,n):
  if n.get('net') in ('ws','websocket'):
@@ -93,8 +109,10 @@ def main():
   n=parse(u,i)
   if n:nodes.append(n);uris.append(u)
   else:bad.append(u)
+ nodes=unique_names(nodes)
  text='\n'.join(uris)+'\n' if uris else '';put('nodes.txt',text);put('shadowrocket.txt',text);enc=base64.b64encode(text.encode()).decode()+'\n' if text else '';put('base64.txt',enc);put('v2ray.txt',enc);put('rejected-nodes.txt','\n'.join(bad)+'\n' if bad else '')
- proxies=[clash(n) for n in nodes];names=[x['name'] for x in proxies];cfg={'proxies':proxies,'proxy-groups':[{'name':'AUTO','type':'url-test','proxies':names,'url':'https://www.gstatic.com/generate_204','interval':300}],'rules':['MATCH,AUTO']} if proxies else {'proxies':[],'proxy-groups':[],'rules':['MATCH,DIRECT']}
+ proxies=[clash(n) for n in nodes];names=[x['name'] for x in proxies]
+ cfg={'proxies':proxies,'proxy-groups':[{'name':'AUTO','type':'url-test','proxies':names,'url':'https://www.gstatic.com/generate_204','interval':300}],'rules':['MATCH,AUTO']} if proxies else {'proxies':[],'proxy-groups':[],'rules':['MATCH,DIRECT']}
  for name in ('clash.yaml','stash.yaml'):
   with open(os.path.join(OUT,name),'w',encoding='utf-8') as f:yaml.safe_dump(cfg,f,allow_unicode=True,sort_keys=False)
  sb=[sing(n) for n in nodes];sbcfg={'log':{'level':'warn'},'outbounds':sb+[{'type':'selector','tag':'AUTO','outbounds':[x['tag'] for x in sb]}]} if sb else {'outbounds':[{'type':'direct','tag':'direct'}]}
@@ -104,7 +122,7 @@ def main():
  by={}
  for n,u in zip(nodes,uris):by.setdefault(n['type'],[]).append(u)
  for p in ('vless','vmess','trojan','ss','hysteria2','tuic'):put(p+'.txt','\n'.join(by.get(p,[]))+'\n' if by.get(p) else '')
- summary={'verified_input':len(raw),'parsed':len(nodes),'rejected':len(bad),'protocols':{k:len(v) for k,v in by.items()},'clash_proxies':len(proxies),'singbox_outbounds':len(sb),'xray_outbounds':len(xo)}
+ summary={'verified_input':len(raw),'parsed':len(nodes),'rejected':len(bad),'protocols':{k:len(v) for k,v in by.items()},'clash_proxies':len(proxies),'singbox_outbounds':len(sb),'xray_outbounds':len(xo),'unique_proxy_names':len({x['name'].casefold() for x in nodes})}
  with open(os.path.join(OUT,'conversion.json'),'w',encoding='utf-8') as f:json.dump(summary,f,ensure_ascii=False,indent=2)
  print('CONVERT',summary)
  if raw and not nodes:raise SystemExit('No verified nodes could be parsed safely; refusing to publish client configs.')
