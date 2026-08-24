@@ -1,11 +1,12 @@
 {
-  "verified_input": 15,
-  "parsed": 15,
+  "verified_input": 21,
+  "parsed": 21,
   "rejected": 0,
   "protocols": {
-    "hysteria2": 15
+    "hysteria2": 21
   },
-  "clash_proxies": 15,
-  "singbox_outbounds": 15,
-  "xray_outbounds": 0
+  "clash_proxies": 21,
+  "singbox_outbounds": 21,
+  "xray_outbounds": 0,
+  "unique_proxy_names": 21
 }

@@ -79,7 +79,7 @@ proxies:
   skip-cert-verify: false
   alpn:
   - h3
-- name: 🇵🇱 Poland | 🌐 [*CIDR]
+- name: 🇵🇱 Poland | 🌐 [*CIDR] [2]
   type: hysteria2
   server: twru1.fontanvpn.com
   port: 443
@@ -87,16 +87,6 @@ proxies:
   sni: twru1.fontanvpn.com
   udp: true
   skip-cert-verify: false
-  alpn:
-  - h3
-- name: EPODONIOS
-  type: hysteria2
-  server: 144.31.234.58
-  port: 443
-  password: 042a1881-44e4-4781-bd40-bf75164faf4f
-  sni: nl1.noesissite.ru
-  udp: true
-  skip-cert-verify: true
   alpn:
   - h3
 - name: 🇩🇪 Germany, Frankfurt am Main | [BL]
@@ -109,54 +99,116 @@ proxies:
   skip-cert-verify: false
   alpn:
   - h3
-- name: hysteria2-12
+- name: 🇵🇱 Poland | 🌐 [*CIDR] [3]
   type: hysteria2
-  server: assets.gateway-stream.com
-  port: 52000
-  password: 09e4b638945d44bfa60b4fd00edad131
-  sni: assets.gateway-stream.com
+  server: 217.150.197.54
+  port: 8443
+  password: 12a9c8a7-4b08-4514-82f3-9a64bb9bd201
+  sni: quic.tyr-agentstvo.tech
   udp: true
   skip-cert-verify: false
   alpn:
   - h3
-  obfs: salamander
-  obfs-password: gu74jg3ym0e21zco
-- name: Proxy_mtm 33
+- name: 🌐 Anycast-IP | 🇩🇪 🇵🇱 [*CIDR]
   type: hysteria2
-  server: assets.gateway-stream.com
-  port: 52000
-  password: 09e4b638945d44bfa60b4fd00edad131
-  sni: assets.gateway-stream.com
+  server: 217.150.197.54
+  port: 8443
+  password: 12a9c8a7-4b08-4514-82f3-9a64bb9bd201
+  sni: quic.tyr-agentstvo.tech
   udp: true
   skip-cert-verify: false
   alpn:
   - h3
-  obfs: salamander
-  obfs-password: gu74jg3ym0e21zco
-- name: Proxy_mtm 33
+- name: 🌐 Anycast-IP | 🇵🇱 [*CIDR]
   type: hysteria2
-  server: assets.gateway-stream.com
-  port: 52000
-  password: 09e4b638945d44bfa60b4fd00edad131
-  sni: assets.gateway-stream.com
+  server: 217.150.197.54
+  port: 8443
+  password: 12a9c8a7-4b08-4514-82f3-9a64bb9bd201
+  sni: quic.tyr-agentstvo.tech
   udp: true
   skip-cert-verify: false
   alpn:
   - h3
-  obfs: salamander
-  obfs-password: gu74jg3ym0e21zco
-- name: Proxy_mtm 33vless://302c2e89-6f2d-4500-90ce-26d075c7e84f@66.78.40.202:443?security=reality&encryption=none&pbk=8zJkTehTm
+- name: 🌐 Anycast-IP | 🇩🇪 🇵🇱 [*CIDR] [2]
   type: hysteria2
-  server: assets.gateway-stream.com
-  port: 52000
-  password: 09e4b638945d44bfa60b4fd00edad131
-  sni: assets.gateway-stream.com
+  server: 217.150.197.54
+  port: 8443
+  password: 12a9c8a7-4b08-4514-82f3-9a64bb9bd201
+  sni: quic.tyr-agentstvo.tech
   udp: true
   skip-cert-verify: false
   alpn:
   - h3
-  obfs: salamander
-  obfs-password: gu74jg3ym0e21zco
+- name: 🇩🇪 Germany [*CIDR] [2]
+  type: hysteria2
+  server: 91.185.83.48
+  port: 8444
+  password: 13259e0a-4850-4a12-8850-4ad7ded17770
+  sni: testing8.nimarko.org
+  udp: true
+  skip-cert-verify: false
+  alpn:
+  - h3
+- name: 🇩🇪 Germany [*CIDR] [3]
+  type: hysteria2
+  server: 91.185.83.48
+  port: 8444
+  password: 13259e0a-4850-4a12-8850-4ad7ded17770
+  sni: testing8.nimarko.org
+  udp: true
+  skip-cert-verify: false
+  alpn:
+  - h3
+- name: 🇳🇱 The Netherlands [*CIDR]
+  type: hysteria2
+  server: 91.185.83.48
+  port: 8451
+  password: 13259e0a-4850-4a12-8850-4ad7ded17770
+  sni: testing7.nimarko.org
+  udp: true
+  skip-cert-verify: false
+  alpn:
+  - h3
+- name: 🇳🇱 The Netherlands [*CIDR] [2]
+  type: hysteria2
+  server: 91.185.83.48
+  port: 8451
+  password: 13259e0a-4850-4a12-8850-4ad7ded17770
+  sni: testing7.nimarko.org
+  udp: true
+  skip-cert-verify: false
+  alpn:
+  - h3
+- name: 🇳🇱 The Netherlands, Eygelshoven | [BL]
+  type: hysteria2
+  server: 91.185.83.48
+  port: 8451
+  password: 13259e0a-4850-4a12-8850-4ad7ded17770
+  sni: testing7.nimarko.org
+  udp: true
+  skip-cert-verify: false
+  alpn:
+  - h3
+- name: 🇸🇪 Sweden [*CIDR]
+  type: hysteria2
+  server: 91.185.83.48
+  port: 8585
+  password: 13259e0a-4850-4a12-8850-4ad7ded17770
+  sni: swsw.nimarko.org
+  udp: true
+  skip-cert-verify: false
+  alpn:
+  - h3
+- name: 🇸🇪 Sweden [*CIDR] [2]
+  type: hysteria2
+  server: 91.185.83.48
+  port: 8585
+  password: 13259e0a-4850-4a12-8850-4ad7ded17770
+  sni: swsw.nimarko.org
+  udp: true
+  skip-cert-verify: false
+  alpn:
+  - h3
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -169,13 +221,19 @@ proxy-groups:
   - 🇰🇿 Kazakhstan, Almaty | [BL]
   - 🇩🇪 Germany [*CIDR]
   - 🇮🇹 Italy | 🌐 [*CIDR]
-  - 🇵🇱 Poland | 🌐 [*CIDR]
-  - EPODONIOS
+  - 🇵🇱 Poland | 🌐 [*CIDR] [2]
   - 🇩🇪 Germany, Frankfurt am Main | [BL]
-  - hysteria2-12
-  - Proxy_mtm 33
-  - Proxy_mtm 33
-  - Proxy_mtm 33vless://302c2e89-6f2d-4500-90ce-26d075c7e84f@66.78.40.202:443?security=reality&encryption=none&pbk=8zJkTehTm
+  - 🇵🇱 Poland | 🌐 [*CIDR] [3]
+  - 🌐 Anycast-IP | 🇩🇪 🇵🇱 [*CIDR]
+  - 🌐 Anycast-IP | 🇵🇱 [*CIDR]
+  - 🌐 Anycast-IP | 🇩🇪 🇵🇱 [*CIDR] [2]
+  - 🇩🇪 Germany [*CIDR] [2]
+  - 🇩🇪 Germany [*CIDR] [3]
+  - 🇳🇱 The Netherlands [*CIDR]
+  - 🇳🇱 The Netherlands [*CIDR] [2]
+  - 🇳🇱 The Netherlands, Eygelshoven | [BL]
+  - 🇸🇪 Sweden [*CIDR]
+  - 🇸🇪 Sweden [*CIDR] [2]
   url: https://www.gstatic.com/generate_204
   interval: 300
 rules:

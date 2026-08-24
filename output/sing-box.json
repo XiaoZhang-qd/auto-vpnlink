@@ -100,7 +100,7 @@
       }
     },
     {
-      "tag": "🇵🇱 Poland | 🌐 [*CIDR]",
+      "tag": "🇵🇱 Poland | 🌐 [*CIDR] [2]",
       "server": "twru1.fontanvpn.com",
       "server_port": 443,
       "type": "hysteria2",
@@ -109,18 +109,6 @@
         "enabled": true,
         "server_name": "twru1.fontanvpn.com",
         "insecure": false
-      }
-    },
-    {
-      "tag": "EPODONIOS",
-      "server": "144.31.234.58",
-      "server_port": 443,
-      "type": "hysteria2",
-      "password": "042a1881-44e4-4781-bd40-bf75164faf4f",
-      "tls": {
-        "enabled": true,
-        "server_name": "nl1.noesissite.ru",
-        "insecure": true
       }
     },
     {
@@ -136,67 +124,135 @@
       }
     },
     {
-      "tag": "hysteria2-12",
-      "server": "assets.gateway-stream.com",
-      "server_port": 52000,
+      "tag": "🇵🇱 Poland | 🌐 [*CIDR] [3]",
+      "server": "217.150.197.54",
+      "server_port": 8443,
       "type": "hysteria2",
-      "password": "09e4b638945d44bfa60b4fd00edad131",
+      "password": "12a9c8a7-4b08-4514-82f3-9a64bb9bd201",
       "tls": {
         "enabled": true,
-        "server_name": "assets.gateway-stream.com",
+        "server_name": "quic.tyr-agentstvo.tech",
         "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "gu74jg3ym0e21zco"
       }
     },
     {
-      "tag": "Proxy_mtm 33",
-      "server": "assets.gateway-stream.com",
-      "server_port": 52000,
+      "tag": "🌐 Anycast-IP | 🇩🇪 🇵🇱 [*CIDR]",
+      "server": "217.150.197.54",
+      "server_port": 8443,
       "type": "hysteria2",
-      "password": "09e4b638945d44bfa60b4fd00edad131",
+      "password": "12a9c8a7-4b08-4514-82f3-9a64bb9bd201",
       "tls": {
         "enabled": true,
-        "server_name": "assets.gateway-stream.com",
+        "server_name": "quic.tyr-agentstvo.tech",
         "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "gu74jg3ym0e21zco"
       }
     },
     {
-      "tag": "Proxy_mtm 33",
-      "server": "assets.gateway-stream.com",
-      "server_port": 52000,
+      "tag": "🌐 Anycast-IP | 🇵🇱 [*CIDR]",
+      "server": "217.150.197.54",
+      "server_port": 8443,
       "type": "hysteria2",
-      "password": "09e4b638945d44bfa60b4fd00edad131",
+      "password": "12a9c8a7-4b08-4514-82f3-9a64bb9bd201",
       "tls": {
         "enabled": true,
-        "server_name": "assets.gateway-stream.com",
+        "server_name": "quic.tyr-agentstvo.tech",
         "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "gu74jg3ym0e21zco"
       }
     },
     {
-      "tag": "Proxy_mtm 33vless://302c2e89-6f2d-4500-90ce-26d075c7e84f@66.78.40.202:443?security=reality&encryption=none&pbk=8zJkTehTm",
-      "server": "assets.gateway-stream.com",
-      "server_port": 52000,
+      "tag": "🌐 Anycast-IP | 🇩🇪 🇵🇱 [*CIDR] [2]",
+      "server": "217.150.197.54",
+      "server_port": 8443,
       "type": "hysteria2",
-      "password": "09e4b638945d44bfa60b4fd00edad131",
+      "password": "12a9c8a7-4b08-4514-82f3-9a64bb9bd201",
       "tls": {
         "enabled": true,
-        "server_name": "assets.gateway-stream.com",
+        "server_name": "quic.tyr-agentstvo.tech",
         "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "gu74jg3ym0e21zco"
+      }
+    },
+    {
+      "tag": "🇩🇪 Germany [*CIDR] [2]",
+      "server": "91.185.83.48",
+      "server_port": 8444,
+      "type": "hysteria2",
+      "password": "13259e0a-4850-4a12-8850-4ad7ded17770",
+      "tls": {
+        "enabled": true,
+        "server_name": "testing8.nimarko.org",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇩🇪 Germany [*CIDR] [3]",
+      "server": "91.185.83.48",
+      "server_port": 8444,
+      "type": "hysteria2",
+      "password": "13259e0a-4850-4a12-8850-4ad7ded17770",
+      "tls": {
+        "enabled": true,
+        "server_name": "testing8.nimarko.org",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇳🇱 The Netherlands [*CIDR]",
+      "server": "91.185.83.48",
+      "server_port": 8451,
+      "type": "hysteria2",
+      "password": "13259e0a-4850-4a12-8850-4ad7ded17770",
+      "tls": {
+        "enabled": true,
+        "server_name": "testing7.nimarko.org",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇳🇱 The Netherlands [*CIDR] [2]",
+      "server": "91.185.83.48",
+      "server_port": 8451,
+      "type": "hysteria2",
+      "password": "13259e0a-4850-4a12-8850-4ad7ded17770",
+      "tls": {
+        "enabled": true,
+        "server_name": "testing7.nimarko.org",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇳🇱 The Netherlands, Eygelshoven | [BL]",
+      "server": "91.185.83.48",
+      "server_port": 8451,
+      "type": "hysteria2",
+      "password": "13259e0a-4850-4a12-8850-4ad7ded17770",
+      "tls": {
+        "enabled": true,
+        "server_name": "testing7.nimarko.org",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇸🇪 Sweden [*CIDR]",
+      "server": "91.185.83.48",
+      "server_port": 8585,
+      "type": "hysteria2",
+      "password": "13259e0a-4850-4a12-8850-4ad7ded17770",
+      "tls": {
+        "enabled": true,
+        "server_name": "swsw.nimarko.org",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇸🇪 Sweden [*CIDR] [2]",
+      "server": "91.185.83.48",
+      "server_port": 8585,
+      "type": "hysteria2",
+      "password": "13259e0a-4850-4a12-8850-4ad7ded17770",
+      "tls": {
+        "enabled": true,
+        "server_name": "swsw.nimarko.org",
+        "insecure": false
       }
     },
     {
@@ -211,13 +267,19 @@
         "🇰🇿 Kazakhstan, Almaty | [BL]",
         "🇩🇪 Germany [*CIDR]",
         "🇮🇹 Italy | 🌐 [*CIDR]",
-        "🇵🇱 Poland | 🌐 [*CIDR]",
-        "EPODONIOS",
+        "🇵🇱 Poland | 🌐 [*CIDR] [2]",
         "🇩🇪 Germany, Frankfurt am Main | [BL]",
-        "hysteria2-12",
-        "Proxy_mtm 33",
-        "Proxy_mtm 33",
-        "Proxy_mtm 33vless://302c2e89-6f2d-4500-90ce-26d075c7e84f@66.78.40.202:443?security=reality&encryption=none&pbk=8zJkTehTm"
+        "🇵🇱 Poland | 🌐 [*CIDR] [3]",
+        "🌐 Anycast-IP | 🇩🇪 🇵🇱 [*CIDR]",
+        "🌐 Anycast-IP | 🇵🇱 [*CIDR]",
+        "🌐 Anycast-IP | 🇩🇪 🇵🇱 [*CIDR] [2]",
+        "🇩🇪 Germany [*CIDR] [2]",
+        "🇩🇪 Germany [*CIDR] [3]",
+        "🇳🇱 The Netherlands [*CIDR]",
+        "🇳🇱 The Netherlands [*CIDR] [2]",
+        "🇳🇱 The Netherlands, Eygelshoven | [BL]",
+        "🇸🇪 Sweden [*CIDR]",
+        "🇸🇪 Sweden [*CIDR] [2]"
       ]
     }
   ]
