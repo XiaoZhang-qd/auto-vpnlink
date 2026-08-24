@@ -1,12 +1,13 @@
 {
-  "verified_input": 9,
-  "parsed": 9,
+  "verified_input": 34,
+  "parsed": 34,
   "rejected": 0,
   "protocols": {
-    "hysteria2": 9
+    "ss": 23,
+    "hysteria2": 11
   },
-  "clash_proxies": 9,
-  "singbox_outbounds": 9,
-  "xray_outbounds": 0,
-  "unique_proxy_names": 9
+  "clash_proxies": 34,
+  "singbox_outbounds": 34,
+  "xray_outbounds": 23,
+  "unique_proxy_names": 34
 }

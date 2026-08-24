@@ -1,330 +1,884 @@
 {
-  "tested": 15,
-  "healthy": 9,
-  "failed": 6,
+  "tested": 43,
+  "healthy": 34,
+  "failed": 9,
+  "internet_test_urls": [
+    "https://www.gstatic.com/generate_204",
+    "https://cp.cloudflare.com/generate_204",
+    "https://www.google.com/generate_204"
+  ],
   "results": [
+    {
+      "uri": "ss://2022-blake3-aes-256-gcm:eVgEdD2UJXoP1O7qbSOz6A0FoSCYrwhV9hnPv6OQu9Q=%3AbvQihPJIpX+XX4PvARLDfGiPuZzQoiasvb0khfnKN4I=@111.15.84.201:2054#@Alirewa-565",
+      "name": "@Alirewa-565",
+      "type": "ss",
+      "server": "111.15.84.201",
+      "port": 2054,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-aes-256-gcm:fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0%3D@167.150.100.115:27755#%F0%9F%87%B8%F0%9F%87%ACSG_20%7C258KB%2Fs",
+      "name": "🇸🇬SG_20|258KB/s",
+      "type": "ss",
+      "server": "167.150.100.115",
+      "port": 27755,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:3%2Bfytx4x59H3KjC9hPkaia%2Fwn%2BgTgl6ceg2qJ9IXzcE%3D@140.245.126.240:56927#%F0%9F%87%B8%F0%9F%87%ACSG_93%7C311KB%2Fs%7CA004-260618",
+      "name": "🇸🇬SG_93|311KB/s|A004-260618",
+      "type": "ss",
+      "server": "140.245.126.240",
+      "port": 56927,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:3c8tj0DA79hjfpioMZAadyGr%2FdNl4C6MTsJTNE8l8Mw%3D@144.22.150.193:59319#%F0%9F%87%A7%F0%9F%87%B7BR_16%7C114KB%2Fs%7CA004-260618",
+      "name": "🇧🇷BR_16|114KB/s|A004-260618",
+      "type": "ss",
+      "server": "144.22.150.193",
+      "port": 59319,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:6s2MubJw%2BZ4OgZ%2BStJ1L2M7htgCp0%2FtetpKBk1dHvJ0%3D@168.107.70.15:56927#%F0%9F%87%B8%F0%9F%87%ACSG_98%7C294KB%2Fs%7CA004-260618",
+      "name": "🇸🇬SG_98|294KB/s|A004-260618",
+      "type": "ss",
+      "server": "168.107.70.15",
+      "port": 56927,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:BpRvyXe7auEq%2FL91yrZqp46xURh6LDAgvcj2fXQ8Nzk%3D@129.159.51.192:59319#%F0%9F%87%A7%F0%9F%87%B7BR_17%7C248KB%2Fs%7CA004-260618",
+      "name": "🇧🇷BR_17|248KB/s|A004-260618",
+      "type": "ss",
+      "server": "129.159.51.192",
+      "port": 59319,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:C1U%2Ft2iR%2F%2BR2DqqWk%2Be6cFFEhaAdGJfGBR%2BGeNrkoME%3D@144.24.160.250:59924#%F0%9F%87%A9%F0%9F%87%AADE_118%7C341KB%2Fs%7CM003-260806",
+      "name": "🇩🇪DE_118|341KB/s|M003-260806",
+      "type": "ss",
+      "server": "144.24.160.250",
+      "port": 59924,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:Cem5PpJ66yTcbs+EKD4C2cDlCjGW5YSQCWkjhY8T%2FMY=@130.61.118.77:59924#@Alirewa-578",
+      "name": "@Alirewa-578",
+      "type": "ss",
+      "server": "130.61.118.77",
+      "port": 59924,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:KA1%2FOAHhawU2vWpzCWzboh5Sy7Pf5oJRaWpUUdVGnVw%3D@161.118.225.224:56927#%F0%9F%87%B8%F0%9F%87%ACSG_96%7C384KB%2Fs%7CA004-260618",
+      "name": "🇸🇬SG_96|384KB/s|A004-260618",
+      "type": "ss",
+      "server": "161.118.225.224",
+      "port": 56927,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:MdImM0QejAzcmEd6BKaoy1mr4hVAIqXF7LTY1EqzTL0%3D@129.159.49.64:59319#%F0%9F%87%A7%F0%9F%87%B7BR_11%7C404KB%2Fs%7CR002-260618",
+      "name": "🇧🇷BR_11|404KB/s|R002-260618",
+      "type": "ss",
+      "server": "129.159.49.64",
+      "port": 59319,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:NPImXu1dvdMvgeuFx60flecCExTtkLUfQd7HqXbqJMs%3D@161.118.208.57:56927#%F0%9F%87%B8%F0%9F%87%ACSG_97%7C344KB%2Fs%7CA004-260618",
+      "name": "🇸🇬SG_97|344KB/s|A004-260618",
+      "type": "ss",
+      "server": "161.118.208.57",
+      "port": 56927,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:TWbDvdQktmGst6N2Yc2%2FL5IC9e3+kttzFJOv6doxsPw=@130.61.113.169:59924#@Alirewa-567",
+      "name": "@Alirewa-567",
+      "type": "ss",
+      "server": "130.61.113.169",
+      "port": 59924,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:VNZU26yCu5J1TaXQ9IdJasKHopBUzc2xt%2BJUl9ECB%2Bg%3D@150.230.229.189:59319#%F0%9F%87%A7%F0%9F%87%B7BR_12%7C275KB%2Fs%7CS001-260618",
+      "name": "🇧🇷BR_12|275KB/s|S001-260618",
+      "type": "ss",
+      "server": "150.230.229.189",
+      "port": 59319,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:bOY1mD99pB8lm1jW%2BmjwfwJyH3Il0ILCA5EUhDQPajI%3D@130.61.42.205:59924#%F0%9F%87%A9%F0%9F%87%AADE_130%7C149KB%2Fs%7CA004-260618",
+      "name": "🇩🇪DE_130|149KB/s|A004-260618",
+      "type": "ss",
+      "server": "130.61.42.205",
+      "port": 59924,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:hbEvkzR93GX0boBpZKspRggjovWge9T+z%2FUPk69rIHg=@143.47.177.25:45819#@Alirewa-580",
+      "name": "@Alirewa-580",
+      "type": "ss",
+      "server": "143.47.177.25",
+      "port": 45819,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:jKNMaMEd3mivEOtJZC%2FXxuvwGTS8fDE8GUWs7V%2FwmdQ%3D@130.61.80.61:59924#%F0%9F%87%A9%F0%9F%87%AADE_129%7C361KB%2Fs%7CA004-260618",
+      "name": "🇩🇪DE_129|361KB/s|A004-260618",
+      "type": "ss",
+      "server": "130.61.80.61",
+      "port": 59924,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:jeFxHeDLdS3v1c6txqm38GivrrSQFTuxRBft80ewg6Q%3D@130.61.40.100:59924#%F0%9F%87%A9%F0%9F%87%AADE_119%7C268KB%2Fs%7CB007-260618",
+      "name": "🇩🇪DE_119|268KB/s|B007-260618",
+      "type": "ss",
+      "server": "130.61.40.100",
+      "port": 59924,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:o6Revfjr6gF04IFOGg0ThUZ%2FfF4LeOPRjeiV0rL1lRY%3D@130.61.231.169:59924#%F0%9F%87%A9%F0%9F%87%AADE_120%7C217KB%2Fs%7CA001-260618",
+      "name": "🇩🇪DE_120|217KB/s|A001-260618",
+      "type": "ss",
+      "server": "130.61.231.169",
+      "port": 59924,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:qDuLP+56cM4kraLQoKuNGS+a4A+RbcidAw7iXWtddTE=@158.101.215.37:45819#@Alirewa-577",
+      "name": "@Alirewa-577",
+      "type": "ss",
+      "server": "158.101.215.37",
+      "port": 45819,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:s6RXknYLMS6vQPV6efRSoLoe45c8%2FPp1%2BdB8CdfNlmY%3D@168.75.66.122:59319#%F0%9F%87%A7%F0%9F%87%B7BR_18%7C79KB%2Fs%7CT001-260618",
+      "name": "🇧🇷BR_18|79KB/s|T001-260618",
+      "type": "ss",
+      "server": "168.75.66.122",
+      "port": 59319,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:sPH+tlbdXt4j6PJi6sUMuUq3fa6TT5375pmPak%2FbQds=@129.146.221.27:50356#@Alirewa-555",
+      "name": "@Alirewa-555",
+      "type": "ss",
+      "server": "129.146.221.27",
+      "port": 50356,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:y0lUf5WDcD0z4Vm%2F57XU5GWoPKS%2B07qwaHOhXiwQekA%3D@140.245.117.116:56927#%E2%9D%93Other_79%7C236KB%2Fs%7CA004-260618",
+      "name": "❓Other_79|236KB/s|A004-260618",
+      "type": "ss",
+      "server": "140.245.117.116",
+      "port": 56927,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:z2Jh23bumSdistaAEcyEZiFiqEgmQa8jZyatjn7sn98=@130.61.32.138:59924#@Alirewa-540",
+      "name": "@Alirewa-540",
+      "type": "ss",
+      "server": "130.61.32.138",
+      "port": 59924,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "hysteria2://${config.sops.placeholder.hy2_password}@cdn.example.com:443?obfs=salamander&obfs-password=${config.sops.placeholder.hy2_obfs}&sni=cdn.example.com&alpn=h3",
+      "name": "hysteria2-24",
+      "type": "hysteria2",
+      "server": "cdn.example.com",
+      "port": 443,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "hysteria2://%40Tel%40Configvibes@198.105.123.106:11504?insecure=1&sni=archive.ubuntu.com&obfs=salamander&obfs-password=Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------#%40Configvibes%D1%80%D2%B9%D2%AE%E2%84%96%D1%80%D2%B9%D2%AE%C2%B7",
+      "name": "@ConfigvibesрҹҮ№рҹҮ·",
+      "type": "hysteria2",
+      "server": "198.105.123.106",
+      "port": 11504,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "hysteria2://%40Telegram%40Configvibes@107.181.155.107:2096?insecure=1&sni=ftp.debian.org&obfs=salamander&obfs-password=Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes#%40Configvibes%D1%80%D2%B9%D2%AE%E2%84%96%D1%80%D2%B9%D2%AE%C2%B7%20%231",
+      "name": "@ConfigvibesрҹҮ№рҹҮ· #1",
+      "type": "hysteria2",
+      "server": "107.181.155.107",
+      "port": 2096,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "hysteria2://%40Telegram%40Configvibes@45.92.219.237:8486?insecure=1&sni=ftp.debian.org&obfs=salamander&obfs-password=Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------#%40Configvibes%D1%80%D2%B9%D2%AE%E2%84%96%D1%80%D2%B9%D2%AE%C2%B7%20%232",
+      "name": "@ConfigvibesрҹҮ№рҹҮ· #2",
+      "type": "hysteria2",
+      "server": "45.92.219.237",
+      "port": 8486,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
     {
       "uri": "hysteria2://000081e1-c607-495c-b072-195323fa1113@pipe-4854.internet-booster.com:443?headerType=none&encryption=none&sni=pipe-4854.internet-booster.com&insecure=0#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Warsaw%20%28%C5%9Ar%C3%B3dmie%C5%9Bcie%29%20%7C%20%5BBL%5D",
       "name": "🇵🇱 Poland, Warsaw (Śródmieście) | [BL]",
+      "type": "hysteria2",
       "server": "pipe-4854.internet-booster.com",
       "port": 443,
       "ok": false,
       "reason": "mihomo_not_ready",
-      "proxy": {
-        "name": "🇵🇱 Poland, Warsaw (Śródmieście) | [BL]",
-        "type": "hysteria2",
-        "server": "pipe-4854.internet-booster.com",
-        "port": 443,
-        "password": "000081e1-c607-495c-b072-195323fa1113",
-        "sni": "pipe-4854.internet-booster.com",
-        "udp": true,
-        "skip-cert-verify": false,
-        "alpn": [
-          "h3"
-        ]
-      }
+      "checks": []
     },
     {
       "uri": "hysteria2://00c0c6fc-2958-4395-91c3-7e61422f671f@svetzen.nksconnect.xyz:8443?headerType=none&encryption=none&sni=svetzen.nksconnect.xyz&insecure=0#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
       "name": "🇫🇮 Finland, Helsinki | [BL]",
+      "type": "hysteria2",
       "server": "svetzen.nksconnect.xyz",
       "port": 8443,
       "ok": false,
       "reason": "mihomo_not_ready",
-      "proxy": {
-        "name": "🇫🇮 Finland, Helsinki | [BL]",
-        "type": "hysteria2",
-        "server": "svetzen.nksconnect.xyz",
-        "port": 8443,
-        "password": "00c0c6fc-2958-4395-91c3-7e61422f671f",
-        "sni": "svetzen.nksconnect.xyz",
-        "udp": true,
-        "skip-cert-verify": false,
-        "alpn": [
-          "h3"
-        ]
-      }
+      "checks": []
     },
     {
       "uri": "hysteria2://0147bb62-7972-40ee-a86a-409e0a0fb838@ake.fontanvpn.com:443?sni=ake.fontanvpn.com#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
       "name": "🇬🇧 United Kingdom, London | [BL]",
+      "type": "hysteria2",
       "server": "ake.fontanvpn.com",
       "port": 443,
       "ok": false,
       "reason": "mihomo_not_ready",
-      "proxy": {
-        "name": "🇬🇧 United Kingdom, London | [BL]",
-        "type": "hysteria2",
-        "server": "ake.fontanvpn.com",
-        "port": 443,
-        "password": "0147bb62-7972-40ee-a86a-409e0a0fb838",
-        "sni": "ake.fontanvpn.com",
-        "udp": true,
-        "skip-cert-verify": false,
-        "alpn": [
-          "h3"
-        ]
-      }
+      "checks": []
     },
     {
       "uri": "hysteria2://0147bb62-7972-40ee-a86a-409e0a0fb838@cheat.fontanvpn.com:443?sni=cheat.fontanvpn.com#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
       "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
+      "type": "hysteria2",
       "server": "cheat.fontanvpn.com",
       "port": 443,
       "ok": false,
       "reason": "mihomo_not_ready",
-      "proxy": {
-        "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
-        "type": "hysteria2",
-        "server": "cheat.fontanvpn.com",
-        "port": 443,
-        "password": "0147bb62-7972-40ee-a86a-409e0a0fb838",
-        "sni": "cheat.fontanvpn.com",
-        "udp": true,
-        "skip-cert-verify": false,
-        "alpn": [
-          "h3"
-        ]
-      }
+      "checks": []
     },
     {
       "uri": "hysteria2://0147bb62-7972-40ee-a86a-409e0a0fb838@gogo.fontanvpn.com:443?sni=gogo.fontanvpn.com#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D",
       "name": "🇵🇱 Poland | 🌐 [*CIDR]",
+      "type": "hysteria2",
       "server": "gogo.fontanvpn.com",
       "port": 443,
       "ok": true,
-      "reason": "http_204",
-      "proxy": {
-        "name": "🇵🇱 Poland | 🌐 [*CIDR]",
-        "type": "hysteria2",
-        "server": "gogo.fontanvpn.com",
-        "port": 443,
-        "password": "0147bb62-7972-40ee-a86a-409e0a0fb838",
-        "sni": "gogo.fontanvpn.com",
-        "udp": true,
-        "skip-cert-verify": false,
-        "alpn": [
-          "h3"
-        ]
-      }
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "hysteria2://0147bb62-7972-40ee-a86a-409e0a0fb838@kisofer.fontanvpn.com:443?sni=kisofer.fontanvpn.com#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Eygelshoven%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Eygelshoven | [BL]",
+      "type": "hysteria2",
+      "server": "kisofer.fontanvpn.com",
+      "port": 443,
+      "ok": false,
+      "reason": "mihomo_not_ready",
+      "checks": []
     },
     {
       "uri": "hysteria2://0147bb62-7972-40ee-a86a-409e0a0fb838@koin.fontanvpn.com:443?sni=koin.fontanvpn.com#%F0%9F%87%B0%F0%9F%87%BF%20Kazakhstan%2C%20Almaty%20%7C%20%5BBL%5D",
       "name": "🇰🇿 Kazakhstan, Almaty | [BL]",
+      "type": "hysteria2",
       "server": "koin.fontanvpn.com",
       "port": 443,
       "ok": false,
       "reason": "mihomo_not_ready",
-      "proxy": {
-        "name": "🇰🇿 Kazakhstan, Almaty | [BL]",
-        "type": "hysteria2",
-        "server": "koin.fontanvpn.com",
-        "port": 443,
-        "password": "0147bb62-7972-40ee-a86a-409e0a0fb838",
-        "sni": "koin.fontanvpn.com",
-        "udp": true,
-        "skip-cert-verify": false,
-        "alpn": [
-          "h3"
-        ]
-      }
+      "checks": []
     },
     {
       "uri": "hysteria2://0147bb62-7972-40ee-a86a-409e0a0fb838@kum.tokervpn.ru:443?sni=kum.tokervpn.ru#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%5B%2ACIDR%5D",
       "name": "🇩🇪 Germany [*CIDR]",
+      "type": "hysteria2",
       "server": "kum.tokervpn.ru",
       "port": 443,
       "ok": true,
-      "reason": "http_204",
-      "proxy": {
-        "name": "🇩🇪 Germany [*CIDR]",
-        "type": "hysteria2",
-        "server": "kum.tokervpn.ru",
-        "port": 443,
-        "password": "0147bb62-7972-40ee-a86a-409e0a0fb838",
-        "sni": "kum.tokervpn.ru",
-        "udp": true,
-        "skip-cert-verify": false,
-        "alpn": [
-          "h3"
-        ]
-      }
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
     },
     {
       "uri": "hysteria2://0147bb62-7972-40ee-a86a-409e0a0fb838@tw1.tokervpn.ru:443?sni=tw1.tokervpn.ru#%F0%9F%87%AE%F0%9F%87%B9%20Italy%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D",
       "name": "🇮🇹 Italy | 🌐 [*CIDR]",
+      "type": "hysteria2",
       "server": "tw1.tokervpn.ru",
       "port": 443,
       "ok": true,
-      "reason": "http_204",
-      "proxy": {
-        "name": "🇮🇹 Italy | 🌐 [*CIDR]",
-        "type": "hysteria2",
-        "server": "tw1.tokervpn.ru",
-        "port": 443,
-        "password": "0147bb62-7972-40ee-a86a-409e0a0fb838",
-        "sni": "tw1.tokervpn.ru",
-        "udp": true,
-        "skip-cert-verify": false,
-        "alpn": [
-          "h3"
-        ]
-      }
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
     },
     {
       "uri": "hysteria2://0147bb62-7972-40ee-a86a-409e0a0fb838@twru1.fontanvpn.com:443?sni=twru1.fontanvpn.com#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D",
-      "name": "🇵🇱 Poland | 🌐 [*CIDR] [2]",
+      "name": "🇵🇱 Poland | 🌐 [*CIDR]",
+      "type": "hysteria2",
       "server": "twru1.fontanvpn.com",
       "port": 443,
       "ok": true,
-      "reason": "http_204",
-      "proxy": {
-        "name": "🇵🇱 Poland | 🌐 [*CIDR] [2]",
-        "type": "hysteria2",
-        "server": "twru1.fontanvpn.com",
-        "port": 443,
-        "password": "0147bb62-7972-40ee-a86a-409e0a0fb838",
-        "sni": "twru1.fontanvpn.com",
-        "udp": true,
-        "skip-cert-verify": false,
-        "alpn": [
-          "h3"
-        ]
-      }
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "hysteria2://03114279-e38a-4d27-82a9-6a69dbb7f168@tn.tmn141246.ru:443?sni=live.ok.ru#4212",
+      "name": "4212",
+      "type": "hysteria2",
+      "server": "tn.tmn141246.ru",
+      "port": 443,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "hysteria2://03942219-0dd7-4544-aeb1-07f9db0be960@191.44.90.3:8444?sni=premium-nl.geodema.network#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]",
+      "type": "hysteria2",
+      "server": "191.44.90.3",
+      "port": 8444,
+      "ok": false,
+      "reason": "mihomo_not_ready",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://03942219-0dd7-4544-aeb1-07f9db0be960@89.106.85.19:8444?sni=premium-de-hy2.geodema.network#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany | 🌐 | [BL]",
+      "type": "hysteria2",
+      "server": "89.106.85.19",
+      "port": 8444,
+      "ok": true,
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
+    },
+    {
+      "uri": "hysteria2://042a1881-44e4-4781-bd40-bf75164faf4f@144.31.207.60:443?sni=nl1.noesissite.ru&path=%2F#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Orem%20%7C%20%5BBL%5D",
+      "name": "🇺🇸 United States, Orem | [BL]",
+      "type": "hysteria2",
+      "server": "144.31.207.60",
+      "port": 443,
+      "ok": false,
+      "reason": "mihomo_not_ready",
+      "checks": []
+    },
+    {
+      "uri": "hysteria2://042a1881-44e4-4781-bd40-bf75164faf4f@144.31.224.81:443/?sni=nland1.noesissite.ru#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
+      "type": "hysteria2",
+      "server": "144.31.224.81",
+      "port": 443,
+      "ok": false,
+      "reason": "mihomo_not_ready",
+      "checks": []
     },
     {
       "uri": "hysteria2://042a1881-44e4-4781-bd40-bf75164faf4f@144.31.234.58:443/?insecure=1&sni=nl1.noesissite.ru#EPODONIOS",
       "name": "EPODONIOS",
+      "type": "hysteria2",
       "server": "144.31.234.58",
       "port": 443,
       "ok": true,
-      "reason": "http_204",
-      "proxy": {
-        "name": "EPODONIOS",
-        "type": "hysteria2",
-        "server": "144.31.234.58",
-        "port": 443,
-        "password": "042a1881-44e4-4781-bd40-bf75164faf4f",
-        "sni": "nl1.noesissite.ru",
-        "udp": true,
-        "skip-cert-verify": true,
-        "alpn": [
-          "h3"
-        ]
-      }
-    },
-    {
-      "uri": "hysteria2://042a1881-44e4-4781-bd40-bf75164faf4f@178.215.238.30:443/?sni=germany1.noesissite.ru#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
-      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
-      "server": "178.215.238.30",
-      "port": 443,
-      "ok": false,
-      "reason": "mihomo_not_ready",
-      "proxy": {
-        "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
-        "type": "hysteria2",
-        "server": "178.215.238.30",
-        "port": 443,
-        "password": "042a1881-44e4-4781-bd40-bf75164faf4f",
-        "sni": "germany1.noesissite.ru",
-        "udp": true,
-        "skip-cert-verify": false,
-        "alpn": [
-          "h3"
-        ]
-      }
-    },
-    {
-      "uri": "hysteria2://09e4b638945d44bfa60b4fd00edad131@assets.gateway-stream.com:52000?insecure=0&alpn=h3&sni=assets.gateway-stream.com&obfs=salamander&obfs-password=gu74jg3ym0e21zco#",
-      "name": "hysteria2-12",
-      "server": "assets.gateway-stream.com",
-      "port": 52000,
-      "ok": true,
-      "reason": "http_204",
-      "proxy": {
-        "name": "hysteria2-12",
-        "type": "hysteria2",
-        "server": "assets.gateway-stream.com",
-        "port": 52000,
-        "password": "09e4b638945d44bfa60b4fd00edad131",
-        "sni": "assets.gateway-stream.com",
-        "udp": true,
-        "skip-cert-verify": false,
-        "alpn": [
-          "h3"
-        ],
-        "obfs": "salamander",
-        "obfs-password": "gu74jg3ym0e21zco"
-      }
-    },
-    {
-      "uri": "hysteria2://09e4b638945d44bfa60b4fd00edad131@assets.gateway-stream.com:52000?insecure=0&alpn=h3&sni=assets.gateway-stream.com&obfs=salamander&obfs-password=gu74jg3ym0e21zco#Proxy_mtm%2033",
-      "name": "Proxy_mtm 33",
-      "server": "assets.gateway-stream.com",
-      "port": 52000,
-      "ok": true,
-      "reason": "http_204",
-      "proxy": {
-        "name": "Proxy_mtm 33",
-        "type": "hysteria2",
-        "server": "assets.gateway-stream.com",
-        "port": 52000,
-        "password": "09e4b638945d44bfa60b4fd00edad131",
-        "sni": "assets.gateway-stream.com",
-        "udp": true,
-        "skip-cert-verify": false,
-        "alpn": [
-          "h3"
-        ],
-        "obfs": "salamander",
-        "obfs-password": "gu74jg3ym0e21zco"
-      }
-    },
-    {
-      "uri": "hysteria2://09e4b638945d44bfa60b4fd00edad131@assets.gateway-stream.com:52000?security=tls&obfs=salamander&alpn=h3&obfs-password=gu74jg3ym0e21zco&insecure=0&sni=assets.gateway-stream.com#Proxy_mtm%2033",
-      "name": "Proxy_mtm 33 [2]",
-      "server": "assets.gateway-stream.com",
-      "port": 52000,
-      "ok": true,
-      "reason": "http_204",
-      "proxy": {
-        "name": "Proxy_mtm 33 [2]",
-        "type": "hysteria2",
-        "server": "assets.gateway-stream.com",
-        "port": 52000,
-        "password": "09e4b638945d44bfa60b4fd00edad131",
-        "sni": "assets.gateway-stream.com",
-        "udp": true,
-        "skip-cert-verify": false,
-        "alpn": [
-          "h3"
-        ],
-        "obfs": "salamander",
-        "obfs-password": "gu74jg3ym0e21zco"
-      }
-    },
-    {
-      "uri": "hysteria2://09e4b638945d44bfa60b4fd00edad131@assets.gateway-stream.com:52000?security=tls&obfs=salamander&alpn=h3&obfs-password=gu74jg3ym0e21zco&insecure=0&sni=assets.gateway-stream.com#Proxy_mtm%2033vless://302c2e89-6f2d-4500-90ce-26d075c7e84f@66.78.40.202:443?security=reality&encryption=none&pbk=8zJkTehTmhmgKWUIj-CyJP4gtMjNxLgBxPjHC1wwW3A&headerType=none&fp=firefox&spx=%2Fb46a29a208a37d1&type=tcp&flow=xtls-rprx-vision&sni=www.samsung.com&sid=61#Proxy_mtm%2034vless://7595cd50-9326-48e4-a7bc-802e85e643ec@162.19.156.14:6800?security=reality&encryption=none&pbk=lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo&headerType=none&fp=qq&type=tcp&sni=play.google.com#Proxy_mtm%2035vless://b6c29ae7-4748-4049-b642-b695c0d2c776@191.44.118.250:2053?security=reality&encryption=none&pbk=E6u2RbffXIPvia5v5iIZVj6U_VpSBWmGTsHHNtH-5Rg&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=vk.ru&sid=417063feab794131#Proxy_mtm%2036",
-      "name": "Proxy_mtm 33vless://302c2e89-6f2d-4500-90ce-26d075c7e84f@66.78.40.202:443?security=reality&encryptio",
-      "server": "assets.gateway-stream.com",
-      "port": 52000,
-      "ok": true,
-      "reason": "http_204",
-      "proxy": {
-        "name": "Proxy_mtm 33vless://302c2e89-6f2d-4500-90ce-26d075c7e84f@66.78.40.202:443?security=reality&encryptio",
-        "type": "hysteria2",
-        "server": "assets.gateway-stream.com",
-        "port": 52000,
-        "password": "09e4b638945d44bfa60b4fd00edad131",
-        "sni": "assets.gateway-stream.com",
-        "udp": true,
-        "skip-cert-verify": false,
-        "alpn": [
-          "h3"
-        ],
-        "obfs": "salamander",
-        "obfs-password": "gu74jg3ym0e21zco"
-      }
+      "reason": "internet_ok",
+      "checks": [
+        {
+          "url": "https://www.gstatic.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://cp.cloudflare.com/generate_204",
+          "status": 204
+        },
+        {
+          "url": "https://www.google.com/generate_204",
+          "status": 204
+        }
+      ]
     }
   ]
 }

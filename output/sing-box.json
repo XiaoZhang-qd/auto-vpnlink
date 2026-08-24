@@ -4,6 +4,254 @@
   },
   "outbounds": [
     {
+      "tag": "@Alirewa-565",
+      "server": "111.15.84.201",
+      "server_port": 2054,
+      "type": "shadowsocks",
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "eVgEdD2UJXoP1O7qbSOz6A0FoSCYrwhV9hnPv6OQu9Q=:bvQihPJIpX+XX4PvARLDfGiPuZzQoiasvb0khfnKN4I="
+    },
+    {
+      "tag": "🇸🇬SG_20|258KB/s",
+      "server": "167.150.100.115",
+      "server_port": 27755,
+      "type": "shadowsocks",
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0="
+    },
+    {
+      "tag": "🇸🇬SG_93|311KB/s|A004-260618",
+      "server": "140.245.126.240",
+      "server_port": 56927,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "3+fytx4x59H3KjC9hPkaia/wn+gTgl6ceg2qJ9IXzcE="
+    },
+    {
+      "tag": "🇧🇷BR_16|114KB/s|A004-260618",
+      "server": "144.22.150.193",
+      "server_port": 59319,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "3c8tj0DA79hjfpioMZAadyGr/dNl4C6MTsJTNE8l8Mw="
+    },
+    {
+      "tag": "🇸🇬SG_98|294KB/s|A004-260618",
+      "server": "168.107.70.15",
+      "server_port": 56927,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "6s2MubJw+Z4OgZ+StJ1L2M7htgCp0/tetpKBk1dHvJ0="
+    },
+    {
+      "tag": "🇧🇷BR_17|248KB/s|A004-260618",
+      "server": "129.159.51.192",
+      "server_port": 59319,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "BpRvyXe7auEq/L91yrZqp46xURh6LDAgvcj2fXQ8Nzk="
+    },
+    {
+      "tag": "🇩🇪DE_118|341KB/s|M003-260806",
+      "server": "144.24.160.250",
+      "server_port": 59924,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "C1U/t2iR/+R2DqqWk+e6cFFEhaAdGJfGBR+GeNrkoME="
+    },
+    {
+      "tag": "@Alirewa-578",
+      "server": "130.61.118.77",
+      "server_port": 59924,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "Cem5PpJ66yTcbs+EKD4C2cDlCjGW5YSQCWkjhY8T/MY="
+    },
+    {
+      "tag": "🇸🇬SG_96|384KB/s|A004-260618",
+      "server": "161.118.225.224",
+      "server_port": 56927,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "KA1/OAHhawU2vWpzCWzboh5Sy7Pf5oJRaWpUUdVGnVw="
+    },
+    {
+      "tag": "🇧🇷BR_11|404KB/s|R002-260618",
+      "server": "129.159.49.64",
+      "server_port": 59319,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "MdImM0QejAzcmEd6BKaoy1mr4hVAIqXF7LTY1EqzTL0="
+    },
+    {
+      "tag": "🇸🇬SG_97|344KB/s|A004-260618",
+      "server": "161.118.208.57",
+      "server_port": 56927,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "NPImXu1dvdMvgeuFx60flecCExTtkLUfQd7HqXbqJMs="
+    },
+    {
+      "tag": "@Alirewa-567",
+      "server": "130.61.113.169",
+      "server_port": 59924,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "TWbDvdQktmGst6N2Yc2/L5IC9e3+kttzFJOv6doxsPw="
+    },
+    {
+      "tag": "🇧🇷BR_12|275KB/s|S001-260618",
+      "server": "150.230.229.189",
+      "server_port": 59319,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "VNZU26yCu5J1TaXQ9IdJasKHopBUzc2xt+JUl9ECB+g="
+    },
+    {
+      "tag": "🇩🇪DE_130|149KB/s|A004-260618",
+      "server": "130.61.42.205",
+      "server_port": 59924,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "bOY1mD99pB8lm1jW+mjwfwJyH3Il0ILCA5EUhDQPajI="
+    },
+    {
+      "tag": "@Alirewa-580",
+      "server": "143.47.177.25",
+      "server_port": 45819,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "hbEvkzR93GX0boBpZKspRggjovWge9T+z/UPk69rIHg="
+    },
+    {
+      "tag": "🇩🇪DE_129|361KB/s|A004-260618",
+      "server": "130.61.80.61",
+      "server_port": 59924,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "jKNMaMEd3mivEOtJZC/XxuvwGTS8fDE8GUWs7V/wmdQ="
+    },
+    {
+      "tag": "🇩🇪DE_119|268KB/s|B007-260618",
+      "server": "130.61.40.100",
+      "server_port": 59924,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "jeFxHeDLdS3v1c6txqm38GivrrSQFTuxRBft80ewg6Q="
+    },
+    {
+      "tag": "🇩🇪DE_120|217KB/s|A001-260618",
+      "server": "130.61.231.169",
+      "server_port": 59924,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "o6Revfjr6gF04IFOGg0ThUZ/fF4LeOPRjeiV0rL1lRY="
+    },
+    {
+      "tag": "@Alirewa-577",
+      "server": "158.101.215.37",
+      "server_port": 45819,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "qDuLP+56cM4kraLQoKuNGS+a4A+RbcidAw7iXWtddTE="
+    },
+    {
+      "tag": "🇧🇷BR_18|79KB/s|T001-260618",
+      "server": "168.75.66.122",
+      "server_port": 59319,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "s6RXknYLMS6vQPV6efRSoLoe45c8/Pp1+dB8CdfNlmY="
+    },
+    {
+      "tag": "@Alirewa-555",
+      "server": "129.146.221.27",
+      "server_port": 50356,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "sPH+tlbdXt4j6PJi6sUMuUq3fa6TT5375pmPak/bQds="
+    },
+    {
+      "tag": "❓Other_79|236KB/s|A004-260618",
+      "server": "140.245.117.116",
+      "server_port": 56927,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "y0lUf5WDcD0z4Vm/57XU5GWoPKS+07qwaHOhXiwQekA="
+    },
+    {
+      "tag": "@Alirewa-540",
+      "server": "130.61.32.138",
+      "server_port": 59924,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "z2Jh23bumSdistaAEcyEZiFiqEgmQa8jZyatjn7sn98="
+    },
+    {
+      "tag": "hysteria2-24",
+      "server": "cdn.example.com",
+      "server_port": 443,
+      "type": "hysteria2",
+      "password": "${config.sops.placeholder.hy2_password}",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.example.com",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "${config.sops.placeholder.hy2_obfs}"
+      }
+    },
+    {
+      "tag": "@ConfigvibesрҹҮ№рҹҮ·",
+      "server": "198.105.123.106",
+      "server_port": 11504,
+      "type": "hysteria2",
+      "password": "@Tel@Configvibes",
+      "tls": {
+        "enabled": true,
+        "server_name": "archive.ubuntu.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------"
+      }
+    },
+    {
+      "tag": "@ConfigvibesрҹҮ№рҹҮ· #1",
+      "server": "107.181.155.107",
+      "server_port": 2096,
+      "type": "hysteria2",
+      "password": "@Telegram@Configvibes",
+      "tls": {
+        "enabled": true,
+        "server_name": "ftp.debian.org",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes"
+      }
+    },
+    {
+      "tag": "@ConfigvibesрҹҮ№рҹҮ· #2",
+      "server": "45.92.219.237",
+      "server_port": 8486,
+      "type": "hysteria2",
+      "password": "@Telegram@Configvibes",
+      "tls": {
+        "enabled": true,
+        "server_name": "ftp.debian.org",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------"
+      }
+    },
+    {
       "tag": "🇵🇱 Poland | 🌐 [*CIDR]",
       "server": "gogo.fontanvpn.com",
       "server_port": 443,
@@ -52,6 +300,30 @@
       }
     },
     {
+      "tag": "4212",
+      "server": "tn.tmn141246.ru",
+      "server_port": 443,
+      "type": "hysteria2",
+      "password": "03114279-e38a-4d27-82a9-6a69dbb7f168",
+      "tls": {
+        "enabled": true,
+        "server_name": "live.ok.ru",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇩🇪 Germany | 🌐 | [BL]",
+      "server": "89.106.85.19",
+      "server_port": 8444,
+      "type": "hysteria2",
+      "password": "03942219-0dd7-4544-aeb1-07f9db0be960",
+      "tls": {
+        "enabled": true,
+        "server_name": "premium-de-hy2.geodema.network",
+        "insecure": false
+      }
+    },
+    {
       "tag": "EPODONIOS",
       "server": "144.31.234.58",
       "server_port": 443,
@@ -64,82 +336,43 @@
       }
     },
     {
-      "tag": "hysteria2-6",
-      "server": "assets.gateway-stream.com",
-      "server_port": 52000,
-      "type": "hysteria2",
-      "password": "09e4b638945d44bfa60b4fd00edad131",
-      "tls": {
-        "enabled": true,
-        "server_name": "assets.gateway-stream.com",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "gu74jg3ym0e21zco"
-      }
-    },
-    {
-      "tag": "Proxy_mtm 33",
-      "server": "assets.gateway-stream.com",
-      "server_port": 52000,
-      "type": "hysteria2",
-      "password": "09e4b638945d44bfa60b4fd00edad131",
-      "tls": {
-        "enabled": true,
-        "server_name": "assets.gateway-stream.com",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "gu74jg3ym0e21zco"
-      }
-    },
-    {
-      "tag": "Proxy_mtm 33 [2]",
-      "server": "assets.gateway-stream.com",
-      "server_port": 52000,
-      "type": "hysteria2",
-      "password": "09e4b638945d44bfa60b4fd00edad131",
-      "tls": {
-        "enabled": true,
-        "server_name": "assets.gateway-stream.com",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "gu74jg3ym0e21zco"
-      }
-    },
-    {
-      "tag": "Proxy_mtm 33vless://302c2e89-6f2d-4500-90ce-26d075c7e84f@66.78.40.202:443?security=reality&encryptio",
-      "server": "assets.gateway-stream.com",
-      "server_port": 52000,
-      "type": "hysteria2",
-      "password": "09e4b638945d44bfa60b4fd00edad131",
-      "tls": {
-        "enabled": true,
-        "server_name": "assets.gateway-stream.com",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "gu74jg3ym0e21zco"
-      }
-    },
-    {
       "type": "selector",
       "tag": "AUTO",
       "outbounds": [
+        "@Alirewa-565",
+        "🇸🇬SG_20|258KB/s",
+        "🇸🇬SG_93|311KB/s|A004-260618",
+        "🇧🇷BR_16|114KB/s|A004-260618",
+        "🇸🇬SG_98|294KB/s|A004-260618",
+        "🇧🇷BR_17|248KB/s|A004-260618",
+        "🇩🇪DE_118|341KB/s|M003-260806",
+        "@Alirewa-578",
+        "🇸🇬SG_96|384KB/s|A004-260618",
+        "🇧🇷BR_11|404KB/s|R002-260618",
+        "🇸🇬SG_97|344KB/s|A004-260618",
+        "@Alirewa-567",
+        "🇧🇷BR_12|275KB/s|S001-260618",
+        "🇩🇪DE_130|149KB/s|A004-260618",
+        "@Alirewa-580",
+        "🇩🇪DE_129|361KB/s|A004-260618",
+        "🇩🇪DE_119|268KB/s|B007-260618",
+        "🇩🇪DE_120|217KB/s|A001-260618",
+        "@Alirewa-577",
+        "🇧🇷BR_18|79KB/s|T001-260618",
+        "@Alirewa-555",
+        "❓Other_79|236KB/s|A004-260618",
+        "@Alirewa-540",
+        "hysteria2-24",
+        "@ConfigvibesрҹҮ№рҹҮ·",
+        "@ConfigvibesрҹҮ№рҹҮ· #1",
+        "@ConfigvibesрҹҮ№рҹҮ· #2",
         "🇵🇱 Poland | 🌐 [*CIDR]",
         "🇩🇪 Germany [*CIDR]",
         "🇮🇹 Italy | 🌐 [*CIDR]",
         "🇵🇱 Poland | 🌐 [*CIDR] [2]",
-        "EPODONIOS",
-        "hysteria2-6",
-        "Proxy_mtm 33",
-        "Proxy_mtm 33 [2]",
-        "Proxy_mtm 33vless://302c2e89-6f2d-4500-90ce-26d075c7e84f@66.78.40.202:443?security=reality&encryptio"
+        "4212",
+        "🇩🇪 Germany | 🌐 | [BL]",
+        "EPODONIOS"
       ]
     }
   ]

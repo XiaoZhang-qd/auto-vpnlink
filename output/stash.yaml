@@ -1,4 +1,213 @@
 proxies:
+- name: '@Alirewa-565'
+  type: ss
+  server: 111.15.84.201
+  port: 2054
+  cipher: 2022-blake3-aes-256-gcm
+  password: eVgEdD2UJXoP1O7qbSOz6A0FoSCYrwhV9hnPv6OQu9Q=:bvQihPJIpX+XX4PvARLDfGiPuZzQoiasvb0khfnKN4I=
+  udp: true
+- name: 🇸🇬SG_20|258KB/s
+  type: ss
+  server: 167.150.100.115
+  port: 27755
+  cipher: 2022-blake3-aes-256-gcm
+  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
+  udp: true
+- name: 🇸🇬SG_93|311KB/s|A004-260618
+  type: ss
+  server: 140.245.126.240
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 3+fytx4x59H3KjC9hPkaia/wn+gTgl6ceg2qJ9IXzcE=
+  udp: true
+- name: 🇧🇷BR_16|114KB/s|A004-260618
+  type: ss
+  server: 144.22.150.193
+  port: 59319
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 3c8tj0DA79hjfpioMZAadyGr/dNl4C6MTsJTNE8l8Mw=
+  udp: true
+- name: 🇸🇬SG_98|294KB/s|A004-260618
+  type: ss
+  server: 168.107.70.15
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 6s2MubJw+Z4OgZ+StJ1L2M7htgCp0/tetpKBk1dHvJ0=
+  udp: true
+- name: 🇧🇷BR_17|248KB/s|A004-260618
+  type: ss
+  server: 129.159.51.192
+  port: 59319
+  cipher: 2022-blake3-chacha20-poly1305
+  password: BpRvyXe7auEq/L91yrZqp46xURh6LDAgvcj2fXQ8Nzk=
+  udp: true
+- name: 🇩🇪DE_118|341KB/s|M003-260806
+  type: ss
+  server: 144.24.160.250
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: C1U/t2iR/+R2DqqWk+e6cFFEhaAdGJfGBR+GeNrkoME=
+  udp: true
+- name: '@Alirewa-578'
+  type: ss
+  server: 130.61.118.77
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Cem5PpJ66yTcbs+EKD4C2cDlCjGW5YSQCWkjhY8T/MY=
+  udp: true
+- name: 🇸🇬SG_96|384KB/s|A004-260618
+  type: ss
+  server: 161.118.225.224
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: KA1/OAHhawU2vWpzCWzboh5Sy7Pf5oJRaWpUUdVGnVw=
+  udp: true
+- name: 🇧🇷BR_11|404KB/s|R002-260618
+  type: ss
+  server: 129.159.49.64
+  port: 59319
+  cipher: 2022-blake3-chacha20-poly1305
+  password: MdImM0QejAzcmEd6BKaoy1mr4hVAIqXF7LTY1EqzTL0=
+  udp: true
+- name: 🇸🇬SG_97|344KB/s|A004-260618
+  type: ss
+  server: 161.118.208.57
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: NPImXu1dvdMvgeuFx60flecCExTtkLUfQd7HqXbqJMs=
+  udp: true
+- name: '@Alirewa-567'
+  type: ss
+  server: 130.61.113.169
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: TWbDvdQktmGst6N2Yc2/L5IC9e3+kttzFJOv6doxsPw=
+  udp: true
+- name: 🇧🇷BR_12|275KB/s|S001-260618
+  type: ss
+  server: 150.230.229.189
+  port: 59319
+  cipher: 2022-blake3-chacha20-poly1305
+  password: VNZU26yCu5J1TaXQ9IdJasKHopBUzc2xt+JUl9ECB+g=
+  udp: true
+- name: 🇩🇪DE_130|149KB/s|A004-260618
+  type: ss
+  server: 130.61.42.205
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: bOY1mD99pB8lm1jW+mjwfwJyH3Il0ILCA5EUhDQPajI=
+  udp: true
+- name: '@Alirewa-580'
+  type: ss
+  server: 143.47.177.25
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: hbEvkzR93GX0boBpZKspRggjovWge9T+z/UPk69rIHg=
+  udp: true
+- name: 🇩🇪DE_129|361KB/s|A004-260618
+  type: ss
+  server: 130.61.80.61
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: jKNMaMEd3mivEOtJZC/XxuvwGTS8fDE8GUWs7V/wmdQ=
+  udp: true
+- name: 🇩🇪DE_119|268KB/s|B007-260618
+  type: ss
+  server: 130.61.40.100
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: jeFxHeDLdS3v1c6txqm38GivrrSQFTuxRBft80ewg6Q=
+  udp: true
+- name: 🇩🇪DE_120|217KB/s|A001-260618
+  type: ss
+  server: 130.61.231.169
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: o6Revfjr6gF04IFOGg0ThUZ/fF4LeOPRjeiV0rL1lRY=
+  udp: true
+- name: '@Alirewa-577'
+  type: ss
+  server: 158.101.215.37
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: qDuLP+56cM4kraLQoKuNGS+a4A+RbcidAw7iXWtddTE=
+  udp: true
+- name: 🇧🇷BR_18|79KB/s|T001-260618
+  type: ss
+  server: 168.75.66.122
+  port: 59319
+  cipher: 2022-blake3-chacha20-poly1305
+  password: s6RXknYLMS6vQPV6efRSoLoe45c8/Pp1+dB8CdfNlmY=
+  udp: true
+- name: '@Alirewa-555'
+  type: ss
+  server: 129.146.221.27
+  port: 50356
+  cipher: 2022-blake3-chacha20-poly1305
+  password: sPH+tlbdXt4j6PJi6sUMuUq3fa6TT5375pmPak/bQds=
+  udp: true
+- name: ❓Other_79|236KB/s|A004-260618
+  type: ss
+  server: 140.245.117.116
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: y0lUf5WDcD0z4Vm/57XU5GWoPKS+07qwaHOhXiwQekA=
+  udp: true
+- name: '@Alirewa-540'
+  type: ss
+  server: 130.61.32.138
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: z2Jh23bumSdistaAEcyEZiFiqEgmQa8jZyatjn7sn98=
+  udp: true
+- name: hysteria2-24
+  type: hysteria2
+  server: cdn.example.com
+  port: 443
+  password: ${config.sops.placeholder.hy2_password}
+  sni: cdn.example.com
+  udp: true
+  skip-cert-verify: false
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: ${config.sops.placeholder.hy2_obfs}
+- name: '@ConfigvibesрҹҮ№рҹҮ·'
+  type: hysteria2
+  server: 198.105.123.106
+  port: 11504
+  password: '@Tel@Configvibes'
+  sni: archive.ubuntu.com
+  udp: true
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------
+- name: '@ConfigvibesрҹҮ№рҹҮ· #1'
+  type: hysteria2
+  server: 107.181.155.107
+  port: 2096
+  password: '@Telegram@Configvibes'
+  sni: ftp.debian.org
+  udp: true
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes
+- name: '@ConfigvibesрҹҮ№рҹҮ· #2'
+  type: hysteria2
+  server: 45.92.219.237
+  port: 8486
+  password: '@Telegram@Configvibes'
+  sni: ftp.debian.org
+  udp: true
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------
 - name: 🇵🇱 Poland | 🌐 [*CIDR]
   type: hysteria2
   server: gogo.fontanvpn.com
@@ -39,6 +248,26 @@ proxies:
   skip-cert-verify: false
   alpn:
   - h3
+- name: '4212'
+  type: hysteria2
+  server: tn.tmn141246.ru
+  port: 443
+  password: 03114279-e38a-4d27-82a9-6a69dbb7f168
+  sni: live.ok.ru
+  udp: true
+  skip-cert-verify: false
+  alpn:
+  - h3
+- name: 🇩🇪 Germany | 🌐 | [BL]
+  type: hysteria2
+  server: 89.106.85.19
+  port: 8444
+  password: 03942219-0dd7-4544-aeb1-07f9db0be960
+  sni: premium-de-hy2.geodema.network
+  udp: true
+  skip-cert-verify: false
+  alpn:
+  - h3
 - name: EPODONIOS
   type: hysteria2
   server: 144.31.234.58
@@ -49,67 +278,44 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hysteria2-6
-  type: hysteria2
-  server: assets.gateway-stream.com
-  port: 52000
-  password: 09e4b638945d44bfa60b4fd00edad131
-  sni: assets.gateway-stream.com
-  udp: true
-  skip-cert-verify: false
-  alpn:
-  - h3
-  obfs: salamander
-  obfs-password: gu74jg3ym0e21zco
-- name: Proxy_mtm 33
-  type: hysteria2
-  server: assets.gateway-stream.com
-  port: 52000
-  password: 09e4b638945d44bfa60b4fd00edad131
-  sni: assets.gateway-stream.com
-  udp: true
-  skip-cert-verify: false
-  alpn:
-  - h3
-  obfs: salamander
-  obfs-password: gu74jg3ym0e21zco
-- name: Proxy_mtm 33 [2]
-  type: hysteria2
-  server: assets.gateway-stream.com
-  port: 52000
-  password: 09e4b638945d44bfa60b4fd00edad131
-  sni: assets.gateway-stream.com
-  udp: true
-  skip-cert-verify: false
-  alpn:
-  - h3
-  obfs: salamander
-  obfs-password: gu74jg3ym0e21zco
-- name: Proxy_mtm 33vless://302c2e89-6f2d-4500-90ce-26d075c7e84f@66.78.40.202:443?security=reality&encryptio
-  type: hysteria2
-  server: assets.gateway-stream.com
-  port: 52000
-  password: 09e4b638945d44bfa60b4fd00edad131
-  sni: assets.gateway-stream.com
-  udp: true
-  skip-cert-verify: false
-  alpn:
-  - h3
-  obfs: salamander
-  obfs-password: gu74jg3ym0e21zco
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
+  - '@Alirewa-565'
+  - 🇸🇬SG_20|258KB/s
+  - 🇸🇬SG_93|311KB/s|A004-260618
+  - 🇧🇷BR_16|114KB/s|A004-260618
+  - 🇸🇬SG_98|294KB/s|A004-260618
+  - 🇧🇷BR_17|248KB/s|A004-260618
+  - 🇩🇪DE_118|341KB/s|M003-260806
+  - '@Alirewa-578'
+  - 🇸🇬SG_96|384KB/s|A004-260618
+  - 🇧🇷BR_11|404KB/s|R002-260618
+  - 🇸🇬SG_97|344KB/s|A004-260618
+  - '@Alirewa-567'
+  - 🇧🇷BR_12|275KB/s|S001-260618
+  - 🇩🇪DE_130|149KB/s|A004-260618
+  - '@Alirewa-580'
+  - 🇩🇪DE_129|361KB/s|A004-260618
+  - 🇩🇪DE_119|268KB/s|B007-260618
+  - 🇩🇪DE_120|217KB/s|A001-260618
+  - '@Alirewa-577'
+  - 🇧🇷BR_18|79KB/s|T001-260618
+  - '@Alirewa-555'
+  - ❓Other_79|236KB/s|A004-260618
+  - '@Alirewa-540'
+  - hysteria2-24
+  - '@ConfigvibesрҹҮ№рҹҮ·'
+  - '@ConfigvibesрҹҮ№рҹҮ· #1'
+  - '@ConfigvibesрҹҮ№рҹҮ· #2'
   - 🇵🇱 Poland | 🌐 [*CIDR]
   - 🇩🇪 Germany [*CIDR]
   - 🇮🇹 Italy | 🌐 [*CIDR]
   - 🇵🇱 Poland | 🌐 [*CIDR] [2]
+  - '4212'
+  - 🇩🇪 Germany | 🌐 | [BL]
   - EPODONIOS
-  - hysteria2-6
-  - Proxy_mtm 33
-  - Proxy_mtm 33 [2]
-  - Proxy_mtm 33vless://302c2e89-6f2d-4500-90ce-26d075c7e84f@66.78.40.202:443?security=reality&encryptio
   url: https://www.gstatic.com/generate_204
   interval: 300
 rules:
