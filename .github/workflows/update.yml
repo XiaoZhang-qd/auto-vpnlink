@@ -36,7 +36,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scanner.py
-      - name: Convert discovered nodes to Clash config
+      - name: Select clean, diverse protocol candidates
+        run: |
+          python select_nodes.py
+          cp output/health-candidates.txt output/verified-nodes.txt
+      - name: Convert candidates to Clash config
         run: python converter.py
       - name: Install latest Mihomo for real protocol checks
         run: |
