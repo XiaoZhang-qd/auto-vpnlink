@@ -5,7 +5,9 @@ from pathlib import Path
 from urllib.parse import urlparse, parse_qs, unquote
 SCHEMES=('vless','vmess','trojan','ss','hysteria2','hysteria','hy2','tuic')
 TCP_SCHEMES=('vless','vmess','trojan','ss')
-MAX=200; PER_TCP=45; PER_UDP=20
+MAX=200
+PER_TCP=45
+PER_UDP=120
 raw=Path('output/discovered-nodes.txt').read_text(encoding='utf-8',errors='ignore').splitlines()
 pat=re.compile(r"(?i)(?:vless|vmess|ss|trojan|hysteria2?|hy2|tuic)://[^\s<>\"'\\]+")
 def b64(s):
@@ -26,6 +28,11 @@ def parse(u):
 def fingerprint(n):
  if not n or not n.get('server') or not n.get('port') or not n.get('cred'): return None
  return hashlib.sha256(json.dumps(sorted((k,str(v)) for k,v in n.items()),ensure_ascii=False).encode()).hexdigest()
+def spread_pick(items, limit):
+ """Pick a deterministic spread across the whole bucket, not just its first entries."""
+ if len(items) <= limit: return items
+ step=(len(items)-1)/(limit-1)
+ return [items[round(i*step)] for i in range(limit)]
 buckets={s:[] for s in SCHEMES}; seen=set(); rejected=0
 for line in raw:
  for u in pat.findall(line):
@@ -37,8 +44,8 @@ for line in raw:
   if not fp or fp in seen: continue
   seen.add(fp); buckets[n['type']].append((u,n,fp))
 selected=[]
-for s in TCP_SCHEMES: selected.extend(buckets[s][:PER_TCP])
-for s in ('hysteria2','hysteria','hy2','tuic'): selected.extend(buckets[s][:PER_UDP])
+for s in TCP_SCHEMES: selected.extend(spread_pick(buckets[s],PER_TCP))
+for s in ('hysteria2','hysteria','hy2','tuic'): selected.extend(spread_pick(buckets[s],PER_UDP))
 selected=selected[:MAX]
 Path('output/health-candidates.txt').write_text('\n'.join(x[0] for x in selected)+('\n' if selected else ''),encoding='utf-8')
 Path('output/candidate-summary.json').write_text(json.dumps({'discovered_lines':len(raw),'rejected_malformed':rejected,'unique_by_credentials':len(seen),'protocol_candidates':{s:len(buckets[s]) for s in SCHEMES},'selected':len(selected),'selected_protocols':{s:sum(1 for _,n,_ in selected if n['type']==s) for s in SCHEMES}},ensure_ascii=False,indent=2),encoding='utf-8')
