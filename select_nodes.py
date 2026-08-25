@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
-"""Select a configurable, diverse pool for health checking."""
+"""Select a configurable, CFW-compatible pool for health checking."""
 import hashlib,json,re,base64,os
 from pathlib import Path
 from urllib.parse import urlparse,parse_qs,unquote
 SCHEMES=('vless','vmess','trojan','ss','hysteria2','hysteria','hy2','tuic')
+CFW_SCHEMES=('ss','trojan','vmess')
 SEARCH_LIMIT=max(1,int(os.getenv('SEARCH_LIMIT','5000')))
-# This is the health-check candidate pool, independent from search_limit.
 HEALTH_CANDIDATES=max(1,int(os.getenv('HEALTH_CANDIDATES','300')))
-QUOTAS={'ss':.38,'trojan':.24,'vmess':.16,'vless':.12,'hysteria2':.08,'hysteria':.02,'hy2':0,'tuic':0}
+# CFW-safe protocols only. Do not put protocols here that healthcheck/publish cannot consume.
+QUOTAS={'ss':.45,'trojan':.30,'vmess':.25}
 raw=Path('output/discovered-nodes.txt').read_text(encoding='utf-8',errors='ignore').splitlines()[:SEARCH_LIMIT]
 pat=re.compile(r"(?i)(?:vless|vmess|trojan|ss|hysteria2?|hy2|tuic)://[^\s<>\"'\\]+")
 def b64(s):
@@ -17,10 +18,10 @@ def parse(u):
   p=urlparse(u);s=p.scheme.lower();q={k:v[-1] for k,v in parse_qs(p.query,keep_blank_values=True).items()}
   if s=='vmess':
    d=json.loads(b64(u.split('://',1)[1]));return {'type':'vmess','server':str(d.get('add','')).lower(),'port':int(d.get('port',0)),'cred':str(d.get('id','')).lower(),'sni':str(d.get('sni') or d.get('host') or '').lower()}
-  if s=='vless':return {'type':'vless','server':(p.hostname or '').lower(),'port':p.port or 443,'cred':unquote(p.username or ''),'sni':q.get('sni') or p.hostname or ''}
   if s=='trojan':return {'type':'trojan','server':(p.hostname or '').lower(),'port':p.port or 443,'cred':unquote(p.username or ''),'sni':q.get('sni') or p.hostname or ''}
   if s=='ss':
    r=unquote(u.split('://',1)[1].split('#',1)[0]);r=b64(r) if '@' not in r else r;a,h=r.rsplit('@',1);m,pw=a.split(':',1);host,port=h.rsplit(':',1);return {'type':'ss','server':host.strip('[]').lower(),'port':int(port),'cred':m+':'+pw}
+  if s=='vless':return {'type':'vless','server':(p.hostname or '').lower(),'port':p.port or 443,'cred':unquote(p.username or ''),'sni':q.get('sni') or p.hostname or ''}
   if s in ('hysteria2','hysteria','hy2'):return {'type':'hysteria2','server':(p.hostname or '').lower(),'port':p.port or 443,'cred':unquote(p.username or '')}
   if s=='tuic':return {'type':'tuic','server':(p.hostname or '').lower(),'port':p.port or 443,'cred':unquote(p.username or '')+':'+unquote(p.password or '')}
  except Exception:return None
@@ -40,24 +41,27 @@ for line in raw:
   fp=fingerprint(n)
   if not fp or fp in seen:continue
   seen.add(fp);buckets[n['type']].append((u,n,fp))
-# First reserve CFW-capable candidates. If a protocol bucket is too small,
-# redistribute unused slots instead of failing with a tiny candidate pool.
-cfw=('ss','trojan','vmess','vless')
-selected=[]
-remaining=HEALTH_CANDIDATES
-for s in cfw:
- want=round(HEALTH_CANDIDATES*QUOTAS.get(s,0))
+selected=[];remaining=HEALTH_CANDIDATES
+# Allocate only among protocols that the CFW converter and health checker actually support.
+for s in CFW_SCHEMES:
+ want=round(HEALTH_CANDIDATES*QUOTAS[s])
  take=min(len(buckets[s]),want)
- selected.extend(spread_pick(buckets[s],take));remaining-=take
-# Fill all unused health slots from any remaining protocol, preferring CFW first.
+ chosen=spread_pick(buckets[s],take)
+ selected.extend(chosen);remaining-=take
 used=set(x[2] for x in selected)
-for s in cfw+('hysteria2','hysteria','tuic'):
+# Fill unused slots with more CFW-compatible nodes only.
+for s in CFW_SCHEMES:
  pool=[x for x in buckets[s] if x[2] not in used]
  take=min(len(pool),remaining)
- chosen=spread_pick(pool,take);selected.extend(chosen);used.update(x[2] for x in chosen);remaining-=take
+ chosen=spread_pick(pool,take)
+ selected.extend(chosen);used.update(x[2] for x in chosen);remaining-=take
  if remaining<=0:break
 selected=selected[:HEALTH_CANDIDATES]
 Path('output/health-candidates.txt').write_text('\n'.join(x[0] for x in selected)+('\n' if selected else ''),encoding='utf-8')
-Path('output/candidate-summary.json').write_text(json.dumps({'search_limit':SEARCH_LIMIT,'discovered_lines_considered':len(raw),'rejected_malformed':rejected,'unique_by_credentials':len(seen),'protocol_candidates':{s:len(buckets[s]) for s in SCHEMES},'health_candidate_limit':HEALTH_CANDIDATES,'selected':len(selected),'selected_protocols':{s:sum(1 for _,n,_ in selected if n['type']==s) for s in SCHEMES}},ensure_ascii=False,indent=2),encoding='utf-8')
-print('search_limit:',SEARCH_LIMIT);print('protocol candidates:',{s:len(buckets[s]) for s in SCHEMES});print('selected:',{s:sum(1 for _,n,_ in selected if n['type']==s) for s in SCHEMES});print('health candidates:',len(selected))
-if not selected:raise SystemExit('No clean, unique protocol candidates found.')
+Path('output/candidate-summary.json').write_text(json.dumps({'search_limit':SEARCH_LIMIT,'discovered_lines_considered':len(raw),'rejected_malformed':rejected,'unique_by_credentials':len(seen),'protocol_candidates':{s:len(buckets[s]) for s in SCHEMES},'health_candidate_limit':HEALTH_CANDIDATES,'selected':len(selected),'selected_protocols':{s:sum(1 for _,n,_ in selected if n['type']==s) for s in SCHEMES},'healthcheck_protocols':list(CFW_SCHEMES)},ensure_ascii=False,indent=2),encoding='utf-8')
+print('search_limit:',SEARCH_LIMIT)
+print('protocol candidates:',{s:len(buckets[s]) for s in SCHEMES})
+print('selected:',{s:sum(1 for _,n,_ in selected if n['type']==s) for s in SCHEMES})
+print('health candidates:',len(selected))
+if not selected:
+ raise SystemExit('No CFW-compatible candidates found. Increase search_limit or add sources containing SS/Trojan/VMess nodes.')
