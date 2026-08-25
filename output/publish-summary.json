@@ -1,12 +1,13 @@
 {
-  "discovered": 20003,
-  "healthy_first": 20,
-  "published_unique": 1643,
-  "clash_proxies": 1638,
+  "discovered": 19999,
+  "healthy_first": 8,
+  "published_unique": 1692,
+  "clash_proxies": 1652,
+  "clash_filtered_unsupported": 37,
   "protocols": {
-    "ss": 368,
-    "hysteria2": 1269,
+    "ss": 364,
+    "hysteria2": 1324,
     "vless": 1,
-    "hysteria": 5
+    "hysteria": 3
   }
 }
