@@ -16,71 +16,59 @@
       }
     },
     {
-      "tag": "trojan-2",
-      "server": "172.66.46.215",
-      "server_port": 8443,
+      "tag": "nukcrow",
+      "server": "volexproxy.giweeeefhfhhf89.workers.dev",
+      "server_port": 443,
       "type": "trojan",
-      "password": "!d8jYnLU)",
+      "password": "!CdI6RI6U2ok_LsR",
       "tls": {
         "enabled": true,
-        "server_name": "K2ZFG80-8-0jEH9h-5wTKt43R92VJi0P.pageS.dEV",
+        "server_name": "VoLEXPrOXy.GIWEeeEfhfHhF89.WORKErS.DEv",
         "insecure": true
       }
     },
     {
-      "tag": "trojan-3",
-      "server": "37.156.45.60",
-      "server_port": 242,
+      "tag": "🇨🇭 Switzerland | Reality | @anonymouskeys",
+      "server": "uupupupuppupupupuuppupupupupuup-11.poki-pakipon.ir",
+      "server_port": 62143,
       "type": "trojan",
-      "password": "-----------BanV2ray----------",
+      "password": "----------BanV2ray-----------",
       "tls": {
         "enabled": true,
-        "server_name": "world.yahoo.com:443",
+        "server_name": "chi.yahoo.com",
         "insecure": true
       }
     },
     {
       "tag": "trojan-4",
-      "server": "188.114.98.0",
+      "server": "144.22.250.122",
       "server_port": 443,
       "type": "trojan",
-      "password": "01596265-168b-46a7-bcb7-25662c7a9546",
+      "password": "02926f9e-153a-42c8-8ecd-8fade7009ad1",
       "tls": {
         "enabled": true,
-        "server_name": "hdfy7c1.foriran2.eu.org",
+        "server_name": "golinkwuxian.top",
         "insecure": true
       }
     },
     {
-      "tag": "US",
-      "server": "ru.federal-usa.com",
-      "server_port": 8443,
+      "tag": "trojan-5",
+      "server": "104.21.60.120",
+      "server_port": 443,
       "type": "trojan",
-      "password": "08QNE5JBq7kTV6b9Dd6e_w-y4WhjMLS9",
+      "password": "0ad5e311-7189-4124-ac8f-f828b681f10e",
       "tls": {
         "enabled": true,
-        "server_name": "ru.federal-usa.com",
+        "server_name": "c5mt.cdncisco.org",
         "insecure": true
       }
     },
     {
-      "tag": "trojan-6",
-      "server": "5.44.249.44",
-      "server_port": 3389,
+      "tag": "🇨🇭 Switzerland | Reality | @anonymouskeys [2]",
+      "server": "37.156.45.60",
+      "server_port": 23875,
       "type": "trojan",
-      "password": "0c6a3341e8d5ab17",
-      "tls": {
-        "enabled": true,
-        "server_name": "5.44.249.44",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "trojan-7",
-      "server": "179.237.74.104",
-      "server_port": 5464,
-      "type": "trojan",
-      "password": "1-----------------BanV2ray-----------------1",
+      "password": "1------------------BanV2ray------------------1",
       "tls": {
         "enabled": true,
         "server_name": "world.yahoo.com:443",
@@ -88,92 +76,68 @@
       }
     },
     {
-      "tag": "@DeltaKroneckerGithub",
-      "server": "104.18.153.182",
+      "tag": "trojan-7",
+      "server": "104.16.122.175",
       "server_port": 443,
       "type": "trojan",
-      "password": "19877587-ed94-4033-88cd-4ac50a5e8718",
+      "password": "1884f180-94eb-11ee-8c46-1239d0255272",
       "tls": {
         "enabled": true,
-        "server_name": "dimskiee.biz.id",
+        "server_name": "de1.test3.net",
         "insecure": true
       }
     },
     {
-      "tag": "trojan-9",
-      "server": "165.22.55.206",
-      "server_port": 443,
+      "tag": "🟩66@oneclickvpnkeys",
+      "server": "144.202.8.250",
+      "server_port": 23239,
       "type": "trojan",
-      "password": "253bc477d4e43c209f2d427272968280",
+      "password": "25IYE1_dhFCBi6omM3qf9",
       "tls": {
         "enabled": true,
-        "server_name": "www.baidu.com",
+        "server_name": "144.202.8.250",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🏳️_未知_273",
+      "server": "bestcdn1.868863.xyz",
+      "server_port": 2087,
+      "type": "trojan",
+      "password": "2d1ba739-406b-4d7e-818d-6545f8e384a3",
+      "tls": {
+        "enabled": true,
+        "server_name": "17875785877671.168381.xyz",
         "insecure": true
       }
     },
     {
       "tag": "trojan-10",
-      "server": "118.142.55.62",
+      "server": "us2.vpn.ong",
       "server_port": 443,
       "type": "trojan",
-      "password": "2b9f96246284482db6c8c64c562ac174",
+      "password": "3817daf8-0f2b-412f-b87b-3efa585423e8",
       "tls": {
         "enabled": true,
-        "server_name": "118.142.55.62",
+        "server_name": "us2.vpn.ong",
         "insecure": true
       }
     },
     {
       "tag": "trojan-11",
-      "server": "146.19.215.165",
+      "server": "xibun.gq",
       "server_port": 443,
       "type": "trojan",
-      "password": "2ea5fc44-bd38-4fb0-a9b9-88c83fc56622",
+      "password": "454e32b5-22eb-45cc-9fb2-1bf236de0eb9",
       "tls": {
         "enabled": true,
-        "server_name": "4-193-105-141.nhost.00cdn.com",
+        "server_name": "xibun.gq",
         "insecure": true
       }
     },
     {
-      "tag": "@DeltaKroneckerGithub [2]",
-      "server": "162.216.231.86",
-      "server_port": 443,
-      "type": "trojan",
-      "password": "3828095943467868160",
-      "tls": {
-        "enabled": true,
-        "server_name": "main-hound.dolphin109.quest",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "trojan-13",
-      "server": "uk1.test3.net",
-      "server_port": 443,
-      "type": "trojan",
-      "password": "40bb32c0-3f10-11f0-8c33-1239d0255272",
-      "tls": {
-        "enabled": true,
-        "server_name": "uk1.test3.net",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "@DeltaKroneckerGithub [3]",
-      "server": "uk1.test3.net",
-      "server_port": 443,
-      "type": "trojan",
-      "password": "4aca21d0-e787-11ef-9708-1239d0255272",
-      "tls": {
-        "enabled": true,
-        "server_name": "uk1.test3.net",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇳🇱  Netherlands  [02]  MIFA t.me/rjsxrd",
-      "server": "193.227.99.27",
+      "tag": "🇺🇸  USA  [11]  MIFA t.me/rjsxrd",
+      "server": "8.34.70.27",
       "server_port": 443,
       "type": "trojan",
       "password": "521314",
@@ -184,104 +148,56 @@
       }
     },
     {
-      "tag": "@DeltaKroneckerGithub [4]",
-      "server": "uk1.test3.net",
+      "tag": "🇺🇸US-13.248.169.48-1942",
+      "server": "hnm.xiaohouzi.club",
+      "server_port": 17108,
+      "type": "trojan",
+      "password": "64de1de7-e3bb-3dc4-ab04-d1e601e18ac5",
+      "tls": {
+        "enabled": true,
+        "server_name": "hnm.xiaohouzi.club",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "Telegram:@v2rayng3",
+      "server": "95.40.110.184",
+      "server_port": 50887,
+      "type": "trojan",
+      "password": "6ec301428255a78a1d826988d86cc87e",
+      "tls": {
+        "enabled": true,
+        "server_name": "95.40.110.184",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "[🇯🇵",
+      "server": "t11.qifei.app",
+      "server_port": 55682,
+      "type": "trojan",
+      "password": "7d8e6db4-96cc-4710-afc0-619edde2d7a1",
+      "tls": {
+        "enabled": true,
+        "server_name": "t11.qifei.app",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "RELAY",
+      "server": "45.130.125.126",
       "server_port": 443,
       "type": "trojan",
-      "password": "5ed58460-4d98-11ee-a875-1239d0255272",
+      "password": "86957ec0-b213-433b-a43b-51f2175e0ec3",
       "tls": {
         "enabled": true,
-        "server_name": "speedtest.net",
+        "server_name": "space.byu.id.yxls.eu.cc",
         "insecure": true
       }
     },
     {
-      "tag": "🇽🇽XX(AzadNet.t.me) (222)",
-      "server": "104.26.6.214",
-      "server_port": 443,
-      "type": "trojan",
-      "password": "6884d714-d3c4-4b49-aa20-767ea92837d6",
-      "tls": {
-        "enabled": true,
-        "server_name": "icecream.955850.xyz",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "@DeltaKroneckerGithub [5]",
-      "server": "51.38.65.155",
-      "server_port": 443,
-      "type": "trojan",
-      "password": "6e73f720-f389-11ef-9fc3-1239d0255272",
-      "tls": {
-        "enabled": true,
-        "server_name": "uk1.test3.net",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🏴‍☠️",
-      "server": "199.232.206.245",
-      "server_port": 443,
-      "type": "trojan",
-      "password": "7b12dfabbe374661a12d11d698d86fbd",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇭🇰HK(AzadNet.t.me) (32)",
-      "server": "45.67.201.210",
-      "server_port": 20058,
-      "type": "trojan",
-      "password": "7e70223b-f331-41d5-9313-02b8d2df2885",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk.catxstar.com",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇮🇳|印度-IEPL 01",
-      "server": "iepl1.catcat321.com",
-      "server_port": 20034,
-      "type": "trojan",
-      "password": "7e70223b-f331-41d5-9313-02b8d2df2885",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk.catxstar.com",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇺🇸US-135.148.148.4-7941",
-      "server": "135.148.148.4",
-      "server_port": 80,
-      "type": "trojan",
-      "password": "800eb26c-cd0c-4269-aae7-e63d75de4edd",
-      "tls": {
-        "enabled": true,
-        "server_name": "us3.trojanvh.xyz",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "TR🇹🇷",
-      "server": "193.124.46.65",
-      "server_port": 443,
-      "type": "trojan",
-      "password": "8bS8vVC5CQ2GsckhM8hIT1jv",
-      "tls": {
-        "enabled": true,
-        "server_name": "193.124.46.65",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇺🇸US(AzadNet.t.me) (74)",
-      "server": "167.71.169.92",
+      "tag": "🇽🇽XX(AzadNet.t.me) (60)",
+      "server": "141.101.114.253",
       "server_port": 443,
       "type": "trojan",
       "password": "8r<[9'l6hAO#8ZQi",
@@ -292,8 +208,8 @@
       }
     },
     {
-      "tag": "🇱🇧LB(AzadNet.t.me) (4)",
-      "server": "77.110.106.55",
+      "tag": "🇺🇸US(AzadNet.t.me) (73)",
+      "server": "216.126.237.69",
       "server_port": 8443,
       "type": "trojan",
       "password": "8r<[9'l6hAO#8ZQi",
@@ -304,275 +220,351 @@
       }
     },
     {
-      "tag": "@DeltaKroneckerGithub [6]",
-      "server": "43.134.48.62",
-      "server_port": 443,
+      "tag": "🇯🇵JP-153.127.47.114-3199",
+      "server": "jp08a.roc-taiwan.org.ua",
+      "server_port": 65018,
       "type": "trojan",
-      "password": "973c7f53-7411-4173-b805-d65c912e4d55",
+      "password": "96983eb4-c8f1-316e-ab00-500014ed3d8b",
       "tls": {
         "enabled": true,
-        "server_name": "86sg.ljydw.top",
+        "server_name": "jp08a.roc-taiwan.org.ua",
         "insecure": true
       }
     },
     {
-      "tag": "🔒",
-      "server": "185.14.47.234",
-      "server_port": 443,
-      "type": "trojan",
-      "password": "AE62539071",
-      "tls": {
-        "enabled": true,
-        "server_name": "185.14.47.234",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🌐 Mokafela-ConfigKiller #71",
-      "server": "89.39.70.9",
+      "tag": "JP",
+      "server": "3.113.21.187",
       "server_port": 443,
       "type": "trojan",
       "password": "AE62539071",
       "tls": {
         "enabled": true,
-        "server_name": "whole-woodcock.rooster465.autos",
+        "server_name": "awaited-lark.rooster465.autos",
         "insecure": true
       }
     },
     {
-      "tag": "trojan-29",
-      "server": "outgoing-ladybird.rooster465.autos",
+      "tag": "🇯🇵 Japan | TROJAN | @anonymouskeys",
+      "server": "evolving-kangaroo.rooster465.autos",
       "server_port": 443,
       "type": "trojan",
       "password": "AE62539071",
       "tls": {
         "enabled": true,
-        "server_name": "outgoing-ladybird.rooster465.autos",
+        "server_name": "evolving-kangaroo.rooster465.autos",
         "insecure": true
       }
     },
     {
-      "tag": "@DeltaKroneckerGithub [7]",
-      "server": "64.176.37.227",
+      "tag": "EPODONIOS",
+      "server": "sacred-hound.rooster465.autos",
       "server_port": 443,
       "type": "trojan",
-      "password": "Bw5Mz7QkVp",
+      "password": "AE62539071",
       "tls": {
         "enabled": true,
-        "server_name": "z-v2-082533.kailib.com",
+        "server_name": "sacred-hound.rooster465.autos",
         "insecure": true
       }
     },
     {
-      "tag": "🇺🇸",
-      "server": "funny-hen.rooster465.autos",
+      "tag": "🇭🇰[openproxylist.com",
+      "server": "58.152.25.208",
       "server_port": 443,
       "type": "trojan",
-      "password": "CF68213490",
+      "password": "BxceQaOe",
       "tls": {
         "enabled": true,
-        "server_name": "funny-hen.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇮🇪",
-      "server": "54.74.185.175",
-      "server_port": 443,
-      "type": "trojan",
-      "password": "EQ30679154",
-      "tls": {
-        "enabled": true,
-        "server_name": "romantic-kangaroo.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "@DeltaKroneckerGithub [8]",
-      "server": "109.61.127.38",
-      "server_port": 443,
-      "type": "trojan",
-      "password": "FC60532879",
-      "tls": {
-        "enabled": true,
-        "server_name": "premium-lab.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "@DeltaKroneckerGithub [9]",
-      "server": "exotic-chicken.rooster465.autos",
-      "server_port": 443,
-      "type": "trojan",
-      "password": "FC60532879",
-      "tls": {
-        "enabled": true,
-        "server_name": "exotic-chicken.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "trojan-35",
-      "server": "13.230.4.218",
-      "server_port": 443,
-      "type": "trojan",
-      "password": "FH72359861",
-      "tls": {
-        "enabled": true,
-        "server_name": "content-rabbit.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🔒 [2]",
-      "server": "91.199.84.155",
-      "server_port": 443,
-      "type": "trojan",
-      "password": "FH72359861",
-      "tls": {
-        "enabled": true,
-        "server_name": "91.199.84.155",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🌐 Mokafela-ConfigKiller #136",
-      "server": "magnetic-caiman.rooster465.autos",
-      "server_port": 443,
-      "type": "trojan",
-      "password": "FH72359861",
-      "tls": {
-        "enabled": true,
-        "server_name": "magnetic-caiman.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇰🇷KR_2|4.7MB/s",
-      "server": "powerful-troll.rooster465.autos",
-      "server_port": 443,
-      "type": "trojan",
-      "password": "HC04361579",
-      "tls": {
-        "enabled": true,
-        "server_name": "powerful-troll.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "@DeltaKroneckerGithub [10]",
-      "server": "85.234.83.150",
-      "server_port": 443,
-      "type": "trojan",
-      "password": "IQ68037294",
-      "tls": {
-        "enabled": true,
-        "server_name": "together-insect.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🏳️",
-      "server": "integral-elf.rooster465.autos",
-      "server_port": 443,
-      "type": "trojan",
-      "password": "IQ68037294",
-      "tls": {
-        "enabled": true,
-        "server_name": "integral-elf.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "@DeltaKroneckerGithub [11]",
-      "server": "185.244.208.56",
-      "server_port": 443,
-      "type": "trojan",
-      "password": "JT80563429",
-      "tls": {
-        "enabled": true,
-        "server_name": "choice-worm.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "@DeltaKroneckerGithub [12]",
-      "server": "upright-bedbug.rooster465.autos",
-      "server_port": 443,
-      "type": "trojan",
-      "password": "JT80563429",
-      "tls": {
-        "enabled": true,
-        "server_name": "upright-bedbug.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "US [2]",
-      "server": "199.232.78.160",
-      "server_port": 443,
-      "type": "trojan",
-      "password": "MITIVPN",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "US [3]",
-      "server": "151.101.66.172",
-      "server_port": 80,
-      "type": "trojan",
-      "password": "MiTiVPN",
-      "tls": {
-        "enabled": true,
-        "server_name": "151.101.66.172",
+        "server_name": "t.me/ripaojiedian",
         "insecure": true
       }
     },
     {
       "tag": "🇯🇵",
-      "server": "3.112.223.141",
+      "server": "54.199.234.4",
+      "server_port": 443,
+      "type": "trojan",
+      "password": "EQ30679154",
+      "tls": {
+        "enabled": true,
+        "server_name": "liked-eft.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "@V2ray_Collector",
+      "server": "202.78.163.19",
+      "server_port": 443,
+      "type": "trojan",
+      "password": "FH72359861",
+      "tls": {
+        "enabled": true,
+        "server_name": "game-firefly.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "JP [2]",
+      "server": "driven-bulldog.rooster465.autos",
+      "server_port": 443,
+      "type": "trojan",
+      "password": "FH72359861",
+      "tls": {
+        "enabled": true,
+        "server_name": "driven-bulldog.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "trojan-27",
+      "server": "touching-turtle.rooster465.autos",
+      "server_port": 443,
+      "type": "trojan",
+      "password": "FH72359861",
+      "tls": {
+        "enabled": true,
+        "server_name": "touching-turtle.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇽🇽XX(AzadNet.t.me) (174)",
+      "server": "172.66.47.3",
+      "server_port": 2087,
+      "type": "trojan",
+      "password": "JsheihIhuy-7-282+2+",
+      "tls": {
+        "enabled": true,
+        "server_name": "NET-ACcOunt02.PaGeS.deV",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "EPODONIOS [2]",
+      "server": "140.248.185.253",
+      "server_port": 443,
+      "type": "trojan",
+      "password": "MiTiVPN",
+      "tls": {
+        "enabled": true,
+        "server_name": "sourceforge.net",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "@V2ray_Collector [2]",
+      "server": "13.36.175.151",
       "server_port": 443,
       "type": "trojan",
       "password": "ND91608427",
       "tls": {
         "enabled": true,
-        "server_name": "internal-sunbird.rooster465.autos",
+        "server_name": "classic-gator.rooster465.autos",
         "insecure": true
       }
     },
     {
-      "tag": "🌐 Mokafela-ConfigKiller #159",
-      "server": "fancy-skink.rooster465.autos",
+      "tag": "🇯🇵 Japan | TROJAN | @anonymouskeys [2]",
+      "server": "happy-mutt.rooster465.autos",
       "server_port": 443,
       "type": "trojan",
       "password": "ND91608427",
       "tls": {
         "enabled": true,
-        "server_name": "fancy-skink.rooster465.autos",
+        "server_name": "happy-mutt.rooster465.autos",
         "insecure": true
       }
     },
     {
-      "tag": "@DeltaKroneckerGithub [13]",
-      "server": "151.242.125.198",
-      "server_port": 51886,
-      "type": "shadowsocks",
-      "method": "2022-blake3-aes-128-gcm",
-      "password": "LvImXNGRwa5fZSQw+RbPKw=="
+      "tag": "🇯🇵[openproxylist.com",
+      "server": "inviting-rabbit.rooster465.autos",
+      "server_port": 443,
+      "type": "trojan",
+      "password": "NQ26071394",
+      "tls": {
+        "enabled": true,
+        "server_name": "inviting-rabbit.rooster465.autos",
+        "insecure": true
+      }
     },
     {
-      "tag": "🇸🇬SG_20|258KB/s 01",
-      "server": "167.150.100.115",
-      "server_port": 27755,
+      "tag": "🇵🇱",
+      "server": "202.78.163.172",
+      "server_port": 443,
+      "type": "trojan",
+      "password": "PQ05174892",
+      "tls": {
+        "enabled": true,
+        "server_name": "more-trout.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇫🇷 France | TCP | @anonymouskeys",
+      "server": "immune-earwig.rooster465.autos",
+      "server_port": 443,
+      "type": "trojan",
+      "password": "PQ05174892",
+      "tls": {
+        "enabled": true,
+        "server_name": "immune-earwig.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇦🇹 Austria | TROJAN | @anonymouskeys",
+      "server": "at-lb-rtt.netzrun.at",
+      "server_port": 5222,
+      "type": "trojan",
+      "password": "SrELvzRC7y7gMcypgQ8VSSSxzj354XEf",
+      "tls": {
+        "enabled": true,
+        "server_name": "at-lb-rtt.netzrun.at",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇨🇭 Switzerland | Reality | @anonymouskeys [3]",
+      "server": "77777777777777-1111111111111-0000000000.poki-pakipon.ir",
+      "server_port": 35679,
+      "type": "trojan",
+      "password": "YyBkRtve84",
+      "tls": {
+        "enabled": true,
+        "server_name": "world.yahoo.com:443",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "@Alirewa-1371",
+      "server": "uk1.trojanvh.xyz",
+      "server_port": 80,
+      "type": "trojan",
+      "password": "b640d791-ff83-4300-b509-c2a02f97f167",
+      "tls": {
+        "enabled": true,
+        "server_name": "uk1.trojanvh.xyz",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "@Hope_Net-join-us-on-Telegram",
+      "server": "162.159.152.59",
+      "server_port": 443,
+      "type": "trojan",
+      "password": "bpb-trojan",
+      "tls": {
+        "enabled": true,
+        "server_name": "cf.090227.xyz",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "@Alirewa-1422",
+      "server": "168.138.43.89",
+      "server_port": 443,
+      "type": "trojan",
+      "password": "d06a3f01-1ff0-4792-9b8e-a5a604bc74a2",
+      "tls": {
+        "enabled": true,
+        "server_name": "168.138.43.89",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "nukcrow [2]",
+      "server": "saas.sin.fan",
+      "server_port": 443,
+      "type": "trojan",
+      "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
+      "tls": {
+        "enabled": true,
+        "server_name": "hhcm.hhxaf.cc.cd",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇨🇦 Canada | WebSocket | @anonymouskeys",
+      "server": "104.16.122.175",
+      "server_port": 443,
+      "type": "trojan",
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "EPODONIOS [3]",
+      "server": "104.16.72.2",
+      "server_port": 443,
+      "type": "trojan",
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🏳️_未知_381",
+      "server": "104.18.152.155",
+      "server_port": 443,
+      "type": "trojan",
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ignitelimit.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "CA->FR+(@DeamNet_Proxy) (3)",
+      "server": "104.18.32.37",
+      "server_port": 443,
+      "type": "trojan",
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.gossipglove.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": ">>@oneclickvpnkeys::NL (10)",
+      "server": "172.64.147.166",
+      "server_port": 443,
+      "type": "trojan",
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.multiplydose.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "EPODONIOS [4]",
+      "server": "198.62.62.23",
+      "server_port": 443,
+      "type": "trojan",
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "ss-47",
+      "server": "46.225.30.16",
+      "server_port": 49534,
       "type": "shadowsocks",
       "method": "2022-blake3-aes-256-gcm",
-      "password": "fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0="
+      "password": "tEY1W9tCYB6R5Y22378dJ9yh4H4PAZlAM/m31aG1PYM="
     },
     {
-      "tag": "@Alirewa-535",
+      "tag": "@Alirewa-551",
       "server": "144.24.160.250",
       "server_port": 59924,
       "type": "shadowsocks",
@@ -580,15 +572,23 @@
       "password": "C1U/t2iR/+R2DqqWk+e6cFFEhaAdGJfGBR+GeNrkoME="
     },
     {
-      "tag": "@Alirewa-527",
-      "server": "130.61.113.169",
+      "tag": "@OutlineReleasedKey",
+      "server": "130.61.177.119",
       "server_port": 59924,
       "type": "shadowsocks",
       "method": "2022-blake3-chacha20-poly1305",
-      "password": "TWbDvdQktmGst6N2Yc2/L5IC9e3+kttzFJOv6doxsPw="
+      "password": "KSTycVGjd3xduLQy+qjtbMoooeuMmJUs+MKs3ym39zg="
     },
     {
-      "tag": "@Alirewa-533",
+      "tag": "@Alirewa-552",
+      "server": "143.47.177.25",
+      "server_port": 45819,
+      "type": "shadowsocks",
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "hbEvkzR93GX0boBpZKspRggjovWge9T+z/UPk69rIHg="
+    },
+    {
+      "tag": "@Alirewa-549",
       "server": "158.101.215.37",
       "server_port": 45819,
       "type": "shadowsocks",
@@ -596,73 +596,17 @@
       "password": "qDuLP+56cM4kraLQoKuNGS+a4A+RbcidAw7iXWtddTE="
     },
     {
-      "tag": "🇸🇬_SG_新加坡",
-      "server": "140.245.117.116",
-      "server_port": 56927,
+      "tag": "[6549][IR][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25",
+      "server": "46.38.143.236",
+      "server_port": 60633,
       "type": "shadowsocks",
       "method": "2022-blake3-chacha20-poly1305",
-      "password": "y0lUf5WDcD0z4Vm/57XU5GWoPKS+07qwaHOhXiwQekA="
+      "password": "HnzIN1CLGGEh+mD/uzbbvTQc/Alq+hkmrC7Po3D4k4E="
     },
     {
-      "tag": "🇫🇷",
-      "server": "sd-sh.bx-xb.xyz",
-      "server_port": 62740,
-      "type": "shadowsocks",
-      "method": "2022-blake3-aes-128-gcm",
-      "password": "qPPU4cGU59hjRnOyNTjacA=="
-    },
-    {
-      "tag": "🇫🇷 [2]",
-      "server": "cccct.284.pics",
-      "server_port": 65042,
-      "type": "shadowsocks",
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "YmQ5Y2E3MGRlNmU1NDVkZTNhZGIyMmIyZDJjZjM3NGI=:OWU4M2Q3NzctNWMyYy00MDNlLWIxYTYtMmE3ODRmOTM="
-    },
-    {
-      "tag": "🇫🇷 [3]",
-      "server": "cccct.284.pics",
-      "server_port": 65052,
-      "type": "shadowsocks",
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "YmQ5Y2E3MGRlNmU1NDVkZTNhZGIyMmIyZDJjZjM3NGI=:ZWQ1YjU5ZGQtMzhlYy00Y2U1LTgwZDEtYWUzODNkMTk="
-    },
-    {
-      "tag": "🇫🇷 [4]",
-      "server": "cccct.284.pics",
-      "server_port": 65012,
-      "type": "shadowsocks",
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "ZTEyY2ViOGU0MWJiNDcwN2VlYjU3MzkzODlhNjliNGY=:MDNhNmNmYTEtMWQ3My00NTEzLWJiOGMtMTRmYzYxOTQ="
-    },
-    {
-      "tag": "🇫🇷 [5]",
-      "server": "cccct.284.pics",
-      "server_port": 65012,
-      "type": "shadowsocks",
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "ZTEyY2ViOGU0MWJiNDcwN2VlYjU3MzkzODlhNjliNGY=:NGUxZmQ1NWUtOTQ5MS00NDc3LWE3ODItYjM3OGIyNjU="
-    },
-    {
-      "tag": "🇫🇷 [6]",
-      "server": "cccct.284.pics",
-      "server_port": 65012,
-      "type": "shadowsocks",
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "ZTEyY2ViOGU0MWJiNDcwN2VlYjU3MzkzODlhNjliNGY=:ZjY2YzAxZWYtMjVkOC00N2ZkLWI1NTYtNTU2OTA2NDg="
-    },
-    {
-      "tag": "🇸🇬",
-      "server": "140.245.121.101",
-      "server_port": 43345,
-      "type": "shadowsocks",
-      "method": "chacha20-ietf-poly1305",
-      "password": "5d79906d-89ab-430b-acbc-3327568a5be3"
-    },
-    {
-      "tag": "🇫🇷 [7]",
-      "server": "141.253.107.174",
-      "server_port": 22345,
+      "tag": "🇨🇦_🇨🇦_ping_258ms",
+      "server": "140.238.153.81",
+      "server_port": 13345,
       "type": "shadowsocks",
       "method": "chacha20-ietf-poly1305",
       "password": "5d79906d-89ab-430b-acbc-3327568a5be3"
@@ -676,20 +620,12 @@
       "password": "64LbKHnB3IO759ueEnhgMG"
     },
     {
-      "tag": "🇩🇪",
-      "server": "61.231.25.172",
-      "server_port": 50099,
+      "tag": "🌐سرور",
+      "server": "api.melonpanel.ir",
+      "server_port": 1080,
       "type": "shadowsocks",
       "method": "chacha20-ietf-poly1305",
-      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
-    },
-    {
-      "tag": "hamedp71::🇳🇱",
-      "server": "108.181.58.239",
-      "server_port": 8388,
-      "type": "shadowsocks",
-      "method": "chacha20-ietf-poly1305",
-      "password": "CJmTCCx7Ltud"
+      "password": "x4WuCumDo-4ahFPPuhG6AuMn8cmgrmSK"
     },
     {
       "tag": "@Vip_Security",
@@ -701,15 +637,15 @@
     },
     {
       "tag": "@Vip_Security [2]",
-      "server": "195.12.49.82",
-      "server_port": 801,
+      "server": "185.104.184.78",
+      "server_port": 812,
       "type": "shadowsocks",
       "method": "chacha20-ietf-poly1305",
       "password": "G!yBwPWH3Vao"
     },
     {
       "tag": "@Vip_Security [3]",
-      "server": "92.223.59.188",
+      "server": "35.180.88.172",
       "server_port": 812,
       "type": "shadowsocks",
       "method": "chacha20-ietf-poly1305",
@@ -717,19 +653,35 @@
     },
     {
       "tag": "@Vip_Security [4]",
-      "server": "93.186.201.158",
-      "server_port": 800,
+      "server": "92.223.59.188",
+      "server_port": 812,
       "type": "shadowsocks",
       "method": "chacha20-ietf-poly1305",
       "password": "G!yBwPWH3Vao"
     },
     {
-      "tag": "hamedp71::🇦🇺",
-      "server": "45.77.232.213",
-      "server_port": 15675,
+      "tag": "@Vip_Security [5]",
+      "server": "93.186.201.158",
+      "server_port": 809,
       "type": "shadowsocks",
       "method": "chacha20-ietf-poly1305",
-      "password": "TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH"
+      "password": "G!yBwPWH3Vao"
+    },
+    {
+      "tag": "@Vip_Security [6]",
+      "server": "95.85.90.181",
+      "server_port": 804,
+      "type": "shadowsocks",
+      "method": "chacha20-ietf-poly1305",
+      "password": "G!yBwPWH3Vao"
+    },
+    {
+      "tag": "🌐سرور [2]",
+      "server": "admin.c1.webramz.co",
+      "server_port": 443,
+      "type": "shadowsocks",
+      "method": "chacha20-ietf-poly1305",
+      "password": "W74XFALLLuw6m5IA"
     },
     {
       "tag": "[9724][CA][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25",
@@ -740,31 +692,23 @@
       "password": "a0fb56752d3f759d"
     },
     {
-      "tag": "hamedp71::🇳🇱 [2]",
-      "server": "82.38.31.176",
-      "server_port": 8080,
-      "type": "shadowsocks",
-      "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ"
-    },
-    {
-      "tag": "hamedp71::🇳🇱 [3]",
-      "server": "193.29.139.204",
+      "tag": "2.🇳🇱Нидерланды | @LimeVPNFREE t.me/rjsxrd",
+      "server": "82.38.31.149",
       "server_port": 8080,
       "type": "shadowsocks",
       "method": "chacha20-ietf-poly1305",
       "password": "oZIoA69Q8yhcQV8ka3Pa3A"
     },
     {
-      "tag": "13.🇳🇱Нидерланды | @LimeVPNFREE t.me/rjsxrd",
-      "server": "82.38.31.11",
-      "server_port": 8080,
+      "tag": "@Vip_Security [7]",
+      "server": "37.48.81.6",
+      "server_port": 22,
       "type": "shadowsocks",
       "method": "chacha20-ietf-poly1305",
-      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+      "password": "privatevpndotcom"
     },
     {
-      "tag": "🏴‍☠️ [2]",
+      "tag": "🏴‍☠️",
       "server": "260323.1.0.l3.unclemanco.com",
       "server_port": 9022,
       "type": "shadowsocks",
@@ -788,15 +732,23 @@
       "password": "7eadc6dbe2ae"
     },
     {
-      "tag": "@Vip_Security [5]",
-      "server": "92.38.139.95",
+      "tag": "@Vip_Security [8]",
+      "server": "51.195.217.21",
       "server_port": 50003,
       "type": "shadowsocks",
       "method": "aes-256-cfb",
       "password": "8460400130"
     },
     {
-      "tag": "@Vip_Security [6]",
+      "tag": "@Vip_Security [9]",
+      "server": "92.38.171.101",
+      "server_port": 50003,
+      "type": "shadowsocks",
+      "method": "aes-256-cfb",
+      "password": "8460400130"
+    },
+    {
+      "tag": "@Vip_Security [10]",
       "server": "141.98.119.180",
       "server_port": 50003,
       "type": "shadowsocks",
@@ -804,8 +756,8 @@
       "password": "8460400130"
     },
     {
-      "tag": "@Vip_Security [7]",
-      "server": "3.249.52.148",
+      "tag": "@Vip_Security [11]",
+      "server": "185.219.134.182",
       "server_port": 50003,
       "type": "shadowsocks",
       "method": "aes-256-cfb",
@@ -813,6 +765,14 @@
     },
     {
       "tag": "🇬🇧_GB_英国",
+      "server": "13.135.252.176",
+      "server_port": 443,
+      "type": "shadowsocks",
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "tag": "🇬🇧_GB_英国 [2]",
       "server": "18.175.227.220",
       "server_port": 443,
       "type": "shadowsocks",
@@ -820,7 +780,7 @@
       "password": "amazonskr05"
     },
     {
-      "tag": "@Vip_Security [8]",
+      "tag": "@Vip_Security [12]",
       "server": "54.37.136.249",
       "server_port": 989,
       "type": "shadowsocks",
@@ -828,15 +788,23 @@
       "password": "f8f7aCzcPKbsF8p3"
     },
     {
-      "tag": "@Vip_Security [9]",
-      "server": "194.68.44.206",
+      "tag": "@Vip_Security [13]",
+      "server": "185.89.238.36",
       "server_port": 989,
       "type": "shadowsocks",
       "method": "aes-256-cfb",
       "password": "f8f7aCzcPKbsF8p3"
     },
     {
-      "tag": "@Vip_Security [10]",
+      "tag": "@Vip_Security [14]",
+      "server": "195.211.41.10",
+      "server_port": 989,
+      "type": "shadowsocks",
+      "method": "aes-256-cfb",
+      "password": "f8f7aCzcPKbsF8p3"
+    },
+    {
+      "tag": "@Vip_Security [15]",
       "server": "37.235.55.84",
       "server_port": 989,
       "type": "shadowsocks",
@@ -852,32 +820,40 @@
       "password": "Butterfly123@qwe9527"
     },
     {
-      "tag": "🇨🇳_CN_中国->🇺🇸_US_美国",
+      "tag": "🇨🇳_CN_中国->🇯🇵_JP_日本",
       "server": "103.236.66.4",
-      "server_port": 50001,
+      "server_port": 40002,
       "type": "shadowsocks",
       "method": "aes-256-gcm",
       "password": "Butterfly123@qwe9527"
     },
     {
-      "tag": "hamedp71::🇺🇸",
-      "server": "15.204.246.132",
-      "server_port": 7307,
+      "tag": "🇨🇳_CN_中国->🇭🇰_HK_中国香港 [2]",
+      "server": "36.33.35.105",
+      "server_port": 10006,
       "type": "shadowsocks",
       "method": "aes-256-gcm",
-      "password": "FoOiGlkAA9yPEGP"
+      "password": "Butterfly123@qwe9527"
     },
     {
-      "tag": "[13552][CA][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25",
-      "server": "198.8.92.84",
-      "server_port": 35294,
+      "tag": "🇺🇸_US_美国_6",
+      "server": "38.110.1.111",
+      "server_port": 8000,
       "type": "shadowsocks",
       "method": "aes-256-gcm",
-      "password": "J9Y2ncrdPEC38gwydNFFGBna"
+      "password": "KixLvKzwjekG00rm"
     },
     {
-      "tag": "@Vip_Security [11]",
-      "server": "149.202.82.172",
+      "tag": "🇺🇸_US_美国_1",
+      "server": "38.110.1.51",
+      "server_port": 8090,
+      "type": "shadowsocks",
+      "method": "aes-256-gcm",
+      "password": "PCnnH6SQSnfoS27"
+    },
+    {
+      "tag": "ss-84",
+      "server": "141.164.45.187",
       "server_port": 7002,
       "type": "shadowsocks",
       "method": "aes-256-gcm",
@@ -900,7 +876,15 @@
       "password": "dongtaiwang.com"
     },
     {
-      "tag": "@Vip_Security [12]",
+      "tag": "@Vip_Security [16]",
+      "server": "62.112.9.220",
+      "server_port": 2375,
+      "type": "shadowsocks",
+      "method": "aes-256-gcm",
+      "password": "faBAoD54k87UJG7"
+    },
+    {
+      "tag": "@Vip_Security [17]",
       "server": "146.70.27.12",
       "server_port": 40093,
       "type": "shadowsocks",
@@ -914,6 +898,22 @@
       "type": "shadowsocks",
       "method": "chacha20-ietf-poly1305",
       "password": "FD3rCuOsxOay"
+    },
+    {
+      "tag": "🇳🇱 The Netherlands, Amsterdam (Amsterdam-Noord) | [BL]",
+      "server": "82.38.31.204",
+      "server_port": 8080,
+      "type": "shadowsocks",
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "tag": "🇳🇱 The Netherlands, Amsterdam (Amsterdam-Noord) | [BL] [2]",
+      "server": "82.38.31.48",
+      "server_port": 8080,
+      "type": "shadowsocks",
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
     },
     {
       "tag": "hysteria2-92",
@@ -932,20 +932,20 @@
       }
     },
     {
-      "tag": "🇵🇱 Poland | 🌐 [*CIDR]",
-      "server": "twru1.fontanvpn.com",
+      "tag": "🇩🇪 Germany [*CIDR]",
+      "server": "kum.tokervpn.ru",
       "server_port": 443,
       "type": "hysteria2",
       "password": "0147bb62-7972-40ee-a86a-409e0a0fb838",
       "tls": {
         "enabled": true,
-        "server_name": "twru1.fontanvpn.com",
+        "server_name": "kum.tokervpn.ru",
         "insecure": false
       }
     },
     {
       "tag": "🇳🇱 The Netherlands, Amsterdam | [BL]",
-      "server": "nland1.noesissite.ru",
+      "server": "144.31.224.81",
       "server_port": 443,
       "type": "hysteria2",
       "password": "042a1881-44e4-4781-bd40-bf75164faf4f",
@@ -956,14 +956,26 @@
       }
     },
     {
-      "tag": "🇩🇪 Germany, Frankfurt am Main | [BL]",
-      "server": "194.247.186.120",
-      "server_port": 8443,
+      "tag": "🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]",
+      "server": "138.124.55.19",
+      "server_port": 8445,
       "type": "hysteria2",
-      "password": "0I_Vi934gK9_Mq3240Xs_Bv2_kUi8Q34183g9hj_Bv6_7a",
+      "password": "085178e12d2211ec",
       "tls": {
         "enabled": true,
-        "server_name": "grape-sos-de.roxa.org",
+        "server_name": "nl.prisma-access.club",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇸🇬 Singapore, Singapore | [BL]",
+      "server": "167.150.100.133",
+      "server_port": 8443,
+      "type": "hysteria2",
+      "password": "0_Oms89nH82l_Ki813_Nxmw81_Rbt_Jq190Kl_m",
+      "tls": {
+        "enabled": true,
+        "server_name": "grape-power-sg.roxa.org",
         "insecure": false
       }
     },
@@ -980,215 +992,111 @@
       }
     },
     {
-      "tag": "🇨🇳 China, Lijia | [BL]",
-      "server": "139.28.168.54",
-      "server_port": 9080,
+      "tag": "🇳🇱 The Netherlands [*CIDR]",
+      "server": "82.117.87.119",
+      "server_port": 443,
       "type": "hysteria2",
-      "password": "0wdsa_nJXEWRj9jz9J9xMgtx_n7gzfK_m8",
+      "password": "0f2dc4af-951f-4690-922e-07c6e8bab26a",
       "tls": {
         "enabled": true,
-        "server_name": "grape-honk.yyuyy.com",
+        "server_name": "nl-one.quiet-rogue.site",
         "insecure": false
       }
     },
     {
-      "tag": "日本11aws",
-      "server": "d3e887dc.459292.xyz",
+      "tag": "🇵🇱 Poland | 🌐 [*CIDR]",
+      "server": "217.150.197.54",
       "server_port": 8443,
       "type": "hysteria2",
-      "password": "10f02d23-1d74-4b6e-b830-815be053281d",
+      "password": "12a9c8a7-4b08-4514-82f3-9a64bb9bd201",
       "tls": {
         "enabled": true,
-        "server_name": "localhost",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "新加坡09aws",
-      "server": "sg09.459292.xyz",
-      "server_port": 30003,
-      "type": "hysteria2",
-      "password": "10f02d23-1d74-4b6e-b830-815be053281d",
-      "tls": {
-        "enabled": true,
-        "server_name": "localhost",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "美国02aws",
-      "server": "us02.459292.xyz",
-      "server_port": 8080,
-      "type": "hysteria2",
-      "password": "10f02d23-1d74-4b6e-b830-815be053281d",
-      "tls": {
-        "enabled": true,
-        "server_name": "localhost",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇫🇮|FI|@wxgqlfx|221",
-      "server": "h2.vpnushka.lol",
-      "server_port": 443,
-      "type": "hysteria2",
-      "password": "133f76fc-a5ab-463e-b46d-9587d7137e55",
-      "tls": {
-        "enabled": true,
-        "server_name": "h2.vpnushka.lol",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇪🇪 Estonia, Tallinn | 🌐 | [BL]",
-      "server": "off.cryptoofarm.com",
-      "server_port": 443,
-      "type": "hysteria2",
-      "password": "16ab4d4a-fd81-4535-9b7b-346677226ce8",
-      "tls": {
-        "enabled": true,
-        "server_name": "off.cryptoofarm.com",
-        "insecure": false
-      }
-    },
-    {
-      "tag": "日本09aws",
-      "server": "898ca7c3.459292.xyz",
-      "server_port": 8443,
-      "type": "hysteria2",
-      "password": "1aa84841-8701-4700-ad46-2923dc2900d0",
-      "tls": {
-        "enabled": true,
-        "server_name": "localhost",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "新加坡07aws",
-      "server": "sg07.459292.xyz",
-      "server_port": 8080,
-      "type": "hysteria2",
-      "password": "1aa84841-8701-4700-ad46-2923dc2900d0",
-      "tls": {
-        "enabled": true,
-        "server_name": "localhost",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "hy2台湾07",
-      "server": "tw40.459921.xyz",
-      "server_port": 8080,
-      "type": "hysteria2",
-      "password": "1aa84841-8701-4700-ad46-2923dc2900d0",
-      "tls": {
-        "enabled": true,
-        "server_name": "localhost",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "日本10aws",
-      "server": "7a322d16.459292.xyz",
-      "server_port": 8443,
-      "type": "hysteria2",
-      "password": "1c74e77e-2a82-4932-8a08-429951c0df7c",
-      "tls": {
-        "enabled": true,
-        "server_name": "localhost",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "新加坡06aws",
-      "server": "sg06.459292.xyz",
-      "server_port": 8080,
-      "type": "hysteria2",
-      "password": "1c74e77e-2a82-4932-8a08-429951c0df7c",
-      "tls": {
-        "enabled": true,
-        "server_name": "localhost",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "hy2台湾05",
-      "server": "tw4.459921.xyz",
-      "server_port": 30001,
-      "type": "hysteria2",
-      "password": "1c74e77e-2a82-4932-8a08-429951c0df7c",
-      "tls": {
-        "enabled": true,
-        "server_name": "localhost",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇫🇷 France, Paris | [BL]",
-      "server": "h2-fr.arpozan.cloud",
-      "server_port": 443,
-      "type": "hysteria2",
-      "password": "1f29762d-3f23-4207-9e39-f774de5d49ba",
-      "tls": {
-        "enabled": true,
-        "server_name": "h2-fr.arpozan.cloud",
+        "server_name": "quic.tyr-agentstvo.tech",
         "insecure": false
       }
     },
     {
       "tag": "🇳🇱 The Netherlands, Amsterdam | [BL] [2]",
-      "server": "nl9.unlockvpn.online",
+      "server": "node3.vpnushka.lol",
+      "server_port": 443,
+      "type": "hysteria2",
+      "password": "133f76fc-a5ab-463e-b46d-9587d7137e55",
+      "tls": {
+        "enabled": true,
+        "server_name": "node3.vpnushka.lol",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇯🇵 Japan, Shibuya City | [BL]",
+      "server": "jp.cryptoofarm.com",
+      "server_port": 443,
+      "type": "hysteria2",
+      "password": "16ab4d4a-fd81-4535-9b7b-346677226ce8",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp.cryptoofarm.com",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇹🇷 Turkey, Istanbul | [BL]",
+      "server": "194.135.34.130",
+      "server_port": 443,
+      "type": "hysteria2",
+      "password": "1ba59989-225e-4f1c-ab62-9bd7366009cb",
+      "tls": {
+        "enabled": true,
+        "server_name": "194.135.34.130",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇳🇱 The Netherlands, Eygelshoven | 🌐 | [BL]",
+      "server": "139.28.98.26",
+      "server_port": 443,
+      "type": "hysteria2",
+      "password": "1e69d0cd-2efc-48ef-b1f2-b7f3d49e1e60",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl-hysteria.boxypn.com",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🌀46@oneclickvpnkeys",
+      "server": "nl2.unlockvpn.online",
       "server_port": 10808,
       "type": "hysteria2",
       "password": "1f619326-cd93-4d6b-aebe-e0b5f8831d02",
       "tls": {
         "enabled": true,
-        "server_name": "nl9.unlockvpn.online",
+        "server_name": "nl2.unlockvpn.online",
         "insecure": false
       }
     },
     {
-      "tag": "🇸🇬SG",
-      "server": "xjp4.mangshe.xyz",
-      "server_port": 2060,
+      "tag": "俄罗斯+新西伯利亚justhost",
+      "server": "els1.mangshe.xyz",
+      "server_port": 2056,
       "type": "hysteria2",
       "password": "22d891f5-ad85-4824-b0b8-e30cf3d37eb5",
       "tls": {
         "enabled": true,
-        "server_name": "xjp4.mangshe.xyz",
+        "server_name": "els1.mangshe.xyz",
         "insecure": true
       }
     },
     {
-      "tag": "JP-TYO-DC28-005[UDP]",
-      "server": "jp-tyo-dc28-005.node.valaccess.com",
+      "tag": "🏓89@oneclickvpnkeys",
+      "server": "replay.wwwinternetvideo.click",
       "server_port": 443,
       "type": "hysteria2",
-      "password": "29794dae-06ca-4b62-94f2-220b5858d39b",
+      "password": "2691cbe7c20cced8b0aeb12c812d09077e5b3eec7669fb8f",
       "tls": {
         "enabled": true,
-        "server_name": "na.node.valaccess.com",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "TB3NFWHCbuXajqux"
-      }
-    },
-    {
-      "tag": "US-LAX-DC12-003[UDP]",
-      "server": "us-lax-dc12-003.node.valaccess.com",
-      "server_port": 443,
-      "type": "hysteria2",
-      "password": "29794dae-06ca-4b62-94f2-220b5858d39b",
-      "tls": {
-        "enabled": true,
-        "server_name": "na.node.valaccess.com",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "TB3NFWHCbuXajqux"
+        "server_name": "replay.wwwinternetvideo.click",
+        "insecure": true
       }
     },
     {
@@ -1204,98 +1112,86 @@
       }
     },
     {
-      "tag": "🇳🇱 The Netherlands, Amsterdam | [BL] [3]",
-      "server": "treng.loralden.com",
+      "tag": "🇺🇸 United States, Atlanta | [BL]",
+      "server": "loma.loralden.com",
       "server_port": 443,
       "type": "hysteria2",
       "password": "2d046b6b-e12e-4065-a83c-335bfbb73fc9",
       "tls": {
         "enabled": true,
-        "server_name": "treng.loralden.com",
+        "server_name": "loma.loralden.com",
         "insecure": false
       }
     },
     {
-      "tag": "🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL] [2]",
-      "server": "unic.hysteria.ltd",
+      "tag": "🇫🇷 France, Paris | 🌐 | [BL]",
+      "server": "france-2.hysteria.ltd",
       "server_port": 5443,
       "type": "hysteria2",
       "password": "35a14133-45f6-40bc-a9cd-918fd0ecb345",
       "tls": {
         "enabled": true,
-        "server_name": "unic.hysteria.ltd",
+        "server_name": "france-2.hysteria.ltd",
         "insecure": false
       }
     },
     {
-      "tag": "🇺🇸US_3|4.3MB/s",
-      "server": "us2.xiaoliyu.cyou",
-      "server_port": 4433,
-      "type": "hysteria2",
-      "password": "39b27e20-16f5-45a1-8139-7c9b7f51b6f8",
-      "tls": {
-        "enabled": true,
-        "server_name": "us2.xiaoliyu.cyou",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "日本05aws",
-      "server": "jp03.459292.xyz",
+      "tag": "🇵🇱 Poland | 🌐 [*CIDR] CDN",
+      "server": "46.243.235.23",
       "server_port": 8443,
       "type": "hysteria2",
-      "password": "3a2f9f47-dbd7-473d-98f9-4e918a7e1e54",
+      "password": "391f093f-85fc-473d-abe2-ea607b9ff567",
       "tls": {
         "enabled": true,
-        "server_name": "localhost",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "新加坡12aws",
-      "server": "sg19.459921.xyz",
-      "server_port": 8080,
-      "type": "hysteria2",
-      "password": "3a2f9f47-dbd7-473d-98f9-4e918a7e1e54",
-      "tls": {
-        "enabled": true,
-        "server_name": "sg19.459921.xyz",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇵🇱 Poland, Warsaw (Śródmieście) | [BL]",
-      "server": "ppl.myispace.xyz",
-      "server_port": 8443,
-      "type": "hysteria2",
-      "password": "3ad1998b-166b-4636-8239-952d274833b9",
-      "tls": {
-        "enabled": true,
-        "server_name": "ppl.myispace.xyz",
+        "server_name": "quic.tyr-agentstvo.tech",
         "insecure": false
       }
     },
     {
-      "tag": "🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL]",
-      "server": "de2.zveil-vpn.online",
+      "tag": "🇰🇿 Kazakhstan, Almaty | [BL]",
+      "server": "kz.frkn.org",
       "server_port": 443,
       "type": "hysteria2",
-      "password": "3f49f2df-f94a-47aa-b830-6cb0e13a2d3e",
+      "password": "3b8c82ed-fe66-472d-915e-034ccb57103f",
       "tls": {
         "enabled": true,
-        "server_name": "de2.zveil-vpn.online",
+        "server_name": "kz.frkn.org",
         "insecure": false
       }
     },
     {
-      "tag": "🇺🇸 United States, Seattle | 🌐 | [BL]",
-      "server": "srv-12c1e0.21freedom.net",
+      "tag": "🇦🇹 Austria, Vienna | [BL]",
+      "server": "srv-40a0eb.21freedom.net",
       "server_port": 11592,
       "type": "hysteria2",
-      "password": "49f8bb8047",
+      "password": "3ec082d54e",
       "tls": {
         "enabled": true,
-        "server_name": "srv-12c1e0.21freedom.net",
+        "server_name": "srv-40a0eb.21freedom.net",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇩🇪 Germany, Frankfurt am Main | [BL]",
+      "server": "de.riotvpn.eu",
+      "server_port": 4443,
+      "type": "hysteria2",
+      "password": "440f3c08-7599-406e-8ba3-7dbc6324c5ed",
+      "tls": {
+        "enabled": true,
+        "server_name": "static.vkimages.io",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇩🇪 Germany, Frankfurt am Main | [BL] [2]",
+      "server": "node.embrofree.org",
+      "server_port": 443,
+      "type": "hysteria2",
+      "password": "4e82f6c9-e180-4672-9d63-9060679ebdb9",
+      "tls": {
+        "enabled": true,
+        "server_name": "node.embrofree.org",
         "insecure": false
       }
     },
@@ -1312,38 +1208,50 @@
       }
     },
     {
-      "tag": "@OutlineReleasedKey",
-      "server": "dk86.mechvpn.online",
+      "tag": "🇩🇪 Germany, Frankfurt am Main | [BL] [3]",
+      "server": "de87.mechvpn.online",
       "server_port": 443,
       "type": "hysteria2",
       "password": "53c76647-14d1-4df5-99cb-be99ad2e6bd9",
       "tls": {
         "enabled": true,
-        "server_name": "dk86.mechvpn.online",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇦🇪 United Arab Emirates, Warisan | [BL]",
-      "server": "pl94.mechvpn.online",
-      "server_port": 443,
-      "type": "hysteria2",
-      "password": "53c76647-14d1-4df5-99cb-be99ad2e6bd9",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl94.mechvpn.online",
+        "server_name": "de87.mechvpn.online",
         "insecure": false
       }
     },
     {
-      "tag": "🇫🇮 Finland, Helsinki | [BL]",
-      "server": "fin.freeinternat.com",
+      "tag": "🇳🇱|NL|@wxgqlfx|218",
+      "server": "nl174.mechvpn.online",
       "server_port": 443,
       "type": "hysteria2",
-      "password": "558e17d8-00fd-46d9-bc5c-1e3bdf73034f",
+      "password": "53c76647-14d1-4df5-99cb-be99ad2e6bd9",
       "tls": {
         "enabled": true,
-        "server_name": "fin.freeinternat.com",
+        "server_name": "nl174.mechvpn.online",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "|SE|@wxgqlfx|238",
+      "server": "us63.mechvpn.online",
+      "server_port": 443,
+      "type": "hysteria2",
+      "password": "53c76647-14d1-4df5-99cb-be99ad2e6bd9",
+      "tls": {
+        "enabled": true,
+        "server_name": "us63.mechvpn.online",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇬🇧 United Kingdom, London | [BL]",
+      "server": "f1b.wareznet.ru",
+      "server_port": 8443,
+      "type": "hysteria2",
+      "password": "55b71f97202647049ce999646de57c50",
+      "tls": {
+        "enabled": true,
+        "server_name": "f1b.wareznet.ru",
         "insecure": false
       }
     },
@@ -1360,32 +1268,56 @@
       }
     },
     {
-      "tag": "🇪🇪 Estonia, Tallinn | [BL]",
-      "server": "ee.lockaway.top",
+      "tag": "🇩🇪 Germany [*CIDR] [2]",
+      "server": "althys.superbuba.top",
       "server_port": 443,
       "type": "hysteria2",
-      "password": "5bd757ff-7498-4bfd-b7a2-7e3c7ff89e32",
+      "password": "5b336b3b-9512-4bfc-8eb1-b648c62133b3",
       "tls": {
         "enabled": true,
-        "server_name": "ee.lockaway.top",
+        "server_name": "althys.superbuba.top",
         "insecure": false
       }
     },
     {
-      "tag": "0808",
-      "server": "179.255.158.151",
-      "server_port": 50160,
+      "tag": "🇩🇪 Germany, Frankfurt am Main | [BL] [4]",
+      "server": "de-three.letsgodance.site",
+      "server_port": 8443,
       "type": "hysteria2",
-      "password": "603e192aa740396fcae361bdd146b8c1",
+      "password": "5d36ddf8-dde5-4b2d-8213-d3255f22a0f1",
       "tls": {
         "enabled": true,
-        "server_name": "vk.com",
+        "server_name": "de-three.letsgodance.site",
         "insecure": false
       }
     },
     {
-      "tag": "hysteria2-130",
-      "server": "64.49.15.76",
+      "tag": "🌐 China | QUIC | @anonymouskeys",
+      "server": "107.167.18.123",
+      "server_port": 1743,
+      "type": "hysteria2",
+      "password": "6286105c-fb6d-11ef-be96-f23c93136cb3",
+      "tls": {
+        "enabled": true,
+        "server_name": "227fd503-t4ssg0-t5vo4i-4550.la.shifen.uk",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "129353",
+      "server": "soskeynets.api3-max.ru",
+      "server_port": 443,
+      "type": "hysteria2",
+      "password": "67a1454f-5a95-4e30-9723-1ffcbe7e97f9",
+      "tls": {
+        "enabled": true,
+        "server_name": "soskeynets.api3-max.ru",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇹🇷 Turkey, Istanbul | [BL] [2]",
+      "server": "taga3.api3-max.ru",
       "server_port": 443,
       "type": "hysteria2",
       "password": "67a1454f-5a95-4e30-9723-1ffcbe7e97f9",
@@ -1396,32 +1328,32 @@
       }
     },
     {
-      "tag": "🇹🇷 Turkey, Istanbul | [BL]",
-      "server": "taga5.api3-max.ru",
+      "tag": "hysteria2-126",
+      "server": "wopa4.api3-max.ru",
       "server_port": 443,
       "type": "hysteria2",
       "password": "67a1454f-5a95-4e30-9723-1ffcbe7e97f9",
       "tls": {
         "enabled": true,
-        "server_name": "taga5.api3-max.ru",
+        "server_name": "wopa4.api3-max.ru",
         "insecure": false
       }
     },
     {
-      "tag": "美国+V2CROSS.COM",
-      "server": "wopa8.api3-max.ru",
+      "tag": "🇳🇱 The Netherlands, Amsterdam | [BL] [3]",
+      "server": "finlandi.blokinet3.ru",
       "server_port": 443,
       "type": "hysteria2",
-      "password": "67a1454f-5a95-4e30-9723-1ffcbe7e97f9",
+      "password": "68b4b16e-2759-47a4-8a69-33118edf5ce6",
       "tls": {
         "enabled": true,
-        "server_name": "wopa8.api3-max.ru",
+        "server_name": "finlandi.blokinet3.ru",
         "insecure": false
       }
     },
     {
-      "tag": "@filembad #1",
-      "server": "31.76.80.69",
+      "tag": "nukcrow [3]",
+      "server": "fiproxy1.lockdwn.com",
       "server_port": 443,
       "type": "hysteria2",
       "password": "6aab8efdf13945829ae3699c342be406",
@@ -1436,45 +1368,9 @@
       }
     },
     {
-      "tag": "日本06aws",
-      "server": "hyfnjp01.459292.xyz",
-      "server_port": 8443,
-      "type": "hysteria2",
-      "password": "6b5a9259-c7de-45f0-b4de-e89db7850d0c",
-      "tls": {
-        "enabled": true,
-        "server_name": "localhost",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "新加坡10aws",
-      "server": "sg10.459292.xyz",
-      "server_port": 8443,
-      "type": "hysteria2",
-      "password": "6b5a9259-c7de-45f0-b4de-e89db7850d0c",
-      "tls": {
-        "enabled": true,
-        "server_name": "localhost",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "美国04aws",
-      "server": "us04.459292.xyz",
-      "server_port": 20001,
-      "type": "hysteria2",
-      "password": "6b5a9259-c7de-45f0-b4de-e89db7850d0c",
-      "tls": {
-        "enabled": true,
-        "server_name": "localhost",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇫🇮 Finland [*CIDR]",
-      "server": "82.117.87.248",
-      "server_port": 2053,
+      "tag": "🇫🇮 Finland, Helsinki | [BL]",
+      "server": "2.26.85.26",
+      "server_port": 443,
       "type": "hysteria2",
       "password": "71cada65-d23e-418c-88e4-a06188d14689",
       "tls": {
@@ -1484,26 +1380,38 @@
       }
     },
     {
-      "tag": "0268",
-      "server": "tn.tmn141246.ru",
+      "tag": "🇸🇪 Sweden, Stockholm | [BL]",
+      "server": "swe-one.quiet-rogue.site",
       "server_port": 443,
       "type": "hysteria2",
-      "password": "75823e66-28ee-445c-b14e-bd26ca554fab",
+      "password": "71cada65-d23e-418c-88e4-a06188d14689",
       "tls": {
         "enabled": true,
-        "server_name": "live.ok.ru",
+        "server_name": "swe-one.quiet-rogue.site",
         "insecure": false
       }
     },
     {
-      "tag": "🇬🇧 United Kingdom, London | [BL]",
-      "server": "151.247.219.191",
-      "server_port": 8443,
+      "tag": "🇵🇱 Poland [*CIDR]",
+      "server": "zisvpn.ru",
+      "server_port": 1452,
       "type": "hysteria2",
-      "password": "7_Bz834J98n238cNbx7cjLAw_Nux28c_kIO1Hq86Vr",
+      "password": "771d283f-868e-4ac4-8a88-074af8b0a9c9",
       "tls": {
         "enabled": true,
-        "server_name": "hopp-queen.roxa.org",
+        "server_name": "zisvpn.ru",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "nukcrow [4]",
+      "server": "138.124.17.62",
+      "server_port": 443,
+      "type": "hysteria2",
+      "password": "7e8825a4-86ac-486f-a06c-0917ced9dfcd",
+      "tls": {
+        "enabled": true,
+        "server_name": "wlh.moonshard.org",
         "insecure": false
       }
     },
@@ -1520,115 +1428,103 @@
       }
     },
     {
-      "tag": "[hy2]NL｜荷兰-阿姆斯特丹/1(ipv6)",
-      "server": "2a12:bec4:1821:25::b",
-      "server_port": 8443,
-      "type": "hysteria2",
-      "password": "87938527-9e81-48e0-aef8-9a8d923fff42",
-      "tls": {
-        "enabled": true,
-        "server_name": "c9a0c4942b7enl1v6.587458.xyz",
-        "insecure": false
-      }
-    },
-    {
-      "tag": "🇩🇪 Germany, Frankfurt am Main | [BL] [2]",
-      "server": "mdt1.pubconverter.com",
-      "server_port": 2443,
-      "type": "hysteria2",
-      "password": "896002a8-3afc-49e6-8fac-5129fb717b49",
-      "tls": {
-        "enabled": true,
-        "server_name": "md.pubconverter.com",
-        "insecure": false
-      }
-    },
-    {
-      "tag": "日本02aws",
-      "server": "1jp001.459292.xyz",
-      "server_port": 8443,
-      "type": "hysteria2",
-      "password": "8d9ddfb4-7583-45b3-acf1-5343db385a38",
-      "tls": {
-        "enabled": true,
-        "server_name": "localhost",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "剩余流量：0",
-      "server": "sg01.459292.xyz",
-      "server_port": 8443,
-      "type": "hysteria2",
-      "password": "8d9ddfb4-7583-45b3-acf1-5343db385a38",
-      "tls": {
-        "enabled": true,
-        "server_name": "localhost",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "hy2台湾02",
-      "server": "tw06.459292.xyz",
-      "server_port": 30001,
-      "type": "hysteria2",
-      "password": "8d9ddfb4-7583-45b3-acf1-5343db385a38",
-      "tls": {
-        "enabled": true,
-        "server_name": "tw06.459292.xyz",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇩🇪 Germany, Frankfurt am Main | [BL] [3]",
-      "server": "31.76.111.253",
+      "tag": "hysteria2-134",
+      "server": "217.60.33.215",
       "server_port": 443,
       "type": "hysteria2",
-      "password": "8e85752d-c04f-427d-9d70-b10d144c8492",
+      "password": "865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01",
       "tls": {
         "enabled": true,
-        "server_name": "hy2.bluekitty.lol",
+        "server_name": "streambox.wwwinternetvideo.click",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸 United States, Buffalo | [BL]",
+      "server": "tokervpn.com",
+      "server_port": 443,
+      "type": "hysteria2",
+      "password": "890aade8-4034-4372-9776-793e9acd1e94",
+      "tls": {
+        "enabled": true,
+        "server_name": "tokervpn.com",
         "insecure": false
       }
     },
     {
-      "tag": "🇹🇼 Taiwan, Taoyuan | 🌐 | [BL]",
-      "server": "35.194.178.243",
-      "server_port": 50160,
+      "tag": "🇳🇱 The Netherlands, Amsterdam | [BL] [4]",
+      "server": "fl01.auragg.org",
+      "server_port": 443,
       "type": "hysteria2",
-      "password": "91913c0ce8db490e9c6051d60dabce8d",
+      "password": "8bc63720-5ec8-45b5-b6a6-9a21ffb490e8",
       "tls": {
         "enabled": true,
-        "server_name": "35-194-178-243.liao.kdns.fr",
+        "server_name": "fl01.auragg.org",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇵🇱 Poland [*CIDR] [2]",
+      "server": "217.150.197.54",
+      "server_port": 8443,
+      "type": "hysteria2",
+      "password": "8e9b2c52-e083-40fb-92c1-8a8cd4c6a02c",
+      "tls": {
+        "enabled": true,
+        "server_name": "quic.tyr-agentstvo.tech",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇺🇸 United States | QUIC | @anonymouskeys",
+      "server": "usa0003rlbhy01.tcp-reset-club.net",
+      "server_port": 443,
+      "type": "hysteria2",
+      "password": "8fb328f0-d8e0-4b11-a6db-3dadfc4f02a3",
+      "tls": {
+        "enabled": true,
+        "server_name": "usa0003rlbhy01.tcp-reset-club.net",
         "insecure": false
       }
     },
     {
       "tag": "🇵🇱 Poland | 🌐 [*CIDR] [2]",
-      "server": "gogo.fontanvpn.com",
+      "server": "46.8.210.209",
+      "server_port": 443,
+      "type": "hysteria2",
+      "password": "95c61940-2823-4665-a033-d4f2218329b6",
+      "tls": {
+        "enabled": true,
+        "server_name": "ru3.kinotorg.net",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇵🇱 Poland | 🌐 [*CIDR] [3]",
+      "server": "twru1.fontanvpn.com",
       "server_port": 443,
       "type": "hysteria2",
       "password": "97a63a10-8e25-4425-883e-f2bc31c3f970",
       "tls": {
         "enabled": true,
-        "server_name": "gogo.fontanvpn.com",
+        "server_name": "twru1.fontanvpn.com",
         "insecure": false
       }
     },
     {
-      "tag": "⚛️11@oneclickvpnkeys",
-      "server": "162.249.124.102",
+      "tag": "🇬🇧 United Kingdom, London | [BL] [2]",
+      "server": "162.249.124.103",
       "server_port": 8443,
       "type": "hysteria2",
       "password": "9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z",
       "tls": {
         "enabled": true,
         "server_name": "mercedes-grape.yyuyy.com",
-        "insecure": true
+        "insecure": false
       }
     },
     {
-      "tag": "United+States",
+      "tag": "🇹🇷 Turkey, Ankara | [BL]",
       "server": "162.249.124.112",
       "server_port": 8080,
       "type": "hysteria2",
@@ -1636,12 +1532,12 @@
       "tls": {
         "enabled": true,
         "server_name": "hopp-germany-new.ddnsguru.com",
-        "insecure": true
+        "insecure": false
       }
     },
     {
-      "tag": "🇫🇷 France, Paris | [BL] [2]",
-      "server": "76.164.202.219",
+      "tag": "🇫🇷 France, Paris | [BL]",
+      "server": "76.164.202.215",
       "server_port": 8443,
       "type": "hysteria2",
       "password": "9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z",
@@ -1652,21 +1548,33 @@
       }
     },
     {
-      "tag": "🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]",
-      "server": "h2.ecliptic-it.ru",
+      "tag": "🌐 Anycast-IP | 🇫🇮 🇵🇱 [*CIDR] Beeline",
+      "server": "78.159.250.230",
       "server_port": 8443,
       "type": "hysteria2",
-      "password": "9dada88d-f8f8-459d-8a4f-4df2c973fe43",
+      "password": "9b4c96f9-60e8-4694-b069-c46992390555",
       "tls": {
         "enabled": true,
-        "server_name": "h2.ecliptic-it.ru",
+        "server_name": "quic.tyr-agentstvo.tech",
         "insecure": false
       }
     },
     {
-      "tag": "تلگرام ما MTMVPN 6",
-      "server": "222.167.212.24",
-      "server_port": 8443,
+      "tag": "🇫🇮 Finland [*CIDR]",
+      "server": "138.124.254.68",
+      "server_port": 2053,
+      "type": "hysteria2",
+      "password": "9f5b9ca7-d0bb-4e50-a3ca-acf5968027fc",
+      "tls": {
+        "enabled": true,
+        "server_name": "fi-one.quiet-rogue.site",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇧🇾 Belarus, Minsk | [BL]",
+      "server": "222.167.212.80",
+      "server_port": 8080,
       "type": "hysteria2",
       "password": "Apt1923_N9x234gn_Nal5Nx3j_s",
       "tls": {
@@ -1688,26 +1596,42 @@
       }
     },
     {
-      "tag": "🇱🇻 Latvia, Riga | [BL] [2]",
-      "server": "hy2-latvia2.unlimited-access.ru",
+      "tag": "🇱🇻 Latvia, Riga | 🌐 | [BL]",
+      "server": "hy2-latvia1.unlimited-access.ru",
       "server_port": 443,
       "type": "hysteria2",
       "password": "GSPOBvG-ZwYcBFMr0ekFGO_Zga3wK6v_",
       "tls": {
         "enabled": true,
-        "server_name": "hy2-latvia2.unlimited-access.ru",
+        "server_name": "hy2-latvia1.unlimited-access.ru",
         "insecure": false
       }
     },
     {
-      "tag": "hysteria2-156",
-      "server": "18.118.193.169",
+      "tag": "DE",
+      "server": "45.128.99.14",
+      "server_port": 8443,
+      "type": "hysteria2",
+      "password": "Germany2026hy",
+      "tls": {
+        "enabled": true,
+        "server_name": "de.nobelchat.ru",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": ""
+      }
+    },
+    {
+      "tag": "hysteria2-150",
+      "server": "202.146.222.29",
       "server_port": 443,
       "type": "hysteria2",
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "vpn-us-003.fastervpn.world",
+        "server_name": "202.146.222.29",
         "insecure": true
       }
     },
@@ -1724,32 +1648,44 @@
       }
     },
     {
-      "tag": "🇸🇬 Сингапур, Сингапур [🏴BL",
-      "server": "vpn-sg-002.fastervpn.world",
+      "tag": "🇹🇼 Taiwan, Taoyuan | [BL]",
+      "server": "vpn-tw-002.fastervpn.world",
       "server_port": 443,
       "type": "hysteria2",
-      "password": "H7mP2xY9kJ4nQ9wR5tF6vB3z",
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "css.rbxcdn.com",
+        "server_name": "t.me",
         "insecure": true
       }
     },
     {
-      "tag": "🇷🇴",
-      "server": "85.204.107.169",
+      "tag": "🇦🇪 United Arab Emirates, Abu Dhabi (Al Ras Al Akhdar) | [BL]",
+      "server": "85.204.107.166",
       "server_port": 8080,
       "type": "hysteria2",
       "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
       "tls": {
         "enabled": true,
         "server_name": "grape-zet-ro-turbo.bumbleshrimp.com",
-        "insecure": true
+        "insecure": false
       }
     },
     {
-      "tag": "🇩🇪 Germany, Frankfurt am Main | [BL] [4]",
-      "server": "93.114.194.120",
+      "tag": "🇫🇷 France, Paris | [BL] [2]",
+      "server": "85.204.107.171",
+      "server_port": 8443,
+      "type": "hysteria2",
+      "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
+      "tls": {
+        "enabled": true,
+        "server_name": "hopp-romania-new.roxa.org",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "美国 #2",
+      "server": "93.114.194.122",
       "server_port": 8443,
       "type": "hysteria2",
       "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
@@ -1760,60 +1696,68 @@
       }
     },
     {
-      "tag": "рҹҮірҹҮұ@FreakConfig",
-      "server": "147.45.149.88",
-      "server_port": 8443,
+      "tag": "🇫🇷145276 | ⚡️Telegram = t.me/S",
+      "server": "fr.vpn.legendaah.xyz",
+      "server_port": 36723,
       "type": "hysteria2",
-      "password": "NL2026hy",
+      "password": "Krab9Hyst2_Rk7pQ2xL",
       "tls": {
         "enabled": true,
-        "server_name": "nl.nobelchat.ru",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "SalamanderNL2026"
+        "server_name": "off",
+        "insecure": true
       }
     },
     {
-      "tag": "🇳🇱 The Netherlands, Amsterdam | [BL] [4]",
-      "server": "86.107.178.70",
+      "tag": "🇷🇴RO_1|1.8MB/s",
+      "server": "205.237.109.162",
+      "server_port": 8443,
+      "type": "hysteria2",
+      "password": "Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s",
+      "tls": {
+        "enabled": true,
+        "server_name": "hopp-netherland-new.dynuddns.net",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇳🇱",
+      "server": "86.107.178.72",
       "server_port": 8443,
       "type": "hysteria2",
       "password": "Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s",
       "tls": {
         "enabled": true,
         "server_name": "grape-zet-turbo-nl.yyuyy.com",
-        "insecure": false
+        "insecure": true
       }
     },
     {
-      "tag": "Belgium",
-      "server": "85.121.122.25",
-      "server_port": 12765,
+      "tag": "🇫🇮 Finland, Helsinki | [BL] [2]",
+      "server": "2.27.42.66",
+      "server_port": 43327,
       "type": "hysteria2",
-      "password": "STYyftThFn",
+      "password": "Pe1OXeWJcLlGDk2m312qm2UDNcpOgZL4",
       "tls": {
         "enabled": true,
-        "server_name": "freedom.chenlan.top",
+        "server_name": "gate-v1.not-a-projects.xyz",
         "insecure": false
       }
     },
     {
-      "tag": "🇲🇽 Mexico, Mexico City | [BL]",
-      "server": "172.245.233.237",
-      "server_port": 8080,
+      "tag": "hysteria2-160",
+      "server": "1.1.1.1",
+      "server_port": 37003,
       "type": "hysteria2",
-      "password": "VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC",
+      "password": "TelegramVPNJey",
       "tls": {
         "enabled": true,
-        "server_name": "hopp-us.yyuyy.com",
+        "server_name": "1.1.1.1",
         "insecure": false
       }
     },
     {
-      "tag": "🇺🇸 United States, New York | [BL]",
-      "server": "82.39.214.167",
+      "tag": "🇺🇸 United States, Nutley | [BL]",
+      "server": "23.95.75.151",
       "server_port": 8443,
       "type": "hysteria2",
       "password": "VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC",
@@ -1824,140 +1768,120 @@
       }
     },
     {
-      "tag": "🇵🇱 Poland [*CIDR]",
-      "server": "go1.wwwinternetvideo.click",
+      "tag": "🇵🇦 Panama, Panama City | [BL]",
+      "server": "82.39.214.83",
+      "server_port": 8080,
+      "type": "hysteria2",
+      "password": "VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC",
+      "tls": {
+        "enabled": true,
+        "server_name": "hopp-us.yyuyy.com",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "波兰 #2",
+      "server": "go.wwwinternetvideo.click",
       "server_port": 443,
       "type": "hysteria2",
       "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
       "tls": {
         "enabled": true,
         "server_name": "admin.wwwinternetvideo.click",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "0031",
+      "server": "tn.tmn141246.ru",
+      "server_port": 443,
+      "type": "hysteria2",
+      "password": "a3452530-dfeb-461c-804d-48e0eedff6e5",
+      "tls": {
+        "enabled": true,
+        "server_name": "live.ok.ru",
         "insecure": false
       }
     },
     {
-      "tag": "🇺🇸 United States, Buffalo | [BL]",
-      "server": "keep-out.whit3.net",
+      "tag": "🇸🇪 Sweden, Stockholm | [BL] [2]",
+      "server": "ndsw1.whit3.net",
       "server_port": 443,
       "type": "hysteria2",
       "password": "a6cf4b28-ba72-4e8c-90f8-6a884107ab3c",
       "tls": {
         "enabled": true,
-        "server_name": "keep-out.whit3.net",
+        "server_name": "ndsw1.whit3.net",
         "insecure": false
       }
     },
     {
-      "tag": "[hy2]NL｜荷兰-阿姆斯特丹/1(ipv6) [2]",
-      "server": "2a12:bec4:1821:25::b",
-      "server_port": 8443,
+      "tag": "🇦🇪 𝐔𝐀𝐄 𝟚 - 𝐆𝐚𝐦𝐞 NaranV2ray",
+      "server": "p1ldar.fizikade.ir",
+      "server_port": 8883,
       "type": "hysteria2",
-      "password": "aa297f2a-42b2-440e-80cc-5c758f5f1003",
+      "password": "aad14334740e854a0e24fe5dcf414967",
       "tls": {
         "enabled": true,
-        "server_name": "c9a0c4942b7enl1v6.587458.xyz",
+        "server_name": "p1ldar.fizikade.ir",
         "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "esdxfcghoewaahabvrrbU9dfghjh"
       }
     },
     {
-      "tag": "🇳🇱 The Netherlands, Amsterdam (Westpoort) | [BL]",
-      "server": "pov2.api3-max.ru",
+      "tag": "🇳🇱 The Netherlands, Eindhoven | [BL]",
+      "server": "pov1.api3-max.ru",
       "server_port": 443,
       "type": "hysteria2",
       "password": "ac7fb60f-0b7a-465d-a002-05160ec04ed6",
       "tls": {
         "enabled": true,
-        "server_name": "pov2.api3-max.ru",
+        "server_name": "pov1.api3-max.ru",
         "insecure": false
       }
     },
     {
-      "tag": "[hy2]DE｜德国-法兰克福/1(ipv6)",
-      "server": "2a0b:4142:a86::3",
-      "server_port": 1443,
+      "tag": "🌍 Unknown | QUIC | @anonymouskeys",
+      "server": "ru-i.monkeyvillage.pro",
+      "server_port": 443,
       "type": "hysteria2",
-      "password": "afa31ea7-0b97-4bc9-b043-daaeca4aef70",
+      "password": "adb4836c-5bcb-40d7-80b5-f84b5bc6d81b",
       "tls": {
         "enabled": true,
-        "server_name": "5df48d103c9de1v6.587458.xyz",
+        "server_name": "ru-i.monkeyvillage.pro",
         "insecure": false
       }
     },
     {
-      "tag": "🇸🇪 Sweden, Stockholm | [BL]",
-      "server": "sw02.auragg.org",
-      "server_port": 8443,
+      "tag": "🇫🇷 France, Paris | [BL] [3]",
+      "server": "argg2.auragg.org",
+      "server_port": 443,
       "type": "hysteria2",
       "password": "b05346a9-4d13-41a4-8d2a-6b7b64e73ffc",
       "tls": {
         "enabled": true,
-        "server_name": "sw02.auragg.org",
+        "server_name": "argg2.auragg.org",
         "insecure": false
       }
     },
     {
-      "tag": "日本06aws [2]",
-      "server": "hyfnjp01.459292.xyz",
-      "server_port": 8443,
-      "type": "hysteria2",
-      "password": "b172c76d-e25a-449a-88cc-e19e0549d863",
-      "tls": {
-        "enabled": true,
-        "server_name": "localhost",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "新加坡11aws",
-      "server": "sg11.459921.xyz",
-      "server_port": 8080,
-      "type": "hysteria2",
-      "password": "b172c76d-e25a-449a-88cc-e19e0549d863",
-      "tls": {
-        "enabled": true,
-        "server_name": "sg11.459921.xyz",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "美国04aws [2]",
-      "server": "us04.459292.xyz",
-      "server_port": 20001,
-      "type": "hysteria2",
-      "password": "b172c76d-e25a-449a-88cc-e19e0549d863",
-      "tls": {
-        "enabled": true,
-        "server_name": "localhost",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇸🇪 Sweden [*CIDR]",
-      "server": "139.100.228.40",
+      "tag": "🇳🇱 The Netherlands, Naaldwijk | [BL]",
+      "server": "nlgas.hambot.ru",
       "server_port": 443,
       "type": "hysteria2",
-      "password": "b50a48ec-604b-4f4d-9aef-e70c83c6bbab",
+      "password": "b268a3a1-3826-44a3-9ffb-3ac2095300ca",
       "tls": {
         "enabled": true,
-        "server_name": "ryzen.pag3r.com",
+        "server_name": "nlgas.hambot.ru",
         "insecure": false
       }
     },
     {
-      "tag": "🇱🇻 Latvia, Riga | 🌐 | [BL]",
-      "server": "104.165.205.239",
-      "server_port": 8443,
-      "type": "hysteria2",
-      "password": "b8f1b61e-d5c4-4765-866d-ece1fc8e590b",
-      "tls": {
-        "enabled": true,
-        "server_name": "speedtestmark.com",
-        "insecure": false
-      }
-    },
-    {
-      "tag": "🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL] [3]",
-      "server": "194.48.250.9",
+      "tag": "🇱🇻 Latvia, Riga | 🌐 | [BL] [2]",
+      "server": "104.165.205.101",
       "server_port": 9443,
       "type": "hysteria2",
       "password": "b8f1b61e-d5c4-4765-866d-ece1fc8e590b",
@@ -1968,39 +1892,75 @@
       }
     },
     {
-      "tag": "hysteria2-178",
-      "server": "hy2.123266.xyz",
-      "server_port": 33333,
+      "tag": "🇱🇻 Latvia, Riga | 🌐 | [BL] [3]",
+      "server": "104.165.205.227",
+      "server_port": 9443,
       "type": "hysteria2",
-      "password": "bce6c821-200d-421f-bf3d-7159e5246ea0",
+      "password": "b8f1b61e-d5c4-4765-866d-ece1fc8e590b",
       "tls": {
         "enabled": true,
-        "server_name": "hy2.123266.xyz",
+        "server_name": "onecloudstream.com",
         "insecure": false
       }
     },
     {
-      "tag": "🇨🇿 Czechia | 🌐 [*CIDR]",
-      "server": "hy789482.w-mebel.pro",
-      "server_port": 20443,
+      "tag": "🇱🇻 Latvia, Riga | 🌐 | [BL] [4]",
+      "server": "104.165.205.65",
+      "server_port": 9443,
       "type": "hysteria2",
-      "password": "c1d62d53-2fcd-4951-ab96-c81486f59775",
+      "password": "b8f1b61e-d5c4-4765-866d-ece1fc8e590b",
       "tls": {
         "enabled": true,
-        "server_name": "hy789482.w-mebel.pro",
+        "server_name": "onecloudstream.com",
         "insecure": false
       }
     },
     {
-      "tag": "hysteria2-180",
-      "server": "ee2.sferavpn.pro",
+      "tag": "🇱🇻 Latvia, Riga | 🌐 | [BL] [5]",
+      "server": "lvh-01.steptofsvo.com",
+      "server_port": 9443,
+      "type": "hysteria2",
+      "password": "b8f1b61e-d5c4-4765-866d-ece1fc8e590b",
+      "tls": {
+        "enabled": true,
+        "server_name": "onecloudstream.com",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇳🇱 The Netherlands, Amsterdam | [BL] [5]",
+      "server": "kinonl4.melodramaonline.net",
+      "server_port": 443,
+      "type": "hysteria2",
+      "password": "bf3d436d-cbc0-49b6-a818-45d190949212",
+      "tls": {
+        "enabled": true,
+        "server_name": "kinonl4.melodramaonline.net",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇭🇰 Hong Kong, Hong Kong | [BL]",
+      "server": "8-210-142-69.liao.kdns.fr",
+      "server_port": 50160,
+      "type": "hysteria2",
+      "password": "c2601f6c59ed832f9129533608eea8eb",
+      "tls": {
+        "enabled": true,
+        "server_name": "8-210-142-69.liao.kdns.fr",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇺🇸US_3|2.5MB/s|GPT⁺|YT-US|NF|GM|0%",
+      "server": "nl1.sferavpn.pro",
       "server_port": 443,
       "type": "hysteria2",
       "password": "cd74c0a406664a5bc0bac098220a2468",
       "tls": {
         "enabled": true,
-        "server_name": "ee2.sferavpn.pro",
-        "insecure": false
+        "server_name": "nl1.sferavpn.pro",
+        "insecure": true
       },
       "obfs": {
         "type": "salamander",
@@ -2008,179 +1968,143 @@
       }
     },
     {
-      "tag": "🇯🇵日本-07",
-      "server": "jpyh.xn--9kqp42aims.top",
-      "server_port": 20000,
+      "tag": "🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL] [2]",
+      "server": "172.86.95.17",
+      "server_port": 8433,
       "type": "hysteria2",
-      "password": "ceeb8370-d87a-40c7-b8b9-566716210763",
+      "password": "d2e3768f-cb23-4cfc-a884-dbd6813cb70b",
       "tls": {
         "enabled": true,
-        "server_name": "gw.alicdn.com",
-        "insecure": true
+        "server_name": "de1-hy2.veilvpn.life",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇵🇱 Poland [*CIDR] [3]",
+      "server": "91.185.83.48",
+      "server_port": 8443,
+      "type": "hysteria2",
+      "password": "d4c41430-082e-4757-b22c-194998baddd2",
+      "tls": {
+        "enabled": true,
+        "server_name": "pols2.nimarko.org",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇷🇺 Russia | QUIC | @anonymouskeys",
+      "server": "91.185.83.48",
+      "server_port": 8790,
+      "type": "hysteria2",
+      "password": "d4c41430-082e-4757-b22c-194998baddd2",
+      "tls": {
+        "enabled": true,
+        "server_name": "game.nimarko.org",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "0507",
+      "server": "212.135.39.110",
+      "server_port": 443,
+      "type": "hysteria2",
+      "password": "dcdef7f2-5f67-4f85-89df-5a3be5792e1a",
+      "tls": {
+        "enabled": true,
+        "server_name": "ok.ru",
+        "insecure": false
       },
       "obfs": {
         "type": "salamander",
-        "password": "OTA7ZjRiOGQ5MWYxNmQyZA=="
+        "password": "whale-hy-e110"
       }
     },
     {
-      "tag": "日本05aws [2]",
-      "server": "jp03.459292.xyz",
+      "tag": "🇩🇪 Germany, Frankfurt am Main | [BL] [5]",
+      "server": "194.180.188.126",
       "server_port": 8443,
       "type": "hysteria2",
-      "password": "cfa36789-94aa-4c4c-ad06-ab35a8eb9312",
+      "password": "dsfa_k0123WFzerrf_kZ3490VNb03J_m30_s",
       "tls": {
         "enabled": true,
-        "server_name": "localhost",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "新加坡12aws [2]",
-      "server": "sg19.459921.xyz",
-      "server_port": 8080,
-      "type": "hysteria2",
-      "password": "cfa36789-94aa-4c4c-ad06-ab35a8eb9312",
-      "tls": {
-        "enabled": true,
-        "server_name": "sg19.459921.xyz",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇧🇪 Belgium, Brussels (Brussels Capital) | [BL]",
-      "server": "bel-03.node.lumixnet.com",
-      "server_port": 443,
-      "type": "hysteria2",
-      "password": "d1224950-ffab-4b9a-8696-431b40a6cfbd",
-      "tls": {
-        "enabled": true,
-        "server_name": "bel-03.node.lumixnet.com",
+        "server_name": "keyhop-offshore.roxa.org",
         "insecure": false
       }
     },
     {
-      "tag": "0224",
-      "server": "tn.tmn141246.ru",
-      "server_port": 443,
+      "tag": "🇮🇪 Ireland [*CIDR]",
+      "server": "u.nodes.ac",
+      "server_port": 61443,
       "type": "hysteria2",
-      "password": "d457ba0b-e37c-4a13-a5d9-7c6096a4c185",
+      "password": "e4989e94-53b3-499a-b939-de856fc48de7",
       "tls": {
         "enabled": true,
-        "server_name": "live.ok.ru",
+        "server_name": "ie-1.nodes.ac",
         "insecure": false
       }
     },
     {
-      "tag": "日本02aws [2]",
-      "server": "1jp001.459292.xyz",
-      "server_port": 8443,
-      "type": "hysteria2",
-      "password": "df1a0967-5b79-41ec-8d12-915e9056c6e2",
-      "tls": {
-        "enabled": true,
-        "server_name": "localhost",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "日本03aws",
-      "server": "jp06.459292.xyz",
-      "server_port": 8443,
-      "type": "hysteria2",
-      "password": "df1a0967-5b79-41ec-8d12-915e9056c6e2",
-      "tls": {
-        "enabled": true,
-        "server_name": "localhost",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "新加坡13aws",
-      "server": "sg21.459921.xyz",
-      "server_port": 8080,
-      "type": "hysteria2",
-      "password": "df1a0967-5b79-41ec-8d12-915e9056c6e2",
-      "tls": {
-        "enabled": true,
-        "server_name": "sg21.459921.xyz",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "hysteria2-189",
-      "server": "142.249.37.90",
-      "server_port": 44356,
-      "type": "hysteria2",
-      "password": "dongtaiwang.com",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2.561891.xyz",
-        "insecure": false
-      }
-    },
-    {
-      "tag": "🇩🇪 Germany, Kriftel | [BL]",
-      "server": "hy2-de.frdmhere.com",
-      "server_port": 8458,
-      "type": "hysteria2",
-      "password": "e0c7af35-e2db-47c7-b1a3-ce5ec0dd0474",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2.frdmhere.com",
-        "insecure": false
-      }
-    },
-    {
-      "tag": "🇵🇱|PL|@wxgqlfx|210",
-      "server": "191.44.90.4",
+      "tag": "🇩🇪 Germany | 🌐 | [BL]",
+      "server": "89.106.85.19",
       "server_port": 8444,
       "type": "hysteria2",
       "password": "e8c93f75-4ed5-41b1-a32e-a846e54582e8",
       "tls": {
         "enabled": true,
-        "server_name": "premium-nl.geodema.network",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇺🇸 United States, Newark | [BL]",
-      "server": "ni.cryptoofarm.com",
-      "server_port": 443,
-      "type": "hysteria2",
-      "password": "ef18d810-719c-4bf1-83c6-615d01f217eb",
-      "tls": {
-        "enabled": true,
-        "server_name": "ni.cryptoofarm.com",
-        "insecure": false
-      }
-    },
-    {
-      "tag": "🇫🇮 Finland, Helsinki | [BL] [2]",
-      "server": "mesh-6468.internet-booster.com",
-      "server_port": 443,
-      "type": "hysteria2",
-      "password": "efd400cd-98e1-4a9b-a98c-6f4a3b7cce7f",
-      "tls": {
-        "enabled": true,
-        "server_name": "mesh-6468.internet-booster.com",
-        "insecure": false
-      }
-    },
-    {
-      "tag": "4779",
-      "server": "34.80.120.225",
-      "server_port": 50160,
-      "type": "hysteria2",
-      "password": "f4ae05bcb9528779a8469ee5d352a817",
-      "tls": {
-        "enabled": true,
-        "server_name": "vk.com",
+        "server_name": "premium-de-hy2.geodema.network",
         "insecure": false
       }
     },
     {
       "tag": "🇫🇮 Finland, Helsinki | [BL] [3]",
+      "server": "31.76.245.66",
+      "server_port": 443,
+      "type": "hysteria2",
+      "password": "ee84dcf5-94e4-402c-b39a-55ee7e8633d7",
+      "tls": {
+        "enabled": true,
+        "server_name": "31.76.245.66.nip.io",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇫🇮 Finland, Helsinki | [BL] [4]",
+      "server": "hub-5491.internet-booster.com",
+      "server_port": 443,
+      "type": "hysteria2",
+      "password": "efd400cd-98e1-4a9b-a98c-6f4a3b7cce7f",
+      "tls": {
+        "enabled": true,
+        "server_name": "hub-5491.internet-booster.com",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇫🇮 Finland, Helsinki | [BL] [5]",
+      "server": "wave-4240.internet-booster.com",
+      "server_port": 443,
+      "type": "hysteria2",
+      "password": "efd400cd-98e1-4a9b-a98c-6f4a3b7cce7f",
+      "tls": {
+        "enabled": true,
+        "server_name": "wave-4240.internet-booster.com",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🌐 Anycast-IP | 🇩🇪 🇵🇱 [*CIDR]",
+      "server": "217.150.197.54",
+      "server_port": 8443,
+      "type": "hysteria2",
+      "password": "f6eed1c0-5aab-4ad0-a128-c5f0282768ac",
+      "tls": {
+        "enabled": true,
+        "server_name": "quic.tyr-agentstvo.tech",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇫🇮 Finland, Helsinki | [BL] [6]",
       "server": "144.31.232.166",
       "server_port": 1935,
       "type": "hysteria2",
@@ -2192,9 +2116,21 @@
       }
     },
     {
-      "tag": "🇬🇧 United Kingdom, London | [BL] [2]",
-      "server": "103.246.248.226",
-      "server_port": 8080,
+      "tag": "🇩🇪 Germany | QUIC | @anonymouskeys",
+      "server": "5.129.235.85",
+      "server_port": 443,
+      "type": "hysteria2",
+      "password": "gf1",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.linux.com",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇵🇱 Poland, Warsaw | [BL]",
+      "server": "103.246.248.227",
+      "server_port": 8443,
       "type": "hysteria2",
       "password": "h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT",
       "tls": {
@@ -2204,7 +2140,7 @@
       }
     },
     {
-      "tag": "hysteria2-197",
+      "tag": "hysteria2-192",
       "server": "222.167.212.82",
       "server_port": 8443,
       "type": "hysteria2",
@@ -2216,39 +2152,107 @@
       }
     },
     {
-      "tag": "🇫🇮 Finland, Helsinki | [BL] [4]",
-      "server": "64.188.107.79",
+      "tag": "hysteria2-193",
+      "server": "91.132.160.243",
       "server_port": 1935,
       "type": "hysteria2",
-      "password": "hysteria2_fastlane_gzb4hxj1x:v2ZouAxFjACFgBpLjV9GkorKw9Hf0AMq",
+      "password": "hysteria2_fastlane_fyo5j4e7k",
       "tls": {
         "enabled": true,
-        "server_name": "fn1.h.fastlanehosting.ru",
+        "server_name": "de6.h.fastlanehosting.ru",
         "insecure": false
       }
     },
     {
-      "tag": "🇱🇻 Latvia, Riga | [BL] [3]",
-      "server": "62.60.234.60",
+      "tag": "🇵🇱 Poland, Warsaw | [BL] [2]",
+      "server": "2.27.28.103",
       "server_port": 1935,
       "type": "hysteria2",
-      "password": "latvia_hysteria2_fastlane_inla02xj3:Rl8ZzuA9ZohjkX9BkgwA94mI63u6sBme",
+      "password": "hysteria2_fastlane_tn4sddisj:WI84bEPYHdQnMHXxbZhVHBJ4NS7Uxnx7",
       "tls": {
         "enabled": true,
-        "server_name": "lv1.h.fastlanehosting.ru",
+        "server_name": "de4.h.fastlanehosting.ru",
         "insecure": false
       }
     },
     {
-      "tag": "🇳🇱 The Netherlands, Amsterdam | [BL] [5]",
-      "server": "5.35.69.164",
-      "server_port": 1935,
+      "tag": "hysteria2-195",
+      "server": "assets.gateway-stream.com",
+      "server_port": 52067,
       "type": "hysteria2",
-      "password": "netherlands_3_hysteria2_fastlane_37iv1dn3d:67gccDlB7WkApL23iP6HbwAkDpbxCBr6",
+      "password": "m3bqxk03mg221yi2",
       "tls": {
         "enabled": true,
-        "server_name": "nl7.h.fastlanehosting.ru",
+        "server_name": "assets.gateway-stream.com",
         "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "txwr28j1lntoy0sj"
+      }
+    },
+    {
+      "tag": "nukcrow [5]",
+      "server": "212.34.143.45",
+      "server_port": 443,
+      "type": "hysteria2",
+      "password": "netherlands_3_hysteria2_fastlane_5gn859zch",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl6.h.fastlanehosting.ru",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇪🇸 Spain, Barcelona | [BL]",
+      "server": "45.154.206.72",
+      "server_port": 8443,
+      "type": "hysteria2",
+      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
+      "tls": {
+        "enabled": true,
+        "server_name": "russiapower.accesscam.org",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🌐 South Korea | QUIC | @anonymouskeys",
+      "server": "hy2.aspidnet.xyz",
+      "server_port": 443,
+      "type": "hysteria2",
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.aspidnet.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+      }
+    },
+    {
+      "tag": "🇸🇬 Singapore, Singapore | [BL] [2]",
+      "server": "13.250.120.9",
+      "server_port": 443,
+      "type": "hysteria2",
+      "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
+      "tls": {
+        "enabled": true,
+        "server_name": "speedtest.tinkoff.ru",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇸🇬 Singapore, Singapore | [BL] [3]",
+      "server": "47.129.144.53",
+      "server_port": 443,
+      "type": "hysteria2",
+      "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
+      "tls": {
+        "enabled": true,
+        "server_name": "t.me",
+        "insecure": true
       }
     },
     {
@@ -2256,205 +2260,205 @@
       "tag": "AUTO",
       "outbounds": [
         "vless-1",
-        "trojan-2",
-        "trojan-3",
+        "nukcrow",
+        "🇨🇭 Switzerland | Reality | @anonymouskeys",
         "trojan-4",
-        "US",
-        "trojan-6",
+        "trojan-5",
+        "🇨🇭 Switzerland | Reality | @anonymouskeys [2]",
         "trojan-7",
-        "@DeltaKroneckerGithub",
-        "trojan-9",
+        "🟩66@oneclickvpnkeys",
+        "🏳️_未知_273",
         "trojan-10",
         "trojan-11",
-        "@DeltaKroneckerGithub [2]",
-        "trojan-13",
-        "@DeltaKroneckerGithub [3]",
-        "🇳🇱  Netherlands  [02]  MIFA t.me/rjsxrd",
-        "@DeltaKroneckerGithub [4]",
-        "🇽🇽XX(AzadNet.t.me) (222)",
-        "@DeltaKroneckerGithub [5]",
-        "🏴‍☠️",
-        "🇭🇰HK(AzadNet.t.me) (32)",
-        "🇮🇳|印度-IEPL 01",
-        "🇺🇸US-135.148.148.4-7941",
-        "TR🇹🇷",
-        "🇺🇸US(AzadNet.t.me) (74)",
-        "🇱🇧LB(AzadNet.t.me) (4)",
-        "@DeltaKroneckerGithub [6]",
-        "🔒",
-        "🌐 Mokafela-ConfigKiller #71",
-        "trojan-29",
-        "@DeltaKroneckerGithub [7]",
-        "🇺🇸",
-        "🇮🇪",
-        "@DeltaKroneckerGithub [8]",
-        "@DeltaKroneckerGithub [9]",
-        "trojan-35",
-        "🔒 [2]",
-        "🌐 Mokafela-ConfigKiller #136",
-        "🇰🇷KR_2|4.7MB/s",
-        "@DeltaKroneckerGithub [10]",
-        "🏳️",
-        "@DeltaKroneckerGithub [11]",
-        "@DeltaKroneckerGithub [12]",
-        "US [2]",
-        "US [3]",
+        "🇺🇸  USA  [11]  MIFA t.me/rjsxrd",
+        "🇺🇸US-13.248.169.48-1942",
+        "Telegram:@v2rayng3",
+        "[🇯🇵",
+        "RELAY",
+        "🇽🇽XX(AzadNet.t.me) (60)",
+        "🇺🇸US(AzadNet.t.me) (73)",
+        "🇯🇵JP-153.127.47.114-3199",
+        "JP",
+        "🇯🇵 Japan | TROJAN | @anonymouskeys",
+        "EPODONIOS",
+        "🇭🇰[openproxylist.com",
         "🇯🇵",
-        "🌐 Mokafela-ConfigKiller #159",
-        "@DeltaKroneckerGithub [13]",
-        "🇸🇬SG_20|258KB/s 01",
-        "@Alirewa-535",
-        "@Alirewa-527",
-        "@Alirewa-533",
-        "🇸🇬_SG_新加坡",
-        "🇫🇷",
-        "🇫🇷 [2]",
-        "🇫🇷 [3]",
-        "🇫🇷 [4]",
-        "🇫🇷 [5]",
-        "🇫🇷 [6]",
-        "🇸🇬",
-        "🇫🇷 [7]",
+        "@V2ray_Collector",
+        "JP [2]",
+        "trojan-27",
+        "🇽🇽XX(AzadNet.t.me) (174)",
+        "EPODONIOS [2]",
+        "@V2ray_Collector [2]",
+        "🇯🇵 Japan | TROJAN | @anonymouskeys [2]",
+        "🇯🇵[openproxylist.com",
+        "🇵🇱",
+        "🇫🇷 France | TCP | @anonymouskeys",
+        "🇦🇹 Austria | TROJAN | @anonymouskeys",
+        "🇨🇭 Switzerland | Reality | @anonymouskeys [3]",
+        "@Alirewa-1371",
+        "@Hope_Net-join-us-on-Telegram",
+        "@Alirewa-1422",
+        "nukcrow [2]",
+        "🇨🇦 Canada | WebSocket | @anonymouskeys",
+        "EPODONIOS [3]",
+        "🏳️_未知_381",
+        "CA->FR+(@DeamNet_Proxy) (3)",
+        ">>@oneclickvpnkeys::NL (10)",
+        "EPODONIOS [4]",
+        "ss-47",
+        "@Alirewa-551",
+        "@OutlineReleasedKey",
+        "@Alirewa-552",
+        "@Alirewa-549",
+        "[6549][IR][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25",
+        "🇨🇦_🇨🇦_ping_258ms",
         "کانال+:+@V2rayNGvpni",
-        "🇩🇪",
-        "hamedp71::🇳🇱",
+        "🌐سرور",
         "@Vip_Security",
         "@Vip_Security [2]",
         "@Vip_Security [3]",
         "@Vip_Security [4]",
-        "hamedp71::🇦🇺",
-        "[9724][CA][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25",
-        "hamedp71::🇳🇱 [2]",
-        "hamedp71::🇳🇱 [3]",
-        "13.🇳🇱Нидерланды | @LimeVPNFREE t.me/rjsxrd",
-        "🏴‍☠️ [2]",
-        "🇹🇭_TH_泰国",
-        "🇨🇳_CN_中国->🇰🇷_KR_韩国",
         "@Vip_Security [5]",
         "@Vip_Security [6]",
+        "🌐سرور [2]",
+        "[9724][CA][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25",
+        "2.🇳🇱Нидерланды | @LimeVPNFREE t.me/rjsxrd",
         "@Vip_Security [7]",
-        "🇬🇧_GB_英国",
+        "🏴‍☠️",
+        "🇹🇭_TH_泰国",
+        "🇨🇳_CN_中国->🇰🇷_KR_韩国",
         "@Vip_Security [8]",
         "@Vip_Security [9]",
         "@Vip_Security [10]",
-        "🇨🇳_CN_中国->🇭🇰_HK_中国香港",
-        "🇨🇳_CN_中国->🇺🇸_US_美国",
-        "hamedp71::🇺🇸",
-        "[13552][CA][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25",
         "@Vip_Security [11]",
+        "🇬🇧_GB_英国",
+        "🇬🇧_GB_英国 [2]",
+        "@Vip_Security [12]",
+        "@Vip_Security [13]",
+        "@Vip_Security [14]",
+        "@Vip_Security [15]",
+        "🇨🇳_CN_中国->🇭🇰_HK_中国香港",
+        "🇨🇳_CN_中国->🇯🇵_JP_日本",
+        "🇨🇳_CN_中国->🇭🇰_HK_中国香港 [2]",
+        "🇺🇸_US_美国_6",
+        "🇺🇸_US_美国_1",
+        "ss-84",
         "[14150][FR][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25",
         "🇦🇱_AL_阿尔巴尼亚_11",
-        "@Vip_Security [12]",
+        "@Vip_Security [16]",
+        "@Vip_Security [17]",
         "@meliproxyy",
+        "🇳🇱 The Netherlands, Amsterdam (Amsterdam-Noord) | [BL]",
+        "🇳🇱 The Netherlands, Amsterdam (Amsterdam-Noord) | [BL] [2]",
         "hysteria2-92",
-        "🇵🇱 Poland | 🌐 [*CIDR]",
+        "🇩🇪 Germany [*CIDR]",
         "🇳🇱 The Netherlands, Amsterdam | [BL]",
-        "🇩🇪 Germany, Frankfurt am Main | [BL]",
-        "🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]",
-        "🇨🇳 China, Lijia | [BL]",
-        "日本11aws",
-        "新加坡09aws",
-        "美国02aws",
-        "🇫🇮|FI|@wxgqlfx|221",
-        "🇪🇪 Estonia, Tallinn | 🌐 | [BL]",
-        "日本09aws",
-        "新加坡07aws",
-        "hy2台湾07",
-        "日本10aws",
-        "新加坡06aws",
-        "hy2台湾05",
-        "🇫🇷 France, Paris | [BL]",
-        "🇳🇱 The Netherlands, Amsterdam | [BL] [2]",
-        "🇸🇬SG",
-        "JP-TYO-DC28-005[UDP]",
-        "US-LAX-DC12-003[UDP]",
-        "🇨🇭 Switzerland, Zurich | [BL]",
-        "🇳🇱 The Netherlands, Amsterdam | [BL] [3]",
-        "🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL] [2]",
-        "🇺🇸US_3|4.3MB/s",
-        "日本05aws",
-        "新加坡12aws",
-        "🇵🇱 Poland, Warsaw (Śródmieście) | [BL]",
-        "🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL]",
-        "🇺🇸 United States, Seattle | 🌐 | [BL]",
-        "🇦🇹 Austria | 🌐 | [BL]",
-        "@OutlineReleasedKey",
-        "🇦🇪 United Arab Emirates, Warisan | [BL]",
-        "🇫🇮 Finland, Helsinki | [BL]",
-        "🇱🇻 Latvia, Riga | [BL]",
-        "🇪🇪 Estonia, Tallinn | [BL]",
-        "0808",
-        "hysteria2-130",
-        "🇹🇷 Turkey, Istanbul | [BL]",
-        "美国+V2CROSS.COM",
-        "@filembad #1",
-        "日本06aws",
-        "新加坡10aws",
-        "美国04aws",
-        "🇫🇮 Finland [*CIDR]",
-        "0268",
-        "🇬🇧 United Kingdom, London | [BL]",
-        "0592",
-        "[hy2]NL｜荷兰-阿姆斯特丹/1(ipv6)",
-        "🇩🇪 Germany, Frankfurt am Main | [BL] [2]",
-        "日本02aws",
-        "剩余流量：0",
-        "hy2台湾02",
-        "🇩🇪 Germany, Frankfurt am Main | [BL] [3]",
-        "🇹🇼 Taiwan, Taoyuan | 🌐 | [BL]",
-        "🇵🇱 Poland | 🌐 [*CIDR] [2]",
-        "⚛️11@oneclickvpnkeys",
-        "United+States",
-        "🇫🇷 France, Paris | [BL] [2]",
         "🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]",
-        "تلگرام ما MTMVPN 6",
-        "🇺🇸🚀 США 🛡️ [🏴BL/SNI] | 🥭🔥",
-        "🇱🇻 Latvia, Riga | [BL] [2]",
-        "hysteria2-156",
-        "0598",
-        "🇸🇬 Сингапур, Сингапур [🏴BL",
-        "🇷🇴",
+        "🇸🇬 Singapore, Singapore | [BL]",
+        "🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]",
+        "🇳🇱 The Netherlands [*CIDR]",
+        "🇵🇱 Poland | 🌐 [*CIDR]",
+        "🇳🇱 The Netherlands, Amsterdam | [BL] [2]",
+        "🇯🇵 Japan, Shibuya City | [BL]",
+        "🇹🇷 Turkey, Istanbul | [BL]",
+        "🇳🇱 The Netherlands, Eygelshoven | 🌐 | [BL]",
+        "🌀46@oneclickvpnkeys",
+        "俄罗斯+新西伯利亚justhost",
+        "🏓89@oneclickvpnkeys",
+        "🇨🇭 Switzerland, Zurich | [BL]",
+        "🇺🇸 United States, Atlanta | [BL]",
+        "🇫🇷 France, Paris | 🌐 | [BL]",
+        "🇵🇱 Poland | 🌐 [*CIDR] CDN",
+        "🇰🇿 Kazakhstan, Almaty | [BL]",
+        "🇦🇹 Austria, Vienna | [BL]",
+        "🇩🇪 Germany, Frankfurt am Main | [BL]",
+        "🇩🇪 Germany, Frankfurt am Main | [BL] [2]",
+        "🇦🇹 Austria | 🌐 | [BL]",
+        "🇩🇪 Germany, Frankfurt am Main | [BL] [3]",
+        "🇳🇱|NL|@wxgqlfx|218",
+        "|SE|@wxgqlfx|238",
+        "🇬🇧 United Kingdom, London | [BL]",
+        "🇱🇻 Latvia, Riga | [BL]",
+        "🇩🇪 Germany [*CIDR] [2]",
         "🇩🇪 Germany, Frankfurt am Main | [BL] [4]",
-        "рҹҮірҹҮұ@FreakConfig",
-        "🇳🇱 The Netherlands, Amsterdam | [BL] [4]",
-        "Belgium",
-        "🇲🇽 Mexico, Mexico City | [BL]",
-        "🇺🇸 United States, New York | [BL]",
-        "🇵🇱 Poland [*CIDR]",
-        "🇺🇸 United States, Buffalo | [BL]",
-        "[hy2]NL｜荷兰-阿姆斯特丹/1(ipv6) [2]",
-        "🇳🇱 The Netherlands, Amsterdam (Westpoort) | [BL]",
-        "[hy2]DE｜德国-法兰克福/1(ipv6)",
+        "🌐 China | QUIC | @anonymouskeys",
+        "129353",
+        "🇹🇷 Turkey, Istanbul | [BL] [2]",
+        "hysteria2-126",
+        "🇳🇱 The Netherlands, Amsterdam | [BL] [3]",
+        "nukcrow [3]",
+        "🇫🇮 Finland, Helsinki | [BL]",
         "🇸🇪 Sweden, Stockholm | [BL]",
-        "日本06aws [2]",
-        "新加坡11aws",
-        "美国04aws [2]",
-        "🇸🇪 Sweden [*CIDR]",
-        "🇱🇻 Latvia, Riga | 🌐 | [BL]",
-        "🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL] [3]",
-        "hysteria2-178",
-        "🇨🇿 Czechia | 🌐 [*CIDR]",
-        "hysteria2-180",
-        "🇯🇵日本-07",
-        "日本05aws [2]",
-        "新加坡12aws [2]",
-        "🇧🇪 Belgium, Brussels (Brussels Capital) | [BL]",
-        "0224",
-        "日本02aws [2]",
-        "日本03aws",
-        "新加坡13aws",
-        "hysteria2-189",
-        "🇩🇪 Germany, Kriftel | [BL]",
-        "🇵🇱|PL|@wxgqlfx|210",
-        "🇺🇸 United States, Newark | [BL]",
-        "🇫🇮 Finland, Helsinki | [BL] [2]",
-        "4779",
-        "🇫🇮 Finland, Helsinki | [BL] [3]",
+        "🇵🇱 Poland [*CIDR]",
+        "nukcrow [4]",
+        "0592",
+        "hysteria2-134",
+        "🇺🇸 United States, Buffalo | [BL]",
+        "🇳🇱 The Netherlands, Amsterdam | [BL] [4]",
+        "🇵🇱 Poland [*CIDR] [2]",
+        "🇺🇸 United States | QUIC | @anonymouskeys",
+        "🇵🇱 Poland | 🌐 [*CIDR] [2]",
+        "🇵🇱 Poland | 🌐 [*CIDR] [3]",
         "🇬🇧 United Kingdom, London | [BL] [2]",
-        "hysteria2-197",
+        "🇹🇷 Turkey, Ankara | [BL]",
+        "🇫🇷 France, Paris | [BL]",
+        "🌐 Anycast-IP | 🇫🇮 🇵🇱 [*CIDR] Beeline",
+        "🇫🇮 Finland [*CIDR]",
+        "🇧🇾 Belarus, Minsk | [BL]",
+        "🇺🇸🚀 США 🛡️ [🏴BL/SNI] | 🥭🔥",
+        "🇱🇻 Latvia, Riga | 🌐 | [BL]",
+        "DE",
+        "hysteria2-150",
+        "0598",
+        "🇹🇼 Taiwan, Taoyuan | [BL]",
+        "🇦🇪 United Arab Emirates, Abu Dhabi (Al Ras Al Akhdar) | [BL]",
+        "🇫🇷 France, Paris | [BL] [2]",
+        "美国 #2",
+        "🇫🇷145276 | ⚡️Telegram = t.me/S",
+        "🇷🇴RO_1|1.8MB/s",
+        "🇳🇱",
+        "🇫🇮 Finland, Helsinki | [BL] [2]",
+        "hysteria2-160",
+        "🇺🇸 United States, Nutley | [BL]",
+        "🇵🇦 Panama, Panama City | [BL]",
+        "波兰 #2",
+        "0031",
+        "🇸🇪 Sweden, Stockholm | [BL] [2]",
+        "🇦🇪 𝐔𝐀𝐄 𝟚 - 𝐆𝐚𝐦𝐞 NaranV2ray",
+        "🇳🇱 The Netherlands, Eindhoven | [BL]",
+        "🌍 Unknown | QUIC | @anonymouskeys",
+        "🇫🇷 France, Paris | [BL] [3]",
+        "🇳🇱 The Netherlands, Naaldwijk | [BL]",
+        "🇱🇻 Latvia, Riga | 🌐 | [BL] [2]",
+        "🇱🇻 Latvia, Riga | 🌐 | [BL] [3]",
+        "🇱🇻 Latvia, Riga | 🌐 | [BL] [4]",
+        "🇱🇻 Latvia, Riga | 🌐 | [BL] [5]",
+        "🇳🇱 The Netherlands, Amsterdam | [BL] [5]",
+        "🇭🇰 Hong Kong, Hong Kong | [BL]",
+        "🇺🇸US_3|2.5MB/s|GPT⁺|YT-US|NF|GM|0%",
+        "🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL] [2]",
+        "🇵🇱 Poland [*CIDR] [3]",
+        "🇷🇺 Russia | QUIC | @anonymouskeys",
+        "0507",
+        "🇩🇪 Germany, Frankfurt am Main | [BL] [5]",
+        "🇮🇪 Ireland [*CIDR]",
+        "🇩🇪 Germany | 🌐 | [BL]",
+        "🇫🇮 Finland, Helsinki | [BL] [3]",
         "🇫🇮 Finland, Helsinki | [BL] [4]",
-        "🇱🇻 Latvia, Riga | [BL] [3]",
-        "🇳🇱 The Netherlands, Amsterdam | [BL] [5]"
+        "🇫🇮 Finland, Helsinki | [BL] [5]",
+        "🌐 Anycast-IP | 🇩🇪 🇵🇱 [*CIDR]",
+        "🇫🇮 Finland, Helsinki | [BL] [6]",
+        "🇩🇪 Germany | QUIC | @anonymouskeys",
+        "🇵🇱 Poland, Warsaw | [BL]",
+        "hysteria2-192",
+        "hysteria2-193",
+        "🇵🇱 Poland, Warsaw | [BL] [2]",
+        "hysteria2-195",
+        "nukcrow [5]",
+        "🇪🇸 Spain, Barcelona | [BL]",
+        "🌐 South Korea | QUIC | @anonymouskeys",
+        "🇸🇬 Singapore, Singapore | [BL] [2]",
+        "🇸🇬 Singapore, Singapore | [BL] [3]"
       ]
     }
   ]

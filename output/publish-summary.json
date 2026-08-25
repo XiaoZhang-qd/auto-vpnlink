@@ -1,16 +1,17 @@
 {
-  "discovered": 19997,
-  "healthy_first": 13,
-  "published_unique": 5284,
-  "clash_proxies": 9,
-  "clash_filtered_unsupported": 59,
+  "discovered": 20001,
+  "healthy_first": 11,
+  "published_unique": 5004,
+  "clash_proxies": 4962,
+  "clash_filtered_unsupported": 38,
   "protocols": {
-    "ss": 129,
-    "hysteria2": 1519,
+    "ss": 93,
+    "hysteria2": 1194,
     "vless": 1,
-    "hysteria": 5,
-    "trojan": 3630
+    "hysteria": 4,
+    "trojan": 3712
   },
-  "clash_unverified_removed": 5211,
-  "clash_verified_names": 12
+  "clash_verified_kept": 8,
+  "clash_unverified_kept": 4954,
+  "clash_incompatible_removed": 0
 }
