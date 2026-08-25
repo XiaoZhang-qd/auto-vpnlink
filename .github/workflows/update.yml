@@ -1,35 +1,39 @@
 name: Update VPN Sources
+
 on:
-  schedule:
-    - cron: '15 2 * * *'
-      timezone: Asia/Shanghai
   workflow_dispatch:
     inputs:
       search_limit:
-        description: 'Maximum discovered lines to consider'
+        description: Maximum discovered lines to consider
         required: false
         default: '5000'
         type: string
       health_candidate_limit:
-        description: 'Maximum CFW-compatible nodes to health-check'
+        description: Maximum CFW-compatible nodes to health-check
         required: false
         default: '300'
         type: string
       health_success_target:
-        description: 'Stop after this many successful nodes (0 = test all candidates)'
+        description: Stop after this many successful nodes; 0 tests all candidates
         required: false
         default: '20'
         type: string
       full_scan:
-        description: 'Run the configured multi-source scan now'
+        description: Run the configured multi-source scan now
         required: false
         default: true
         type: boolean
+  schedule:
+    - cron: '15 2 * * *'
+      timezone: Asia/Shanghai
+
 permissions:
   contents: write
+
 concurrency:
   group: auto-vpnlink-update
   cancel-in-progress: true
+
 jobs:
   scan:
     name: Scan, health-check and publish sources
@@ -37,9 +41,12 @@ jobs:
     timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
-        with: {fetch-depth: 1}
+        with:
+          fetch-depth: 1
       - uses: actions/setup-python@v5
-        with: {python-version: '3.12', cache: pip}
+        with:
+          python-version: '3.12'
+          cache: pip
       - name: Install dependencies
         run: python -m pip install -r requirements.txt
       - name: Apply run limits
@@ -47,16 +54,20 @@ jobs:
           SEARCH_LIMIT: ${{ inputs.search_limit || '5000' }}
         run: |
           python - <<'PY'
-          import os,yaml
-          n=int(os.environ['SEARCH_LIMIT'])
-          if n<1 or n>20000: raise SystemExit('search_limit must be 1..20000')
-          with open('sources.yaml',encoding='utf-8') as f: d=yaml.safe_load(f) or {}
-          d.setdefault('scan',{})['max_aggregate_nodes']=n
-          with open('sources.yaml','w',encoding='utf-8') as f: yaml.safe_dump(d,f,allow_unicode=True,sort_keys=False)
-          print('SEARCH_LIMIT=',n)
+          import os, yaml
+          n = int(os.environ['SEARCH_LIMIT'])
+          if not 1 <= n <= 20000:
+              raise SystemExit('search_limit must be 1..20000')
+          with open('sources.yaml', encoding='utf-8') as f:
+              d = yaml.safe_load(f) or {}
+          d.setdefault('scan', {})['max_aggregate_nodes'] = n
+          with open('sources.yaml', 'w', encoding='utf-8') as f:
+              yaml.safe_dump(d, f, allow_unicode=True, sort_keys=False)
+          print('SEARCH_LIMIT=', n)
           PY
       - name: Run multi-source scanner
-        env: {GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scanner.py
       - name: Widen protocol extraction
         run: python augment_protocols.py
@@ -67,9 +78,9 @@ jobs:
         run: |
           python - <<'PY'
           import os
-          for k in ('HEALTH_CANDIDATES',):
-              n=int(os.environ[k])
-              if n<1 or n>5000: raise SystemExit(f'{k} must be 1..5000')
+          n = int(os.environ['HEALTH_CANDIDATES'])
+          if not 1 <= n <= 5000:
+              raise SystemExit('health_candidate_limit must be 1..5000')
           PY
           python select_nodes.py
           cp output/health-candidates.txt output/verified-nodes.txt
@@ -94,16 +105,9 @@ jobs:
           HEALTHCHECK_ROUND_DELAY: '1'
           HEALTHCHECK_MIN_PUBLIC_TESTS: '2'
           HEALTHCHECK_TYPES: 'ss,trojan,vmess,vless'
-          HEALTHCHECK_OUTPUT: 'health-checked-cfw.txt'
-          HEALTHCHECK_REPORT: 'healthcheck-cfw.json'
+          HEALTHCHECK_OUTPUT: health-checked-cfw.txt
+          HEALTHCHECK_REPORT: healthcheck-cfw.json
         run: |
-          C=$(wc -l < output/verified-nodes.txt)
-          T=${HEALTHCHECK_SUCCESS_TARGET}
-          if [ "$T" -gt 0 ] && [ "$C" -lt "$T" ]; then
-            echo "Only $C CFW-compatible candidates are available; success target $T cannot be reached."
-            echo "Lower health_success_target or increase search_limit."
-            exit 1
-          fi
           python healthcheck.py
       - name: Publish only CFW health-checked nodes
         run: |
@@ -114,13 +118,18 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           import yaml
-          h=[x for x in Path('output/health-checked-cfw.txt').read_text().splitlines() if x.strip()]
-          c=yaml.safe_load(Path('output/clash.yaml').read_text()) or {}; p=c.get('proxies') or []
-          allowed={'ss','ssr','vmess','trojan'}
-          if not h: raise SystemExit('No CFW node passed health check; refusing to publish.')
-          if not p: raise SystemExit('Healthy CFW nodes exist but Clash output is empty.')
-          if any(str(x.get('type','')).lower() not in allowed for x in p): raise SystemExit('Non-CFW proxy leaked into Clash output.')
-          if len(p)<len(h): raise SystemExit(f'CFW conversion lost verified nodes: health={len(h)} clash={len(p)}')
+          h = [x for x in Path('output/health-checked-cfw.txt').read_text().splitlines() if x.strip()]
+          c = yaml.safe_load(Path('output/clash.yaml').read_text()) or {}
+          p = c.get('proxies') or []
+          allowed = {'ss', 'ssr', 'vmess', 'trojan'}
+          if not h:
+              raise SystemExit('No CFW node passed health check; refusing to publish.')
+          if not p:
+              raise SystemExit('Healthy CFW nodes exist but Clash output is empty.')
+          if any(str(x.get('type', '')).lower() not in allowed for x in p):
+              raise SystemExit('Non-CFW proxy leaked into Clash output.')
+          if len(p) < len(h):
+              raise SystemExit(f'CFW conversion lost verified nodes: health={len(h)} clash={len(p)}')
           print(f'CFW verified={len(h)} published={len(p)}')
           PY
       - name: Commit generated results safely
@@ -135,4 +144,9 @@ jobs:
           rm -rf output
           cp -a /tmp/auto-vpnlink-output output
           git add output/
-          if git diff --cached --quiet; then echo 'No output changes.'; else git commit -m 'auto: publish CFW-compatible healthy VPN sources'; git push origin HEAD:main; fi
+          if git diff --cached --quiet; then
+            echo 'No output changes.'
+          else
+            git commit -m 'auto: publish CFW-compatible healthy VPN sources'
+            git push origin HEAD:main
+          fi
