@@ -19,7 +19,7 @@ jobs:
   scan:
     name: Scan, health-check and publish sources
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 120
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -38,7 +38,7 @@ jobs:
         run: python scanner.py
       - name: Widen protocol extraction
         run: python augment_protocols.py
-      - name: Select clean, diverse health-check candidates
+      - name: Select large, diverse health-check candidate pool
         run: |
           python select_nodes.py
           cp output/health-candidates.txt output/verified-nodes.txt
@@ -60,14 +60,17 @@ jobs:
       - name: Run real protocol-level health checks
         env:
           MIHOMO_BIN: ${{ github.workspace }}/.bin/mihomo
-          HEALTHCHECK_MAX: '150'
+          HEALTHCHECK_MAX: '600'
           HEALTHCHECK_TIMEOUT: '12'
-        run: python healthcheck.py || echo 'Health check had failures; raw valid nodes remain available in protocol feeds.'
-      - name: Merge healthy-first complete node pool
+          HEALTHCHECK_ROUNDS: '2'
+          HEALTHCHECK_ROUND_DELAY: '1'
+          HEALTHCHECK_MIN_PUBLIC_TESTS: '2'
+        run: python healthcheck.py
+      - name: Merge only internet-verified node pool
         run: python merge_publish.py
-      - name: Publish all valid nodes and protocol-specific feeds
+      - name: Publish verified nodes and protocol-specific feeds
         run: python publish_outputs.py
-      - name: Restrict Clash to actually health-checked nodes
+      - name: Restrict Clash to verified, compatible nodes
         run: python filter_clash_healthy.py
       - name: Validate published pool and Clash config
         run: |
@@ -79,12 +82,11 @@ jobs:
           from pathlib import Path
           s=json.loads(Path('output/publish-summary.json').read_text())
           c=yaml.safe_load(Path('output/clash.yaml').read_text()) or {}
-          assert s['published_unique'] > 0, 'published node pool is empty'
+          assert s['published_unique'] > 0, 'no internet-verified nodes were published'
           assert len(c.get('proxies') or []) == s['clash_proxies'], 'Clash count mismatch'
-          print('published unique:', s['published_unique'])
-          print('healthy first:', s['healthy_first'])
+          print('published verified:', s['published_unique'])
+          print('healthy:', s['healthy_first'])
           print('Clash verified proxies:', s['clash_proxies'])
-          print('Clash unverified removed:', s.get('clash_unverified_removed',0))
           print('protocols:', s['protocols'])
           PY
       - name: Commit generated results safely
@@ -99,4 +101,4 @@ jobs:
           rm -rf output
           cp -a /tmp/auto-vpnlink-output output
           git add output/
-          if git diff --cached --quiet; then echo 'No output changes.'; else git commit -m 'auto: publish verified Clash sources'; git push origin HEAD:main; fi
+          if git diff --cached --quiet; then echo 'No output changes.'; else git commit -m 'auto: publish only internet-verified VPN sources'; git push origin HEAD:main; fi
