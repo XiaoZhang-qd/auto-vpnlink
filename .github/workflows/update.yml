@@ -42,8 +42,6 @@ jobs:
         run: |
           python select_nodes.py
           cp output/health-candidates.txt output/verified-nodes.txt
-      - name: Convert health-check candidates to Clash config
-        run: python converter.py
       - name: Install latest Mihomo for real protocol checks
         run: |
           set -euo pipefail
@@ -68,25 +66,30 @@ jobs:
           HEALTHCHECK_OUTPUT: 'health-checked-cfw.txt'
           HEALTHCHECK_REPORT: 'healthcheck-cfw.json'
         run: python healthcheck.py
-      - name: Build CFW publish pool only from CFW health checks
+      - name: Publish only CFW health-checked nodes
         run: |
           cp output/health-checked-cfw.txt output/health-checked-nodes.txt
-          python merge_publish.py
           python publish_outputs.py
-          python filter_clash_healthy.py
-      - name: Validate published CFW config
+      - name: Validate CFW output against health-check results
         run: |
           set -euo pipefail
           python - <<'PY'
-          import yaml
+          import json
           from pathlib import Path
+          import yaml
+          h=[x.strip() for x in Path('output/health-checked-cfw.txt').read_text().splitlines() if x.strip()]
           c=yaml.safe_load(Path('output/clash.yaml').read_text()) or {}
           p=c.get('proxies') or []
           allowed={'ss','ssr','vmess','trojan'}
-          assert p, 'No CFW-compatible healthy nodes were published'
-          assert all(str(x.get('type','')).lower() in allowed for x in p), 'Non-CFW proxy leaked into Clash output'
-          print('CFW healthy proxies:',len(p))
-          print('types:',{t:sum(1 for x in p if x.get('type')==t) for t in allowed})
+          assert h, 'No CFW node passed health check; refusing to publish a replacement profile.'
+          assert p, 'Health check passed nodes but Clash output is empty.'
+          assert all(str(x.get('type','')).lower() in allowed for x in p), 'Non-CFW proxy leaked into Clash output.'
+          # Do not silently lose verified nodes during conversion. A small loss is
+          # allowed only when the source URI cannot be represented by classic CFW.
+          if len(p) < len(h):
+              raise SystemExit(f'CFW conversion lost verified nodes: health={len(h)} clash={len(p)}')
+          print(f'CFW verified={len(h)} published={len(p)}')
+          print('types:',{t:sum(1 for x in p if str(x.get('type','')).lower()==t) for t in sorted(allowed)})
           PY
       - name: Commit generated results safely
         run: |
