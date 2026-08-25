@@ -1,14 +1,15 @@
 {
-  "verified_input": 166,
-  "parsed": 165,
-  "rejected": 1,
+  "verified_input": 200,
+  "parsed": 200,
+  "rejected": 0,
   "protocols": {
     "vless": 1,
-    "ss": 44,
-    "hysteria2": 120
+    "trojan": 45,
+    "ss": 45,
+    "hysteria2": 109
   },
-  "clash_proxies": 165,
-  "singbox_outbounds": 165,
-  "xray_outbounds": 45,
-  "unique_proxy_names": 165
+  "clash_proxies": 200,
+  "singbox_outbounds": 200,
+  "xray_outbounds": 91,
+  "unique_proxy_names": 200
 }

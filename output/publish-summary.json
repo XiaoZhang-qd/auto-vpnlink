@@ -1,13 +1,16 @@
 {
-  "discovered": 19999,
-  "healthy_first": 8,
-  "published_unique": 1692,
-  "clash_proxies": 1652,
-  "clash_filtered_unsupported": 37,
+  "discovered": 19997,
+  "healthy_first": 13,
+  "published_unique": 5284,
+  "clash_proxies": 9,
+  "clash_filtered_unsupported": 59,
   "protocols": {
-    "ss": 364,
-    "hysteria2": 1324,
+    "ss": 129,
+    "hysteria2": 1519,
     "vless": 1,
-    "hysteria": 3
-  }
+    "hysteria": 5,
+    "trojan": 3630
+  },
+  "clash_unverified_removed": 5211,
+  "clash_verified_names": 12
 }
