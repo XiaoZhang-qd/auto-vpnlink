@@ -11,12 +11,12 @@ on:
         default: '5000'
         type: string
       health_candidate_limit:
-        description: 'Maximum nodes to actually health-check'
+        description: 'Maximum CFW-compatible nodes to health-check'
         required: false
         default: '300'
         type: string
       health_success_target:
-        description: 'Stop health checks after this many successful nodes (0 = test all candidates)'
+        description: 'Stop after this many successful nodes (0 = test all candidates)'
         required: false
         default: '20'
         type: string
@@ -36,15 +36,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 120
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
-      - name: Setup Python 3.12
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-          cache: pip
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 1}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12', cache: pip}
       - name: Install dependencies
         run: python -m pip install -r requirements.txt
       - name: Apply run limits
@@ -53,39 +48,43 @@ jobs:
         run: |
           python - <<'PY'
           import os,yaml
-          p='sources.yaml'
-          with open(p,encoding='utf-8') as f: d=yaml.safe_load(f) or {}
-          limit=max(1,min(int(os.environ['SEARCH_LIMIT']),20000))
-          d.setdefault('scan',{})['max_aggregate_nodes']=limit
-          with open(p,'w',encoding='utf-8') as f: yaml.safe_dump(d,f,allow_unicode=True,sort_keys=False)
-          print('SEARCH_LIMIT=',limit)
+          n=int(os.environ['SEARCH_LIMIT'])
+          if n<1 or n>20000: raise SystemExit('search_limit must be 1..20000')
+          with open('sources.yaml',encoding='utf-8') as f: d=yaml.safe_load(f) or {}
+          d.setdefault('scan',{})['max_aggregate_nodes']=n
+          with open('sources.yaml','w',encoding='utf-8') as f: yaml.safe_dump(d,f,allow_unicode=True,sort_keys=False)
+          print('SEARCH_LIMIT=',n)
           PY
       - name: Run multi-source scanner
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        env: {GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}}
         run: python scanner.py
       - name: Widen protocol extraction
         run: python augment_protocols.py
-      - name: Select independent health-check candidate pool
+      - name: Select CFW health-check pool
         env:
           SEARCH_LIMIT: ${{ inputs.search_limit || '5000' }}
           HEALTH_CANDIDATES: ${{ inputs.health_candidate_limit || '300' }}
         run: |
+          python - <<'PY'
+          import os
+          for k in ('HEALTH_CANDIDATES',):
+              n=int(os.environ[k])
+              if n<1 or n>5000: raise SystemExit(f'{k} must be 1..5000')
+          PY
           python select_nodes.py
           cp output/health-candidates.txt output/verified-nodes.txt
-      - name: Install latest Mihomo for real protocol checks
+      - name: Install Mihomo
         run: |
           set -euo pipefail
           mkdir -p .bin
-          API='https://api.github.com/repos/MetaCubeX/mihomo/releases/latest'
-          URL=$(curl -fsSL "$API" | python -c "import json,sys; d=json.load(sys.stdin); print(next((a['browser_download_url'] for a in d.get('assets',[]) if 'linux-amd64' in a['name'] and a['name'].endswith('.gz')), ''))")
+          URL=$(curl -fsSL https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | python -c "import json,sys; d=json.load(sys.stdin); print(next((a['browser_download_url'] for a in d.get('assets',[]) if 'linux-amd64' in a['name'] and a['name'].endswith('.gz')), ''))")
           test -n "$URL"
           curl -fL --retry 3 "$URL" -o .bin/mihomo.gz
           gzip -df .bin/mihomo.gz
-          if [ -f .bin/mihomo ]; then :; else BIN=$(find .bin -maxdepth 1 -type f -name 'mihomo*' ! -name '*.gz' -print -quit); test -n "$BIN"; mv "$BIN" .bin/mihomo; fi
+          test -f .bin/mihomo || { BIN=$(find .bin -maxdepth 1 -type f -name 'mihomo*' ! -name '*.gz' -print -quit); test -n "$BIN"; mv "$BIN" .bin/mihomo; }
           chmod +x .bin/mihomo
           .bin/mihomo -v
-      - name: Health-check CFW-compatible protocols
+      - name: Health-check CFW-compatible nodes
         env:
           MIHOMO_BIN: ${{ github.workspace }}/.bin/mihomo
           HEALTHCHECK_MAX: ${{ inputs.health_candidate_limit || '300' }}
@@ -97,28 +96,32 @@ jobs:
           HEALTHCHECK_TYPES: 'ss,trojan,vmess,vless'
           HEALTHCHECK_OUTPUT: 'health-checked-cfw.txt'
           HEALTHCHECK_REPORT: 'healthcheck-cfw.json'
-        run: python healthcheck.py
+        run: |
+          C=$(wc -l < output/verified-nodes.txt)
+          T=${HEALTHCHECK_SUCCESS_TARGET}
+          if [ "$T" -gt 0 ] && [ "$C" -lt "$T" ]; then
+            echo "Only $C CFW-compatible candidates are available; success target $T cannot be reached."
+            echo "Lower health_success_target or increase search_limit."
+            exit 1
+          fi
+          python healthcheck.py
       - name: Publish only CFW health-checked nodes
         run: |
           cp output/health-checked-cfw.txt output/health-checked-nodes.txt
           python publish_outputs.py
-      - name: Validate CFW output against health-check results
+      - name: Validate CFW output
         run: |
-          set -euo pipefail
           python - <<'PY'
           from pathlib import Path
           import yaml
-          h=[x.strip() for x in Path('output/health-checked-cfw.txt').read_text().splitlines() if x.strip()]
-          c=yaml.safe_load(Path('output/clash.yaml').read_text()) or {}
-          p=c.get('proxies') or []
+          h=[x for x in Path('output/health-checked-cfw.txt').read_text().splitlines() if x.strip()]
+          c=yaml.safe_load(Path('output/clash.yaml').read_text()) or {}; p=c.get('proxies') or []
           allowed={'ss','ssr','vmess','trojan'}
-          assert h, 'No CFW node passed health check; refusing to publish a replacement profile.'
-          assert p, 'Health check passed nodes but Clash output is empty.'
-          assert all(str(x.get('type','')).lower() in allowed for x in p), 'Non-CFW proxy leaked into Clash output.'
-          if len(p) < len(h):
-              raise SystemExit(f'CFW conversion lost verified nodes: health={len(h)} clash={len(p)}')
+          if not h: raise SystemExit('No CFW node passed health check; refusing to publish.')
+          if not p: raise SystemExit('Healthy CFW nodes exist but Clash output is empty.')
+          if any(str(x.get('type','')).lower() not in allowed for x in p): raise SystemExit('Non-CFW proxy leaked into Clash output.')
+          if len(p)<len(h): raise SystemExit(f'CFW conversion lost verified nodes: health={len(h)} clash={len(p)}')
           print(f'CFW verified={len(h)} published={len(p)}')
-          print('types:',{t:sum(1 for x in p if str(x.get('type','')).lower()==t) for t in sorted(allowed)})
           PY
       - name: Commit generated results safely
         run: |
