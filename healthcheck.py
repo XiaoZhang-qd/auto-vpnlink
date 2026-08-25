@@ -1,133 +1,102 @@
 #!/usr/bin/env python3
-"""Conservative real-internet health check for publishable proxy nodes.
-
-A node is publishable only when the selected proxy core can repeatedly proxy
-real HTTPS traffic and the traffic exits through a different public IP.
-"""
-import hashlib, ipaddress, json, os, socket, subprocess, tempfile, time
+"""Conservative real-internet health check with configurable candidate/success limits."""
+import hashlib,ipaddress,json,os,socket,subprocess,tempfile,time
 from pathlib import Path
-import requests, yaml
+import requests,yaml
 import converter
-
-ROOT=Path(__file__).resolve().parent
-OUT=ROOT/'output'
-INPUT=OUT/'verified-nodes.txt'
-HEALTHY=OUT/os.getenv('HEALTHCHECK_OUTPUT','health-checked-nodes.txt')
-REPORT=OUT/os.getenv('HEALTHCHECK_REPORT','healthcheck.json')
-MAX=int(os.getenv('HEALTHCHECK_MAX','120'))
-TIMEOUT=int(os.getenv('HEALTHCHECK_TIMEOUT','12'))
-MIHOMO=os.getenv('MIHOMO_BIN',str(ROOT/'.bin/mihomo'))
-TEST_URLS=[x.strip() for x in os.getenv('HEALTHCHECK_URLS','https://www.gstatic.com/generate_204,https://cp.cloudflare.com/generate_204,https://www.google.com/generate_204').split(',') if x.strip()]
-IP_URLS=['https://api.ipify.org','https://ifconfig.me/ip']
-ROUNDS=int(os.getenv('HEALTHCHECK_ROUNDS','3'))
-ROUND_DELAY=float(os.getenv('HEALTHCHECK_ROUND_DELAY','2'))
-MIN_PUBLIC_TESTS=int(os.getenv('HEALTHCHECK_MIN_PUBLIC_TESTS','2'))
-ALLOWED_TYPES={x.strip().lower() for x in os.getenv('HEALTHCHECK_TYPES','').split(',') if x.strip()}
-START_PORT=17890
-PLACEHOLDER_HOSTS={'example.com','example.org','example.net','localhost','localhost.localdomain','invalid','test','test.local'}
-PLACEHOLDER_WORDS=('placeholder','example','changeme','your-server','your_server','server_ip','<server>','${','{{','}}')
-
+ROOT=Path(__file__).resolve().parent; OUT=ROOT/'output'; INPUT=OUT/'verified-nodes.txt'
+HEALTHY=OUT/os.getenv('HEALTHCHECK_OUTPUT','health-checked-nodes.txt'); REPORT=OUT/os.getenv('HEALTHCHECK_REPORT','healthcheck.json')
+MAX=int(os.getenv('HEALTHCHECK_MAX','120')); SUCCESS_TARGET=int(os.getenv('HEALTHCHECK_SUCCESS_TARGET','0')); TIMEOUT=int(os.getenv('HEALTHCHECK_TIMEOUT','12'))
+MIHOMO=os.getenv('MIHOMO_BIN',str(ROOT/'.bin/mihomo')); ROUNDS=int(os.getenv('HEALTHCHECK_ROUNDS','2')); DELAY=float(os.getenv('HEALTHCHECK_ROUND_DELAY','1')); MIN_TESTS=int(os.getenv('HEALTHCHECK_MIN_PUBLIC_TESTS','2'))
+TEST_URLS=[x.strip() for x in os.getenv('HEALTHCHECK_URLS','https://www.gstatic.com/generate_204,https://cp.cloudflare.com/generate_204,https://www.google.com/generate_204').split(',') if x.strip()]; IP_URLS=['https://api.ipify.org','https://ifconfig.me/ip']
+ALLOWED={x.strip().lower() for x in os.getenv('HEALTHCHECK_TYPES','').split(',') if x.strip()}; START=17890
+BAD_HOSTS={'example.com','example.org','example.net','localhost','localhost.localdomain','invalid','test','test.local'}; BAD_WORDS=('placeholder','example','changeme','your-server','your_server','server_ip','<server>','${','{{','}}')
 def free_port():
-    for p in range(START_PORT,START_PORT+500):
-        with socket.socket() as s:
-            try:s.bind(('127.0.0.1',p));return p
-            except OSError:pass
-    raise RuntimeError('no free local port')
-
-def stop(proc):
-    if not proc:return
-    try:proc.terminate();proc.wait(timeout=3)
-    except Exception:
-        try:proc.kill();proc.wait(timeout=2)
-        except Exception:pass
-
-def is_public_ip(value):
+ for p in range(START,START+500):
+  try:
+   with socket.socket() as s:s.bind(('127.0.0.1',p));return p
+  except OSError:pass
+ raise RuntimeError('no free local port')
+def stop(p):
+ if p:
+  try:p.terminate();p.wait(3)
+  except Exception:
+   try:p.kill()
+   except Exception:pass
+def pub(v):
+ try:
+  x=ipaddress.ip_address(v.strip());return not(x.is_private or x.is_loopback or x.is_reserved or x.is_link_local or x.is_multicast)
+ except:return False
+def direct_ip():
+ for u in IP_URLS:
+  try:
+   x=requests.get(u,timeout=8).text.strip().split()[0]
+   if pub(x):return x
+  except:pass
+ return None
+def proxy_ip(port):
+ p={'http':f'http://127.0.0.1:{port}','https':f'http://127.0.0.1:{port}'}
+ for u in IP_URLS:
+  try:
+   x=requests.get(u,proxies=p,timeout=TIMEOUT).text.strip().split()[0]
+   if pub(x):return x
+  except:pass
+ return None
+def web_round(port):
+ p={'http':f'http://127.0.0.1:{port}','https':f'http://127.0.0.1:{port}'};ok=[]
+ for u in TEST_URLS:
+  try:
+   r=requests.get(u,proxies=p,timeout=TIMEOUT,allow_redirects=False)
+   if r.status_code in (200,204):ok.append(u)
+  except:pass
+ return ok
+def test(n,runner):
+ host=str(n.get('server','')).lower().strip('[]')
+ if host in BAD_HOSTS or any(w in host for w in BAD_WORDS):return False,'placeholder_endpoint'
+ if any(w in str(n.get('name','')).lower() for w in BAD_WORDS):return False,'placeholder_name'
+ port=free_port();proc=None
+ with tempfile.TemporaryDirectory(prefix='avh-') as td:
+  log=None
+  try:
+   cfg={'mixed-port':port,'allow-lan':False,'mode':'rule','log-level':'error','ipv6':False,'proxies':[n],'rules':['MATCH,'+n['name']]};cp=Path(td)/'config.yaml';cp.write_text(yaml.safe_dump(cfg,allow_unicode=True,sort_keys=False),encoding='utf-8');log=open(Path(td)/'mihomo.log','w')
+   proc=subprocess.Popen([MIHOMO,'-d',td,'-f',str(cp)],stdout=log,stderr=subprocess.STDOUT);end=time.time()+10
+   while time.time()<end:
     try:
-        ip=ipaddress.ip_address(value.strip());return not(ip.is_private or ip.is_loopback or ip.is_reserved or ip.is_link_local or ip.is_multicast)
-    except Exception:return False
-
-def direct_public_ip():
-    for url in IP_URLS:
-        try:
-            r=requests.get(url,timeout=8,headers={'User-Agent':'auto-vpnlink-direct/5.0'});ip=r.text.strip().split()[0]
-            if is_public_ip(ip):return ip
-        except Exception:pass
-    return None
-
-def proxied_public_ip(port):
-    proxies={'http':f'http://127.0.0.1:{port}','https':f'http://127.0.0.1:{port}'}
-    for url in IP_URLS:
-        try:
-            r=requests.get(url,proxies=proxies,timeout=TIMEOUT,headers={'User-Agent':'auto-vpnlink-proxy/5.0'});ip=r.text.strip().split()[0]
-            if is_public_ip(ip):return ip
-        except Exception:pass
-    return None
-
-def public_round(port):
-    passed=[];proxies={'http':f'http://127.0.0.1:{port}','https':f'http://127.0.0.1:{port}'}
-    for url in TEST_URLS:
-        try:
-            r=requests.get(url,proxies=proxies,timeout=TIMEOUT,allow_redirects=False,headers={'User-Agent':'auto-vpnlink-health/5.0'})
-            if r.status_code in (200,204):passed.append({'url':url,'status':r.status_code})
-        except Exception:pass
-    return passed
-
-def test_proxy(proxy,direct_ip):
-    host=str(proxy.get('server','')).lower().strip('[]')
-    if host in PLACEHOLDER_HOSTS or any(w in host for w in PLACEHOLDER_WORDS):return False,'placeholder_endpoint',[]
-    if any(w in str(proxy.get('name','')).lower() for w in PLACEHOLDER_WORDS):return False,'placeholder_name',[]
-    port=free_port()
-    with tempfile.TemporaryDirectory(prefix='auto-vpnlink-health-') as td:
-        cfg={'mixed-port':port,'allow-lan':False,'mode':'rule','log-level':'error','ipv6':False,'proxies':[proxy],'rules':['MATCH,'+proxy['name']]}
-        cp=Path(td)/'config.yaml';cp.write_text(yaml.safe_dump(cfg,allow_unicode=True,sort_keys=False),encoding='utf-8')
-        log=open(Path(td)/'mihomo.log','w',encoding='utf-8');proc=None
-        try:
-            proc=subprocess.Popen([MIHOMO,'-d',td,'-f',str(cp)],stdout=log,stderr=subprocess.STDOUT)
-            deadline=time.time()+10;ready=False
-            while time.time()<deadline:
-                try:
-                    with socket.create_connection(('127.0.0.1',port),timeout=.3):ready=True;break
-                except OSError:time.sleep(.15)
-            if not ready:return False,'core_not_ready',[]
-            time.sleep(.3);pip=proxied_public_ip(port)
-            if not pip:return False,'no_proxied_public_ip',[]
-            if direct_ip and pip==direct_ip:return False,'proxy_equals_runner_ip',[]
-            all_checks=[];stable_ips=[]
-            for round_no in range(ROUNDS):
-                rip=proxied_public_ip(port)
-                if not rip or (direct_ip and rip==direct_ip):return False,f'round_{round_no+1}_bad_egress_ip',all_checks
-                stable_ips.append(rip);checks=public_round(port);all_checks.extend(checks)
-                if len(checks)<min(MIN_PUBLIC_TESTS,len(TEST_URLS)):return False,f'round_{round_no+1}_only_{len(checks)}_public_tests',all_checks
-                if round_no+1<ROUNDS:time.sleep(ROUND_DELAY)
-            if len(set(stable_ips))!=1:return False,'egress_ip_changed_during_check',all_checks
-            return True,'internet_stable_real_egress',all_checks
-        except Exception as e:return False,type(e).__name__,[]
-        finally:stop(proc);log.close()
-
-def stable_fingerprint(n):
-    keys=('type','server','port','uuid','password','cipher','sni','security','pbk','sid','flow','net','path','host','aid')
-    return hashlib.sha256('|'.join(str(n.get(k,'')) for k in keys).encode()).hexdigest()
-
+     with socket.create_connection(('127.0.0.1',port),.3):break
+    except OSError:time.sleep(.15)
+   else:return False,'core_not_ready'
+   ips=[]
+   for r in range(ROUNDS):
+    x=proxy_ip(port)
+    if not x:return False,'no_proxied_public_ip'
+    if runner and x==runner:return False,'proxy_equals_runner_ip'
+    ips.append(x);checks=web_round(port)
+    if len(checks)<min(MIN_TESTS,len(TEST_URLS)):return False,f'round_{r+1}_public_test_failed'
+    if r+1<ROUNDS:time.sleep(DELAY)
+   if len(set(ips))!=1:return False,'egress_ip_changed'
+   return True,'internet_stable_real_egress'
+  except Exception as e:return False,type(e).__name__
+  finally:
+   stop(proc)
+   if log:log.close()
+def fp(n):return hashlib.sha256('|'.join(str(n.get(k,'')) for k in ('type','server','port','uuid','password','cipher','sni','flow','net','path','host')).encode()).hexdigest()
 def main():
-    if not Path(MIHOMO).exists():raise SystemExit(f'Proxy core not found: {MIHOMO}')
-    raw=[x.strip() for x in INPUT.read_text(encoding='utf-8',errors='ignore').splitlines() if x.strip()] if INPUT.exists() else []
-    direct_ip=direct_public_ip()
-    if not direct_ip:raise SystemExit('Cannot determine runner public IP; refusing to publish unverified nodes.')
-    results=[];good=[];seen_fp=set();tested=0
-    for i,uri in enumerate(raw[:MAX],1):
-        n=converter.parse(uri,i)
-        if not n:continue
-        if ALLOWED_TYPES and n.get('type','').lower() not in ALLOWED_TYPES:continue
-        fp=stable_fingerprint(n)
-        if fp in seen_fp:continue
-        seen_fp.add(fp);tested+=1
-        proxy=converter.clash(n);ok,reason,checks=test_proxy(proxy,direct_ip)
-        results.append({'uri':uri,'name':proxy['name'],'type':proxy['type'],'server':proxy['server'],'port':proxy['port'],'ok':ok,'reason':reason,'checks':checks})
-        if ok:good.append(uri)
-        print(f'[{tested}/{min(len(raw),MAX)}] {proxy["name"]} [{proxy["type"]}]: {"PASS" if ok else "FAIL"} ({reason})',flush=True)
-    HEALTHY.write_text('\n'.join(good)+('\n' if good else ''),encoding='utf-8')
-    REPORT.write_text(json.dumps({'tested':len(results),'healthy':len(good),'failed':len(results)-len(good),'core':MIHOMO,'allowed_types':sorted(ALLOWED_TYPES),'stable_required':True,'rounds':ROUNDS,'round_delay':ROUND_DELAY,'runner_public_ip':direct_ip,'internet_test_urls':TEST_URLS,'results':results},ensure_ascii=False,indent=2),encoding='utf-8')
-    print(f'HEALTHCHECK output={HEALTHY.name} tested={len(results)} healthy={len(good)} failed={len(results)-len(good)}')
-    if raw and ALLOWED_TYPES and not good:raise SystemExit('No node passed the client-specific health check.')
-    if raw and not ALLOWED_TYPES and not good:raise SystemExit('No node passed stable real-egress health check; refusing to publish unverified nodes.')
+ if not Path(MIHOMO).exists():raise SystemExit('Mihomo not found')
+ raw=[x.strip() for x in INPUT.read_text(encoding='utf-8',errors='ignore').splitlines() if x.strip()] if INPUT.exists() else [];runner=direct_ip()
+ if not runner:raise SystemExit('Cannot determine runner public IP')
+ good=[];seen=set();results=[];limit=min(len(raw),MAX)
+ for i,u in enumerate(raw[:limit],1):
+  n=converter.parse(u,i)
+  if not n or (ALLOWED and n.get('type','').lower() not in ALLOWED):continue
+  f=fp(n)
+  if f in seen:continue
+  seen.add(f);p=converter.clash(n);ok,reason=test(p,runner);results.append({'uri':u,'name':p['name'],'type':p['type'],'server':p['server'],'port':p['port'],'ok':ok,'reason':reason})
+  if ok:
+   good.append(u);print(f'[{i}/{limit}] PASS {p["name"]} [{p["type"]}]',flush=True)
+   if SUCCESS_TARGET>0 and len(good)>=SUCCESS_TARGET:
+    print(f'HEALTHCHECK success target reached: {len(good)}/{SUCCESS_TARGET}',flush=True);break
+  else:print(f'[{i}/{limit}] FAIL {p["name"]} [{p["type"]}] ({reason})',flush=True)
+ HEALTHY.write_text('\n'.join(good)+'\n' if good else '',encoding='utf-8');REPORT.write_text(json.dumps({'candidate_limit':limit,'tested':len(results),'healthy':len(good),'failed':len(results)-len(good),'success_target':SUCCESS_TARGET,'target_reached':SUCCESS_TARGET>0 and len(good)>=SUCCESS_TARGET,'runner_public_ip':runner,'rounds':ROUNDS,'results':results},ensure_ascii=False,indent=2),encoding='utf-8')
+ print(f'HEALTHCHECK output={HEALTHY.name} tested={len(results)} healthy={len(good)} target={SUCCESS_TARGET}',flush=True)
+ if raw and not good:raise SystemExit('No stable healthy node; refusing to publish unverified nodes.')
 if __name__=='__main__':main()
