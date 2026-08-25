@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
-"""Select clean, diverse, connection-unique candidates for protocol health checks."""
+"""Select clean, diverse, connection-unique candidates for real health checks."""
 import hashlib, json, re, base64
 from pathlib import Path
 from urllib.parse import urlparse, parse_qs, unquote
 SCHEMES=('vless','vmess','trojan','ss','hysteria2','hysteria','hy2','tuic')
 TCP_SCHEMES=('vless','vmess','trojan','ss')
-MAX=200
-PER_TCP=45
-PER_UDP=120
+# Test a much larger and more diverse sample. The final Clash feed is built
+# only from nodes that pass the real-egress health check.
+MAX=600
+PER_TCP=120
+PER_UDP=180
 raw=Path('output/discovered-nodes.txt').read_text(encoding='utf-8',errors='ignore').splitlines()
 pat=re.compile(r"(?i)(?:vless|vmess|ss|trojan|hysteria2?|hy2|tuic)://[^\s<>\"'\\]+")
 def b64(s):
@@ -29,7 +31,6 @@ def fingerprint(n):
  if not n or not n.get('server') or not n.get('port') or not n.get('cred'): return None
  return hashlib.sha256(json.dumps(sorted((k,str(v)) for k,v in n.items()),ensure_ascii=False).encode()).hexdigest()
 def spread_pick(items, limit):
- """Pick a deterministic spread across the whole bucket, not just its first entries."""
  if len(items) <= limit: return items
  step=(len(items)-1)/(limit-1)
  return [items[round(i*step)] for i in range(limit)]
