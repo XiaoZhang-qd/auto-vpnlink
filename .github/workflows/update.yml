@@ -57,25 +57,23 @@ jobs:
           if [ -f .bin/mihomo ]; then echo 'Mihomo binary extracted successfully.'; else BIN=$(find .bin -maxdepth 1 -type f -name 'mihomo*' ! -name '*.gz' -print -quit); test -n "$BIN"; mv "$BIN" .bin/mihomo; fi
           chmod +x .bin/mihomo
           .bin/mihomo -v
-      - name: Run real protocol-level health checks without dropping the pool
+      - name: Run real protocol-level health checks
         env:
           MIHOMO_BIN: ${{ github.workspace }}/.bin/mihomo
           HEALTHCHECK_MAX: '150'
           HEALTHCHECK_TIMEOUT: '12'
-        run: python healthcheck.py || echo 'Health check had failures; all valid discovered nodes will still be published.'
+        run: python healthcheck.py || echo 'Health check had failures; raw valid nodes remain available in protocol feeds.'
       - name: Merge healthy-first complete node pool
         run: python merge_publish.py
       - name: Publish all valid nodes and protocol-specific feeds
         run: python publish_outputs.py
-      - name: Show generated files and validate published pool
+      - name: Restrict Clash to actually health-checked nodes
+        run: python filter_clash_healthy.py
+      - name: Validate published pool and Clash config
         run: |
-          set -e
-          echo '=== Generated output ==='
-          find output -maxdepth 1 -type f -print | sort
+          set -euo pipefail
           echo '=== Publish summary ==='
           cat output/publish-summary.json
-          echo '=== Health summary ==='
-          if [ -f output/healthcheck.json ]; then cat output/healthcheck.json; else echo 'No health report; publication continued from valid discovered nodes.'; fi
           python - <<'PY'
           import json, yaml
           from pathlib import Path
@@ -85,7 +83,8 @@ jobs:
           assert len(c.get('proxies') or []) == s['clash_proxies'], 'Clash count mismatch'
           print('published unique:', s['published_unique'])
           print('healthy first:', s['healthy_first'])
-          print('Clash proxies:', s['clash_proxies'])
+          print('Clash verified proxies:', s['clash_proxies'])
+          print('Clash unverified removed:', s.get('clash_unverified_removed',0))
           print('protocols:', s['protocols'])
           PY
       - name: Commit generated results safely
@@ -100,4 +99,4 @@ jobs:
           rm -rf output
           cp -a /tmp/auto-vpnlink-output output
           git add output/
-          if git diff --cached --quiet; then echo 'No output changes.'; else git commit -m 'auto: publish complete deduplicated VPN sources'; git push origin HEAD:main; fi
+          if git diff --cached --quiet; then echo 'No output changes.'; else git commit -m 'auto: publish verified Clash sources'; git push origin HEAD:main; fi
