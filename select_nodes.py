@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
-"""Select diverse candidates, prioritizing protocols supported by CFW."""
-import hashlib,json,re,base64
+"""Select a configurable, diverse pool for health checking."""
+import hashlib,json,re,base64,os
 from pathlib import Path
 from urllib.parse import urlparse,parse_qs,unquote
 SCHEMES=('vless','vmess','trojan','ss','hysteria2','hysteria','hy2','tuic')
-# CFW-compatible protocols are given the majority of health-check slots.
-MAX=600
-QUOTAS={'ss':220,'trojan':160,'vmess':100,'vless':60,'hysteria2':60,'tuic':0}
-raw=Path('output/discovered-nodes.txt').read_text(encoding='utf-8',errors='ignore').splitlines()
-pat=re.compile(r"(?i)(?:vless|vmess|ss|trojan|hysteria2?|hy2|tuic)://[^\s<>\"'\\]+")
+SEARCH_LIMIT=max(1,int(os.getenv('SEARCH_LIMIT','5000')))
+# This is the health-check candidate pool, independent from search_limit.
+HEALTH_CANDIDATES=max(1,int(os.getenv('HEALTH_CANDIDATES','300')))
+QUOTAS={'ss':.38,'trojan':.24,'vmess':.16,'vless':.12,'hysteria2':.08,'hysteria':.02,'hy2':0,'tuic':0}
+raw=Path('output/discovered-nodes.txt').read_text(encoding='utf-8',errors='ignore').splitlines()[:SEARCH_LIMIT]
+pat=re.compile(r"(?i)(?:vless|vmess|trojan|ss|hysteria2?|hy2|tuic)://[^\s<>\"'\\]+")
 def b64(s):
  s=''.join(s.split()).replace('-','+').replace('_','/');return base64.b64decode(s+'='*(-len(s)%4)).decode('utf-8','ignore')
 def parse(u):
@@ -28,7 +29,8 @@ def fingerprint(n):
  return hashlib.sha256(json.dumps(sorted((k,str(v)) for k,v in n.items()),ensure_ascii=False).encode()).hexdigest()
 def spread_pick(items,limit):
  if len(items)<=limit:return items
- step=(len(items)-1)/(limit-1);return [items[round(i*step)] for i in range(limit)]
+ step=(len(items)-1)/(limit-1) if limit>1 else 0
+ return [items[round(i*step)] for i in range(limit)]
 buckets={s:[] for s in SCHEMES};seen=set();rejected=0
 for line in raw:
  for u in pat.findall(line):
@@ -38,10 +40,24 @@ for line in raw:
   fp=fingerprint(n)
   if not fp or fp in seen:continue
   seen.add(fp);buckets[n['type']].append((u,n,fp))
+# First reserve CFW-capable candidates. If a protocol bucket is too small,
+# redistribute unused slots instead of failing with a tiny candidate pool.
+cfw=('ss','trojan','vmess','vless')
 selected=[]
-for s,q in QUOTAS.items():selected.extend(spread_pick(buckets[s],q))
-selected=selected[:MAX]
+remaining=HEALTH_CANDIDATES
+for s in cfw:
+ want=round(HEALTH_CANDIDATES*QUOTAS.get(s,0))
+ take=min(len(buckets[s]),want)
+ selected.extend(spread_pick(buckets[s],take));remaining-=take
+# Fill all unused health slots from any remaining protocol, preferring CFW first.
+used=set(x[2] for x in selected)
+for s in cfw+('hysteria2','hysteria','tuic'):
+ pool=[x for x in buckets[s] if x[2] not in used]
+ take=min(len(pool),remaining)
+ chosen=spread_pick(pool,take);selected.extend(chosen);used.update(x[2] for x in chosen);remaining-=take
+ if remaining<=0:break
+selected=selected[:HEALTH_CANDIDATES]
 Path('output/health-candidates.txt').write_text('\n'.join(x[0] for x in selected)+('\n' if selected else ''),encoding='utf-8')
-Path('output/candidate-summary.json').write_text(json.dumps({'discovered_lines':len(raw),'rejected_malformed':rejected,'unique_by_credentials':len(seen),'protocol_candidates':{s:len(buckets[s]) for s in SCHEMES},'selected':len(selected),'selected_protocols':{s:sum(1 for _,n,_ in selected if n['type']==s) for s in SCHEMES}},ensure_ascii=False,indent=2),encoding='utf-8')
-print('protocol candidates:',{s:len(buckets[s]) for s in SCHEMES});print('selected:',{s:sum(1 for _,n,_ in selected if n['type']==s) for s in SCHEMES});print('health candidates:',len(selected))
+Path('output/candidate-summary.json').write_text(json.dumps({'search_limit':SEARCH_LIMIT,'discovered_lines_considered':len(raw),'rejected_malformed':rejected,'unique_by_credentials':len(seen),'protocol_candidates':{s:len(buckets[s]) for s in SCHEMES},'health_candidate_limit':HEALTH_CANDIDATES,'selected':len(selected),'selected_protocols':{s:sum(1 for _,n,_ in selected if n['type']==s) for s in SCHEMES}},ensure_ascii=False,indent=2),encoding='utf-8')
+print('search_limit:',SEARCH_LIMIT);print('protocol candidates:',{s:len(buckets[s]) for s in SCHEMES});print('selected:',{s:sum(1 for _,n,_ in selected if n['type']==s) for s in SCHEMES});print('health candidates:',len(selected))
 if not selected:raise SystemExit('No clean, unique protocol candidates found.')
