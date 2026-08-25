@@ -6,12 +6,17 @@ on:
   workflow_dispatch:
     inputs:
       search_limit:
-        description: 'Maximum nodes to keep after discovery (search pool)'
+        description: 'Maximum discovered lines to consider'
         required: false
         default: '5000'
         type: string
+      health_candidate_limit:
+        description: 'Maximum nodes to actually health-check'
+        required: false
+        default: '300'
+        type: string
       health_success_target:
-        description: 'Stop health checks after this many successful nodes'
+        description: 'Stop health checks after this many successful nodes (0 = test all candidates)'
         required: false
         default: '20'
         type: string
@@ -50,9 +55,10 @@ jobs:
           import os,yaml
           p='sources.yaml'
           with open(p,encoding='utf-8') as f: d=yaml.safe_load(f) or {}
-          d.setdefault('scan',{})['max_aggregate_nodes']=max(100,min(int(os.environ['SEARCH_LIMIT']),20000))
+          limit=max(1,min(int(os.environ['SEARCH_LIMIT']),20000))
+          d.setdefault('scan',{})['max_aggregate_nodes']=limit
           with open(p,'w',encoding='utf-8') as f: yaml.safe_dump(d,f,allow_unicode=True,sort_keys=False)
-          print('SEARCH_LIMIT=',d['scan']['max_aggregate_nodes'])
+          print('SEARCH_LIMIT=',limit)
           PY
       - name: Run multi-source scanner
         env:
@@ -60,7 +66,10 @@ jobs:
         run: python scanner.py
       - name: Widen protocol extraction
         run: python augment_protocols.py
-      - name: Select diverse health-check candidate pool
+      - name: Select independent health-check candidate pool
+        env:
+          SEARCH_LIMIT: ${{ inputs.search_limit || '5000' }}
+          HEALTH_CANDIDATES: ${{ inputs.health_candidate_limit || '300' }}
         run: |
           python select_nodes.py
           cp output/health-candidates.txt output/verified-nodes.txt
@@ -79,7 +88,7 @@ jobs:
       - name: Health-check CFW-compatible protocols
         env:
           MIHOMO_BIN: ${{ github.workspace }}/.bin/mihomo
-          HEALTHCHECK_MAX: '540'
+          HEALTHCHECK_MAX: ${{ inputs.health_candidate_limit || '300' }}
           HEALTHCHECK_SUCCESS_TARGET: ${{ inputs.health_success_target || '20' }}
           HEALTHCHECK_TIMEOUT: '12'
           HEALTHCHECK_ROUNDS: '2'
