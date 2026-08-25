@@ -1,9 +1,9 @@
 {
-  "discovered": 63,
-  "healthy_first": 63,
-  "published_unique": 63,
-  "clash_proxies": 14,
-  "clash_filtered_cfw_incompatible": 34,
+  "discovered": 40,
+  "healthy_first": 40,
+  "published_unique": 40,
+  "clash_proxies": 3,
+  "clash_filtered_cfw_incompatible": 37,
   "clash_supported_types": [
     "ss",
     "ssr",
@@ -11,10 +11,9 @@
     "vmess"
   ],
   "protocols": {
-    "ss": 48,
-    "hysteria2": 15
+    "ss": 40
   },
-  "clash_verified_kept": 9,
-  "clash_unverified_kept": 5,
+  "clash_verified_kept": 3,
+  "clash_unverified_kept": 0,
   "clash_incompatible_removed": 0
 }

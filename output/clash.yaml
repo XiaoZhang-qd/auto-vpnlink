@@ -1,24 +1,10 @@
 proxies:
-- name: ss-32
+- name: 🇩🇪
   type: ss
-  server: 140.238.175.124
-  port: 33345
+  server: 193.29.139.234
+  port: 8080
   cipher: chacha20-ietf-poly1305
-  password: 5d79906d-89ab-430b-acbc-3327568a5be3
-  udp: true
-- name: hamedp71::🇳🇱
-  type: ss
-  server: 108.181.58.239
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: CJmTCCx7Ltud
-  udp: true
-- name: hamedp71::🇱🇹
-  type: ss
-  server: 144.31.243.2
-  port: 16015
-  cipher: chacha20-ietf-poly1305
-  password: J1InuU6QRT5JOh1mQfkjU2
+  password: 4a2rfixophdjffa8KVA4Aa
   udp: true
 - name: 2.🇳🇱Нидерланды | @LimeVPNFREE t.me/rjsxrd
   type: ss
@@ -34,87 +20,13 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: hamedp71::🇯🇵
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: hamedp71::🇺🇸
-  type: ss
-  server: 15.204.246.132
-  port: 7307
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-  udp: true
-- name: hamedp71::🇩🇪
-  type: ss
-  server: 213.202.208.199
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: '@meliproxyy'
-  type: ss
-  server: 15.235.75.71
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: FD3rCuOsxOay
-  udp: true
-- name: hamedp71::🇳🇱 [2]
-  type: ss
-  server: 64.188.77.159
-  port: 8390
-  cipher: chacha20-ietf-poly1305
-  password: EyGy11BMfeP-6UHjsgajWw
-  udp: true
-- name: hamedp71::🇳🇱 [3]
-  type: ss
-  server: 193.29.139.151
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: hamedp71::🇳🇱 [4]
-  type: ss
-  server: 193.29.139.204
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: hamedp71::🇳🇱 [5]
-  type: ss
-  server: 193.29.139.235
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: '@DeltaKroneckerGithub [2]'
-  type: ss
-  server: 173.244.56.9
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - ss-32
-  - hamedp71::🇳🇱
-  - hamedp71::🇱🇹
+  - 🇩🇪
   - 2.🇳🇱Нидерланды | @LimeVPNFREE t.me/rjsxrd
   - 13.🇳🇱Нидерланды | @LimeVPNFREE t.me/rjsxrd
-  - hamedp71::🇯🇵
-  - hamedp71::🇺🇸
-  - hamedp71::🇩🇪
-  - '@meliproxyy'
-  - hamedp71::🇳🇱 [2]
-  - hamedp71::🇳🇱 [3]
-  - hamedp71::🇳🇱 [4]
-  - hamedp71::🇳🇱 [5]
-  - '@DeltaKroneckerGithub [2]'
   url: https://www.gstatic.com/generate_204
   interval: 300
 rules:
