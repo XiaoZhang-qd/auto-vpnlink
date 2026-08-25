@@ -1,9 +1,9 @@
 {
-  "discovered": 19997,
-  "healthy_first": 11,
-  "published_unique": 4511,
-  "clash_proxies": 3080,
-  "clash_filtered_cfw_incompatible": 56,
+  "discovered": 63,
+  "healthy_first": 63,
+  "published_unique": 63,
+  "clash_proxies": 14,
+  "clash_filtered_cfw_incompatible": 34,
   "clash_supported_types": [
     "ss",
     "ssr",
@@ -11,12 +11,10 @@
     "vmess"
   ],
   "protocols": {
-    "trojan": 3013,
-    "ss": 123,
-    "hysteria2": 1374,
-    "hysteria": 1
+    "ss": 48,
+    "hysteria2": 15
   },
-  "clash_verified_kept": 7,
-  "clash_unverified_kept": 3073,
+  "clash_verified_kept": 9,
+  "clash_unverified_kept": 5,
   "clash_incompatible_removed": 0
 }
