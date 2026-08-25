@@ -51,43 +51,42 @@ jobs:
           API='https://api.github.com/repos/MetaCubeX/mihomo/releases/latest'
           URL=$(curl -fsSL "$API" | python -c "import json,sys; d=json.load(sys.stdin); print(next((a['browser_download_url'] for a in d.get('assets',[]) if 'linux-amd64' in a['name'] and a['name'].endswith('.gz')), ''))")
           test -n "$URL"
-          echo "Downloading $URL"
           curl -fL --retry 3 "$URL" -o .bin/mihomo.gz
           gzip -df .bin/mihomo.gz
-          if [ -f .bin/mihomo ]; then echo 'Mihomo binary extracted successfully.'; else BIN=$(find .bin -maxdepth 1 -type f -name 'mihomo*' ! -name '*.gz' -print -quit); test -n "$BIN"; mv "$BIN" .bin/mihomo; fi
+          if [ -f .bin/mihomo ]; then :; else BIN=$(find .bin -maxdepth 1 -type f -name 'mihomo*' ! -name '*.gz' -print -quit); test -n "$BIN"; mv "$BIN" .bin/mihomo; fi
           chmod +x .bin/mihomo
           .bin/mihomo -v
-      - name: Run real protocol-level health checks
+      - name: Health-check CFW-compatible protocols
         env:
           MIHOMO_BIN: ${{ github.workspace }}/.bin/mihomo
-          HEALTHCHECK_MAX: '600'
+          HEALTHCHECK_MAX: '540'
           HEALTHCHECK_TIMEOUT: '12'
           HEALTHCHECK_ROUNDS: '2'
           HEALTHCHECK_ROUND_DELAY: '1'
           HEALTHCHECK_MIN_PUBLIC_TESTS: '2'
+          HEALTHCHECK_TYPES: 'ss,trojan,vmess,vless'
+          HEALTHCHECK_OUTPUT: 'health-checked-cfw.txt'
+          HEALTHCHECK_REPORT: 'healthcheck-cfw.json'
         run: python healthcheck.py
-      - name: Merge only internet-verified node pool
-        run: python merge_publish.py
-      - name: Publish verified nodes and protocol-specific feeds
-        run: python publish_outputs.py
-      - name: Restrict Clash to verified, compatible nodes
-        run: python filter_clash_healthy.py
-      - name: Validate published pool and Clash config
+      - name: Build CFW publish pool only from CFW health checks
+        run: |
+          cp output/health-checked-cfw.txt output/health-checked-nodes.txt
+          python merge_publish.py
+          python publish_outputs.py
+          python filter_clash_healthy.py
+      - name: Validate published CFW config
         run: |
           set -euo pipefail
-          echo '=== Publish summary ==='
-          cat output/publish-summary.json
           python - <<'PY'
-          import json, yaml
+          import yaml
           from pathlib import Path
-          s=json.loads(Path('output/publish-summary.json').read_text())
           c=yaml.safe_load(Path('output/clash.yaml').read_text()) or {}
-          assert s['published_unique'] > 0, 'no internet-verified nodes were published'
-          assert len(c.get('proxies') or []) == s['clash_proxies'], 'Clash count mismatch'
-          print('published verified:', s['published_unique'])
-          print('healthy:', s['healthy_first'])
-          print('Clash verified proxies:', s['clash_proxies'])
-          print('protocols:', s['protocols'])
+          p=c.get('proxies') or []
+          allowed={'ss','ssr','vmess','trojan'}
+          assert p, 'No CFW-compatible healthy nodes were published'
+          assert all(str(x.get('type','')).lower() in allowed for x in p), 'Non-CFW proxy leaked into Clash output'
+          print('CFW healthy proxies:',len(p))
+          print('types:',{t:sum(1 for x in p if x.get('type')==t) for t in allowed})
           PY
       - name: Commit generated results safely
         run: |
@@ -101,4 +100,4 @@ jobs:
           rm -rf output
           cp -a /tmp/auto-vpnlink-output output
           git add output/
-          if git diff --cached --quiet; then echo 'No output changes.'; else git commit -m 'auto: publish only internet-verified VPN sources'; git push origin HEAD:main; fi
+          if git diff --cached --quiet; then echo 'No output changes.'; else git commit -m 'auto: publish CFW-compatible healthy VPN sources'; git push origin HEAD:main; fi
