@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Stable real-egress health check with independent candidate/success limits."""
+"""Stable real-egress health check for CFW-compatible candidates."""
 import hashlib,ipaddress,json,os,socket,subprocess,tempfile,time
 from pathlib import Path
 import requests,yaml
@@ -9,8 +9,8 @@ HEALTHY=OUT/os.getenv('HEALTHCHECK_OUTPUT','health-checked-nodes.txt'); REPORT=O
 MAX=max(1,int(os.getenv('HEALTHCHECK_MAX','120'))); SUCCESS_TARGET=max(0,int(os.getenv('HEALTHCHECK_SUCCESS_TARGET','0'))); TIMEOUT=int(os.getenv('HEALTHCHECK_TIMEOUT','12'))
 MIHOMO=os.getenv('MIHOMO_BIN',str(ROOT/'.bin/mihomo')); ROUNDS=max(1,int(os.getenv('HEALTHCHECK_ROUNDS','2'))); DELAY=float(os.getenv('HEALTHCHECK_ROUND_DELAY','1')); MIN_TESTS=max(1,int(os.getenv('HEALTHCHECK_MIN_PUBLIC_TESTS','2')))
 TEST_URLS=[x.strip() for x in os.getenv('HEALTHCHECK_URLS','https://www.gstatic.com/generate_204,https://cp.cloudflare.com/generate_204,https://www.google.com/generate_204').split(',') if x.strip()]; IP_URLS=['https://api.ipify.org','https://ifconfig.me/ip']
-# Default to protocols that are actually publishable by the CFW/Clash converter.
-ALLOWED={x.strip().lower() for x in os.getenv('HEALTHCHECK_TYPES','ss,trojan,vmess,vless').split(',') if x.strip()}; START=17890
+# Keep this list exactly aligned with select_nodes.py and the CFW publisher.
+ALLOWED={'ss','trojan','vmess'}; START=17890
 BAD_HOSTS={'example.com','example.org','example.net','localhost','localhost.localdomain','invalid','test','test.local'}; BAD_WORDS=('placeholder','example','changeme','your-server','your_server','server_ip','<server>','${','{{','}}')
 def free_port():
  for p in range(START,START+500):
@@ -101,5 +101,5 @@ def main():
   else:print(f'[{len(results)}/{limit}] FAIL {p["name"]} [{p["type"]}] ({reason})',flush=True)
  HEALTHY.write_text('\n'.join(good)+'\n' if good else '',encoding='utf-8');REPORT.write_text(json.dumps({'candidate_limit':limit,'tested':len(results),'skipped':skipped,'healthy':len(good),'failed':len(results)-len(good),'success_target':SUCCESS_TARGET,'target_reached':SUCCESS_TARGET>0 and len(good)>=SUCCESS_TARGET,'runner_public_ip':runner,'allowed_types':sorted(ALLOWED),'rounds':ROUNDS,'results':results},ensure_ascii=False,indent=2),encoding='utf-8')
  print(f'HEALTHCHECK output={HEALTHY.name} tested={len(results)} skipped={skipped} healthy={len(good)} target={SUCCESS_TARGET}',flush=True)
- if raw and not good:raise SystemExit('No stable healthy node; refusing to publish unverified nodes.')
+ if raw and not good:raise SystemExit('No stable healthy CFW node; refusing to publish unverified nodes.')
 if __name__=='__main__':main()
