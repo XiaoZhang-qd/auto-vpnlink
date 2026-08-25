@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
-"""Conservative real-internet health check with configurable candidate/success limits."""
+"""Stable real-egress health check with independent candidate/success limits."""
 import hashlib,ipaddress,json,os,socket,subprocess,tempfile,time
 from pathlib import Path
 import requests,yaml
 import converter
 ROOT=Path(__file__).resolve().parent; OUT=ROOT/'output'; INPUT=OUT/'verified-nodes.txt'
 HEALTHY=OUT/os.getenv('HEALTHCHECK_OUTPUT','health-checked-nodes.txt'); REPORT=OUT/os.getenv('HEALTHCHECK_REPORT','healthcheck.json')
-MAX=int(os.getenv('HEALTHCHECK_MAX','120')); SUCCESS_TARGET=int(os.getenv('HEALTHCHECK_SUCCESS_TARGET','0')); TIMEOUT=int(os.getenv('HEALTHCHECK_TIMEOUT','12'))
-MIHOMO=os.getenv('MIHOMO_BIN',str(ROOT/'.bin/mihomo')); ROUNDS=int(os.getenv('HEALTHCHECK_ROUNDS','2')); DELAY=float(os.getenv('HEALTHCHECK_ROUND_DELAY','1')); MIN_TESTS=int(os.getenv('HEALTHCHECK_MIN_PUBLIC_TESTS','2'))
+MAX=max(1,int(os.getenv('HEALTHCHECK_MAX','120'))); SUCCESS_TARGET=max(0,int(os.getenv('HEALTHCHECK_SUCCESS_TARGET','0'))); TIMEOUT=int(os.getenv('HEALTHCHECK_TIMEOUT','12'))
+MIHOMO=os.getenv('MIHOMO_BIN',str(ROOT/'.bin/mihomo')); ROUNDS=max(1,int(os.getenv('HEALTHCHECK_ROUNDS','2'))); DELAY=float(os.getenv('HEALTHCHECK_ROUND_DELAY','1')); MIN_TESTS=max(1,int(os.getenv('HEALTHCHECK_MIN_PUBLIC_TESTS','2')))
 TEST_URLS=[x.strip() for x in os.getenv('HEALTHCHECK_URLS','https://www.gstatic.com/generate_204,https://cp.cloudflare.com/generate_204,https://www.google.com/generate_204').split(',') if x.strip()]; IP_URLS=['https://api.ipify.org','https://ifconfig.me/ip']
-ALLOWED={x.strip().lower() for x in os.getenv('HEALTHCHECK_TYPES','').split(',') if x.strip()}; START=17890
+# Default to protocols that are actually publishable by the CFW/Clash converter.
+ALLOWED={x.strip().lower() for x in os.getenv('HEALTHCHECK_TYPES','ss,trojan,vmess,vless').split(',') if x.strip()}; START=17890
 BAD_HOSTS={'example.com','example.org','example.net','localhost','localhost.localdomain','invalid','test','test.local'}; BAD_WORDS=('placeholder','example','changeme','your-server','your_server','server_ip','<server>','${','{{','}}')
 def free_port():
  for p in range(START,START+500):
@@ -84,19 +85,21 @@ def main():
  if not Path(MIHOMO).exists():raise SystemExit('Mihomo not found')
  raw=[x.strip() for x in INPUT.read_text(encoding='utf-8',errors='ignore').splitlines() if x.strip()] if INPUT.exists() else [];runner=direct_ip()
  if not runner:raise SystemExit('Cannot determine runner public IP')
- good=[];seen=set();results=[];limit=min(len(raw),MAX)
+ good=[];seen=set();results=[];skipped=0;limit=min(len(raw),MAX)
  for i,u in enumerate(raw[:limit],1):
   n=converter.parse(u,i)
-  if not n or (ALLOWED and n.get('type','').lower() not in ALLOWED):continue
+  if not n:skipped+=1;continue
+  typ=n.get('type','').lower()
+  if typ not in ALLOWED:skipped+=1;continue
   f=fp(n)
-  if f in seen:continue
+  if f in seen:skipped+=1;continue
   seen.add(f);p=converter.clash(n);ok,reason=test(p,runner);results.append({'uri':u,'name':p['name'],'type':p['type'],'server':p['server'],'port':p['port'],'ok':ok,'reason':reason})
   if ok:
-   good.append(u);print(f'[{i}/{limit}] PASS {p["name"]} [{p["type"]}]',flush=True)
+   good.append(u);print(f'[{len(results)}/{limit}] PASS {p["name"]} [{p["type"]}]',flush=True)
    if SUCCESS_TARGET>0 and len(good)>=SUCCESS_TARGET:
     print(f'HEALTHCHECK success target reached: {len(good)}/{SUCCESS_TARGET}',flush=True);break
-  else:print(f'[{i}/{limit}] FAIL {p["name"]} [{p["type"]}] ({reason})',flush=True)
- HEALTHY.write_text('\n'.join(good)+'\n' if good else '',encoding='utf-8');REPORT.write_text(json.dumps({'candidate_limit':limit,'tested':len(results),'healthy':len(good),'failed':len(results)-len(good),'success_target':SUCCESS_TARGET,'target_reached':SUCCESS_TARGET>0 and len(good)>=SUCCESS_TARGET,'runner_public_ip':runner,'rounds':ROUNDS,'results':results},ensure_ascii=False,indent=2),encoding='utf-8')
- print(f'HEALTHCHECK output={HEALTHY.name} tested={len(results)} healthy={len(good)} target={SUCCESS_TARGET}',flush=True)
+  else:print(f'[{len(results)}/{limit}] FAIL {p["name"]} [{p["type"]}] ({reason})',flush=True)
+ HEALTHY.write_text('\n'.join(good)+'\n' if good else '',encoding='utf-8');REPORT.write_text(json.dumps({'candidate_limit':limit,'tested':len(results),'skipped':skipped,'healthy':len(good),'failed':len(results)-len(good),'success_target':SUCCESS_TARGET,'target_reached':SUCCESS_TARGET>0 and len(good)>=SUCCESS_TARGET,'runner_public_ip':runner,'allowed_types':sorted(ALLOWED),'rounds':ROUNDS,'results':results},ensure_ascii=False,indent=2),encoding='utf-8')
+ print(f'HEALTHCHECK output={HEALTHY.name} tested={len(results)} skipped={skipped} healthy={len(good)} target={SUCCESS_TARGET}',flush=True)
  if raw and not good:raise SystemExit('No stable healthy node; refusing to publish unverified nodes.')
 if __name__=='__main__':main()
