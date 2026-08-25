@@ -14,7 +14,7 @@ on:
         default: '300'
         type: string
       health_success_target:
-        description: Stop after this many successful nodes; 0 tests all candidates
+        description: Stop after this many successful CFW nodes; 0 tests all candidates
         required: false
         default: '20'
         type: string
@@ -104,7 +104,7 @@ jobs:
           HEALTHCHECK_ROUNDS: '2'
           HEALTHCHECK_ROUND_DELAY: '1'
           HEALTHCHECK_MIN_PUBLIC_TESTS: '2'
-          HEALTHCHECK_TYPES: 'ss,trojan,vmess,vless'
+          HEALTHCHECK_TYPES: 'ss,trojan,vmess'
           HEALTHCHECK_OUTPUT: health-checked-cfw.txt
           HEALTHCHECK_REPORT: healthcheck-cfw.json
         run: |
