@@ -1,13 +1,13 @@
 {
-  "discovered_lines": 20001,
-  "rejected_malformed": 7270,
-  "unique_by_credentials": 5084,
+  "discovered_lines": 19997,
+  "rejected_malformed": 9444,
+  "unique_by_credentials": 4923,
   "protocol_candidates": {
     "vless": 1,
     "vmess": 0,
-    "trojan": 3712,
-    "ss": 93,
-    "hysteria2": 1278,
+    "trojan": 3349,
+    "ss": 123,
+    "hysteria2": 1450,
     "hysteria": 0,
     "hy2": 0,
     "tuic": 0
