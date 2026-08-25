@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Merge all valid discovered nodes with health-check results.
+"""Merge only nodes that passed the real-egress health check.
 
-Healthy nodes are placed first; all other syntactically valid, deduplicated
-nodes are retained so a temporary GitHub Runner/network failure does not erase
-the published node pool.
+The scanner may discover thousands of syntactically valid URLs, but a node is
+not useful to a client unless it can actually proxy public HTTPS traffic.
+Healthy results are therefore the publish gate; the raw/protocol feeds remain
+available separately for debugging/source inspection.
 """
 import hashlib, json, re
 from pathlib import Path
@@ -32,14 +33,15 @@ def collect(path):
     return out
 all_nodes=collect(raw_path); healthy=collect(healthy_path)
 seen=set(); ordered=[]; stats={}
-for group in (healthy, all_nodes):
-    for i,u in enumerate(group,1):
-        k=key_for(u,i)
-        if k in seen: continue
-        seen.add(k); ordered.append(u)
-        scheme=u.split('://',1)[0].lower(); stats[scheme]=stats.get(scheme,0)+1
+# Only health-checked nodes enter the publish pool. This prevents clients from
+# receiving thousands of dead endpoints and showing them as Error.
+for i,u in enumerate(healthy,1):
+    k=key_for(u,i)
+    if k in seen: continue
+    seen.add(k); ordered.append(u)
+    scheme=u.split('://',1)[0].lower(); stats[scheme]=stats.get(scheme,0)+1
 out_path.write_text(('\n'.join(ordered)+'\n') if ordered else '', encoding='utf-8')
-summary={'discovered_raw':len(all_nodes),'healthy_raw':len(healthy),'published_unique':len(ordered),'protocols':stats}
+summary={'discovered_raw':len(all_nodes),'healthy_raw':len(healthy),'published_unique':len(ordered),'protocols':stats,'unverified_discovered_not_published':max(0,len(all_nodes)-len(ordered))}
 (OUT/'publish-summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2),encoding='utf-8')
 print('PUBLISH MERGE:',json.dumps(summary,ensure_ascii=False))
-if all_nodes and not ordered: raise SystemExit('No valid discovered nodes found.')
+if all_nodes and not ordered: raise SystemExit('No node passed the real-egress health check; refusing to publish dead endpoints.')
