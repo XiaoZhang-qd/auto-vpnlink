@@ -20,10 +20,10 @@ on:
         type: string
   schedule:
     - cron: '15 2 * * *'
-      timezone: Asia/Shanghai
 
 permissions:
   contents: write
+
 concurrency:
   group: auto-vpnlink-update
   cancel-in-progress: true
@@ -35,7 +35,8 @@ jobs:
     timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
-        with: {fetch-depth: 1}
+        with:
+          fetch-depth: 1
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -56,13 +57,13 @@ jobs:
           print('SEARCH_LIMIT=',n)
           PY
       - name: Run multi-source scanner
-        env: {GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scanner.py
       - name: Widen protocol extraction
         run: python augment_protocols.py
       - name: Select CFW health-check pool
         env:
-          SEARCH_LIMIT: ${{ inputs.search_limit || '5000' }}
           HEALTH_CANDIDATES: ${{ inputs.health_candidate_limit || '300' }}
         run: |
           python - <<'PY'
@@ -76,11 +77,11 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p .bin
-          URL=$(curl -fsSL https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | python -c "import json,sys;d=json.load(sys.stdin);print(next((a['browser_download_url'] for a in d.get('assets',[]) if 'linux-amd64' in a['name'] and a['name'].endswith('.gz')),'')")
+          URL=$(curl -fsSL https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | python -c "import json,sys;d=json.load(sys.stdin);print(next((a['browser_download_url'] for a in d.get('assets',[]) if 'linux-amd64' in a['name'] and a['name'].endswith('.gz')),''))")
           test -n "$URL"
           curl -fL --retry 3 "$URL" -o .bin/mihomo.gz
           gzip -df .bin/mihomo.gz
-          test -f .bin/mihomo || { BIN=$(find .bin -maxdepth 1 -type f -name 'mihomo*' ! -name '*.gz' -print -quit);test -n "$BIN";mv "$BIN" .bin/mihomo; }
+          test -f .bin/mihomo || { BIN=$(find .bin -maxdepth 1 -type f -name 'mihomo*' ! -name '*.gz' -print -quit); test -n "$BIN"; mv "$BIN" .bin/mihomo; }
           chmod +x .bin/mihomo
           .bin/mihomo -v
       - name: Health-check CFW-compatible nodes
@@ -119,4 +120,4 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add output/
-          if git diff --cached --quiet;then echo 'No output changes.';else git commit -m 'auto: publish healthy VPN sources';git push origin HEAD:main;fi
+          if git diff --cached --quiet; then echo 'No output changes.'; else git commit -m 'auto: publish healthy VPN sources'; git push origin HEAD:main; fi
