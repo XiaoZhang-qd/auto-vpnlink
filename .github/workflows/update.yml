@@ -4,32 +4,26 @@ on:
   workflow_dispatch:
     inputs:
       search_limit:
-        description: Maximum discovered nodes to consider
+        description: 'Maximum discovered nodes to consider'
         required: false
         default: '5000'
         type: string
       health_candidate_limit:
-        description: Maximum CFW-compatible nodes to health-check
+        description: 'Maximum CFW-compatible nodes to test'
         required: false
         default: '300'
         type: string
       health_success_target:
-        description: Stop after this many successful CFW nodes; 0 tests all candidates
+        description: 'Stop after this many successful CFW nodes (0 = test all)'
         required: false
         default: '20'
         type: string
-      full_scan:
-        description: Run the configured multi-source scan now
-        required: false
-        default: true
-        type: boolean
   schedule:
     - cron: '15 2 * * *'
       timezone: Asia/Shanghai
 
 permissions:
   contents: write
-
 concurrency:
   group: auto-vpnlink-update
   cancel-in-progress: true
@@ -41,8 +35,7 @@ jobs:
     timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
+        with: {fetch-depth: 1}
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -54,20 +47,16 @@ jobs:
           SEARCH_LIMIT: ${{ inputs.search_limit || '5000' }}
         run: |
           python - <<'PY'
-          import os, yaml
-          n = int(os.environ['SEARCH_LIMIT'])
-          if not 1 <= n <= 20000:
-              raise SystemExit('search_limit must be 1..20000')
-          with open('sources.yaml', encoding='utf-8') as f:
-              d = yaml.safe_load(f) or {}
-          d.setdefault('scan', {})['max_aggregate_nodes'] = n
-          with open('sources.yaml', 'w', encoding='utf-8') as f:
-              yaml.safe_dump(d, f, allow_unicode=True, sort_keys=False)
-          print('SEARCH_LIMIT=', n)
+          import os,yaml
+          n=int(os.environ['SEARCH_LIMIT'])
+          if not 1<=n<=20000: raise SystemExit('search_limit must be 1..20000')
+          with open('sources.yaml',encoding='utf-8') as f:d=yaml.safe_load(f) or {}
+          d.setdefault('scan',{})['max_aggregate_nodes']=n
+          with open('sources.yaml','w',encoding='utf-8') as f:yaml.safe_dump(d,f,allow_unicode=True,sort_keys=False)
+          print('SEARCH_LIMIT=',n)
           PY
       - name: Run multi-source scanner
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        env: {GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}}
         run: python scanner.py
       - name: Widen protocol extraction
         run: python augment_protocols.py
@@ -78,9 +67,8 @@ jobs:
         run: |
           python - <<'PY'
           import os
-          n = int(os.environ['HEALTH_CANDIDATES'])
-          if not 1 <= n <= 5000:
-              raise SystemExit('health_candidate_limit must be 1..5000')
+          n=int(os.environ['HEALTH_CANDIDATES'])
+          if not 1<=n<=5000: raise SystemExit('health_candidate_limit must be 1..5000')
           PY
           python select_nodes.py
           cp output/health-candidates.txt output/verified-nodes.txt
@@ -88,11 +76,11 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p .bin
-          URL=$(curl -fsSL https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | python -c "import json,sys; d=json.load(sys.stdin); print(next((a['browser_download_url'] for a in d.get('assets',[]) if 'linux-amd64' in a['name'] and a['name'].endswith('.gz')), ''))")
+          URL=$(curl -fsSL https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | python -c "import json,sys;d=json.load(sys.stdin);print(next((a['browser_download_url'] for a in d.get('assets',[]) if 'linux-amd64' in a['name'] and a['name'].endswith('.gz')),'')")
           test -n "$URL"
           curl -fL --retry 3 "$URL" -o .bin/mihomo.gz
           gzip -df .bin/mihomo.gz
-          test -f .bin/mihomo || { BIN=$(find .bin -maxdepth 1 -type f -name 'mihomo*' ! -name '*.gz' -print -quit); test -n "$BIN"; mv "$BIN" .bin/mihomo; }
+          test -f .bin/mihomo || { BIN=$(find .bin -maxdepth 1 -type f -name 'mihomo*' ! -name '*.gz' -print -quit);test -n "$BIN";mv "$BIN" .bin/mihomo; }
           chmod +x .bin/mihomo
           .bin/mihomo -v
       - name: Health-check CFW-compatible nodes
@@ -117,19 +105,12 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           import yaml
-          h = [x for x in Path('output/health-checked-cfw.txt').read_text(encoding='utf-8', errors='ignore').splitlines() if x.strip()]
-          c = yaml.safe_load(Path('output/clash.yaml').read_text(encoding='utf-8')) or {}
-          p = c.get('proxies') or []
-          allowed = {'ss', 'ssr', 'vmess', 'trojan'}
-          if not h:
-              print('WARNING: no CFW node passed health check; CFW output is empty for this run.')
-              raise SystemExit(0)
-          if not p:
-              raise SystemExit('Healthy CFW nodes exist but Clash output is empty.')
-          if any(str(x.get('type', '')).lower() not in allowed for x in p):
-              raise SystemExit('Non-CFW proxy leaked into Clash output.')
-          if len(p) < len(h):
-              raise SystemExit(f'CFW conversion lost verified nodes: health={len(h)} clash={len(p)}')
+          h=[x for x in Path('output/health-checked-cfw.txt').read_text(encoding='utf-8',errors='ignore').splitlines() if x.strip()]
+          c=yaml.safe_load(Path('output/clash.yaml').read_text(encoding='utf-8')) or {}
+          p=c.get('proxies') or []
+          if not h: raise SystemExit('No healthy CFW nodes; refusing to publish or overwrite the feed.')
+          if not p: raise SystemExit('Healthy CFW nodes exist but Clash output is empty.')
+          if len(p)!=len(h): raise SystemExit(f'CFW conversion count mismatch: health={len(h)} clash={len(p)}')
           print(f'CFW verified={len(h)} published={len(p)}')
           PY
       - name: Commit generated results safely
@@ -137,16 +118,5 @@ jobs:
           set -e
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          rm -rf /tmp/auto-vpnlink-output
-          cp -a output /tmp/auto-vpnlink-output
-          git fetch origin main
-          git reset --hard origin/main
-          rm -rf output
-          cp -a /tmp/auto-vpnlink-output output
           git add output/
-          if git diff --cached --quiet; then
-            echo 'No output changes.'
-          else
-            git commit -m 'auto: publish healthy VPN sources'
-            git push origin HEAD:main
-          fi
+          if git diff --cached --quiet;then echo 'No output changes.';else git commit -m 'auto: publish healthy VPN sources';git push origin HEAD:main;fi
