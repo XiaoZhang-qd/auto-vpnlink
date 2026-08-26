@@ -9,25 +9,22 @@ on:
         default: '5000'
         type: string
       health_candidate_limit:
-        description: 'Maximum CFW-compatible nodes to test'
+        description: 'Maximum nodes to health-check'
         required: false
         default: '300'
         type: string
       health_success_target:
-        description: 'Stop after this many successful CFW nodes (0 = test all)'
+        description: 'Stop after this many successful nodes (0 = test all)'
         required: false
         default: '20'
         type: string
   schedule:
     - cron: '15 2 * * *'
-
 permissions:
   contents: write
-
 concurrency:
   group: auto-vpnlink-update
   cancel-in-progress: true
-
 jobs:
   scan:
     name: Scan, health-check and publish sources
@@ -35,15 +32,12 @@ jobs:
     timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
+        with: {fetch-depth: 1}
       - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-          cache: pip
+        with: {python-version: '3.12', cache: pip}
       - name: Install dependencies
         run: python -m pip install -r requirements.txt
-      - name: Apply run limits
+      - name: Apply search limit
         env:
           SEARCH_LIMIT: ${{ inputs.search_limit || '5000' }}
         run: |
@@ -54,16 +48,16 @@ jobs:
           with open('sources.yaml',encoding='utf-8') as f:d=yaml.safe_load(f) or {}
           d.setdefault('scan',{})['max_aggregate_nodes']=n
           with open('sources.yaml','w',encoding='utf-8') as f:yaml.safe_dump(d,f,allow_unicode=True,sort_keys=False)
-          print('SEARCH_LIMIT=',n)
           PY
-      - name: Run multi-source scanner
+      - name: Run scanner
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scanner.py
       - name: Widen protocol extraction
         run: python augment_protocols.py
-      - name: Select CFW health-check pool
+      - name: Select balanced health pool
         env:
+          SEARCH_LIMIT: ${{ inputs.search_limit || '5000' }}
           HEALTH_CANDIDATES: ${{ inputs.health_candidate_limit || '300' }}
         run: |
           python - <<'PY'
@@ -84,7 +78,7 @@ jobs:
           test -f .bin/mihomo || { BIN=$(find .bin -maxdepth 1 -type f -name 'mihomo*' ! -name '*.gz' -print -quit); test -n "$BIN"; mv "$BIN" .bin/mihomo; }
           chmod +x .bin/mihomo
           .bin/mihomo -v
-      - name: Health-check CFW-compatible nodes
+      - name: Health-check mixed protocols
         env:
           MIHOMO_BIN: ${{ github.workspace }}/.bin/mihomo
           HEALTHCHECK_MAX: ${{ inputs.health_candidate_limit || '300' }}
@@ -93,31 +87,30 @@ jobs:
           HEALTHCHECK_ROUNDS: '2'
           HEALTHCHECK_ROUND_DELAY: '1'
           HEALTHCHECK_MIN_PUBLIC_TESTS: '2'
-          HEALTHCHECK_TYPES: 'ss,trojan,vmess'
-          HEALTHCHECK_OUTPUT: health-checked-cfw.txt
-          HEALTHCHECK_REPORT: healthcheck-cfw.json
+          HEALTHCHECK_TYPES: 'ss,trojan,vmess,vless,hysteria2,hysteria,tuic'
+          HEALTHCHECK_OUTPUT: health-checked-all.txt
+          HEALTHCHECK_REPORT: healthcheck-all.json
         run: python healthcheck.py
-      - name: Publish outputs
+      - name: Publish all healthy protocols
         run: |
-          cp output/health-checked-cfw.txt output/health-checked-nodes.txt
+          cp output/health-checked-all.txt output/health-checked-nodes.txt
           python publish_outputs.py
-      - name: Validate CFW output
+      - name: Validate non-empty result
         run: |
           python - <<'PY'
           from pathlib import Path
           import yaml
-          h=[x for x in Path('output/health-checked-cfw.txt').read_text(encoding='utf-8',errors='ignore').splitlines() if x.strip()]
+          alln=[x for x in Path('output/health-checked-all.txt').read_text(encoding='utf-8',errors='ignore').splitlines() if x.strip()]
+          if not alln: raise SystemExit('No healthy nodes; refusing to overwrite the published feed.')
           c=yaml.safe_load(Path('output/clash.yaml').read_text(encoding='utf-8')) or {}
           p=c.get('proxies') or []
-          if not h: raise SystemExit('No healthy CFW nodes; refusing to publish or overwrite the feed.')
-          if not p: raise SystemExit('Healthy CFW nodes exist but Clash output is empty.')
-          if len(p)!=len(h): raise SystemExit(f'CFW conversion count mismatch: health={len(h)} clash={len(p)}')
-          print(f'CFW verified={len(h)} published={len(p)}')
+          if not p: raise SystemExit('Healthy nodes exist but Clash output is empty.')
+          print(f'healthy_all={len(alln)} clash_classic={len(p)}')
           PY
-      - name: Commit generated results safely
+      - name: Commit generated results
         run: |
           set -e
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add output/
-          if git diff --cached --quiet; then echo 'No output changes.'; else git commit -m 'auto: publish healthy VPN sources'; git push origin HEAD:main; fi
+          if git diff --cached --quiet; then echo 'No output changes.'; else git commit -m 'auto: publish healthy multi-protocol VPN sources'; git push origin HEAD:main; fi
