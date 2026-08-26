@@ -7,7 +7,6 @@ SCHEMES=('vless','vmess','trojan','ss','hysteria2','hysteria','hy2','tuic')
 CFW_SCHEMES=('ss','trojan','vmess')
 SEARCH_LIMIT=max(1,int(os.getenv('SEARCH_LIMIT','5000')))
 HEALTH_CANDIDATES=max(1,int(os.getenv('HEALTH_CANDIDATES','300')))
-# CFW-safe protocols only. Do not put protocols here that healthcheck/publish cannot consume.
 QUOTAS={'ss':.45,'trojan':.30,'vmess':.25}
 raw=Path('output/discovered-nodes.txt').read_text(encoding='utf-8',errors='ignore').splitlines()[:SEARCH_LIMIT]
 pat=re.compile(r"(?i)(?:vless|vmess|trojan|ss|hysteria2?|hy2|tuic)://[^\s<>\"'\\]+")
@@ -29,9 +28,10 @@ def fingerprint(n):
  if not n or not n.get('server') or not n.get('port') or not n.get('cred'):return None
  return hashlib.sha256(json.dumps(sorted((k,str(v)) for k,v in n.items()),ensure_ascii=False).encode()).hexdigest()
 def spread_pick(items,limit):
+ if limit<=0:return []
  if len(items)<=limit:return items
- step=(len(items)-1)/(limit-1) if limit>1 else 0
- return [items[round(i*step)] for i in range(limit)]
+ if limit==1:return [items[0]]
+ step=(len(items)-1)/(limit-1);return [items[round(i*step)] for i in range(limit)]
 buckets={s:[] for s in SCHEMES};seen=set();rejected=0
 for line in raw:
  for u in pat.findall(line):
@@ -42,26 +42,15 @@ for line in raw:
   if not fp or fp in seen:continue
   seen.add(fp);buckets[n['type']].append((u,n,fp))
 selected=[];remaining=HEALTH_CANDIDATES
-# Allocate only among protocols that the CFW converter and health checker actually support.
 for s in CFW_SCHEMES:
- want=round(HEALTH_CANDIDATES*QUOTAS[s])
- take=min(len(buckets[s]),want)
- chosen=spread_pick(buckets[s],take)
- selected.extend(chosen);remaining-=take
-used=set(x[2] for x in selected)
-# Fill unused slots with more CFW-compatible nodes only.
+ want=min(remaining,round(HEALTH_CANDIDATES*QUOTAS[s]));chosen=spread_pick(buckets[s],want);selected.extend(chosen);remaining-=len(chosen)
+used={x[2] for x in selected}
 for s in CFW_SCHEMES:
- pool=[x for x in buckets[s] if x[2] not in used]
- take=min(len(pool),remaining)
- chosen=spread_pick(pool,take)
- selected.extend(chosen);used.update(x[2] for x in chosen);remaining-=take
  if remaining<=0:break
+ pool=[x for x in buckets[s] if x[2] not in used];chosen=spread_pick(pool,remaining);selected.extend(chosen);used.update(x[2] for x in chosen);remaining-=len(chosen)
 selected=selected[:HEALTH_CANDIDATES]
 Path('output/health-candidates.txt').write_text('\n'.join(x[0] for x in selected)+('\n' if selected else ''),encoding='utf-8')
-Path('output/candidate-summary.json').write_text(json.dumps({'search_limit':SEARCH_LIMIT,'discovered_lines_considered':len(raw),'rejected_malformed':rejected,'unique_by_credentials':len(seen),'protocol_candidates':{s:len(buckets[s]) for s in SCHEMES},'health_candidate_limit':HEALTH_CANDIDATES,'selected':len(selected),'selected_protocols':{s:sum(1 for _,n,_ in selected if n['type']==s) for s in SCHEMES},'healthcheck_protocols':list(CFW_SCHEMES)},ensure_ascii=False,indent=2),encoding='utf-8')
-print('search_limit:',SEARCH_LIMIT)
-print('protocol candidates:',{s:len(buckets[s]) for s in SCHEMES})
-print('selected:',{s:sum(1 for _,n,_ in selected if n['type']==s) for s in SCHEMES})
-print('health candidates:',len(selected))
-if not selected:
- raise SystemExit('No CFW-compatible candidates found. Increase search_limit or add sources containing SS/Trojan/VMess nodes.')
+summary={'search_limit':SEARCH_LIMIT,'discovered_lines_considered':len(raw),'rejected_malformed':rejected,'unique_by_credentials':len(seen),'protocol_candidates':{s:len(buckets[s]) for s in SCHEMES},'health_candidate_limit':HEALTH_CANDIDATES,'selected':len(selected),'selected_protocols':{s:sum(1 for _,n,_ in selected if n['type']==s) for s in SCHEMES},'healthcheck_protocols':list(CFW_SCHEMES)}
+Path('output/candidate-summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2),encoding='utf-8')
+print('search_limit:',SEARCH_LIMIT);print('protocol candidates:',summary['protocol_candidates']);print('selected:',summary['selected_protocols']);print('health candidates:',len(selected))
+if not selected: print('WARNING: no CFW-compatible candidates in this search pool; CFW health output will be empty.')
