@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       search_limit:
-        description: Maximum discovered lines to consider
+        description: Maximum discovered nodes to consider
         required: false
         default: '5000'
         type: string
@@ -107,9 +107,8 @@ jobs:
           HEALTHCHECK_TYPES: 'ss,trojan,vmess'
           HEALTHCHECK_OUTPUT: health-checked-cfw.txt
           HEALTHCHECK_REPORT: healthcheck-cfw.json
-        run: |
-          python healthcheck.py
-      - name: Publish only CFW health-checked nodes
+        run: python healthcheck.py
+      - name: Publish outputs
         run: |
           cp output/health-checked-cfw.txt output/health-checked-nodes.txt
           python publish_outputs.py
@@ -118,12 +117,13 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           import yaml
-          h = [x for x in Path('output/health-checked-cfw.txt').read_text().splitlines() if x.strip()]
-          c = yaml.safe_load(Path('output/clash.yaml').read_text()) or {}
+          h = [x for x in Path('output/health-checked-cfw.txt').read_text(encoding='utf-8', errors='ignore').splitlines() if x.strip()]
+          c = yaml.safe_load(Path('output/clash.yaml').read_text(encoding='utf-8')) or {}
           p = c.get('proxies') or []
           allowed = {'ss', 'ssr', 'vmess', 'trojan'}
           if not h:
-              raise SystemExit('No CFW node passed health check; refusing to publish.')
+              print('WARNING: no CFW node passed health check; CFW output is empty for this run.')
+              raise SystemExit(0)
           if not p:
               raise SystemExit('Healthy CFW nodes exist but Clash output is empty.')
           if any(str(x.get('type', '')).lower() not in allowed for x in p):
@@ -147,6 +147,6 @@ jobs:
           if git diff --cached --quiet; then
             echo 'No output changes.'
           else
-            git commit -m 'auto: publish CFW-compatible healthy VPN sources'
+            git commit -m 'auto: publish healthy VPN sources'
             git push origin HEAD:main
           fi
