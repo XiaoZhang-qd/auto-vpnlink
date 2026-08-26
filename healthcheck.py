@@ -9,7 +9,7 @@ HEALTHY=OUT/os.getenv('HEALTHCHECK_OUTPUT','health-checked-nodes.txt'); REPORT=O
 MAX=max(1,int(os.getenv('HEALTHCHECK_MAX','120'))); SUCCESS_TARGET=max(0,int(os.getenv('HEALTHCHECK_SUCCESS_TARGET','0'))); TIMEOUT=int(os.getenv('HEALTHCHECK_TIMEOUT','12'))
 MIHOMO=os.getenv('MIHOMO_BIN',str(ROOT/'.bin/mihomo')); ROUNDS=max(1,int(os.getenv('HEALTHCHECK_ROUNDS','2'))); DELAY=float(os.getenv('HEALTHCHECK_ROUND_DELAY','1')); MIN_TESTS=max(1,int(os.getenv('HEALTHCHECK_MIN_PUBLIC_TESTS','2')))
 TEST_URLS=[x.strip() for x in os.getenv('HEALTHCHECK_URLS','https://www.gstatic.com/generate_204,https://cp.cloudflare.com/generate_204,https://www.google.com/generate_204').split(',') if x.strip()]; IP_URLS=['https://api.ipify.org','https://ifconfig.me/ip']
-ALLOWED={'ss','trojan','vmess'}; START=17890
+ALLOWED={'ss','trojan','vmess'}; CFW_SS_CIPHERS={'aes-128-gcm','aes-192-gcm','aes-256-gcm','chacha20-ietf-poly1305','xchacha20-ietf-poly1305'}; START=17890
 BAD_HOSTS={'example.com','example.org','example.net','localhost','localhost.localdomain','invalid','test','test.local'}; BAD_WORDS=('placeholder','example','changeme','your-server','your_server','server_ip','<server>','${','{{','}}')
 def free_port():
  for p in range(START,START+500):
@@ -90,6 +90,7 @@ def main():
   if not n:skipped+=1;continue
   typ=n.get('type','').lower()
   if typ not in ALLOWED:skipped+=1;continue
+  if typ=='ss' and str(n.get('cipher','')).lower() not in CFW_SS_CIPHERS:skipped+=1;continue
   f=fp(n)
   if f in seen:skipped+=1;continue
   seen.add(f);p=converter.clash(n);ok,reason=test(p,runner);results.append({'uri':u,'name':p['name'],'type':p['type'],'server':p['server'],'port':p['port'],'ok':ok,'reason':reason})
@@ -98,9 +99,7 @@ def main():
    if SUCCESS_TARGET>0 and len(good)>=SUCCESS_TARGET:
     print(f'HEALTHCHECK success target reached: {len(good)}/{SUCCESS_TARGET}',flush=True);break
   else:print(f'[{len(results)}/{limit}] FAIL {p["name"]} [{p["type"]}] ({reason})',flush=True)
- HEALTHY.write_text('\n'.join(good)+'\n' if good else '',encoding='utf-8');REPORT.write_text(json.dumps({'candidate_limit':limit,'tested':len(results),'skipped':skipped,'healthy':len(good),'failed':len(results)-len(good),'success_target':SUCCESS_TARGET,'target_reached':SUCCESS_TARGET>0 and len(good)>=SUCCESS_TARGET,'runner_public_ip':runner,'allowed_types':sorted(ALLOWED),'rounds':ROUNDS,'results':results},ensure_ascii=False,indent=2),encoding='utf-8')
+ HEALTHY.write_text('\n'.join(good)+'\n' if good else '',encoding='utf-8');REPORT.write_text(json.dumps({'candidate_limit':limit,'tested':len(results),'skipped':skipped,'healthy':len(good),'failed':len(results)-len(good),'success_target':SUCCESS_TARGET,'target_reached':SUCCESS_TARGET>0 and len(good)>=SUCCESS_TARGET,'runner_public_ip':runner,'allowed_types':sorted(ALLOWED),'cfw_ss_ciphers':sorted(CFW_SS_CIPHERS),'rounds':ROUNDS,'results':results},ensure_ascii=False,indent=2),encoding='utf-8')
  print(f'HEALTHCHECK output={HEALTHY.name} tested={len(results)} skipped={skipped} healthy={len(good)} target={SUCCESS_TARGET}',flush=True)
- # Empty CFW pool is a valid result of a small/poor search pool; do not publish unverified nodes,
- # but let the workflow finish so protocol-specific outputs can still be generated.
- if raw and not good: print('WARNING: no stable healthy CFW node found; CFW output will be empty.',flush=True)
+ if raw and not good:raise SystemExit('No stable healthy CFW nodes found; refusing to publish an empty CFW feed.')
 if __name__=='__main__':main()
