@@ -1,26 +1,33 @@
 {
-  "discovered_lines": 20001,
-  "rejected_malformed": 8654,
-  "unique_by_credentials": 3933,
+  "search_limit": 5000,
+  "discovered_lines_considered": 5000,
+  "rejected_malformed": 417,
+  "unique_by_credentials": 1490,
   "protocol_candidates": {
     "vless": 1,
     "vmess": 0,
-    "trojan": 2622,
-    "ss": 154,
-    "hysteria2": 1156,
+    "trojan": 0,
+    "ss": 0,
+    "hysteria2": 1489,
     "hysteria": 0,
     "hy2": 0,
     "tuic": 0
   },
-  "selected": 375,
+  "health_candidate_limit": 300,
+  "selected": 0,
   "selected_protocols": {
-    "vless": 1,
+    "vless": 0,
     "vmess": 0,
-    "trojan": 160,
-    "ss": 154,
-    "hysteria2": 60,
+    "trojan": 0,
+    "ss": 0,
+    "hysteria2": 0,
     "hysteria": 0,
     "hy2": 0,
     "tuic": 0
-  }
+  },
+  "healthcheck_protocols": [
+    "ss",
+    "trojan",
+    "vmess"
+  ]
 }

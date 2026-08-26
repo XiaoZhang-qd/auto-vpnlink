@@ -1,19 +1,13 @@
 {
-  "discovered": 40,
-  "healthy_first": 40,
-  "published_unique": 40,
-  "clash_proxies": 3,
-  "clash_filtered_cfw_incompatible": 37,
-  "clash_supported_types": [
+  "health_input": 0,
+  "cfw_healthy_parsed": 0,
+  "clash_proxies": 0,
+  "rejected_after_health": 0,
+  "protocols": {},
+  "cfw_types": [
     "ss",
     "ssr",
     "trojan",
     "vmess"
-  ],
-  "protocols": {
-    "ss": 40
-  },
-  "clash_verified_kept": 3,
-  "clash_unverified_kept": 0,
-  "clash_incompatible_removed": 0
+  ]
 }
