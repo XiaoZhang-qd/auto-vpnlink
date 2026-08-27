@@ -1,19 +1,22 @@
 #!/usr/bin/env python3
-"""Stable real-egress health check for CFW-compatible candidates."""
+"""Stable real-egress health check for all supported proxy protocols."""
 import hashlib,ipaddress,json,os,socket,subprocess,tempfile,time
 from pathlib import Path
 import requests,yaml
 import converter
 ROOT=Path(__file__).resolve().parent; OUT=ROOT/'output'; INPUT=OUT/'verified-nodes.txt'
 HEALTHY=OUT/os.getenv('HEALTHCHECK_OUTPUT','health-checked-nodes.txt'); REPORT=OUT/os.getenv('HEALTHCHECK_REPORT','healthcheck.json')
-MAX=max(1,int(os.getenv('HEALTHCHECK_MAX','120'))); SUCCESS_TARGET=max(0,int(os.getenv('HEALTHCHECK_SUCCESS_TARGET','0'))); TIMEOUT=int(os.getenv('HEALTHCHECK_TIMEOUT','12'))
+MAX=max(1,int(os.getenv('HEALTHCHECK_MAX','300'))); SUCCESS_TARGET=max(0,int(os.getenv('HEALTHCHECK_SUCCESS_TARGET','0'))); TIMEOUT=int(os.getenv('HEALTHCHECK_TIMEOUT','12'))
 MIHOMO=os.getenv('MIHOMO_BIN',str(ROOT/'.bin/mihomo')); ROUNDS=max(1,int(os.getenv('HEALTHCHECK_ROUNDS','2'))); DELAY=float(os.getenv('HEALTHCHECK_ROUND_DELAY','1')); MIN_TESTS=max(1,int(os.getenv('HEALTHCHECK_MIN_PUBLIC_TESTS','2')))
-TEST_URLS=[x.strip() for x in os.getenv('HEALTHCHECK_URLS','https://www.gstatic.com/generate_204,https://cp.cloudflare.com/generate_204,https://www.google.com/generate_204').split(',') if x.strip()]; IP_URLS=['https://api.ipify.org','https://ifconfig.me/ip']
-# These are the protocols published to the legacy Clash-for-Windows compatible profile.
-# VLESS/Hysteria2/TUIC remain available in their protocol-specific outputs and are not
-# falsely counted as CFW candidates.
-ALLOWED={'ss','trojan','vmess'}; START=17890
-BAD_HOSTS={'example.com','example.org','example.net','localhost','localhost.localdomain','invalid','test','test.local'}; BAD_WORDS=('placeholder','example','changeme','your-server','your_server','server_ip','<server>','${','{{','}}')
+TEST_URLS=[x.strip() for x in os.getenv('HEALTHCHECK_URLS','https://www.gstatic.com/generate_204,https://cp.cloudflare.com/generate_204,https://www.google.com/generate_204').split(',') if x.strip()]
+IP_URLS=['https://api.ipify.org','https://ifconfig.me/ip']
+# Health-check every protocol selected by select_nodes.py. Output compatibility is
+# decided later by publish_outputs.py; health-checking must never silently discard
+# modern protocols such as VLESS/Hysteria2/TUIC.
+ALLOWED={'ss','trojan','vmess','vless','hysteria2','hysteria','tuic'}
+START=17890
+BAD_HOSTS={'example.com','example.org','example.net','localhost','localhost.localdomain','invalid','test','test.local'}
+BAD_WORDS=('placeholder','example','changeme','your-server','your_server','server_ip','<server>','${','{{','}}')
 def free_port():
  for p in range(START,START+500):
   try:
@@ -61,7 +64,8 @@ def test(n,runner):
  with tempfile.TemporaryDirectory(prefix='avh-') as td:
   log=None
   try:
-   cfg={'mixed-port':port,'allow-lan':False,'mode':'rule','log-level':'error','ipv6':False,'proxies':[n],'rules':['MATCH,'+n['name']]};cp=Path(td)/'config.yaml';cp.write_text(yaml.safe_dump(cfg,allow_unicode=True,sort_keys=False),encoding='utf-8');log=open(Path(td)/'mihomo.log','w')
+   cfg={'mixed-port':port,'allow-lan':False,'mode':'rule','log-level':'error','ipv6':False,'proxies':[n],'rules':['MATCH,'+n['name']]}
+   cp=Path(td)/'config.yaml';cp.write_text(yaml.safe_dump(cfg,allow_unicode=True,sort_keys=False),encoding='utf-8');log=open(Path(td)/'mihomo.log','w')
    proc=subprocess.Popen([MIHOMO,'-d',td,'-f',str(cp)],stdout=log,stderr=subprocess.STDOUT);end=time.time()+10
    while time.time()<end:
     try:
@@ -82,31 +86,36 @@ def test(n,runner):
   finally:
    stop(proc)
    if log:log.close()
-def fp(n):return hashlib.sha256('|'.join(str(n.get(k,'')) for k in ('type','server','port','uuid','password','cipher','sni','flow','net','path','host')).encode()).hexdigest()
+def fp(n):return hashlib.sha256('|'.join(str(n.get(k,'')) for k in ('type','server','port','uuid','password','cipher','sni','flow','net','path','host','token')).encode()).hexdigest()
 def main():
  if not Path(MIHOMO).exists():raise SystemExit('Mihomo not found')
- raw=[x.strip() for x in INPUT.read_text(encoding='utf-8',errors='ignore').splitlines() if x.strip()] if INPUT.exists() else [];runner=direct_ip()
+ raw=[x.strip() for x in INPUT.read_text(encoding='utf-8',errors='ignore').splitlines() if x.strip()] if INPUT.exists() else []
+ runner=direct_ip()
  if not runner:raise SystemExit('Cannot determine runner public IP')
  good=[];seen=set();results=[];skipped=0;limit=min(len(raw),MAX)
  for i,u in enumerate(raw[:limit],1):
   n=converter.parse(u,i)
   if not n:skipped+=1;continue
   typ=n.get('type','').lower()
+  if typ=='hy2':typ='hysteria2'
   if typ not in ALLOWED:skipped+=1;continue
-  # Do not maintain a second SS-cipher allow-list here. Mihomo/converter is the
-  # authoritative parser; a cipher that parses and passes the real-egress test
-  # must not be rejected by a stale hard-coded list.
+  n['type']=typ
   f=fp(n)
   if f in seen:skipped+=1;continue
-  seen.add(f);p=converter.clash(n);ok,reason=test(p,runner);results.append({'uri':u,'name':p['name'],'type':p['type'],'server':p['server'],'port':p['port'],'ok':ok,'reason':reason})
+  seen.add(f)
+  try:p=converter.clash(n)
+  except Exception as e:
+   results.append({'uri':u,'name':str(n.get('name',f'node-{i}')),'type':typ,'ok':False,'reason':'conversion_error:'+type(e).__name__});print(f'[{len(results)}/{limit}] FAIL {u[:80]} [{typ}] (conversion_error)',flush=True);continue
+  try:ok,reason=test(p,runner)
+  except Exception as e:ok,reason=False,type(e).__name__
+  results.append({'uri':u,'name':p.get('name',f'node-{i}'),'type':typ,'server':p.get('server',''),'port':p.get('port',''),'ok':ok,'reason':reason})
   if ok:
-   good.append(u);print(f'[{len(results)}/{limit}] PASS {p["name"]} [{p["type"]}]',flush=True)
+   good.append(u);print(f'[{len(results)}/{limit}] PASS {p.get("name")} [{typ}]',flush=True)
    if SUCCESS_TARGET>0 and len(good)>=SUCCESS_TARGET:
     print(f'HEALTHCHECK success target reached: {len(good)}/{SUCCESS_TARGET}',flush=True);break
-  else:print(f'[{len(results)}/{limit}] FAIL {p["name"]} [{p["type"]}] ({reason})',flush=True)
- HEALTHY.write_text('\n'.join(good)+'\n' if good else '',encoding='utf-8');REPORT.write_text(json.dumps({'candidate_limit':limit,'tested':len(results),'skipped':skipped,'healthy':len(good),'failed':len(results)-len(good),'success_target':SUCCESS_TARGET,'target_reached':SUCCESS_TARGET>0 and len(good)>=SUCCESS_TARGET,'runner_public_ip':runner,'allowed_types':sorted(ALLOWED),'rounds':ROUNDS,'results':results},ensure_ascii=False,indent=2),encoding='utf-8')
+  else:print(f'[{len(results)}/{limit}] FAIL {p.get("name")} [{typ}] ({reason})',flush=True)
+ HEALTHY.write_text('\n'.join(good)+'\n' if good else '',encoding='utf-8')
+ REPORT.write_text(json.dumps({'candidate_limit':limit,'tested':len(results),'skipped':skipped,'healthy':len(good),'failed':len(results)-len(good),'success_target':SUCCESS_TARGET,'target_reached':SUCCESS_TARGET>0 and len(good)>=SUCCESS_TARGET,'runner_public_ip':runner,'allowed_types':sorted(ALLOWED),'rounds':ROUNDS,'results':results},ensure_ascii=False,indent=2),encoding='utf-8')
  print(f'HEALTHCHECK output={HEALTHY.name} tested={len(results)} skipped={skipped} healthy={len(good)} target={SUCCESS_TARGET}',flush=True)
- # An empty CFW pool is a valid result of the current search sources. Do not turn
- # it into an Action failure; protocol-specific outputs are still published.
- if not good: print('WARNING: no stable healthy CFW node found; CFW output will be empty for this run.',flush=True)
+ if not good:print('WARNING: no stable healthy node found; no new health-checked feed should replace the previous one.',flush=True)
 if __name__=='__main__':main()
