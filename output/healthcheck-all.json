@@ -1,12 +1,12 @@
 {
   "candidate_limit": 300,
-  "tested": 24,
+  "tested": 27,
   "skipped": 0,
   "healthy": 20,
-  "failed": 4,
+  "failed": 7,
   "success_target": 20,
   "target_reached": true,
-  "runner_public_ip": "4.246.134.180",
+  "runner_public_ip": "48.217.251.96",
   "allowed_types": [
     "hysteria",
     "hysteria2",
@@ -51,8 +51,8 @@
       "type": "ss",
       "server": "84.32.131.61",
       "port": 18610,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
+      "ok": false,
+      "reason": "no_proxied_public_ip"
     },
     {
       "uri": "ss://2022-blake3-aes-256-gcm:fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0%3D@167.150.100.115:27755#%F0%9F%87%B8%F0%9F%87%ACSG_1%7C234KB%2Fs",
@@ -132,8 +132,8 @@
       "type": "ss",
       "server": "152.70.21.245",
       "port": 59924,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
+      "ok": false,
+      "reason": "no_proxied_public_ip"
     },
     {
       "uri": "ss://2022-blake3-chacha20-poly1305:H5LrDLS1ArqUXKXbRpN8dmarMGQwfgKYkGb9M8Cgz%2Bc%3D@144.24.224.124:61312#%F0%9F%87%AC%F0%9F%87%A7GB_146%7C235KB%2Fs%7CA004-260618",
@@ -152,6 +152,15 @@
       "port": 61312,
       "ok": true,
       "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:KSTycVGjd3xduLQy+qjtbMoooeuMmJUs+MKs3ym39zg=@130.61.177.119:59924#@OutlineReleasedKey",
+      "name": "@OutlineReleasedKey",
+      "type": "ss",
+      "server": "130.61.177.119",
+      "port": 59924,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
     },
     {
       "uri": "ss://2022-blake3-chacha20-poly1305:Mr13%2FA%2FFrxRXiwl0%2FlVDceMyzGzsOg1SgX%2FhcIsDM5Q%3D@89.168.109.144:59924#%F0%9F%87%A9%F0%9F%87%AADE_124%7C83KB%2Fs%7CA004-260618",
@@ -231,6 +240,24 @@
       "type": "ss",
       "server": "137.131.145.140",
       "port": 59319,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:dhVHI56QN3701Oczms4YeUmlpgPOXJdrO2eG5%2FWZpcQ%3D@137.131.11.214:50356#%F0%9F%87%BA%F0%9F%87%B8US_544%7C230KB%2Fs%7CA004-260618",
+      "name": "🇺🇸US_544|230KB/s|A004-260618",
+      "type": "ss",
+      "server": "137.131.11.214",
+      "port": 50356,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:gJyfItkGGCfGmC41s%2B4qS%2Fc2sR8W9srwa1vC6fH179Q%3D@158.101.220.236:45819#%F0%9F%87%B3%F0%9F%87%B1NL_269%7C444KB%2Fs%7CR002-260618",
+      "name": "🇳🇱NL_269|444KB/s|R002-260618",
+      "type": "ss",
+      "server": "158.101.220.236",
+      "port": 45819,
       "ok": true,
       "reason": "internet_stable_real_egress"
     }

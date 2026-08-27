@@ -1,10 +1,11 @@
 {
-  "health_input": 3,
-  "cfw_healthy_parsed": 3,
-  "clash_proxies": 3,
+  "health_input": 20,
+  "healthy_total": 20,
+  "cfw_healthy_parsed": 20,
+  "clash_proxies": 20,
   "rejected_after_health": 0,
   "protocols": {
-    "ss": 3
+    "ss": 20
   },
   "cfw_types": [
     "ss",
