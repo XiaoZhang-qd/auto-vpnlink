@@ -15,7 +15,7 @@
 - 🌐 检查发现的订阅 URL 是否可访问、内容是否像有效订阅
 - 🔄 把发现到的节点聚合成客户端可用的输出
 - 🤖 GitHub Actions 每天自动更新
-- ▶️ 支持 Actions 手动更新
+- ▶️ 支持 Actions 手动更新，并可设置搜索/检测数量
 - 💾 自动提交最新 `output/`
 
 ## 🚀 最重要：直接使用生成的订阅
@@ -28,7 +28,7 @@ Action 成功运行后，`output/` 会自动更新。
 https://raw.githubusercontent.com/XiaoZhang-qd/auto-vpnlink/main/output/clash.yaml
 ```
 
-这是自动把发现到的 VLESS / VMess / Trojan / Shadowsocks 等 URI 转成 Clash/Mihomo YAML 后生成的文件。
+这是自动把发现到的节点转换成 Clash/Mihomo YAML 后生成的文件。
 
 ### Base64 节点列表
 
@@ -52,104 +52,140 @@ https://raw.githubusercontent.com/XiaoZhang-qd/auto-vpnlink/main/output/subscrip
 https://raw.githubusercontent.com/XiaoZhang-qd/auto-vpnlink/main/output/nodes.txt
 ```
 
-这里保存扫描时直接发现的 VLESS / VMess / SS / Trojan / Hysteria / TUIC URI。
+这里保存扫描时直接发现的节点 URI。
 
 ## 📁 输出文件
 
 ```text
 output/
 ├── clash.yaml              # ⭐ 聚合后的 Clash/Mihomo YAML
-├── clash-providers.yaml    # 已经是兼容订阅源的 Provider 列表
+├── clash-providers.yaml    # Provider 列表
 ├── base64.txt              # ⭐ 聚合节点 Base64
 ├── nodes.txt               # 原始节点 URI
 ├── subscriptions.txt       # 检测通过的订阅 URL
 ├── sources.json             # 完整来源、检测及统计信息
-└── summary.md              # 本次扫描摘要
+└── summary.md               # 本次扫描摘要
 ```
 
-### `clash.yaml`
+## ⚙️ 可以设置的数值
 
-这是项目最重要的聚合结果之一。程序会把直接发现的节点 URI 转换成 Clash/Mihomo `proxies`，并自动建立一个 `AUTO` url-test 分组。
+从 GitHub Actions 手动运行时，可以直接在 **Run workflow** 页面设置下面 5 个数值，不需要修改代码。
 
-> 不同协议的高级传输参数并不一定能从 URI 完整推断，因此这是自动聚合结果，不保证每个转换后的节点都能连接。
-
-### `clash-providers.yaml`
-
-对于原本就返回 Clash/Provider 风格配置的订阅地址，程序会保留其 URL，并生成 Provider 配置。
-
-### `base64.txt`
-
-聚合后的节点 URI Base64 编码结果。
-
-### `subscriptions.txt`
-
-经过 HTTP 检查并且内容看起来像订阅/节点数据的 URL 列表。
-
-### `sources.json`
-
-保存仓库来源、发现的 URL、检测结果以及统计信息，方便以后做网页/API 展示。
-
-## 🔎 默认搜索来源
-
-项目不会只搜索 `freevpn`，还会搜索 VPN、Proxy、Networking 和 DevOps 相关 Topic，例如：
+进入：
 
 ```text
-freevpn
-vpn-subscription
-proxy-list
-clash
-sing-box
-v2ray
-vless
-vmess
-shadowsocks
-trojan
-hysteria
-devops
-automation
-networking
+GitHub
+ → Actions
+ → Update VPN Sources
+ → Run workflow
 ```
 
-对于 `devops`、`automation`、`networking` 这类非常宽泛的 Topic，程序会进一步检查仓库名称和描述中的 VPN/Proxy 关键词，避免扫描大量无关仓库。
+### 1. `search_limit` — 搜索节点数量
 
-完整配置位于：
+控制本次最多处理多少个聚合发现节点。
+
+默认：`5000`
+
+范围：`1 ~ 20000`
+
+例如：
 
 ```text
-sources.yaml
+5000
 ```
 
-## 🌍 多 Git 平台
+搜索量越大，发现的节点通常越多，但扫描时间和后续检测时间也会增加。
 
-目前内置：
+### 2. `health_candidate_limit` — 普通健康检测候选数量
 
-- GitHub Topics
-- GitLab Topics
-- 额外公开 Git 仓库
+控制从搜索结果中最多拿多少个节点进入普通健康检测。
 
-你可以在 `sources.yaml` 添加 Topic，也可以加入额外仓库。
+默认：`300`
 
-```yaml
-extra_repositories:
-  - https://github.com/example/project.git
-  - https://gitlab.com/example/project.git
+范围：`1 ~ 5000`
+
+例如：
+
+```text
+300
 ```
 
-扫描器只读取文本/配置内容，**不会执行陌生仓库中的代码**。
+如果搜索到了 5000 个节点，并不代表会全部进行连接测试；这个参数用于限制健康检测规模。
 
-## ⚙️ 扫描限制
+### 3. `health_success_target` — 普通健康节点目标数量
 
-为了避免每天运行几十分钟甚至更久，扫描器采用限制策略：
+普通健康检测达到这个数量后即可停止继续检测。
 
-```yaml
-max_repositories_per_topic: 15
-max_files_per_repository: 20
-max_file_size: 800000
-max_subscription_checks: 300
-max_aggregate_nodes: 5000
-workers: 8
+默认：`20`
+
+设置为：
+
+```text
+20
 ```
 
-这样可以在数据量、GitHub API 请求和运行时间之间保持平衡。
+表示普通健康检测最多以获得 20 个通过节点为目标。
+
+如果设置为 `0`，表示不因为成功数量提前停止，继续检测候选池。
+
+### 4. `cfw_candidate_limit` — Clash for Windows 检测候选数量
+
+控制最多拿多少个 CFW 兼容协议节点进行专门检测。
+
+默认：`150`
+
+范围：`1 ~ 2000`
+
+目前 CFW 专用候选主要筛选：
+
+```text
+SS
+SSR
+VMess
+Trojan
+```
+
+### 5. `cfw_success_target` — CFW 健康节点目标数量
+
+控制 CFW 专用检测希望获得多少个通过节点。
+
+默认：`10`
+
+设置为：
+
+```text
+10
+```
+
+表示获得 10 个 CFW 健康节点后即可停止继续检测。
+
+如果设置为 `0`，表示检测全部 CFW 候选，不因成功数量提前停止。
+
+### ⭐ 推荐设置
+
+如果你想兼顾速度和节点数量，可以使用：
+
+```text
+搜索节点：       5000
+普通检测候选：   300
+普通成功目标：   20
+CFW检测候选：    150
+CFW成功目标：    10
+```
+
+如果 Action 运行太慢，可以降低：
+
+```text
+搜索节点：       2000
+普通检测候选：   100
+普通成功目标：   10
+CFW检测候选：    80
+CFW成功目标：    5
+```
+
+如果希望尽量多检测，可以提高候选数量；但数量越大，运行时间通常越长。
+
+> **注意：成功目标是停止条件，不是保证值。** 如果候选节点本身没有足够的可用节点，实际通过数量可能低于目标值。
 
 ## 🤖 GitHub Actions
 
@@ -159,7 +195,11 @@ Workflow：
 .github/workflows/update.yml
 ```
 
-每天北京时间 **10:15** 自动运行，也可以手动运行：
+每天北京时间 **10:15** 自动运行，也可以手动运行。
+
+### 手动运行
+
+打开：
 
 ```text
 GitHub
@@ -168,23 +208,31 @@ GitHub
  → Run workflow
 ```
 
+点击 **Run workflow** 后，可以填写上述数值，然后开始运行。
+
+如果没有看到 **Run workflow**，请确认当前打开的是仓库默认分支上的 `Update VPN Sources` workflow，并刷新 Actions 页面。
+
 Action 会：
 
 ```text
+设置搜索/检测数量
+        ↓
 发现来源
-   ↓
+        ↓
 扫描文件
-   ↓
+        ↓
 提取 URL / 节点
-   ↓
+        ↓
 去重
-   ↓
-检测订阅
-   ↓
+        ↓
+普通健康检测
+        ↓
+CFW 专用健康检测
+        ↓
 聚合节点
-   ↓
+        ↓
 生成 output/
-   ↓
+        ↓
 自动 commit + push
 ```
 
@@ -199,13 +247,13 @@ python scanner.py
 
 ## ⚠️ 关于“可用”
 
-这里的“可用”主要表示：
+健康检测主要是在 GitHub Actions runner 环境中进行连接和公网访问测试。
 
-1. URL 可以通过 HTTP/HTTPS 访问；
-2. 返回内容能够识别为订阅、节点 URI 或 Clash 配置；
-3. 对直接发现的节点，可以进行格式识别和聚合。
+因此：
 
-**这不等于实际 VPN 连接一定成功。** 免费节点可能很快失效、过期、限速或受到地区限制。
+> **GitHub Actions 检测通过，不等于节点在你的本地网络、地区或客户端中一定可以连接。**
+
+免费节点可能很快失效、过期、限速、限制地区或限制运营商。
 
 ## 🔐 安全
 
