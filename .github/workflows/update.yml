@@ -4,27 +4,27 @@ on:
   workflow_dispatch:
     inputs:
       search_limit:
-        description: 'Maximum discovered nodes to consider'
+        description: Maximum discovered nodes to consider
         required: false
         default: '5000'
         type: string
       health_candidate_limit:
-        description: 'Maximum nodes for general health-check'
+        description: Maximum nodes for general health check
         required: false
         default: '300'
         type: string
       health_success_target:
-        description: 'General healthy-node target (0 = test all)'
+        description: General healthy node target
         required: false
         default: '20'
         type: string
       cfw_candidate_limit:
-        description: 'Maximum CFW-compatible nodes to test'
+        description: Maximum CFW-compatible nodes to test
         required: false
         default: '150'
         type: string
       cfw_success_target:
-        description: 'CFW healthy-node target (0 = test all)'
+        description: CFW healthy node target
         required: false
         default: '10'
         type: string
@@ -44,56 +44,75 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 120
     steps:
-      - uses: actions/checkout@v4
-        with: {fetch-depth: 1}
-      - uses: actions/setup-python@v5
-        with: {python-version: '3.12', cache: pip}
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
       - name: Install dependencies
         run: python -m pip install -r requirements.txt
+
       - name: Apply search limit
-        env: {SEARCH_LIMIT: '${{ inputs.search_limit || '5000' }}'}
+        env:
+          SEARCH_LIMIT: ${{ inputs.search_limit || '5000' }}
         run: |
           python - <<'PY'
-          import os,yaml
-          n=int(os.environ['SEARCH_LIMIT'])
-          if not 1<=n<=20000: raise SystemExit('search_limit must be 1..20000')
-          with open('sources.yaml',encoding='utf-8') as f:d=yaml.safe_load(f) or {}
-          d.setdefault('scan',{})['max_aggregate_nodes']=n
-          with open('sources.yaml','w',encoding='utf-8') as f:yaml.safe_dump(d,f,allow_unicode=True,sort_keys=False)
+          import os, yaml
+          n = int(os.environ['SEARCH_LIMIT'])
+          if not 1 <= n <= 20000:
+              raise SystemExit('search_limit must be 1..20000')
+          with open('sources.yaml', encoding='utf-8') as f:
+              d = yaml.safe_load(f) or {}
+          d.setdefault('scan', {})['max_aggregate_nodes'] = n
+          with open('sources.yaml', 'w', encoding='utf-8') as f:
+              yaml.safe_dump(d, f, allow_unicode=True, sort_keys=False)
           PY
+
       - name: Run scanner
-        env: {GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'}
-        run: python scanner.py
-      - name: Widen protocol extraction
-        run: python augment_protocols.py
-      - name: Select mixed-protocol health pool
         env:
-          SEARCH_LIMIT: '${{ inputs.search_limit || '5000' }}'
-          HEALTH_CANDIDATES: '${{ inputs.health_candidate_limit || '300' }}'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scanner.py
+
+      - name: Extract additional protocols
+        run: python augment_protocols.py
+
+      - name: Select mixed-protocol candidates
+        env:
+          SEARCH_LIMIT: ${{ inputs.search_limit || '5000' }}
+          HEALTH_CANDIDATES: ${{ inputs.health_candidate_limit || '300' }}
         run: |
           python - <<'PY'
           import os
-          n=int(os.environ['HEALTH_CANDIDATES'])
-          if not 1<=n<=5000: raise SystemExit('health_candidate_limit must be 1..5000')
+          n = int(os.environ['HEALTH_CANDIDATES'])
+          if not 1 <= n <= 5000:
+              raise SystemExit('health_candidate_limit must be 1..5000')
           PY
           python select_nodes.py
           cp output/health-candidates.txt output/verified-nodes.txt
+
       - name: Install Mihomo
         run: |
           set -euo pipefail
           mkdir -p .bin
-          URL=$(curl -fsSL https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | python -c "import json,sys;d=json.load(sys.stdin);print(next((a['browser_download_url'] for a in d.get('assets',[]) if 'linux-amd64' in a['name'] and a['name'].endswith('.gz')),''))")
+          URL=$(curl -fsSL https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | python -c "import json,sys; d=json.load(sys.stdin); print(next((a['browser_download_url'] for a in d.get('assets',[]) if 'linux-amd64' in a['name'] and a['name'].endswith('.gz')), ''))")
           test -n "$URL"
           curl -fL --retry 3 "$URL" -o .bin/mihomo.gz
           gzip -df .bin/mihomo.gz
           test -f .bin/mihomo || { BIN=$(find .bin -maxdepth 1 -type f -name 'mihomo*' ! -name '*.gz' -print -quit); test -n "$BIN"; mv "$BIN" .bin/mihomo; }
           chmod +x .bin/mihomo
           .bin/mihomo -v
-      - name: Health-check mixed protocols
+
+      - name: General health check
         env:
-          MIHOMO_BIN: '${{ github.workspace }}/.bin/mihomo'
-          HEALTHCHECK_MAX: '${{ inputs.health_candidate_limit || '300' }}'
-          HEALTHCHECK_SUCCESS_TARGET: '${{ inputs.health_success_target || '20' }}'
+          MIHOMO_BIN: ${{ github.workspace }}/.bin/mihomo
+          HEALTHCHECK_MAX: ${{ inputs.health_candidate_limit || '300' }}
+          HEALTHCHECK_SUCCESS_TARGET: ${{ inputs.health_success_target || '20' }}
           HEALTHCHECK_TIMEOUT: '12'
           HEALTHCHECK_ROUNDS: '2'
           HEALTHCHECK_ROUND_DELAY: '1'
@@ -101,29 +120,34 @@ jobs:
           HEALTHCHECK_OUTPUT: health-checked-all.txt
           HEALTHCHECK_REPORT: healthcheck-all.json
         run: python healthcheck.py
-      - name: Select CFW-compatible candidates
+
+      - name: Select CFW candidates
         env:
-          CFW_CANDIDATES: '${{ inputs.cfw_candidate_limit || '150' }}'
+          CFW_CANDIDATES: ${{ inputs.cfw_candidate_limit || '150' }}
         run: |
           python - <<'PY'
           from pathlib import Path
           import os
-          n=int(os.environ['CFW_CANDIDATES'])
-          if not 1<=n<=2000: raise SystemExit('cfw_candidate_limit must be 1..2000')
-          src=Path('output/health-candidates.txt').read_text(encoding='utf-8',errors='ignore').splitlines()
-          classic=[]
+          n = int(os.environ['CFW_CANDIDATES'])
+          if not 1 <= n <= 2000:
+              raise SystemExit('cfw_candidate_limit must be 1..2000')
+          src = Path('output/health-candidates.txt').read_text(encoding='utf-8', errors='ignore').splitlines()
+          classic = []
           for u in src:
-              s=u.split('://',1)[0].lower() if '://' in u else ''
-              if s in {'ss','ssr','vmess','trojan'}: classic.append(u.strip())
-          Path('output/verified-nodes.txt').write_text('\n'.join(classic[:n])+'\n' if classic else '',encoding='utf-8')
-          print(f'CFW candidates selected: {min(len(classic),n)} / available {len(classic)}')
-          if not classic: raise SystemExit('No CFW-compatible candidates were found.')
+              scheme = u.split('://', 1)[0].lower() if '://' in u else ''
+              if scheme in {'ss', 'ssr', 'vmess', 'trojan'}:
+                  classic.append(u.strip())
+          Path('output/verified-nodes.txt').write_text('\n'.join(classic[:n]) + ('\n' if classic else ''), encoding='utf-8')
+          print(f'CFW candidates selected: {min(len(classic), n)} / available {len(classic)}')
+          if not classic:
+              raise SystemExit('No CFW-compatible candidates were found.')
           PY
-      - name: Health-check CFW-compatible nodes
+
+      - name: CFW health check
         env:
-          MIHOMO_BIN: '${{ github.workspace }}/.bin/mihomo'
-          HEALTHCHECK_MAX: '${{ inputs.cfw_candidate_limit || '150' }}'
-          HEALTHCHECK_SUCCESS_TARGET: '${{ inputs.cfw_success_target || '10' }}'
+          MIHOMO_BIN: ${{ github.workspace }}/.bin/mihomo
+          HEALTHCHECK_MAX: ${{ inputs.cfw_candidate_limit || '150' }}
+          HEALTHCHECK_SUCCESS_TARGET: ${{ inputs.cfw_success_target || '10' }}
           HEALTHCHECK_TIMEOUT: '15'
           HEALTHCHECK_ROUNDS: '3'
           HEALTHCHECK_ROUND_DELAY: '1'
@@ -131,28 +155,37 @@ jobs:
           HEALTHCHECK_OUTPUT: health-checked-cfw.txt
           HEALTHCHECK_REPORT: healthcheck-cfw.json
         run: python healthcheck.py
+
       - name: Publish outputs
         run: |
           cp output/health-checked-all.txt output/health-checked-nodes.txt
           python publish_outputs.py
-      - name: Validate published feeds
+
+      - name: Validate outputs
         run: |
           python - <<'PY'
           from pathlib import Path
           import yaml
-          alln=[x for x in Path('output/health-checked-all.txt').read_text(encoding='utf-8',errors='ignore').splitlines() if x.strip()]
-          cfw=[x for x in Path('output/health-checked-cfw.txt').read_text(encoding='utf-8',errors='ignore').splitlines() if x.strip()]
-          c=yaml.safe_load(Path('output/clash.yaml').read_text(encoding='utf-8')) or {}
-          p=c.get('proxies') or []
-          if not alln: raise SystemExit('No generally healthy nodes; refusing to publish an empty result.')
-          if not cfw: raise SystemExit('No CFW-healthy nodes; refusing to publish a CFW feed that would not be usable.')
-          if not p: raise SystemExit('CFW-healthy nodes exist but Clash output is empty.')
-          print(f'general_healthy={len(alln)} cfw_healthy={len(cfw)} clash_proxies={len(p)}')
+          alln = [x for x in Path('output/health-checked-all.txt').read_text(encoding='utf-8', errors='ignore').splitlines() if x.strip()]
+          cfw = [x for x in Path('output/health-checked-cfw.txt').read_text(encoding='utf-8', errors='ignore').splitlines() if x.strip()]
+          cfg = yaml.safe_load(Path('output/clash.yaml').read_text(encoding='utf-8')) or {}
+          proxies = cfg.get('proxies') or []
+          print(f'general_healthy={len(alln)} cfw_healthy={len(cfw)} clash_proxies={len(proxies)}')
+          if not alln:
+              raise SystemExit('No generally healthy nodes; refusing to publish empty results.')
+          if not cfw or not proxies:
+              raise SystemExit('No CFW-healthy nodes; refusing to publish unusable CFW output.')
           PY
+
       - name: Commit generated results
         run: |
           set -e
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add output/
-          if git diff --cached --quiet; then echo 'No output changes.'; else git commit -m 'auto: publish health-checked VPN sources'; git push origin HEAD:main; fi
+          if git diff --cached --quiet; then
+            echo 'No output changes.'
+          else
+            git commit -m 'auto: publish health-checked VPN sources'
+            git push origin HEAD:main
+          fi
