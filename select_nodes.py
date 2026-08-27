@@ -5,8 +5,7 @@ from urllib.parse import urlparse,parse_qs,unquote
 SCHEMES=('vless','vmess','trojan','ss','hysteria2','hysteria','hy2','tuic')
 SEARCH_LIMIT=max(1,int(os.getenv('SEARCH_LIMIT','5000')))
 HEALTH_CANDIDATES=max(1,int(os.getenv('HEALTH_CANDIDATES','300')))
-LEGACY_SS_CIPHERS={'aes-128-gcm','aes-256-gcm','chacha20-ietf-poly1305','chacha20-ietf','aes-128-cfb','aes-192-cfb','aes-256-cfb','rc4-md5'}
-QUOTAS={'ss':.20,'trojan':.15,'vmess':.15,'vless':.15,'hysteria2':.25,'hysteria':.05,'tuic':.05}
+QUOTAS={'ss':.15,'trojan':.15,'vmess':.10,'vless':.20,'hysteria2':.30,'hysteria':.05,'tuic':.05}
 raw=Path('output/discovered-nodes.txt').read_text(encoding='utf-8',errors='ignore').splitlines()[:SEARCH_LIMIT]
 pat=re.compile(r"(?i)(?:vless|vmess|trojan|ss|hysteria2?|hy2|tuic)://[^\s<>\"'\\]+")
 def b64(s):
@@ -23,6 +22,7 @@ def parse(u):
   if s in ('hysteria2','hysteria','hy2'):return {'type':'hysteria2','server':(p.hostname or '').lower(),'port':p.port or 443,'cred':unquote(p.username or ''),'sni':q.get('sni') or p.hostname or ''}
   if s=='tuic':return {'type':'tuic','server':(p.hostname or '').lower(),'port':p.port or 443,'cred':unquote(p.username or '')+':'+unquote(p.password or '')}
  except Exception:return None
+
 def fingerprint(n):
  if not n or not n.get('server') or not n.get('port') or not n.get('cred'):return None
  return hashlib.sha256(json.dumps(sorted((k,str(v)) for k,v in n.items()),ensure_ascii=False).encode()).hexdigest()
@@ -31,20 +31,18 @@ def spread_pick(items,limit):
  if len(items)<=limit:return items
  if limit==1:return [items[0]]
  step=(len(items)-1)/(limit-1);return [items[round(i*step)] for i in range(limit)]
-buckets={s:[] for s in SCHEMES};seen=set();rejected=0;modern_only=0
+buckets={s:[] for s in SCHEMES};seen=set();rejected=0
 for line in raw:
  for u in pat.findall(line):
   u=u.strip().rstrip('.,;!?)]}')
   n=parse(u)
   if not n or n['type'] not in buckets:rejected+=1;continue
-  if n['type']=='ss' and n.get('cipher','').lower() not in LEGACY_SS_CIPHERS:
-   modern_only+=1;continue
-  fp=fingerprint(n)
-  if not fp or fp in seen:continue
-  seen.add(fp);buckets[n['type']].append((u,n,fp))
+  f=fingerprint(n)
+  if not f or f in seen:continue
+  seen.add(f);buckets[n['type']].append((u,n,f))
 selected=[];used=set()
 for s,q in QUOTAS.items():
- want=min(len(buckets[s]),max(0,round(HEALTH_CANDIDATES*q)))
+ want=min(len(buckets[s]),round(HEALTH_CANDIDATES*q))
  chosen=spread_pick(buckets[s],want);selected.extend(chosen);used.update(x[2] for x in chosen)
 remaining=HEALTH_CANDIDATES-len(selected)
 if remaining>0:
@@ -52,10 +50,7 @@ if remaining>0:
  selected.extend(spread_pick(pool,remaining))
 selected=selected[:HEALTH_CANDIDATES]
 Path('output/health-candidates.txt').write_text('\n'.join(x[0] for x in selected)+('\n' if selected else ''),encoding='utf-8')
-summary={'search_limit':SEARCH_LIMIT,'discovered_lines_considered':len(raw),'rejected_malformed':rejected,'ss2022_excluded_from_health':modern_only,'unique_candidates':len(seen),'protocol_candidates':{s:len(buckets[s]) for s in SCHEMES},'health_candidate_limit':HEALTH_CANDIDATES,'selected':len(selected),'selected_protocols':{s:sum(1 for _,n,_ in selected if n['type']==s) for s in SCHEMES},'healthcheck_protocols':list(SCHEMES)}
+summary={'search_limit':SEARCH_LIMIT,'discovered_lines_considered':len(raw),'rejected_malformed':rejected,'unique_candidates':len(seen),'protocol_candidates':{s:len(buckets[s]) for s in SCHEMES},'health_candidate_limit':HEALTH_CANDIDATES,'selected':len(selected),'selected_protocols':{s:sum(1 for _,n,_ in selected if n['type']==s) for s in SCHEMES}}
 Path('output/candidate-summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2),encoding='utf-8')
-print('search_limit:',SEARCH_LIMIT)
-print('protocol candidates:',summary['protocol_candidates'])
-print('selected:',summary['selected_protocols'])
-print('health candidates:',len(selected))
+print('search_limit:',SEARCH_LIMIT);print('protocol candidates:',summary['protocol_candidates']);print('selected:',summary['selected_protocols']);print('health candidates:',len(selected))
 if not selected:raise SystemExit('No parseable proxy candidates found.')
