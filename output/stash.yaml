@@ -3,14 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇦CA_25|188KB/s|A004-260618
-  type: ss
-  server: 209.200.246.182
-  port: 11994
-  cipher: 2022-blake3-aes-256-gcm
-  password: NTQwZmFlZTcwZWY1NDNiYzg3ZDJlMzlkN2RiNmYyMTc=:ZDA0ZjRiMzIxNDc5NDQ5ZmFlODQxNGJhZGE4NWIzY2Q=
-  udp: true
-- name: 🇩🇪DE_102|155KB/s|A004-260618
+- name: ss-1
   type: ss
   server: 146.103.42.161
   port: 13528
@@ -24,42 +17,63 @@ proxies:
   cipher: 2022-blake3-aes-256-gcm
   password: Zjc0N2QyYTkyNzc2NGRiZDhjY2NjYTU5Mzk2N2NkOTk=:YmNhN2UyNzdlNTg3NGFkMjkxNGY4ZjEzYWM2MzQ2NGQ=
   udp: true
-- name: 🇹🇷TR - udptoos.com
+- name: 🇸🇬SG
   type: ss
-  server: 176.53.17.241
-  port: 1943
+  server: 167.150.100.115
+  port: 27755
   cipher: 2022-blake3-aes-256-gcm
-  password: f2Nq5YLnyclPaWR8my7/Vdd3ZX8URncXZNly5+HcUSs=:aE6MxBTe+MXHd9HoF2FF/BzKFqGTReMpMevlQhvsu0s=
+  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
   udp: true
-- name: '@Alirewa-548'
+- name: 🇩🇪 | @WhiteDNS | DE767|6.7MB/s|DNSOK|GPT⁺-DE
   type: ss
-  server: 168.107.84.248
+  server: 158.180.50.45
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 0x6PTrJCGMD7Pz0EQnpRsIKEJ3Cy55hPKAAgJiA58ic=
+  udp: true
+- name: BR
+  type: ss
+  server: 163.176.246.48
+  port: 59319
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 3CoIkS9kkeoyGQsy7tQD19IGQJdvwu76tTKyalr7mKs=
+  udp: true
+- name: SG
+  type: ss
+  server: 161.118.192.95
   port: 56927
   cipher: 2022-blake3-chacha20-poly1305
-  password: 8s5JiHfMgqSeLxMJ02iVSqXInUhq+NrPwp0xLc8jPAU=
+  password: BCDH0Tlfr/BNjkqN2UQomOnyAPPNz0fBgahXvK9bWoI=
   udp: true
-- name: 🇳🇱NL_191|348KB/s|R002-260618
+- name: NL
   type: ss
   server: 158.178.145.228
   port: 45819
   cipher: 2022-blake3-chacha20-poly1305
   password: CJ8sy9+BNgte31Srss4YriGMgNgBhdBf5sNdJmX0znI=
   udp: true
-- name: 🇩🇪DE_115|170KB/s|A004-260618
+- name: BR [2]
   type: ss
-  server: 130.61.112.159
-  port: 59924
+  server: 163.176.109.96
+  port: 59319
   cipher: 2022-blake3-chacha20-poly1305
-  password: bvCkSd0HaT0nf8vHPqnmKB99UkYYDw9XatMo6BhujmE=
+  password: GpR2lRnHziihfZak1z1Vcma+zi01kBqnd86vJ0wdfJA=
   udp: true
-- name: 🇳🇱NL_190|220KB/s|A004-260618
+- name: NL [2]
+  type: ss
+  server: 141.148.227.92
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: KXH1wvyRSEvM9nM+k1Twlar5OyguGkr5VdW7mi/q934=
+  udp: true
+- name: 📍62@oneclickvpnkeys
   type: ss
   server: 141.148.241.211
   port: 45819
   cipher: 2022-blake3-chacha20-poly1305
   password: k//4bvSvtf5XFTJVWWSaOHAr/631ZWJzHo4vSOObpQU=
   udp: true
-- name: NL
+- name: NL [3]
   type: ss
   server: 152.70.59.243
   port: 45819
@@ -70,15 +84,17 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇨🇦CA_25|188KB/s|A004-260618
-  - 🇩🇪DE_102|155KB/s|A004-260618
+  - ss-1
   - US
-  - 🇹🇷TR - udptoos.com
-  - '@Alirewa-548'
-  - 🇳🇱NL_191|348KB/s|R002-260618
-  - 🇩🇪DE_115|170KB/s|A004-260618
-  - 🇳🇱NL_190|220KB/s|A004-260618
+  - 🇸🇬SG
+  - 🇩🇪 | @WhiteDNS | DE767|6.7MB/s|DNSOK|GPT⁺-DE
+  - BR
+  - SG
   - NL
+  - BR [2]
+  - NL [2]
+  - 📍62@oneclickvpnkeys
+  - NL [3]
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
