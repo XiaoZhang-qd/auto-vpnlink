@@ -1,12 +1,12 @@
 {
-  "candidate_limit": 35,
-  "tested": 32,
+  "candidate_limit": 47,
+  "tested": 21,
   "skipped": 0,
   "healthy": 10,
-  "failed": 22,
+  "failed": 11,
   "success_target": 10,
   "target_reached": true,
-  "runner_public_ip": "52.161.82.98",
+  "runner_public_ip": "20.189.179.84",
   "allowed_types": [
     "hysteria",
     "hysteria2",
@@ -19,44 +19,17 @@
   "rounds": 3,
   "results": [
     {
-      "uri": "ss://2022-blake3-aes-128-gcm:bM7oNtOWU6N4CgenbB+W7g==%3Aj+ddudexkbstk2A3x7+t6w==@plusgum.lol:888#🇮🇷IR",
-      "name": "🇮🇷IR",
+      "uri": "ss://2022-blake3-aes-256-gcm:NTQwZmFlZTcwZWY1NDNiYzg3ZDJlMzlkN2RiNmYyMTc%3D%3AZDA0ZjRiMzIxNDc5NDQ5ZmFlODQxNGJhZGE4NWIzY2Q%3D@209.200.246.182:11994#@DeltaKroneckerGithub",
+      "name": "@DeltaKroneckerGithub",
       "type": "ss",
-      "server": "plusgum.lol",
-      "port": 888,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
+      "server": "209.200.246.182",
+      "port": 11994,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-aes-256-gcm:S5RCI6gJ6SUOcdnNpcEgR1UVzid+8O8%2F+DceUSHDnFs=%3AiffgdPSR8g75t49n3xCb9+OG2WGJTjUhohpPoHNT598=@94.101.184.47:2052#🇮🇷IR",
-      "name": "🇮🇷IR",
-      "type": "ss",
-      "server": "94.101.184.47",
-      "port": 2052,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://2022-blake3-aes-256-gcm:X0xJs7Bn4yXxePbQhfsKqc0CiAi5a7tcV6GFPCyYWn4=%3ALiWM+H+SWMrNnYZiOjpmOzWMW0BMYCBrLC57O5Ub+Ns=@212.118.42.181:9260#🇳🇱NL",
-      "name": "🇳🇱NL",
-      "type": "ss",
-      "server": "212.118.42.181",
-      "port": 9260,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://2022-blake3-aes-256-gcm:Y3d%2FU+Mnf%2FAFCWfEzhfkRdj1lyABKYAhtsSu0as4J7Y=%3AoDP3MkVxf8vLBY6xD+99RsR3055CcoNeUnmS4NulKbE=@vip7.ez0535.com:443#🇮🇷IR",
-      "name": "🇮🇷IR",
-      "type": "ss",
-      "server": "vip7.ez0535.com",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://2022-blake3-aes-256-gcm:YzYyNDkxZmJmM2MwNDYwYjk5MmE2NDU1YzIwODJhNDY=:ZTcwOTk4NjRiMTEwNDkzYzk1NDE0YTQ2MzhkYzgyOTk=@146.103.42.161:13528#",
-      "name": "ss-5",
+      "uri": "ss://2022-blake3-aes-256-gcm:YzYyNDkxZmJmM2MwNDYwYjk5MmE2NDU1YzIwODJhNDY%3D%3AZTcwOTk4NjRiMTEwNDkzYzk1NDE0YTQ2MzhkYzgyOTk%3D@146.103.42.161:13528#@DeltaKroneckerGithub",
+      "name": "@DeltaKroneckerGithub",
       "type": "ss",
       "server": "146.103.42.161",
       "port": 13528,
@@ -64,8 +37,8 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://2022-blake3-aes-256-gcm:Zjc0N2QyYTkyNzc2NGRiZDhjY2NjYTU5Mzk2N2NkOTk%3D%3AYmNhN2UyNzdlNTg3NGFkMjkxNGY4ZjEzYWM2MzQ2NGQ%3D@84.32.131.61:18610#US",
-      "name": "US",
+      "uri": "ss://2022-blake3-aes-256-gcm:Zjc0N2QyYTkyNzc2NGRiZDhjY2NjYTU5Mzk2N2NkOTk%3D%3AYmNhN2UyNzdlNTg3NGFkMjkxNGY4ZjEzYWM2MzQ2NGQ%3D@84.32.131.61:18610#%F0%9F%87%BA%F0%9F%87%B8US_615%7C241KB%2Fs%7CA004-260618",
+      "name": "🇺🇸US_615|241KB/s|A004-260618",
       "type": "ss",
       "server": "84.32.131.61",
       "port": 18610,
@@ -73,35 +46,35 @@
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-aes-256-gcm:fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=@167.150.100.115:27755#🇸🇬SG",
-      "name": "🇸🇬SG",
+      "uri": "ss://2022-blake3-aes-256-gcm:pRCipSixOSlsNAigMmwfYttz5VmVznoCYX4Pw1G4LxM%3D%3Aovtz25KfnF29DC8nL8tMIpBaQuGoUupwCRQIZUHECks%3D@195.201.32.108:8083#%F0%9F%92%BB%20Channel%20%F0%9F%86%94%20:%20@AlienVPN402%20%F0%9F%91%BD",
+      "name": "💻 Channel 🆔 : @AlienVPN402 👽",
       "type": "ss",
-      "server": "167.150.100.115",
-      "port": 27755,
+      "server": "195.201.32.108",
+      "port": 8083,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:%2BbhEnWZqjW%2BQbD1aRHzw9z6Fidbt3P4eSRZXzDq%2B5uY%3D@134.65.57.137:61312#GB",
+      "name": "GB",
+      "type": "ss",
+      "server": "134.65.57.137",
+      "port": 61312,
       "ok": true,
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-aes-256-gcm:pZ4+ZusaghoksCUR75L2TVQ0zFPugWwgpuDpyXzxmcc=%3AT%2FAUs%2FpwM3AdqwXln0rP0YiJt7eqM+gHnUAlUJlQaDA=@188.34.194.165:80#🇩🇪DE",
-      "name": "🇩🇪DE",
+      "uri": "ss://2022-blake3-chacha20-poly1305:+BXznBY4AqrONsReXQgZFKciLBMV6V7cb9UulXYMwAA=@168.107.65.172:56927#%F0%9F%87%B8%F0%9F%87%ACSG_127%7C424KB%2Fs%7CA004-260618%2001",
+      "name": "🇸🇬SG_127|424KB/s|A004-260618 01",
       "type": "ss",
-      "server": "188.34.194.165",
-      "port": 80,
+      "server": "168.107.65.172",
+      "port": 56927,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://2022-blake3-aes-256-gcm:vKQ88lDGHQ3AT/1Q0MFXtNIPe5wpgcaOP%2B8hGdAKGSY=:wNgd/azFXW6lXalq4vi5MgzyDuc6R1UZRdmuQMg9hPs=@91.107.155.9:44295#@DeltaKroneckerGithub",
+      "uri": "ss://2022-blake3-chacha20-poly1305:0x6PTrJCGMD7Pz0EQnpRsIKEJ3Cy55hPKAAgJiA58ic%3D@158.180.50.45:59924#@DeltaKroneckerGithub",
       "name": "@DeltaKroneckerGithub",
-      "type": "ss",
-      "server": "91.107.155.9",
-      "port": 44295,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:0x6PTrJCGMD7Pz0EQnpRsIKEJ3Cy55hPKAAgJiA58ic=@158.180.50.45:59924#%F0%9F%87%A9%F0%9F%87%AA%20%7C%20@WhiteDNS%20%7C%20DE767%7C6.7MB/s%7CDNSOK%7CGPT%E2%81%BA-DE",
-      "name": "🇩🇪 | @WhiteDNS | DE767|6.7MB/s|DNSOK|GPT⁺-DE",
       "type": "ss",
       "server": "158.180.50.45",
       "port": 59924,
@@ -109,20 +82,29 @@
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:3CoIkS9kkeoyGQsy7tQD19IGQJdvwu76tTKyalr7mKs%3D@163.176.246.48:59319#BR",
-      "name": "BR",
+      "uri": "ss://2022-blake3-chacha20-poly1305:4MhKF4RF8BxnWHiNv/M3wK+Himna7l+B8sv4wGwjCg4=@64.181.186.88:59319#%F0%9F%87%A7%F0%9F%87%B7BR_17%7C285KB%2Fs%7CA004-260618%2001",
+      "name": "🇧🇷BR_17|285KB/s|A004-260618 01",
       "type": "ss",
-      "server": "163.176.246.48",
+      "server": "64.181.186.88",
       "port": 59319,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:5zQYEH%2FtaJ%2FIGKB9jxn8ljEFZ2TB3vemTfYsGN4jCmY%3D@129.146.79.168:50356#%F0%9F%87%BA%F0%9F%87%B8US_666%7C76KB%2Fs%7CA004-260618",
+      "name": "🇺🇸US_666|76KB/s|A004-260618",
+      "type": "ss",
+      "server": "129.146.79.168",
+      "port": 50356,
       "ok": true,
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:3Gu9YRz1GinhnRuAsy1YK9ew6gvQUfAvJMjqAyZ4I9Y=@168.107.79.71:56927#%F0%9F%87%B8%F0%9F%87%AC%20%7C%20@WhiteDNS%20%7C%20SG322%7C1.4MB/s%7CDNSOK%7CGPT%E2%81%BA-SG",
-      "name": "🇸🇬 | @WhiteDNS | SG322|1.4MB/s|DNSOK|GPT⁺-SG",
+      "uri": "ss://2022-blake3-chacha20-poly1305:7D9/3Y5+MCeBDNpC6ftRDlkAJdKpXCc1mOE94SvcXEc=@129.146.38.3:50356#%F0%9F%87%BA%F0%9F%87%B8US_696%7C389KB%2Fs%7CA001-260618%2001",
+      "name": "🇺🇸US_696|389KB/s|A001-260618 01",
       "type": "ss",
-      "server": "168.107.79.71",
-      "port": 56927,
+      "server": "129.146.38.3",
+      "port": 50356,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
@@ -136,8 +118,8 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:BCDH0Tlfr%2FBNjkqN2UQomOnyAPPNz0fBgahXvK9bWoI%3D@161.118.192.95:56927#SG",
-      "name": "SG",
+      "uri": "ss://2022-blake3-chacha20-poly1305:BCDH0Tlfr%2FBNjkqN2UQomOnyAPPNz0fBgahXvK9bWoI%3D@161.118.192.95:56927#%F0%9F%87%B8%F0%9F%87%ACSG_99%7C82KB%2Fs%7CA004-260618",
+      "name": "🇸🇬SG_99|82KB/s|A004-260618",
       "type": "ss",
       "server": "161.118.192.95",
       "port": 56927,
@@ -145,22 +127,40 @@
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:C943EMfN1QqqBJGEoM0wW5nMr6lMCFjWW330bAx3HB4=@150.230.144.96:59924#@DeltaKroneckerGithub",
-      "name": "@DeltaKroneckerGithub",
+      "uri": "ss://2022-blake3-chacha20-poly1305:BFQyHWB20qvH0asuixcidL1wLU6XLdmFzANF3GjLFQw=@147.15.47.5:59319#%F0%9F%87%A7%F0%9F%87%B7BR_15%7C265KB%2Fs%7CA004-260618%2001",
+      "name": "🇧🇷BR_15|265KB/s|A004-260618 01",
       "type": "ss",
-      "server": "150.230.144.96",
-      "port": 59924,
+      "server": "147.15.47.5",
+      "port": 59319,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:CJ8sy9%2BBNgte31Srss4YriGMgNgBhdBf5sNdJmX0znI%3D@158.178.145.228:45819#NL",
-      "name": "NL",
+      "uri": "ss://2022-blake3-chacha20-poly1305:BI4AF0V668f8NeHizVA1o5N4bjpjTOdN2tf0lo%2BU7xA%3D@129.146.200.6:50356#US",
+      "name": "US",
+      "type": "ss",
+      "server": "129.146.200.6",
+      "port": 50356,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:CJ8sy9%2BBNgte31Srss4YriGMgNgBhdBf5sNdJmX0znI%3D@158.178.145.228:45819#%F0%9F%87%B3%F0%9F%87%B1NL_266%7C240KB%2Fs%7CR002-260618",
+      "name": "🇳🇱NL_266|240KB/s|R002-260618",
       "type": "ss",
       "server": "158.178.145.228",
       "port": 45819,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:EoVbt6nGXCEmXrCMByEIS4GVfeplyyrCfeITadO2Td8=@129.146.202.210:50356#%F0%9F%87%BA%F0%9F%87%B8US_661%7C257KB%2Fs%7CB007-260618%2001",
+      "name": "🇺🇸US_661|257KB/s|B007-260618 01",
+      "type": "ss",
+      "server": "129.146.202.210",
+      "port": 50356,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
     },
     {
       "uri": "ss://2022-blake3-chacha20-poly1305:GKK6Jd16pxKLp+jgEMOjGOWXx3svXEXvq8DwRaqHbuw=@152.70.21.245:59924#EPODONIOS",
@@ -172,137 +172,38 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:GpR2lRnHziihfZak1z1Vcma%2Bzi01kBqnd86vJ0wdfJA%3D@163.176.109.96:59319#BR",
-      "name": "BR",
+      "uri": "ss://2022-blake3-chacha20-poly1305:GpR2lRnHziihfZak1z1Vcma%2Bzi01kBqnd86vJ0wdfJA%3D@163.176.109.96:59319#@DeltaKroneckerGithub",
+      "name": "@DeltaKroneckerGithub",
       "type": "ss",
       "server": "163.176.109.96",
       "port": 59319,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:H79lfpBVUGPbakigMFsyTZQeg9VaIejnCnA5YfIfRBg%3D@144.24.190.37:59924#@DeltaKroneckerGithub",
-      "name": "@DeltaKroneckerGithub",
-      "type": "ss",
-      "server": "144.24.190.37",
-      "port": 59924,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:KXH1wvyRSEvM9nM%2Bk1Twlar5OyguGkr5VdW7mi%2Fq934%3D@141.148.227.92:45819#NL",
-      "name": "NL",
+      "uri": "ss://2022-blake3-chacha20-poly1305:IAaq%2FdxoRe2IQqHLE2jF0%2Bo1l54hnnu5%2Fwf3KBwri%2Fk%3D@129.146.127.111:50356#US",
+      "name": "US",
       "type": "ss",
-      "server": "141.148.227.92",
-      "port": 45819,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:W7u1bDxD6Gf%2BzKLsbXE2nnIDyMyIqRG%2BKU51u9pDSM0=@161.118.243.172:56927#%F0%9F%87%B8%F0%9F%87%AC%20%7C%20@WhiteDNS%20%7C%20SG325%7C1.1MB/s%7CDNSOK%7CGPT%E2%81%BA-SG",
-      "name": "🇸🇬 | @WhiteDNS | SG325|1.1MB/s|DNSOK|GPT⁺-SG",
-      "type": "ss",
-      "server": "161.118.243.172",
-      "port": 56927,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:azK0LCGqO4gM7vqrkuEAREN%2FzzWcN85Gb0x%2FSnCB%2Bo0%3D@130.162.53.216:59924#@DeltaKroneckerGithub",
-      "name": "@DeltaKroneckerGithub",
-      "type": "ss",
-      "server": "130.162.53.216",
-      "port": 59924,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:hIQF8+K9VdZUUvML50mUwcPk2TtPvuf2FCcxXICzvt4=@129.151.82.201:61312#📍64@oneclickvpnkeys",
-      "name": "📍64@oneclickvpnkeys",
-      "type": "ss",
-      "server": "129.151.82.201",
-      "port": 61312,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:iFxltqscJVLJdHunZXPCmb4ToHN7LhkoeYwpQcU%2FPbo=@193.151.128.97:443#🇮🇷IR",
-      "name": "🇮🇷IR",
-      "type": "ss",
-      "server": "193.151.128.97",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:k%2F%2F4bvSvtf5XFTJVWWSaOHAr%2F631ZWJzHo4vSOObpQU=@141.148.241.211:45819#%F0%9F%93%8D62@oneclickvpnkeys",
-      "name": "📍62@oneclickvpnkeys",
-      "type": "ss",
-      "server": "141.148.241.211",
-      "port": 45819,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:lOBcDkXcCLvC7cRuLJVTWYO1UEPelR3wC2lfBiB4%2Bsg%3D@129.151.9.186:50356#@DeltaKroneckerGithub",
-      "name": "@DeltaKroneckerGithub",
-      "type": "ss",
-      "server": "129.151.9.186",
+      "server": "129.146.127.111",
       "port": 50356,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
+      "ok": true,
+      "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:n%2BR95GrhiY5CSsLrYyZvXbdx8utPU2PfcsseogltEhM%3D@152.70.51.120:45819#@DeltaKroneckerGithub",
-      "name": "@DeltaKroneckerGithub",
+      "uri": "ss://2022-blake3-chacha20-poly1305:IrAOLcmiZJ3pvgUluPeP0O59kPd6FLCTr1thF8LfKXU%3D@129.151.85.23:61312#GB",
+      "name": "GB",
       "type": "ss",
-      "server": "152.70.51.120",
-      "port": 45819,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:nJabflEsmRe7Uv3N2GFgujC9+HsBzhbsbPrVGYTidrs=@129.151.86.83:61312#%F0%9F%93%8D81@oneclickvpnkeys",
-      "name": "📍81@oneclickvpnkeys",
-      "type": "ss",
-      "server": "129.151.86.83",
+      "server": "129.151.85.23",
       "port": 61312,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
+      "ok": true,
+      "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:o0y6MTZvZcfvlQv5UVNNVcpVnIa%2FvaEK4dtMXcDB0N8%3D@129.151.95.1:61312#@DeltaKroneckerGithub",
-      "name": "@DeltaKroneckerGithub",
+      "uri": "ss://2022-blake3-chacha20-poly1305:MLVcvtR%2FUBSlUEC3IwyukwjvKvvRvw9x6Op6LVBX0GA%3D@129.151.82.158:61312#GB",
+      "name": "GB",
       "type": "ss",
-      "server": "129.151.95.1",
+      "server": "129.151.82.158",
       "port": 61312,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:p3+EY3yWtw36eyy5gnBCkMt7NdN56ox/XByvzOZ9fS0=@152.70.63.41:45819#📍61@oneclickvpnkeys",
-      "name": "📍61@oneclickvpnkeys",
-      "type": "ss",
-      "server": "152.70.63.41",
-      "port": 45819,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:pFRieanujy1INIhTLrf8ZZ927CMUzROw9JuFNcFHpmk%3D@158.101.209.22:45819#@DeltaKroneckerGithub",
-      "name": "@DeltaKroneckerGithub",
-      "type": "ss",
-      "server": "158.101.209.22",
-      "port": 45819,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:pi2hqC%2FeWx66Af0GeDAmbU4xlrg9HIWVNpkpNX8S5Jk%3D@152.70.59.243:45819#NL",
-      "name": "NL",
-      "type": "ss",
-      "server": "152.70.59.243",
-      "port": 45819,
       "ok": true,
       "reason": "internet_stable_real_egress"
     }
