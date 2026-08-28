@@ -1,12 +1,12 @@
 {
   "candidate_limit": 300,
-  "tested": 27,
-  "skipped": 0,
+  "tested": 91,
+  "skipped": 1,
   "healthy": 20,
-  "failed": 7,
+  "failed": 71,
   "success_target": 20,
   "target_reached": true,
-  "runner_public_ip": "48.217.251.96",
+  "runner_public_ip": "4.246.117.64",
   "allowed_types": [
     "hysteria",
     "hysteria2",
@@ -19,17 +19,8 @@
   "rounds": 2,
   "results": [
     {
-      "uri": "ss://2022-blake3-aes-256-gcm:GTNKalLEuWo%2FT%2FY2%2F0lkfH5dQkSU9DFmMDuvTmowzsI%3D%3AZcV1AKzS1KPuLXOvW3RXr%2BHFldso5hZoaMpZ%2FqbeEW4%3D@130.185.122.106:8443#%F0%9F%87%B3%F0%9F%87%B1NL_253%7C82KB%2Fs%7CA004-260618",
-      "name": "🇳🇱NL_253|82KB/s|A004-260618",
-      "type": "ss",
-      "server": "130.185.122.106",
-      "port": 8443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://2022-blake3-aes-256-gcm:NTQwZmFlZTcwZWY1NDNiYzg3ZDJlMzlkN2RiNmYyMTc%3D%3AZDA0ZjRiMzIxNDc5NDQ5ZmFlODQxNGJhZGE4NWIzY2Q%3D@209.200.246.182:11994#%F0%9F%87%A8%F0%9F%87%A6CA_50%7C325KB%2Fs%7CA004-260618",
-      "name": "🇨🇦CA_50|325KB/s|A004-260618",
+      "uri": "ss://2022-blake3-aes-256-gcm:NTQwZmFlZTcwZWY1NDNiYzg3ZDJlMzlkN2RiNmYyMTc%3D%3AZDA0ZjRiMzIxNDc5NDQ5ZmFlODQxNGJhZGE4NWIzY2Q%3D@209.200.246.182:11994#%F0%9F%87%A8%F0%9F%87%A6CA_25%7C188KB%2Fs%7CA004-260618",
+      "name": "🇨🇦CA_25|188KB/s|A004-260618",
       "type": "ss",
       "server": "209.200.246.182",
       "port": 11994,
@@ -37,8 +28,8 @@
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-aes-256-gcm:YzYyNDkxZmJmM2MwNDYwYjk5MmE2NDU1YzIwODJhNDY%3D%3AZTcwOTk4NjRiMTEwNDkzYzk1NDE0YTQ2MzhkYzgyOTk%3D@146.103.42.161:13528#%F0%9F%87%A9%F0%9F%87%AADE_114%7C168KB%2Fs%7CA004-260618",
-      "name": "🇩🇪DE_114|168KB/s|A004-260618",
+      "uri": "ss://2022-blake3-aes-256-gcm:YzYyNDkxZmJmM2MwNDYwYjk5MmE2NDU1YzIwODJhNDY%3D%3AZTcwOTk4NjRiMTEwNDkzYzk1NDE0YTQ2MzhkYzgyOTk%3D@146.103.42.161:13528#%F0%9F%87%A9%F0%9F%87%AADE_102%7C155KB%2Fs%7CA004-260618",
+      "name": "🇩🇪DE_102|155KB/s|A004-260618",
       "type": "ss",
       "server": "146.103.42.161",
       "port": 13528,
@@ -46,89 +37,80 @@
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-aes-256-gcm:Zjc0N2QyYTkyNzc2NGRiZDhjY2NjYTU5Mzk2N2NkOTk%3D%3AYmNhN2UyNzdlNTg3NGFkMjkxNGY4ZjEzYWM2MzQ2NGQ%3D@84.32.131.61:18610#%F0%9F%87%BA%F0%9F%87%B8US_524%7C344KB%2Fs%7CA004-260618",
-      "name": "🇺🇸US_524|344KB/s|A004-260618",
+      "uri": "ss://2022-blake3-aes-256-gcm:Zjc0N2QyYTkyNzc2NGRiZDhjY2NjYTU5Mzk2N2NkOTk%3D%3AYmNhN2UyNzdlNTg3NGFkMjkxNGY4ZjEzYWM2MzQ2NGQ%3D@84.32.131.61:18610#US",
+      "name": "US",
       "type": "ss",
       "server": "84.32.131.61",
       "port": 18610,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "ss://2022-blake3-aes-256-gcm:f2Nq5YLnyclPaWR8my7%2FVdd3ZX8URncXZNly5%2BHcUSs%3D%3AaE6MxBTe%2BMXHd9HoF2FF%2FBzKFqGTReMpMevlQhvsu0s%3D@176.53.17.241:1943#%F0%9F%87%B9%F0%9F%87%B7TR%20-%20udptoos.com",
+      "name": "🇹🇷TR - udptoos.com",
+      "type": "ss",
+      "server": "176.53.17.241",
+      "port": 1943,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "ss://2022-blake3-aes-256-gcm:oD4yQh+d96KX8Q+9J3faGzq/mslgIGN153Ye9B8f5wQ=@[2a01:4f8:211:2312:1234:4321:c387:1]:443#",
+      "name": "ss-5",
+      "type": "ss",
+      "server": "2a01:4f8:211:2312:1234:4321:c387:1",
+      "port": 443,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://2022-blake3-aes-256-gcm:fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0%3D@167.150.100.115:27755#%F0%9F%87%B8%F0%9F%87%ACSG_1%7C234KB%2Fs",
-      "name": "🇸🇬SG_1|234KB/s",
+      "uri": "ss://2022-blake3-aes-256-gcm:tEY1W9tCYB6R5Y22378dJ9yh4H4PAZlAM/m31aG1PYM=@46.225.30.16:49534#",
+      "name": "ss-6",
       "type": "ss",
-      "server": "167.150.100.115",
-      "port": 27755,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
+      "server": "46.225.30.16",
+      "port": 49534,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:3xPP6iNfdLgydSGSQeEvX8FC3wofQ3e7GgGFUH8O1Ao%3D@141.148.165.216:50356#%F0%9F%87%BA%F0%9F%87%B8US_576%7C213KB%2Fs%7CA004-260618",
-      "name": "🇺🇸US_576|213KB/s|A004-260618",
+      "uri": "ss://2022-blake3-chacha20-poly1305:8s5JiHfMgqSeLxMJ02iVSqXInUhq+NrPwp0xLc8jPAU=@168.107.84.248:56927#@Alirewa-548",
+      "name": "@Alirewa-548",
       "type": "ss",
-      "server": "141.148.165.216",
-      "port": 50356,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:6yZwuUOmNfNOnkIY5Zzin7bJsZeRr4jDXWpkYVtjYAs%3D@129.151.68.73:61312#%F0%9F%87%AC%F0%9F%87%A7GB_145%7C184KB%2Fs%7CA004-260618",
-      "name": "🇬🇧GB_145|184KB/s|A004-260618",
-      "type": "ss",
-      "server": "129.151.68.73",
-      "port": 61312,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:88AZEnqwe6Y%2BXvclyDtg1Xr1Lrh0tBW0LgSHR%2BAwpDI%3D@213.35.110.13:56927#%F0%9F%87%B8%F0%9F%87%ACSG_123%7C297KB%2Fs%7CA004-260618",
-      "name": "🇸🇬SG_123|297KB/s|A004-260618",
-      "type": "ss",
-      "server": "213.35.110.13",
+      "server": "168.107.84.248",
       "port": 56927,
       "ok": true,
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:AAnZMP2ngI6K%2BbE7D4YWS46ddS38gW%2F8pv2H7xTYMJc%3D@129.146.113.243:50356#%F0%9F%87%BA%F0%9F%87%B8US_593%7C299KB%2Fs%7CR002-260618",
-      "name": "🇺🇸US_593|299KB/s|R002-260618",
-      "type": "ss",
-      "server": "129.146.113.243",
-      "port": 50356,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:C943EMfN1QqqBJGEoM0wW5nMr6lMCFjWW330bAx3HB4%3D@150.230.144.96:59924#%F0%9F%87%A9%F0%9F%87%AADE_134%7C271KB%2Fs%7CV002-260618",
-      "name": "🇩🇪DE_134|271KB/s|V002-260618",
+      "uri": "ss://2022-blake3-chacha20-poly1305:C943EMfN1QqqBJGEoM0wW5nMr6lMCFjWW330bAx3HB4=@150.230.144.96:59924#EPODONIOS",
+      "name": "EPODONIOS",
       "type": "ss",
       "server": "150.230.144.96",
       "port": 59924,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
+      "ok": false,
+      "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:FejR9ARFIM4JHgusbfCPNB6y9yj5xJY%2BIloo9MTLc4c%3D@129.151.94.218:61312#%F0%9F%87%AC%F0%9F%87%A7GB_147%7C131KB%2Fs%7CA004-260618",
-      "name": "🇬🇧GB_147|131KB/s|A004-260618",
+      "uri": "ss://2022-blake3-chacha20-poly1305:CJ8sy9%2BBNgte31Srss4YriGMgNgBhdBf5sNdJmX0znI%3D@158.178.145.228:45819#%F0%9F%87%B3%F0%9F%87%B1NL_191%7C348KB%2Fs%7CR002-260618",
+      "name": "🇳🇱NL_191|348KB/s|R002-260618",
       "type": "ss",
-      "server": "129.151.94.218",
-      "port": 61312,
+      "server": "158.178.145.228",
+      "port": 45819,
       "ok": true,
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:G3nkme2zEv%2F2EnB978appjst7neAH%2Fa234zb2Sm9DpE%3D@129.151.78.219:61312#%F0%9F%87%AC%F0%9F%87%A7GB_162%7C143KB%2Fs%7CR002-260618",
-      "name": "🇬🇧GB_162|143KB/s|R002-260618",
+      "uri": "ss://2022-blake3-chacha20-poly1305:Ewcm8cFWgvx3XiB06y46iTgnANcI3QBa4UGGf1OUEJQ%3D@167.234.235.71:59319#BR",
+      "name": "BR",
       "type": "ss",
-      "server": "129.151.78.219",
-      "port": 61312,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
+      "server": "167.234.235.71",
+      "port": 59319,
+      "ok": false,
+      "reason": "round_2_public_test_failed"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:GKK6Jd16pxKLp%2BjgEMOjGOWXx3svXEXvq8DwRaqHbuw%3D@152.70.21.245:59924#%F0%9F%87%A9%F0%9F%87%AADE_125%7C171KB%2Fs%7CA004-260618",
-      "name": "🇩🇪DE_125|171KB/s|A004-260618",
+      "uri": "ss://2022-blake3-chacha20-poly1305:GKK6Jd16pxKLp+jgEMOjGOWXx3svXEXvq8DwRaqHbuw=@152.70.21.245:59924#EPODONIOS",
+      "name": "EPODONIOS",
       "type": "ss",
       "server": "152.70.21.245",
       "port": 59924,
@@ -136,128 +118,722 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:H5LrDLS1ArqUXKXbRpN8dmarMGQwfgKYkGb9M8Cgz%2Bc%3D@144.24.224.124:61312#%F0%9F%87%AC%F0%9F%87%A7GB_146%7C235KB%2Fs%7CA004-260618",
-      "name": "🇬🇧GB_146|235KB/s|A004-260618",
-      "type": "ss",
-      "server": "144.24.224.124",
-      "port": 61312,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:INRdbIRZKRRbsFj4TAxNOnbAu0Yh7G%2Flr33SS%2B4V%2Bs8%3D@129.151.84.196:61312#%F0%9F%87%AC%F0%9F%87%A7GB_161%7C319KB%2Fs%7CR002-260618",
-      "name": "🇬🇧GB_161|319KB/s|R002-260618",
-      "type": "ss",
-      "server": "129.151.84.196",
-      "port": 61312,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:KSTycVGjd3xduLQy+qjtbMoooeuMmJUs+MKs3ym39zg=@130.61.177.119:59924#@OutlineReleasedKey",
-      "name": "@OutlineReleasedKey",
-      "type": "ss",
-      "server": "130.61.177.119",
-      "port": 59924,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:Mr13%2FA%2FFrxRXiwl0%2FlVDceMyzGzsOg1SgX%2FhcIsDM5Q%3D@89.168.109.144:59924#%F0%9F%87%A9%F0%9F%87%AADE_124%7C83KB%2Fs%7CA004-260618",
-      "name": "🇩🇪DE_124|83KB/s|A004-260618",
-      "type": "ss",
-      "server": "89.168.109.144",
-      "port": 59924,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:Pu4bjT2tQYACDYdtoh58KiVpd5KlVTG9TvA2Zn8bGNs%3D@132.226.73.7:50356#%F0%9F%87%BA%F0%9F%87%B8US_595%7C256KB%2Fs%7CR002-260618",
-      "name": "🇺🇸US_595|256KB/s|R002-260618",
-      "type": "ss",
-      "server": "132.226.73.7",
-      "port": 50356,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:RIgr1Kotuqj8nM8PTw%2FtxPb4Q7Qx1DNl3K%2FochMl%2Ft4%3D@147.15.58.195:59319#%F0%9F%87%A7%F0%9F%87%B7BR_13%7C215KB%2Fs%7CR002-260618",
-      "name": "🇧🇷BR_13|215KB/s|R002-260618",
-      "type": "ss",
-      "server": "147.15.58.195",
-      "port": 59319,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:U2dWoFKs66qM%2FYYOrtznCOeFuT8n02O5POSU1zH%2BKHg%3D@92.5.227.173:45819#%F0%9F%87%B3%F0%9F%87%B1NL_244%7C527KB%2Fs%7CR002-260618",
-      "name": "🇳🇱NL_244|527KB/s|R002-260618",
-      "type": "ss",
-      "server": "92.5.227.173",
-      "port": 45819,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:VP5nw9K8%2Bvutofk24KTvh1laPajmhb9FLp03lIzOAbE%3D@161.153.96.215:50356#%F0%9F%87%BA%F0%9F%87%B8US_550%7C407KB%2Fs%7CR002-260618",
-      "name": "🇺🇸US_550|407KB/s|R002-260618",
-      "type": "ss",
-      "server": "161.153.96.215",
-      "port": 50356,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:X3SCa2svCX8RKEwo0xbgYvAJ4JzBt2Z5oWVXfiZYtNI%3D@129.146.26.3:50356#%F0%9F%87%BA%F0%9F%87%B8US_552%7C287KB%2Fs%7CR002-260618",
-      "name": "🇺🇸US_552|287KB/s|R002-260618",
-      "type": "ss",
-      "server": "129.146.26.3",
-      "port": 50356,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:ZeqOjswvStX6F1ERR5Ig2ciBWvu2URg5QyOR7dQmQys%3D@144.21.41.115:45819#%F0%9F%87%B3%F0%9F%87%B1NL_270%7C214KB%2Fs%7CR002-260618",
-      "name": "🇳🇱NL_270|214KB/s|R002-260618",
-      "type": "ss",
-      "server": "144.21.41.115",
-      "port": 45819,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:azK0LCGqO4gM7vqrkuEAREN%2FzzWcN85Gb0x%2FSnCB%2Bo0%3D@130.162.53.216:59924#%F0%9F%87%A9%F0%9F%87%AADE_128%7C250KB%2Fs%7CV006-260618",
-      "name": "🇩🇪DE_128|250KB/s|V006-260618",
+      "uri": "ss://2022-blake3-chacha20-poly1305:azK0LCGqO4gM7vqrkuEAREN/zzWcN85Gb0x/SnCB+o0=@130.162.53.216:59924#EPODONIOS",
+      "name": "EPODONIOS",
       "type": "ss",
       "server": "130.162.53.216",
       "port": 59924,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:bvCkSd0HaT0nf8vHPqnmKB99UkYYDw9XatMo6BhujmE%3D@130.61.112.159:59924#%F0%9F%87%A9%F0%9F%87%AADE_115%7C170KB%2Fs%7CA004-260618",
+      "name": "🇩🇪DE_115|170KB/s|A004-260618",
+      "type": "ss",
+      "server": "130.61.112.159",
+      "port": 59924,
       "ok": true,
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:c2Iqp2NqoIu%2Brj64uIiln6zp6x%2FAuCOcmB9f0dcfa4Y%3D@137.131.145.140:59319#%F0%9F%87%A7%F0%9F%87%B7BR_12%7C264KB%2Fs%7CR002-260618",
-      "name": "🇧🇷BR_12|264KB/s|R002-260618",
+      "uri": "ss://2022-blake3-chacha20-poly1305:hIQF8+K9VdZUUvML50mUwcPk2TtPvuf2FCcxXICzvt4=@129.151.82.201:61312#@Alirewa-531",
+      "name": "@Alirewa-531",
       "type": "ss",
-      "server": "137.131.145.140",
-      "port": 59319,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
+      "server": "129.151.82.201",
+      "port": 61312,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:dhVHI56QN3701Oczms4YeUmlpgPOXJdrO2eG5%2FWZpcQ%3D@137.131.11.214:50356#%F0%9F%87%BA%F0%9F%87%B8US_544%7C230KB%2Fs%7CA004-260618",
-      "name": "🇺🇸US_544|230KB/s|A004-260618",
+      "uri": "ss://2022-blake3-chacha20-poly1305:k%2F%2F4bvSvtf5XFTJVWWSaOHAr%2F631ZWJzHo4vSOObpQU%3D@141.148.241.211:45819#%F0%9F%87%B3%F0%9F%87%B1NL_190%7C220KB%2Fs%7CA004-260618",
+      "name": "🇳🇱NL_190|220KB/s|A004-260618",
       "type": "ss",
-      "server": "137.131.11.214",
-      "port": 50356,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:gJyfItkGGCfGmC41s%2B4qS%2Fc2sR8W9srwa1vC6fH179Q%3D@158.101.220.236:45819#%F0%9F%87%B3%F0%9F%87%B1NL_269%7C444KB%2Fs%7CR002-260618",
-      "name": "🇳🇱NL_269|444KB/s|R002-260618",
-      "type": "ss",
-      "server": "158.101.220.236",
+      "server": "141.148.241.211",
       "port": 45819,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:nJabflEsmRe7Uv3N2GFgujC9+HsBzhbsbPrVGYTidrs=@129.151.86.83:61312#@Alirewa-540",
+      "name": "@Alirewa-540",
+      "type": "ss",
+      "server": "129.151.86.83",
+      "port": 61312,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:p3+EY3yWtw36eyy5gnBCkMt7NdN56ox%2FXByvzOZ9fS0=@152.70.63.41:45819#@Alirewa-529",
+      "name": "@Alirewa-529",
+      "type": "ss",
+      "server": "152.70.63.41",
+      "port": 45819,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:pi2hqC%2FeWx66Af0GeDAmbU4xlrg9HIWVNpkpNX8S5Jk%3D@152.70.59.243:45819#NL",
+      "name": "NL",
+      "type": "ss",
+      "server": "152.70.59.243",
+      "port": 45819,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:qarC1K8VLl88tGC8twftH%2FBEU9jPrH7UjF%2FaGzwqJC0=@132.226.103.137:50356#@Alirewa-545",
+      "name": "@Alirewa-545",
+      "type": "ss",
+      "server": "132.226.103.137",
+      "port": 50356,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6SG56SU4xQ0xHR0VoK21EL3V6YmJ2VFFjL0FscStoa21yQzdQbzNENGs0RT1ANDYuMzguMTQzLjIzNjo2MDYzMw#[6549][IR][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25",
+      "name": "[6549][IR][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25",
+      "type": "ss",
+      "server": "46.38.143.236",
+      "port": 60633,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1ZDc5OTA2ZC04OWFiLTQzMGItYWNiYy0zMzI3NTY4YTViZTNAMTUyLjY3LjI1MC40NTo1MjM0NQ==#EPODONIOS",
+      "name": "EPODONIOS",
+      "type": "ss",
+      "server": "152.67.250.45",
+      "port": 52345,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2NExiS0huQjNJTzc1OXVlRW5oZ01HQDUyLjE0Mi4xNjEuOTozNDQyNA==#%DA%A9%D8%A7%D9%86%D8%A7%D9%84+%3A+%40V2rayNGvpni",
+      "name": "کانال+:+@V2rayNGvpni",
+      "type": "ss",
+      "server": "52.142.161.9",
+      "port": 34424,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3MDc0NzUxNC1mYjE0LTRmMzEtODM5MC1lMWYwNDUzZWZmNmRAaGsxLm1odzdlMi5vbmxpbmU6MjAwMDE=#%E7%BE%8E%E5%9B%BD(https%3A%2F%2Fwww.fuye.fun%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB)_68",
+      "name": "美国(https://www.fuye.fun免费节点分享)_68",
+      "type": "ss",
+      "server": "hk1.mhw7e2.online",
+      "port": 20001,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3MDc0NzUxNC1mYjE0LTRmMzEtODM5MC1lMWYwNDUzZWZmNmRAanAzLm1odzdlMi5vbmxpbmU6MjAwMDE=#%E7%BE%8E%E5%9B%BD(https%3A%2F%2Fwww.fuye.fun%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB)_95",
+      "name": "美国(https://www.fuye.fun免费节点分享)_95",
+      "type": "ss",
+      "server": "jp3.mhw7e2.online",
+      "port": 20001,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3OTA1YTMyYi0wMTJjLTQ3MTEtODllMi03M2I2NzEzZWNhNzVAcHIuZmFzdHNvb25saW5rLmNvbTo0MDAzMA==#%E7%BE%8E%E5%9B%BD(yfuye.com%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9)_148",
+      "name": "美国(yfuye.com免费节点)_148",
+      "type": "ss",
+      "server": "pr.fastsoonlink.com",
+      "port": 40030,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3UEM0S3p0UXdSaXhDUzgwOVpGRWxsUXBtQU1uNG9FME85cWRyQ1lvNE1kRVhKVTU3N2NqWWVhRzB0WkR5UmwwQGlzdDEuZnJvbWJsYW5jd2l0aGxvdmUuY29tOjIxNjU3#%E4%BF%84%E7%BD%97%E6%96%AF(https%3A%2F%2Fwww.fuye.fun%2F%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9)_1",
+      "name": "俄罗斯(https://www.fuye.fun/免费节点)_1",
+      "type": "ss",
+      "server": "ist1.fromblancwithlove.com",
+      "port": 21657,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3YWM3NTc1NC1mZGUyLTQwN2QtYWMwMC0xN2NkNWRkYzUzZDFAMTEwLjQwLjU5LjYxOjUzNzkz#%E7%BE%8E%E5%9B%BD(https%3A%2F%2Fwww.fuye.fun%2F%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9)_54",
+      "name": "美国(https://www.fuye.fun/免费节点)_54",
+      "type": "ss",
+      "server": "110.40.59.61",
+      "port": 53793,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3YWM3NTc1NC1mZGUyLTQwN2QtYWMwMC0xN2NkNWRkYzUzZDFAMTIyLjE4OC43MS4xMjI6NDA1MTA=#%E7%BE%8E%E5%9B%BD(https%3A%2F%2Fwww.fuye.fun%2F%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9)_36",
+      "name": "美国(https://www.fuye.fun/免费节点)_36",
+      "type": "ss",
+      "server": "122.188.71.122",
+      "port": 40510,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3YWM3NTc1NC1mZGUyLTQwN2QtYWMwMC0xN2NkNWRkYzUzZDFAMTIyLjE4OC43MS4xMjI6NTAwOTg=#%E7%BE%8E%E5%9B%BD(https%3A%2F%2Fwww.fuye.fun%2F%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9)_47",
+      "name": "美国(https://www.fuye.fun/免费节点)_47",
+      "type": "ss",
+      "server": "122.188.71.122",
+      "port": 50098,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3YWM3NTc1NC1mZGUyLTQwN2QtYWMwMC0xN2NkNWRkYzUzZDFAMTgzLjIzMi4xNTkuNTE6NDA4NTI=#%E7%BE%8E%E5%9B%BD(https%3A%2F%2Fwww.fuye.fun%2F%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9)_57",
+      "name": "美国(https://www.fuye.fun/免费节点)_57",
+      "type": "ss",
+      "server": "183.232.159.51",
+      "port": 40852,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3YWM3NTc1NC1mZGUyLTQwN2QtYWMwMC0xN2NkNWRkYzUzZDFAMTgzLjIzMi4xNTkuNTE6NTAyMjU=#%E7%BE%8E%E5%9B%BD(https%3A%2F%2Fwww.fuye.fun%2F%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9)_56",
+      "name": "美国(https://www.fuye.fun/免费节点)_56",
+      "type": "ss",
+      "server": "183.232.159.51",
+      "port": 50225,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3YWM3NTc1NC1mZGUyLTQwN2QtYWMwMC0xN2NkNWRkYzUzZDFAYWgxLXhqNmZ3amo1ZnltZHJuOHkuYmVzdHp1bW8uY29tOjM0NjM1#%E7%BE%8E%E5%9B%BD(https%3A%2F%2Fwww.fuye.fun%2F%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9)_33",
+      "name": "美国(https://www.fuye.fun/免费节点)_33",
+      "type": "ss",
+      "server": "ah1-xj6fwjj5fymdrn8y.bestzumo.com",
+      "port": 34635,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3YWM3NTc1NC1mZGUyLTQwN2QtYWMwMC0xN2NkNWRkYzUzZDFAYWgxLXhqNmZ3amo1ZnltZHJuOHkuYmVzdHp1bW8uY29tOjMwMjg1#%E7%BE%8E%E5%9B%BD(https%3A%2F%2Fwww.fuye.fun%2F%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9)_38",
+      "name": "美国(https://www.fuye.fun/免费节点)_38",
+      "type": "ss",
+      "server": "ah1-xj6fwjj5fymdrn8y.bestzumo.com",
+      "port": 30285,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3YWM3NTc1NC1mZGUyLTQwN2QtYWMwMC0xN2NkNWRkYzUzZDFAYWgxLXhqNmZ3amo1ZnltZHJuOHkuYmVzdHp1bW8uY29tOjQxNTc1#%E7%BE%8E%E5%9B%BD(https%3A%2F%2Fwww.fuye.fun%2F%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9)_39",
+      "name": "美国(https://www.fuye.fun/免费节点)_39",
+      "type": "ss",
+      "server": "ah1-xj6fwjj5fymdrn8y.bestzumo.com",
+      "port": 41575,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3YWM3NTc1NC1mZGUyLTQwN2QtYWMwMC0xN2NkNWRkYzUzZDFAYWgzLXBpY2ZnZGU1Ym13dG1hcnQuYmVzdHp1bW8uY29tOjE5NDcz#%E7%BE%8E%E5%9B%BD(https%3A%2F%2Fwww.fuye.fun%2F%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9)_46",
+      "name": "美国(https://www.fuye.fun/免费节点)_46",
+      "type": "ss",
+      "server": "ah3-picfgde5bmwtmart.bestzumo.com",
+      "port": 19473,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3YWM3NTc1NC1mZGUyLTQwN2QtYWMwMC0xN2NkNWRkYzUzZDFAYWgzLXBpY2ZnZGU1Ym13dG1hcnQuYmVzdHp1bW8uY29tOjEzNTkx#%E7%BE%8E%E5%9B%BD(https%3A%2F%2Fwww.fuye.fun%2F%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9)_37",
+      "name": "美国(https://www.fuye.fun/免费节点)_37",
+      "type": "ss",
+      "server": "ah3-picfgde5bmwtmart.bestzumo.com",
+      "port": 13591,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3YWM3NTc1NC1mZGUyLTQwN2QtYWMwMC0xN2NkNWRkYzUzZDFAYWgzLXBpY2ZnZGU1Ym13dG1hcnQuYmVzdHp1bW8uY29tOjM3ODU=#%E7%BE%8E%E5%9B%BD(https%3A%2F%2Fwww.fuye.fun%2F%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9)_40",
+      "name": "美国(https://www.fuye.fun/免费节点)_40",
+      "type": "ss",
+      "server": "ah3-picfgde5bmwtmart.bestzumo.com",
+      "port": 3785,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3YWM3NTc1NC1mZGUyLTQwN2QtYWMwMC0xN2NkNWRkYzUzZDFAYWgzLXBpY2ZnZGU1Ym13dG1hcnQuYmVzdHp1bW8uY29tOjMzNTk0#%E7%BE%8E%E5%9B%BD(https%3A%2F%2Fwww.fuye.fun%2F%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9)_32",
+      "name": "美国(https://www.fuye.fun/免费节点)_32",
+      "type": "ss",
+      "server": "ah3-picfgde5bmwtmart.bestzumo.com",
+      "port": 33594,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3YWM3NTc1NC1mZGUyLTQwN2QtYWMwMC0xN2NkNWRkYzUzZDFAYWgzLXBpY2ZnZGU1Ym13dG1hcnQuYmVzdHp1bW8uY29tOjQ4OTAz#%E7%BE%8E%E5%9B%BD(https%3A%2F%2Fwww.fuye.fun%2F%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9)_49",
+      "name": "美国(https://www.fuye.fun/免费节点)_49",
+      "type": "ss",
+      "server": "ah3-picfgde5bmwtmart.bestzumo.com",
+      "port": 48903,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3YWM3NTc1NC1mZGUyLTQwN2QtYWMwMC0xN2NkNWRkYzUzZDFAYWgzLXBpY2ZnZGU1Ym13dG1hcnQuYmVzdHp1bW8uY29tOjQyNDU3#%E7%BE%8E%E5%9B%BD(https%3A%2F%2Fwww.fuye.fun%2F%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9)_43",
+      "name": "美国(https://www.fuye.fun/免费节点)_43",
+      "type": "ss",
+      "server": "ah3-picfgde5bmwtmart.bestzumo.com",
+      "port": 42457,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3YWM3NTc1NC1mZGUyLTQwN2QtYWMwMC0xN2NkNWRkYzUzZDFAYWgzLXBpY2ZnZGU1Ym13dG1hcnQuYmVzdHp1bW8uY29tOjUxOTU3#%E7%BE%8E%E5%9B%BD(https%3A%2F%2Fwww.fuye.fun%2F%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9)_45",
+      "name": "美国(https://www.fuye.fun/免费节点)_45",
+      "type": "ss",
+      "server": "ah3-picfgde5bmwtmart.bestzumo.com",
+      "port": 51957,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3YWM3NTc1NC1mZGUyLTQwN2QtYWMwMC0xN2NkNWRkYzUzZDFAZGcyLWRobWthZGo0ZXdlbmRwcncuYmVzdHp1bW8uY29tOjMyNjQ2#%E7%BE%8E%E5%9B%BD(https%3A%2F%2Fwww.fuye.fun%2F%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9)_50",
+      "name": "美国(https://www.fuye.fun/免费节点)_50",
+      "type": "ss",
+      "server": "dg2-dhmkadj4ewendprw.bestzumo.com",
+      "port": 32646,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTotNC1NMVElJEhlQDE1MC4yNDEuOTUuNjI6MTQ0MTY=#%E7%BE%8E%E5%9B%BD(https%3A%2F%2Fwww.fuye.fun%2F%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9)_44",
+      "name": "美国(https://www.fuye.fun/免费节点)_44",
+      "type": "ss",
+      "server": "150.241.95.62",
+      "port": 14416,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp2WnI4TWxVWFVpaE5FbmRxSXBqRHhRZFNlcWkzN0ZiZ29IQm1RMXN5eTZaamtiQm5AMTAzLjE3NC44Ni4xMTM6NTEzNDg=#%E7%BE%8E%E5%9B%BD(https%3A%2F%2Fwww.fuye.fun%2F%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9)_30",
+      "name": "美国(https://www.fuye.fun/免费节点)_30",
+      "type": "ss",
+      "server": "103.174.86.113",
+      "port": 51348,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "VLESS://uuid@host.com:443?security=tls",
+      "name": "vless-46",
+      "type": "vless",
+      "server": "host.com",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://${config.sops.placeholder.hy2_password}@cdn.example.com:443?obfs=salamander&obfs-password=${config.sops.placeholder.hy2_obfs}&sni=cdn.example.com&alpn=h3",
+      "name": "hysteria2-47",
+      "type": "hysteria2",
+      "server": "cdn.example.com",
+      "port": 443,
+      "ok": false,
+      "reason": "placeholder_endpoint"
+    },
+    {
+      "uri": "hysteria2://026ee970-e645-4062-899a-383d75767b48@hy2.ghostyconnect.org:443/?sni=hy2.ghostyconnect.org#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
+      "name": "🇫🇮 Finland, Helsinki | [BL]",
+      "type": "hysteria2",
+      "server": "hy2.ghostyconnect.org",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://083f9234-76f8-47f4-915e-726a767b7ad5@gc4.22556666.com:32050/?Telegram=%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad&sni=#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Kansas%20City%20%7C%20%5BBL%5D",
+      "name": "🇺🇸 United States, Kansas City | [BL]",
+      "type": "hysteria2",
+      "server": "gc4.22556666.com",
+      "port": 32050,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://0I_Vi934gK9_Mq3240Xs_Bv2_kUi8Q34183g9hj_Bv6_7a@213.202.219.29:8443/?sni=grape-sos-de.roxa.org#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20D%C3%BCsseldorf%20%28Stadtbezirk%20IX%29%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Düsseldorf (Stadtbezirk IX) | [BL]",
+      "type": "hysteria2",
+      "server": "213.202.219.29",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://0f2dc4af-951f-4690-922e-07c6e8bab26a@178.253.55.89:443?sni=nl-one.quiet-rogue.site#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%5B%2ACIDR%5D",
+      "name": "🇳🇱 The Netherlands [*CIDR]",
+      "type": "hysteria2",
+      "server": "178.253.55.89",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://0wdsa_nJXEWRj9jz9J9xMgtx_n7gzfK_m8@139.28.168.58:8080?security=tls&sni=grape-honk.yyuyy.com#%E4%BF%84%E7%BD%97%E6%96%AF+V2CROSS.COM",
+      "name": "俄罗斯+V2CROSS.COM",
+      "type": "hysteria2",
+      "server": "139.28.168.58",
+      "port": 8080,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://146e49e3-c86d-4607-b5ac-acc1997f025e@31.76.22.217:443?sni=yula.ultimagamest.com#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Warsaw%20%7C%20%5BBL%5D",
+      "name": "🇵🇱 Poland, Warsaw | [BL]",
+      "type": "hysteria2",
+      "server": "31.76.22.217",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://17aVvwmiSU@do.aigh.store:10929?insecure=1&sni=do.aigh.store#%F0%9F%87%BA%F0%9F%87%B8US",
+      "name": "🇺🇸US",
+      "type": "hysteria2",
+      "server": "do.aigh.store",
+      "port": 10929,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://1f31377f-a6bc-461f-9745-be3ed0ff4ecd@newlte.kihsuyhf8jkiugsxb.cfd:9443/?sni=newlte.kihsuyhf8jkiugsxb.cfd&fm={#0728",
+      "name": "0728",
+      "type": "hysteria2",
+      "server": "newlte.kihsuyhf8jkiugsxb.cfd",
+      "port": 9443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://2630a66444286f47ce591752f28adf5e@154-49-127-140.liao.kdns.fr:50160?insecure=1&sni=154-49-127-140.liao.kdns.fr#%F0%9F%87%BA%F0%9F%87%B8US_265%7C162KB%2Fs%7CA004-260618",
+      "name": "🇺🇸US_265|162KB/s|A004-260618",
+      "type": "hysteria2",
+      "server": "154-49-127-140.liao.kdns.fr",
+      "port": 50160,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://2_hysteria2_fastlane_rbpddej1k%3Ab31z6w8vqA9q6u7UHIbunwD77COTmpE3@2.27.25.75:1935?sni=de11.h.fastlanehosting.ru#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%28Innenstadt%20I%29%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL]",
+      "type": "hysteria2",
+      "server": "2.27.25.75",
+      "port": 1935,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://32d3c043-8c78-4348-94e4-37b7937ccae2@node.embrofree.org:443?sni=node.embrofree.org#%F0%9F%87%A8%F0%9F%87%A6%20Canada%2C%20Toronto%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇨🇦 Canada, Toronto | 🌐 | [BL]",
+      "type": "hysteria2",
+      "server": "node.embrofree.org",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://3703ccc0-ae74-49bd-b9d7-0897192bf8c4@node.embrofree.org:443#%F0%9F%87%A7%F0%9F%87%B7%20Brazil%2C%20S%C3%A3o%20Jos%C3%A9%20do%20Rio%20Preto%20%7C%20%5BBL%5D",
+      "name": "🇧🇷 Brazil, São José do Rio Preto | [BL]",
+      "type": "hysteria2",
+      "server": "node.embrofree.org",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://3b8c82ed-fe66-472d-915e-034ccb57103f@nl3.frkn.org:443?insecure=false&up-mbps=0#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
+      "type": "hysteria2",
+      "server": "nl3.frkn.org",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://41f0d6d3-4a45-4635-8225-2abd2284189b@els2.mangshe.xyz:2056?insecure=1&sni=els2.mangshe.xyz#%F0%9F%87%B7%F0%9F%87%BA%20Россия%20%7C%20%F0%9F%8C%90%20[🏴BL",
+      "name": "🇷🇺 Россия | 🌐 [🏴BL",
+      "type": "hysteria2",
+      "server": "els2.mangshe.xyz",
+      "port": 2056,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://4e82f6c9-e180-4672-9d63-9060679ebdb9@node.embrofree.org:443?sni=node.embrofree.org&fp=firefox#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
+      "type": "hysteria2",
+      "server": "node.embrofree.org",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://53c76647-14d1-4df5-99cb-be99ad2e6bd9@de87.mechvpn.online:443#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
+      "type": "hysteria2",
+      "server": "de87.mechvpn.online",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://54d2f622-fd71-4f5f-8813-832b68f4ca3b@95.85.248.120:8443?sni=speedtestmark.com#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Eygelshoven%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Eygelshoven | [BL]",
+      "type": "hysteria2",
+      "server": "95.85.248.120",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://57a9cf7d-bb6c-414e-97be-1985f7123c61@telenl.zapret-tg.ru:443#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Eygelshoven%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Eygelshoven | [BL]",
+      "type": "hysteria2",
+      "server": "telenl.zapret-tg.ru",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://5ca83936-136d-4314-8453-4ba10a86cf60@31.76.70.109:8443/?sni=quic.tyr-agentstvo.tech#%F0%9F%87%AA%F0%9F%87%AA%20Estonia%2C%20Tallinn%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇪🇪 Estonia, Tallinn | 🌐 | [BL]",
+      "type": "hysteria2",
+      "server": "31.76.70.109",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://6203363b-6c41-4558-b503-526c5c949822@178.250.243.21:9443?sni=cns.dodostarscoffee.ru#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%5B%2ACIDR%5D",
+      "name": "🇩🇪 Germany [*CIDR]",
+      "type": "hysteria2",
+      "server": "178.250.243.21",
+      "port": 9443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://67a1454f-5a95-4e30-9723-1ffcbe7e97f9@soskeynets.api3-max.ru:443?sni=taga2.api3-max.ru#%F0%9F%87%B9%F0%9F%87%B7129827%20%7C%20%E2%9A%A1%EF%B8%8FTelegram%20%3D%20t.me/S",
+      "name": "🇹🇷129827 | ⚡️Telegram = t.me/S",
+      "type": "hysteria2",
+      "server": "soskeynets.api3-max.ru",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://67a1454f-5a95-4e30-9723-1ffcbe7e97f9@wopa1.api3-max.ru:443?sni=127.0.0.1#%E2%9D%93Other_41%7C129KB%2Fs%7CA004-260618",
+      "name": "❓Other_41|129KB/s|A004-260618",
+      "type": "hysteria2",
+      "server": "wopa1.api3-max.ru",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://68b4b16e-2759-47a4-8a69-33118edf5ce6@nederland.gamestocke.ru:443?headerType=none&encryption=none&sni=nederland.gamestocke.ru&insecure=0#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
+      "type": "hysteria2",
+      "server": "nederland.gamestocke.ru",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://707db87b-9cbf-438f-b4c7-9d984c8e944a@serv21.strettenvpn.com:443?security=tls#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
+      "type": "hysteria2",
+      "server": "serv21.strettenvpn.com",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://74fbbe74-906d-45a8-a27c-a85fc758bc9f@31.76.70.78:8443?sni=quic.tyr-agentstvo.tech#%F0%9F%87%AA%F0%9F%87%AA%20Estonia%2C%20Tallinn%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇪🇪 Estonia, Tallinn | 🌐 | [BL]",
+      "type": "hysteria2",
+      "server": "31.76.70.78",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://7e8825a4-86ac-486f-a06c-0917ced9dfcd@138.124.17.62:443?sni=wlh.moonshard.org&fp=firefox#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
+      "name": "🇫🇮 Finland, Helsinki | [BL]",
+      "type": "hysteria2",
+      "server": "138.124.17.62",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://8569e507-8ef7-481d-9108-6bc7f040c2ff@cns.dodostarscoffee.ru:9443#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%5B%2ACIDR%5D",
+      "name": "🇩🇪 Germany [*CIDR]",
+      "type": "hysteria2",
+      "server": "cns.dodostarscoffee.ru",
+      "port": 9443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://890aade8-4034-4372-9776-793e9acd1e94@kerost.fontanvpn.com:443?sni=kerost.fontanvpn.com#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
+      "type": "hysteria2",
+      "server": "kerost.fontanvpn.com",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://8bc63720-5ec8-45b5-b6a6-9a21ffb490e8@argg3.auragg.org:443?security=tls&insecure=0&sni=argg3.auragg.org#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
+      "name": "🇫🇷 France, Paris | [BL]",
+      "type": "hysteria2",
+      "server": "argg3.auragg.org",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://8fb328f0-d8e0-4b11-a6db-3dadfc4f02a3@185.191.238.202:443/?insecure=1&sni=che01plrhy01.tcp-reset-club.net#",
+      "name": "hysteria2-77",
+      "type": "hysteria2",
+      "server": "185.191.238.202",
+      "port": 443,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://92971ae7-d606-4c22-b566-625ffabee5b2@de253.mechvpn.online:443?insecure=0#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
+      "type": "hysteria2",
+      "server": "de253.mechvpn.online",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://95e8532b-cc69-42d4-9553-e3c23292b15b@iq5ny.pleiades.codes:8443#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
+      "name": "🇫🇷 France, Paris | [BL]",
+      "type": "hysteria2",
+      "server": "iq5ny.pleiades.codes",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z@162.249.124.102:8443?sni=mercedes-grape.yyuyy.com#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
+      "name": "🇬🇧 United Kingdom, London | [BL]",
+      "type": "hysteria2",
+      "server": "162.249.124.102",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z@162.249.124.112:8443?sni=hopp-germany-new.ddnsguru.com#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
+      "name": "🇬🇧 United Kingdom, London | [BL]",
+      "type": "hysteria2",
+      "server": "162.249.124.112",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z@162.249.124.99:8443?sni=mercedes-grape.yyuyy.com#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
+      "name": "🇬🇧 United Kingdom, London | [BL]",
+      "type": "hysteria2",
+      "server": "162.249.124.99",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://9d3356a0-c07e-43cc-b30e-450bd50521b8@flkf3.mangshe.xyz:2056?sni=vk.com&type=tcp&upmbps=10&downmbps=50#3766",
+      "name": "3766",
+      "type": "hysteria2",
+      "server": "flkf3.mangshe.xyz",
+      "port": 2056,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://Apt1923_N9x234gn_Nal5Nx3j_s@222.167.212.24:8443?sni=grape-power-pl.ddnsguru.com#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
+      "name": "🇫🇮 Finland, Helsinki | [BL]",
+      "type": "hysteria2",
+      "server": "222.167.212.24",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://C91FbOXGY9XRymrcEebtax9R1Nj62UizoT8S6kCb7xwey8IE@start.wwwinternetvideo.click:443?sni=fast.wwwinternetvideo.click#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20%5B%2ACIDR%5D",
+      "name": "🇺🇸 United States [*CIDR]",
+      "type": "hysteria2",
+      "server": "start.wwwinternetvideo.click",
+      "port": 443,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://GSPOBvG-ZwYcBFMr0ekFGO_Zga3wK6v_@hy2-germany.unlimited-access.ru:8443?insecure=1&sni=127.0.0.1#%F0%9F%87%BA%F0%9F%87%A6UA_6%7C117KB%2Fs%7CA004-260618",
+      "name": "🇺🇦UA_6|117KB/s|A004-260618",
+      "type": "hysteria2",
+      "server": "hy2-germany.unlimited-access.ru",
+      "port": 8443,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://H7mP2xY9kJ4nQ8wR5tF6vB3z@160.187.100.109:443/?insecure=1&sni=vpn-tw-002.fastervpn.world#",
+      "name": "hysteria2-87",
+      "type": "hysteria2",
+      "server": "160.187.100.109",
+      "port": 443,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://H7mP2xY9kJ4nQ8wR5tF6vB3z@202.146.222.29:443?insecure=1&sni=https%3A%2F%2Ft.me%2Fwangcai2%EF%A3%BF%C3%BC%C3%A1#%F0%9F%87%AD%F0%9F%87%B0HK_34%7C284KB%2Fs%7CA004-260618",
+      "name": "🇭🇰HK_34|284KB/s|A004-260618",
+      "type": "hysteria2",
+      "server": "202.146.222.29",
+      "port": 443,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://H7mP2xY9kJ4nQ8wR5tF6vB3z@3.148.164.219:443/?insecure=1&sni=vpn-us-003.fastervpn.world#",
+      "name": "hysteria2-89",
+      "type": "hysteria2",
+      "server": "3.148.164.219",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://H7mP2xY9kJ4nQ8wR5tF6vB3z@3.36.96.245:443?insecure=1&sni=google.com#%F0%9F%87%B0%F0%9F%87%B7KR_25%7C217KB%2Fs%7CA004-260618",
+      "name": "🇰🇷KR_25|217KB/s|A004-260618",
+      "type": "hysteria2",
+      "server": "3.36.96.245",
+      "port": 443,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://H7mP2xY9kJ4nQ8wR5tF6vB3z@vpn-fr-002.fastervpn.world:443?insecure=1&sni=127.0.0.1#%F0%9F%87%AB%F0%9F%87%B7FR_505%7C237KB%2Fs%7CC002-260622",
+      "name": "🇫🇷FR_505|237KB/s|C002-260622",
+      "type": "hysteria2",
+      "server": "vpn-fr-002.fastervpn.world",
+      "port": 443,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://H7mP2xY9kJ4nQ9wR5tF6vB3z@vpn-sg-002.fastervpn.world:443?insecure=1&security=tls&sni=vpn-sg-002.fastervpn.world#%E3%82%B7%E3%83%B3%E3%82%AC%E3%83%9D%E3%83%BC%E3%83%AB",
+      "name": "シンガポール",
+      "type": "hysteria2",
+      "server": "vpn-sg-002.fastervpn.world",
+      "port": 443,
       "ok": true,
       "reason": "internet_stable_real_egress"
     }

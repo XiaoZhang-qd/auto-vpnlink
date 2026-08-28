@@ -3,170 +3,82 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇦CA_50|325KB/s|A004-260618
+- name: 🇨🇦CA_25|188KB/s|A004-260618
   type: ss
   server: 209.200.246.182
   port: 11994
   cipher: 2022-blake3-aes-256-gcm
   password: NTQwZmFlZTcwZWY1NDNiYzg3ZDJlMzlkN2RiNmYyMTc=:ZDA0ZjRiMzIxNDc5NDQ5ZmFlODQxNGJhZGE4NWIzY2Q=
   udp: true
-- name: 🇩🇪DE_114|168KB/s|A004-260618
+- name: 🇩🇪DE_102|155KB/s|A004-260618
   type: ss
   server: 146.103.42.161
   port: 13528
   cipher: 2022-blake3-aes-256-gcm
   password: YzYyNDkxZmJmM2MwNDYwYjk5MmE2NDU1YzIwODJhNDY=:ZTcwOTk4NjRiMTEwNDkzYzk1NDE0YTQ2MzhkYzgyOTk=
   udp: true
-- name: 🇸🇬SG_1|234KB/s
+- name: US
   type: ss
-  server: 167.150.100.115
-  port: 27755
+  server: 84.32.131.61
+  port: 18610
   cipher: 2022-blake3-aes-256-gcm
-  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
+  password: Zjc0N2QyYTkyNzc2NGRiZDhjY2NjYTU5Mzk2N2NkOTk=:YmNhN2UyNzdlNTg3NGFkMjkxNGY4ZjEzYWM2MzQ2NGQ=
   udp: true
-- name: 🇺🇸US_576|213KB/s|A004-260618
+- name: 🇹🇷TR - udptoos.com
   type: ss
-  server: 141.148.165.216
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 3xPP6iNfdLgydSGSQeEvX8FC3wofQ3e7GgGFUH8O1Ao=
+  server: 176.53.17.241
+  port: 1943
+  cipher: 2022-blake3-aes-256-gcm
+  password: f2Nq5YLnyclPaWR8my7/Vdd3ZX8URncXZNly5+HcUSs=:aE6MxBTe+MXHd9HoF2FF/BzKFqGTReMpMevlQhvsu0s=
   udp: true
-- name: 🇬🇧GB_145|184KB/s|A004-260618
+- name: '@Alirewa-548'
   type: ss
-  server: 129.151.68.73
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 6yZwuUOmNfNOnkIY5Zzin7bJsZeRr4jDXWpkYVtjYAs=
-  udp: true
-- name: 🇸🇬SG_123|297KB/s|A004-260618
-  type: ss
-  server: 213.35.110.13
+  server: 168.107.84.248
   port: 56927
   cipher: 2022-blake3-chacha20-poly1305
-  password: 88AZEnqwe6Y+XvclyDtg1Xr1Lrh0tBW0LgSHR+AwpDI=
+  password: 8s5JiHfMgqSeLxMJ02iVSqXInUhq+NrPwp0xLc8jPAU=
   udp: true
-- name: 🇺🇸US_593|299KB/s|R002-260618
+- name: 🇳🇱NL_191|348KB/s|R002-260618
   type: ss
-  server: 129.146.113.243
-  port: 50356
+  server: 158.178.145.228
+  port: 45819
   cipher: 2022-blake3-chacha20-poly1305
-  password: AAnZMP2ngI6K+bE7D4YWS46ddS38gW/8pv2H7xTYMJc=
+  password: CJ8sy9+BNgte31Srss4YriGMgNgBhdBf5sNdJmX0znI=
   udp: true
-- name: 🇩🇪DE_134|271KB/s|V002-260618
+- name: 🇩🇪DE_115|170KB/s|A004-260618
   type: ss
-  server: 150.230.144.96
+  server: 130.61.112.159
   port: 59924
   cipher: 2022-blake3-chacha20-poly1305
-  password: C943EMfN1QqqBJGEoM0wW5nMr6lMCFjWW330bAx3HB4=
+  password: bvCkSd0HaT0nf8vHPqnmKB99UkYYDw9XatMo6BhujmE=
   udp: true
-- name: 🇬🇧GB_147|131KB/s|A004-260618
+- name: 🇳🇱NL_190|220KB/s|A004-260618
   type: ss
-  server: 129.151.94.218
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: FejR9ARFIM4JHgusbfCPNB6y9yj5xJY+Iloo9MTLc4c=
-  udp: true
-- name: 🇬🇧GB_162|143KB/s|R002-260618
-  type: ss
-  server: 129.151.78.219
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: G3nkme2zEv/2EnB978appjst7neAH/a234zb2Sm9DpE=
-  udp: true
-- name: 🇬🇧GB_146|235KB/s|A004-260618
-  type: ss
-  server: 144.24.224.124
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: H5LrDLS1ArqUXKXbRpN8dmarMGQwfgKYkGb9M8Cgz+c=
-  udp: true
-- name: 🇬🇧GB_161|319KB/s|R002-260618
-  type: ss
-  server: 129.151.84.196
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: INRdbIRZKRRbsFj4TAxNOnbAu0Yh7G/lr33SS+4V+s8=
-  udp: true
-- name: 🇺🇸US_595|256KB/s|R002-260618
-  type: ss
-  server: 132.226.73.7
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Pu4bjT2tQYACDYdtoh58KiVpd5KlVTG9TvA2Zn8bGNs=
-  udp: true
-- name: 🇳🇱NL_244|527KB/s|R002-260618
-  type: ss
-  server: 92.5.227.173
+  server: 141.148.241.211
   port: 45819
   cipher: 2022-blake3-chacha20-poly1305
-  password: U2dWoFKs66qM/YYOrtznCOeFuT8n02O5POSU1zH+KHg=
+  password: k//4bvSvtf5XFTJVWWSaOHAr/631ZWJzHo4vSOObpQU=
   udp: true
-- name: 🇺🇸US_550|407KB/s|R002-260618
+- name: NL
   type: ss
-  server: 161.153.96.215
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: VP5nw9K8+vutofk24KTvh1laPajmhb9FLp03lIzOAbE=
-  udp: true
-- name: 🇳🇱NL_270|214KB/s|R002-260618
-  type: ss
-  server: 144.21.41.115
+  server: 152.70.59.243
   port: 45819
   cipher: 2022-blake3-chacha20-poly1305
-  password: ZeqOjswvStX6F1ERR5Ig2ciBWvu2URg5QyOR7dQmQys=
-  udp: true
-- name: 🇩🇪DE_128|250KB/s|V006-260618
-  type: ss
-  server: 130.162.53.216
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: azK0LCGqO4gM7vqrkuEAREN/zzWcN85Gb0x/SnCB+o0=
-  udp: true
-- name: 🇧🇷BR_12|264KB/s|R002-260618
-  type: ss
-  server: 137.131.145.140
-  port: 59319
-  cipher: 2022-blake3-chacha20-poly1305
-  password: c2Iqp2NqoIu+rj64uIiln6zp6x/AuCOcmB9f0dcfa4Y=
-  udp: true
-- name: 🇺🇸US_544|230KB/s|A004-260618
-  type: ss
-  server: 137.131.11.214
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: dhVHI56QN3701Oczms4YeUmlpgPOXJdrO2eG5/WZpcQ=
-  udp: true
-- name: 🇳🇱NL_269|444KB/s|R002-260618
-  type: ss
-  server: 158.101.220.236
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: gJyfItkGGCfGmC41s+4qS/c2sR8W9srwa1vC6fH179Q=
+  password: pi2hqC/eWx66Af0GeDAmbU4xlrg9HIWVNpkpNX8S5Jk=
   udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇨🇦CA_50|325KB/s|A004-260618
-  - 🇩🇪DE_114|168KB/s|A004-260618
-  - 🇸🇬SG_1|234KB/s
-  - 🇺🇸US_576|213KB/s|A004-260618
-  - 🇬🇧GB_145|184KB/s|A004-260618
-  - 🇸🇬SG_123|297KB/s|A004-260618
-  - 🇺🇸US_593|299KB/s|R002-260618
-  - 🇩🇪DE_134|271KB/s|V002-260618
-  - 🇬🇧GB_147|131KB/s|A004-260618
-  - 🇬🇧GB_162|143KB/s|R002-260618
-  - 🇬🇧GB_146|235KB/s|A004-260618
-  - 🇬🇧GB_161|319KB/s|R002-260618
-  - 🇺🇸US_595|256KB/s|R002-260618
-  - 🇳🇱NL_244|527KB/s|R002-260618
-  - 🇺🇸US_550|407KB/s|R002-260618
-  - 🇳🇱NL_270|214KB/s|R002-260618
-  - 🇩🇪DE_128|250KB/s|V006-260618
-  - 🇧🇷BR_12|264KB/s|R002-260618
-  - 🇺🇸US_544|230KB/s|A004-260618
-  - 🇳🇱NL_269|444KB/s|R002-260618
+  - 🇨🇦CA_25|188KB/s|A004-260618
+  - 🇩🇪DE_102|155KB/s|A004-260618
+  - US
+  - 🇹🇷TR - udptoos.com
+  - '@Alirewa-548'
+  - 🇳🇱NL_191|348KB/s|R002-260618
+  - 🇩🇪DE_115|170KB/s|A004-260618
+  - 🇳🇱NL_190|220KB/s|A004-260618
+  - NL
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
