@@ -56,7 +56,6 @@ https://raw.githubusercontent.com/XiaoZhang-qd/auto-vpnlink/main/output/subscrip
 ```
 ```URL
 https://xiaozhang-qd.github.io/auto-vpnlink/main/output/subscriptions.txt
-
 ```
 
 这个文件是**订阅源地址清单**，不是一个统一的 Clash 配置，因此不要把它误认为单一订阅配置。
@@ -213,7 +212,26 @@ Workflow：
 .github/workflows/update.yml
 ```
 
-每天北京时间 **10:15** 自动运行，也可以手动运行。
+### ⏰ 自动运行时间
+
+Workflow 已配置为每天自动运行一次：
+
+```text
+每天北京时间 11:30
+时区：Asia/Shanghai（UTC+8）
+```
+
+对应配置：
+
+```yaml
+schedule:
+  - cron: '30 11 * * *'
+    timezone: "Asia/Shanghai"
+```
+
+也就是说，不需要再手动换算 UTC 时间；GitHub Actions 会按照 `Asia/Shanghai` 时区执行。
+
+同时支持手动运行。
 
 ### 手动运行
 
