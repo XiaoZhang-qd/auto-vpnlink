@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="auto-vpnlink VPN 订阅链接中心">
+<title>VPN 订阅链接中心</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",Arial,sans-serif;color:#111827}body{min-height:100vh;padding:24px;background:linear-gradient(135deg,#eef2f7,#f8fafc)}.wrap{width:900px;max-width:100%;margin:0 auto}.card{background:#fff;border-radius:24px;padding:30px;box-shadow:0 20px 60px rgba(0,0,0,.10)}h1{margin:0;font-size:28px}h2{margin:28px 0 12px;font-size:19px}.sub{margin:8px 0 20px;color:#6b7280;font-size:14px}.toolbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}button,.link-btn{display:inline-flex;align-items:center;justify-content:center;width:100%;padding:12px 16px;border:0;border-radius:11px;background:#111827;color:#fff;font-size:14px;font-weight:650;text-decoration:none;cursor:pointer}.secondary{background:#f3f4f6;color:#111827}.count{display:inline-block;padding:4px 9px;border-radius:999px;background:#f3f4f6;color:#6b7280;font-size:12px}.source{display:flex;gap:10px;align-items:center;margin:9px 0;padding:12px;border:1px solid #e5e7eb;border-radius:12px;background:#fafafa}.source-text{flex:1;min-width:0;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;line-height:1.5;word-break:break-all}.copy-one{width:auto;min-width:68px;padding:8px 10px;font-size:12px;flex:none}.status{padding:11px 13px;border-radius:10px;background:#f8fafc;color:#6b7280;font-size:13px;line-height:1.6}.ok{color:#15803d}.err{color:#dc2626}.outputs{display:grid;grid-template-columns:1fr 1fr;gap:10px}.output{padding:15px;border:1px solid #e5e7eb;border-radius:13px}.output strong{display:block;margin-bottom:6px}.output small{display:block;color:#6b7280;margin-bottom:10px;line-height:1.5}.output .link-btn{font-size:12px}.footer{margin-top:22px;padding-top:16px;border-top:1px solid #eee;color:#9ca3af;font-size:12px;text-align:center;line-height:1.7}@media(max-width:650px){.card{padding:22px}.toolbar,.outputs{grid-template-columns:1fr}.source{align-items:flex-start}.copy-one{margin-top:0}}
+</style>
+</head>
+<body>
+<div class="wrap"><div class="card">
+<h1>VPN 订阅链接中心</h1>
+<div class="sub">自动读取仓库 <code>output/subscriptions.txt</code>，可一键复制订阅链接。</div>
+<div class="toolbar">
+<button id="copy-all">复制全部订阅链接</button>
+<a class="link-btn secondary" href="./index.html">返回网络国家 / 地区检测</a>
+</div>
+<div id="status" class="status">正在读取最新订阅列表...</div>
+<h2>检测通过的订阅源 <span id="count" class="count">0</span></h2>
+<div id="list"></div>
+<h2>生成的客户端文件</h2>
+<div class="outputs">
+<div class="output"><strong>Clash / Mihomo</strong><small>聚合后的 Clash/Mihomo YAML。</small><a class="link-btn" target="_blank" rel="noopener" href="./output/clash.yaml">打开</a></div>
+<div class="output"><strong>Base64</strong><small>聚合节点 Base64 订阅。</small><a class="link-btn" target="_blank" rel="noopener" href="./output/base64.txt">打开</a></div>
+<div class="output"><strong>原始节点</strong><small>扫描发现的节点 URI。</small><a class="link-btn" target="_blank" rel="noopener" href="./output/nodes.txt">打开</a></div>
+<div class="output"><strong>订阅源清单</strong><small>当前页面正在读取的 subscriptions.txt。</small><a class="link-btn" target="_blank" rel="noopener" href="./output/subscriptions.txt">打开</a></div>
+</div>
+<div class="footer">链接来自仓库自动生成的公开数据。订阅地址可访问不代表其中每个节点都一定可用。</div>
+</div></div>
+<script>
+"use strict";
+const LIST_URL="./output/subscriptions.txt";
+const list=document.getElementById("list"),count=document.getElementById("count"),status=document.getElementById("status"),copyAll=document.getElementById("copy-all");
+let urls=[];
+function clean(s){return String(s||"").trim()}
+function parse(text){const seen=new Set();return text.split(/\r?\n/).map(clean).filter(x=>x&&!x.startsWith("#")&&/^https?:\/\//i.test(x)).filter(x=>{const k=x.replace(/[?#].*$/,"" )+x.includes("?")?x.split("?")[0]:x;if(seen.has(x))return false;seen.add(x);return true})}
+function copyText(text){if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(text);const ta=document.createElement("textarea");ta.value=text;ta.style.position="fixed";ta.style.left="-9999px";document.body.appendChild(ta);ta.select();document.execCommand("copy");ta.remove();return Promise.resolve()}
+function render(){list.innerHTML="";count.textContent=String(urls.length);if(!urls.length){list.innerHTML="<div class='status'>当前还没有读取到订阅链接。请先运行 GitHub Actions 更新 output。</div>";return}urls.forEach((url,i)=>{const row=document.createElement("div");row.className="source";const text=document.createElement("div");text.className="source-text";text.textContent=(i+1)+". "+url;const btn=document.createElement("button");btn.className="copy-one";btn.textContent="复制";btn.addEventListener("click",()=>copyText(url).then(()=>{btn.textContent="已复制";setTimeout(()=>btn.textContent="复制",1200)}));row.append(text,btn);list.appendChild(row)})}
+async function load(){try{const r=await fetch(LIST_URL+"?t="+Date.now(),{cache:"no-store"});if(!r.ok)throw new Error("HTTP "+r.status);const text=await r.text();urls=parse(text);render();status.className="status ok";status.textContent="已读取最新订阅列表，共 "+urls.length+" 条。"}catch(e){status.className="status err";status.textContent="读取 subscriptions.txt 失败。请确认 GitHub Actions 已生成 output/subscriptions.txt。";render();console.error(e)}}
+copyAll.addEventListener("click",()=>{if(!urls.length)return;copyText(urls.join("\n")).then(()=>{const old=copyAll.textContent;copyAll.textContent="已复制全部订阅链接";setTimeout(()=>copyAll.textContent=old,1500)})});load();
+</script>
+</body>
+</html>
