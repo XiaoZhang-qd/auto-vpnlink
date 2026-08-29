@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="zh-CN">
 
 <head>
@@ -6,15 +7,21 @@
 <meta charset="UTF-8">
 
 <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+
+>
+
+<meta
+name="description"
+content="检测当前公网 IP 所属国家、地区、城市、ISP、ASN、时区等信息"
+
 >
 
 <title>网络国家 / 地区检测</title>
 
-
 <!-- =========================================================
-     动态网站图标
+     动态 Favicon
 ========================================================= -->
 
 <link
@@ -23,7 +30,6 @@
     type="image/svg+xml"
     href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23e5e7eb'/%3E%3C/svg%3E"
 >
-
 
 <style>
 
@@ -75,7 +81,7 @@ body {
 
 .card {
 
-    width: 430px;
+    width: 460px;
 
     max-width: 100%;
 
@@ -120,7 +126,7 @@ body {
 
 
 /* =========================================================
-   国旗区域
+   国旗
 ========================================================= */
 
 .flag-area {
@@ -291,7 +297,7 @@ body {
 
 
 /* =========================================================
-   详情顶部圆形国旗
+   详情顶部国旗
 ========================================================= */
 
 .detail-flag-header {
@@ -388,6 +394,26 @@ body {
     word-break: break-all;
 
     text-align: right;
+}
+
+
+/* =========================================================
+   API 状态
+========================================================= */
+
+.api-status {
+
+    margin-top: 10px;
+
+    padding: 7px 10px;
+
+    border-radius: 8px;
+
+    background: #f8fafc;
+
+    color: #9ca3af;
+
+    font-size: 11px;
 }
 
 
@@ -522,412 +548,374 @@ button:disabled {
 
 </head>
 
-
 <body>
-
 
 <div class="card">
 
-
-    <h1 class="title">
-        网络国家 / 地区检测
-    </h1>
-
-
-    <div class="subtitle">
-        检测当前公网 IP 所属国家或地区
-    </div>
+```
+<h1 class="title">
+    网络国家 / 地区检测
+</h1>
 
 
-    <!-- =====================================================
-         国旗
-    ====================================================== -->
+<div class="subtitle">
+    检测当前公网 IP 所属国家或地区
+</div>
 
-    <div class="flag-area">
 
-        <div
-            id="loading"
-            class="spinner"
-        ></div>
+<!-- =====================================================
+     国旗
+====================================================== -->
 
+<div class="flag-area">
+
+    <div
+        id="loading"
+        class="spinner"
+    ></div>
+
+
+    <img
+        id="flag"
+        alt="国家 / 地区国旗"
+    >
+
+</div>
+
+
+<!-- =====================================================
+     国家
+====================================================== -->
+
+<div id="country">
+    检测中...
+</div>
+
+
+<!-- =====================================================
+     ISO
+====================================================== -->
+
+<div id="iso"></div>
+
+
+<!-- =====================================================
+     公网 IP
+====================================================== -->
+
+<div id="ip">
+    IP：检测中...
+</div>
+
+
+<!-- =====================================================
+     IP 详细信息
+====================================================== -->
+
+<div id="ip-details">
+
+
+    <div class="detail-flag-header">
 
         <img
-            id="flag"
-            alt="国家 / 地区国旗"
+            id="detail-country-flag"
+            alt="国家旗帜"
         >
 
     </div>
 
 
-    <!-- =====================================================
-         国家
-    ====================================================== -->
-
-    <div id="country">
-        检测中...
-    </div>
-
-
-    <!-- =====================================================
-         ISO
-    ====================================================== -->
-
-    <div id="iso"></div>
-
-
-    <!-- =====================================================
-         公网 IP
-    ====================================================== -->
-
-    <div id="ip">
-        IP：检测中...
-    </div>
-
-
-    <!-- =====================================================
-         IP 详细信息
-    ====================================================== -->
-
-    <div id="ip-details">
-
-
-        <!-- 圆形国旗 -->
-
-        <div class="detail-flag-header">
-
-            <img
-                id="detail-country-flag"
-                alt="圆形国家旗帜"
-            >
-
-        </div>
-
-
-        <div class="ip-detail-row">
-
-            <span class="ip-detail-label">
-                国家
-            </span>
-
-            <span
-                class="ip-detail-value"
-                id="detail-country"
-            >
-                —
-            </span>
-
-        </div>
-
-
-        <div class="ip-detail-row">
-
-            <span class="ip-detail-label">
-                国家代码
-            </span>
-
-            <span
-                class="ip-detail-value"
-                id="detail-countryCode"
-            >
-                —
-            </span>
-
-        </div>
-
-
-        <div class="ip-detail-row">
-
-            <span class="ip-detail-label">
-                地区代码
-            </span>
-
-            <span
-                class="ip-detail-value"
-                id="detail-region"
-            >
-                —
-            </span>
-
-        </div>
-
-
-        <div class="ip-detail-row">
-
-            <span class="ip-detail-label">
-                地区名称
-            </span>
-
-            <span
-                class="ip-detail-value"
-                id="detail-regionName"
-            >
-                —
-            </span>
-
-        </div>
-
-
-        <div class="ip-detail-row">
-
-            <span class="ip-detail-label">
-                城市
-            </span>
-
-            <span
-                class="ip-detail-value"
-                id="detail-city"
-            >
-                —
-            </span>
-
-        </div>
-
-
-        <div class="ip-detail-row">
-
-            <span class="ip-detail-label">
-                邮编
-            </span>
-
-            <span
-                class="ip-detail-value"
-                id="detail-zip"
-            >
-                —
-            </span>
-
-        </div>
-
-
-        <div class="ip-detail-row">
-
-            <span class="ip-detail-label">
-                纬度
-            </span>
-
-            <span
-                class="ip-detail-value"
-                id="detail-lat"
-            >
-                —
-            </span>
-
-        </div>
-
-
-        <div class="ip-detail-row">
-
-            <span class="ip-detail-label">
-                经度
-            </span>
-
-            <span
-                class="ip-detail-value"
-                id="detail-lon"
-            >
-                —
-            </span>
-
-        </div>
-
-
-        <div class="ip-detail-row">
-
-            <span class="ip-detail-label">
-                时区
-            </span>
-
-            <span
-                class="ip-detail-value"
-                id="detail-timezone"
-            >
-                —
-            </span>
-
-        </div>
-
-
-        <div class="ip-detail-row">
-
-            <span class="ip-detail-label">
-                ISP
-            </span>
-
-            <span
-                class="ip-detail-value"
-                id="detail-isp"
-            >
-                —
-            </span>
-
-        </div>
-
-
-        <div class="ip-detail-row">
-
-            <span class="ip-detail-label">
-                组织
-            </span>
-
-            <span
-                class="ip-detail-value"
-                id="detail-org"
-            >
-                —
-            </span>
-
-        </div>
-
-
-        <div class="ip-detail-row">
-
-            <span class="ip-detail-label">
-                ASN
-            </span>
-
-            <span
-                class="ip-detail-value"
-                id="detail-as"
-            >
-                —
-            </span>
-
-        </div>
-
+    <div class="ip-detail-row">
+
+        <span class="ip-detail-label">
+            国家
+        </span>
+
+        <span
+            class="ip-detail-value"
+            id="detail-country"
+        >
+            —
+        </span>
 
     </div>
 
 
-    <!-- =====================================================
-         状态
-    ====================================================== -->
+    <div class="ip-detail-row">
 
-    <div id="status">
-        正在检测当前网络...
+        <span class="ip-detail-label">
+            国家代码
+        </span>
+
+        <span
+            class="ip-detail-value"
+            id="detail-countryCode"
+        >
+            —
+        </span>
+
     </div>
 
 
-    <!-- =====================================================
-         重新检测
-    ====================================================== -->
+    <div class="ip-detail-row">
 
-    <button
-        id="refresh"
-        onclick="detectNetwork()"
-    >
-        重新检测
-    </button>
+        <span class="ip-detail-label">
+            地区代码
+        </span>
 
-<button
-    id="copy-url"
-    onclick="copyUrlToClipboard()"
->
-    复制当前 URL 到剪贴板
-</button>
+        <span
+            class="ip-detail-value"
+            id="detail-region"
+        >
+            —
+        </span>
 
-<script>
-function copyUrlToClipboard() {
-    const url = window.location.href;
-    navigator.clipboard.writeText(url)
-        .then(() => {
-            alert("URL 已复制到剪贴板", url);
-        })
-        .catch(err => {
-            console.error("复制失败：", err);
-            alert("复制失败，请手动复制地址栏链接:" + url);
-        });
-}
-</script>
+    </div>
 
 
+    <div class="ip-detail-row">
 
-    <div class="footer">
-        公网 IP / 国家定位：IP-API · 国旗：多源 API · 圆形国旗：Circle Flags
+        <span class="ip-detail-label">
+            地区名称
+        </span>
+
+        <span
+            class="ip-detail-value"
+            id="detail-regionName"
+        >
+            —
+        </span>
+
+    </div>
+
+
+    <div class="ip-detail-row">
+
+        <span class="ip-detail-label">
+            城市
+        </span>
+
+        <span
+            class="ip-detail-value"
+            id="detail-city"
+        >
+            —
+        </span>
+
+    </div>
+
+
+    <div class="ip-detail-row">
+
+        <span class="ip-detail-label">
+            邮编
+        </span>
+
+        <span
+            class="ip-detail-value"
+            id="detail-zip"
+        >
+            —
+        </span>
+
+    </div>
+
+
+    <div class="ip-detail-row">
+
+        <span class="ip-detail-label">
+            纬度
+        </span>
+
+        <span
+            class="ip-detail-value"
+            id="detail-lat"
+        >
+            —
+        </span>
+
+    </div>
+
+
+    <div class="ip-detail-row">
+
+        <span class="ip-detail-label">
+            经度
+        </span>
+
+        <span
+            class="ip-detail-value"
+            id="detail-lon"
+        >
+            —
+        </span>
+
+    </div>
+
+
+    <div class="ip-detail-row">
+
+        <span class="ip-detail-label">
+            时区
+        </span>
+
+        <span
+            class="ip-detail-value"
+            id="detail-timezone"
+        >
+            —
+        </span>
+
+    </div>
+
+
+    <div class="ip-detail-row">
+
+        <span class="ip-detail-label">
+            ISP
+        </span>
+
+        <span
+            class="ip-detail-value"
+            id="detail-isp"
+        >
+            —
+        </span>
+
+    </div>
+
+
+    <div class="ip-detail-row">
+
+        <span class="ip-detail-label">
+            组织
+        </span>
+
+        <span
+            class="ip-detail-value"
+            id="detail-org"
+        >
+            —
+        </span>
+
+    </div>
+
+
+    <div class="ip-detail-row">
+
+        <span class="ip-detail-label">
+            ASN
+        </span>
+
+        <span
+            class="ip-detail-value"
+            id="detail-as"
+        >
+            —
+        </span>
+
     </div>
 
 
 </div>
 
 
+<!-- API 状态 -->
+
+<div
+    id="api-status"
+    class="api-status"
+>
+    定位服务：检测中
+</div>
+
+
+<!-- =====================================================
+     状态
+====================================================== -->
+
+<div id="status">
+    正在检测当前网络...
+</div>
+
+
+<!-- =====================================================
+     重新检测
+====================================================== -->
+
+<button
+    id="refresh"
+    type="button"
+>
+    重新检测
+</button>
+
+
+<!-- =====================================================
+     复制 URL
+====================================================== -->
+
+<button
+    id="copy-url"
+    type="button"
+>
+    复制当前 URL 到剪贴板
+</button>
+
+
+<div class="footer">
+    公网 IP / 国家定位：多源 HTTPS API ·
+    国旗：多源 API ·
+    圆形国旗：Circle Flags
+</div>
+```
+
+</div>
+
 <script>
 
 
 /* =========================================================
-   IP-API
+   配置
 ========================================================= */
 
-const IP_API =
-    "https://ip-api.com/json/";
-
-
-/* =========================================================
-   IP-API 字段
-========================================================= */
-
-const FIELDS =
-    "status,message,country,countryCode,region,regionName,city,zip,lat,lon,timezone,isp,org,as,query";
-
-
-/* =========================================================
-   国旗 API
-========================================================= */
+const API_TIMEOUT = 8000;
 
 
 /*
- * 1. FlagsAPI
- */
-
-const FLAG_API_1 =
-    "https://flagsapi.com/{ISO}/flat/64.png";
-
-
-/*
- * 2. CountriesData
- */
-
-const FLAG_API_2 =
-    "https://raw.githubusercontent.com/Vihan/CountriesData/refs/heads/ver-0.1/countries_flags/{ISO}.png";
-
-
-/*
- * 3. FlagCDN
- */
-
-const FLAG_API_3 =
-    "https://flagcdn.com/{ISO}.svg";
-
-
-/*
- * 4. REST Countries
+ * 多源 HTTPS IP 定位
  *
- * 当前仍提供：
+ * 第一优先：
+ * IPWho.is
  *
- * /v5/svg/{iso}.svg
+ * 第二：
+ * ipapi.co
+ *
+ * 第三：
+ * GeoJS
  */
 
-const FLAG_API_4 =
-    "https://flags.restcountries.com/v5/svg/{ISO}.svg";
+const IP_APIS = [
 
+    {
+        name: "IPWho.is",
+        url: "https://ipwho.is/",
+        type: "ipwhois"
+    },
 
-/*
- * 5. Circle Flags
- *
- * 这个专门用于：
- *
- * - favicon
- * - IP 详情区域圆形国旗
- */
+    {
+        name: "ipapi.co",
+        url: "https://ipapi.co/json/",
+        type: "ipapico"
+    },
 
-const CIRCLE_FLAG_API =
-    "https://hatscripts.github.io/circle-flags/flags/{ISO}.svg";
+    {
+        name: "GeoJS",
+        url: "https://get.geojs.io/v1/ip/geo.json",
+        type: "geojs"
+    }
 
-
-/* =========================================================
-   JSONP 超时时间
-========================================================= */
-
-const JSONP_TIMEOUT =
-    12000;
+];
 
 
 /* =========================================================
@@ -939,68 +927,65 @@ const loading =
         "loading"
     );
 
-
 const flag =
     document.getElementById(
         "flag"
     );
-
 
 const country =
     document.getElementById(
         "country"
     );
 
-
 const iso =
     document.getElementById(
         "iso"
     );
-
 
 const ip =
     document.getElementById(
         "ip"
     );
 
-
 const status =
     document.getElementById(
         "status"
     );
-
 
 const refresh =
     document.getElementById(
         "refresh"
     );
 
-
-/* =========================================================
-   favicon
-========================================================= */
+const copyURLButton =
+    document.getElementById(
+        "copy-url"
+    );
 
 const favicon =
     document.getElementById(
         "country-favicon"
     );
 
-
-/* =========================================================
-   IP 详情
-========================================================= */
-
 const ipDetails =
     document.getElementById(
         "ip-details"
     );
-
 
 const detailCountryFlag =
     document.getElementById(
         "detail-country-flag"
     );
 
+const apiStatus =
+    document.getElementById(
+        "api-status"
+    );
+
+
+/* =========================================================
+   详情字段
+========================================================= */
 
 const detailFields = {
 
@@ -1074,7 +1059,9 @@ const detailFields = {
 function clean(value) {
 
     return String(
-        value == null ? "" : value
+        value == null
+            ? ""
+            : value
     )
     .replace(
         /[\r\n\t]/g,
@@ -1099,97 +1086,799 @@ function validISO(value) {
 
 
 /* =========================================================
-   创建 URL
+   详情值
 ========================================================= */
 
-function buildFlagURL(
-    template,
-    countryISO,
-    lowercase = false
+function detailValue(value) {
+
+    const result =
+        clean(value);
+
+    return result
+        ? result
+        : "—";
+
+}
+
+
+/* =========================================================
+   超时 Fetch
+========================================================= */
+
+async function fetchJSON(
+    url
 ) {
 
-    const code =
-        lowercase
-            ? countryISO.toLowerCase()
-            : countryISO.toUpperCase();
+    const controller =
+        new AbortController();
 
-    return template.replace(
-        "{ISO}",
-        code
+    const timeout =
+        setTimeout(
+            function() {
+
+                controller.abort();
+
+            },
+            API_TIMEOUT
+        );
+
+
+    try {
+
+        const response =
+            await fetch(
+                url,
+                {
+                    method: "GET",
+
+                    cache: "no-store",
+
+                    signal:
+                        controller.signal,
+
+                    headers: {
+                        "Accept":
+                            "application/json"
+                    }
+                }
+            );
+
+
+        if (!response.ok) {
+
+            throw new Error(
+                "HTTP " +
+                response.status
+            );
+
+        }
+
+
+        return await response.json();
+
+    }
+
+    finally {
+
+        clearTimeout(
+            timeout
+        );
+
+    }
+
+}
+
+
+/* =========================================================
+   IPWho.is 数据转换
+========================================================= */
+
+function normalizeIPWhoIs(
+    data
+) {
+
+    if (
+        !data ||
+        data.success === false
+    ) {
+
+        throw new Error(
+            data &&
+            data.message
+                ? data.message
+                : "IPWho.is 返回失败"
+        );
+
+    }
+
+
+    const connection =
+        data.connection || {};
+
+
+    const timezone =
+        data.timezone || {};
+
+
+    return {
+
+        ip:
+            data.ip,
+
+        country:
+            data.country,
+
+        countryCode:
+            data.country_code,
+
+        region:
+            data.region,
+
+        regionCode:
+            data.region_code,
+
+        regionName:
+            data.region,
+
+        city:
+            data.city,
+
+        zip:
+            data.postal,
+
+        lat:
+            data.latitude,
+
+        lon:
+            data.longitude,
+
+        timezone:
+            timezone.id ||
+            timezone.abbr,
+
+        isp:
+            connection.isp,
+
+        org:
+            connection.org,
+
+        as:
+            connection.asn
+                ? (
+                    String(
+                        connection.asn
+                    )
+                    .toUpperCase()
+                    .startsWith("AS")
+                        ? connection.asn
+                        : "AS" +
+                          connection.asn
+                )
+                : ""
+
+    };
+
+}
+
+
+/* =========================================================
+   ipapi.co 数据转换
+========================================================= */
+
+function normalizeIPApiCo(
+    data
+) {
+
+    if (
+        !data ||
+        data.error
+    ) {
+
+        throw new Error(
+            data &&
+            (
+                data.reason ||
+                data.message
+            )
+                ? (
+                    data.reason ||
+                    data.message
+                )
+                : "ipapi.co 返回失败"
+        );
+
+    }
+
+
+    const countryCode =
+        data.country_code ||
+        data.country;
+
+
+    return {
+
+        ip:
+            data.ip,
+
+        country:
+            data.country_name,
+
+        countryCode:
+            countryCode,
+
+        region:
+            data.region_code,
+
+        regionCode:
+            data.region_code,
+
+        regionName:
+            data.region,
+
+        city:
+            data.city,
+
+        zip:
+            data.postal,
+
+        lat:
+            data.latitude,
+
+        lon:
+            data.longitude,
+
+        timezone:
+            data.timezone,
+
+        isp:
+            data.org,
+
+        org:
+            data.org,
+
+        as:
+            data.asn
+
+    };
+
+}
+
+
+/* =========================================================
+   GeoJS 数据转换
+========================================================= */
+
+function normalizeGeoJS(
+    data
+) {
+
+    if (
+        !data ||
+        !data.country
+    ) {
+
+        throw new Error(
+            "GeoJS 返回数据无效"
+        );
+
+    }
+
+
+    return {
+
+        ip:
+            data.ip,
+
+        country:
+            data.country,
+
+        countryCode:
+            data.country_code,
+
+        region:
+            data.region,
+
+        regionCode:
+            data.region_code,
+
+        regionName:
+            data.region,
+
+        city:
+            data.city,
+
+        zip:
+            data.postal,
+
+        lat:
+            data.latitude,
+
+        lon:
+            data.longitude,
+
+        timezone:
+            data.timezone,
+
+        isp:
+            data.organization,
+
+        org:
+            data.organization,
+
+        as:
+            data.asn
+
+    };
+
+}
+
+
+/* =========================================================
+   统一 API 数据
+========================================================= */
+
+function normalizeData(
+    data,
+    type
+) {
+
+    let result;
+
+
+    switch (type) {
+
+        case "ipwhois":
+
+            result =
+                normalizeIPWhoIs(
+                    data
+                );
+
+            break;
+
+
+        case "ipapico":
+
+            result =
+                normalizeIPApiCo(
+                    data
+                );
+
+            break;
+
+
+        case "geojs":
+
+            result =
+                normalizeGeoJS(
+                    data
+                );
+
+            break;
+
+
+        default:
+
+            throw new Error(
+                "未知 API 类型"
+            );
+
+    }
+
+
+    /*
+     * 统一国家代码
+     */
+
+    result.countryCode =
+        clean(
+            result.countryCode
+        ).toUpperCase();
+
+
+    /*
+     * 验证关键字段
+     */
+
+    if (
+        !clean(result.country) ||
+        !validISO(
+            result.countryCode
+        )
+    ) {
+
+        throw new Error(
+            "API 返回的国家数据无效"
+        );
+
+    }
+
+
+    return result;
+
+}
+
+
+/* =========================================================
+   请求 IP 定位
+========================================================= */
+
+async function requestIPData() {
+
+    let lastError =
+        null;
+
+
+    for (
+        const api of IP_APIS
+    ) {
+
+        try {
+
+            apiStatus.textContent =
+                "定位服务：" +
+                api.name +
+                "（连接中）";
+
+
+            status.textContent =
+                "正在连接 " +
+                api.name +
+                "...";
+
+
+            console.log(
+                "正在尝试：",
+                api.name
+            );
+
+
+            const raw =
+                await fetchJSON(
+                    api.url
+                );
+
+
+            const data =
+                normalizeData(
+                    raw,
+                    api.type
+                );
+
+
+            data._api =
+                api.name;
+
+
+            apiStatus.textContent =
+                "定位服务：" +
+                api.name +
+                "（成功）";
+
+
+            console.log(
+                api.name +
+                " 返回：",
+                data
+            );
+
+
+            return data;
+
+        }
+
+        catch (error) {
+
+            lastError =
+                error;
+
+
+            console.warn(
+                api.name +
+                " 失败：",
+                error
+            );
+
+
+            apiStatus.textContent =
+                "定位服务：" +
+                api.name +
+                "（失败，切换备用）";
+
+        }
+
+    }
+
+
+    throw (
+        lastError ||
+        new Error(
+            "所有 API 均失败"
+        )
     );
 
 }
 
 
 /* =========================================================
-   设置 favicon
+   国旗 URL
+========================================================= */
+
+function getFlagURLs(
+    countryISO
+) {
+
+    const code =
+        countryISO.toLowerCase();
+
+
+    return [
+
+        /*
+         * FlagCDN
+         */
+
+        `https://flagcdn.com/${code}.svg`,
+
+
+        /*
+         * Circle Flags
+         */
+
+        `https://hatscripts.github.io/circle-flags/flags/${code}.svg`,
+
+
+        /*
+         * FlagsAPI
+         */
+
+        `https://flagsapi.com/${countryISO}/flat/64.png`
+
+    ];
+
+}
+
+
+/* =========================================================
+   加载国旗
+========================================================= */
+
+function loadFlag(
+    countryISO
+) {
+
+    return new Promise(
+        function(resolve) {
+
+            const urls =
+                getFlagURLs(
+                    countryISO
+                );
+
+
+            let index =
+                0;
+
+
+            function next() {
+
+                if (
+                    index >=
+                    urls.length
+                ) {
+
+                    resolve(
+                        null
+                    );
+
+                    return;
+
+                }
+
+
+                const currentURL =
+                    urls[index++];
+
+
+                const image =
+                    new Image();
+
+
+                let finished =
+                    false;
+
+
+                const timer =
+                    setTimeout(
+                        function() {
+
+                            if (
+                                finished
+                            ) {
+                                return;
+                            }
+
+
+                            finished =
+                                true;
+
+
+                            next();
+
+                        },
+                        5000
+                    );
+
+
+                image.onload =
+                    function() {
+
+                        if (
+                            finished
+                        ) {
+                            return;
+                        }
+
+
+                        finished =
+                            true;
+
+
+                        clearTimeout(
+                            timer
+                        );
+
+
+                        resolve(
+                            currentURL
+                        );
+
+                    };
+
+
+                image.onerror =
+                    function() {
+
+                        if (
+                            finished
+                        ) {
+                            return;
+                        }
+
+
+                        finished =
+                            true;
+
+
+                        clearTimeout(
+                            timer
+                        );
+
+
+                        next();
+
+                    };
+
+
+                image.src =
+                    currentURL +
+                    (
+                        currentURL.includes("?")
+                            ? "&"
+                            : "?"
+                    ) +
+                    "t=" +
+                    Date.now();
+
+            }
+
+
+            next();
+
+        }
+    );
+
+}
+
+
+/* =========================================================
+   显示国旗
+========================================================= */
+
+function displayFlag(
+    imageURL
+) {
+
+    return new Promise(
+        function(resolve) {
+
+            if (
+                !imageURL
+            ) {
+
+                resolve(
+                    false
+                );
+
+                return;
+
+            }
+
+
+            flag.style.display =
+                "none";
+
+
+            flag.onload =
+                function() {
+
+                    flag.style.display =
+                        "block";
+
+
+                    resolve(
+                        true
+                    );
+
+                };
+
+
+            flag.onerror =
+                function() {
+
+                    flag.style.display =
+                        "none";
+
+
+                    resolve(
+                        false
+                    );
+
+                };
+
+
+            flag.src =
+                imageURL;
+
+        }
+    );
+
+}
+
+
+/* =========================================================
+   更新 Favicon
 ========================================================= */
 
 function updateFavicon(
     countryISO
 ) {
 
-    if (!favicon) {
-        return;
-    }
+    const code =
+        countryISO.toLowerCase();
 
-
-    const circleFlagURL =
-        buildFlagURL(
-            CIRCLE_FLAG_API,
-            countryISO,
-            true
-        );
-
-
-    /*
-     * 直接设置 favicon
-     */
 
     favicon.href =
-        circleFlagURL;
-
-
-    console.log(
-        "网站 favicon：",
-        circleFlagURL
-    );
+        `https://hatscripts.github.io/circle-flags/flags/${code}.svg`;
 
 }
 
 
 /* =========================================================
-   更新详情区域圆形国旗
+   更新详情国旗
 ========================================================= */
 
-function updateDetailCircleFlag(
+function updateDetailFlag(
     countryISO
 ) {
 
-    if (!detailCountryFlag) {
-        return;
-    }
+    const code =
+        countryISO.toLowerCase();
 
-
-    const circleFlagURL =
-        buildFlagURL(
-            CIRCLE_FLAG_API,
-            countryISO,
-            true
-        );
-
-
-    /*
-     * 先隐藏
-     */
 
     detailCountryFlag.style.display =
         "none";
 
-
-    /*
-     * 防止旧图片触发
-     */
 
     detailCountryFlag.onload =
         function() {
@@ -1203,11 +1892,6 @@ function updateDetailCircleFlag(
     detailCountryFlag.onerror =
         function() {
 
-            console.warn(
-                "圆形国旗加载失败：",
-                circleFlagURL
-            );
-
             detailCountryFlag.style.display =
                 "none";
 
@@ -1215,25 +1899,7 @@ function updateDetailCircleFlag(
 
 
     detailCountryFlag.src =
-        circleFlagURL;
-
-}
-
-
-/* =========================================================
-   详情值
-========================================================= */
-
-function detailValue(
-    value
-) {
-
-    const result =
-        clean(value);
-
-    return result
-        ? result
-        : "—";
+        `https://hatscripts.github.io/circle-flags/flags/${code}.svg?t=${Date.now()}`;
 
 }
 
@@ -1243,8 +1909,7 @@ function detailValue(
 ========================================================= */
 
 function displayIPDetails(
-    data,
-    countryISO
+    data
 ) {
 
     detailFields.country.textContent =
@@ -1256,13 +1921,12 @@ function displayIPDetails(
     detailFields.countryCode.textContent =
         detailValue(
             data.countryCode
-        )
-        .toUpperCase();
+        );
 
 
     detailFields.region.textContent =
         detailValue(
-            data.region
+            data.regionCode
         );
 
 
@@ -1324,18 +1988,10 @@ function displayIPDetails(
         );
 
 
-    /*
-     * 更新圆形国旗
-     */
-
-    updateDetailCircleFlag(
-        countryISO
+    updateDetailFlag(
+        data.countryCode
     );
 
-
-    /*
-     * 显示
-     */
 
     ipDetails.style.display =
         "block";
@@ -1344,491 +2000,10 @@ function displayIPDetails(
 
 
 /* =========================================================
-   多源国旗加载
+   重置页面
 ========================================================= */
 
-function loadFlagWithFallback(
-    countryISO
-) {
-
-    return new Promise(
-        function(resolve) {
-
-
-            /*
-             * 国旗来源
-             */
-
-            const flagSources = [
-
-                buildFlagURL(
-                    FLAG_API_1,
-                    countryISO
-                ),
-
-                buildFlagURL(
-                    FLAG_API_2,
-                    countryISO
-                ),
-
-                buildFlagURL(
-                    FLAG_API_3,
-                    countryISO
-                ),
-
-                buildFlagURL(
-                    FLAG_API_4,
-                    countryISO
-                )
-
-            ];
-
-
-            let index = 0;
-
-
-            /*
-             * 尝试下一个
-             */
-
-            function tryNext() {
-
-
-                /*
-                 * 全部失败
-                 */
-
-                if (
-                    index >=
-                    flagSources.length
-                ) {
-
-                    resolve(
-                        null
-                    );
-
-                    return;
-
-                }
-
-
-                const currentURL =
-                    flagSources[index];
-
-
-                index++;
-
-
-                console.log(
-                    "正在尝试国旗 API：",
-                    currentURL
-                );
-
-
-                /*
-                 * 测试图片
-                 */
-
-                const testImage =
-                    new Image();
-
-
-                let finished =
-                    false;
-
-
-                /*
-                 * 成功
-                 */
-
-                testImage.onload =
-                    function() {
-
-                        if (finished) {
-                            return;
-                        }
-
-
-                        finished =
-                            true;
-
-
-                        console.log(
-                            "国旗 API 加载成功：",
-                            currentURL
-                        );
-
-
-                        resolve(
-                            currentURL
-                        );
-
-                    };
-
-
-                /*
-                 * 失败
-                 */
-
-                testImage.onerror =
-                    function() {
-
-                        if (finished) {
-                            return;
-                        }
-
-
-                        finished =
-                            true;
-
-
-                        console.warn(
-                            "国旗 API 加载失败：",
-                            currentURL
-                        );
-
-
-                        tryNext();
-
-                    };
-
-
-                /*
-                 * 防缓存
-                 */
-
-                testImage.src =
-                    currentURL +
-                    (
-                        currentURL.includes("?")
-                            ? "&"
-                            : "?"
-                    ) +
-                    "t=" +
-                    Date.now();
-
-            }
-
-
-            tryNext();
-
-        }
-    );
-
-}
-
-
-/* =========================================================
-   显示国旗
-========================================================= */
-
-function displayFlag(
-    imageURL
-) {
-
-    return new Promise(
-        function(resolve) {
-
-
-            if (!imageURL) {
-
-                resolve(
-                    false
-                );
-
-                return;
-
-            }
-
-
-            /*
-             * 清除旧事件
-             */
-
-            flag.onload =
-                null;
-
-            flag.onerror =
-                null;
-
-
-            flag.style.display =
-                "none";
-
-
-            /*
-             * 成功
-             */
-
-            flag.onload =
-                function() {
-
-                    flag.style.display =
-                        "block";
-
-
-                    resolve(
-                        true
-                    );
-
-                };
-
-
-            /*
-             * 失败
-             */
-
-            flag.onerror =
-                function() {
-
-                    flag.style.display =
-                        "none";
-
-
-                    resolve(
-                        false
-                    );
-
-                };
-
-
-            /*
-             * 设置图片
-             */
-
-            flag.src =
-                imageURL;
-
-        }
-    );
-
-}
-
-
-/* =========================================================
-   JSONP
-========================================================= */
-
-function requestJSONP() {
-
-    return new Promise(
-        function(
-            resolve,
-            reject
-        ) {
-
-
-            /*
-             * 唯一 callback
-             */
-
-            const callbackName =
-                "__ipApiCallback_" +
-                Date.now() +
-                "_" +
-                Math.random()
-                    .toString(36)
-                    .substring(2);
-
-
-            /*
-             * Script
-             */
-
-            const script =
-                document.createElement(
-                    "script"
-                );
-
-
-            let finished =
-                false;
-
-
-            /*
-             * 清理
-             */
-
-            function cleanup() {
-
-                clearTimeout(
-                    timer
-                );
-
-
-                try {
-
-                    delete window[
-                        callbackName
-                    ];
-
-                }
-
-                catch (_) {
-
-                    window[
-                        callbackName
-                    ] = undefined;
-
-                }
-
-
-                if (
-                    script.parentNode
-                ) {
-
-                    script.parentNode
-                        .removeChild(
-                            script
-                        );
-
-                }
-
-            }
-
-
-            /*
-             * 超时
-             */
-
-            const timer =
-                setTimeout(
-                    function() {
-
-                        if (finished) {
-                            return;
-                        }
-
-
-                        finished =
-                            true;
-
-
-                        cleanup();
-
-
-                        reject(
-                            new Error(
-                                "IP-API 请求超时"
-                            )
-                        );
-
-                    },
-                    JSONP_TIMEOUT
-                );
-
-
-            /*
-             * JSONP callback
-             */
-
-            window[
-                callbackName
-            ] =
-                function(data) {
-
-                    if (finished) {
-                        return;
-                    }
-
-
-                    finished =
-                        true;
-
-
-                    cleanup();
-
-
-                    resolve(
-                        data
-                    );
-
-                };
-
-
-            /*
-             * Script error
-             */
-
-            script.onerror =
-                function() {
-
-                    if (finished) {
-                        return;
-                    }
-
-
-                    finished =
-                        true;
-
-
-                    cleanup();
-
-
-                    reject(
-                        new Error(
-                            "IP-API LOAD FAILED"
-                        )
-                    );
-
-                };
-
-
-            /*
-             * URL
-             */
-
-            const url =
-                IP_API +
-                "?fields=" +
-                encodeURIComponent(
-                    FIELDS
-                ) +
-                "&lang=zh-CN" +
-                "&callback=" +
-                encodeURIComponent(
-                    callbackName
-                ) +
-                "&t=" +
-                Date.now();
-
-
-            script.src =
-                url;
-
-
-            script.async =
-                true;
-
-
-            document.head.appendChild(
-                script
-            );
-
-        }
-    );
-
-}
-
-
-/* =========================================================
-   主检测
-========================================================= */
-
-async function detectNetwork() {
-
-
-    /*
-     * 防止重复点击
-     */
-
-    refresh.disabled =
-        true;
-
-
-    /*
-     * 重置界面
-     */
+function resetPage() {
 
     loading.style.display =
         "block";
@@ -1850,362 +2025,233 @@ async function detectNetwork() {
         "none";
 
 
-    ip.textContent =
-        "IP：检测中...";
-
-
     country.textContent =
         "检测中...";
 
 
+    ip.textContent =
+        "IP：检测中...";
+
+
     status.textContent =
-        "正在连接 IP 定位服务...";
+        "正在检测当前网络...";
 
 
     status.className =
         "";
 
 
-    /*
-     * 重置 favicon
-     */
+    apiStatus.textContent =
+        "定位服务：检测中";
+
 
     favicon.href =
         "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23e5e7eb'/%3E%3C/svg%3E";
 
-
-    /*
-     * =====================================================
-     * IP-API 重试
-     * =====================================================
-     */
-
-    let data =
-        null;
+}
 
 
-    let lastError =
-        null;
+/* =========================================================
+   主检测
+========================================================= */
+
+let detectionID =
+    0;
 
 
-    for (
-        let attempt = 1;
-        attempt <= 2;
-        attempt++
-    ) {
+async function detectNetwork() {
 
-        try {
-
-            if (attempt === 2) {
-
-                status.textContent =
-                    "正在重试 IP 定位服务...";
-
-            }
+    const currentID =
+        ++detectionID;
 
 
-            data =
-                await requestJSONP();
+    refresh.disabled =
+        true;
 
 
-            break;
-
-        }
-
-        catch (error) {
-
-            lastError =
-                error;
+    resetPage();
 
 
-            console.warn(
-                "IP-API 第 " +
-                attempt +
-                " 次失败：",
-                error
-            );
+    try {
+
+        /*
+         * ================================================
+         * 获取 IP 数据
+         * ================================================
+         */
+
+        const data =
+            await requestIPData();
+
+
+        /*
+         * 如果期间开始了新的检测
+         */
+
+        if (
+            currentID !==
+            detectionID
+        ) {
+
+            return;
 
         }
 
-    }
 
-
-    /*
-     * =====================================================
-     * IP API 完全失败
-     * =====================================================
-     */
-
-    if (!data) {
-
-        loading.style.display =
-            "none";
-
-
-        country.textContent =
-            "检测失败";
-
-
-        ip.textContent =
-            "IP：无法获取";
-
-
-        status.innerHTML =
-            "IP 定位服务无法连接。<br>" +
-            "错误：" +
+        const countryName =
             clean(
-                lastError
-                    ? lastError.message
-                    : "Unknown error"
+                data.country
             );
 
 
-        status.className =
-            "error";
-
-
-        refresh.disabled =
-            false;
-
-
-        return;
-
-    }
-
-
-    /*
-     * =====================================================
-     * API 返回错误
-     * =====================================================
-     */
-
-    if (
-        data.status !==
-        "success"
-    ) {
-
-        loading.style.display =
-            "none";
-
-
-        country.textContent =
-            "检测失败";
-
-
-        ip.textContent =
-            "IP：无法获取";
-
-
-        status.innerHTML =
-            "IP 定位服务返回错误。<br>" +
+        const countryISO =
             clean(
-                data.message ||
-                "Unknown error"
+                data.countryCode
+            ).toUpperCase();
+
+
+        const publicIP =
+            clean(
+                data.ip
             );
 
 
-        status.className =
-            "error";
+        /*
+         * ================================================
+         * IP
+         * ================================================
+         */
+
+        ip.textContent =
+            publicIP
+                ? "IP：" +
+                  publicIP
+                : "IP：未返回";
 
 
-        refresh.disabled =
-            false;
-
-
-        return;
-
-    }
-
-
-    /*
-     * =====================================================
-     * 国家
-     * =====================================================
-     */
-
-    const countryName =
-        clean(
-            data.country
-        );
-
-
-    const countryISO =
-        clean(
-            data.countryCode
-        )
-        .toUpperCase();
-
-
-    /*
-     * 国家名称检查
-     */
-
-    if (!countryName) {
-
-        loading.style.display =
-            "none";
-
-
-        country.textContent =
-            "检测失败";
-
-
-        status.textContent =
-            "IP API 没有返回国家名称。";
-
-
-        status.className =
-            "error";
-
-
-        refresh.disabled =
-            false;
-
-
-        return;
-
-    }
-
-
-    /*
-     * ISO 检查
-     */
-
-    if (
-        !validISO(
-            countryISO
-        )
-    ) {
-
-        loading.style.display =
-            "none";
-
+        /*
+         * ================================================
+         * 国家
+         * ================================================
+         */
 
         country.textContent =
             countryName;
 
 
-        status.textContent =
-            "国家代码无效：" +
+        /*
+         * ================================================
+         * ISO
+         * ================================================
+         */
+
+        iso.textContent =
             countryISO;
 
 
-        status.className =
-            "error";
+        iso.style.display =
+            "inline-block";
 
 
-        refresh.disabled =
-            false;
+        /*
+         * ================================================
+         * 详细信息
+         * ================================================
+         */
 
-
-        return;
-
-    }
-
-
-    /*
-     * =====================================================
-     * 公网 IP
-     * =====================================================
-     */
-
-    const publicIP =
-        clean(
-            data.query
+        displayIPDetails(
+            data
         );
 
 
-    ip.textContent =
-        publicIP
-            ? "IP：" + publicIP
-            : "IP：API 未返回 IP";
+        /*
+         * ================================================
+         * Favicon
+         * ================================================
+         */
 
-
-    /*
-     * =====================================================
-     * 国家
-     * =====================================================
-     */
-
-    country.textContent =
-        countryName;
-
-
-    /*
-     * =====================================================
-     * ISO
-     * =====================================================
-     */
-
-    iso.textContent =
-        countryISO;
-
-
-    iso.style.display =
-        "inline-block";
-
-
-    /*
-     * =====================================================
-     * 显示详细信息
-     * =====================================================
-     */
-
-    displayIPDetails(
-        data,
-        countryISO
-    );
-
-
-    /*
-     * =====================================================
-     * 设置 favicon
-     * =====================================================
-     */
-
-    updateFavicon(
-        countryISO
-    );
-
-
-    /*
-     * =====================================================
-     * 加载多源国旗
-     * =====================================================
-     */
-
-    status.textContent =
-        "正在加载国旗...";
-
-
-    const successURL =
-        await loadFlagWithFallback(
+        updateFavicon(
             countryISO
         );
 
 
-    /*
-     * =====================================================
-     * 国旗成功
-     * =====================================================
-     */
+        /*
+         * ================================================
+         * 国旗
+         * ================================================
+         */
 
-    if (successURL) {
+        status.textContent =
+            "正在加载国旗...";
 
-        const displayed =
-            await displayFlag(
-                successURL
+
+        const flagURL =
+            await loadFlag(
+                countryISO
             );
+
+
+        if (
+            currentID !==
+            detectionID
+        ) {
+
+            return;
+
+        }
 
 
         loading.style.display =
             "none";
 
 
-        if (displayed) {
+        if (
+            flagURL
+        ) {
+
+            const shown =
+                await displayFlag(
+                    flagURL
+                );
+
+
+            if (
+                shown
+            ) {
+
+                status.textContent =
+                    "检测完成 · " +
+                    data._api;
+
+
+                status.className =
+                    "success";
+
+            }
+
+            else {
+
+                status.textContent =
+                    "检测完成 · 国旗加载失败";
+
+
+                status.className =
+                    "success";
+
+            }
+
+        }
+
+        else {
+
+            /*
+             * 国旗失败不能影响
+             * IP 定位结果
+             */
 
             status.textContent =
-                "检测完成";
+                "检测完成 · " +
+                data._api;
 
 
             status.className =
@@ -2213,63 +2259,185 @@ async function detectNetwork() {
 
         }
 
-        else {
+    }
 
-            status.innerHTML =
-                "国家检测成功：" +
-                countryName +
-                "（" +
-                countryISO +
-                "）<br>" +
-                "国旗图片加载失败。";
+    catch (error) {
+
+        console.error(
+            "检测失败：",
+            error
+        );
 
 
-            status.className =
-                "error";
+        if (
+            currentID !==
+            detectionID
+        ) {
+
+            return;
 
         }
 
 
-        refresh.disabled =
-            false;
+        loading.style.display =
+            "none";
 
 
-        return;
+        flag.style.display =
+            "none";
+
+
+        country.textContent =
+            "检测失败";
+
+
+        ip.textContent =
+            "IP：无法获取";
+
+
+        apiStatus.textContent =
+            "定位服务：全部失败";
+
+
+        status.innerHTML =
+            "所有 HTTPS IP 定位服务均无法连接。<br>" +
+            "请检查当前网络、VPN 或浏览器网络权限。";
+
+
+        status.className =
+            "error";
 
     }
 
+    finally {
 
-    /*
-     * =====================================================
-     * 所有国旗 API 都失败
-     * =====================================================
-     */
+        if (
+            currentID ===
+            detectionID
+        ) {
 
-    loading.style.display =
-        "none";
+            refresh.disabled =
+                false;
 
+        }
 
-    flag.style.display =
-        "none";
-
-
-    status.innerHTML =
-        "国家检测成功：" +
-        countryName +
-        "（" +
-        countryISO +
-        "）<br>" +
-        "但所有国旗 API 均无法加载。";
-
-
-    status.className =
-        "error";
-
-
-    refresh.disabled =
-        false;
+    }
 
 }
+
+
+/* =========================================================
+   复制 URL
+========================================================= */
+
+async function copyUrlToClipboard() {
+
+    const url =
+        window.location.href;
+
+
+    try {
+
+        if (
+            navigator.clipboard &&
+            window.isSecureContext
+        ) {
+
+            await navigator.clipboard.writeText(
+                url
+            );
+
+        }
+
+        else {
+
+            const textarea =
+                document.createElement(
+                    "textarea"
+                );
+
+
+            textarea.value =
+                url;
+
+
+            textarea.style.position =
+                "fixed";
+
+            textarea.style.left =
+                "-9999px";
+
+
+            document.body.appendChild(
+                textarea
+            );
+
+
+            textarea.select();
+
+
+            document.execCommand(
+                "copy"
+            );
+
+
+            textarea.remove();
+
+        }
+
+
+        const oldText =
+            copyURLButton.textContent;
+
+
+        copyURLButton.textContent =
+            "已复制";
+
+
+        setTimeout(
+            function() {
+
+                copyURLButton.textContent =
+                    oldText;
+
+            },
+            1500
+        );
+
+    }
+
+    catch (error) {
+
+        console.error(
+            "复制失败：",
+            error
+        );
+
+
+        alert(
+            "复制失败，请手动复制地址栏中的 URL：\n\n" +
+            url
+        );
+
+    }
+
+}
+
+
+/* =========================================================
+   按钮事件
+========================================================= */
+
+refresh.addEventListener(
+    "click",
+    detectNetwork
+);
+
+
+copyURLButton.addEventListener(
+    "click",
+    copyUrlToClipboard
+);
 
 
 /* =========================================================
@@ -2278,8 +2446,8 @@ async function detectNetwork() {
 
 detectNetwork();
 
-</script>
 
+</script>
 
 </body>
 
