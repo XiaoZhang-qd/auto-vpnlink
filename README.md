@@ -3,7 +3,7 @@
 自动发现、检查并聚合公开 VPN / Proxy 订阅源的 GitHub Actions 项目。
 
 > 本项目只处理公开数据。**订阅地址可访问不代表其中每一个节点都一定可连接。**
->> 可以到**[https://xiaozhang-qd.github.io/auto-vpnlink/](https://xiaozhang-qd.github.io/auto-vpnlink/)进行网络测试。
+>> 可以到[https://xiaozhang-qd.github.io/auto-vpnlink/](https://xiaozhang-qd.github.io/auto-vpnlink/)进行网络测试。
 
 ## ✨ 现在能做什么
 
