@@ -23,16 +23,18 @@
 - 🤖 可通过 GitHub Actions 定时自动更新
 - ▶️ 支持 GitHub Actions 手动更新，并可设置搜索/检测数量
 - 💻 支持直接克隆到本地运行
+- ⏰ 本地支持使用 Python 标准库每天自动运行
+- 🌐 本地提供 Web 控制台，可作为简单网站/服务器运行
 - 💾 自动生成并更新 `output/`
 
 ## 🚀 部署与使用
 
-本项目有两种运行方式，**二选一即可**：
+本项目支持两种独立运行方式：
 
-1. **本地运行**：适合希望自己控制运行环境、参数和运行时间的用户。
-2. **GitHub Actions**：适合希望放在 GitHub 上自动定时运行的用户。
+1. **本地运行**：直接克隆仓库，在自己的电脑、服务器或 VPS 上运行。
+2. **GitHub Actions**：交给 GitHub 托管并按计划自动运行。
 
-> ⚠️ GitHub Actions 只是自动化运行方式，并不是项目运行所必需的。核心程序可以直接在支持 Python 3.12 的本地环境运行。
+> ⚠️ GitHub Actions 不是本项目的必需依赖。核心程序可以脱离 GitHub Actions 在本地运行。
 
 ---
 
@@ -46,7 +48,7 @@
 - Git
 - 能够访问项目所需的网络资源
 
-建议先确认 Python 和 Git 已安装：
+确认环境：
 
 ```bash
 python --version
@@ -66,9 +68,7 @@ cd auto-vpnlink
 python -m pip install -r requirements.txt
 ```
 
-### 4. 运行扫描器
-
-最基本的本地运行方式：
+### 4. 最简单的运行方式
 
 ```bash
 python scanner.py
@@ -76,9 +76,9 @@ python scanner.py
 
 程序完成后会生成或更新 `output/` 中的结果。
 
-### 5. 完整处理流程
+### 5. 完整运行流程
 
-如果希望尽可能按照 GitHub Actions 的完整流程在本地执行，可依次运行：
+如果需要执行项目完整处理流程，可以依次运行：
 
 ```bash
 python scanner.py
@@ -88,19 +88,125 @@ python healthcheck.py
 python publish_outputs.py
 ```
 
-> ⚠️ 完整流程中的健康检测需要可用的 Mihomo/Clash 内核。GitHub Actions 会自动下载 Mihomo；本地运行时需要根据当前环境准备 `MIHOMO_BIN` 环境变量所指向的 Mihomo 可执行文件。
+> ⚠️ 完整流程中的健康检测需要可用的 Mihomo/Clash 内核。本地运行时请准备 Mihomo，并通过 `MIHOMO_BIN` 指定可执行文件路径。
 
-### 6. 本地运行时的自动定时
+---
 
-本地运行**不会自动继承 GitHub Actions 的每天 11:30 定时任务**。
+## ⏰ 本地自动运行
 
-如果需要每天固定时间运行，可以使用操作系统自己的定时任务：
+项目自带基于 **Python 标准库**实现的本地定时器，**不需要 Windows 任务计划程序、Linux cron、systemd 或 macOS launchd**。
 
-- Windows：**任务计划程序（Task Scheduler）**
-- Linux：**cron / systemd timer**
-- macOS：**launchd**
+启动本地自动运行服务：
 
-这样可以完全脱离 GitHub Actions，在自己的电脑或服务器上定时执行项目。
+```bash
+python local_server.py
+```
+
+默认配置：
+
+```text
+每天：11:30
+时区：Asia/Shanghai（UTC+8）
+```
+
+程序会一直运行，并在每天北京时间 11:30 自动执行一次完整处理流程。
+
+### 自定义自动运行时间
+
+可以通过环境变量修改每日运行时间和时区。
+
+Linux / macOS：
+
+```bash
+AUTO_VPN_TIME=08:00 AUTO_VPN_TIMEZONE=Asia/Shanghai python local_server.py
+```
+
+Windows PowerShell：
+
+```powershell
+$env:AUTO_VPN_TIME="08:00"
+$env:AUTO_VPN_TIMEZONE="Asia/Shanghai"
+python local_server.py
+```
+
+例如设置 `08:00` 后，程序就会每天北京时间 08:00 自动运行。
+
+> ⚠️ 本地定时器依赖 `local_server.py` 持续运行。停止 Python 进程后，自动任务也会停止。
+
+---
+
+## 🌐 本地 Web 服务器
+
+`local_server.py` 同时提供一个 Web 控制台，因此它既是**本地自动任务程序**，也是一个简单的 Web 服务器。
+
+启动：
+
+```bash
+python local_server.py
+```
+
+本机打开：
+
+```text
+http://127.0.0.1:8080/local
+```
+
+如果运行在局域网服务器上，同一网络中的其他设备可以访问：
+
+```text
+http://服务器IP:8080/local
+```
+
+例如：
+
+```text
+http://192.168.1.100:8080/local
+```
+
+### Web 控制台功能
+
+网页可以查看：
+
+- ⏰ 每天自动运行时间
+- 🌏 当前时区
+- 📅 下一次计划运行时间
+- 🔄 当前运行状态
+- 🕐 上一次运行时间
+- ✅ / ❌ 上一次运行结果
+- 📜 最近一次运行日志
+- ▶️ 手动立即执行一次完整流程
+- 📡 快速进入订阅网页
+
+同时，服务器也会提供项目目录中的网页和 `output/` 文件，因此可以把运行中的电脑、VPS 或服务器作为一个简单的网站服务器使用。
+
+### 作为网站服务器运行
+
+默认监听：
+
+```text
+0.0.0.0:8080
+```
+
+可以通过环境变量修改：
+
+```text
+AUTO_VPN_HOST=0.0.0.0
+AUTO_VPN_PORT=8080
+```
+
+例如：
+
+```bash
+AUTO_VPN_PORT=9000 python local_server.py
+```
+
+然后访问：
+
+```text
+http://服务器IP:9000/local
+```
+
+> ⚠️ 如果直接暴露到公网，请自行配置防火墙、反向代理、HTTPS 和访问控制。当前 Web 控制台没有账号密码认证，不建议未经保护直接暴露到公网。
 
 ---
 
@@ -210,51 +316,47 @@ GitHub Actions 模式会在最后自动提交生成结果；本地运行则由�
 output/
 ```
 
-具体订阅地址请查看下面的输出文件说明。
-
 ### Clash / Mihomo
 
-```URL
+```text
 https://raw.githubusercontent.com/XiaoZhang-qd/auto-vpnlink/main/output/clash.yaml
 ```
-```URL
+
+```text
 https://xiaozhang-qd.github.io/auto-vpnlink/main/output/clash.yaml
 ```
 
-这是自动把发现到的节点转换成 Clash/Mihomo YAML 后生成的文件。
-
 ### Base64 节点列表
 
-```URL
+```text
 https://raw.githubusercontent.com/XiaoZhang-qd/auto-vpnlink/main/output/base64.txt
 ```
-```URL
+
+```text
 https://xiaozhang-qd.github.io/auto-vpnlink/main/output/base64.txt
 ```
 
-里面是聚合后的节点 URI 的 Base64 内容，适用于支持这种订阅形式的客户端。
-
 ### 原始订阅源列表
 
-```URL
+```text
 https://raw.githubusercontent.com/XiaoZhang-qd/auto-vpnlink/main/output/subscriptions.txt
 ```
-```URL
+
+```text
 https://xiaozhang-qd.github.io/auto-vpnlink/main/output/subscriptions.txt
 ```
 
-这个文件是**订阅源地址清单**，不是一个统一的 Clash 配置，因此不要把它误认为单一订阅配置。
+这个文件是**订阅源地址清单**，不是统一的 Clash 配置。
 
 ### 原始节点
 
-```URL
+```text
 https://raw.githubusercontent.com/XiaoZhang-qd/auto-vpnlink/main/output/nodes.txt
 ```
-```URL
+
+```text
 https://xiaozhang-qd.github.io/auto-vpnlink/main/output/nodes.txt
 ```
-
-这里保存扫描时直接发现的节点 URI。
 
 ## 📁 输出文件
 
@@ -266,7 +368,7 @@ output/
 ├── nodes.txt               # 原始节点 URI
 ├── subscriptions.txt       # 检测通过的订阅 URL
 ├── sources.json             # 完整来源、检测及统计信息
-└── summary.md              # 本次扫描摘要
+└── summary.md               # 本次扫描摘要
 ```
 
 ## ⚠️ 关于“可用”
@@ -286,6 +388,7 @@ output/
 - 不要提交私有订阅链接。
 - 不要把账号密码、Token、Cookie 放入仓库。
 - 不执行第三方 Git 仓库中的程序。
+- 如果把本地 Web 服务暴露到公网，请配置访问控制和 HTTPS。
 - 请遵守 GitHub、GitLab、订阅源和网络服务的使用条款。
 
 ## 📜 License
