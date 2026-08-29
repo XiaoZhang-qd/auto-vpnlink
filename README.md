@@ -4,9 +4,9 @@
 
 > 本项目既可以**本地运行或 VPS 运行**，也可以使用 **GitHub Actions 自动运行**；GitHub Actions 不是本项目的必需依赖。
 
->>你可以到[https://xiaozhang.github.io/auto-vpnlink](xiaozhang.github.io/auto-vpnlink)进行网络国家 / 地区检测
+>>你可以到[https://xiaozhang-qd.github.io/auto-vpnlink]([xiaozhang-qd.github.io](https://xiaozhang-qd.github.io)/auto-vpnlink)进行网络国家 / 地区检测
 
->>你可以到[https://xiaozhang.github.io/auto-vpnlink/subscriptions.html](https://xiaozhang.github.io/auto-vpnlink/subscriptions.html)获取最新的VPN订阅链接
+>>你可以到[https://xiaozhang-qd.github.io/auto-vpnlink/subscriptions.html](https://xiaozhang-qd.github.io/auto-vpnlink/subscriptions.html)获取最新的VPN订阅链接
 
 ## ✨ 功能
 
