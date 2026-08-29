@@ -19,9 +19,66 @@
 - ▶️ 支持 Actions 手动更新，并可设置搜索/检测数量
 - 💾 自动提交最新 `output/`
 
-### 部署方法
-1. 点击在左上角Fork此仓库 -> 点击``Create fork`` -> 进入仓库的Actions -> 选择 `Update VPN Sources` -> 点击Run workflow -> 设置好 `Maximum discovered nodes to consider` `Maximum nodes for general health check` `General healthy node target` `Maximum CFW-compatible nodes to test` `CFW healthy node target` 后点击Run workflow即可，完成后使用[直接使用生成的订阅](#🚀 最重要：直接使用生成的订阅)的链接即可
-2. 点击在左上角的Settings -> 点击 `Pages` -> 在 `Branch` 里选择main和/ (root) -> 点击 Save即可，完成后使用[直接使用生成的订阅](#🚀 最重要：直接使用生成的订阅)的链接即可
+### 🚀 部署方法
+
+#### 1. Fork 仓库
+
+点击右上角 **Fork → Create fork**，将本项目复制到你自己的 GitHub 账号下。
+
+#### 2. 首次运行 GitHub Actions
+
+进入你 Fork 后的仓库：
+
+```text
+Actions
+  → Update VPN Sources
+  → Run workflow
+```
+
+在 **Run workflow** 页面可以根据需要设置以下参数：
+
+| 参数                                       | 说明               |    默认值 |
+| ---------------------------------------- | ---------------- | -----: |
+| `Maximum discovered nodes to consider`   | 最多处理多少个发现的节点     | `5000` |
+| `Maximum nodes for general health check` | 普通健康检测的候选节点数量    |  `300` |
+| `General healthy node target`            | 普通健康检测成功目标       |   `20` |
+| `Maximum CFW-compatible nodes to test`   | 最多检测多少个 CFW 兼容节点 |  `150` |
+| `CFW healthy node target`                | CFW 健康节点成功目标     |   `10` |
+
+设置完成后点击 **Run workflow**，等待 Action 执行完成。
+
+> 💡 如果不需要调整参数，直接使用默认值运行即可。
+
+#### 3. 启用 GitHub Pages（可选）
+
+如果希望通过 GitHub Pages 访问生成的订阅文件：
+
+```text
+Settings
+  → Pages
+  → Build and deployment
+  → Source: Deploy from a branch
+  → Branch: main
+  → Folder: / (root)
+  → Save
+```
+
+等待 GitHub Pages 部署完成后，即可使用 Pages 地址访问项目生成的文件。
+
+#### 4. 获取生成的订阅
+
+Action 成功运行后，最新结果会自动生成到：
+
+```text
+output/
+```
+
+具体订阅地址和使用方式请查看：
+
+**[🚀 最重要：直接使用生成的订阅](#🚀-最重要直接使用生成的订阅)**
+
+> ⚠️ GitHub Pages 是可选的。即使不启用 Pages，也可以直接使用 `raw.githubusercontent.com` 提供的订阅地址。
+
 
 ## 🚀 最重要：直接使用生成的订阅
 
