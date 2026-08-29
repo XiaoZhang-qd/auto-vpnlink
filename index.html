@@ -15,11 +15,8 @@
 <h1 class="title">网络国家 / 地区检测</h1>
 <div class="subtitle">检测当前公网 IP 所属国家或地区</div>
 <div class="flag-area"><div id="loading" class="spinner"></div><img id="flag" alt="国家 / 地区国旗"></div>
-<div id="country">检测中...</div>
-<div id="iso"></div>
-<div id="ip">IP：检测中...</div>
-<div id="ip-details">
-<div class="detail-flag-header"><img id="detail-country-flag" alt="国家旗帜"></div>
+<div id="country">检测中...</div><div id="iso"></div><div id="ip">IP：检测中...</div>
+<div id="ip-details"><div class="detail-flag-header"><img id="detail-country-flag" alt="国家旗帜"></div>
 <div class="ip-detail-row"><span class="ip-detail-label">国家</span><span class="ip-detail-value" id="detail-country">—</span></div>
 <div class="ip-detail-row"><span class="ip-detail-label">国家代码</span><span class="ip-detail-value" id="detail-countryCode">—</span></div>
 <div class="ip-detail-row"><span class="ip-detail-label">地区代码</span><span class="ip-detail-value" id="detail-region">—</span></div>
@@ -31,30 +28,22 @@
 <div class="ip-detail-row"><span class="ip-detail-label">时区</span><span class="ip-detail-value" id="detail-timezone">—</span></div>
 <div class="ip-detail-row"><span class="ip-detail-label">ISP</span><span class="ip-detail-value" id="detail-isp">—</span></div>
 <div class="ip-detail-row"><span class="ip-detail-label">组织</span><span class="ip-detail-value" id="detail-org">—</span></div>
-<div class="ip-detail-row"><span class="ip-detail-label">ASN</span><span class="ip-detail-value" id="detail-as">—</span></div>
-</div>
-<div id="api-status" class="api-status">定位服务：检测中</div>
-<div id="status">正在检测当前网络...</div>
-<button id="refresh" type="button">重新检测</button>
-<button id="copy-url" type="button">复制当前 URL 到剪贴板</button>
+<div class="ip-detail-row"><span class="ip-detail-label">ASN</span><span class="ip-detail-value" id="detail-as">—</span></div></div>
+<div id="api-status" class="api-status">定位服务：检测中</div><div id="status">正在检测当前网络...</div>
+<button id="refresh" type="button">重新检测</button><button id="copy-url" type="button">复制当前 URL 到剪贴板</button>
 <div class="footer">公网 IP / 国家定位：多源 HTTPS API · 国旗：多源 API · 圆形国旗：Circle Flags</div>
 </div>
 <script>
 "use strict";
-const API_TIMEOUT=8000;
-const API_LIST=[
+const API_TIMEOUT=8000,API_LIST=[
 {name:"IPWho.is",url:"https://ipwho.is/",type:"ipwhois"},
 {name:"ipapi.co",url:"https://ipapi.co/json/",type:"ipapico"},
 {name:"GeoJS",url:"https://get.geojs.io/v1/ip/geo.json",type:"geojs"},
-{name:"IPinfo",url:"https://ipinfo.io/json",type:"ipinfo"}
-];
-const $=id=>document.getElementById(id);
-const loading=$("loading"),flag=$("flag"),country=$("country"),iso=$("iso"),ip=$("ip"),status=$("status"),refresh=$("refresh"),copyURLButton=$("copy-url"),favicon=$("country-favicon"),ipDetails=$("ip-details"),detailCountryFlag=$("detail-country-flag"),apiStatus=$("api-status");
+{name:"IPinfo",url:"https://ipinfo.io/json",type:"ipinfo"}];
+const $=id=>document.getElementById(id),loading=$("loading"),flag=$("flag"),country=$("country"),iso=$("iso"),ip=$("ip"),status=$("status"),refresh=$("refresh"),copyURLButton=$("copy-url"),favicon=$("country-favicon"),ipDetails=$("ip-details"),detailCountryFlag=$("detail-country-flag"),apiStatus=$("api-status");
 const detailFields={country:$("detail-country"),countryCode:$("detail-countryCode"),region:$("detail-region"),regionName:$("detail-regionName"),city:$("detail-city"),zip:$("detail-zip"),lat:$("detail-lat"),lon:$("detail-lon"),timezone:$("detail-timezone"),isp:$("detail-isp"),org:$("detail-org"),as:$("detail-as")};
-function clean(v){return String(v==null?"":v).replace(/[\r\n\t]/g,"").trim()}
-function detailValue(v){const s=clean(v);return s||"—"}
-function validISO(v){return /^[A-Z]{2}$/.test(v)}
-function withTimeout(url){return new Promise((resolve,reject)=>{const c=new AbortController();const t=setTimeout(()=>{c.abort();reject(new Error("请求超时"))},API_TIMEOUT);fetch(url,{method:"GET",cache:"no-store",signal:c.signal,headers:{Accept:"application/json"}}).then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json()}).then(resolve).catch(reject).finally(()=>clearTimeout(t))})}
+function clean(v){return String(v==null?"":v).replace(/[\r\n\t]/g,"").trim()}function detailValue(v){const s=clean(v);return s||"—"}function validISO(v){return/^[A-Z]{2}$/.test(v)}
+function withTimeout(url){return new Promise((resolve,reject)=>{const c=new AbortController(),t=setTimeout(()=>{c.abort();reject(new Error("请求超时"))},API_TIMEOUT);fetch(url,{method:"GET",cache:"no-store",signal:c.signal,headers:{Accept:"application/json"}}).then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json()}).then(resolve).catch(reject).finally(()=>clearTimeout(t))})}
 function normalizeIPWhois(d){if(!d||d.success===false)throw new Error(d?.message||"IPWho.is 返回失败");const c=d.connection||{},z=d.timezone||{};return{ip:d.ip,country:d.country,countryCode:d.country_code,region:d.region_code,regionName:d.region,city:d.city,zip:d.postal,lat:d.latitude,lon:d.longitude,timezone:z.id||z.abbr,isp:c.isp,org:c.org,as:c.asn?("AS"+String(c.asn).replace(/^AS/i,"")):""}}
 function normalizeIPApiCo(d){if(!d||d.error)throw new Error(d?.reason||d?.message||"ipapi.co 返回失败");return{ip:d.ip,country:d.country_name,countryCode:d.country_code,region:d.region_code,regionName:d.region,city:d.city,zip:d.postal,lat:d.latitude,lon:d.longitude,timezone:d.timezone,isp:d.org,org:d.org,as:d.asn}}
 function normalizeGeoJS(d){if(!d||!d.country)throw new Error("GeoJS 返回数据无效");return{ip:d.ip,country:d.country,countryCode:d.country_code,region:d.region_code,regionName:d.region,city:d.city,zip:d.postal,lat:d.latitude,lon:d.longitude,timezone:d.timezone,isp:d.organization,org:d.organization,as:d.asn}}
@@ -62,10 +51,10 @@ function normalizeIPinfo(d){if(!d||!d.country)throw new Error("IPinfo 返回数�
 function normalize(raw,type){let d;if(type==="ipwhois")d=normalizeIPWhois(raw);else if(type==="ipapico")d=normalizeIPApiCo(raw);else if(type==="geojs")d=normalizeGeoJS(raw);else d=normalizeIPinfo(raw);d.country=clean(d.country);d.countryCode=clean(d.countryCode).toUpperCase();if(!d.country||!validISO(d.countryCode))throw new Error("国家信息无效");d._api=API_LIST.find(x=>x.type===type)?.name||type;return d}
 async function requestIPData(){apiStatus.textContent="定位服务：正在并行检测";const jobs=API_LIST.map(api=>withTimeout(api.url).then(raw=>normalize(raw,api.type)).catch(e=>{console.warn(api.name+" 失败",e);throw e}));try{const data=await Promise.any(jobs);apiStatus.textContent="定位服务："+data._api+"（成功）";return data}catch(e){apiStatus.textContent="定位服务：全部失败";throw new Error("所有 HTTPS IP 定位服务均失败")}}
 function flagURLs(code){const c=code.toLowerCase();return["https://flagcdn.com/"+c+".svg","https://hatscripts.github.io/circle-flags/flags/"+c+".svg","https://flagsapi.com/"+code+"/flat/64.png"]}
-function loadImage(url,timeout=5000){return new Promise(resolve=>{const img=new Image();let done=false;const finish=v=>{if(done)return;done=true;clearTimeout(t);resolve(v)};const t=setTimeout(()=>finish(null),timeout);img.onload=()=>finish(url);img.onerror=()=>finish(null);img.src=url+"?t="+Date.now()})}
+function loadImage(url,timeout=5000){return new Promise(resolve=>{const img=new Image();let done=false;const finish=v=>{if(done)return;done=true;clearTimeout(t);resolve(v)},t=setTimeout(()=>finish(null),timeout);img.onload=()=>finish(url);img.onerror=()=>finish(null);img.src=url+"?t="+Date.now()})}
 async function loadFlag(code){for(const url of flagURLs(code)){const ok=await loadImage(url);if(ok)return ok}return null}
 function updateFavicon(code){favicon.href="https://hatscripts.github.io/circle-flags/flags/"+code.toLowerCase()+".svg"}
-function updateDetailFlag(code){detailCountryFlag.style.display="none";detailCountryFlag.onload=()=>detailCountryFlag.style.display="block";detailCountryFlag.onerror=()=>detailCountryFlag.style.display="none";detailCountryFlag.src="https://hatscripts.github.io/circle-flags/flags/"+code.toLowerCase()+".svg?t="+Date.now()"}
+function updateDetailFlag(code){detailCountryFlag.style.display="none";detailCountryFlag.onload=()=>detailCountryFlag.style.display="block";detailCountryFlag.onerror=()=>detailCountryFlag.style.display="none";detailCountryFlag.src="https://hatscripts.github.io/circle-flags/flags/"+code.toLowerCase()+".svg?t="+Date.now()}
 function displayDetails(d){detailFields.country.textContent=detailValue(d.country);detailFields.countryCode.textContent=detailValue(d.countryCode);detailFields.region.textContent=detailValue(d.region);detailFields.regionName.textContent=detailValue(d.regionName);detailFields.city.textContent=detailValue(d.city);detailFields.zip.textContent=detailValue(d.zip);detailFields.lat.textContent=d.lat==null||d.lat===""?"—":String(d.lat);detailFields.lon.textContent=d.lon==null||d.lon===""?"—":String(d.lon);detailFields.timezone.textContent=detailValue(d.timezone);detailFields.isp.textContent=detailValue(d.isp);detailFields.org.textContent=detailValue(d.org);detailFields.as.textContent=detailValue(d.as);updateDetailFlag(d.countryCode);ipDetails.style.display="block"}
 function resetPage(){loading.style.display="block";flag.style.display="none";iso.style.display="none";ipDetails.style.display="none";detailCountryFlag.style.display="none";country.textContent="检测中...";ip.textContent="IP：检测中...";status.textContent="正在检测当前网络...";status.className="";apiStatus.textContent="定位服务：检测中";favicon.href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23e5e7eb'/%3E%3C/svg%3E"}
 let detectionID=0;
