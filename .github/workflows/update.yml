@@ -29,7 +29,8 @@ on:
         default: '10'
         type: string
   schedule:
-    - cron: '15 2 * * *'
+    - cron: '30 11 * * *'
+      timezone: "Asia/Shanghai"
 
 permissions:
   contents: write
