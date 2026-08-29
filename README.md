@@ -6,7 +6,7 @@
 
 >>你可以到[https://xiaozhang.github.io/auto-vpnlink](xiaozhang.github.io/auto-vpnlink)进行网络国家 / 地区检测
 
->>你可以到[https://xiaozhang.github.io/auto-vpnlinksubscriptions.html](https://xiaozhang.github.io/auto-vpnlinksubscriptions.html)获取最新的VPN订阅链接
+>>你可以到[https://xiaozhang.github.io/auto-vpnlink/subscriptions.html](https://xiaozhang.github.io/auto-vpnlink/subscriptions.html)获取最新的VPN订阅链接
 
 ## ✨ 功能
 
