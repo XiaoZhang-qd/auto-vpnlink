@@ -1,128 +1,46 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="auto-vpnlink VPN 订阅链接中心">
-<title>VPN 订阅链接中心</title>
-<style>
-*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",Arial,sans-serif;color:#111827}body{min-height:100vh;padding:24px;background:linear-gradient(135deg,#eef2f7,#f8fafc)}.wrap{width:900px;max-width:100%;margin:0 auto}.card{background:#fff;border-radius:24px;padding:30px;box-shadow:0 20px 60px rgba(0,0,0,.10)}h1{margin:0;font-size:28px}h2{margin:28px 0 12px;font-size:19px}.sub{margin:8px 0 20px;color:#6b7280;font-size:14px}.toolbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}button,.link-btn{display:inline-flex;align-items:center;justify-content:center;width:100%;padding:12px 16px;border:0;border-radius:11px;background:#111827;color:#fff;font-size:14px;font-weight:650;text-decoration:none;cursor:pointer}.secondary{background:#f3f4f6;color:#111827}.count{display:inline-block;padding:4px 9px;border-radius:999px;background:#f3f4f6;color:#6b7280;font-size:12px}.source{display:flex;gap:10px;align-items:center;margin:9px 0;padding:12px;border:1px solid #e5e7eb;border-radius:12px;background:#fafafa}.source-text{flex:1;min-width:0;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;line-height:1.5;word-break:break-all}.copy-one{width:auto;min-width:68px;padding:8px 10px;font-size:12px;flex:none}.status{padding:11px 13px;border-radius:10px;background:#f8fafc;color:#6b7280;font-size:13px;line-height:1.6}.ok{color:#15803d}.err{color:#dc2626}.outputs{display:grid;grid-template-columns:1fr 1fr;gap:10px}.output{padding:15px;border:1px solid #e5e7eb;border-radius:13px}.output strong{display:block;margin-bottom:6px}.output small{display:block;color:#6b7280;margin-bottom:10px;line-height:1.5}.output .btn-row{display:flex;gap:8px}.output .link-btn,.output .copy-file-btn{flex:1;padding:10px 8px;font-size:12px;margin:0}.footer{margin-top:22px;padding-top:16px;border-top:1px solid #eee;color:#9ca3af;font-size:12px;text-align:center;line-height:1.7}@media(max-width:650px){.card{padding:22px}.toolbar,.outputs{grid-template-columns:1fr}.source{align-items:flex-start}.copy-one{margin-top:0}}
-.copy-file-btn{background:#4b5563;color:#fff;border:0;border-radius:11px;cursor:pointer}
-.schedule{margin:0 0 16px;padding:14px 16px;border:1px solid #e5e7eb;border-radius:13px;background:#fafafa}.schedule-title{font-size:13px;font-weight:700;margin-bottom:5px}.schedule-main{font-size:18px;font-weight:700}.schedule-sub{margin-top:4px;color:#6b7280;font-size:12px}.schedule-next{margin-top:7px;color:#6b7280;font-size:12px}
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="auto-vpnlink VPN 订阅链接中心"><title>VPN 订阅链接中心</title>
+<style>*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",Arial,sans-serif;color:#111827}body{min-height:100vh;padding:24px;background:linear-gradient(135deg,#eef2f7,#f8fafc)}.wrap{width:900px;max-width:100%;margin:0 auto}.card{background:#fff;border-radius:24px;padding:30px;box-shadow:0 20px 60px rgba(0,0,0,.1)}h1{margin:0;font-size:28px}h2{margin:28px 0 12px;font-size:19px}.sub{margin:8px 0 20px;color:#6b7280;font-size:14px}.toolbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}button,.link-btn{display:inline-flex;align-items:center;justify-content:center;width:100%;padding:12px 16px;border:0;border-radius:11px;background:#111827;color:#fff;font-size:14px;font-weight:650;text-decoration:none;cursor:pointer}.secondary{background:#f3f4f6;color:#111827}.count{display:inline-block;padding:4px 9px;border-radius:999px;background:#f3f4f6;color:#6b7280;font-size:12px}.source{display:flex;gap:10px;align-items:center;margin:9px 0;padding:12px;border:1px solid #e5e7eb;border-radius:12px;background:#fafafa}.source-text{flex:1;min-width:0;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;line-height:1.5;word-break:break-all}.copy-one{width:auto;min-width:68px;padding:8px 10px;font-size:12px;flex:none}.status{padding:11px 13px;border-radius:10px;background:#f8fafc;color:#6b7280;font-size:13px;line-height:1.6}.ok{color:#15803d}.err{color:#dc2626}.outputs{display:grid;grid-template-columns:1fr 1fr;gap:10px}.output{padding:15px;border:1px solid #e5e7eb;border-radius:13px}.output strong{display:block;margin-bottom:6px}.output small{display:block;color:#6b7280;margin-bottom:10px;line-height:1.5}.output .btn-row{display:flex;gap:8px}.output .link-btn,.output .copy-file-btn{flex:1;padding:10px 8px;font-size:12px;margin:0}.footer{margin-top:22px;padding-top:16px;border-top:1px solid #eee;color:#9ca3af;font-size:12px;text-align:center;line-height:1.7}.copy-file-btn{background:#4b5563;color:#fff;border:0;border-radius:11px;cursor:pointer}.schedule{margin:0 0 16px;padding:14px 16px;border:1px solid #e5e7eb;border-radius:13px;background:#fafafa}.schedule-title{font-size:13px;font-weight:700;margin-bottom:5px}.schedule-main{font-size:18px;font-weight:700}.schedule-sub{margin-top:4px;color:#6b7280;font-size:12px}.schedule-next{margin-top:7px;color:#6b7280;font-size:12px}@media(max-width:650px){.card{padding:22px}.toolbar,.outputs{grid-template-columns:1fr}.source{align-items:flex-start}.copy-one{margin-top:0}}
 </style>
 </head>
-<body>
-<div class="wrap"><div class="card">
+<body><div class="wrap"><div class="card">
 <h1>VPN 订阅链接中心</h1>
-<div class="sub">自动读取仓库 <code>output/subscriptions.txt</code>，可一键复制订阅链接。</div>
-<div id="schedule" class="schedule">
-  <div class="schedule-title">🤖 自动更新</div>
-  <div id="schedule-main" class="schedule-main">正在读取自动更新时间...</div>
-  <div id="schedule-sub" class="schedule-sub">正在同步 GitHub Actions 的 Workflow 配置</div>
-  <div id="schedule-next" class="schedule-next"></div>
-</div>
-<div class="toolbar">
-<button id="copy-all">复制全部订阅链接</button>
-<a class="link-btn secondary" href="./index.html">返回网络国家 / 地区检测</a>
-</div>
-<div id="status" class="status">正在读取最新订阅列表...</div>
-<h2>检测通过的订阅源 <span id="count" class="count">0</span></h2>
-<div id="list"></div>
-<h2>生成的客户端文件</h2>
-<div class="outputs">
-<div class="output">
-    <strong>Clash / Mihomo</strong>
-    <small>聚合后的 Clash/Mihomo YAML。</small>
-    <div class="btn-row">
-        <a class="link-btn" target="_blank" rel="noopener" href="./output/clash.yaml">打开</a>
-        <button class="copy-file-btn" data-href="./output/clash.yaml">复制链接</button>
-    </div>
-</div>
-<div class="output">
-    <strong>Base64</strong>
-    <small>聚合节点 Base64 订阅。</small>
-    <div class="btn-row">
-        <a class="link-btn" target="_blank" rel="noopener" href="./output/base64.txt">打开</a>
-        <button class="copy-file-btn" data-href="./output/base64.txt">复制链接</button>
-    </div>
-</div>
-<div class="output">
-    <strong>原始节点</strong>
-    <small>扫描发现的节点 URI。</small>
-    <div class="btn-row">
-        <a class="link-btn" target="_blank" rel="noopener" href="./output/nodes.txt">打开</a>
-        <button class="copy-file-btn" data-href="./output/nodes.txt">复制链接</button>
-    </div>
-</div>
-<div class="output">
-    <strong>订阅源清单</strong>
-    <small>当前页面正在读取的 subscriptions.txt。</small>
-    <div class="btn-row">
-        <a class="link-btn" target="_blank" rel="noopener" href="./output/subscriptions.txt">打开</a>
-        <button class="copy-file-btn" data-href="./output/subscriptions.txt">复制链接</button>
-    </div>
-</div>
-</div>
-<div class="footer">链接来自仓库自动生成的公开数据。订阅地址可访问不代表其中每个节点都一定可用。</div>
+<div class="sub">自动读取当前运行环境生成的 <code>output/subscriptions.txt</code>，不会把检测通过的订阅源写死在网页代码中。</div>
+<div id="schedule" class="schedule"><div class="schedule-title">🤖 自动更新</div><div id="schedule-main" class="schedule-main">正在读取更新时间...</div><div id="schedule-sub" class="schedule-sub">正在判断运行环境...</div><div id="schedule-next" class="schedule-next"></div></div>
+<div class="toolbar"><button id="copy-all">复制全部订阅链接</button><a class="link-btn secondary" href="./index.html">返回网络国家 / 地区检测</a></div>
+<div id="status" class="status">正在读取当前运行环境生成的订阅列表...</div>
+<h2>检测通过的订阅源 <span id="count" class="count">0</span></h2><div id="list"></div>
+<h2>生成的客户端文件</h2><div class="outputs">
+<div class="output"><strong>Clash / Mihomo</strong><small>当前运行环境生成的 Clash/Mihomo YAML。</small><div class="btn-row"><a class="link-btn" target="_blank" rel="noopener" href="./output/clash.yaml">打开</a><button class="copy-file-btn" data-href="./output/clash.yaml">复制链接</button></div></div>
+<div class="output"><strong>Base64</strong><small>当前运行环境生成的 Base64 订阅。</small><div class="btn-row"><a class="link-btn" target="_blank" rel="noopener" href="./output/base64.txt">打开</a><button class="copy-file-btn" data-href="./output/base64.txt">复制链接</button></div></div>
+<div class="output"><strong>原始节点</strong><small>当前运行环境扫描生成的节点 URI。</small><div class="btn-row"><a class="link-btn" target="_blank" rel="noopener" href="./output/nodes.txt">打开</a><button class="copy-file-btn" data-href="./output/nodes.txt">复制链接</button></div></div>
+<div class="output"><strong>订阅源清单</strong><small>网页实时读取的当前 output/subscriptions.txt。</small><div class="btn-row"><a class="link-btn" target="_blank" rel="noopener" href="./output/subscriptions.txt">打开</a><button class="copy-file-btn" data-href="./output/subscriptions.txt">复制链接</button></div></div>
+</div><div class="footer">订阅源和更新时间均从当前运行环境读取；GitHub Pages 使用仓库生成结果，本地 Web 服务器使用本地生成结果。</div>
 </div></div>
 <script>
 "use strict";
 const LIST_URL="./output/subscriptions.txt";
 const WORKFLOW_URL="https://raw.githubusercontent.com/XiaoZhang-qd/auto-vpnlink/main/.github/workflows/update.yml";
+const SUMMARY_URL="./output/summary.md";
 const list=document.getElementById("list"),count=document.getElementById("count"),status=document.getElementById("status"),copyAll=document.getElementById("copy-all");
 const scheduleMain=document.getElementById("schedule-main"),scheduleSub=document.getElementById("schedule-sub"),scheduleNext=document.getElementById("schedule-next");
 let urls=[];
 function clean(s){return String(s||"").trim()}
 function parse(text){const seen=new Set();return text.split(/\r?\n/).map(clean).filter(x=>x&&!x.startsWith("#")&&/^https?:\/\//i.test(x)).filter(x=>{if(seen.has(x))return false;seen.add(x);return true})}
 function copyText(text){if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(text);const ta=document.createElement("textarea");ta.value=text;ta.style.position="fixed";ta.style.left="-9999px";document.body.appendChild(ta);ta.select();document.execCommand("copy");ta.remove();return Promise.resolve()}
-function render(){list.innerHTML="";count.textContent=String(urls.length);if(!urls.length){list.innerHTML="<div class='status'>当前还没有读取到订阅链接。请先运行 GitHub Actions 更新 output。</div>";return}urls.forEach((url,i)=>{const row=document.createElement("div");row.className="source";const text=document.createElement("div");text.className="source-text";text.textContent=(i+1)+". "+url;const btn=document.createElement("button");btn.className="copy-one";btn.textContent="复制";btn.addEventListener("click",()=>copyText(url).then(()=>{btn.textContent="已复制";setTimeout(()=>btn.textContent="复制",1200)}));row.append(text,btn);list.appendChild(row)})}
-
-function parseSchedule(yaml){
-  const cronMatch=yaml.match(/\n\s*-\s*cron:\s*['\"]([^'\"]+)['\"]/);
-  const tzMatch=yaml.match(/\n\s*timezone:\s*['\"]([^'\"]+)['\"]/);
-  if(!cronMatch)throw new Error("未找到 schedule.cron");
-  const parts=cronMatch[1].trim().split(/\s+/);
-  if(parts.length!==5)throw new Error("仅支持标准 5 段 cron");
-  return {cron:cronMatch[1].trim(),timezone:tzMatch?tzMatch[1].trim():"UTC",minute:parts[0],hour:parts[1],day:parts[2],month:parts[3],weekday:parts[4]};
-}
-function formatTimeZone(tz){try{return new Intl.DateTimeFormat("zh-CN",{timeZone:tz,timeZoneName:"longOffset"}).formatToParts(new Date()).find(x=>x.type==="timeZoneName")?.value||tz}catch{return tz}}
-function nextDailyRun(hour,minute,tz){
-  const now=new Date();
-  const targetHour=Number(hour),targetMinute=Number(minute);
-  if(!Number.isInteger(targetHour)||!Number.isInteger(targetMinute)||targetHour<0||targetHour>23||targetMinute<0||targetMinute>59)throw new Error("非固定每日时间");
-  const getParts=d=>{const p={};for(const x of new Intl.DateTimeFormat("en-US",{timeZone:tz,year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"}).formatToParts(d))if(x.type!=="literal")p[x.type]=x.value;return p};
-  let d=new Date(now.getTime());
-  for(let i=0;i<3;i++){
-    const p=getParts(d);const diff=(targetHour-Number(p.hour))*60+(targetMinute-Number(p.minute));
-    if(diff>=0&&diff<1440){const approx=d.getTime()+diff*60000;return new Date(approx)}
-    d=new Date(d.getTime()+24*60*60*1000);
-  }
-  return null;
-}
-async function loadSchedule(){
-  try{
-    const r=await fetch(WORKFLOW_URL+"?t="+Date.now(),{cache:"no-store"});
-    if(!r.ok)throw new Error("HTTP "+r.status);
-    const cfg=parseSchedule(await r.text());
-    if(cfg.day!=="*"||cfg.month!=="*"||cfg.weekday!=="*")throw new Error("当前不是每天固定时间的 schedule");
-    const hour=Number(cfg.hour),minute=Number(cfg.minute);
-    const hh=String(hour).padStart(2,"0"),mm=String(minute).padStart(2,"0");
-    scheduleMain.textContent=`每天 ${hh}:${mm} 自动更新`;
-    scheduleSub.textContent=`跟随 GitHub Actions：${cfg.timezone}（${formatTimeZone(cfg.timezone)}）`;
-    const next=nextDailyRun(cfg.hour,cfg.minute,cfg.timezone);
-    if(next)scheduleNext.textContent="下一次计划运行："+new Intl.DateTimeFormat("zh-CN",{timeZone:cfg.timezone,year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hourCycle:"h23"}).format(next);
-  }catch(e){
-    scheduleMain.textContent="自动更新时间暂时无法读取";
-    scheduleSub.textContent="请检查 GitHub Actions 的 update.yml 配置";
-    console.error(e);
-  }
-}
-
-async function load(){try{const r=await fetch(LIST_URL+"?t="+Date.now(),{cache:"no-store"});if(!r.ok)throw new Error("HTTP "+r.status);const text=await r.text();urls=parse(text);render();status.className="status ok";status.textContent="已读取最新订阅列表，共 "+urls.length+" 条。"}catch(e){status.className="status err";status.textContent="读取 subscriptions.txt 失败。请确认 GitHub Actions 已生成 output/subscriptions.txt。";render();console.error(e)}}
+function render(){list.innerHTML="";count.textContent=String(urls.length);if(!urls.length){list.innerHTML="<div class='status'>当前运行环境没有生成检测通过的订阅源。</div>";return}urls.forEach((url,i)=>{const row=document.createElement("div");row.className="source";const text=document.createElement("div");text.className="source-text";text.textContent=(i+1)+". "+url;const btn=document.createElement("button");btn.className="copy-one";btn.textContent="复制";btn.addEventListener("click",()=>copyText(url).then(()=>{btn.textContent="已复制";setTimeout(()=>btn.textContent="复制",1200)}));row.append(text,btn);list.appendChild(row)})}
+function formatDate(value,tz){const d=new Date(value);if(Number.isNaN(d.getTime()))return value;return new Intl.DateTimeFormat("zh-CN",{timeZone:tz,year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"}).format(d)}
+function formatOffset(tz){try{return new Intl.DateTimeFormat("zh-CN",{timeZone:tz,timeZoneName:"longOffset"}).formatToParts(new Date()).find(x=>x.type==="timeZoneName")?.value||tz}catch{return tz}}
+function nextDailyRun(hour,minute,tz){const now=new Date();const h=Number(hour),m=Number(minute);if(!Number.isInteger(h)||!Number.isInteger(m)||h<0||h>23||m<0||m>59)return null;const parts=d=>{const p={};for(const x of new Intl.DateTimeFormat("en-US",{timeZone:tz,year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"}).formatToParts(d))if(x.type!=="literal")p[x.type]=x.value;return p};let d=new Date(now);for(let i=0;i<3;i++){const p=parts(d),diff=(h-+p.hour)*60+(m-+p.minute);if(diff>=0&&diff<1440)return new Date(d.getTime()+diff*60000);d=new Date(d.getTime()+86400000)}return null}
+function parseWorkflow(yaml){const c=yaml.match(/\n\s*-\s*cron:\s*['\"]([^'\"]+)['\"]/),t=yaml.match(/\n\s*timezone:\s*['\"]([^'\"]+)['\"]/);if(!c)throw Error("未找到 schedule.cron");const p=c[1].trim().split(/\s+/);if(p.length!==5)throw Error("不是标准 5 段 cron");return {cron:c[1].trim(),timezone:t?t[1].trim():"UTC",minute:p[0],hour:p[1],day:p[2],month:p[3],weekday:p[4]}}
+async function tryLocal(){try{const r=await fetch("./api/status?t="+Date.now(),{cache:"no-store"});if(!r.ok)return false;const s=await r.json();if(!s||!s.schedule_time||!s.timezone)return false;scheduleMain.textContent="每天 "+s.schedule_time+" 自动运行";scheduleSub.textContent="本地运行模式 · "+s.timezone+"（"+formatOffset(s.timezone)+"）";if(s.last_finish)scheduleNext.textContent="本次运行完成："+formatDate(s.last_finish,s.timezone);else scheduleNext.textContent="本地服务器尚未完成过一次更新";return true}catch(e){return false}}
+async function tryGithub(){try{const [wr,sr]=await Promise.all([fetch(WORKFLOW_URL+"?t="+Date.now(),{cache:"no-store"}),fetch(SUMMARY_URL+"?t="+Date.now(),{cache:"no-store"})]);if(!wr.ok)throw Error("workflow HTTP "+wr.status);const cfg=parseWorkflow(await wr.text());if(cfg.day!=="*"||cfg.month!=="*"||cfg.weekday!=="*")throw Error("当前不是每日固定任务");scheduleMain.textContent="每天 "+String(+cfg.hour).padStart(2,"0")+":"+String(+cfg.minute).padStart(2,"0")+" 自动运行";scheduleSub.textContent="GitHub Actions · "+cfg.timezone+"（"+formatOffset(cfg.timezone)+"）";if(sr.ok){const text=await sr.text(),m=text.match(/\*\*Generated:\*\*\s*(.+)/);if(m)scheduleNext.textContent="最近一次生成："+m[1].trim()}if(!scheduleNext.textContent)scheduleNext.textContent="按 GitHub Actions 的计划自动运行";return true}catch(e){console.error(e);return false}}
+async function loadSchedule(){scheduleNext.textContent="";if(await tryLocal())return;if(await tryGithub())return;scheduleMain.textContent="自动更新时间暂时无法读取";scheduleSub.textContent="无法读取本地服务器或 GitHub Actions 配置"}
+async function load(){try{const r=await fetch(LIST_URL+"?t="+Date.now(),{cache:"no-store"});if(!r.ok)throw Error("HTTP "+r.status);urls=parse(await r.text());render();status.className="status ok";status.textContent="已读取当前运行环境生成的订阅列表，共 "+urls.length+" 条。"}catch(e){status.className="status err";status.textContent="读取 output/subscriptions.txt 失败。请先运行一次更新任务。";render();console.error(e)}}
 copyAll.addEventListener("click",()=>{if(!urls.length)return;copyText(urls.join("\n")).then(()=>{const old=copyAll.textContent;copyAll.textContent="已复制全部订阅链接";setTimeout(()=>copyAll.textContent=old,1500)})});
-document.querySelectorAll(".copy-file-btn").forEach(btn=>{btn.addEventListener("click",async ()=>{const relPath=btn.dataset.href;const fullUrl=new URL(relPath,window.location.href).href;const originText=btn.textContent;await copyText(fullUrl);btn.textContent="已复制";setTimeout(()=>{btn.textContent=originText},1200)})});
-loadSchedule();
-load();
-</script>
-</body>
-</html>
+document.querySelectorAll(".copy-file-btn").forEach(btn=>btn.addEventListener("click",async()=>{const fullUrl=new URL(btn.dataset.href,window.location.href).href;const old=btn.textContent;await copyText(fullUrl);btn.textContent="已复制";setTimeout(()=>btn.textContent=old,1200)}));
+loadSchedule();load();setInterval(loadSchedule,30000);setInterval(load,30000);
+</script></body></html>
