@@ -3,6 +3,7 @@
 自动发现、检查并聚合公开 VPN / Proxy 订阅源的 GitHub Actions 项目。
 
 > 本项目只处理公开数据。**订阅地址可访问不代表其中每一个节点都一定可连接。**
+>> 可以到**[https://xiaozhang-qd.github.io/auto-vpnlink/](https://xiaozhang-qd.github.io/auto-vpnlink/)进行网络测试。
 
 ## ✨ 现在能做什么
 
@@ -18,38 +19,55 @@
 - ▶️ 支持 Actions 手动更新，并可设置搜索/检测数量
 - 💾 自动提交最新 `output/`
 
+### 部署方法
+1. 点击在左上角Fork此仓库 -> 点击``Create fork`` -> 进入仓库的Actions -> 选择 `Update VPN Sources` -> 点击Run workflow -> 设置好 `Maximum discovered nodes to consider` `Maximum nodes for general health check` `General healthy node target` `Maximum CFW-compatible nodes to test` `CFW healthy node target` 后点击Run workflow即可，完成后使用[直接使用生成的订阅](#🚀 最重要：直接使用生成的订阅)的链接即可
+2. 点击在左上角的Settings -> 点击 `Pages` -> 在 `Branch` 里选择main和/ (root) -> 点击 Save即可，完成后使用[直接使用生成的订阅](#🚀 最重要：直接使用生成的订阅)的链接即可
+
 ## 🚀 最重要：直接使用生成的订阅
 
 Action 成功运行后，`output/` 会自动更新。
 
 ### Clash / Mihomo
 
-```text
+```URL
 https://raw.githubusercontent.com/XiaoZhang-qd/auto-vpnlink/main/output/clash.yaml
+```
+```URL
+https://xiaozhang-qd.github.io/auto-vpnlink/main/output/clash.yaml
 ```
 
 这是自动把发现到的节点转换成 Clash/Mihomo YAML 后生成的文件。
 
 ### Base64 节点列表
 
-```text
+```URL
 https://raw.githubusercontent.com/XiaoZhang-qd/auto-vpnlink/main/output/base64.txt
+```
+```URL
+https://xiaozhang-qd.github.io/auto-vpnlink/main/output/base64.txt
 ```
 
 里面是聚合后的节点 URI 的 Base64 内容，适用于支持这种订阅形式的客户端。
 
 ### 原始订阅源列表
 
-```text
+```URL
 https://raw.githubusercontent.com/XiaoZhang-qd/auto-vpnlink/main/output/subscriptions.txt
+```
+```URL
+https://xiaozhang-qd.github.io/auto-vpnlink/main/output/subscriptions.txt
+
 ```
 
 这个文件是**订阅源地址清单**，不是一个统一的 Clash 配置，因此不要把它误认为单一订阅配置。
 
 ### 原始节点
 
-```text
+```URL
 https://raw.githubusercontent.com/XiaoZhang-qd/auto-vpnlink/main/output/nodes.txt
+```
+```URL
+https://xiaozhang-qd.github.io/auto-vpnlink/main/output/nodes.txt
 ```
 
 这里保存扫描时直接发现的节点 URI。
