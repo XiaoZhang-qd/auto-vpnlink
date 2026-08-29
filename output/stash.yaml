@@ -3,138 +3,98 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: '@DeltaKroneckerGithub'
+- name: CA
   type: ss
-  server: 146.103.42.161
-  port: 13528
+  server: 209.200.246.182
+  port: 11994
   cipher: 2022-blake3-aes-256-gcm
-  password: YzYyNDkxZmJmM2MwNDYwYjk5MmE2NDU1YzIwODJhNDY=:ZTcwOTk4NjRiMTEwNDkzYzk1NDE0YTQ2MzhkYzgyOTk=
+  password: NTQwZmFlZTcwZWY1NDNiYzg3ZDJlMzlkN2RiNmYyMTc=:ZDA0ZjRiMzIxNDc5NDQ5ZmFlODQxNGJhZGE4NWIzY2Q=
   udp: true
-- name: 🇺🇸US_615|241KB/s|A004-260618
+- name: 🇸🇬SG_20|258KB/s 01
   type: ss
-  server: 84.32.131.61
-  port: 18610
+  server: 167.150.100.115
+  port: 27755
   cipher: 2022-blake3-aes-256-gcm
-  password: Zjc0N2QyYTkyNzc2NGRiZDhjY2NjYTU5Mzk2N2NkOTk=:YmNhN2UyNzdlNTg3NGFkMjkxNGY4ZjEzYWM2MzQ2NGQ=
+  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
   udp: true
-- name: GB
+- name: NL
   type: ss
-  server: 134.65.57.137
-  port: 61312
+  server: 141.148.237.64
+  port: 45819
   cipher: 2022-blake3-chacha20-poly1305
-  password: +bhEnWZqjW+QbD1aRHzw9z6Fidbt3P4eSRZXzDq+5uY=
+  password: IVBe/v0PRzoIAxF7OKUA6rHMM+f8VFYJThG6KvBXNcY=
   udp: true
-- name: '@DeltaKroneckerGithub [2]'
-  type: ss
-  server: 158.180.50.45
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 0x6PTrJCGMD7Pz0EQnpRsIKEJ3Cy55hPKAAgJiA58ic=
-  udp: true
-- name: 🇺🇸US_666|76KB/s|A004-260618
-  type: ss
-  server: 129.146.79.168
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 5zQYEH/taJ/IGKB9jxn8ljEFZ2TB3vemTfYsGN4jCmY=
-  udp: true
-- name: 🇸🇬SG_99|82KB/s|A004-260618
-  type: ss
-  server: 161.118.192.95
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: BCDH0Tlfr/BNjkqN2UQomOnyAPPNz0fBgahXvK9bWoI=
-  udp: true
-- name: US
-  type: ss
-  server: 129.146.200.6
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: BI4AF0V668f8NeHizVA1o5N4bjpjTOdN2tf0lo+U7xA=
-  udp: true
-- name: US [2]
-  type: ss
-  server: 129.146.127.111
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: IAaq/dxoRe2IQqHLE2jF0+o1l54hnnu5/wf3KBwri/k=
-  udp: true
-- name: GB [2]
+- name: 🇬🇧 | @WhiteDNS | GB321|6.4MB/s|DNSOK|GPT⁺-GB
   type: ss
   server: 129.151.85.23
   port: 61312
   cipher: 2022-blake3-chacha20-poly1305
   password: IrAOLcmiZJ3pvgUluPeP0O59kPd6FLCTr1thF8LfKXU=
   udp: true
-- name: GB [3]
+- name: US
   type: ss
-  server: 129.151.82.158
-  port: 61312
+  server: 129.146.63.242
+  port: 50356
   cipher: 2022-blake3-chacha20-poly1305
-  password: MLVcvtR/UBSlUEC3IwyukwjvKvvRvw9x6Op6LVBX0GA=
-  udp: true
-- name: GB [4]
-  type: ss
-  server: 144.24.230.85
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: OhJ+o+jqsyaohqiWcu/vD8tSPwbeclDci6Iw6Nz1aaY=
-  udp: true
-- name: '@DeltaKroneckerGithub [3]'
-  type: ss
-  server: 130.61.112.159
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: bvCkSd0HaT0nf8vHPqnmKB99UkYYDw9XatMo6BhujmE=
+  password: OHUY7QDL4f3zNO6d95hzLn2pF++yYLAzwJMdTtZDYvY=
   udp: true
 - name: DE
   type: ss
-  server: 130.61.145.205
+  server: 130.61.148.71
   port: 59924
   cipher: 2022-blake3-chacha20-poly1305
-  password: e34Inp7/4vQjik8hcfs5/QHNx5wCFeAsZmFTu4iU0pY=
+  password: OXzmL1h7BLzI+gF8+61lZtiiltHgo2wphibbeQntWv0=
   udp: true
-- name: DE [2]
+- name: GB
   type: ss
-  server: 130.61.84.183
-  port: 59924
+  server: 129.151.64.147
+  port: 61312
   cipher: 2022-blake3-chacha20-poly1305
-  password: nBUnNjOjb/9X9+Vprc/AkrCNcCbkHhNLQehcSFfrS9M=
+  password: YsZAgtzuuQHa9Ekc7um7AhfAhEvtiIKJw4oxCLsN3eY=
   udp: true
-- name: 🇩🇪DE_136|316KB/s|R002-260618
+- name: 🇩🇪 | @WhiteDNS | DE449|8.6MB/s|DNSOK|GPT⁺-DE
   type: ss
-  server: 130.61.81.43
+  server: 130.61.233.63
   port: 59924
   cipher: 2022-blake3-chacha20-poly1305
-  password: t6L2d1ZjOdzQU4fn680FJUbIrKvpNzDdzNDnU1m1Z4k=
+  password: mep9mzR3cG4vUy51p++Xst0L0p98TWYR38sAAFr3yJY=
   udp: true
-- name: DE [3]
+- name: 🇩🇪 | @WhiteDNS | DE457|6.4MB/s|DNSOK|GPT⁺-DE
   type: ss
-  server: 130.61.226.252
+  server: 130.61.33.206
   port: 59924
   cipher: 2022-blake3-chacha20-poly1305
-  password: ygX002qD39oJa1Ijqgpbfc7gN26DYYnuBjuTfsifEV4=
+  password: v86uN709FF42ZAE5a5LzH5g6JXSDdtqS4iMOuU8ro2E=
+  udp: true
+- name: 🇺🇸 | @WhiteDNS | US910|1.9MB/s|DNSOK|GPT⁺-US
+  type: ss
+  server: 129.146.60.116
+  port: 50356
+  cipher: 2022-blake3-chacha20-poly1305
+  password: xDEXXhNhDE1+LUHo1bMUnTwFqgPX3i7cpDX+hUx+dRg=
+  udp: true
+- name: GB [2]
+  type: ss
+  server: 129.151.78.81
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: xoLcWU1bRxPzVLqVNmS3ARz1er4P7ZT1vRdeXoyg8pQ=
   udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - '@DeltaKroneckerGithub'
-  - 🇺🇸US_615|241KB/s|A004-260618
-  - GB
-  - '@DeltaKroneckerGithub [2]'
-  - 🇺🇸US_666|76KB/s|A004-260618
-  - 🇸🇬SG_99|82KB/s|A004-260618
+  - CA
+  - 🇸🇬SG_20|258KB/s 01
+  - NL
+  - 🇬🇧 | @WhiteDNS | GB321|6.4MB/s|DNSOK|GPT⁺-GB
   - US
-  - US [2]
-  - GB [2]
-  - GB [3]
-  - GB [4]
-  - '@DeltaKroneckerGithub [3]'
   - DE
-  - DE [2]
-  - 🇩🇪DE_136|316KB/s|R002-260618
-  - DE [3]
+  - GB
+  - 🇩🇪 | @WhiteDNS | DE449|8.6MB/s|DNSOK|GPT⁺-DE
+  - 🇩🇪 | @WhiteDNS | DE457|6.4MB/s|DNSOK|GPT⁺-DE
+  - 🇺🇸 | @WhiteDNS | US910|1.9MB/s|DNSOK|GPT⁺-US
+  - GB [2]
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
