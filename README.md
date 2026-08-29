@@ -19,66 +19,111 @@
 - ▶️ 支持 Actions 手动更新，并可设置搜索/检测数量
 - 💾 自动提交最新 `output/`
 
-### 🚀 部署方法
+## 🚀 部署与使用
 
-#### 1. Fork 仓库
+### 1. Fork 仓库
 
-点击右上角 **Fork → Create fork**，将本项目复制到你自己的 GitHub 账号下。
+点击右上角 **Fork → Create fork**，将本项目复制到你自己的 GitHub 账号。
 
-#### 2. 首次运行 GitHub Actions
+### 2. 首次运行
 
 进入你 Fork 后的仓库：
 
 ```text
 Actions
-  → Update VPN Sources
-  → Run workflow
+ → Update VPN Sources
+ → Run workflow
 ```
 
-在 **Run workflow** 页面可以根据需要设置以下参数：
+点击 **Run workflow** 后，可以根据需要调整以下参数：
 
-| 参数                                       | 说明               |    默认值 |
-| ---------------------------------------- | ---------------- | -----: |
-| `Maximum discovered nodes to consider`   | 最多处理多少个发现的节点     | `5000` |
-| `Maximum nodes for general health check` | 普通健康检测的候选节点数量    |  `300` |
-| `General healthy node target`            | 普通健康检测成功目标       |   `20` |
-| `Maximum CFW-compatible nodes to test`   | 最多检测多少个 CFW 兼容节点 |  `150` |
-| `CFW healthy node target`                | CFW 健康节点成功目标     |   `10` |
+| 参数 | 说明 | 默认值 | 范围 |
+|---|---|---:|---:|
+| `search_limit` | 最多处理多少个发现的节点 | `5000` | `1 ~ 20000` |
+| `health_candidate_limit` | 普通健康检测的候选节点数量 | `300` | `1 ~ 5000` |
+| `health_success_target` | 普通健康检测成功目标数量 | `20` | - |
+| `cfw_candidate_limit` | CFW 兼容节点检测候选数量 | `150` | `1 ~ 2000` |
+| `cfw_success_target` | CFW 健康节点成功目标数量 | `10` | - |
 
-设置完成后点击 **Run workflow**，等待 Action 执行完成。
+> 💡 不需要调整检测规模时，直接使用默认值即可。
 
-> 💡 如果不需要调整参数，直接使用默认值运行即可。
+参数说明：
 
-#### 3. 启用 GitHub Pages（可选）
+- **`search_limit`**：控制本次最多处理多少个聚合发现节点。数量越大，通常能发现更多节点，但运行时间也会增加。
+- **`health_candidate_limit`**：从发现结果中选择多少个节点进行普通健康检测。
+- **`health_success_target`**：普通健康检测达到指定数量后，可以提前结束检测。
+- **`cfw_candidate_limit`**：选择多少个 CFW 兼容节点进行专门检测。
+- **`cfw_success_target`**：CFW 健康检测达到指定数量后，可以提前结束检测。
 
-如果希望通过 GitHub Pages 访问生成的订阅文件：
+> ⚠️ **成功目标只是停止条件，不代表一定能够获得这么多节点。** 如果候选节点中没有足够的可用节点，最终数量可能低于目标值。
+
+### 3. 自动更新
+
+Workflow 文件：
+
+```text
+.github/workflows/update.yml
+```
+
+项目会通过 GitHub Actions **每天北京时间 11:30 自动运行一次**。
+
+时区：`Asia/Shanghai`（UTC+8）
+
+自动运行使用上述默认参数；需要调整搜索或检测规模时，可以手动执行 **Run workflow**。
+
+### 4. GitHub Pages（可选）
+
+如果希望通过 GitHub Pages 访问生成的文件：
 
 ```text
 Settings
-  → Pages
-  → Build and deployment
-  → Source: Deploy from a branch
-  → Branch: main
-  → Folder: / (root)
-  → Save
+ → Pages
+ → Build and deployment
+ → Source: Deploy from a branch
+ → Branch: main
+ → Folder: / (root)
+ → Save
 ```
 
-等待 GitHub Pages 部署完成后，即可使用 Pages 地址访问项目生成的文件。
+等待 Pages 部署完成即可。
 
-#### 4. 获取生成的订阅
+> 💡 **GitHub Pages 不是必须的。** 不启用 Pages 也可以直接使用 `raw.githubusercontent.com` 提供的订阅地址。
 
-Action 成功运行后，最新结果会自动生成到：
+### 5. 工作流程
+
+每次运行大致按照以下流程执行：
+
+```text
+搜索公开来源
+    ↓
+扫描文件
+    ↓
+提取订阅 URL / 节点 URI
+    ↓
+自动去重
+    ↓
+普通健康检测
+    ↓
+CFW 专用健康检测
+    ↓
+生成客户端配置
+    ↓
+验证输出
+    ↓
+自动提交 output/
+```
+
+### 6. 获取订阅
+
+Action 成功运行后，生成的文件会自动更新到：
 
 ```text
 output/
 ```
 
-具体订阅地址和使用方式请查看：
+具体订阅地址请查看：
 
-**[🚀 最重要：直接使用生成的订阅](#🚀-最重要直接使用生成的订阅)**
-
-> ⚠️ GitHub Pages 是可选的。即使不启用 Pages，也可以直接使用 `raw.githubusercontent.com` 提供的订阅地址。
-
+**[🚀 最重要：直接使用生成的订阅](#-最重要直接使用生成的订阅)**
 
 ## 🚀 最重要：直接使用生成的订阅
 
@@ -139,194 +184,6 @@ output/
 ├── subscriptions.txt       # 检测通过的订阅 URL
 ├── sources.json             # 完整来源、检测及统计信息
 └── summary.md               # 本次扫描摘要
-```
-
-## ⚙️ 可以设置的数值
-
-从 GitHub Actions 手动运行时，可以直接在 **Run workflow** 页面设置下面 5 个数值，不需要修改代码。
-
-进入：
-
-```text
-GitHub
- → Actions
- → Update VPN Sources
- → Run workflow
-```
-
-### 1. `search_limit` — 搜索节点数量
-
-控制本次最多处理多少个聚合发现节点。
-
-默认：`5000`
-
-范围：`1 ~ 20000`
-
-例如：
-
-```text
-5000
-```
-
-搜索量越大，发现的节点通常越多，但扫描时间和后续检测时间也会增加。
-
-### 2. `health_candidate_limit` — 普通健康检测候选数量
-
-控制从搜索结果中最多拿多少个节点进入普通健康检测。
-
-默认：`300`
-
-范围：`1 ~ 5000`
-
-例如：
-
-```text
-300
-```
-
-如果搜索到了 5000 个节点，并不代表会全部进行连接测试；这个参数用于限制健康检测规模。
-
-### 3. `health_success_target` — 普通健康节点目标数量
-
-普通健康检测达到这个数量后即可停止继续检测。
-
-默认：`20`
-
-设置为：
-
-```text
-20
-```
-
-表示普通健康检测最多以获得 20 个通过节点为目标。
-
-如果设置为 `0`，表示不因为成功数量提前停止，继续检测候选池。
-
-### 4. `cfw_candidate_limit` — Clash for Windows 检测候选数量
-
-控制最多拿多少个 CFW 兼容协议节点进行专门检测。
-
-默认：`150`
-
-范围：`1 ~ 2000`
-
-目前 CFW 专用候选主要筛选：
-
-```text
-SS
-SSR
-VMess
-Trojan
-```
-
-### 5. `cfw_success_target` — CFW 健康节点目标数量
-
-控制 CFW 专用检测希望获得多少个通过节点。
-
-默认：`10`
-
-设置为：
-
-```text
-10
-```
-
-表示获得 10 个 CFW 健康节点后即可停止继续检测。
-
-如果设置为 `0`，表示检测全部 CFW 候选，不因成功数量提前停止。
-
-### ⭐ 推荐设置
-
-如果你想兼顾速度和节点数量，可以使用：
-
-```text
-搜索节点：       5000
-普通检测候选：   300
-普通成功目标：   20
-CFW检测候选：    150
-CFW成功目标：    10
-```
-
-如果 Action 运行太慢，可以降低：
-
-```text
-搜索节点：       2000
-普通检测候选：   100
-普通成功目标：   10
-CFW检测候选：    80
-CFW成功目标：    5
-```
-
-如果希望尽量多检测，可以提高候选数量；但数量越大，运行时间通常越长。
-
-> **注意：成功目标是停止条件，不是保证值。** 如果候选节点本身没有足够的可用节点，实际通过数量可能低于目标值。
-
-## 🤖 GitHub Actions
-
-Workflow：
-
-```text
-.github/workflows/update.yml
-```
-
-### ⏰ 自动运行时间
-
-Workflow 已配置为每天自动运行一次：
-
-```text
-每天北京时间 11:30
-时区：Asia/Shanghai（UTC+8）
-```
-
-对应配置：
-
-```yaml
-schedule:
-  - cron: '30 11 * * *'
-    timezone: "Asia/Shanghai"
-```
-
-也就是说，不需要再手动换算 UTC 时间；GitHub Actions 会按照 `Asia/Shanghai` 时区执行。
-
-同时支持手动运行。
-
-### 手动运行
-
-打开：
-
-```text
-GitHub
- → Actions
- → Update VPN Sources
- → Run workflow
-```
-
-点击 **Run workflow** 后，可以填写上述数值，然后开始运行。
-
-如果没有看到 **Run workflow**，请确认当前打开的是仓库默认分支上的 `Update VPN Sources` workflow，并刷新 Actions 页面。
-
-Action 会：
-
-```text
-设置搜索/检测数量
-        ↓
-发现来源
-        ↓
-扫描文件
-        ↓
-提取 URL / 节点
-        ↓
-去重
-        ↓
-普通健康检测
-        ↓
-CFW 专用健康检测
-        ↓
-聚合节点
-        ↓
-生成 output/
-        ↓
-自动 commit + push
 ```
 
 ## 🧪 本地运行
