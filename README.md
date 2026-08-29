@@ -2,7 +2,11 @@
 
 自动发现、检查并聚合公开 VPN / Proxy 订阅源的项目。
 
-> 本项目既可以**本地运行**，也可以使用 **GitHub Actions 自动运行**；GitHub Actions 不是本项目的必需依赖。
+> 本项目既可以**本地运行或 VPS 运行**，也可以使用 **GitHub Actions 自动运行**；GitHub Actions 不是本项目的必需依赖。
+
+>>你可以到[index.html](index.html)进行网络国家 / 地区检测
+
+>>你可以到[subscriptions.html](subscriptions.html)获取最新的VPN订阅链接
 
 ## ✨ 功能
 
