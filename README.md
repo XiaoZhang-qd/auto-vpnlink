@@ -1,11 +1,14 @@
 # auto-vpnlink
 
-自动发现、检查并聚合公开 VPN / Proxy 订阅源的 GitHub Actions 项目。
+自动发现、检查并聚合公开 VPN / Proxy 订阅源的项目。
 
+> 本项目既可以**本地运行**，也可以使用 **GitHub Actions 自动运行**；GitHub Actions 不是本项目的必需依赖。
+>
 > 本项目只处理公开数据。**订阅地址可访问不代表其中每一个节点都一定可连接。**
->> 可以到[https://xiaozhang-qd.github.io/auto-vpnlink/](https://xiaozhang-qd.github.io/auto-vpnlink/)进行网络测试。
-
->>可以到[https://xiaozhang-qd.github.io/auto-vpnlink/subscriptions.html](https://xiaozhang-qd.github.io/auto-vpnlink/subscriptions.html)获取订阅链接
+>
+> 🌐 网络测试：[https://xiaozhang-qd.github.io/auto-vpnlink/](https://xiaozhang-qd.github.io/auto-vpnlink/)
+>
+> 📡 订阅链接：[https://xiaozhang-qd.github.io/auto-vpnlink/subscriptions.html](https://xiaozhang-qd.github.io/auto-vpnlink/subscriptions.html)
 
 ## ✨ 现在能做什么
 
@@ -17,11 +20,103 @@
 - 🧹 自动去重
 - 🌐 检查发现的订阅 URL 是否可访问、内容是否像有效订阅
 - 🔄 把发现到的节点聚合成客户端可用的输出
-- 🤖 GitHub Actions 每天自动更新
-- ▶️ 支持 Actions 手动更新，并可设置搜索/检测数量
-- 💾 自动提交最新 `output/`
+- 🤖 可通过 GitHub Actions 定时自动更新
+- ▶️ 支持 GitHub Actions 手动更新，并可设置搜索/检测数量
+- 💻 支持直接克隆到本地运行
+- 💾 自动生成并更新 `output/`
 
 ## 🚀 部署与使用
+
+本项目有两种运行方式，**二选一即可**：
+
+1. **本地运行**：适合希望自己控制运行环境、参数和运行时间的用户。
+2. **GitHub Actions**：适合希望放在 GitHub 上自动定时运行的用户。
+
+> ⚠️ GitHub Actions 只是自动化运行方式，并不是项目运行所必需的。核心程序可以直接在支持 Python 3.12 的本地环境运行。
+
+---
+
+## 💻 方式一：本地运行
+
+### 1. 准备环境
+
+需要：
+
+- Python **3.12** 或兼容版本
+- Git
+- 能够访问项目所需的网络资源
+
+建议先确认 Python 和 Git 已安装：
+
+```bash
+python --version
+git --version
+```
+
+Windows 如果使用 `py` 命令，也可以：
+
+```powershell
+py --version
+```
+
+### 2. 克隆仓库
+
+```bash
+git clone https://github.com/XiaoZhang-qd/auto-vpnlink.git
+cd auto-vpnlink
+```
+
+### 3. 安装依赖
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+如果 Windows 上 `python` 不可用，可以使用：
+
+```powershell
+py -m pip install -r requirements.txt
+```
+
+### 4. 运行扫描器
+
+最基本的本地运行方式：
+
+```bash
+python scanner.py
+```
+
+程序完成后会生成或更新 `output/` 中的结果。
+
+### 5. 完整处理流程
+
+如果希望尽可能按照 GitHub Actions 的完整流程在本地执行，可依次运行：
+
+```bash
+python scanner.py
+python augment_protocols.py
+python select_nodes.py
+python healthcheck.py
+python publish_outputs.py
+```
+
+> ⚠️ 完整流程中的健康检测需要可用的 Mihomo/Clash 内核。GitHub Actions 会自动下载 Mihomo；本地运行时需要根据当前环境准备 `MIHOMO_BIN` 环境变量所指向的 Mihomo 可执行文件。
+
+### 6. 本地运行时的自动定时
+
+本地运行**不会自动继承 GitHub Actions 的每天 11:30 定时任务**。
+
+如果需要每天固定时间运行，可以使用操作系统自己的定时任务：
+
+- Windows：**任务计划程序（Task Scheduler）**
+- Linux：**cron / systemd timer**
+- macOS：**launchd**
+
+这样可以完全脱离 GitHub Actions，在自己的电脑或服务器上定时执行项目。
+
+---
+
+## 🤖 方式二：GitHub Actions 自动运行
 
 ### 1. Fork 仓库
 
@@ -67,15 +162,15 @@ Workflow 文件：
 .github/workflows/update.yml
 ```
 
-项目会通过 GitHub Actions **每天北京时间 11:30 自动运行一次**。
+项目默认通过 GitHub Actions **每天北京时间 11:30 自动运行一次**。
 
 时区：`Asia/Shanghai`（UTC+8）
 
-自动运行使用上述默认参数；需要调整搜索或检测规模时，可以手动执行 **Run workflow**。
+自动运行使用默认参数；需要调整搜索或检测规模时，可以手动执行 **Run workflow**。
 
 ### 4. GitHub Pages（可选）
 
-如果希望通过 GitHub Pages 访问生成的文件：
+如果希望通过 GitHub Pages 访问生成的网页和文件：
 
 ```text
 Settings
@@ -89,11 +184,13 @@ Settings
 
 等待 Pages 部署完成即可。
 
-> 💡 **GitHub Pages 不是必须的。** 不启用 Pages 也可以直接使用 `raw.githubusercontent.com` 提供的订阅地址。
+> 💡 **GitHub Pages 不是必须的。** 本地运行或直接使用 GitHub Raw 文件都不需要启用 Pages。
 
-### 5. 工作流程
+---
 
-每次运行大致按照以下流程执行：
+## 🔄 工作流程
+
+每次完整运行大致按照以下流程执行：
 
 ```text
 搜索公开来源
@@ -112,24 +209,20 @@ CFW 专用健康检测
     ↓
 验证输出
     ↓
-自动提交 output/
+更新 output/
 ```
 
-### 6. 获取订阅
+GitHub Actions 模式会在最后自动提交生成结果；本地运行则由用户自行决定是否提交 Git 更改。
 
-Action 成功运行后，生成的文件会自动更新到：
+## 🚀 最重要：直接使用生成的订阅
+
+运行成功后，生成的文件位于：
 
 ```text
 output/
 ```
 
-具体订阅地址请查看：
-
-**[🚀 最重要：直接使用生成的订阅](#-最重要直接使用生成的订阅)**
-
-## 🚀 最重要：直接使用生成的订阅
-
-Action 成功运行后，`output/` 会自动更新。
+具体订阅地址请查看下面的输出文件说明。
 
 ### Clash / Mihomo
 
@@ -185,25 +278,18 @@ output/
 ├── nodes.txt               # 原始节点 URI
 ├── subscriptions.txt       # 检测通过的订阅 URL
 ├── sources.json             # 完整来源、检测及统计信息
-└── summary.md               # 本次扫描摘要
-```
-
-## 🧪 本地运行
-
-需要 Python 3.12 或兼容版本：
-
-```bash
-pip install -r requirements.txt
-python scanner.py
+└── summary.md              # 本次扫描摘要
 ```
 
 ## ⚠️ 关于“可用”
 
-健康检测主要是在 GitHub Actions runner 环境中进行连接和公网访问测试。
+健康检测主要是在执行检测的机器上进行连接和公网访问测试。
 
 因此：
 
 > **GitHub Actions 检测通过，不等于节点在你的本地网络、地区或客户端中一定可以连接。**
+>
+> 同理，本地检测通过也只代表它在当前本地网络环境下通过了检测。
 
 免费节点可能很快失效、过期、限速、限制地区或限制运营商。
 
