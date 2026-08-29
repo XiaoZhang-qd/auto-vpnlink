@@ -53,12 +53,6 @@ python --version
 git --version
 ```
 
-Windows 如果使用 `py` 命令，也可以：
-
-```powershell
-py --version
-```
-
 ### 2. 克隆仓库
 
 ```bash
@@ -70,12 +64,6 @@ cd auto-vpnlink
 
 ```bash
 python -m pip install -r requirements.txt
-```
-
-如果 Windows 上 `python` 不可用，可以使用：
-
-```powershell
-py -m pip install -r requirements.txt
 ```
 
 ### 4. 运行扫描器
