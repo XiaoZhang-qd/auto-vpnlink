@@ -3,138 +3,50 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇬SG_20|258KB/s 01
+- name: DE
   type: ss
-  server: 167.150.100.115
-  port: 27755
-  cipher: 2022-blake3-aes-256-gcm
-  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
+  server: 129.159.10.51
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: +gebuWwfimHcw5FvH6Sfnw3ppf05PeV2M8QPMsr38oY=
   udp: true
 - name: NL
   type: ss
-  server: 141.148.237.64
+  server: 158.178.155.37
   port: 45819
   cipher: 2022-blake3-chacha20-poly1305
-  password: IVBe/v0PRzoIAxF7OKUA6rHMM+f8VFYJThG6KvBXNcY=
-  udp: true
-- name: 🇬🇧 | @WhiteDNS | GB319|6.4MB/s|DNSOK|GPT⁺-GB
-  type: ss
-  server: 129.151.82.158
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: MLVcvtR/UBSlUEC3IwyukwjvKvvRvw9x6Op6LVBX0GA=
-  udp: true
-- name: DE
-  type: ss
-  server: 130.61.148.71
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: OXzmL1h7BLzI+gF8+61lZtiiltHgo2wphibbeQntWv0=
-  udp: true
-- name: US
-  type: ss
-  server: 129.146.74.126
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: emVGu0F5l7ibw6nj0rier/yNnWlFBI1WhXKbTsRQ87U=
-  udp: true
-- name: 🇩🇪DE_5|1.9MB/s
-  type: ss
-  server: 92.5.183.13
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: f5EXbJ0EbL86Alvad8+rKYPveubvsTXPlshjuHDOfLs=
-  udp: true
-- name: 🇩🇪 | @WhiteDNS | DE430|40.3MB/s|DNSOK|GPT⁺-DE
-  type: ss
-  server: 130.61.87.118
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: fvf8HrzAP5nIMchC+4SuGnNzU/nWjBbpe6moSwFGzWw=
-  udp: true
-- name: 🇩🇪DE_3|4.9MB/s
-  type: ss
-  server: 158.180.59.229
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: kN17ITmzNrnFpaTp4JSEAy/PV/tKXm+zGT9GaeWm9hU=
+  password: 14zduVOpqZOK6iayk+xd34h98ymp6qr2NuJj2xtWXiY=
   udp: true
 - name: DE [2]
   type: ss
-  server: 130.61.144.2
+  server: 141.147.53.115
   port: 59924
   cipher: 2022-blake3-chacha20-poly1305
-  password: kmkoVYMV3CiplXx9HrZ9swEnhpwqXMY0rOXC34dEi08=
+  password: IFvwvrqx26KIutn01x+IDo6chyktXgr2b0UvXNliBzc=
   udp: true
-- name: GB
+- name: NL [2]
   type: ss
-  server: 144.24.226.15
-  port: 61312
+  server: 134.98.147.129
+  port: 45819
   cipher: 2022-blake3-chacha20-poly1305
-  password: m03E8gi3urOxgrIv7T06vEoae3ctMWTS2XnYst6jJSI=
+  password: MKzw1HxJdrY1+Pm12sIuiKt277hbryrPFKlSVTBWyMY=
   udp: true
-- name: 🇩🇪 | @WhiteDNS | DE449|8.6MB/s|DNSOK|GPT⁺-DE
+- name: BR
   type: ss
-  server: 130.61.233.63
-  port: 59924
+  server: 164.152.62.150
+  port: 59319
   cipher: 2022-blake3-chacha20-poly1305
-  password: mep9mzR3cG4vUy51p++Xst0L0p98TWYR38sAAFr3yJY=
-  udp: true
-- name: 🇩🇪 | @WhiteDNS | DE457|6.4MB/s|DNSOK|GPT⁺-DE
-  type: ss
-  server: 130.61.33.206
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: v86uN709FF42ZAE5a5LzH5g6JXSDdtqS4iMOuU8ro2E=
-  udp: true
-- name: US [2]
-  type: ss
-  server: 129.146.60.204
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: vHbqRfuElW7yjgJWjFBaGRF3W73U7jIvXX8XdsLth2s=
-  udp: true
-- name: 🇺🇸 | @WhiteDNS | US910|1.9MB/s|DNSOK|GPT⁺-US
-  type: ss
-  server: 129.146.60.116
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: xDEXXhNhDE1+LUHo1bMUnTwFqgPX3i7cpDX+hUx+dRg=
-  udp: true
-- name: 🇯🇵
-  type: ss
-  server: 209.200.246.182
-  port: 11994
-  cipher: 2022-blake3-aes-256-gcm
-  password: NTQwZmFlZTcwZWY1NDNiYzg3ZDJlMzlkN2RiNmYyMTc=:ZDA0ZjRiMzIxNDc5NDQ5ZmFlODQxNGJhZGE4NWIzY2Q=
-  udp: true
-- name: 🇩🇪
-  type: ss
-  server: 193.29.139.234
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
+  password: viIh4ZhymCsvjIfhXYuFGQkeJEWkCHrqf3oNjsT0z00=
   udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇸🇬SG_20|258KB/s 01
-  - NL
-  - 🇬🇧 | @WhiteDNS | GB319|6.4MB/s|DNSOK|GPT⁺-GB
   - DE
-  - US
-  - 🇩🇪DE_5|1.9MB/s
-  - 🇩🇪 | @WhiteDNS | DE430|40.3MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪DE_3|4.9MB/s
+  - NL
   - DE [2]
-  - GB
-  - 🇩🇪 | @WhiteDNS | DE449|8.6MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪 | @WhiteDNS | DE457|6.4MB/s|DNSOK|GPT⁺-DE
-  - US [2]
-  - 🇺🇸 | @WhiteDNS | US910|1.9MB/s|DNSOK|GPT⁺-US
-  - 🇯🇵
-  - 🇩🇪
+  - NL [2]
+  - BR
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50

@@ -4,8 +4,32 @@
   },
   "outbounds": [
     {
+      "type": "trojan",
+      "tag": "trojan-2",
+      "server": "example.com",
+      "server_port": 443,
+      "password": "password",
+      "tls": {
+        "enabled": true,
+        "server_name": "example.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "trojan-3",
+      "server": "example.com",
+      "server_port": 443,
+      "password": "password",
+      "tls": {
+        "enabled": true,
+        "server_name": "example.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "vless-1",
+      "tag": "vless-4",
       "server": "host.com",
       "server_port": 443,
       "uuid": "uuid",
@@ -16,10 +40,20 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "vless-5",
+      "server": "example.com",
+      "server_port": 443,
+      "uuid": "{uuid}"
+    },
+    {
       "type": "selector",
       "tag": "AUTO",
       "outbounds": [
-        "vless-1"
+        "trojan-2",
+        "trojan-3",
+        "vless-4",
+        "vless-5"
       ]
     }
   ]
