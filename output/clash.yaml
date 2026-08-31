@@ -3,50 +3,58 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: DE
+- name: '🇸🇬 Сингапур #1 t.me/rjsxrd'
   type: ss
-  server: 129.159.10.51
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: +gebuWwfimHcw5FvH6Sfnw3ppf05PeV2M8QPMsr38oY=
+  server: 167.150.100.115
+  port: 27755
+  cipher: 2022-blake3-aes-256-gcm
+  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
   udp: true
-- name: NL
+- name: 🇫🇮 | @WhiteDNS | FI190|6.2MB/s|DNSOK|GPT⁺-FI
   type: ss
-  server: 158.178.155.37
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 14zduVOpqZOK6iayk+xd34h98ymp6qr2NuJj2xtWXiY=
+  server: 65.109.215.50
+  port: 13049
+  cipher: 2022-blake3-aes-256-gcm
+  password: rrR97O6JIRzSRG8uHimVCgLEssjipthiC4Hlieq/4/w=:B+gmrP1txQliTTw0NNVoHZ+wjNAL3nKHZopLtqlEAnI=
   udp: true
-- name: DE [2]
+- name: 🇧🇷 | @WhiteDNS | BR18|2.5MB/s|DNSOK|GPT⁺-BR
   type: ss
-  server: 141.147.53.115
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: IFvwvrqx26KIutn01x+IDo6chyktXgr2b0UvXNliBzc=
-  udp: true
-- name: NL [2]
-  type: ss
-  server: 134.98.147.129
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: MKzw1HxJdrY1+Pm12sIuiKt277hbryrPFKlSVTBWyMY=
-  udp: true
-- name: BR
-  type: ss
-  server: 164.152.62.150
+  server: 146.235.25.6
   port: 59319
   cipher: 2022-blake3-chacha20-poly1305
-  password: viIh4ZhymCsvjIfhXYuFGQkeJEWkCHrqf3oNjsT0z00=
+  password: FWlUCAS9IBNg+5FoZ+U0kRs3dcz+oQnQkjGI/iKZMR0=
+  udp: true
+- name: 561. 🇧🇷 Бразилия · ss · 335ms
+  type: ss
+  server: 144.22.225.161
+  port: 59319
+  cipher: 2022-blake3-chacha20-poly1305
+  password: GRe/0J+gpJILazFMu8n4Lo6J1AjoIG2+mdCoR7RmX74=
+  udp: true
+- name: 🇬🇧 | @WhiteDNS | GB459|4.8MB/s|DNSOK|GPT⁺-GB
+  type: ss
+  server: 129.151.84.127
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: HKSvOU0Ruej4DuNgM41S+dNISlcFU45tqwqj3BQCuYY=
+  udp: true
+- name: 🇬🇧 | @WhiteDNS | GB451|6.3MB/s|DNSOK|GPT⁺-GB
+  type: ss
+  server: 129.151.71.198
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: vvx0el/wNgatWGUzIhkHnAZcBKpUFA0gTC0OMqMe4Ac=
   udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - DE
-  - NL
-  - DE [2]
-  - NL [2]
-  - BR
+  - '🇸🇬 Сингапур #1 t.me/rjsxrd'
+  - 🇫🇮 | @WhiteDNS | FI190|6.2MB/s|DNSOK|GPT⁺-FI
+  - 🇧🇷 | @WhiteDNS | BR18|2.5MB/s|DNSOK|GPT⁺-BR
+  - 561. 🇧🇷 Бразилия · ss · 335ms
+  - 🇬🇧 | @WhiteDNS | GB459|4.8MB/s|DNSOK|GPT⁺-GB
+  - 🇬🇧 | @WhiteDNS | GB451|6.3MB/s|DNSOK|GPT⁺-GB
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
