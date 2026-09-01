@@ -9,7 +9,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
   source_2:
     type: http
-    url: http://101.255.166.134:80
+    url: http://100.61.113.24:10470
     interval: 86400
     health-check:
       enable: true
@@ -17,7 +17,199 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
   source_3:
     type: http
-    url: http://103.156.17.83:8080
+    url: http://100.61.113.24:1118
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
+  source_29:
+    type: http
+    url: http://101.200.158.109:100
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
+  source_32:
+    type: http
+    url: http://101.200.158.109:10001
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
+  source_33:
+    type: http
+    url: http://101.200.158.109:2080
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
+  source_34:
+    type: http
+    url: http://101.200.158.109:30001
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
+  source_35:
+    type: http
+    url: http://101.200.158.109:3128
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
+  source_36:
+    type: http
+    url: http://101.200.158.109:45
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
+  source_37:
+    type: http
+    url: http://101.200.158.109:5555
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
+  source_38:
+    type: http
+    url: http://101.200.158.109:6379
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
+  source_39:
+    type: http
+    url: http://101.200.158.109:7890
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
+  source_40:
+    type: http
+    url: http://101.200.158.109:80
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
+  source_41:
+    type: http
+    url: http://101.200.158.109:8000
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
+  source_42:
+    type: http
+    url: http://101.200.158.109:8008
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
+  source_43:
+    type: http
+    url: http://101.200.158.109:8080
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
+  source_44:
+    type: http
+    url: http://101.200.158.109:8081
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
+  source_45:
+    type: http
+    url: http://101.200.158.109:8118
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
+  source_46:
+    type: http
+    url: http://101.200.158.109:8181
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
+  source_47:
+    type: http
+    url: http://101.200.158.109:8800
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
+  source_48:
+    type: http
+    url: http://101.200.158.109:8808
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
+  source_49:
+    type: http
+    url: http://101.200.158.109:8880
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
+  source_50:
+    type: http
+    url: http://101.200.158.109:8899
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
+  source_51:
+    type: http
+    url: http://101.200.158.109:89
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
+  source_52:
+    type: http
+    url: http://101.200.158.109:9080
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
+  source_53:
+    type: http
+    url: http://101.200.158.109:9200
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
+  source_54:
+    type: http
+    url: http://102.0.10.172:8080
     interval: 86400
     health-check:
       enable: true

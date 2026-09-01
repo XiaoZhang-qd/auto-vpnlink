@@ -1,14 +1,14 @@
 {
   "search_limit": 5000,
-  "discovered_lines_considered": 4999,
-  "rejected_malformed": 956,
-  "unique_candidates": 1318,
+  "discovered_lines_considered": 5000,
+  "rejected_malformed": 582,
+  "unique_candidates": 1364,
   "protocol_candidates": {
     "vless": 1,
     "vmess": 0,
     "trojan": 0,
-    "ss": 9,
-    "hysteria2": 1308,
+    "ss": 5,
+    "hysteria2": 1358,
     "hysteria": 0,
     "hy2": 0,
     "tuic": 0
@@ -19,8 +19,8 @@
     "vless": 1,
     "vmess": 0,
     "trojan": 0,
-    "ss": 9,
-    "hysteria2": 290,
+    "ss": 5,
+    "hysteria2": 294,
     "hysteria": 0,
     "hy2": 0,
     "tuic": 0
