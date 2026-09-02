@@ -3,42 +3,50 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇬 [BL] Сервер 1115
+- name: 🇺🇸US_260|518KB/s|A004-260618
+  type: ss
+  server: 84.32.131.61
+  port: 18610
+  cipher: 2022-blake3-aes-256-gcm
+  password: Zjc0N2QyYTkyNzc2NGRiZDhjY2NjYTU5Mzk2N2NkOTk=:YmNhN2UyNzdlNTg3NGFkMjkxNGY4ZjEzYWM2MzQ2NGQ=
+  udp: true
+- name: 🇸🇬SG_15|422KB/s
   type: ss
   server: 167.150.100.115
   port: 27755
   cipher: 2022-blake3-aes-256-gcm
   password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
   udp: true
-- name: DE
+- name: 🇬🇧 | @WhiteDNS | GB468|7.0MB/s|DNSOK|GPT⁺-GB
   type: ss
-  server: 130.61.83.100
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: EItZd/Xd+cmdmMJ9FLqMrlkRD6D/u/iVR0p1qJZMblQ=
-  udp: true
-- name: DE [2]
-  type: ss
-  server: 79.76.113.182
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: QQfPCPbWyDitKWvJRdhzMO+GtpPhjej8V9dMuLs8iAs=
-  udp: true
-- name: GB
-  type: ss
-  server: 129.151.82.69
+  server: 129.151.95.22
   port: 61312
   cipher: 2022-blake3-chacha20-poly1305
-  password: wrxM3C0ObaKXnMsgFNAiUKcPZqArno1ZqNpHP98tuRU=
+  password: B+F4sVddkkaTO5xI71M5RSWWU/ErJR6v9Ur2aouhTu0=
+  udp: true
+- name: 🇺🇸US_7|1.6MB/s
+  type: ss
+  server: 129.146.56.236
+  port: 50356
+  cipher: 2022-blake3-chacha20-poly1305
+  password: ePPBJythkyFICgU0+BmSFSNJCLWIH/n8VIeBuM22DTU=
+  udp: true
+- name: 🇬🇧 | @WhiteDNS | GB454|22.7MB/s|DNSOK|GPT⁺-GB
+  type: ss
+  server: 129.151.85.181
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: oVtaQMKcs4RHe6leo+ecPpjnr7mJsXGF8+6cmBo7efY=
   udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇸🇬 [BL] Сервер 1115
-  - DE
-  - DE [2]
-  - GB
+  - 🇺🇸US_260|518KB/s|A004-260618
+  - 🇸🇬SG_15|422KB/s
+  - 🇬🇧 | @WhiteDNS | GB468|7.0MB/s|DNSOK|GPT⁺-GB
+  - 🇺🇸US_7|1.6MB/s
+  - 🇬🇧 | @WhiteDNS | GB454|22.7MB/s|DNSOK|GPT⁺-GB
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50

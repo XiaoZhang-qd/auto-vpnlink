@@ -6,6 +6,13 @@
     {
       "type": "vless",
       "tag": "vless-1",
+      "server": "example.com",
+      "server_port": 80,
+      "uuid": "$vlessUUID"
+    },
+    {
+      "type": "vless",
+      "tag": "vless-2",
       "server": "host.com",
       "server_port": 443,
       "uuid": "uuid",
@@ -19,7 +26,8 @@
       "type": "selector",
       "tag": "AUTO",
       "outbounds": [
-        "vless-1"
+        "vless-1",
+        "vless-2"
       ]
     }
   ]
