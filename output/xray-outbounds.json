@@ -5,24 +5,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "example.com",
-            "port": 80,
-            "users": [
-              {
-                "id": "$vlessUUID",
-                "encryption": "none",
-                "flow": null
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "host.com",
             "port": 443,
             "users": [
