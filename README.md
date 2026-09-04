@@ -369,4 +369,4 @@ output/
 
 ## 📜 License
 
-此仓库使用[GPL-3.0 license](LICENSE)的开源协议。
+此中仓库使用[GPL-3.0 license](LICENSE)的开源协议。
