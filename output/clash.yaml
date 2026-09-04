@@ -3,20 +3,6 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: SE
-  type: ss
-  server: 84.32.99.238
-  port: 20146
-  cipher: 2022-blake3-aes-256-gcm
-  password: MGM1NGM2NmQ2NTg5NDg3Y2EyNTZjNGJiNmU4YjA0Mzc=:YmQxYjRiZDJhMzEyNDMzZGFlN2JkNWQyOGY1MGFmMmE=
-  udp: true
-- name: US
-  type: ss
-  server: 84.32.131.61
-  port: 18610
-  cipher: 2022-blake3-aes-256-gcm
-  password: Zjc0N2QyYTkyNzc2NGRiZDhjY2NjYTU5Mzk2N2NkOTk=:YmNhN2UyNzdlNTg3NGFkMjkxNGY4ZjEzYWM2MzQ2NGQ=
-  udp: true
 - name: '🇸🇬 Сингапур #1 t.me/rjsxrd'
   type: ss
   server: 167.150.100.115
@@ -24,29 +10,51 @@ proxies:
   cipher: 2022-blake3-aes-256-gcm
   password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
   udp: true
-- name: 11. 🇸🇬 Сингапур · ss · 328ms
+- name: 🇩🇪DE_7|3.7MB/s
   type: ss
-  server: 168.107.84.40
-  port: 56927
+  server: 130.61.43.101
+  port: 59924
   cipher: 2022-blake3-chacha20-poly1305
-  password: Fb35n+/0WCzZDFHhBFMExY6ifsinvDzE+45kgk5UuJo=
+  password: 2mxqAF/zUMO7cA1UPUooCBMFBrAytdk7GDqF19ArcmY=
   udp: true
 - name: GB
+  type: ss
+  server: 129.151.64.19
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: B2fwo8FnMvOLaNLVDYYbMa5oXBejTe5GvPFJhldAyF0=
+  udp: true
+- name: GB [2]
   type: ss
   server: 134.65.57.186
   port: 61312
   cipher: 2022-blake3-chacha20-poly1305
   password: iOhmZnQI7flsFeV+sBv/ZTmItodrgFC4+y+V7RQX9to=
   udp: true
+- name: '[OpenRay] 🇨🇦 CA-28743'
+  type: ss
+  server: 209.200.246.182
+  port: 11994
+  cipher: 2022-blake3-aes-256-gcm
+  password: NTQwZmFlZTcwZWY1NDNiYzg3ZDJlMzlkN2RiNmYyMTc=:ZDA0ZjRiMzIxNDc5NDQ5ZmFlODQxNGJhZGE4NWIzY2Q=
+  udp: true
+- name: 🇩🇪
+  type: ss
+  server: 193.29.139.234
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - SE
-  - US
   - '🇸🇬 Сингапур #1 t.me/rjsxrd'
-  - 11. 🇸🇬 Сингапур · ss · 328ms
+  - 🇩🇪DE_7|3.7MB/s
   - GB
+  - GB [2]
+  - '[OpenRay] 🇨🇦 CA-28743'
+  - 🇩🇪
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
