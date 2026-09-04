@@ -1,5 +1,7 @@
 # auto-vpnlink
 
+[![Update VPN Sources](https://github.com/XiaoZhang-qd/auto-vpnlink/actions/workflows/update.yml/badge.svg)](https://github.com/XiaoZhang-qd/auto-vpnlink/actions/workflows/update.yml)
+
 自动发现、检查并聚合公开 VPN / Proxy 订阅源的项目。
 
 > 本项目既可以**本地运行或 VPS 运行**，也可以使用 **GitHub Actions 自动运行**；GitHub Actions 不是本项目的必需依赖。
