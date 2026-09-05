@@ -10,51 +10,27 @@ proxies:
   cipher: 2022-blake3-aes-256-gcm
   password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
   udp: true
-- name: 🇩🇪DE_7|3.7MB/s
+- name: DE
   type: ss
-  server: 130.61.43.101
+  server: 130.61.231.223
   port: 59924
   cipher: 2022-blake3-chacha20-poly1305
-  password: 2mxqAF/zUMO7cA1UPUooCBMFBrAytdk7GDqF19ArcmY=
+  password: /UtWDfxcFcX9CFdFmZRhxPyk24i/1G8UOH1kuu4vaoQ=
   udp: true
-- name: GB
+- name: DE [2]
   type: ss
-  server: 129.151.64.19
-  port: 61312
+  server: 130.61.116.233
+  port: 59924
   cipher: 2022-blake3-chacha20-poly1305
-  password: B2fwo8FnMvOLaNLVDYYbMa5oXBejTe5GvPFJhldAyF0=
-  udp: true
-- name: GB [2]
-  type: ss
-  server: 134.65.57.186
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: iOhmZnQI7flsFeV+sBv/ZTmItodrgFC4+y+V7RQX9to=
-  udp: true
-- name: '[OpenRay] 🇨🇦 CA-28743'
-  type: ss
-  server: 209.200.246.182
-  port: 11994
-  cipher: 2022-blake3-aes-256-gcm
-  password: NTQwZmFlZTcwZWY1NDNiYzg3ZDJlMzlkN2RiNmYyMTc=:ZDA0ZjRiMzIxNDc5NDQ5ZmFlODQxNGJhZGE4NWIzY2Q=
-  udp: true
-- name: 🇩🇪
-  type: ss
-  server: 193.29.139.234
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
+  password: 3L6fqw4XcAAEC8BwCK5fkuOj8W7YVd2pA6qHEhVt57M=
   udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
   - '🇸🇬 Сингапур #1 t.me/rjsxrd'
-  - 🇩🇪DE_7|3.7MB/s
-  - GB
-  - GB [2]
-  - '[OpenRay] 🇨🇦 CA-28743'
-  - 🇩🇪
+  - DE
+  - DE [2]
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
