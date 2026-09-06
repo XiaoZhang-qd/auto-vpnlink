@@ -1,12 +1,12 @@
 {
-  "candidate_limit": 6,
-  "tested": 6,
+  "candidate_limit": 2,
+  "tested": 2,
   "skipped": 0,
   "healthy": 1,
-  "failed": 5,
-  "success_target": 20,
+  "failed": 1,
+  "success_target": 10,
   "target_reached": false,
-  "runner_public_ip": "20.119.102.65",
+  "runner_public_ip": "20.51.199.2",
   "allowed_types": [
     "hysteria",
     "hysteria2",
@@ -19,11 +19,11 @@
   "rounds": 3,
   "results": [
     {
-      "uri": "ss://2022-blake3-aes-256-gcm:Zjc0N2QyYTkyNzc2NGRiZDhjY2NjYTU5Mzk2N2NkOTk=%3AYmNhN2UyNzdlNTg3NGFkMjkxNGY4ZjEzYWM2MzQ2NGQ=@84.32.131.61:18610#🇺🇸",
-      "name": "🇺🇸",
+      "uri": "ss://2022-blake3-aes-256-gcm:MzQwNWMxZmQ1YTNlNDQyOGIwOTFjYTUyOWMzN2Y1OTY=:OTBkMGZjZDg1Y2Q4NGU1MmFkMTVkOGJlZTgwY2Y1Zjg=@31.130.131.214:30453#⛲4@oneclickvpnkeys",
+      "name": "⛲4@oneclickvpnkeys",
       "type": "ss",
-      "server": "84.32.131.61",
-      "port": 18610,
+      "server": "31.130.131.214",
+      "port": 30453,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
@@ -35,42 +35,6 @@
       "port": 27755,
       "ok": true,
       "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-aes-256-gcm:rrR97O6JIRzSRG8uHimVCgLEssjipthiC4Hlieq%2F4%2Fw=%3AB+gmrP1txQliTTw0NNVoHZ+wjNAL3nKHZopLtqlEAnI=@65.109.215.50:13049#🇫🇮",
-      "name": "🇫🇮",
-      "type": "ss",
-      "server": "65.109.215.50",
-      "port": 13049,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:FWlUCAS9IBNg+5FoZ+U0kRs3dcz+oQnQkjGI%2FiKZMR0=@146.235.25.6:59319#🇧🇷",
-      "name": "🇧🇷",
-      "type": "ss",
-      "server": "146.235.25.6",
-      "port": 59319,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:MKzw1HxJdrY1+Pm12sIuiKt277hbryrPFKlSVTBWyMY=@134.98.147.129:45819#🇳🇱",
-      "name": "🇳🇱",
-      "type": "ss",
-      "server": "134.98.147.129",
-      "port": 45819,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:viIh4ZhymCsvjIfhXYuFGQkeJEWkCHrqf3oNjsT0z00=@164.152.62.150:59319#🇧🇷",
-      "name": "🇧🇷",
-      "type": "ss",
-      "server": "164.152.62.150",
-      "port": 59319,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
     }
   ]
 }
