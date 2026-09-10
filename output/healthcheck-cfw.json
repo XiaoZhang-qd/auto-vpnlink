@@ -1,12 +1,12 @@
 {
-  "candidate_limit": 4,
-  "tested": 4,
+  "candidate_limit": 2,
+  "tested": 2,
   "skipped": 0,
   "healthy": 1,
-  "failed": 3,
+  "failed": 1,
   "success_target": 10,
   "target_reached": false,
-  "runner_public_ip": "20.84.47.38",
+  "runner_public_ip": "40.76.239.100",
   "allowed_types": [
     "hysteria",
     "hysteria2",
@@ -19,17 +19,8 @@
   "rounds": 3,
   "results": [
     {
-      "uri": "ss://2022-blake3-aes-256-gcm:MzQwNWMxZmQ1YTNlNDQyOGIwOTFjYTUyOWMzN2Y1OTY=:OTBkMGZjZDg1Y2Q4NGU1MmFkMTVkOGJlZTgwY2Y1Zjg=@31.130.131.214:30453#⛲4@oneclickvpnkeys",
-      "name": "⛲4@oneclickvpnkeys",
-      "type": "ss",
-      "server": "31.130.131.214",
-      "port": 30453,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://2022-blake3-aes-256-gcm:fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=@167.150.100.115:27755#%F0%9F%87%B8%F0%9F%87%AC%20%D0%A1%D0%B8%D0%BD%D0%B3%D0%B0%D0%BF%D1%83%D1%80%20%231%20t.me%2Frjsxrd",
-      "name": "🇸🇬 Сингапур #1 t.me/rjsxrd",
+      "uri": "ss://2022-blake3-aes-256-gcm:fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=@167.150.100.115:27755#%F0%9F%87%B8%F0%9F%87%AC%20%5BBL%5D%20%D0%A1%D0%B5%D1%80%D0%B2%D0%B5%D1%80%20505",
+      "name": "🇸🇬 [BL] Сервер 505",
       "type": "ss",
       "server": "167.150.100.115",
       "port": 27755,
@@ -37,20 +28,11 @@
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://MjAyMi1ibGFrZTMtYWVzLTI1Ni1nY206TlRRd1ptRmxaVGN3WldZMU5ETmlZemczWkRKbE16bGtOMlJpTm1ZeU1UYz06WkRBMFpqUmlNekl4TkRjNU5EUTVabUZsT0RReE5HSmhaR0U0TldJelkyUT1AMjA5LjIwMC4yNDYuMTgyOjExOTk0#%F0%9F%87%A8%F0%9F%87%A6%20%5BSS%5D%20%D0%9A%D0%B0%D0%BD%D0%B0%D0%B4%D0%B0%20%23949%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me%2Frjsxrd",
-      "name": "🇨🇦 [SS] Канада #949 | РосТуннель t.me/rjsxrd",
-      "type": "ss",
-      "server": "209.200.246.182",
-      "port": 11994,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://MjAyMi1ibGFrZTMtYWVzLTI1Ni1nY206WlRFeVkyVmlPR1UwTVdKaU5EY3dOMlZsWWpVM016a3pPRGxoTmpsaU5HWT06TkdVeFptUTFOV1V0T1RRNU1TMDBORGMzTFdFM09ESXRZak0zT0dJeU5qVT1AY2NjY3QuMjg0LnBpY3M6NjUwMTI#EPODONIOS",
+      "uri": "ss://2022-blake3-chacha20-poly1305:Ep1fuyrFAxEF87qg9q17V4YEGtS92m0xdJbwu6lwTF4=@168.107.91.1:56927#EPODONIOS",
       "name": "EPODONIOS",
       "type": "ss",
-      "server": "cccct.284.pics",
-      "port": 65012,
+      "server": "168.107.91.1",
+      "port": 56927,
       "ok": false,
       "reason": "no_proxied_public_ip"
     }

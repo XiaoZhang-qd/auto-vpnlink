@@ -3,7 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: '🇸🇬 Сингапур #1 t.me/rjsxrd'
+- name: 🇸🇬 [BL] Сервер 505
   type: ss
   server: 167.150.100.115
   port: 27755
@@ -14,7 +14,7 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - '🇸🇬 Сингапур #1 t.me/rjsxrd'
+  - 🇸🇬 [BL] Сервер 505
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
