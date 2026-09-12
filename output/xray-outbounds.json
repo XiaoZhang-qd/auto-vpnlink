@@ -1,6 +1,30 @@
 {
   "outbounds": [
     {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "example.com",
+            "port": 443,
+            "password": "password"
+          }
+        ]
+      }
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "example.com",
+            "port": 443,
+            "password": "password"
+          }
+        ]
+      }
+    },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -10,6 +34,24 @@
             "users": [
               {
                 "id": "uuid",
+                "encryption": "none",
+                "flow": null
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "example.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "{uuid}",
                 "encryption": "none",
                 "flow": null
               }

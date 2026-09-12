@@ -3,18 +3,18 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇬 [BL] Сервер 505
+- name: '@SylphNet | 1405-06-21 #12'
   type: ss
-  server: 167.150.100.115
-  port: 27755
-  cipher: 2022-blake3-aes-256-gcm
-  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
+  server: 134.98.146.246
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: vWoEAw7eCA6bk0RZ9wrGRd9mAQq2xkBqNriMtkTiCJ8=
   udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇸🇬 [BL] Сервер 505
+  - '@SylphNet | 1405-06-21 #12'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
