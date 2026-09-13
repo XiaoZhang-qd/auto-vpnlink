@@ -3,18 +3,34 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: '@SylphNet | 1405-06-21 #12'
+- name: 🇸🇬SG_20|258KB/s 01
   type: ss
-  server: 134.98.146.246
-  port: 45819
+  server: 167.150.100.115
+  port: 27755
+  cipher: 2022-blake3-aes-256-gcm
+  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
+  udp: true
+- name: '@SylphNet | 1405-06-22 #183'
+  type: ss
+  server: 129.151.75.211
+  port: 61312
   cipher: 2022-blake3-chacha20-poly1305
-  password: vWoEAw7eCA6bk0RZ9wrGRd9mAQq2xkBqNriMtkTiCJ8=
+  password: 4TK6c2HHJvbvnhYhzcVyrZjxNrtOx3iqWlT+IKkDuDs=
+  udp: true
+- name: '@SylphNet | 1405-06-22 #185'
+  type: ss
+  server: 129.151.70.226
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: sGqcjLKeviTZ/pnU5/7q5crrIFQ7TwUufY/i6iG9+8E=
   udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - '@SylphNet | 1405-06-21 #12'
+  - 🇸🇬SG_20|258KB/s 01
+  - '@SylphNet | 1405-06-22 #183'
+  - '@SylphNet | 1405-06-22 #185'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50

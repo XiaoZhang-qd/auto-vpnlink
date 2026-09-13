@@ -1,12 +1,12 @@
 {
-  "candidate_limit": 3,
-  "tested": 3,
+  "candidate_limit": 4,
+  "tested": 4,
   "skipped": 0,
-  "healthy": 2,
+  "healthy": 3,
   "failed": 1,
   "success_target": 10,
   "target_reached": false,
-  "runner_public_ip": "4.236.158.81",
+  "runner_public_ip": "13.83.42.66",
   "allowed_types": [
     "hysteria",
     "hysteria2",
@@ -19,31 +19,40 @@
   "rounds": 3,
   "results": [
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:vWoEAw7eCA6bk0RZ9wrGRd9mAQq2xkBqNriMtkTiCJ8%3D@134.98.146.246:45819#%40SylphNet%20%7C%201405-06-21%20%2312",
-      "name": "@SylphNet | 1405-06-21 #12",
+      "uri": "ss://2022-blake3-aes-256-gcm:fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=@167.150.100.115:27755#%F0%9F%87%B8%F0%9F%87%ACSG_20%7C258KB%2Fs%2001",
+      "name": "🇸🇬SG_20|258KB/s 01",
       "type": "ss",
-      "server": "134.98.146.246",
-      "port": 45819,
+      "server": "167.150.100.115",
+      "port": 27755,
       "ok": true,
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:wzbgRLlSeDwxHX6xLVVxKk93K5k5N8k%2B7rncQXn80XA%3D@134.65.57.209:61312#%40SylphNet%20%7C%201405-06-21%20%2361",
-      "name": "@SylphNet | 1405-06-21 #61",
+      "uri": "ss://2022-blake3-chacha20-poly1305:4TK6c2HHJvbvnhYhzcVyrZjxNrtOx3iqWlT%2BIKkDuDs%3D@129.151.75.211:61312#%40SylphNet%20%7C%201405-06-22%20%23183",
+      "name": "@SylphNet | 1405-06-22 #183",
       "type": "ss",
-      "server": "134.65.57.209",
+      "server": "129.151.75.211",
       "port": 61312,
       "ok": true,
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "TROJAN://password@example.com:443",
-      "name": "trojan-3",
-      "type": "trojan",
-      "server": "example.com",
-      "port": 443,
+      "uri": "ss://2022-blake3-chacha20-poly1305:sGqcjLKeviTZ%2FpnU5%2F7q5crrIFQ7TwUufY%2Fi6iG9%2B8E%3D@129.151.70.226:61312#%40SylphNet%20%7C%201405-06-22%20%23185",
+      "name": "@SylphNet | 1405-06-22 #185",
+      "type": "ss",
+      "server": "129.151.70.226",
+      "port": 61312,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:uXNO37uix5n5ygWE/i9fdtg3Ho2fm0+2IoMbn0O6x/8=@193.123.34.186:45819#EPODONIOS",
+      "name": "EPODONIOS",
+      "type": "ss",
+      "server": "193.123.34.186",
+      "port": 45819,
       "ok": false,
-      "reason": "placeholder_endpoint"
+      "reason": "no_proxied_public_ip"
     }
   ]
 }
