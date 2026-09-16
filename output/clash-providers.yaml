@@ -1,4 +1,12 @@
 proxy-providers:
+  source_1:
+    type: http
+    url: HTTPS://user:pass@site.roomspace.team:8443/
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
   source_2:
     type: http
     url: http://103.170.185.226:80
