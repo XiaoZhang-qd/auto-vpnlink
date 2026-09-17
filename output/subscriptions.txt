@@ -1,2 +1,1 @@
-HTTPS://user:pass@site.roomspace.team:8443/
 http://103.170.185.226:80
