@@ -1,12 +1,12 @@
 {
-  "candidate_limit": 37,
+  "candidate_limit": 33,
   "tested": 11,
   "skipped": 0,
   "healthy": 10,
   "failed": 1,
   "success_target": 10,
   "target_reached": true,
-  "runner_public_ip": "74.249.180.163",
+  "runner_public_ip": "135.119.239.32",
   "allowed_types": [
     "hysteria",
     "hysteria2",
@@ -19,8 +19,35 @@
   "rounds": 3,
   "results": [
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:0N1dYtQFmHnwBeKv53o5MJDkRzbGYY1KkLXnaNkWo3o%3D@129.151.68.65:61312#%40SylphNet%20%7C%201405-06-28%20%23117",
-      "name": "@SylphNet | 1405-06-28 #117",
+      "uri": "ss://2022-blake3-aes-256-gcm:WAqeGA%2BdU%2BHZYSipCio%2BJmt7SSVfHjwMH7j8xmsm7%2Fs%3D%3AalthddZ27iu261I%2B568pk7HZzBFDCyIx6pvG8H9oXow%3D@web.turbooserver.net.tr:2087#%40SylphNet%20%7C%201405-06-29%20%233",
+      "name": "@SylphNet | 1405-06-29 #3",
+      "type": "ss",
+      "server": "web.turbooserver.net.tr",
+      "port": 2087,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:%2BlljlgksfaoQj9WykXIKz3KiYvRgwYs0q%2FYGHJ4dfNA%3D@144.24.231.91:61312#%40SylphNet%20%7C%201405-06-29%20%2341",
+      "name": "@SylphNet | 1405-06-29 #41",
+      "type": "ss",
+      "server": "144.24.231.91",
+      "port": 61312,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:%2FppCjFkh8QUQnwARBYcc8y20XK595agXWQ1%2BwWKJNGc%3D@144.24.227.48:61312#%40SylphNet%20%7C%201405-06-29%20%23167",
+      "name": "@SylphNet | 1405-06-29 #167",
+      "type": "ss",
+      "server": "144.24.227.48",
+      "port": 61312,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:0N1dYtQFmHnwBeKv53o5MJDkRzbGYY1KkLXnaNkWo3o%3D@129.151.68.65:61312#%40SylphNet%20%7C%201405-06-29%20%2351",
+      "name": "@SylphNet | 1405-06-29 #51",
       "type": "ss",
       "server": "129.151.68.65",
       "port": 61312,
@@ -28,92 +55,65 @@
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:0W18BiN3HuF%2BEBBdvuLgTaot1VAiMBw5c4okk1zE48w%3D@84.235.162.230:45819#%F0%9F%87%B3%F0%9F%87%B1%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8D%B7%E5%85%B0%2010",
-      "name": "🇳🇱 机场推荐:dafei.de 荷兰 10",
+      "uri": "ss://2022-blake3-chacha20-poly1305:1HhvNOP%2F8sVi2JhmxqXXnvhtckInxLpg%2B%2FfmVjMCzkQ%3D@129.151.66.211:61312#%40SylphNet%20%7C%201405-06-29%20%2354",
+      "name": "@SylphNet | 1405-06-29 #54",
       "type": "ss",
-      "server": "84.235.162.230",
-      "port": 45819,
+      "server": "129.151.66.211",
+      "port": 61312,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:1W4F0fI81d%2FvwGCxDLCle%2BKbE%2B%2FBb6uE7BP8Xjq1wH4%3D@129.151.72.10:61312#%40SylphNet%20%7C%201405-06-29%20%2358",
+      "name": "@SylphNet | 1405-06-29 #58",
+      "type": "ss",
+      "server": "129.151.72.10",
+      "port": 61312,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:2t7ioVN2zeH8TORMF3lxl8mKAb%2B1Db7YlFKCQBS424k%3D@129.150.59.192:56927#%40SylphNet%20%7C%201405-06-29%20%23262",
+      "name": "@SylphNet | 1405-06-29 #262",
+      "type": "ss",
+      "server": "129.150.59.192",
+      "port": 56927,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:3wYtGhROca1p818RFgftCeodooVes1HaskrJVHZoF3c%3D@168.107.68.192:56927#%40SylphNet%20%7C%201405-06-29%20%23248",
+      "name": "@SylphNet | 1405-06-29 #248",
+      "type": "ss",
+      "server": "168.107.68.192",
+      "port": 56927,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:4MOR5nKc3kU0XBT84w2bQfJJaiod47VBpTqv1LMkds8%3D@129.146.78.224:50356#%40SylphNet%20%7C%201405-06-29%20%23226",
+      "name": "@SylphNet | 1405-06-29 #226",
+      "type": "ss",
+      "server": "129.146.78.224",
+      "port": 50356,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:9UzSnfj0gy1JNUBD2L3JgpLLlQieW6AfOJ9vptz0iks%3D@134.65.63.122:61312#%40SylphNet%20%7C%201405-06-29%20%23111",
+      "name": "@SylphNet | 1405-06-29 #111",
+      "type": "ss",
+      "server": "134.65.63.122",
+      "port": 61312,
       "ok": false,
-      "reason": "no_proxied_public_ip"
+      "reason": "round_1_public_test_failed"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:0iRowl%2FXrJB2t5dpNveuaVVRBOOJ%2FHxzlmMcywDN1AU%3D@84.235.176.15:45819#%40SylphNet%20%7C%201405-06-28%20%2322",
-      "name": "@SylphNet | 1405-06-28 #22",
+      "uri": "ss://2022-blake3-chacha20-poly1305:BtRfc5wkVnMKTOR55w5GmEnPpoDs%2Bcm%2B%2BPGpJvjMHkk%3D@152.69.221.1:56927#%40SylphNet%20%7C%201405-06-29%20%23268",
+      "name": "@SylphNet | 1405-06-29 #268",
       "type": "ss",
-      "server": "84.235.176.15",
-      "port": 45819,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:1XeydZB%2Flx64MHceQ9pOts%2FN4240zbkRHERpRBoaVVQ%3D@152.70.56.250:45819#%40SylphNet%20%7C%201405-06-28%20%2352",
-      "name": "@SylphNet | 1405-06-28 #52",
-      "type": "ss",
-      "server": "152.70.56.250",
-      "port": 45819,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:4EYqq0Bsz1KdH9e3%2FAN4SZXxCyMO8uQ70iIBekWUGTI%3D@193.123.37.114:45819#%40SylphNet%20%7C%201405-06-28%20%2313",
-      "name": "@SylphNet | 1405-06-28 #13",
-      "type": "ss",
-      "server": "193.123.37.114",
-      "port": 45819,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:4N%2F%2FP9aTIqr3%2BKlmz%2B94CIOkuI4tigVfm5NX%2FO6Ad7E%3D@134.98.135.73:45819#%40SylphNet%20%7C%201405-06-28%20%23429",
-      "name": "@SylphNet | 1405-06-28 #429",
-      "type": "ss",
-      "server": "134.98.135.73",
-      "port": 45819,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:5rGNq8QrmZV0BGch%2BRxs68Jr0LuVGuDhkVhLj4zEhR0%3D@130.61.45.208:59924#%40SylphNet%20%7C%201405-06-28%20%23137",
-      "name": "@SylphNet | 1405-06-28 #137",
-      "type": "ss",
-      "server": "130.61.45.208",
-      "port": 59924,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:9BOOXAN%2F80Y2IXJXkG2hlG1Dax%2F3LDeewNBkdiJWeHs%3D@143.47.191.60:45819#%40SylphNet%20%7C%201405-06-28%20%2335",
-      "name": "@SylphNet | 1405-06-28 #35",
-      "type": "ss",
-      "server": "143.47.191.60",
-      "port": 45819,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:AQqPf1u0AmCFWLNBxK7ve1ODd1cTFFCg%2Bq5qsF3hwoM%3D@130.61.176.44:59924#%40SylphNet%20%7C%201405-06-28%20%234",
-      "name": "@SylphNet | 1405-06-28 #4",
-      "type": "ss",
-      "server": "130.61.176.44",
-      "port": 59924,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:Agibj1Vmrbe4%2BwbHOjbYmeiae3Wi3nnIMa1mmgiKcu0%3D@130.61.130.160:59924#%40SylphNet%20%7C%201405-06-28%20%23204",
-      "name": "@SylphNet | 1405-06-28 #204",
-      "type": "ss",
-      "server": "130.61.130.160",
-      "port": 59924,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:BH2ePK1%2FaJCB%2FjX1%2F59TaPxJnS2ZCHrqv%2FrsEV3Hqkc%3D@141.144.202.239:45819#%40SylphNet%20%7C%201405-06-28%20%2331",
-      "name": "@SylphNet | 1405-06-28 #31",
-      "type": "ss",
-      "server": "141.144.202.239",
-      "port": 45819,
+      "server": "152.69.221.1",
+      "port": 56927,
       "ok": true,
       "reason": "internet_stable_real_egress"
     }

@@ -3,170 +3,170 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: '@SylphNet | 1405-06-28 #117'
+- name: '@SylphNet | 1405-06-29 #3'
+  type: ss
+  server: web.turbooserver.net.tr
+  port: 2087
+  cipher: 2022-blake3-aes-256-gcm
+  password: WAqeGA+dU+HZYSipCio+Jmt7SSVfHjwMH7j8xmsm7/s=:althddZ27iu261I+568pk7HZzBFDCyIx6pvG8H9oXow=
+  udp: true
+- name: '@SylphNet | 1405-06-29 #41'
+  type: ss
+  server: 144.24.231.91
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: +lljlgksfaoQj9WykXIKz3KiYvRgwYs0q/YGHJ4dfNA=
+  udp: true
+- name: '@SylphNet | 1405-06-29 #167'
+  type: ss
+  server: 144.24.227.48
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: /ppCjFkh8QUQnwARBYcc8y20XK595agXWQ1+wWKJNGc=
+  udp: true
+- name: '@SylphNet | 1405-06-29 #51'
   type: ss
   server: 129.151.68.65
   port: 61312
   cipher: 2022-blake3-chacha20-poly1305
   password: 0N1dYtQFmHnwBeKv53o5MJDkRzbGYY1KkLXnaNkWo3o=
   udp: true
-- name: '@SylphNet | 1405-06-28 #22'
+- name: '@SylphNet | 1405-06-29 #54'
   type: ss
-  server: 84.235.176.15
+  server: 129.151.66.211
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 1HhvNOP/8sVi2JhmxqXXnvhtckInxLpg+/fmVjMCzkQ=
+  udp: true
+- name: '@SylphNet | 1405-06-29 #58'
+  type: ss
+  server: 129.151.72.10
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 1W4F0fI81d/vwGCxDLCle+KbE+/Bb6uE7BP8Xjq1wH4=
+  udp: true
+- name: '@SylphNet | 1405-06-29 #262'
+  type: ss
+  server: 129.150.59.192
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 2t7ioVN2zeH8TORMF3lxl8mKAb+1Db7YlFKCQBS424k=
+  udp: true
+- name: '@SylphNet | 1405-06-29 #248'
+  type: ss
+  server: 168.107.68.192
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 3wYtGhROca1p818RFgftCeodooVes1HaskrJVHZoF3c=
+  udp: true
+- name: '@SylphNet | 1405-06-29 #226'
+  type: ss
+  server: 129.146.78.224
+  port: 50356
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 4MOR5nKc3kU0XBT84w2bQfJJaiod47VBpTqv1LMkds8=
+  udp: true
+- name: '@SylphNet | 1405-06-29 #111'
+  type: ss
+  server: 134.65.63.122
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 9UzSnfj0gy1JNUBD2L3JgpLLlQieW6AfOJ9vptz0iks=
+  udp: true
+- name: '@SylphNet | 1405-06-29 #268'
+  type: ss
+  server: 152.69.221.1
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: BtRfc5wkVnMKTOR55w5GmEnPpoDs+cm++PGpJvjMHkk=
+  udp: true
+- name: '@SylphNet | 1405-06-29 #9'
+  type: ss
+  server: 92.5.205.98
   port: 45819
   cipher: 2022-blake3-chacha20-poly1305
-  password: 0iRowl/XrJB2t5dpNveuaVVRBOOJ/HxzlmMcywDN1AU=
+  password: CY6yzdXMv0dk3DReTOh+bj0cmSdf9VtjLLyGmB9S8Rc=
   udp: true
-- name: '@SylphNet | 1405-06-28 #52'
+- name: '@SylphNet | 1405-06-29 #225'
   type: ss
-  server: 152.70.56.250
+  server: 129.146.73.222
+  port: 50356
+  cipher: 2022-blake3-chacha20-poly1305
+  password: HLXvlacGP5Dt5pGtc0JvgYaAzCIAgxdJAnA4t5OfHmw=
+  udp: true
+- name: '@SylphNet | 1405-06-29 #166'
+  type: ss
+  server: 144.24.226.127
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: J7cXNcIXneBAD5a5hk6nXD68z5BcJtIMepdH646KjtI=
+  udp: true
+- name: '@SylphNet | 1405-06-29 #162'
+  type: ss
+  server: 129.151.77.36
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: JAIIG6N6KLuM33ZbMh0jk1fVcDM3qTVfUoXhQr6tiYM=
+  udp: true
+- name: '@SylphNet | 1405-06-29 #48'
+  type: ss
+  server: 129.151.86.235
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Vy4lRpLwy1/ZUJF58f+SpzYRBJCwQpwztiwtHcOtReI=
+  udp: true
+- name: SG
+  type: ss
+  server: 168.107.70.95
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: YzQ1KSvX/HjYT8QrNVSGsUIBoimpLuVEtaDy+uhoCJw=
+  udp: true
+- name: '@SylphNet | 1405-06-29 #165'
+  type: ss
+  server: 129.151.66.224
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: em25pV7s2EUkWhgDNcKJDRPTc8KBbjReVwoUdeqeQoU=
+  udp: true
+- name: '@SylphNet | 1405-06-29 #45'
+  type: ss
+  server: 129.151.89.226
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: hx5/BJFpUSYwk16zA3b//qJ/ZL4UV6/Lg0hXmoPfBq0=
+  udp: true
+- name: '@SylphNet | 1405-06-29 #10'
+  type: ss
+  server: 143.47.179.231
   port: 45819
   cipher: 2022-blake3-chacha20-poly1305
-  password: 1XeydZB/lx64MHceQ9pOts/N4240zbkRHERpRBoaVVQ=
-  udp: true
-- name: '@SylphNet | 1405-06-28 #13'
-  type: ss
-  server: 193.123.37.114
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 4EYqq0Bsz1KdH9e3/AN4SZXxCyMO8uQ70iIBekWUGTI=
-  udp: true
-- name: '@SylphNet | 1405-06-28 #429'
-  type: ss
-  server: 134.98.135.73
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 4N//P9aTIqr3+Klmz+94CIOkuI4tigVfm5NX/O6Ad7E=
-  udp: true
-- name: '@SylphNet | 1405-06-28 #137'
-  type: ss
-  server: 130.61.45.208
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 5rGNq8QrmZV0BGch+Rxs68Jr0LuVGuDhkVhLj4zEhR0=
-  udp: true
-- name: '@SylphNet | 1405-06-28 #35'
-  type: ss
-  server: 143.47.191.60
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 9BOOXAN/80Y2IXJXkG2hlG1Dax/3LDeewNBkdiJWeHs=
-  udp: true
-- name: '@SylphNet | 1405-06-28 #4'
-  type: ss
-  server: 130.61.176.44
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: AQqPf1u0AmCFWLNBxK7ve1ODd1cTFFCg+q5qsF3hwoM=
-  udp: true
-- name: '@SylphNet | 1405-06-28 #204'
-  type: ss
-  server: 130.61.130.160
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Agibj1Vmrbe4+wbHOjbYmeiae3Wi3nnIMa1mmgiKcu0=
-  udp: true
-- name: '@SylphNet | 1405-06-28 #31'
-  type: ss
-  server: 141.144.202.239
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: BH2ePK1/aJCB/jX1/59TaPxJnS2ZCHrqv/rsEV3Hqkc=
-  udp: true
-- name: v2go | 🇳🇱 NL | SS | 1
-  type: ss
-  server: 141.144.200.105
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Dx4uWbltHEUh+pri0TH9ioGP9B2/vE9G2G8rlTQtEfg=
-  udp: true
-- name: '@SylphNet | 1405-06-28 #175'
-  type: ss
-  server: 130.61.119.114
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: HCVjmCI84r15DaEC6s9RO3YZQEAC8l8VcQj541sTl7w=
-  udp: true
-- name: '@SylphNet | 1405-06-28 #145'
-  type: ss
-  server: 84.235.176.206
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: I5lfbvkaESDwrx7KOnyw6ucfHEdwviDT3HekoYufSbE=
-  udp: true
-- name: '@SylphNet | 1405-06-28 #139'
-  type: ss
-  server: 150.230.23.94
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: KwT6JM5cthwFzkjJ7MNDvFwSFtXqYgAAj6q7kkJjLOY=
-  udp: true
-- name: '@SylphNet | 1405-06-28 #19'
-  type: ss
-  server: 158.101.210.92
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Lkuvq8NB1/tDZYrDCNcvxZMC7ISuX6oMGYUEAvk966s=
-  udp: true
-- name: '@SylphNet | 1405-06-28 #189'
-  type: ss
-  server: 141.148.226.91
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: LkxTV14uMAWpwhot30E9kR4Fkhv6wWSFJsKVmxD4MoM=
-  udp: true
-- name: '@SylphNet | 1405-06-28 #8'
-  type: ss
-  server: 130.61.148.34
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: NiPxf0H2Yidm6y+KQxFBL9h6N0fIGwFOiUQPGC+3l+w=
-  udp: true
-- name: '@SylphNet | 1405-06-28 #93'
-  type: ss
-  server: 141.144.199.52
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: P434w+xHUf1T8jTpiG7qvvOPz8X6ZY/miFP0YYoSZyI=
-  udp: true
-- name: '@SylphNet | 1405-06-28 #136'
-  type: ss
-  server: 130.61.130.33
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: RpNOp0rdeUcXTBh/XgawUngLjpcB87tY8NaiVQl/dpo=
-  udp: true
-- name: '@SylphNet | 1405-06-28 #1'
-  type: ss
-  server: 130.61.224.175
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: SCbU86xLazclXP4Pnsmz/efv5JSMkayZ7LG3rxePKJY=
+  password: kAoIHaeRoTe0gnOjRPghW5nXrZUcx+gSKXcRVk9/ToE=
   udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - '@SylphNet | 1405-06-28 #117'
-  - '@SylphNet | 1405-06-28 #22'
-  - '@SylphNet | 1405-06-28 #52'
-  - '@SylphNet | 1405-06-28 #13'
-  - '@SylphNet | 1405-06-28 #429'
-  - '@SylphNet | 1405-06-28 #137'
-  - '@SylphNet | 1405-06-28 #35'
-  - '@SylphNet | 1405-06-28 #4'
-  - '@SylphNet | 1405-06-28 #204'
-  - '@SylphNet | 1405-06-28 #31'
-  - v2go | 🇳🇱 NL | SS | 1
-  - '@SylphNet | 1405-06-28 #175'
-  - '@SylphNet | 1405-06-28 #145'
-  - '@SylphNet | 1405-06-28 #139'
-  - '@SylphNet | 1405-06-28 #19'
-  - '@SylphNet | 1405-06-28 #189'
-  - '@SylphNet | 1405-06-28 #8'
-  - '@SylphNet | 1405-06-28 #93'
-  - '@SylphNet | 1405-06-28 #136'
-  - '@SylphNet | 1405-06-28 #1'
+  - '@SylphNet | 1405-06-29 #3'
+  - '@SylphNet | 1405-06-29 #41'
+  - '@SylphNet | 1405-06-29 #167'
+  - '@SylphNet | 1405-06-29 #51'
+  - '@SylphNet | 1405-06-29 #54'
+  - '@SylphNet | 1405-06-29 #58'
+  - '@SylphNet | 1405-06-29 #262'
+  - '@SylphNet | 1405-06-29 #248'
+  - '@SylphNet | 1405-06-29 #226'
+  - '@SylphNet | 1405-06-29 #111'
+  - '@SylphNet | 1405-06-29 #268'
+  - '@SylphNet | 1405-06-29 #9'
+  - '@SylphNet | 1405-06-29 #225'
+  - '@SylphNet | 1405-06-29 #166'
+  - '@SylphNet | 1405-06-29 #162'
+  - '@SylphNet | 1405-06-29 #48'
+  - SG
+  - '@SylphNet | 1405-06-29 #165'
+  - '@SylphNet | 1405-06-29 #45'
+  - '@SylphNet | 1405-06-29 #10'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50

@@ -1,11 +1,11 @@
 # Auto VPNLink
 
-- **repositories:** 164
-- **candidate_urls:** 29197
-- **valid_sources:** 26
+- **repositories:** 173
+- **candidate_urls:** 29792
+- **valid_sources:** 23
 - **discovered_nodes:** 5000
-- **verified_endpoints:** 8
+- **verified_endpoints:** 7
 - **parsed_nodes:** 1
 - **clash_proxies:** 1
 - **singbox_outbounds:** 1
-- **Generated:** 2026-09-19 08:24:19 UTC
+- **Generated:** 2026-09-20 08:56:16 UTC
