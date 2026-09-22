@@ -3,98 +3,106 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: '@SylphNet | 1405-06-30 #107'
+- name: '@SylphNet | 1405-06-31 #1'
+  type: ss
+  server: 172.104.129.6
+  port: 2087
+  cipher: 2022-blake3-aes-256-gcm
+  password: WAqeGA+dU+HZYSipCio+Jmt7SSVfHjwMH7j8xmsm7/s=:althddZ27iu261I+568pk7HZzBFDCyIx6pvG8H9oXow=
+  udp: true
+- name: '@SylphNet | 1405-06-31 #3'
   type: ss
   server: web.turbooserver.net.tr
   port: 2087
   cipher: 2022-blake3-aes-256-gcm
   password: WAqeGA+dU+HZYSipCio+Jmt7SSVfHjwMH7j8xmsm7/s=:althddZ27iu261I+568pk7HZzBFDCyIx6pvG8H9oXow=
   udp: true
-- name: 🇸🇬SG_20|258KB/s 01
+- name: '@SylphNet | 1405-06-31 #34'
   type: ss
-  server: 167.150.100.115
-  port: 27755
-  cipher: 2022-blake3-aes-256-gcm
-  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
+  server: 129.151.72.134
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: JDuG6erD7ug3QCtbLAZ2KCJaOhCmxAXL5C8bFxSsMBw=
   udp: true
-- name: '@SylphNet | 1405-06-30 #113'
+- name: '@SylphNet | 1405-06-31 #271'
   type: ss
-  server: 130.61.85.209
+  server: 134.65.59.212
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Pd3wPrQChdIKBVDeZ9In4vIj5Lq1w4lygpl82gPp4po=
+  udp: true
+- name: '@SylphNet | 1405-06-31 #196'
+  type: ss
+  server: 152.70.140.184
+  port: 50356
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Z7+th2SLxD2UBeXVETWz1d05mbYXGjrauzsCyAxy4aM=
+  udp: true
+- name: '@SylphNet | 1405-06-31 #37'
+  type: ss
+  server: 129.151.72.251
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: b8mhP4FuwcOkiuG0DF/+ddFx47grQKJ0PSaD43MZyps=
+  udp: true
+- name: '@SylphNet | 1405-06-31 #6'
+  type: ss
+  server: 130.61.232.142
   port: 59924
   cipher: 2022-blake3-chacha20-poly1305
-  password: 20c8f4s56vvh6shlIdcwtlgvC1lPpQKZxvAbWv2ARe8=
+  password: eT7dy+osmHhnnBoyKPSQO7AqL5XP/KHpEQQBbeIVeu0=
   udp: true
-- name: '@SylphNet | 1405-06-30 #19'
+- name: '@SylphNet | 1405-06-31 #33'
   type: ss
-  server: 141.148.225.103
-  port: 45819
+  server: 144.24.229.97
+  port: 61312
   cipher: 2022-blake3-chacha20-poly1305
-  password: 8RRsprK4nxB5VqKlMGFdXJerGo79K5bKdz4uF4crI8E=
+  password: pfXiuLfaGDAlLQRsBXMGn0JepNmrqAMESQDiMP+neyU=
   udp: true
-- name: '@SylphNet | 1405-06-30 #99'
+- name: '@SylphNet | 1405-06-31 #38'
   type: ss
-  server: 158.180.13.225
-  port: 45819
+  server: 129.151.81.166
+  port: 61312
   cipher: 2022-blake3-chacha20-poly1305
-  password: Of7TrBg1GnSUFQJEGoe1K0d9USdAzgjzMlrfKwk0aLM=
+  password: vzuXI1e84WEHGeEskZdTpabA679+CRQQKFjbqahlsyA=
   udp: true
-- name: '@SylphNet | 1405-06-30 #115'
+- name: '@SylphNet | 1405-06-31 #219'
   type: ss
-  server: 84.235.166.158
-  port: 45819
+  server: 138.2.81.40
+  port: 56927
   cipher: 2022-blake3-chacha20-poly1305
-  password: SqOpgZWf4fJH0dsK70K5LokI9TnHQ5zugqpwjEzsOl8=
+  password: zW/c3X95+IAorBcNI+ds/Uz6qVSTTyij3abl+o/Xh2Y=
   udp: true
-- name: '@SylphNet | 1405-06-30 #223'
-  type: ss
-  server: 158.101.222.3
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: aXCC+LogUNgffkN9eZuLOIdClpoHAWXvN8GxcmEkkis=
-  udp: true
-- name: '@SylphNet | 1405-06-30 #18'
-  type: ss
-  server: 158.178.156.109
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: k6zZ4UsgSK21sxEcneDfxRTXIuEe70PMH8tIGo5r59M=
-  udp: true
-- name: '@SylphNet | 1405-06-30 #2'
-  type: ss
-  server: 130.61.83.227
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: r0wobeAeafo7jTihelLSR2OBQpYXd5k0CtpAPHaZWew=
-  udp: true
-- name: '@SylphNet | 1405-06-30 #165'
-  type: ss
-  server: 152.70.49.160
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: yj6VqkxO2Y6tTUCc/N2TF94a5YR02l5+jm3uE3u8ipo=
-  udp: true
-- name: '🇮🇩 [SS] Индонезия #9942 | РосТуннель t.me/rjsxrd'
+- name: '🇮🇩 [SS] Индонезия #9607 | РосТуннель t.me/rjsxrd'
   type: ss
   server: 103.160.63.199
   port: 31348
   cipher: chacha20-ietf-poly1305
   password: 8C5valhOd8vfwaTXUSZ6Zyb0Ip34lRR5z7P8az
   udp: true
+- name: '🇳🇱 [SS] Нидерланды #3323 | РосТуннель t.me/rjsxrd'
+  type: ss
+  server: 108.181.58.239
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: CJmTCCx7Ltud
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - '@SylphNet | 1405-06-30 #107'
-  - 🇸🇬SG_20|258KB/s 01
-  - '@SylphNet | 1405-06-30 #113'
-  - '@SylphNet | 1405-06-30 #19'
-  - '@SylphNet | 1405-06-30 #99'
-  - '@SylphNet | 1405-06-30 #115'
-  - '@SylphNet | 1405-06-30 #223'
-  - '@SylphNet | 1405-06-30 #18'
-  - '@SylphNet | 1405-06-30 #2'
-  - '@SylphNet | 1405-06-30 #165'
-  - '🇮🇩 [SS] Индонезия #9942 | РосТуннель t.me/rjsxrd'
+  - '@SylphNet | 1405-06-31 #1'
+  - '@SylphNet | 1405-06-31 #3'
+  - '@SylphNet | 1405-06-31 #34'
+  - '@SylphNet | 1405-06-31 #271'
+  - '@SylphNet | 1405-06-31 #196'
+  - '@SylphNet | 1405-06-31 #37'
+  - '@SylphNet | 1405-06-31 #6'
+  - '@SylphNet | 1405-06-31 #33'
+  - '@SylphNet | 1405-06-31 #38'
+  - '@SylphNet | 1405-06-31 #219'
+  - '🇮🇩 [SS] Индонезия #9607 | РосТуннель t.me/rjsxrd'
+  - '🇳🇱 [SS] Нидерланды #3323 | РосТуннель t.me/rjsxrd'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
