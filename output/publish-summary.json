@@ -1,12 +1,12 @@
 {
   "health_input": 20,
   "healthy_total": 20,
-  "cfw_healthy_parsed": 12,
-  "clash_proxies": 12,
+  "cfw_healthy_parsed": 9,
+  "clash_proxies": 9,
   "rejected_after_health": 0,
   "protocols": {
-    "ss": 12,
-    "hysteria2": 8
+    "ss": 9,
+    "hysteria2": 11
   },
   "cfw_types": [
     "ss",

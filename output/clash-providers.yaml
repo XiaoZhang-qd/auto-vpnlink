@@ -1,6 +1,14 @@
 proxy-providers:
   source_1:
     type: http
+    url: http://1.1.1.1:8080
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
+  source_2:
+    type: http
     url: HTTPS://user:pass@site.roomspace.team:8443/
     interval: 86400
     health-check:
@@ -15,17 +23,9 @@ proxy-providers:
       enable: true
       interval: 300
       url: https://www.gstatic.com/generate_204
-  source_6:
-    type: http
-    url: http://101.132.249.207:3128
-    interval: 86400
-    health-check:
-      enable: true
-      interval: 300
-      url: https://www.gstatic.com/generate_204
   source_7:
     type: http
-    url: http://101.132.249.207:4443
+    url: http://101.132.249.207:6588
     interval: 86400
     health-check:
       enable: true
@@ -39,25 +39,17 @@ proxy-providers:
       enable: true
       interval: 300
       url: https://www.gstatic.com/generate_204
-  source_14:
+  source_9:
     type: http
-    url: http://101.200.158.109:30001
+    url: http://101.132.249.207:8090
     interval: 86400
     health-check:
       enable: true
       interval: 300
       url: https://www.gstatic.com/generate_204
-  source_15:
+  source_10:
     type: http
-    url: http://101.200.158.109:3128
-    interval: 86400
-    health-check:
-      enable: true
-      interval: 300
-      url: https://www.gstatic.com/generate_204
-  source_16:
-    type: http
-    url: http://101.200.158.109:80
+    url: http://101.132.249.207:8118
     interval: 86400
     health-check:
       enable: true
@@ -65,7 +57,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
   source_17:
     type: http
-    url: http://101.200.158.109:8000
+    url: http://101.200.158.109:30001
     interval: 86400
     health-check:
       enable: true
@@ -73,7 +65,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
   source_18:
     type: http
-    url: http://101.200.158.109:8008
+    url: http://101.200.158.109:3128
     interval: 86400
     health-check:
       enable: true
@@ -81,7 +73,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
   source_19:
     type: http
-    url: http://101.200.158.109:8080
+    url: http://101.200.158.109:8000
     interval: 86400
     health-check:
       enable: true
@@ -89,7 +81,15 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
   source_20:
     type: http
-    url: http://101.200.158.109:8081
+    url: http://101.200.158.109:8008
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
+  source_21:
+    type: http
+    url: http://101.200.158.109:8080
     interval: 86400
     health-check:
       enable: true
@@ -97,7 +97,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
   source_22:
     type: http
-    url: http://101.200.158.109:8800
+    url: http://101.200.158.109:80
     interval: 86400
     health-check:
       enable: true
@@ -105,7 +105,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
   source_23:
     type: http
-    url: http://101.200.158.109:8808
+    url: http://101.200.158.109:8081
     interval: 86400
     health-check:
       enable: true
@@ -113,7 +113,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
   source_24:
     type: http
-    url: http://101.200.158.109:8880
+    url: http://101.200.158.109:8800
     interval: 86400
     health-check:
       enable: true
@@ -121,7 +121,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
   source_25:
     type: http
-    url: http://101.200.158.109:9080
+    url: http://101.200.158.109:8808
     interval: 86400
     health-check:
       enable: true
@@ -129,7 +129,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
   source_26:
     type: http
-    url: http://101.200.158.109:9200
+    url: http://101.200.158.109:8880
     interval: 86400
     health-check:
       enable: true
@@ -137,7 +137,15 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
   source_27:
     type: http
-    url: http://103.170.185.226:80
+    url: http://101.200.158.109:9080
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
+  source_28:
+    type: http
+    url: http://101.200.158.109:9200
     interval: 86400
     health-check:
       enable: true
