@@ -3,82 +3,50 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇱IL_1|81KB/s|A004-260618
+- name: ❓Other_257|792KB/s|A004-260618
   type: ss
-  server: 85.209.157.184
-  port: 8388
-  cipher: 2022-blake3-aes-128-gcm
-  password: EIIwJPg8YqgnjLLd58zoTg==:21BUzSjKTJPkPdIhxHlXdg==
+  server: 167.150.100.93
+  port: 29824
+  cipher: 2022-blake3-aes-256-gcm
+  password: 2PIuTAxZjzJxni4kxy/GQ36VWTbRrYzl1fjm0ufTR94=
   udp: true
-- name: 🇸🇬SG_2|531KB/s
+- name: 🇸🇬SG_12|955KB/s
   type: ss
   server: 167.150.100.115
   port: 27755
   cipher: 2022-blake3-aes-256-gcm
   password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
   udp: true
-- name: '@SylphNet | 1405-07-01 #182'
+- name: '@SylphNet | 1405-07-02 #119'
   type: ss
-  server: 158.178.156.189
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 3pAryH5891fJwNy5c1rzLBaytwn79ojJ5iVQt6Yli60=
-  udp: true
-- name: '[067151'
-  type: ss
-  server: 130.61.113.190
+  server: 130.61.115.100
   port: 59924
   cipher: 2022-blake3-chacha20-poly1305
-  password: DW0OMXxJIuGq4ow+bv+pDh6MmBfBROOuFuOCW/cYF1M=
+  password: BsLjFFy84gRCcR4bs3Ytx1np7ooiLMmFFCjxk2P45t8=
   udp: true
-- name: GB - zhuhai.uk 01
+- name: '@SylphNet | 1405-07-02 #401'
   type: ss
-  server: 129.151.73.227
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: EG7gd6f1FSkm+x/OoWRHzsRT1Jl/tSx0EWxkprEGZSo=
-  udp: true
-- name: '@SylphNet | 1405-07-01 #278'
-  type: ss
-  server: 134.185.89.83
+  server: 161.118.253.23
   port: 56927
   cipher: 2022-blake3-chacha20-poly1305
-  password: Gy4t/ay4dV3dWTnsOtaDn5i0LZfX2dLEuhLZk4H0Ufk=
+  password: SF+Iu0fGL/k1+EqZCG7rUS7z5PeQiYzpz3HITaiLphM=
   udp: true
-- name: '@SylphNet | 1405-07-01 #4'
+- name: '@SylphNet | 1405-07-02 #12'
   type: ss
-  server: 130.61.231.22
-  port: 59924
+  server: 92.5.231.111
+  port: 45819
   cipher: 2022-blake3-chacha20-poly1305
-  password: WywuM3LCtRahUDSJUINtsxLFG4KC601yhCZ4/ap//ds=
-  udp: true
-- name: '@SylphNet | 1405-07-01 #47'
-  type: ss
-  server: 144.24.228.23
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: hsuAtTyIs0Gl65/0moSA/jcDwzE2LUfpWINEzRhWxG0=
-  udp: true
-- name: '@SylphNet | 1405-07-01 #228'
-  type: ss
-  server: 129.146.124.141
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: zyjgAJte5t9OP35LYOD8CAf3QqvcSzcclM74XlByG4c=
+  password: TkL43ELd/u4rDZO97ncPoXFnvPHmthUZN0DIGTrtwA8=
   udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇮🇱IL_1|81KB/s|A004-260618
-  - 🇸🇬SG_2|531KB/s
-  - '@SylphNet | 1405-07-01 #182'
-  - '[067151'
-  - GB - zhuhai.uk 01
-  - '@SylphNet | 1405-07-01 #278'
-  - '@SylphNet | 1405-07-01 #4'
-  - '@SylphNet | 1405-07-01 #47'
-  - '@SylphNet | 1405-07-01 #228'
+  - ❓Other_257|792KB/s|A004-260618
+  - 🇸🇬SG_12|955KB/s
+  - '@SylphNet | 1405-07-02 #119'
+  - '@SylphNet | 1405-07-02 #401'
+  - '@SylphNet | 1405-07-02 #12'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
