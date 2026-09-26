@@ -1,12 +1,12 @@
 {
   "candidate_limit": 300,
-  "tested": 238,
+  "tested": 300,
   "skipped": 0,
-  "healthy": 20,
-  "failed": 218,
+  "healthy": 17,
+  "failed": 283,
   "success_target": 20,
-  "target_reached": true,
-  "runner_public_ip": "4.154.22.5",
+  "target_reached": false,
+  "runner_public_ip": "20.106.183.52",
   "allowed_types": [
     "hysteria",
     "hysteria2",
@@ -28,53 +28,35 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:%2FpYDD9iRDQlBUa4aL0lBTCSp6ZNStfL6xHNn4mSFqFE%3D@129.151.77.63:61312#GB",
-      "name": "GB",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2NExiS0huQjNJTzc1OXVlRW5oZ01HQDUyLjE0Mi4xNjEuOTozNDQyNA==#%DA%A9%D8%A7%D9%86%D8%A7%D9%84+%3A+%40V2rayNGvpni",
+      "name": "کانال+:+@V2rayNGvpni",
       "type": "ss",
-      "server": "129.151.77.63",
-      "port": 61312,
+      "server": "52.142.161.9",
+      "port": 34424,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3YjU2YWVhYS04ZTJkLTRiZGYtYjFkNy0yMzNlY2NhMTVmNTZAbmFtcmNnMDAxNjQwbHJtLmN5YmVydmVuYS5jb206NTAwOTk=#%F0%9F%87%B9%F0%9F%87%BC%20%5BBL%5D%20%D0%A1%D0%B5%D1%80%D0%B2%D0%B5%D1%80%2013",
+      "name": "🇹🇼 [BL] Сервер 13",
+      "type": "ss",
+      "server": "namrcg001640lrm.cybervena.com",
+      "port": 50099,
       "ok": true,
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:4nphreJpAUpxvkVQmO2l37kEup8qRu7pcSYU0JbJLVM%3D@158.178.229.235:56927#SG",
-      "name": "SG",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3ZTczMWVjMy1mOGUxLTQzZjYtOTJjZi0zOTc4ZDE0NzA1YzRANjEuMjMxLjI1LjE3Mjo1MDA5OQ==#[8911][TW][0][SS][None][ext_raw.githubusercontent.com][2026-09-25][2026-09-25",
+      "name": "[8911][TW][0][SS][None][ext_raw.githubusercontent.com][2026-09-25][2026-09-25",
       "type": "ss",
-      "server": "158.178.229.235",
-      "port": 56927,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:7%2B83lYmtkC1TL9F5THnzEGaaF24mquCQgoT%2BDqJDrlE%3D@129.151.83.115:61312#GB",
-      "name": "GB",
-      "type": "ss",
-      "server": "129.151.83.115",
-      "port": 61312,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:L3QqnA71GxRRmLGUEdybwjBm99YOB%2BVNxYv9WWhazJA%3D@144.24.229.35:61312#GB",
-      "name": "GB",
-      "type": "ss",
-      "server": "144.24.229.35",
-      "port": 61312,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:g726%2FIWhhF3bdXPIKc6vbtEUOpBVQU1EHNTFoJJtLsU%3D@129.151.78.252:61312#GB",
-      "name": "GB",
-      "type": "ss",
-      "server": "129.151.78.252",
-      "port": 61312,
+      "server": "61.231.25.172",
+      "port": 50099,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
       "uri": "VLESS://uuid@host.com:443?security=tls",
-      "name": "vless-7",
+      "name": "vless-5",
       "type": "vless",
       "server": "host.com",
       "port": 443,
@@ -83,7 +65,7 @@
     },
     {
       "uri": "hysteria2://${config.sops.placeholder.hy2_password}@cdn.example.com:443?obfs=salamander&obfs-password=${config.sops.placeholder.hy2_obfs}&sni=cdn.example.com&alpn=h3",
-      "name": "hysteria2-8",
+      "name": "hysteria2-6",
       "type": "hysteria2",
       "server": "cdn.example.com",
       "port": 443,
@@ -91,22 +73,22 @@
       "reason": "placeholder_endpoint"
     },
     {
-      "uri": "hysteria2://036c648f927d4d86a82dcf629db8cbe1@jackvpn20.mooo.com:15766?alpn=h3&fp=chrome&security=tls&sni=jackvpn20.mooo.com#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
-      "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
+      "uri": "hysteria2://03114279-e38a-4d27-82a9-6a69dbb7f168@tn.tmn141246.ru:443?sni=live.ok.ru#4212",
+      "name": "4212",
       "type": "hysteria2",
-      "server": "jackvpn20.mooo.com",
-      "port": 15766,
+      "server": "tn.tmn141246.ru",
+      "port": 443,
       "ok": false,
-      "reason": "core_not_ready"
+      "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://083417772bc618cd61f0cca23dd91680@gorbachev-new-th.kvnfreetest.uk:55443#%F0%9F%87%B9%F0%9F%87%AD%20Thailand%2C%20Chiang%20Mai%20%28Moo%20Ban%20Palm%20Springs%29%20%7C%20%5BBL%5D",
-      "name": "🇹🇭 Thailand, Chiang Mai (Moo Ban Palm Springs) | [BL]",
+      "uri": "hysteria2://083417772bc618cd61f0cca23dd91680@167.179.34.31:55443/?insecure=1&sni=gorbachev-new-th.kvnfreetest.uk#",
+      "name": "hysteria2-8",
       "type": "hysteria2",
-      "server": "gorbachev-new-th.kvnfreetest.uk",
+      "server": "167.179.34.31",
       "port": 55443,
       "ok": false,
-      "reason": "core_not_ready"
+      "reason": "no_proxied_public_ip"
     },
     {
       "uri": "hysteria2://0b0e9802-3a94-4cb0-83e3-293b94a1ee2e@78.159.250.230:5555?sni=31.56.188.66.tyr-agentstvo.tech&insecure=0#%F0%9F%87%AE%F0%9F%87%B7%20Iran%20%5B%2ACIDR%5D%20Beeline",
@@ -154,10 +136,10 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://1e1c72f4-325b-4db0-b2d4-dc9c7cddc46a@idontknow.whit3.net:443?sni=idontknow.whit3.net#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%2C%20Stockholm%20%7C%20%5BBL%5D",
-      "name": "🇸🇪 Sweden, Stockholm | [BL]",
+      "uri": "hysteria2://1e1c72f4-325b-4db0-b2d4-dc9c7cddc46a@good-route.whit3.net:443?sni=good-route.whit3.net#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Warsaw%20%28%C5%9Ar%C3%B3dmie%C5%9Bcie%29%20%7C%20%5BBL%5D",
+      "name": "🇵🇱 Poland, Warsaw (Śródmieście) | [BL]",
       "type": "hysteria2",
-      "server": "idontknow.whit3.net",
+      "server": "good-route.whit3.net",
       "port": 443,
       "ok": false,
       "reason": "core_not_ready"
@@ -181,7 +163,7 @@
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://2_hysteria2_fastlane_i010fok4p:6UtDu2vqMwoUVYvz1lrKGQ1lfVMKZmCo@138.124.64.30:1935?sni=pl2.h.fastlanehosting.ru#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Warsaw%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://2_hysteria2_fastlane_i010fok4p%3A6UtDu2vqMwoUVYvz1lrKGQ1lfVMKZmCo@138.124.64.30:1935?sni=pl2.h.fastlanehosting.ru#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Warsaw%20%7C%20%5BBL%5D",
       "name": "🇵🇱 Poland, Warsaw | [BL]",
       "type": "hysteria2",
       "server": "138.124.64.30",
@@ -199,31 +181,31 @@
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://35a14133-45f6-40bc-a9cd-918fd0ecb345@france-2.hysteria.ltd:6443?sni=france-2.hysteria.ltd&alpn=h3#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://35a14133-45f6-40bc-a9cd-918fd0ecb345@france-2.hysteria.ltd:5443/?sni=france-2.hysteria.ltd#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
       "name": "🇫🇷 France, Paris | 🌐 | [BL]",
       "type": "hysteria2",
       "server": "france-2.hysteria.ltd",
-      "port": 6443,
+      "port": 5443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://3b560ff6-ae44-4986-84ed-5950fcdbd9e8@fast13.screw.page:443?sni=fast13.screw.page&fm=%7B#%F0%9F%87%AB%F0%9F%87%AE%20Finland%20%5B%2ACIDR%5D",
-      "name": "🇫🇮 Finland [*CIDR]",
+      "uri": "hysteria2://3aabd489-04af-42fb-87e2-363d1b83d335@iq5ny.pleiades.codes:8443#%F0%9F%87%B8%F0%9F%87%AC%20Singapore%2C%20Singapore%20%7C%20%5BBL%5D",
+      "name": "🇸🇬 Singapore, Singapore | [BL]",
       "type": "hysteria2",
-      "server": "fast13.screw.page",
-      "port": 443,
+      "server": "iq5ny.pleiades.codes",
+      "port": 8443,
       "ok": false,
-      "reason": "no_proxied_public_ip"
+      "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://3f63c86c-ac4a-4900-85cf-4fedf93c2ca5@91.240.86.70:22443?alpn=h3&sni=itsallproxy.quattro-tech.ru#%F0%9F%87%A7%F0%9F%87%B8%20%E2%9A%A1%20%D0%AD%D1%89%D0%BA%D0%B5%D1%80%D0%B8%D1%8F%20%7C%2520%5B%F0%9F%8F%B3%EF%B8%8FLTE%5D%2520%20%2520%F0%9F%94%90",
-      "name": "🇧🇸 ⚡ Эщкерия |%20[🏳️LTE]%20 %20🔐",
+      "uri": "hysteria2://3f49f2df-f94a-47aa-b830-6cb0e13a2d3e@de2.zveil-vpn.online:443?sni=de2.zveil-vpn.online#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%28Innenstadt%20I%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | 🌐 | [BL]",
       "type": "hysteria2",
-      "server": "91.240.86.70",
-      "port": 22443,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
+      "server": "de2.zveil-vpn.online",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
     },
     {
       "uri": "hysteria2://49f8bb8047@srv-12c1e0.21freedom.net:11592?security=tls&fp=chrome&alpn=h3#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Seattle%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
@@ -262,35 +244,35 @@
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://5b88763e-e1a1-43a2-8556-bc7963ce8739@fast100.screw.page:443?sni=fast100.screw.page&fm=%7B#%F0%9F%87%AB%F0%9F%87%AE%20Finland%20%5B%2ACIDR%5D",
-      "name": "🇫🇮 Finland [*CIDR]",
+      "uri": "hysteria2://5b336b3b-9512-4bfc-8eb1-b648c62133b3@althys2.superbuba.top:443?sni=althys2.superbuba.top#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
       "type": "hysteria2",
-      "server": "fast100.screw.page",
+      "server": "althys2.superbuba.top",
       "port": 443,
       "ok": false,
-      "reason": "no_proxied_public_ip"
+      "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://5d0a6445-a30d-4522-bb1f-94f1d3ad63be@mlxy2.mangshe.xyz:2060?insecure=1#%F0%9F%87%B2%F0%9F%87%BE%20Малайзия%2C%20Cyberjaya%20[🏴BL",
+      "uri": "hysteria2://5d0a6445-a30d-4522-bb1f-94f1d3ad63be@mlxy1.mangshe.xyz:2060?insecure=1#%F0%9F%87%B2%F0%9F%87%BE%20Малайзия%2C%20Cyberjaya%20[🏴BL",
       "name": "🇲🇾 Малайзия, Cyberjaya [🏴BL",
       "type": "hysteria2",
-      "server": "mlxy2.mangshe.xyz",
+      "server": "mlxy1.mangshe.xyz",
       "port": 2060,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://600bbee3-1f42-4877-8a4f-770582752ade@ush2.snowdnvpno4.com:8443?sni=ush2.snowdnvpno4.com#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Dallas%20%7C%20%5BBL%5D",
-      "name": "🇺🇸 United States, Dallas | [BL]",
+      "uri": "hysteria2://60e2a548-96aa-4850-a279-1edab743c39b@md1.cnyvpn.com:443?sni=md1.cnyvpn.com#%F0%9F%87%B2%F0%9F%87%A9%20Moldova%2C%20Chisinau%20%7C%20%5BBL%5D",
+      "name": "🇲🇩 Moldova, Chisinau | [BL]",
       "type": "hysteria2",
-      "server": "ush2.snowdnvpno4.com",
-      "port": 8443,
+      "server": "md1.cnyvpn.com",
+      "port": 443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://67a1454f-5a95-4e30-9723-1ffcbe7e97f9@soskeynets.api3-max.ru:443/?sni=wopa3.api3-max.ru#129105",
-      "name": "129105",
+      "uri": "hysteria2://67a1454f-5a95-4e30-9723-1ffcbe7e97f9@soskeynets.api3-max.ru:443?insecure=0&sni=wopa6.api3-max.ru#",
+      "name": "hysteria2-29",
       "type": "hysteria2",
       "server": "soskeynets.api3-max.ru",
       "port": 443,
@@ -298,134 +280,80 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://67a1454f-5a95-4e30-9723-1ffcbe7e97f9@taga9.api3-max.ru:443/?sni=taga9.api3-max.ru#%F0%9F%A6%8438@oneclickvpnkeys",
-      "name": "🦄38@oneclickvpnkeys",
+      "uri": "hysteria2://67a1454f-5a95-4e30-9723-1ffcbe7e97f9@wopa1.api3-max.ru:443#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20Slough%20%7C%20%5BBL%5D",
+      "name": "🇬🇧 United Kingdom, Slough | [BL]",
       "type": "hysteria2",
-      "server": "taga9.api3-max.ru",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://68b4b16e-2759-47a4-8a69-33118edf5ce6@ger.leontunel.ru:443?headerType=none&encryption=none&sni=ger.leontunel.ru&insecure=0#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
-      "name": "🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]",
-      "type": "hysteria2",
-      "server": "ger.leontunel.ru",
+      "server": "wopa1.api3-max.ru",
       "port": 443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://6f7a8009ecf6a12e10d03f9d88493c89@gorbachev-th.kvnfreetest.uk:55443#%F0%9F%87%B9%F0%9F%87%AD%20Thailand%2C%20Chiang%20Mai%20%28Moo%20Ban%20Palm%20Springs%29%20%7C%20%5BBL%5D",
-      "name": "🇹🇭 Thailand, Chiang Mai (Moo Ban Palm Springs) | [BL]",
-      "type": "hysteria2",
-      "server": "gorbachev-th.kvnfreetest.uk",
-      "port": 55443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://71cada65-d23e-418c-88e4-a06188d14689@fi-one.quiet-rogue.site:443?headerType=none&encryption=none&sni=fi-one.quiet-rogue.site&insecure=0#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
-      "name": "🇫🇮 Finland, Helsinki | [BL]",
-      "type": "hysteria2",
-      "server": "fi-one.quiet-rogue.site",
-      "port": 443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://78cffcbe-e2c2-40ba-ae4e-f28481b44134@46.254.17.97:443/?sni=api.fr-x5.ru&fm=%7B%22quicParams%22%3A%7B%22brutalUp%22%3A%22100#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%20%5B%2ACIDR%5D",
-      "name": "🇸🇪 Sweden [*CIDR]",
-      "type": "hysteria2",
-      "server": "46.254.17.97",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://84a64c00-9eda-412b-96c1-627e78895f48@tn.tmn141246.ru:443?sni=live.ok.ru#0592",
-      "name": "0592",
-      "type": "hysteria2",
-      "server": "tn.tmn141246.ru",
-      "port": 443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://88c6d0d5-00e1-45ec-9b2d-f116eb54767e@tn.tmn141246.ru:443?sni=live.ok.ru#0677",
-      "name": "0677",
-      "type": "hysteria2",
-      "server": "tn.tmn141246.ru",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://8bc63720-5ec8-45b5-b6a6-9a21ffb490e8@argg2.auragg.org:443?insecure=0&sni=argg2.auragg.org#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
-      "name": "🇫🇷 France, Paris | [BL]",
-      "type": "hysteria2",
-      "server": "argg2.auragg.org",
-      "port": 443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://8e85752d-c04f-427d-9d70-b10d144c8492@31.76.38.30:443?sni=de4.convert-cloud.guru#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
-      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
-      "type": "hysteria2",
-      "server": "31.76.38.30",
-      "port": 443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://901113fb-2ddd-4472-84bf-307de471f32f@us-nyc.katanalink.net:443?sni=us-nyc.katanalink.net#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%AB%F0%9F%87%AE%20%F0%9F%87%B8%F0%9F%87%AA%20%7C%20%5BBL%5D",
-      "name": "🌐 Anycast-IP | 🇫🇮 🇸🇪 | [BL]",
-      "type": "hysteria2",
-      "server": "us-nyc.katanalink.net",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://95e8532b-cc69-42d4-9553-e3c23292b15b@176.124.222.180:8443/?sni=j47lq.pleiades.codes#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%5B%2ACIDR%5D",
-      "name": "🇩🇪 Germany [*CIDR]",
-      "type": "hysteria2",
-      "server": "176.124.222.180",
-      "port": 8443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://99800091-8337-4112-8756-8cc60eb1ffa8@nl9.unlockvpn.online:10808/?sni=nl9.unlockvpn.online#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://68b4b16e-2759-47a4-8a69-33118edf5ce6@nederland.gamestocke.ru:443?headerType=none&encryption=none&sni=nederland.gamestocke.ru&insecure=0#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
       "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
       "type": "hysteria2",
-      "server": "nl9.unlockvpn.online",
-      "port": 10808,
+      "server": "nederland.gamestocke.ru",
+      "port": 443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z@162.249.124.112:8443?sni=hopp-germany-new.ddnsguru.com#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
-      "name": "🇬🇧 United Kingdom, London | [BL]",
+      "uri": "hysteria2://6fa1b8eb-56f4-4f41-97dc-e0185bcfc575@hys.unlimitedteam.space:443?sni=hys.unlimitedteam.space&nonce=aH4cLozn&security=tls#%F0%9F%87%B1%F0%9F%87%BB%20Latvia%2C%20Riga%20%7C%20%5BBL%5D",
+      "name": "🇱🇻 Latvia, Riga | [BL]",
       "type": "hysteria2",
-      "server": "162.249.124.112",
-      "port": 8443,
+      "server": "hys.unlimitedteam.space",
+      "port": 443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z@162.249.124.125:8443?sni=hopp-germany-new.ddnsguru.com#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
-      "name": "🇬🇧 United Kingdom, London | [BL]",
+      "uri": "hysteria2://71cada65-d23e-418c-88e4-a06188d14689@it-one.quiet-rogue.site:443#%F0%9F%87%AE%F0%9F%87%B9%20Italy%2C%20Milan%20%7C%20%5BBL%5D",
+      "name": "🇮🇹 Italy, Milan | [BL]",
       "type": "hysteria2",
-      "server": "162.249.124.125",
-      "port": 8443,
+      "server": "it-one.quiet-rogue.site",
+      "port": 443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://9b08bee0-2615-46c6-8939-54b575517a26@78.159.250.230:443?sni=quic.tyr-agentstvo.tech#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%87%BA%F0%9F%87%B8%20%5B%2ACIDR%5D%20Beeline",
-      "name": "🌐 Anycast-IP | 🇩🇪 🇵🇱 🇺🇸 [*CIDR] Beeline",
+      "uri": "hysteria2://792V1zl5cJHSV3wjyGPXiFbx1YA4BrIr@jongjmi.odnako.site:8449?sni=jongjmi.odnako.site&insecure=0#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Karlsruhe%20%28Nordweststadt%29%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Karlsruhe (Nordweststadt) | [BL]",
+      "type": "hysteria2",
+      "server": "jongjmi.odnako.site",
+      "port": 8449,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://8569e507-8ef7-481d-9108-6bc7f040c2ff@cns.dodostarscoffee.ru:9443#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%5B%2ACIDR%5D",
+      "name": "🇩🇪 Germany [*CIDR]",
+      "type": "hysteria2",
+      "server": "cns.dodostarscoffee.ru",
+      "port": 9443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://890aade8-4034-4372-9776-793e9acd1e94@kerost.fontanvpn.com:443?sni=kerost.fontanvpn.com#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
+      "type": "hysteria2",
+      "server": "kerost.fontanvpn.com",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://8bc63720-5ec8-45b5-b6a6-9a21ffb490e8@fl01.auragg.org:443?security=tls&sni=fl01.auragg.org#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
+      "type": "hysteria2",
+      "server": "fl01.auragg.org",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://8e9b2c52-e083-40fb-92c1-8a8cd4c6a02c@78.159.250.230:443?alpn=h3&sni=quic.tyr-agentstvo.tech&fp=chrome#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%AB%F0%9F%87%AE%20%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%87%BA%F0%9F%87%B8%20%5B%2ACIDR%5D%20Beeline",
+      "name": "🌐 Anycast-IP | 🇫🇮 🇵🇱 🇺🇸 [*CIDR] Beeline",
       "type": "hysteria2",
       "server": "78.159.250.230",
       "port": 443,
@@ -433,19 +361,73 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://9f5b9ca7-d0bb-4e50-a3ca-acf5968027fc@138.124.254.68:2096?sni=it-one.quiet-rogue.site#%F0%9F%87%AE%F0%9F%87%B9%20Italy%20%5B%2ACIDR%5D",
-      "name": "🇮🇹 Italy [*CIDR]",
+      "uri": "hysteria2://921db318-1694-4408-9cc7-c93df39f7f8e@ru-i-2.monkeyisland.xyz:443?sni=ru-i-2.monkeyisland.xyz#5959",
+      "name": "5959",
       "type": "hysteria2",
-      "server": "138.124.254.68",
-      "port": 2096,
+      "server": "ru-i-2.monkeyisland.xyz",
+      "port": 443,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://BPvdjudCGodsF67hRP3xgBYvcKp48coTsh6ANydLhQs=@78.17.187.184:443/?insecure=1&sni=fin14qr.wwwinternetvideo.click#",
-      "name": "hysteria2-48",
+      "uri": "hysteria2://97a63a10-8e25-4425-883e-f2bc31c3f970@freeroot.fontanvpn.com:443?sni=freeroot.fontanvpn.com#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
       "type": "hysteria2",
-      "server": "78.17.187.184",
+      "server": "freeroot.fontanvpn.com",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z@162.249.124.103:8443?sni=mercedes-grape.yyuyy.com#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
+      "name": "🇬🇧 United Kingdom, London | [BL]",
+      "type": "hysteria2",
+      "server": "162.249.124.103",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z@162.249.124.114:8080?sni=hopp-germany-new.ddnsguru.com#%F0%9F%87%B9%F0%9F%87%B7%20Turkey%2C%20Ankara%20%7C%20%5BBL%5D",
+      "name": "🇹🇷 Turkey, Ankara | [BL]",
+      "type": "hysteria2",
+      "server": "162.249.124.114",
+      "port": 8080,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z@162.249.124.99:8443?sni=mercedes-grape.yyuyy.com#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
+      "name": "🇬🇧 United Kingdom, London | [BL]",
+      "type": "hysteria2",
+      "server": "162.249.124.99",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://9b08bee0-2615-46c6-8939-54b575517a26@78.159.250.230:8443?sni=quic.tyr-agentstvo.tech#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D%20Beeline",
+      "name": "🇵🇱 Poland | 🌐 [*CIDR] Beeline",
+      "type": "hysteria2",
+      "server": "78.159.250.230",
+      "port": 8443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://9f5b9ca7-d0bb-4e50-a3ca-acf5968027fc@138.124.254.68:8443?sni=de-two.quiet-rogue.site#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%5B%2ACIDR%5D",
+      "name": "🇩🇪 Germany [*CIDR]",
+      "type": "hysteria2",
+      "server": "138.124.254.68",
+      "port": 8443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://BPvdjudCGodsF67hRP3xgBYvcKp48coTsh6ANydLhQs=@fin14qr.wwwinternetvideo.click:443?insecure=1&sni=fin14qr.wwwinternetvideo.click#FI",
+      "name": "FI",
+      "type": "hysteria2",
+      "server": "fin14qr.wwwinternetvideo.click",
       "port": 443,
       "ok": false,
       "reason": "no_proxied_public_ip"
@@ -461,7 +443,7 @@
     },
     {
       "uri": "hysteria2://H7mP2xY9kJ4nQ8wR5tF6vB3z@15.223.183.81:443/?insecure=1&sni=t.me#",
-      "name": "hysteria2-50",
+      "name": "hysteria2-48",
       "type": "hysteria2",
       "server": "15.223.183.81",
       "port": 443,
@@ -469,13 +451,13 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://H7mP2xY9kJ4nQ8wR5tF6vB3z@vpn-ca-001.fastervpn.world:443?insecure=1&sni=t.me#CA",
-      "name": "CA",
+      "uri": "hysteria2://H7mP2xY9kJ4nQ8wR5tF6vB3z@vpn-ca-001.fastervpn.world:443?sni=vk.com#0099",
+      "name": "0099",
       "type": "hysteria2",
       "server": "vpn-ca-001.fastervpn.world",
       "port": 443,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
+      "ok": false,
+      "reason": "core_not_ready"
     },
     {
       "uri": "hysteria2://Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0@85.204.107.165:8080?sni=grape-zet-ro-turbo.bumbleshrimp.com#%F0%9F%87%A6%F0%9F%87%AA%20United%20Arab%20Emirates%2C%20Abu%20Dhabi%20%28Al%20Ras%20Al%20Akhdar%29%20%7C%20%5BBL%5D",
@@ -487,11 +469,11 @@
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0@85.204.107.173:8080?sni=hopp-romania-new.roxa.org#%F0%9F%87%A6%F0%9F%87%AA%20United%20Arab%20Emirates%2C%20Abu%20Dhabi%20%28Al%20Ras%20Al%20Akhdar%29%20%7C%20%5BBL%5D",
-      "name": "🇦🇪 United Arab Emirates, Abu Dhabi (Al Ras Al Akhdar) | [BL]",
+      "uri": "hysteria2://Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0@85.204.107.173:8443?sni=hopp-romania-new.roxa.org#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
+      "name": "🇫🇷 France, Paris | [BL]",
       "type": "hysteria2",
       "server": "85.204.107.173",
-      "port": 8080,
+      "port": 8443,
       "ok": false,
       "reason": "core_not_ready"
     },
@@ -505,53 +487,179 @@
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "hysteria2://N41uhuAvUwokxUCReDCn8Et-QcixLzBy@2.27.42.66:43327?sni=gate-v1.not-a-projects.xyz#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
-      "name": "🇫🇮 Finland, Helsinki | [BL]",
+      "uri": "hysteria2://KevinZakarian@179.61.132.96:8443?insecure=1&sni=179.61.132.96&obfs=salamander&obfs-password=KevinZakarian#%F0%9F%A9%B5%2B%40Azarakhsh_Proxy%2B%F0%9F%A9%B7",
+      "name": "🩵+@Azarakhsh_Proxy+🩷",
       "type": "hysteria2",
-      "server": "2.27.42.66",
-      "port": 43327,
+      "server": "179.61.132.96",
+      "port": 8443,
       "ok": false,
-      "reason": "core_not_ready"
+      "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s@77.74.123.134:8443?sni=grape-zet-turbo-nl.yyuyy.com#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s@77.74.123.133:8443/?sni=grape-zet-turbo-nl.yyuyy.com#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
       "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
       "type": "hysteria2",
-      "server": "77.74.123.134",
+      "server": "77.74.123.133",
       "port": 8443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://Pa0Xhm0XJwdM0Qf7DJH3mq9EiTBmDw4M@2.27.42.66:43327?sni=gate-v1.not-a-projects.xyz#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
-      "name": "🇫🇮 Finland, Helsinki | [BL]",
+      "uri": "hysteria2://Pa0Xhm0XJwdM0Qf7DJH3mq9EiTBmDw4M@2.27.23.44:43327?sni=gate-v1.not-a-projects.xyz#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%2C%20Stockholm%20%7C%20%5BBL%5D",
+      "name": "🇸🇪 Sweden, Stockholm | [BL]",
       "type": "hysteria2",
-      "server": "2.27.42.66",
+      "server": "2.27.23.44",
       "port": 43327,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC@172.245.233.37:8443?sni=hopp-us.yyuyy.com#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20New%20York%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://V2RayyNGvpn@168.222.43.35:443?security=tls&obfs=salamander&obfs-password=V2RayyNGvpn&insecure=0&pinSHA256=8b5ac8eb1c23f208cb6e92bd41407d32994b0668d3ba2b0cd56400dca8c0b843&sni=Play.google.com#",
+      "name": "hysteria2-56",
+      "type": "hysteria2",
+      "server": "168.222.43.35",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC@82.39.213.226:8443?sni=hopp-us.yyuyy.com#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20New%20York%20%7C%20%5BBL%5D",
       "name": "🇺🇸 United States, New York | [BL]",
       "type": "hysteria2",
-      "server": "172.245.233.37",
+      "server": "82.39.213.226",
       "port": 8443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC@82.39.214.95:8080?sni=hopp-us.yyuyy.com#%F0%9F%87%B5%F0%9F%87%A6%20Panama%2C%20Panama%20City%20%7C%20%5BBL%5D",
-      "name": "🇵🇦 Panama, Panama City | [BL]",
+      "uri": "hysteria2://YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc@go.wwwinternetvideo.click:443/?insecure=1&sni=admin.wwwinternetvideo.click#",
+      "name": "hysteria2-58",
       "type": "hysteria2",
-      "server": "82.39.214.95",
-      "port": 8080,
+      "server": "go.wwwinternetvideo.click",
+      "port": 443,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://a6cf4b28-ba72-4e8c-90f8-6a884107ab3c@keep-out.whit3.net:443?sni=keep-out.whit3.net#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Buffalo%20%7C%20%5BBL%5D",
+      "name": "🇺🇸 United States, Buffalo | [BL]",
+      "type": "hysteria2",
+      "server": "keep-out.whit3.net",
+      "port": 443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://a1d045aa-65b2-4a35-bffb-994bde8cca61@tn.tmn141246.ru:443?sni=live.ok.ru#1300",
-      "name": "1300",
+      "uri": "hysteria2://ac7fb60f-0b7a-465d-a002-05160ec04ed6@dora2.api3-max.ru:443?sni=dora2.api3-max.ru#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Aubervilliers%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇫🇷 France, Aubervilliers | 🌐 | [BL]",
+      "type": "hysteria2",
+      "server": "dora2.api3-max.ru",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://ac7fb60f-0b7a-465d-a002-05160ec04ed6@pov8.api3-max.ru:443?sni=pov8.api3-max.ru#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Eindhoven%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Eindhoven | [BL]",
+      "type": "hysteria2",
+      "server": "pov8.api3-max.ru",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://austria_hysteria2_fastlane_rmmu8l31k:sY7bI7Vaev1mknnHsBPG7QeIGgy50P5Z@94.228.163.122:1935?sni=at4.h.fastlanehosting.ru#%F0%9F%87%A6%F0%9F%87%B9%20Austria%2C%20Vienna%20%7C%20%5BBL%5D",
+      "name": "🇦🇹 Austria, Vienna | [BL]",
+      "type": "hysteria2",
+      "server": "94.228.163.122",
+      "port": 1935,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://b268a3a1-3826-44a3-9ffb-3ac2095300ca@46.22.211.91:443?sni=estonia.hambot.ru#%F0%9F%87%AA%F0%9F%87%AA%20Estonia%2C%20Tallinn%20%7C%20%5BBL%5D",
+      "name": "🇪🇪 Estonia, Tallinn | [BL]",
+      "type": "hysteria2",
+      "server": "46.22.211.91",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://b52ca44f-835b-4862-baed-e5e91e5865dc@exit-de-5.dost-self.co.uk:2443?sni=exit-de-5.dost-self.co.uk#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
+      "type": "hysteria2",
+      "server": "exit-de-5.dost-self.co.uk",
+      "port": 2443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://b52ca44f-835b-4862-baed-e5e91e5865dc@ficdn2.aiai-rkp.net:443?sni=ficdn2.aiai-rkp.net#%F0%9F%87%BB%F0%9F%87%AE%20U.S.%20Virgin%20Islands%2C%20Cruz%20Bay%20%7C%20%5BBL%5D",
+      "name": "🇻🇮 U.S. Virgin Islands, Cruz Bay | [BL]",
+      "type": "hysteria2",
+      "server": "ficdn2.aiai-rkp.net",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://b8f1b61e-d5c4-4765-866d-ece1fc8e590b@104.165.205.226:8443?sni=speedtestmark.com#%F0%9F%87%B1%F0%9F%87%BB%20Latvia%2C%20Riga%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇱🇻 Latvia, Riga | 🌐 | [BL]",
+      "type": "hysteria2",
+      "server": "104.165.205.226",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://b8f1b61e-d5c4-4765-866d-ece1fc8e590b@194.48.250.10:9443?sni=onecloudstream.com#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]",
+      "type": "hysteria2",
+      "server": "194.48.250.10",
+      "port": 9443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://bce6c821-200d-421f-bf3d-7159e5246ea0@155.248.209.237:33333?insecure=1&sni=155.248.209.2#%F0%9F%87%BA%F0%9F%87%B8%20%7C%20%40WhiteDNS%20%7C%20US830%7C2.7MB%2Fs%7CDNSOK%7CGPT%E2%81%BA-US",
+      "name": "🇺🇸 | @WhiteDNS | US830|2.7MB/s|DNSOK|GPT⁺-US",
+      "type": "hysteria2",
+      "server": "155.248.209.237",
+      "port": 33333,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://c0a137ca-08d2-4734-95ed-2131ea6b45d9@13.143.242.1:25443?sni=cloudrynth.com#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Armonk%20%7C%20%5BBL%5D",
+      "name": "🇺🇸 United States, Armonk | [BL]",
+      "type": "hysteria2",
+      "server": "13.143.242.1",
+      "port": 25443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://c344ed8a-657d-497c-add2-65121664ae89@infra-core.cvedcdigital.vip:1443?sni=infra-core.cvedcdigital.vip#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Warsaw%20%7C%20%5BBL%5D",
+      "name": "🇵🇱 Poland, Warsaw | [BL]",
+      "type": "hysteria2",
+      "server": "infra-core.cvedcdigital.vip",
+      "port": 1443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://cfb7f73f-233c-47b0-a2c3-6c7e1664793c@193.35.17.237:443?sni=fin1.apexvpn.space#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
+      "name": "🇫🇮 Finland, Helsinki | [BL]",
+      "type": "hysteria2",
+      "server": "193.35.17.237",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://d30f8ee5-59df-4a68-9056-32027895f32f@tn.tmn141246.ru:443?sni=live.ok.ru#1765",
+      "name": "1765",
       "type": "hysteria2",
       "server": "tn.tmn141246.ru",
       "port": 443,
@@ -559,271 +667,145 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://a6cf4b28-ba72-4e8c-90f8-6a884107ab3c@nodenl.whit3.net:443?sni=nodenl.whit3.net#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
-      "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
+      "uri": "hysteria2://d4f8d5e26b@srv-a04472.21freedom.net:11592?security=tls&fp=chrome&alpn=h3#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Buffalo%20%7C%20%5BBL%5D",
+      "name": "🇺🇸 United States, Buffalo | [BL]",
       "type": "hysteria2",
-      "server": "nodenl.whit3.net",
-      "port": 443,
+      "server": "srv-a04472.21freedom.net",
+      "port": 11592,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://ac7fb60f-0b7a-465d-a002-05160ec04ed6@gora2.api3-max.ru:443?sni=gora2.api3-max.ru#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Liberty%20Lake%20%7C%20%5BBL%5D",
-      "name": "🇺🇸 United States, Liberty Lake | [BL]",
+      "uri": "hysteria2://dongtaiwang.com@hy2.561891.xyz:44356/?sni=hy2.561891.xyz#",
+      "name": "hysteria2-74",
       "type": "hysteria2",
-      "server": "gora2.api3-max.ru",
-      "port": 443,
-      "ok": false,
-      "reason": "core_not_ready"
+      "server": "hy2.561891.xyz",
+      "port": 44356,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "hysteria2://adb4836c-5bcb-40d7-80b5-f84b5bc6d81b@ru-i.monkeyvillage.pro:443?sni=ru-i.monkeyvillage.pro#0758",
-      "name": "0758",
-      "type": "hysteria2",
-      "server": "ru-i.monkeyvillage.pro",
-      "port": 443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://b05346a9-4d13-41a4-8d2a-6b7b64e73ffc@nl02.auragg.org:48343/?sni=nl02.auragg.org#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
-      "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
-      "type": "hysteria2",
-      "server": "nl02.auragg.org",
-      "port": 48343,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@181.214.99.162:35000?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=@JavidnamanIran-Javid-SHAH-KingRezaPahlavi#%40KAFING_2",
-      "name": "@KAFING_2",
-      "type": "hysteria2",
-      "server": "181.214.99.162",
-      "port": 35000,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://b52ca44f-835b-4862-baed-e5e91e5865dc@exit-nl-1.dost-self.co.uk:2443?sni=exit-nl-1.dost-self.co.uk#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Eygelshoven%20%7C%20%5BBL%5D",
-      "name": "🇳🇱 The Netherlands, Eygelshoven | [BL]",
-      "type": "hysteria2",
-      "server": "exit-nl-1.dost-self.co.uk",
-      "port": 2443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://b7c9e2f1-4d83-42a1-9e5f-sg2026proxy@209.74.81.28:8443?sni=vk.com&type=tcp&upmbps=10&downmbps=50#3673",
-      "name": "3673",
-      "type": "hysteria2",
-      "server": "209.74.81.28",
-      "port": 8443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://b8f1b61e-d5c4-4765-866d-ece1fc8e590b@104.165.205.239:9443?sni=onecloudstream.com#%F0%9F%87%B1%F0%9F%87%BB%20Latvia%2C%20Riga%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://e3c3b722-1264-4cdc-a97c-b0a1bb73cd67@104.165.205.142:9443?sni=onecloudstream.com#%F0%9F%87%B1%F0%9F%87%BB%20Latvia%2C%20Riga%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
       "name": "🇱🇻 Latvia, Riga | 🌐 | [BL]",
       "type": "hysteria2",
-      "server": "104.165.205.239",
+      "server": "104.165.205.142",
       "port": 9443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://b8f1b61e-d5c4-4765-866d-ece1fc8e590b@87.251.19.5:9443?security=tls&sni=onecloudstream.com#%F0%9F%87%AA%F0%9F%87%AA%20Estonia%2C%20Tallinn%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://e3c3b722-1264-4cdc-a97c-b0a1bb73cd67@77.239.126.219:9443?sni=onecloudstream.com#%F0%9F%87%AA%F0%9F%87%AA%20Estonia%2C%20Tallinn%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
       "name": "🇪🇪 Estonia, Tallinn | 🌐 | [BL]",
       "type": "hysteria2",
-      "server": "87.251.19.5",
+      "server": "77.239.126.219",
       "port": 9443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://bf3d436d-cbc0-49b6-a818-45d190949212@kinonl4.melodramaonline.net:443?sni=kinonl4.melodramaonline.net#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
-      "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
+      "uri": "hysteria2://e83df40d-ea83-4537-abfe-683da87dd52e@nl2.freeinternat.com:443?sni=nl2.freeinternat.com#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Eygelshoven%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Eygelshoven | 🌐 | [BL]",
       "type": "hysteria2",
-      "server": "kinonl4.melodramaonline.net",
+      "server": "nl2.freeinternat.com",
       "port": 443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://c0d1d7e1-7ce6-425d-a0ff-27b7eec8c533@x1bu-pys.de-2.deepl-cdn.com:30443?sni=de.deepl-cdn.com#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
-      "name": "🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]",
+      "uri": "hysteria2://ef18d810-719c-4bf1-83c6-615d01f217eb@jp.cryptoofarm.com:443?security=tls&fm=%7B%7D&sni=jp.cryptoofarm.com#%F0%9F%87%AF%F0%9F%87%B5%20Japan%2C%20Shibuya%20City%20%7C%20%5BBL%5D",
+      "name": "🇯🇵 Japan, Shibuya City | [BL]",
       "type": "hysteria2",
-      "server": "x1bu-pys.de-2.deepl-cdn.com",
-      "port": 30443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://c85bd762dc136495ddc02b30b0b7c5c5@107-172-212-12.liao.kdns.fr:50160#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Los%20Angeles%20%7C%20%5BBL%5D",
-      "name": "🇺🇸 United States, Los Angeles | [BL]",
-      "type": "hysteria2",
-      "server": "107-172-212-12.liao.kdns.fr",
-      "port": 50160,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://d19b459e-fcc3-4f2a-8f2e-77e8701cd1d8@hh.funvideorus.net:443?sni=hh.funvideorus.net#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
-      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
-      "type": "hysteria2",
-      "server": "hh.funvideorus.net",
+      "server": "jp.cryptoofarm.com",
       "port": 443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://d4c41430-082e-4757-b22c-194998baddd2@91.185.83.48:8443?sni=pols2.nimarko.org#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%5B%2ACIDR%5D",
-      "name": "🇵🇱 Poland [*CIDR]",
+      "uri": "hysteria2://efd400cd-98e1-4a9b-a98c-6f4a3b7cce7f@mesh-6793.internet-booster.com:443?sni=mesh-6793.internet-booster.com#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
+      "name": "🇫🇮 Finland, Helsinki | [BL]",
       "type": "hysteria2",
-      "server": "91.185.83.48",
+      "server": "mesh-6793.internet-booster.com",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://f6eed1c0-5aab-4ad0-a128-c5f0282768ac@217.150.197.54:8443?sni=quic.tyr-agentstvo.tech#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%87%B5%F0%9F%87%B1%20%5B%2ACIDR%5D",
+      "name": "🌐 Anycast-IP | 🇩🇪 🇵🇱 [*CIDR]",
+      "type": "hysteria2",
+      "server": "217.150.197.54",
       "port": 8443,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://da98e502-5e93-4fc5-bd61-388c557df29c@178.236.254.21:2083?sni=swe-one.quiet-rogue.site#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%2C%20Stockholm%20%7C%20%5BBL%5D",
-      "name": "🇸🇪 Sweden, Stockholm | [BL]",
+      "uri": "hysteria2://fc8383a6-51fd-4ac7-b2ea-a88e234239f3@pl.shifro-team.site:443?sni=pl.shifro-team.site#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Warsaw%20%7C%20%5BBL%5D",
+      "name": "🇵🇱 Poland, Warsaw | [BL]",
       "type": "hysteria2",
-      "server": "178.236.254.21",
-      "port": 2083,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://dsfa_k0123WFzerrf_kZ3490VNb03J_m30_s@194.180.188.21:8443?sni=keyhop-offshore.roxa.org#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
-      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
-      "type": "hysteria2",
-      "server": "194.180.188.21",
-      "port": 8443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://e3c3b722-1264-4cdc-a97c-b0a1bb73cd67@104.165.205.250:9443?sni=onecloudstream.com#%F0%9F%87%B1%F0%9F%87%BB%20Latvia%2C%20Riga%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
-      "name": "🇱🇻 Latvia, Riga | 🌐 | [BL]",
-      "type": "hysteria2",
-      "server": "104.165.205.250",
-      "port": 9443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://e3c3b722-1264-4cdc-a97c-b0a1bb73cd67@95.85.252.55:9443?sni=onecloudstream.com#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
-      "name": "🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]",
-      "type": "hysteria2",
-      "server": "95.85.252.55",
-      "port": 9443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://eb0e3aec-f67f-4fa2-8577-b0bff0484e77@194.238.40.185:443/?insecure=1&sni=kaz0001hy01.packet-drop-society.net#",
-      "name": "hysteria2-79",
-      "type": "hysteria2",
-      "server": "194.238.40.185",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://efd400cd-98e1-4a9b-a98c-6f4a3b7cce7f@cdn-9863.internet-booster.com:443?sni=cdn-9863.internet-booster.com#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
-      "name": "🇫🇮 Finland, Helsinki | [BL]",
-      "type": "hysteria2",
-      "server": "cdn-9863.internet-booster.com",
+      "server": "pl.shifro-team.site",
       "port": 443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://england_2_hysteria2_fastlane_35xzvlgum%3AfFOxlPsMH7zt0oMwFS4VAFw4LYxKxbRl@46.226.162.109:1935?sni=gb2.h.fastlanehosting.ru#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://grape_288923@82.22.53.30:8080?sni=grape-coffee-fi.gleeze.com#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
       "name": "🇬🇧 United Kingdom, London | [BL]",
       "type": "hysteria2",
-      "server": "46.226.162.109",
-      "port": 1935,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://f89c89df-905c-4df3-ab07-4f1a37a81005@cdn.fastline-labs.com:443?sni=cdn.fastline-labs.com#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%87%B8%F0%9F%87%AA%20%7C%20%5BBL%5D",
-      "name": "🌐 Anycast-IP | 🇳🇱 🇸🇪 | [BL]",
-      "type": "hysteria2",
-      "server": "cdn.fastline-labs.com",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://finland_hysteria2_fastlane_8cikuiipr%3Aiy9pmt4D0lWy5J3cEN2ARwFbWgWozfBM@144.31.232.166:1935?sni=fi1.h.fastlanehosting.ru#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
-      "name": "🇫🇮 Finland, Helsinki | [BL]",
-      "type": "hysteria2",
-      "server": "144.31.232.166",
-      "port": 1935,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT@103.246.248.227:8080?sni=hopp-legend-se.roxa.org#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
-      "name": "🇬🇧 United Kingdom, London | [BL]",
-      "type": "hysteria2",
-      "server": "103.246.248.227",
+      "server": "82.22.53.30",
       "port": 8080,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT@103.246.248.237:8443?sni=hopp-legend-se.roxa.org#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Warsaw%20%7C%20%5BBL%5D",
-      "name": "🇵🇱 Poland, Warsaw | [BL]",
+      "uri": "hysteria2://h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT@103.246.248.234:8080/?insecure=1&sni=hopp-legend-se.roxa.org%23%F0%9F%AA%8696@oneclickvpnkeys#",
+      "name": "hysteria2-83",
       "type": "hysteria2",
-      "server": "103.246.248.237",
-      "port": 8443,
+      "server": "103.246.248.234",
+      "port": 8080,
       "ok": false,
-      "reason": "core_not_ready"
+      "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://hysteria2_fastlane_3uunf3vp1%3AkgcX3jJNrfC9JHTFBUwCqhyXvZGJVJAD@2.27.29.158:1935?sni=de10.h.fastlanehosting.ru&fp=firefox#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%28Innenstadt%20I%29%20%7C%20%5BBL%5D",
-      "name": "🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL]",
+      "uri": "hysteria2://hysteria2_fastlane_04ng96ah3:nqZabliS7TcydBDDKid682NfoWQxVzkM@2.26.26.164:1935/?sni=de9.h.fastlanehosting.ru&insecure=0#%F0%9F%87%A8%F0%9F%87%AD%20Switzerland%2C%20Zurich%20%7C%20%5BBL%5D",
+      "name": "🇨🇭 Switzerland, Zurich | [BL]",
       "type": "hysteria2",
-      "server": "2.27.29.158",
+      "server": "2.26.26.164",
       "port": 1935,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://hysteria2_fastlane_nn7kirs82%3AFdIXIswcUxjDb6Prz608HRGzIqDOxlrc@91.132.160.243:1935?sni=de6.h.fastlanehosting.ru#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
-      "name": "🇬🇧 United Kingdom, London | 🌐 | [BL]",
+      "uri": "hysteria2://hysteria2_fastlane_h43dvv57b%3ABFhT1zI613GtDOzp0kdvMdgJRMroi7mZ@2.27.28.106:1935?sni=de8.h.fastlanehosting.ru#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇫🇷 France, Paris | 🌐 | [BL]",
       "type": "hysteria2",
-      "server": "91.132.160.243",
+      "server": "2.27.28.106",
       "port": 1935,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj@91.196.32.163:443/?insecure=1&sni=germany3.h2corp.local#",
-      "name": "hysteria2-88",
+      "uri": "hysteria2://latvia_hysteria2_fastlane_inla02xj3%3ARl8ZzuA9ZohjkX9BkgwA94mI63u6sBme@62.60.234.60:1935?sni=lv1.h.fastlanehosting.ru&insecure=0#%F0%9F%87%B1%F0%9F%87%BB%20Latvia%2C%20Riga%20%7C%20%5BBL%5D",
+      "name": "🇱🇻 Latvia, Riga | [BL]",
       "type": "hysteria2",
-      "server": "91.196.32.163",
+      "server": "62.60.234.60",
+      "port": 1935,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://oCYFcbOo8s@201.51.24.4:443/?sni=hys22.wba-pn.ru#",
+      "name": "hysteria2-87",
+      "type": "hysteria2",
+      "server": "201.51.24.4",
       "port": 443,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "hysteria2://oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1@109.206.241.10:8443?insecure=0&sni=russiapower.accesscam.org#%F0%9F%87%AA%F0%9F%87%AA%20Estonia%2C%20Tallinn%20%7C%20%5BBL%5D",
-      "name": "🇪🇪 Estonia, Tallinn | [BL]",
-      "type": "hysteria2",
-      "server": "109.206.241.10",
-      "port": 8443,
       "ok": false,
-      "reason": "core_not_ready"
+      "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://qQe1z5kU8kN6SlKnDt9Ru3Qp@13.228.168.117:443?sni=vk.com#1368",
-      "name": "1368",
+      "uri": "hysteria2://qQe1z5kU8kN6SlKnDt9Ru3Qp@13.212.76.106:443?sni=vk.com#0436",
+      "name": "0436",
       "type": "hysteria2",
-      "server": "13.228.168.117",
+      "server": "13.212.76.106",
       "port": 443,
       "ok": false,
       "reason": "no_proxied_public_ip"
@@ -838,58 +820,58 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z@205.237.109.214:8443?sni=grape-turbo-fr.roxa.org#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z@205.237.109.216:8443?sni=grape-turbo-fr.roxa.org#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
       "name": "🇬🇧 United Kingdom, London | [BL]",
       "type": "hysteria2",
-      "server": "205.237.109.214",
+      "server": "205.237.109.216",
       "port": 8443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z@46.229.243.137:8443/?sni=grape-turbo-fr.roxa.org#",
-      "name": "hysteria2-93",
+      "uri": "hysteria2://s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z@46.229.243.138:8443/?sni=grape-turbo-fr.roxa.org#",
+      "name": "hysteria2-91",
       "type": "hysteria2",
-      "server": "46.229.243.137",
+      "server": "46.229.243.138",
       "port": 8443,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z@46.229.243.145:8080?sni=grape-turbo-fr.roxa.org#%F0%9F%87%B7%F0%9F%87%B8%20Serbia%2C%20Belgrade%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z@46.229.243.146:8080?sni=grape-turbo-fr.roxa.org#%F0%9F%87%B7%F0%9F%87%B8%20Serbia%2C%20Belgrade%20%7C%20%5BBL%5D",
       "name": "🇷🇸 Serbia, Belgrade | [BL]",
       "type": "hysteria2",
-      "server": "46.229.243.145",
+      "server": "46.229.243.146",
       "port": 8080,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX@faq2.wwwinternetvideo.click:443?sni=cabinet.wwwinternetvideo.click#%F0%9F%87%AA%F0%9F%87%AA%20Estonia%20%5B%2ACIDR%5D",
-      "name": "🇪🇪 Estonia [*CIDR]",
+      "uri": "hysteria2://suAmQS9LlInNq4Wumh-FUF4GGlpgmG_g@159.223.157.129:8443/?insecure=1#",
+      "name": "hysteria2-93",
       "type": "hysteria2",
-      "server": "faq2.wwwinternetvideo.click",
-      "port": 443,
+      "server": "159.223.157.129",
+      "port": 8443,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://usa_2_hysteria2_fastlane_hfsptlvbr%3AxBpktFA7MA7ZFGBANxluG7WducKqn8Di@92.118.112.227:1935?sni=us3.h.fastlanehosting.ru#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Atlanta%20%7C%20%5BBL%5D",
-      "name": "🇺🇸 United States, Atlanta | [BL]",
+      "uri": "hysteria2://velluto_8325804083:b12eebc2-369c-4f3c-96a0-a8bd150ca8d5@31.76.30.79:35000?sni=gretacoin.shop#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
+      "name": "🇫🇮 Finland, Helsinki | [BL]",
       "type": "hysteria2",
-      "server": "92.118.112.227",
-      "port": 1935,
+      "server": "31.76.30.79",
+      "port": 35000,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://zhangyang@130.61.50.75:6443/?insecure=1&sni=130.61.50.75#",
-      "name": "hysteria2-97",
+      "uri": "hysteria2://{HY2_PASSWORD}@{SERVER_IP}:9444?sni={domain_target}&alpn=h3&obfs=salamander&obfs-password={SALAMANDER_PASSWORD}{pin_param}#Fortress-Hysteria2-Salamander",
+      "name": "Fortress-Hysteria2-Salamander",
       "type": "hysteria2",
-      "server": "130.61.50.75",
-      "port": 6443,
+      "server": "{server_ip}",
+      "port": 9444,
       "ok": false,
-      "reason": "no_proxied_public_ip"
+      "reason": "placeholder_endpoint"
     },
     {
       "uri": "hysteria2://000081e1-c607-495c-b072-195323fa1113@pipe-4854.internet-booster.com:443?headerType=none&encryption=none&sni=pipe-4854.internet-booster.com&insecure=0#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Warsaw%20%28%C5%9Ar%C3%B3dmie%C5%9Bcie%29%20%7C%20%5BBL%5D",
@@ -910,49 +892,49 @@
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://03114279-e38a-4d27-82a9-6a69dbb7f168@tn.tmn141246.ru:443?sni=live.ok.ru#4212",
-      "name": "4212",
+      "uri": "hysteria2://02bd8b5a-170b-4a79-8e68-9cec710272c7@fi2.chromevpn.cc:443?sni=fi2.chromevpn.cc&fp=random#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇫🇮 Finland, Helsinki | 🌐 | [BL]",
       "type": "hysteria2",
-      "server": "tn.tmn141246.ru",
+      "server": "fi2.chromevpn.cc",
       "port": 443,
       "ok": false,
-      "reason": "no_proxied_public_ip"
+      "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://042a1881-44e4-4781-bd40-bf75164faf4f@144.31.224.81:443/?sni=nland1.noesissite.ru#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://042a1881-44e4-4781-bd40-bf75164faf4f@144.31.207.60:443?sni=nl1.noesissite.ru&path=%2F#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Orem%20%7C%20%5BBL%5D",
+      "name": "🇺🇸 United States, Orem | [BL]",
+      "type": "hysteria2",
+      "server": "144.31.207.60",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://042a1881-44e4-4781-bd40-bf75164faf4f@nland1.noesissite.ru:443/?sni=nland1.noesissite.ru#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
       "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
       "type": "hysteria2",
-      "server": "144.31.224.81",
+      "server": "nland1.noesissite.ru",
       "port": 443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://042a1881-44e4-4781-bd40-bf75164faf4f@usp.noesissite.ru:443/?sni=usp.noesissite.ru#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Draper%20%7C%20%5BBL%5D",
-      "name": "🇺🇸 United States, Draper | [BL]",
+      "uri": "hysteria2://085178e12d2211ec@138.124.55.19:8445?sni=nl.prisma-access.club&path=%2F#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]",
       "type": "hysteria2",
-      "server": "usp.noesissite.ru",
-      "port": 443,
+      "server": "138.124.55.19",
+      "port": 8445,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://086422b2-3347-45f8-b527-d9e1be25dc56@185.23.18.208:443/?sni=histeriaheixa.mooo.com&fp=edge#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
-      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
+      "uri": "hysteria2://0925fa29-0ec8-421a-a726-1ea2ac8adbf0@104.165.205.41:8443?sni=speedtestmark.com#%F0%9F%87%B1%F0%9F%87%BB%20Latvia%2C%20Riga%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇱🇻 Latvia, Riga | 🌐 | [BL]",
       "type": "hysteria2",
-      "server": "185.23.18.208",
-      "port": 443,
+      "server": "104.165.205.41",
+      "port": 8443,
       "ok": false,
       "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://099830134df5ac3a04a4b21d39b8c395@163.192.14.135:50160?sni=vk.com#0201",
-      "name": "0201",
-      "type": "hysteria2",
-      "server": "163.192.14.135",
-      "port": 50160,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
     },
     {
       "uri": "hysteria2://0bc09995-7ee6-462e-bfc3-75c880b9d675@fast_s12.slopllex.app:443?sni=fast_s12.slopllex.app&fm=%7B%22finalmask%22%3A%7B%22quicParams%22%3A%7B%22congestion%22%3A%22brutal%22%7D%7D%7D#%F0%9F%87%AB%F0%9F%87%AE%20Finland%20%5B%2ACIDR%5D",
@@ -973,20 +955,20 @@
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://0f2dc4af-951f-4690-922e-07c6e8bab26a@82.117.87.119:2083?sni=swe-one.quiet-rogue.site#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%20%5B%2ACIDR%5D",
-      "name": "🇸🇪 Sweden [*CIDR]",
+      "uri": "hysteria2://0f2dc4af-951f-4690-922e-07c6e8bab26a@178.253.55.89:443?sni=nl-one.quiet-rogue.site#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%5B%2ACIDR%5D",
+      "name": "🇳🇱 The Netherlands [*CIDR]",
       "type": "hysteria2",
-      "server": "82.117.87.119",
-      "port": 2083,
+      "server": "178.253.55.89",
+      "port": 443,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://0wdsa_nJXEWRj9jz9J9xMgtx_n7gzfK_m8@139.28.168.55:8080?sni=grape-honk.yyuyy.com#%F0%9F%87%B0%F0%9F%87%B7%20South%20Korea%2C%20Seoul%20%28Toegye-ro%29%20%7C%20%5BBL%5D",
-      "name": "🇰🇷 South Korea, Seoul (Toegye-ro) | [BL]",
+      "uri": "hysteria2://0wdsa_nJXEWRj9jz9J9xMgtx_n7gzfK_m8@139.28.168.54:9080?sni=grape-honk.yyuyy.com#%F0%9F%87%A8%F0%9F%87%B3%20China%2C%20Lijia%20%7C%20%5BBL%5D",
+      "name": "🇨🇳 China, Lijia | [BL]",
       "type": "hysteria2",
-      "server": "139.28.168.55",
-      "port": 8080,
+      "server": "139.28.168.54",
+      "port": 9080,
       "ok": false,
       "reason": "core_not_ready"
     },
@@ -1000,223 +982,529 @@
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://13259e0a-4850-4a12-8850-4ad7ded17770@91.185.83.48:8450?sni=testing6.nimarko.org#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%5B%2ACIDR%5D",
-      "name": "🇳🇱 The Netherlands [*CIDR]",
+      "uri": "hysteria2://13259e0a-4850-4a12-8850-4ad7ded17770@91.185.83.48:8444?sni=testing8.nimarko.org#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%5B%2ACIDR%5D",
+      "name": "🇩🇪 Germany [*CIDR]",
       "type": "hysteria2",
       "server": "91.185.83.48",
-      "port": 8450,
+      "port": 8444,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://137f3b50-a6ba-40e7-b537-e37fab064097@latvia.koalaexpress.ru:2443#%F0%9F%87%B1%F0%9F%87%B9%20Lithuania%2C%20%C5%A0iauliai%20%7C%20%5BBL%5D",
-      "name": "🇱🇹 Lithuania, Šiauliai | [BL]",
+      "uri": "hysteria2://133f76fc-a5ab-463e-b46d-9587d7137e55@node3.vpnushka.lol:443#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
       "type": "hysteria2",
-      "server": "latvia.koalaexpress.ru",
-      "port": 2443,
+      "server": "node3.vpnushka.lol",
+      "port": 443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://161773c8-6634-4f5c-98dd-8c1a6c6694ba@91.240.87.46:25444/?sni=serv2.white-dns.cloud#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A6%F0%9F%87%B9%20%F0%9F%87%A8%F0%9F%87%AD%20%F0%9F%87%B3%F0%9F%87%B1%20%5B%2ACIDR%5D",
+      "uri": "hysteria2://161773c8-6634-4f5c-98dd-8c1a6c6694ba@91.240.87.46:25443/?sni=serv1.white-dns.cloud#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A6%F0%9F%87%B9%20%F0%9F%87%A8%F0%9F%87%AD%20%F0%9F%87%B3%F0%9F%87%B1%20%5B%2ACIDR%5D",
       "name": "🌐 Anycast-IP | 🇦🇹 🇨🇭 🇳🇱 [*CIDR]",
       "type": "hysteria2",
       "server": "91.240.87.46",
-      "port": 25444,
+      "port": 25443,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://16ab4d4a-fd81-4535-9b7b-346677226ce8@pol.cryptoofarm.com:443/?sni=pol.cryptoofarm.com#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Warsaw%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
-      "name": "🇵🇱 Poland, Warsaw | 🌐 | [BL]",
+      "uri": "hysteria2://16ab4d4a-fd81-4535-9b7b-346677226ce8@on.cryptoofarm.com:443?sni=on.cryptoofarm.com&insecure=0&allowInsecure=0#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
       "type": "hysteria2",
-      "server": "pol.cryptoofarm.com",
+      "server": "on.cryptoofarm.com",
       "port": 443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://19f72087-4591-4d72-930b-2697078ec2be@se.xiaoliyu.cyou:4433?insecure=1&sni=se.xiaoliyu.cyou#%E5%98%8E%E5%98%8E",
-      "name": "嘎嘎",
+      "uri": "hysteria2://19f72087-4591-4d72-930b-2697078ec2be@hk2.xiaoliyu.cyou:4433?sni=hk2.xiaoliyu.cyou#2249",
+      "name": "2249",
       "type": "hysteria2",
-      "server": "se.xiaoliyu.cyou",
+      "server": "hk2.xiaoliyu.cyou",
       "port": 4433,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
+      "ok": false,
+      "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://1beb216e3f60aea9555dae60d219a5ca@152-69-231-175.liao.kdns.fr:50160?insecure=0&sni=152-69-231-175.liao.kdns.fr#%E5%92%95",
-      "name": "咕",
+      "uri": "hysteria2://1ba59989-225e-4f1c-ab62-9bd7366009cb@194.135.34.207:443?sni=194.135.34.207#%F0%9F%87%B9%F0%9F%87%B7%20Turkey%2C%20Istanbul%20%7C%20%5BBL%5D",
+      "name": "🇹🇷 Turkey, Istanbul | [BL]",
       "type": "hysteria2",
-      "server": "152-69-231-175.liao.kdns.fr",
-      "port": 50160,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "hysteria2://1e1c72f4-325b-4db0-b2d4-dc9c7cddc46a@good-route.whit3.net:443?sni=good-route.whit3.net#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Warsaw%20%28%C5%9Ar%C3%B3dmie%C5%9Bcie%29%20%7C%20%5BBL%5D",
-      "name": "🇵🇱 Poland, Warsaw (Śródmieście) | [BL]",
-      "type": "hysteria2",
-      "server": "good-route.whit3.net",
+      "server": "194.135.34.207",
       "port": 443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://1e1c72f4-325b-4db0-b2d4-dc9c7cddc46a@register.whit3.net:443?sni=register.whit3.net#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%2C%20Stockholm%20%7C%20%5BBL%5D",
-      "name": "🇸🇪 Sweden, Stockholm | [BL]",
+      "uri": "hysteria2://1e1c72f4-325b-4db0-b2d4-dc9c7cddc46a@cool-route-ge.whit3.net:443?sni=cool-route-ge.whit3.net#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
       "type": "hysteria2",
-      "server": "register.whit3.net",
+      "server": "cool-route-ge.whit3.net",
       "port": 443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://1f29762d-3f23-4207-9e39-f774de5d49ba@h2-fr.arpozan.cloud:443?headerType=none&encryption=none&sni=h2-fr.arpozan.cloud&insecure=0#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
-      "name": "🇫🇷 France, Paris | [BL]",
-      "type": "hysteria2",
-      "server": "h2-fr.arpozan.cloud",
-      "port": 443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://1f619326-cd93-4d6b-aebe-e0b5f8831d02@nl10.unlockvpn.online:10808?insecure=0&sni=nl10.unlockvpn.online#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://1e1c72f4-325b-4db0-b2d4-dc9c7cddc46a@nice-route-nl.whit3.net:443?sni=nice-route-nl.whit3.net#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
       "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
       "type": "hysteria2",
-      "server": "nl10.unlockvpn.online",
+      "server": "nice-route-nl.whit3.net",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://1e6fed5b-5edc-4ddb-a268-79d7fae4365c@95.133.242.213:30443?sni=filesconvert.org#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
+      "name": "🇬🇧 United Kingdom, London | [BL]",
+      "type": "hysteria2",
+      "server": "95.133.242.213",
+      "port": 30443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://1f619326-cd93-4d6b-aebe-e0b5f8831d02@nl1.unlockvpn.online:10808?insecure=0&sni=nl1.unlockvpn.online#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
+      "type": "hysteria2",
+      "server": "nl1.unlockvpn.online",
       "port": 10808,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://20c4eab4-b569-4423-90d2-3e3364669e6f@185.186.143.76:443?sni=cd2.self-cloud.work#%F0%9F%87%B3%F0%9F%87%B4%20Norway%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D",
-      "name": "🇳🇴 Norway | 🌐 [*CIDR]",
+      "uri": "hysteria2://1hOIVDVBG2hdKtJwOV2aUEFTDaFArCSH9-HrcOnps8yqQZeq@prodfr.h2corp.org:443/?sni=prodfr.h2corp.org#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%87%AB%F0%9F%87%B7%20%7C%20%5BBL%5D",
+      "name": "🌐 Anycast-IP | 🇩🇪 🇫🇷 | [BL]",
       "type": "hysteria2",
-      "server": "185.186.143.76",
+      "server": "prodfr.h2corp.org",
       "port": 443,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://26d052de5a6ae1c046e494637492fbc3@ishostpo-pl.kvnfreetest.uk:55443/?sni=ishostpo-pl.kvnfreetest.uk#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Gdansk%20%7C%20%5BBL%5D",
-      "name": "🇵🇱 Poland, Gdansk | [BL]",
+      "uri": "hysteria2://2691cbe7c20cced8b0aeb12c812d09077e5b3eec7669fb8f@144.31.148.87:443/?insecure=1&sni=replay.wwwinternetvideo.click#",
+      "name": "hysteria2-119",
       "type": "hysteria2",
-      "server": "ishostpo-pl.kvnfreetest.uk",
-      "port": 55443,
+      "server": "144.31.148.87",
+      "port": 443,
       "ok": false,
-      "reason": "core_not_ready"
+      "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://29ffde49-e1d6-4dcd-a135-352920f9f0b8@se-node.rumedia-cdn.com:25443?insecure=1&sni=cf2.rumedia-cdn.com#%F0%9F%87%B8%F0%9F%87%AASE_1%7C1.7MB%2Fs",
-      "name": "🇸🇪SE_1|1.7MB/s",
+      "uri": "hysteria2://29c2de1cf5408523ed4d3252199079d2@108.59.244.158:443?sni=vk.ru#4426",
+      "name": "4426",
       "type": "hysteria2",
-      "server": "se-node.rumedia-cdn.com",
-      "port": 25443,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
+      "server": "108.59.244.158",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://2_hysteria2_fastlane_nciifm4s7%3AeuHiEBauRY8pfbFy6NczWSbaYCfah2YO@45.140.205.5:1935?sni=ch2.h.fastlanehosting.ru#%F0%9F%87%A8%F0%9F%87%AD%20Switzerland%2C%20Zurich%20%7C%20%5BBL%5D",
-      "name": "🇨🇭 Switzerland, Zurich | [BL]",
+      "uri": "hysteria2://2_hysteria2_fastlane_g7i07kqdf:chCiPld0Fx05IfYXfn3WiWt5Vy44Ghkx@138.124.64.30:1935/?sni=pl2.h.fastlanehosting.ru&insecure=0#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Warsaw%20%7C%20%5BBL%5D",
+      "name": "🇵🇱 Poland, Warsaw | [BL]",
       "type": "hysteria2",
-      "server": "45.140.205.5",
+      "server": "138.124.64.30",
       "port": 1935,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://2a3b101d-d8f9-40e7-9373-b0ef487c0035@46.8.210.129:22443?security=tls&sni=disk.api-yandex.net#%E4%BF%84%E7%BD%97%E6%96%AF+V2CROSS.COM",
-      "name": "俄罗斯+V2CROSS.COM",
-      "type": "hysteria2",
-      "server": "46.8.210.129",
-      "port": 22443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://2c9fcb3869ba49132c3f93c1416af6c1@193.124.91.226:443?sni=api.yandex.ru&fp=firefox&pinSHA256=8757a92d1931afc0787f3ed5b1d65da7961f5957666358c751b6335afab88dc2&security=tls#7076",
-      "name": "7076",
-      "type": "hysteria2",
-      "server": "193.124.91.226",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://2vwMMy8t5Sjl5lfK9dNF1OrU9d0K25V2RNWLbTKwJ6o@pixelcast.wwwinternetvideo.click:443?insecure=1&sni=pixelcast.wwwinternetvideo.click#DE",
-      "name": "DE",
-      "type": "hysteria2",
-      "server": "pixelcast.wwwinternetvideo.click",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://334f25ef-3fb7-44a0-8ab7-79527d613281@45.91.236.216:443?sni=releases.swiftedge-labs.com#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
-      "name": "🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]",
-      "type": "hysteria2",
-      "server": "45.91.236.216",
-      "port": 443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://37d487cd-ca11-4658-9d76-ab0e2489b62c@saratov.gosgenarchive.com:8443?fm=%257B%250A%2520%2520%2522finalmask%2522%2520%3A%2520%257B%250A%2520%2520%2520%2520%2522udp%2522%2520%3A%2520%255B%250A%2520%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2522type%2522%2520%3A%2520%2522salamander%2522%2C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2522settings%2522%2520%3A%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2522password%2522%2520%3A%2520%2522x9KvL2mP4nC72H3w%2522%2C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2522packetSize%2522%2520%3A%2520%2522512-1200%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%255D%2C%250A%2520%2520%2520%2520%2522quicParams%2522%2520%3A%2520%257B%250A%2520%2520%2520%2520%2520%2520%2522debug%2522%2520%3A%2520false%2C%250A%2520%2520%2520%2520%2520%2520%2522congestion%2522%2520%3A%2520%2522bbr%2522%250A%2520%2520%2520%2520%257D%250A%2520%2520%257D%250A%257D&type=hysteria&security=tls&sni=saratov.gosgenarchive.com&alpn=h3&allowInsecure=0#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
-      "name": "🇫🇮 Finland, Helsinki | [BL]",
-      "type": "hysteria2",
-      "server": "saratov.gosgenarchive.com",
-      "port": 8443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://39679f52-1d9a-4843-9c1d-7f9c0ee9491e@edge.nordcache.ru:9443?sni=edge.nordcache.ru#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%28Innenstadt%20I%29%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://2_hysteria2_fastlane_rbpddej1k%3Ab31z6w8vqA9q6u7UHIbunwD77COTmpE3@2.27.25.75:1935?sni=de11.h.fastlanehosting.ru#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%28Innenstadt%20I%29%20%7C%20%5BBL%5D",
       "name": "🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL]",
       "type": "hysteria2",
-      "server": "edge.nordcache.ru",
-      "port": 9443,
+      "server": "2.27.25.75",
+      "port": 1935,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://3b8c82ed-fe66-472d-915e-034ccb57103f@nl2.frkn.org:8443?insecure=false&up-mbps=0#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
-      "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
+      "uri": "hysteria2://2b3e8750-b944-42fc-b36e-ec2c64b48a98@31.76.111.33:443?alpn=h3&sni=hy2.bluekitty.lol#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
       "type": "hysteria2",
-      "server": "nl2.frkn.org",
+      "server": "31.76.111.33",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://2f4c3fc5-8fa2-4576-a583-8f98a6026887@hkt.ccwink.cc:56309/?sni=hkt.ccwink.cc#%F0%9F%87%AD%F0%9F%87%B0%20Hong%20Kong%2C%20Central%20%7C%20%5BBL%5D",
+      "name": "🇭🇰 Hong Kong, Central | [BL]",
+      "type": "hysteria2",
+      "server": "hkt.ccwink.cc",
+      "port": 56309,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://32df539b-e48b-4f0b-8d2d-30edc856cd23@de-four.online-vpn.online:443/?Telegram=%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad&sni=#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
+      "type": "hysteria2",
+      "server": "de-four.online-vpn.online",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://35a14133-45f6-40bc-a9cd-918fd0ecb345@unic.hysteria.ltd:5443?headerType=none&encryption=none&sni=unic.hysteria.ltd&insecure=0#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]",
+      "type": "hysteria2",
+      "server": "unic.hysteria.ltd",
+      "port": 5443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://391f093f-85fc-473d-abe2-ea607b9ff567@217.150.197.54:8443?sni=quic.tyr-agentstvo.tech#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%87%B5%F0%9F%87%B1%20%5B%2ACIDR%5D",
+      "name": "🌐 Anycast-IP | 🇩🇪 🇵🇱 [*CIDR]",
+      "type": "hysteria2",
+      "server": "217.150.197.54",
+      "port": 8443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://3ad1998b-166b-4636-8239-952d274833b9@ppl.myispace.xyz:8443/?sni=ppl.myispace.xyz&fm=%7B%22quicParams%22%3A%7B%22debug%22%3Afalse%2C%22congestion%22%3A%22bbr%22%7D%7D#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Warsaw%20%28%C5%9Ar%C3%B3dmie%C5%9Bcie%29%20%7C%20%5BBL%5D",
+      "name": "🇵🇱 Poland, Warsaw (Śródmieście) | [BL]",
+      "type": "hysteria2",
+      "server": "ppl.myispace.xyz",
       "port": 8443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://3bdd9516-bacc-4f2c-88f3-17bf14c36d38@nlnew2.sodahub.online:31568?sni=nlnew1.sodahub.online#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
-      "name": "🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]",
+      "uri": "hysteria2://3b8c82ed-fe66-472d-915e-034ccb57103f@swe.frkn.org:8443?insecure=false&up-mbps=0#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%2C%20Stockholm%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇸🇪 Sweden, Stockholm | 🌐 | [BL]",
       "type": "hysteria2",
-      "server": "nlnew2.sodahub.online",
-      "port": 31568,
+      "server": "swe.frkn.org",
+      "port": 8443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://3f63c86c-ac4a-4900-85cf-4fedf93c2ca5@91.240.86.70:22443?insecure=1#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D",
-      "name": "🇷🇺 Russia [*CIDR]",
+      "uri": "hysteria2://3ec082d54e@srv-40a0eb.21freedom.net:11592?security=tls&fp=chrome&alpn=h3#%F0%9F%87%A6%F0%9F%87%B9%20Austria%2C%20Vienna%20%7C%20%5BBL%5D",
+      "name": "🇦🇹 Austria, Vienna | [BL]",
       "type": "hysteria2",
-      "server": "91.240.86.70",
-      "port": 22443,
+      "server": "srv-40a0eb.21freedom.net",
+      "port": 11592,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://419bfbd4-3097-4cef-a6b3-aebd78506ed7@ppl.myispace.xyz:8443/?sni=ppl.myispace.xyz#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Warsaw%20%28%C5%9Ar%C3%B3dmie%C5%9Bcie%29%20%7C%20%5BBL%5D",
+      "name": "🇵🇱 Poland, Warsaw (Śródmieście) | [BL]",
+      "type": "hysteria2",
+      "server": "ppl.myispace.xyz",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://440f3c08-7599-406e-8ba3-7dbc6324c5ed@uk.riotvpn.eu:4443?headerType=none&encryption=none&sni=static.vkimages.io&insecure=0#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20Slough%20%7C%20%5BBL%5D",
+      "name": "🇬🇧 United Kingdom, Slough | [BL]",
+      "type": "hysteria2",
+      "server": "uk.riotvpn.eu",
+      "port": 4443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://4e82f6c9-e180-4672-9d63-9060679ebdb9@node.embrofree.org:443?sni=node.embrofree.org&fp=firefox#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
+      "type": "hysteria2",
+      "server": "node.embrofree.org",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://52e3dd44-ed23-4030-b0cc-5b5a953f2d4d@45.145.43.56:8443?headerType=none&encryption=none&sni=speedtestmark.com&insecure=0#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]",
+      "type": "hysteria2",
+      "server": "45.145.43.56",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://53c76647-14d1-4df5-99cb-be99ad2e6bd9@de120.mechvpn.online:443#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
+      "type": "hysteria2",
+      "server": "de120.mechvpn.online",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://53c76647-14d1-4df5-99cb-be99ad2e6bd9@fr140.mechvpn.online:443?alpn=h3&sni=fr140.mechvpn.online#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇫🇷 France, Paris | 🌐 | [BL]",
+      "type": "hysteria2",
+      "server": "fr140.mechvpn.online",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://53c76647-14d1-4df5-99cb-be99ad2e6bd9@us54.mechvpn.online:443#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%2C%20Falkenberg%20%7C%20%5BBL%5D",
+      "name": "🇸🇪 Sweden, Falkenberg | [BL]",
+      "type": "hysteria2",
+      "server": "us54.mechvpn.online",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://54d2f622-fd71-4f5f-8813-832b68f4ca3b@95.85.248.120:8443?sni=speedtestmark.com#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Eygelshoven%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Eygelshoven | [BL]",
+      "type": "hysteria2",
+      "server": "95.85.248.120",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://55b71f97202647049ce999646de57c50@f1b.wareznet.ru:8443?alpn=h3&sni=f1b.wareznet.ru#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
+      "name": "🇬🇧 United Kingdom, London | [BL]",
+      "type": "hysteria2",
+      "server": "f1b.wareznet.ru",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://579f0893-e6f9-4036-86a1-7c10aa2d24ea@frn.skysafe.online:443?sni=frn.skysafe.online#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Yvrac%20%7C%20%5BBL%5D",
+      "name": "🇫🇷 France, Yvrac | [BL]",
+      "type": "hysteria2",
+      "server": "frn.skysafe.online",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://5a7655f8-969e-4738-a7f8-12f327dd1b65@178.250.243.21:9443?sni=cns.dodostarscoffee.ru#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%5B%2ACIDR%5D",
+      "name": "🇩🇪 Germany [*CIDR]",
+      "type": "hysteria2",
+      "server": "178.250.243.21",
+      "port": 9443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://5b88763e-e1a1-43a2-8556-bc7963ce8739@fast93.screw.page:443?sni=fast93.screw.page&fm=%7B#%F0%9F%87%AB%F0%9F%87%AE%20Finland%20%5B%2ACIDR%5D",
+      "name": "🇫🇮 Finland [*CIDR]",
+      "type": "hysteria2",
+      "server": "fast93.screw.page",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://5ca83936-136d-4314-8453-4ba10a86cf60@217.150.197.54:8443/?sni=quic.tyr-agentstvo.tech#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D",
+      "name": "🇵🇱 Poland | 🌐 [*CIDR]",
+      "type": "hysteria2",
+      "server": "217.150.197.54",
+      "port": 8443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://5d0a6445-a30d-4522-bb1f-94f1d3ad63be@103.117.141.124:2060?insecure=1&sni=mlxy1.mangshe.xyz#%F0%9F%87%B2%F0%9F%87%BE%20Малайзия%2C%20Cyberjaya%20[🏴BL",
+      "name": "🇲🇾 Малайзия, Cyberjaya [🏴BL",
+      "type": "hysteria2",
+      "server": "103.117.141.124",
+      "port": 2060,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://5d36ddf8-dde5-4b2d-8213-d3255f22a0f1@it-two.letsgodance.site:443?sni=it-two.letsgodance.site#%F0%9F%87%AE%F0%9F%87%B9%20Italy%2C%20Milan%20%7C%20%5BBL%5D",
+      "name": "🇮🇹 Italy, Milan | [BL]",
+      "type": "hysteria2",
+      "server": "it-two.letsgodance.site",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://600bbee3-1f42-4877-8a4f-770582752ade@lat-jp.snowdnvpno4.com:8443?sni=lat-jp.snowdnvpno4.com#%F0%9F%87%AF%F0%9F%87%B5%20Japan%2C%20Shibuya%20City%20%7C%20%5BBL%5D",
+      "name": "🇯🇵 Japan, Shibuya City | [BL]",
+      "type": "hysteria2",
+      "server": "lat-jp.snowdnvpno4.com",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://628769f2e4@srv-8740ec.21freedom.net:11592?security=tls&fp=chrome&alpn=h3#%F0%9F%87%AE%F0%9F%87%B9%20Italy%2C%20Milan%20%7C%20%5BBL%5D",
+      "name": "🇮🇹 Italy, Milan | [BL]",
+      "type": "hysteria2",
+      "server": "srv-8740ec.21freedom.net",
+      "port": 11592,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://67a1454f-5a95-4e30-9723-1ffcbe7e97f9@143.246.136.159:443/?sni=taga2.api3-max.ru#",
+      "name": "hysteria2-148",
+      "type": "hysteria2",
+      "server": "143.246.136.159",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://67a1454f-5a95-4e30-9723-1ffcbe7e97f9@soskeynets.api3-max.ru:443?sni=taga5.api3-max.ru#%F0%9F%87%B9%F0%9F%87%B7127051%20%7C%20%E2%9A%A1%EF%B8%8FTelegram%20%3D%20t.me/S",
+      "name": "🇹🇷127051 | ⚡️Telegram = t.me/S",
+      "type": "hysteria2",
+      "server": "soskeynets.api3-max.ru",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://67a1454f-5a95-4e30-9723-1ffcbe7e97f9@taga4.api3-max.ru:443?insecure=0&sni=taga4.api3-max.ru#GB_1%7C1.9MB%2Fs",
+      "name": "GB_1|1.9MB/s",
+      "type": "hysteria2",
+      "server": "taga4.api3-max.ru",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://67a1454f-5a95-4e30-9723-1ffcbe7e97f9@wopa1.api3-max.ru:443?sni=127.0.0.1#%E2%9D%93Other_41%7C129KB%2Fs%7CA004-260618",
+      "name": "❓Other_41|129KB/s|A004-260618",
+      "type": "hysteria2",
+      "server": "wopa1.api3-max.ru",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://67a1454f-5a95-4e30-9723-1ffcbe7e97f9@wopa7.api3-max.ru:443?headerType=none&encryption=none&sni=wopa7.api3-max.ru&insecure=0#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20Slough%20%7C%20%5BBL%5D",
+      "name": "🇬🇧 United Kingdom, Slough | [BL]",
+      "type": "hysteria2",
+      "server": "wopa7.api3-max.ru",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://68b4b16e-2759-47a4-8a69-33118edf5ce6@finlandi.blokinet3.ru:443/?sni=finlandi.blokinet3.ru#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
+      "type": "hysteria2",
+      "server": "finlandi.blokinet3.ru",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://6c077487-06af-4fb1-9e46-d485d98f0a31@45.88.43.116:52454?insecure=1&sni=45.88.43.116#0003",
+      "name": "0003",
+      "type": "hysteria2",
+      "server": "45.88.43.116",
+      "port": 52454,
       "ok": true,
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "hysteria2://433def7c1a6e432e8a1ced81e966fe9e@64.188.64.204:443?alpn=h3&fp=chrome&security=tls&sni=ge2.skydrgn.xyz#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
-      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
+      "uri": "hysteria2://6f394ef6-5350-4399-abde-060e5b8a1696@nl2.freeinternat.com:443?sni=nl2.freeinternat.com#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Eygelshoven%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Eygelshoven | 🌐 | [BL]",
       "type": "hysteria2",
-      "server": "64.188.64.204",
+      "server": "nl2.freeinternat.com",
       "port": 443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://4984930f-4a7a-4dfa-8edc-5d21bbf5ca13@mdt1.pubconverter.com:2443?sni=md.pubconverter.com#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://707db87b-9cbf-438f-b4c7-9d984c8e944a@serv21.strettenvpn.com:443?security=tls#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
+      "type": "hysteria2",
+      "server": "serv21.strettenvpn.com",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://71cada65-d23e-418c-88e4-a06188d14689@82.117.87.248:2096?sni=it-one.quiet-rogue.site#%F0%9F%87%AE%F0%9F%87%B9%20Italy%20%5B%2ACIDR%5D",
+      "name": "🇮🇹 Italy [*CIDR]",
+      "type": "hysteria2",
+      "server": "82.117.87.248",
+      "port": 2096,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://7302ad33229de166d393cd56143a1e4c@131.186.19.174:50160?sni=vk.com#0020",
+      "name": "0020",
+      "type": "hysteria2",
+      "server": "131.186.19.174",
+      "port": 50160,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://76713d07-5a6b-49c2-abd8-bc450a2fa7fc@usa1.spectrumproxy.shop:443/?sni=usa1.spectrumproxy.shop#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20New%20York%20%7C%20%5BBL%5D",
+      "name": "🇺🇸 United States, New York | [BL]",
+      "type": "hysteria2",
+      "server": "usa1.spectrumproxy.shop",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://78cffcbe-e2c2-40ba-ae4e-f28481b44134@46.254.17.97:443/?sni=api.fr-x5.ru&fm=%7B%22quicParams%22%3A%7B%22brutalUp%22%3A%22100#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%20%5B%2ACIDR%5D",
+      "name": "🇸🇪 Sweden [*CIDR]",
+      "type": "hysteria2",
+      "server": "46.254.17.97",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://81378ef7-89a1-43b5-9a9d-a04a8af25b7c@194.31.223.107:443?sni=de1.apexvpn.space#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
+      "type": "hysteria2",
+      "server": "194.31.223.107",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://84a506ca5aca505696a454d828420b3f@140.238.213.114:50160?insecure=1&security=tls&sni=www.bing.com#%E7%91%9E%E5%A3%AB+%E8%8B%8F%E9%BB%8E%E4%B8%96Oracle%E4%BA%91%E8%AE%A1%E7%AE%97%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83",
+      "name": "瑞士+苏黎世Oracle云计算数据中心",
+      "type": "hysteria2",
+      "server": "140.238.213.114",
+      "port": 50160,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://860bf7a5-a27f-4142-9463-3e6260a4dd42@kum.tokervpn.ru:443/?sni=kum.tokervpn.ru&fm=%7B%22quicParams%22%3A%7B%22debug%22%3Afalse%2C%22congestion%22%3A%22bbr%22%2C%22disablePathMTUDiscovery%22%3Atrue%7D%7D#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%5B%2ACIDR%5D",
+      "name": "🇩🇪 Germany [*CIDR]",
+      "type": "hysteria2",
+      "server": "kum.tokervpn.ru",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://8674df07-56b3-43ea-b687-aef2b1a20137@31.76.22.210:443/?insecure=1&sni=crt.ultimagamest.com#",
+      "name": "hysteria2-164",
+      "type": "hysteria2",
+      "server": "31.76.22.210",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://890aade8-4034-4372-9776-793e9acd1e94@kum.tokervpn.ru:443?sni=kum.tokervpn.ru#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%5B%2ACIDR%5D",
+      "name": "🇩🇪 Germany [*CIDR]",
+      "type": "hysteria2",
+      "server": "kum.tokervpn.ru",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://896002a8-3afc-49e6-8fac-5129fb717b49@mdt1.pubconverter.com:2443#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
       "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
       "type": "hysteria2",
       "server": "mdt1.pubconverter.com",
@@ -1225,305 +1513,62 @@
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://4fb82973-a7f1-4fc2-9958-cb21f5162f06@rou0001ntrhy01.tcp-reset-club.net:443/?sni=rou0001ntrhy01.tcp-reset-club.net#%F0%9F%87%B7%F0%9F%87%B4%20Romania%2C%20Bucharest%20%7C%20%5BBL%5D",
-      "name": "🇷🇴 Romania, Bucharest | [BL]",
+      "uri": "hysteria2://8bc63720-5ec8-45b5-b6a6-9a21ffb490e8@fl02.auragg.org:8443/?sni=fl02.auragg.org#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
       "type": "hysteria2",
-      "server": "rou0001ntrhy01.tcp-reset-club.net",
-      "port": 443,
+      "server": "fl02.auragg.org",
+      "port": 8443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://53c76647-14d1-4df5-99cb-be99ad2e6bd9@at133.mechvpn.online:443/?sni=at133.mechvpn.online#%F0%9F%87%A6%F0%9F%87%B9%20Austria%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
-      "name": "🇦🇹 Austria | 🌐 | [BL]",
+      "uri": "hysteria2://8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3@hk01.kfc-520.com:60001?insecure=1&sni=hk01.kfc-520.com#%F0%9F%87%AD%F0%9F%87%B0%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E9%A6%99%E6%B8%AF%2003",
+      "name": "🇭🇰 机场推荐:dafei.de 香港 03",
       "type": "hysteria2",
-      "server": "at133.mechvpn.online",
-      "port": 443,
+      "server": "hk01.kfc-520.com",
+      "port": 60001,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://53c76647-14d1-4df5-99cb-be99ad2e6bd9@de48.mechvpn.online:443?alpn=h3&sni=de48.mechvpn.online#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://8e85752d-c04f-427d-9d70-b10d144c8492@31.76.111.253:443?sni=hy2.bluekitty.lol#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
       "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
       "type": "hysteria2",
-      "server": "de48.mechvpn.online",
+      "server": "31.76.111.253",
       "port": 443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://53c76647-14d1-4df5-99cb-be99ad2e6bd9@nl174.mechvpn.online:443#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
-      "name": "🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]",
+      "uri": "hysteria2://8fb328f0-d8e0-4b11-a6db-3dadfc4f02a3@deu0003ntrhy01.tcp-reset-club.net:443/?sni=deu0003ntrhy01.tcp-reset-club.net#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Delmenhorst%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Delmenhorst | [BL]",
       "type": "hysteria2",
-      "server": "nl174.mechvpn.online",
+      "server": "deu0003ntrhy01.tcp-reset-club.net",
       "port": 443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://54d2f622-fd71-4f5f-8813-832b68f4ca3b@104.165.205.40:8443?sni=speedtestmark.com#%F0%9F%87%B1%F0%9F%87%BB%20Latvia%2C%20Riga%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://901113fb-2ddd-4472-84bf-307de471f32f@lv.katanalink.net:443?sni=lv.katanalink.net#%F0%9F%87%B1%F0%9F%87%BB%20Latvia%2C%20Riga%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
       "name": "🇱🇻 Latvia, Riga | 🌐 | [BL]",
       "type": "hysteria2",
-      "server": "104.165.205.40",
-      "port": 8443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://558e17d8-00fd-46d9-bc5c-1e3bdf73034f@fin.freeinternat.com:443?sni=fin.freeinternat.com#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
-      "name": "🇫🇮 Finland, Helsinki | [BL]",
-      "type": "hysteria2",
-      "server": "fin.freeinternat.com",
+      "server": "lv.katanalink.net",
       "port": 443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://56ae4ec4-6705-43d0-bf3a-bc36ab3b3545@cze-01.node.lumixnet.com:443?sni=cze-01.node.lumixnet.com#%F0%9F%87%A8%F0%9F%87%BF%20Czechia%2C%20Prague%20%7C%20%5BBL%5D",
-      "name": "🇨🇿 Czechia, Prague | [BL]",
+      "uri": "hysteria2://92971ae7-d606-4c22-b566-625ffabee5b2@fr136.mechvpn.online:443?insecure=0#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Wyszk%C3%B3w%20%7C%20%5BBL%5D",
+      "name": "🇵🇱 Poland, Wyszków | [BL]",
       "type": "hysteria2",
-      "server": "cze-01.node.lumixnet.com",
+      "server": "fr136.mechvpn.online",
       "port": 443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://57c77d07-bec3-4bf7-9b72-70ece40450f6@united.hysteria.ltd:5443?sni=united.hysteria.ltd&alpn=h3#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Buffalo%20%7C%20%5BBL%5D",
-      "name": "🇺🇸 United States, Buffalo | [BL]",
-      "type": "hysteria2",
-      "server": "united.hysteria.ltd",
-      "port": 5443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://5a92a9d2-3067-49cd-bfc5-989bbdfc5d52@31.77.220.185:7443?alpn=h3&fm=%7B%22quicParams%22%3A%7B%22congestion%22%3A%22bbr%22%2C%22debug%22%3Afalse%7D%7D&sni=fi.aeternavpn.space#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
-      "name": "🇫🇮 Finland, Helsinki | [BL]",
-      "type": "hysteria2",
-      "server": "31.77.220.185",
-      "port": 7443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://5bcodmhjtyfyyrqh@91.142.73.159:36758?insecure=1&sni=cdn77.dmtr.ru&obfs=salamander&obfs-password=dzcb7hv6i2kx2zze#%40Begoo_VPN%20%C2%B2%E2%81%B9%E2%81%B0",
-      "name": "@Begoo_VPN ²⁹⁰",
-      "type": "hysteria2",
-      "server": "91.142.73.159",
-      "port": 36758,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://5ca83936-136d-4314-8453-4ba10a86cf60@46.243.235.23:8443/?sni=quic.tyr-agentstvo.tech#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%87%B5%F0%9F%87%B1%20%5B%2ACIDR%5D%20CDN",
-      "name": "🌐 Anycast-IP | 🇩🇪 🇵🇱 [*CIDR] CDN",
-      "type": "hysteria2",
-      "server": "46.243.235.23",
-      "port": 8443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://5d0a6445-a30d-4522-bb1f-94f1d3ad63be@msjp1.mangshe.xyz:20561?insecure=1&sni=www.microsoft.com#%F0%9F%87%AF%F0%9F%87%B5JP_1%7C2.2MB%2Fs",
-      "name": "🇯🇵JP_1|2.2MB/s",
-      "type": "hysteria2",
-      "server": "msjp1.mangshe.xyz",
-      "port": 20561,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "hysteria2://5d36ddf8-dde5-4b2d-8213-d3255f22a0f1@nl-one.letsgodance.site:443?sni=nl-one.letsgodance.site#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Eygelshoven%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
-      "name": "🇳🇱 The Netherlands, Eygelshoven | 🌐 | [BL]",
-      "type": "hysteria2",
-      "server": "nl-one.letsgodance.site",
-      "port": 443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://60e2a548-96aa-4850-a279-1edab743c39b@md1.cnyvpn.com:443?sni=md1.cnyvpn.com#%F0%9F%87%B2%F0%9F%87%A9%20Moldova%2C%20Chisinau%20%7C%20%5BBL%5D",
-      "name": "🇲🇩 Moldova, Chisinau | [BL]",
-      "type": "hysteria2",
-      "server": "md1.cnyvpn.com",
-      "port": 443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://65761043-f5c1-4e7b-8c16-b72c7a3fa4b7@althys.superbuba.top:443?sni=althys.superbuba.top#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%5B%2ACIDR%5D",
-      "name": "🇩🇪 Germany [*CIDR]",
-      "type": "hysteria2",
-      "server": "althys.superbuba.top",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://67a1454f-5a95-4e30-9723-1ffcbe7e97f9@64.49.15.76:443/?sni=taga3.api3-max.ru#",
-      "name": "hysteria2-150",
-      "type": "hysteria2",
-      "server": "64.49.15.76",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://67a1454f-5a95-4e30-9723-1ffcbe7e97f9@taga10.api3-max.ru:443#%F0%9F%87%B9%F0%9F%87%B7%20Turkey%2C%20Ba%C5%9Fak%C5%9Fehir%20%7C%20%5BBL%5D",
-      "name": "🇹🇷 Turkey, Başakşehir | [BL]",
-      "type": "hysteria2",
-      "server": "taga10.api3-max.ru",
-      "port": 443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://67a1454f-5a95-4e30-9723-1ffcbe7e97f9@taga6.api3-max.ru:443/?sni=taga6.api3-max.ru#0713",
-      "name": "0713",
-      "type": "hysteria2",
-      "server": "taga6.api3-max.ru",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://67a1454f-5a95-4e30-9723-1ffcbe7e97f9@wopa3.api3-max.ru:443/?sni=wopa3.api3-max.ru#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20Slough%20%7C%20%5BBL%5D",
-      "name": "🇬🇧 United Kingdom, Slough | [BL]",
-      "type": "hysteria2",
-      "server": "wopa3.api3-max.ru",
-      "port": 443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://67a1454f-5a95-4e30-9723-1ffcbe7e97f9@wopa9.api3-max.ru:443/?sni=wopa9.api3-max.ru#@OutlineReleasedKey",
-      "name": "@OutlineReleasedKey",
-      "type": "hysteria2",
-      "server": "wopa9.api3-max.ru",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://68b4b16e-2759-47a4-8a69-33118edf5ce6@popa.leontunel.ru:443#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
-      "name": "🇬🇧 United Kingdom, London | [BL]",
-      "type": "hysteria2",
-      "server": "popa.leontunel.ru",
-      "port": 443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://6eb88b45-7c1e-4a0a-afab-aa455447aa78@imbaisk3.duckdns.org:443?sni=imbaisk3.duckdns.org#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
-      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
-      "type": "hysteria2",
-      "server": "imbaisk3.duckdns.org",
-      "port": 443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://6f7a8009ecf6a12e10d03f9d88493c89@167.179.34.13:55443/?insecure=1&sni=gorbachev-th.kvnfreetest.uk#",
-      "name": "hysteria2-157",
-      "type": "hysteria2",
-      "server": "167.179.34.13",
-      "port": 55443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://71cada65-d23e-418c-88e4-a06188d14689@31.76.113.32:443/?sni=it-one.quiet-rogue.site#%F0%9F%87%AE%F0%9F%87%B9%20Italy%2C%20Milan%20%7C%20%5BBL%5D",
-      "name": "🇮🇹 Italy, Milan | [BL]",
-      "type": "hysteria2",
-      "server": "31.76.113.32",
-      "port": 443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://71cada65-d23e-418c-88e4-a06188d14689@92.246.138.131:443?sni=nl-one.quiet-rogue.site#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D",
-      "name": "🇳🇱 The Netherlands | 🌐 [*CIDR]",
-      "type": "hysteria2",
-      "server": "92.246.138.131",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://755a7b43-4583-4e31-b37f-7453aea2c672@2.26.148.192:443?headerType=none&encryption=none&sni=crt.ultimagamest.com&insecure=0#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Warsaw%20%7C%20%5BBL%5D",
-      "name": "🇵🇱 Poland, Warsaw | [BL]",
-      "type": "hysteria2",
-      "server": "2.26.148.192",
-      "port": 443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://771d283f-868e-4ac4-8a88-074af8b0a9c9@zisvpn.ru:1453?fm=%257B%250A%2520%2520%2522quicParams%2522%2520%3A%2520%257B%250A%2520%2520%2520%2520%2522congestion%2522%2520%3A%2520%2522brutal%2522%250A%2520%2520%257D%250A%257D&type=hysteria&security=tls&sni=zisvpn.ru&alpn=h3#%F0%9F%87%AD%F0%9F%87%B0%20Hong%20Kong%20%5B%2ACIDR%5D",
-      "name": "🇭🇰 Hong Kong [*CIDR]",
-      "type": "hysteria2",
-      "server": "zisvpn.ru",
-      "port": 1453,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://7e8825a4-86ac-486f-a06c-0917ced9dfcd@138.124.17.62:443?sni=wlh.moonshard.org&fp=firefox#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
-      "name": "🇫🇮 Finland, Helsinki | [BL]",
-      "type": "hysteria2",
-      "server": "138.124.17.62",
-      "port": 443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://8294f130408299df8cab08c80bf6f819@24.233.8.109:443?insecure=1&obfs=salamander&obfs-password=c8827ab99e316c5bd414e21afa915ddf&sni=www.bing.com#%F0%9F%87%AD%F0%9F%87%B0%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E9%A6%99%E6%B8%AF%2002",
-      "name": "🇭🇰 机场推荐:dafei.de 香港 02",
-      "type": "hysteria2",
-      "server": "24.233.8.109",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://8569e507-8ef7-481d-9108-6bc7f040c2ff@cns.dodostarscoffee.ru:9443#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%5B%2ACIDR%5D",
-      "name": "🇩🇪 Germany [*CIDR]",
-      "type": "hysteria2",
-      "server": "cns.dodostarscoffee.ru",
-      "port": 9443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://860bf7a5-a27f-4142-9463-3e6260a4dd42@twru1.fontanvpn.com:443/?sni=twru1.fontanvpn.com&fm=%7B%22quicParams%22%3A%7B%22debug%22%3Afalse%2C%22congestion%22%3A%22bbr%22%7D%7D#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D",
-      "name": "🇵🇱 Poland | 🌐 [*CIDR]",
-      "type": "hysteria2",
-      "server": "twru1.fontanvpn.com",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://88370d48-f668-47b2-9494-bc92c11cc602@ru-i.monkeyvillage.pro:443?sni=ru-i.monkeyvillage.pro#4049",
-      "name": "4049",
-      "type": "hysteria2",
-      "server": "ru-i.monkeyvillage.pro",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://890aade8-4034-4372-9776-793e9acd1e94@tw1.tokervpn.ru:443?sni=tw1.tokervpn.ru#%F0%9F%87%AE%F0%9F%87%B9%20Italy%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D",
-      "name": "🇮🇹 Italy | 🌐 [*CIDR]",
-      "type": "hysteria2",
-      "server": "tw1.tokervpn.ru",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://8b194a7a-0f31-40d4-948e-d2005ebdbc17@tn.tmn141246.ru:443?sni=live.ok.ru#2492",
-      "name": "2492",
+      "uri": "hysteria2://9501f3d6-483f-45c1-ab2c-33266520cd5c@tn.tmn141246.ru:443?sni=live.ok.ru#0126",
+      "name": "0126",
       "type": "hysteria2",
       "server": "tn.tmn141246.ru",
       "port": 443,
@@ -1531,229 +1576,175 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://8bc63720-5ec8-45b5-b6a6-9a21ffb490e8@nl02.auragg.org:48343?security=tls&sni=nl02.auragg.org#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
-      "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
-      "type": "hysteria2",
-      "server": "nl02.auragg.org",
-      "port": 48343,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://8d722acb-d6ed-468c-af31-7ce0710fa425@tw1.tokervpn.ru:443?sni=tw1.tokervpn.ru&fm=%7B%22quicParams%22%3A%7B%22debug%22%3Afalse%2C%22congestion%22%3A%22bbr%22%2C%22disablePathMTUDiscovery%22%3Atrue%7D%7D#%F0%9F%87%AE%F0%9F%87%B9%20Italy%20%5B%2ACIDR%5D",
-      "name": "🇮🇹 Italy [*CIDR]",
-      "type": "hysteria2",
-      "server": "tw1.tokervpn.ru",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://8f0gvz5eul6omhq4@giftcard.gateway-stream.com:52087?insecure=0&sni=giftcard.gateway-stream.com&obfs=salamander&obfs-password=fuw2k1ddrouwxr3u#Telegram%20%F0%9F%86%94%40Cnetvpn%20%F0%9F%87%BA%F0%9F%87%B2",
-      "name": "Telegram 🆔@Cnetvpn 🇺🇲",
-      "type": "hysteria2",
-      "server": "giftcard.gateway-stream.com",
-      "port": 52087,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://8fb328f0-d8e0-4b11-a6db-3dadfc4f02a3@nl01ntrhy01.tcp-reset-club.net:443?insecure=1&security=tls&sni=nl01ntrhy01.tcp-reset-club.net#The+Netherlands",
-      "name": "The+Netherlands",
-      "type": "hysteria2",
-      "server": "nl01ntrhy01.tcp-reset-club.net",
-      "port": 443,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "hysteria2://90af65ff00ef2ff089d28d6a11fc10de@23-19-231-152.liao.kdns.fr:50160#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
-      "name": "🇺🇸 United States | 🌐 | [BL]",
-      "type": "hysteria2",
-      "server": "23-19-231-152.liao.kdns.fr",
-      "port": 50160,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://92971ae7-d606-4c22-b566-625ffabee5b2@pl19.mechvpn.online:443?insecure=0#%F0%9F%87%B9%F0%9F%87%B7%20Turkey%2C%20Istanbul%20%7C%20%5BBL%5D",
-      "name": "🇹🇷 Turkey, Istanbul | [BL]",
-      "type": "hysteria2",
-      "server": "pl19.mechvpn.online",
-      "port": 443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://95c61940-2823-4665-a033-d4f2218329b6@46.8.210.209:443?headerType=none&encryption=none&sni=ru3.kinotorg.net&insecure=0#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D",
+      "uri": "hysteria2://97a63a10-8e25-4425-883e-f2bc31c3f970@gogo.fontanvpn.com:443?sni=gogo.fontanvpn.com#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D",
       "name": "🇵🇱 Poland | 🌐 [*CIDR]",
       "type": "hysteria2",
-      "server": "46.8.210.209",
+      "server": "gogo.fontanvpn.com",
       "port": 443,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://97a63a10-8e25-4425-883e-f2bc31c3f970@tw1.tokervpn.ru:443?sni=tw1.tokervpn.ru#%F0%9F%87%AE%F0%9F%87%B9%20Italy%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D",
-      "name": "🇮🇹 Italy | 🌐 [*CIDR]",
+      "uri": "hysteria2://99469a62-c9a7-4223-a5ca-6a1ddaa1e7a9@87.251.19.13:8443?sni=speedtestmark.com#%F0%9F%87%AA%F0%9F%87%AA%20Estonia%2C%20Tallinn%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇪🇪 Estonia, Tallinn | 🌐 | [BL]",
       "type": "hysteria2",
-      "server": "tw1.tokervpn.ru",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://99800091-8337-4112-8756-8cc60eb1ffa8@nl2.unlockvpn.online:10808#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
-      "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
-      "type": "hysteria2",
-      "server": "nl2.unlockvpn.online",
-      "port": 10808,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z@162.249.124.104:8080?sni=mercedes-grape.yyuyy.com#%F0%9F%87%B9%F0%9F%87%B7%20Turkey%2C%20Ankara%20%7C%20%5BBL%5D",
-      "name": "🇹🇷 Turkey, Ankara | [BL]",
-      "type": "hysteria2",
-      "server": "162.249.124.104",
-      "port": 8080,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z@162.249.124.108:8443?sni=hopp-germany-new.ddnsguru.com#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
-      "name": "🇬🇧 United Kingdom, London | [BL]",
-      "type": "hysteria2",
-      "server": "162.249.124.108",
+      "server": "87.251.19.13",
       "port": 8443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z@162.249.124.114:8080?sni=hopp-germany-new.ddnsguru.com#%F0%9F%87%B9%F0%9F%87%B7%20Turkey%2C%20Ankara%20%7C%20%5BBL%5D",
-      "name": "🇹🇷 Turkey, Ankara | [BL]",
-      "type": "hysteria2",
-      "server": "162.249.124.114",
-      "port": 8080,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z@162.249.124.117:8080?sni=hopp-germany-new.ddnsguru.com#%F0%9F%87%B9%F0%9F%87%B7%20Turkey%2C%20Ankara%20%7C%20%5BBL%5D",
-      "name": "🇹🇷 Turkey, Ankara | [BL]",
-      "type": "hysteria2",
-      "server": "162.249.124.117",
-      "port": 8080,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z@162.249.124.126:8443?sni=hopp-germany-new.ddnsguru.com#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z@162.249.124.102:8443?sni=mercedes-grape.yyuyy.com#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
       "name": "🇬🇧 United Kingdom, London | [BL]",
       "type": "hysteria2",
-      "server": "162.249.124.126",
+      "server": "162.249.124.102",
       "port": 8443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z@162.249.126.9:8443?sni=hopp-germany-new.ddnsguru.com#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z@162.249.124.106:8080?sni=mercedes-grape.yyuyy.com#%F0%9F%87%B9%F0%9F%87%B7%20Turkey%2C%20Ankara%20%7C%20%5BBL%5D",
+      "name": "🇹🇷 Turkey, Ankara | [BL]",
+      "type": "hysteria2",
+      "server": "162.249.124.106",
+      "port": 8080,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z@162.249.124.112:8080?sni=hopp-germany-new.ddnsguru.com#%F0%9F%87%B9%F0%9F%87%B7%20Turkey%2C%20Ankara%20%7C%20%5BBL%5D",
+      "name": "🇹🇷 Turkey, Ankara | [BL]",
+      "type": "hysteria2",
+      "server": "162.249.124.112",
+      "port": 8080,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z@162.249.124.116:8080?sni=hopp-germany-new.ddnsguru.com#%F0%9F%87%B9%F0%9F%87%B7%20Turkey%2C%20Ankara%20%7C%20%5BBL%5D",
+      "name": "🇹🇷 Turkey, Ankara | [BL]",
+      "type": "hysteria2",
+      "server": "162.249.124.116",
+      "port": 8080,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z@162.249.124.123:8443?sni=hopp-germany-new.ddnsguru.com#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
+      "name": "🇬🇧 United Kingdom, London | [BL]",
+      "type": "hysteria2",
+      "server": "162.249.124.123",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z@162.249.126.13:8443?sni=hop-germany-september.dynuddns.com#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
       "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
       "type": "hysteria2",
-      "server": "162.249.126.9",
+      "server": "162.249.126.13",
       "port": 8443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z@76.164.202.219:8443?sni=mercedes-grape.yyuyy.com#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z@76.164.202.213:8443/?sni=mercedes-grape.yyuyy.com#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
       "name": "🇫🇷 France, Paris | [BL]",
       "type": "hysteria2",
-      "server": "76.164.202.219",
+      "server": "76.164.202.213",
       "port": 8443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://9b82d376-0586-450d-8d20-6a996330d984@194.55.239.127:20443?sni=hy.quattro-tech.ru#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%5B%2ACIDR%5D",
+      "uri": "hysteria2://9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z@76.164.202.220:8443/?sni=mercedes-grape.yyuyy.com#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
+      "name": "🇫🇷 France, Paris | [BL]",
+      "type": "hysteria2",
+      "server": "76.164.202.220",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://9dada88d-f8f8-459d-8a4f-4df2c973fe43@216.57.111.222:8443?sni=h2.ecliptic-it.ru#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]",
+      "type": "hysteria2",
+      "server": "216.57.111.222",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://9f5b9ca7-d0bb-4e50-a3ca-acf5968027fc@138.124.254.21:8443?sni=de-two.quiet-rogue.site#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%5B%2ACIDR%5D",
       "name": "🇩🇪 Germany [*CIDR]",
       "type": "hysteria2",
-      "server": "194.55.239.127",
-      "port": 20443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://9f5b9ca7-d0bb-4e50-a3ca-acf5968027fc@138.124.254.21:2053?sni=fi-one.quiet-rogue.site#%F0%9F%87%AB%F0%9F%87%AE%20Finland%20%5B%2ACIDR%5D",
-      "name": "🇫🇮 Finland [*CIDR]",
-      "type": "hysteria2",
       "server": "138.124.254.21",
-      "port": 2053,
+      "port": 8443,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://AAHTUsz8f6BW_HKMezmb-iQ5EtZ-B1Kx@2.27.23.44:43327?sni=gate-v1.not-a-projects.xyz#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%2C%20Stockholm%20%7C%20%5BBL%5D",
-      "name": "🇸🇪 Sweden, Stockholm | [BL]",
+      "uri": "hysteria2://AAHTUsz8f6BW_HKMezmb-iQ5EtZ-B1Kx@ee-2-gatev1.dedicated.cdnnow.xyz:43327?sni=gate-v1.not-a-projects.xyz#%F0%9F%87%AA%F0%9F%87%AA%20Estonia%2C%20Tallinn%20%28Kesklinna%20linnaosa%29%20%7C%20%5BBL%5D",
+      "name": "🇪🇪 Estonia, Tallinn (Kesklinna linnaosa) | [BL]",
       "type": "hysteria2",
-      "server": "2.27.23.44",
+      "server": "ee-2-gatev1.dedicated.cdnnow.xyz",
       "port": 43327,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://Apt1923_N9x234gn_Nal5Nx3j_s@222.167.212.80:8443/?sni=grape-power-pl.ddnsguru.com#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
-      "name": "🇫🇮 Finland, Helsinki | [BL]",
+      "uri": "hysteria2://Apt1923_N9x234gn_Nal5Nx3j_s@45.14.245.22:8443?sni=grape-power-pl.ddnsguru.com#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Almere%20Stad%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Almere Stad | [BL]",
       "type": "hysteria2",
-      "server": "222.167.212.80",
+      "server": "45.14.245.22",
       "port": 8443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://BWAFlp8g53@72.56.102.31:443/?insecure=1#",
-      "name": "hysteria2-189",
+      "uri": "hysteria2://C91FbOXGY9XRymrcEebtax9R1Nj62UizoT8S6kCb7xwey8IE@31.76.30.97:443/?insecure=1&sni=fast.wwwinternetvideo.click#",
+      "name": "hysteria2-188",
       "type": "hysteria2",
-      "server": "72.56.102.31",
+      "server": "31.76.30.97",
       "port": 443,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
+      "ok": false,
+      "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://CnVfXXvMzh@hys13.wba-pn.ru:443?insecure=1#@OutlineReleasedKey",
-      "name": "@OutlineReleasedKey",
+      "uri": "hysteria2://CyG0RFxMjzs41uQD4OLuHQ%3D%3D@137.131.167.179:443?insecure=1&sni=rmgyvpn.rest&obfs=salamander&obfs-password=CyG0RFxMjzs41uQD4OLuHQ==#%E5%92%95%E5%92%95%20%231",
+      "name": "咕咕 #1",
       "type": "hysteria2",
-      "server": "hys13.wba-pn.ru",
+      "server": "137.131.167.179",
       "port": 443,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
+      "ok": false,
+      "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://Foc_Mcxi45rM9v3ve_N92fdrK_10_Ssc5@185.39.31.117:8443?insecure=1&security=tls&sni=grape-beer.yyuyy.com#Japan",
-      "name": "Japan",
+      "uri": "hysteria2://GSPOBvG-ZwYcBFMr0ekFGO_Zga3wK6v_@85.159.228.22:443/?sni=hy2-latvia2.unlimited-access.ru#",
+      "name": "hysteria2-190",
       "type": "hysteria2",
-      "server": "185.39.31.117",
+      "server": "85.159.228.22",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://GSPOBvG-ZwYcBFMr0ekFGO_Zga3wK6v_@hy2-wien.unlimited-access.ru:8443#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A6%F0%9F%87%B9%20%F0%9F%87%AC%F0%9F%87%A7%20%7C%20%5BBL%5D",
+      "name": "🌐 Anycast-IP | 🇦🇹 🇬🇧 | [BL]",
+      "type": "hysteria2",
+      "server": "hy2-wien.unlimited-access.ru",
       "port": 8443,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://GSPOBvG-ZwYcBFMr0ekFGO_Zga3wK6v_@hy2-switzerlandgopota.unlimited-access.ru:443?sni=hy2-switzerlandgopota.unlimited-access.ru&fp=chrome&alpn=h3#%F0%9F%87%A8%F0%9F%87%AD%20Switzerland%2C%20Zurich%20%7C%20%5BBL%5D",
-      "name": "🇨🇭 Switzerland, Zurich | [BL]",
+      "uri": "hysteria2://H7mP2xY9kJ4nQ8wR5tF6vB3z@15.223.122.197:443/?insecure=1&sni=off#181143",
+      "name": "181143",
       "type": "hysteria2",
-      "server": "hy2-switzerlandgopota.unlimited-access.ru",
+      "server": "15.223.122.197",
       "port": 443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://H7mP2xY9kJ4nQ8wR5tF6vB3z@13.125.214.225:443?sni=vk.com#1806",
-      "name": "1806",
-      "type": "hysteria2",
-      "server": "13.125.214.225",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
+      "ok": true,
+      "reason": "internet_stable_real_egress"
     },
     {
       "uri": "hysteria2://H7mP2xY9kJ4nQ8wR5tF6vB3z@202.146.222.89:443?sni=vk.com#0934",
@@ -1765,13 +1756,13 @@
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://H7mP2xY9kJ4nQ8wR5tF6vB3z@35.181.166.40:443/?insecure=1&sni=vpn-fr-002.fastervpn.world#",
-      "name": "hysteria2-195",
+      "uri": "hysteria2://H7mP2xY9kJ4nQ8wR5tF6vB3z@43.203.252.104:443?sni=vk.com#0095",
+      "name": "0095",
       "type": "hysteria2",
-      "server": "35.181.166.40",
+      "server": "43.203.252.104",
       "port": 443,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
+      "ok": false,
+      "reason": "core_not_ready"
     },
     {
       "uri": "hysteria2://H7mP2xY9kJ4nQ8wR5tF6vB3z@vpn-kr-003.fastervpn.world:443?insecure=1&sni=vpn-kr-003.fastervpn.world#KR",
@@ -1783,20 +1774,20 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://H7mP2xY9kJ4nQ9wR5tF6vB3z@vpn-kr-002.fastervpn.world:443?insecure=1&security=tls&sni=vpn-kr-002.fastervpn.world#S%C3%BCdkorea",
-      "name": "Südkorea",
+      "uri": "hysteria2://HowdyHysteria2023w0W@51.15.19.206:8443/?insecure=1&obfs=salamander&obfs-password=HysteriaHowdy&sni=sni-here.com#EPODONIOS",
+      "name": "EPODONIOS",
       "type": "hysteria2",
-      "server": "vpn-kr-002.fastervpn.world",
-      "port": 443,
+      "server": "51.15.19.206",
+      "port": 8443,
       "ok": true,
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "hysteria2://Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0@85.204.107.165:8443/?sni=grape-zet-ro-turbo.bumbleshrimp.com#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
-      "name": "🇫🇷 France, Paris | [BL]",
+      "uri": "hysteria2://Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0@85.204.107.166:8080?sni=grape-zet-ro-turbo.bumbleshrimp.com#%F0%9F%87%A6%F0%9F%87%AA%20United%20Arab%20Emirates%2C%20Abu%20Dhabi%20%28Al%20Ras%20Al%20Akhdar%29%20%7C%20%5BBL%5D",
+      "name": "🇦🇪 United Arab Emirates, Abu Dhabi (Al Ras Al Akhdar) | [BL]",
       "type": "hysteria2",
-      "server": "85.204.107.165",
-      "port": 8443,
+      "server": "85.204.107.166",
+      "port": 8080,
       "ok": false,
       "reason": "core_not_ready"
     },
@@ -1828,94 +1819,103 @@
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0@85.204.107.181:8443?sni=hopp-romania-new.roxa.org#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0@85.204.107.183:8080?sni=hopp-romania-new.roxa.org#%F0%9F%87%A6%F0%9F%87%AA%20United%20Arab%20Emirates%2C%20Abu%20Dhabi%20%28Al%20Ras%20Al%20Akhdar%29%20%7C%20%5BBL%5D",
+      "name": "🇦🇪 United Arab Emirates, Abu Dhabi (Al Ras Al Akhdar) | [BL]",
+      "type": "hysteria2",
+      "server": "85.204.107.183",
+      "port": 8080,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0@85.204.107.189:8443?sni=hopp-romania-new.roxa.org#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
       "name": "🇫🇷 France, Paris | [BL]",
       "type": "hysteria2",
-      "server": "85.204.107.181",
+      "server": "85.204.107.189",
       "port": 8443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0@93.114.194.117:8443/?sni=grape-zet-ro-turbo.bumbleshrimp.com#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0@93.114.194.122:8443?sni=grape-zet-ro-turbo.bumbleshrimp.com#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
       "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
       "type": "hysteria2",
-      "server": "93.114.194.117",
+      "server": "93.114.194.122",
       "port": 8443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0@93.114.194.125:8443?sni=grape-zet-ro-turbo.bumbleshrimp.com#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
-      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
+      "uri": "hysteria2://N41uhuAvUwokxUCReDCn8Et-QcixLzBy@2.27.42.66:43327?sni=gate-v1.not-a-projects.xyz#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
+      "name": "🇫🇮 Finland, Helsinki | [BL]",
       "type": "hysteria2",
-      "server": "93.114.194.125",
-      "port": 8443,
+      "server": "2.27.42.66",
+      "port": 43327,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://OD6gGbGU9a@hys26.wba-pn.ru:443?insecure=1&security=tls&sni=hys26.wba-pn.ru#%D0%A4%D0%A0%D0%93",
-      "name": "ФРГ",
-      "type": "hysteria2",
-      "server": "hys26.wba-pn.ru",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s@205.237.109.171:8443?sni=hopp-netherland-new.dynuddns.net#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s@205.237.109.165:8443?sni=hopp-netherland-new.dynuddns.net#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
       "name": "🇬🇧 United Kingdom, London | [BL]",
       "type": "hysteria2",
-      "server": "205.237.109.171",
+      "server": "205.237.109.165",
       "port": 8443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s@86.107.178.66:8443?sni=grape-zet-turbo-nl.yyuyy.com#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s@205.237.109.176:8443?sni=hopp-netherland-new.dynuddns.net#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
       "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
       "type": "hysteria2",
-      "server": "86.107.178.66",
+      "server": "205.237.109.176",
       "port": 8443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s@86.107.178.72:8443/?sni=grape-zet-turbo-nl.yyuyy.com#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s@86.107.178.70:8443?sni=grape-zet-turbo-nl.yyuyy.com#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
       "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
       "type": "hysteria2",
-      "server": "86.107.178.72",
+      "server": "86.107.178.70",
       "port": 8443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://PASSWORD@cdn.example.com:443?obfs=salamander&obfs-password=OBFS&sni=cdn.example.com&alpn=h3",
-      "name": "hysteria2-209",
+      "uri": "hysteria2://Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s@86.107.178.77:8443?sni=hopp-netherland-new.dynuddns.net#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
       "type": "hysteria2",
-      "server": "cdn.example.com",
+      "server": "86.107.178.77",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://RQBXe4kpsRant_2u1PzdneBOPuCSwUSI@43.167.208.94:443?sni=43.167.208.94&insecure=1#%F0%9F%87%AF%F0%9F%87%B5%20Япония%2C%20Shibuya%20City%20[🏴BL",
+      "name": "🇯🇵 Япония, Shibuya City [🏴BL",
+      "type": "hysteria2",
+      "server": "43.167.208.94",
       "port": 443,
       "ok": false,
-      "reason": "placeholder_endpoint"
+      "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://STYyftThFn@freedom.chenlan.top:12765?sni=vk.com#0167",
-      "name": "0167",
+      "uri": "hysteria2://Telegram@vpnjey@77.110.96.201:36264?sni=vk.com&obfs=salamander&obfs-password=Telegram@vpnjey#0146",
+      "name": "0146",
       "type": "hysteria2",
-      "server": "freedom.chenlan.top",
-      "port": 12765,
+      "server": "77.110.96.201",
+      "port": 36264,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://V2RayyNGvpn@168.222.43.35:443?insecure=0&sni=www.bing.com&obfs=salamander&obfs-password=V2RayyNGvpn#%F0%9F%87%A9%F0%9F%87%AA%40FreakConfig%20%232",
-      "name": "🇩🇪@FreakConfig #2",
+      "uri": "hysteria2://VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC@172.245.233.237:8080?sni=hopp-us.yyuyy.com#%F0%9F%87%B2%F0%9F%87%BD%20Mexico%2C%20Mexico%20City%20%7C%20%5BBL%5D",
+      "name": "🇲🇽 Mexico, Mexico City | [BL]",
       "type": "hysteria2",
-      "server": "168.222.43.35",
-      "port": 443,
+      "server": "172.245.233.237",
+      "port": 8080,
       "ok": false,
-      "reason": "no_proxied_public_ip"
+      "reason": "core_not_ready"
     },
     {
       "uri": "hysteria2://VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC@82.21.92.71:8443?sni=hopp-us.yyuyy.com#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Westbury%20%7C%20%5BBL%5D",
@@ -1927,40 +1927,40 @@
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC@82.39.213.226:8443?sni=hopp-us.yyuyy.com#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20New%20York%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC@82.39.214.167:8443?sni=hopp-us.yyuyy.com#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20New%20York%20%7C%20%5BBL%5D",
       "name": "🇺🇸 United States, New York | [BL]",
       "type": "hysteria2",
-      "server": "82.39.213.226",
+      "server": "82.39.214.167",
       "port": 8443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC@82.39.214.98:8080?sni=hopp-us.yyuyy.com#%F0%9F%87%B5%F0%9F%87%A6%20Panama%2C%20Panama%20City%20%7C%20%5BBL%5D",
-      "name": "🇵🇦 Panama, Panama City | [BL]",
+      "uri": "hysteria2://VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC@82.39.214.98:8443?sni=hopp-us.yyuyy.com#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20New%20York%20%7C%20%5BBL%5D",
+      "name": "🇺🇸 United States, New York | [BL]",
       "type": "hysteria2",
       "server": "82.39.214.98",
-      "port": 8080,
+      "port": 8443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc@45.192.12.93:443/?insecure=1#",
-      "name": "hysteria2-215",
+      "uri": "hysteria2://YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc@45.192.12.93:443?sni=admin.wwwinternetvideo.click#Hysteria2%20146",
+      "name": "Hysteria2 146",
       "type": "hysteria2",
       "server": "45.192.12.93",
       "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
+      "ok": true,
+      "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "hysteria2://Zg0z_Mdkhj_NNZBvZZ4TmwAyQgJlTUev@2.27.59.11:43327?sni=gate-v1.not-a-projects.xyz#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Werda%20%7C%20%5BBL%5D",
-      "name": "🇩🇪 Germany, Werda | [BL]",
+      "uri": "hysteria2://a1d045aa-65b2-4a35-bffb-994bde8cca61@tn.tmn141246.ru:443?sni=live.ok.ru#1300",
+      "name": "1300",
       "type": "hysteria2",
-      "server": "2.27.59.11",
-      "port": 43327,
+      "server": "tn.tmn141246.ru",
+      "port": 443,
       "ok": false,
-      "reason": "core_not_ready"
+      "reason": "no_proxied_public_ip"
     },
     {
       "uri": "hysteria2://a4130dea-9e33-4032-805d-0392fdf26cbd@samurai.h4ck.me:443?sni=samurai.h4ck.me&fm=%7B#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
@@ -1972,10 +1972,10 @@
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://a6cf4b28-ba72-4e8c-90f8-6a884107ab3c@ndge4.whit3.net:443?sni=ndge4.whit3.net#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
-      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
+      "uri": "hysteria2://a6cf4b28-ba72-4e8c-90f8-6a884107ab3c@netnet.whit3.net:443?sni=netnet.whit3.net#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
+      "name": "🇫🇷 France, Paris | [BL]",
       "type": "hysteria2",
-      "server": "ndge4.whit3.net",
+      "server": "netnet.whit3.net",
       "port": 443,
       "ok": false,
       "reason": "core_not_ready"
@@ -1990,13 +1990,13 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://ac7fb60f-0b7a-465d-a002-05160ec04ed6@dora3.api3-max.ru:443?sni=dora3.api3-max.ru#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%87%B5%F0%9F%87%B1%20%7C%20%5BBL%5D",
-      "name": "🌐 Anycast-IP | 🇫🇷 🇵🇱 | [BL]",
+      "uri": "hysteria2://ac7fb60f-0b7a-465d-a002-05160ec04ed6@dora4.api3-max.ru:443?sni=dora4.api3-max.ru#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Aubervilliers%20%7C%20%5BBL%5D",
+      "name": "🇫🇷 France, Aubervilliers | [BL]",
       "type": "hysteria2",
-      "server": "dora3.api3-max.ru",
+      "server": "dora4.api3-max.ru",
       "port": 443,
       "ok": false,
-      "reason": "no_proxied_public_ip"
+      "reason": "core_not_ready"
     },
     {
       "uri": "hysteria2://ac7fb60f-0b7a-465d-a002-05160ec04ed6@gora5.api3-max.ru:443?sni=gora5.api3-max.ru#%F0%9F%87%B9%F0%9F%87%B7%20Turkey%2C%20Istanbul%20%7C%20%5BBL%5D",
@@ -2017,38 +2017,38 @@
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://aed1cc24-351d-11ef-ba52-f23c9164ca5d@311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com:443#%F0%9F%87%A7%F0%9F%87%B8%20%E2%9A%A1%20%D0%AD%D1%89%D0%BA%D0%B5%D1%80%D0%B8%D1%8F%20%7C%2520%5B%F0%9F%8F%B3%EF%B8%8FLTE%5D%2520%20%2520%F0%9F%94%90",
-      "name": "🇧🇸 ⚡ Эщкерия |%20[🏳️LTE]%20 %20🔐",
+      "uri": "hysteria2://aed1cc24-351d-11ef-ba52-f23c9164ca5d@311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com:443#%F0%9F%87%AD%F0%9F%87%B0%20Hong%20Kong%2C%20Central%20%7C%20%5BBL%5D",
+      "name": "🇭🇰 Hong Kong, Central | [BL]",
       "type": "hysteria2",
       "server": "311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com",
       "port": 443,
       "ok": false,
-      "reason": "no_proxied_public_ip"
+      "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://austria_hysteria2_fastlane_l3b35d5dy%3AnYN3oTyCgUyrBTOwuW9uX9hDq5SmKVFx@130.49.219.99:1935?sni=at3.h.fastlanehosting.ru#%F0%9F%87%A6%F0%9F%87%B9%20Austria%2C%20Liezen%20District%20%7C%20%5BBL%5D",
-      "name": "🇦🇹 Austria, Liezen District | [BL]",
+      "uri": "hysteria2://austria_hysteria2_fastlane_gowsybpu5%3AFkbLjwxyf9pnAXHKUEBKqNbvKmTyoRRw@94.228.163.122:1935?sni=at4.h.fastlanehosting.ru&fp=random#%F0%9F%87%A6%F0%9F%87%B9%20Austria%2C%20Vienna%20%7C%20%5BBL%5D",
+      "name": "🇦🇹 Austria, Vienna | [BL]",
       "type": "hysteria2",
-      "server": "130.49.219.99",
+      "server": "94.228.163.122",
       "port": 1935,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://b05346a9-4d13-41a4-8d2a-6b7b64e73ffc@ge01.auragg.org:443/?sni=ge01.auragg.org#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
-      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
+      "uri": "hysteria2://b05346a9-4d13-41a4-8d2a-6b7b64e73ffc@fl01.auragg.org:443/?sni=fl01.auragg.org#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
       "type": "hysteria2",
-      "server": "ge01.auragg.org",
+      "server": "fl01.auragg.org",
       "port": 443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://b0917015b656b3dd2286b5633af0c5c1@31.57.248.176:50160?insecure=1&security=tls&sni=www.bing.com#0008",
-      "name": "0008",
+      "uri": "hysteria2://b081bce0-aa8f-11f1-8bc0-6204817a15bb@apkaz-2.bosx.net:8444?sni=apkaz-2.bosx.net#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Halfweg%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Halfweg | 🌐 | [BL]",
       "type": "hysteria2",
-      "server": "31.57.248.176",
-      "port": 50160,
+      "server": "apkaz-2.bosx.net",
+      "port": 8444,
       "ok": false,
       "reason": "core_not_ready"
     },
@@ -2062,103 +2062,661 @@
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://b52ca44f-835b-4862-baed-e5e91e5865dc@exit-am-1.dost-self.co.uk:2443?sni=exit-am-1.dost-self.co.uk#%F0%9F%87%BB%F0%9F%87%AE%20U.S.%20Virgin%20Islands%2C%20Cruz%20Bay%20%7C%20%5BBL%5D",
-      "name": "🇻🇮 U.S. Virgin Islands, Cruz Bay | [BL]",
+      "uri": "hysteria2://b50a48ec-604b-4f4d-9aef-e70c83c6bbab@139.100.228.40:443?sni=ryzen.pag3r.com#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%20%5B%2ACIDR%5D",
+      "name": "🇸🇪 Sweden [*CIDR]",
       "type": "hysteria2",
-      "server": "exit-am-1.dost-self.co.uk",
+      "server": "139.100.228.40",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://b52ca44f-835b-4862-baed-e5e91e5865dc@exit-de-4.dost-self.co.uk:2443?sni=exit-de-4.dost-self.co.uk#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
+      "type": "hysteria2",
+      "server": "exit-de-4.dost-self.co.uk",
       "port": 2443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://b52ca44f-835b-4862-baed-e5e91e5865dc@exit-fi-1.dost-self.co.uk:2443?sni=exit-fi-1.dost-self.co.uk#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
-      "name": "🇫🇮 Finland, Helsinki | [BL]",
+      "uri": "hysteria2://b52ca44f-835b-4862-baed-e5e91e5865dc@exit-nl-2.dost-self.co.uk:2443?sni=exit-nl-2.dost-self.co.uk#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Eygelshoven%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Eygelshoven | [BL]",
       "type": "hysteria2",
-      "server": "exit-fi-1.dost-self.co.uk",
+      "server": "exit-nl-2.dost-self.co.uk",
       "port": 2443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://b52ca44f-835b-4862-baed-e5e91e5865dc@exit-pl-1.dost-self.co.uk:2443?sni=exit-pl-1.dost-self.co.uk#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Warsaw%20%7C%20%5BBL%5D",
-      "name": "🇵🇱 Poland, Warsaw | [BL]",
-      "type": "hysteria2",
-      "server": "exit-pl-1.dost-self.co.uk",
-      "port": 2443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://b52ca44f-835b-4862-baed-e5e91e5865dc@ficdn1.aiai-rkp.net:443?sni=ficdn1.aiai-rkp.net#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%2C%20Stockholm%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://b52ca44f-835b-4862-baed-e5e91e5865dc@exit-se-5.dost-self.co.uk:2443?sni=exit-se-5.dost-self.co.uk#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%2C%20Stockholm%20%7C%20%5BBL%5D",
       "name": "🇸🇪 Sweden, Stockholm | [BL]",
       "type": "hysteria2",
-      "server": "ficdn1.aiai-rkp.net",
+      "server": "exit-se-5.dost-self.co.uk",
+      "port": 2443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://b71637c2-94a5-49bd-8233-b4ed5e3170c3@free-nl1.green-hills.org:8443?sni=free-nl1.green-hills.org&fm=%7B%22quicParams%22%3A%7B%22debug%22%3Afalse%2C%22congestion%22%3A%22bbr%22%7D%7D#%F0%9F%87%AE%F0%9F%87%B3%20India%2C%20New%20Delhi%20%7C%20%5BBL%5D",
+      "name": "🇮🇳 India, New Delhi | [BL]",
+      "type": "hysteria2",
+      "server": "free-nl1.green-hills.org",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://b8f1b61e-d5c4-4765-866d-ece1fc8e590b@104.165.205.200:8443?sni=speedtestmark.com#%F0%9F%87%B1%F0%9F%87%BB%20Latvia%2C%20Riga%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇱🇻 Latvia, Riga | 🌐 | [BL]",
+      "type": "hysteria2",
+      "server": "104.165.205.200",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://b8f1b61e-d5c4-4765-866d-ece1fc8e590b@104.165.205.227:9443?sni=onecloudstream.com#%F0%9F%87%B1%F0%9F%87%BB%20Latvia%2C%20Riga%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇱🇻 Latvia, Riga | 🌐 | [BL]",
+      "type": "hysteria2",
+      "server": "104.165.205.227",
+      "port": 9443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://b8f1b61e-d5c4-4765-866d-ece1fc8e590b@104.165.205.49:9443?sni=onecloudstream.com#%F0%9F%87%B1%F0%9F%87%BB%20Latvia%2C%20Riga%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇱🇻 Latvia, Riga | 🌐 | [BL]",
+      "type": "hysteria2",
+      "server": "104.165.205.49",
+      "port": 9443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://b8f1b61e-d5c4-4765-866d-ece1fc8e590b@194.48.250.7:9443?sni=onecloudstream.com#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]",
+      "type": "hysteria2",
+      "server": "194.48.250.7",
+      "port": 9443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://b8f1b61e-d5c4-4765-866d-ece1fc8e590b@87.251.19.8:9443?sni=onecloudstream.com#%F0%9F%87%AA%F0%9F%87%AA%20Estonia%2C%20Tallinn%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇪🇪 Estonia, Tallinn | 🌐 | [BL]",
+      "type": "hysteria2",
+      "server": "87.251.19.8",
+      "port": 9443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://bc751c4c5c80f17dfbc05785c368b613@154.31.115.179:50160/?sni=154-31-115-179.liao.kdns.fr#%F0%9F%87%AF%F0%9F%87%B5%20Japan%2C%20Shinagawa%20%28Higashishinagawa%29%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇯🇵 Japan, Shinagawa (Higashishinagawa) | 🌐 | [BL]",
+      "type": "hysteria2",
+      "server": "154.31.115.179",
+      "port": 50160,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://bf3d436d-cbc0-49b6-a818-45d190949212@kinofi10.melodramaonline.net:443?sni=kinofi10.melodramaonline.net#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
+      "name": "🇫🇮 Finland, Helsinki | [BL]",
+      "type": "hysteria2",
+      "server": "kinofi10.melodramaonline.net",
       "port": 443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://b8949dae-cb53-4b5a-ad9c-50f58c4656fb@jp1.xiaoliyu.us:27102#%F0%9F%87%AF%F0%9F%87%B5%20Japan%2C%20Shibuya%20City%20%7C%20%5BBL%5D",
-      "name": "🇯🇵 Japan, Shibuya City | [BL]",
+      "uri": "hysteria2://c0a137ca-08d2-4734-95ed-2131ea6b45d9@13.143.215.1:25443?sni=cloudrynth.com#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Armonk%20%7C%20%5BBL%5D",
+      "name": "🇺🇸 United States, Armonk | [BL]",
       "type": "hysteria2",
-      "server": "jp1.xiaoliyu.us",
-      "port": 27102,
+      "server": "13.143.215.1",
+      "port": 25443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://b8f1b61e-d5c4-4765-866d-ece1fc8e590b@104.165.205.21:9443?sni=onecloudstream.com#%F0%9F%87%B1%F0%9F%87%BB%20Latvia%2C%20Riga%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://c0a137ca-08d2-4734-95ed-2131ea6b45d9@91.240.86.70:27443?sni=cloudrynth.com#%F0%9F%87%B3%F0%9F%87%B4%20Norway%20%5B%2ACIDR%5D",
+      "name": "🇳🇴 Norway [*CIDR]",
+      "type": "hysteria2",
+      "server": "91.240.86.70",
+      "port": 27443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://c175d956-d1f4-4c53-b2b1-8493bf8529c6@45.140.204.102:443?sni=pl1.apexvpn.space#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Warsaw%20%7C%20%5BBL%5D",
+      "name": "🇵🇱 Poland, Warsaw | [BL]",
+      "type": "hysteria2",
+      "server": "45.140.204.102",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://c3e6fd601b53d080ed5099cbf325dede@154.31.114.168:50160?sni=154-31-114-168.liao.kdns.fr#%F0%9F%87%AF%F0%9F%87%B5%20Japan%2C%20Shinagawa%20%28Higashishinagawa%29%20%7C%20%5BBL%5D",
+      "name": "🇯🇵 Japan, Shinagawa (Higashishinagawa) | [BL]",
+      "type": "hysteria2",
+      "server": "154.31.114.168",
+      "port": 50160,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://ca909a1b-67e7-0003-8f8a-2837a865b2d2@newlte.kihsuyhf8jkiugsxb.cfd:443?sni=newlte.kihsuyhf8jkiugsxb.cfd&fm={#2873",
+      "name": "2873",
+      "type": "hysteria2",
+      "server": "newlte.kihsuyhf8jkiugsxb.cfd",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://cd74c0a406664a5bc0bac098220a2468@ee2.sferavpn.pro:443?obfs-password=44f1c1e2f8b99e792ceed574627a1eb0&sni=ee2.sferavpn.pro&obfs=salamander&seq=you_are_beautiful4036#",
+      "name": "hysteria2-245",
+      "type": "hysteria2",
+      "server": "ee2.sferavpn.pro",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://d19b459e-fcc3-4f2a-8f2e-77e8701cd1d8@ush2.shazamri.xyz:443?sni=ush2.shazamri.xyz#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Atlanta%20%7C%20%5BBL%5D",
+      "name": "🇺🇸 United States, Atlanta | [BL]",
+      "type": "hysteria2",
+      "server": "ush2.shazamri.xyz",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://d2e3768f-cb23-4cfc-a884-dbd6813cb70b@de5-hy2.veilvpn.life:8443?headerType=none&encryption=none&sni=de5-hy2.veilvpn.life&insecure=0#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%87%BA%F0%9F%87%B8%20%7C%20%5BBL%5D",
+      "name": "🌐 Anycast-IP | 🇩🇪 🇺🇸 | [BL]",
+      "type": "hysteria2",
+      "server": "de5-hy2.veilvpn.life",
+      "port": 8443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://d4c41430-082e-4757-b22c-194998baddd2@91.185.83.48:8443?sni=pols2.nimarko.org#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%5B%2ACIDR%5D",
+      "name": "🇵🇱 Poland [*CIDR]",
+      "type": "hysteria2",
+      "server": "91.185.83.48",
+      "port": 8443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://d4c41430-082e-4757-b22c-194998baddd2@91.185.83.48:8586?sni=spsp.nimarko.org#%F0%9F%87%AA%F0%9F%87%B8%20Spain%20%5B%2ACIDR%5D",
+      "name": "🇪🇸 Spain [*CIDR]",
+      "type": "hysteria2",
+      "server": "91.185.83.48",
+      "port": 8586,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://d8d69a2d-dbc3-4d8d-a896-0425dcd04895@wiki.locallynet.org:8443?sni=wiki.locallynet.org#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
+      "name": "🇬🇧 United Kingdom, London | [BL]",
+      "type": "hysteria2",
+      "server": "wiki.locallynet.org",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://dcdef7f2-5f67-4f85-89df-5a3be5792e1a@212.135.39.110:443?sni=ok.ru&obfs=salamander&obfs-password=whale-hy-e110#0507",
+      "name": "0507",
+      "type": "hysteria2",
+      "server": "212.135.39.110",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://dsfa_k0123WFzerrf_kZ3490VNb03J_m30_s@194.180.188.104:8443?sni=keyhop-offshore.roxa.org#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
+      "type": "hysteria2",
+      "server": "194.180.188.104",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://dsmO0439gj_nX942GJRE_9j39fbcxv52_R@85.209.157.177:8080?sni=hopp-transit.1cooldns.com#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
+      "name": "🇫🇷 France, Paris | [BL]",
+      "type": "hysteria2",
+      "server": "85.209.157.177",
+      "port": 8080,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://e11728c3-a786-44b9-ad8b-0b7e738d33bd@193.23.216.87:443?sni=de2.hat.onl#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%28Innenstadt%20I%29%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL]",
+      "type": "hysteria2",
+      "server": "193.23.216.87",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://e3c3b722-1264-4cdc-a97c-b0a1bb73cd67@104.165.205.43:9443?sni=onecloudstream.com#%F0%9F%87%B1%F0%9F%87%BB%20Latvia%2C%20Riga%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
       "name": "🇱🇻 Latvia, Riga | 🌐 | [BL]",
       "type": "hysteria2",
-      "server": "104.165.205.21",
+      "server": "104.165.205.43",
       "port": 9443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://b8f1b61e-d5c4-4765-866d-ece1fc8e590b@104.165.205.22:9443?sni=onecloudstream.com#%F0%9F%87%B1%F0%9F%87%BB%20Latvia%2C%20Riga%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
-      "name": "🇱🇻 Latvia, Riga | 🌐 | [BL]",
-      "type": "hysteria2",
-      "server": "104.165.205.22",
-      "port": 9443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://b8f1b61e-d5c4-4765-866d-ece1fc8e590b@104.165.205.64:9443?sni=onecloudstream.com#%F0%9F%87%B1%F0%9F%87%BB%20Latvia%2C%20Riga%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
-      "name": "🇱🇻 Latvia, Riga | 🌐 | [BL]",
-      "type": "hysteria2",
-      "server": "104.165.205.64",
-      "port": 9443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "hysteria2://b8f1b61e-d5c4-4765-866d-ece1fc8e590b@194.48.250.9:9443?sni=onecloudstream.com#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://e3c3b722-1264-4cdc-a97c-b0a1bb73cd67@194.48.250.8:9443?sni=onecloudstream.com#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
       "name": "🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]",
       "type": "hysteria2",
-      "server": "194.48.250.9",
+      "server": "194.48.250.8",
       "port": 9443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://b8f1b61e-d5c4-4765-866d-ece1fc8e590b@lvh-01.steptofsvo.com:9443?sni=onecloudstream.com#%F0%9F%87%B1%F0%9F%87%BB%20Latvia%2C%20Riga%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "uri": "hysteria2://e3c3b722-1264-4cdc-a97c-b0a1bb73cd67@95.85.252.47:9443?insecure=1&sni=onecloudstream.com#%F0%9F%AA%9032%40oneclickvpnkeys",
+      "name": "🪐32@oneclickvpnkeys",
+      "type": "hysteria2",
+      "server": "95.85.252.47",
+      "port": 9443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://e3c3b722-1264-4cdc-a97c-b0a1bb73cd67@lv02.gotosvo.com:9443?sni=onecloudstream.com#%F0%9F%87%B1%F0%9F%87%BB%20Latvia%2C%20Riga%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
       "name": "🇱🇻 Latvia, Riga | 🌐 | [BL]",
       "type": "hysteria2",
-      "server": "lvh-01.steptofsvo.com",
+      "server": "lv02.gotosvo.com",
       "port": 9443,
       "ok": false,
       "reason": "core_not_ready"
     },
     {
-      "uri": "hysteria2://bce6c821-200d-421f-bf3d-7159e5246ea0@hy2.123266.xyz:33333/?sni=hy2.123266.xyz#",
-      "name": "hysteria2-238",
+      "uri": "hysteria2://e86fd04e-a2f5-4779-a529-748b1813cbc2@46.8.210.209:443?sni=ru3.kinotorg.net&insecure=0&allowInsecure=0#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D",
+      "name": "🇵🇱 Poland | 🌐 [*CIDR]",
       "type": "hysteria2",
-      "server": "hy2.123266.xyz",
-      "port": 33333,
+      "server": "46.8.210.209",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://ee159b52-fc4e-4b42-a6bf-308f75118d80@fin1.apexvpn.space:443?sni=fin1.apexvpn.space#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
+      "name": "🇫🇮 Finland, Helsinki | [BL]",
+      "type": "hysteria2",
+      "server": "fin1.apexvpn.space",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://ef18d810-719c-4bf1-83c6-615d01f217eb@f3.crsmaps.com:443?security=tls&fm=%7B%7D&sni=f3.crsmaps.com#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
+      "name": "🇫🇷 France, Paris | [BL]",
+      "type": "hysteria2",
+      "server": "f3.crsmaps.com",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://efd400cd-98e1-4a9b-a98c-6f4a3b7cce7f@dns-3918.internet-booster.com:443?sni=dns-3918.internet-booster.com#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
+      "name": "🇫🇮 Finland, Helsinki | [BL]",
+      "type": "hysteria2",
+      "server": "dns-3918.internet-booster.com",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://efd400cd-98e1-4a9b-a98c-6f4a3b7cce7f@hub-8590.internet-booster.com:443?sni=hub-8590.internet-booster.com#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
+      "name": "🇫🇮 Finland, Helsinki | [BL]",
+      "type": "hysteria2",
+      "server": "hub-8590.internet-booster.com",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://england_2_hysteria2_fastlane_35xzvlgum%3AfFOxlPsMH7zt0oMwFS4VAFw4LYxKxbRl@46.226.162.109:1935?sni=gb2.h.fastlanehosting.ru#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
+      "name": "🇬🇧 United Kingdom, London | [BL]",
+      "type": "hysteria2",
+      "server": "46.226.162.109",
+      "port": 1935,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://f422e914-ba20-4855-9441-c044d3f2f6e1@fr.air-vpn.lol:443/?sni=fr.air-vpn.lol&fm=%7B%22quicParams%22%3A%7B%22debug%22%3Afalse%2C%22congestion%22%3A%22bbr%22%7D%7D#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D",
+      "name": "🇫🇷 France, Paris | [BL]",
+      "type": "hysteria2",
+      "server": "fr.air-vpn.lol",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://f81b5e80-7cac-47db-8550-9728459499ca@twru1.fontanvpn.com:443/?sni=twru1.fontanvpn.com&fm=%7B%22quicParams%22%3A%7B%22debug%22%3Afalse%2C%22congestion%22%3A%22bbr%22%7D%7D#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D",
+      "name": "🇵🇱 Poland | 🌐 [*CIDR]",
+      "type": "hysteria2",
+      "server": "twru1.fontanvpn.com",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://f980aecd-d243-4910-b231-db172d434541@de2205.cdn-video.pro:443?sni=de2205.cdn-video.pro#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D",
+      "name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
+      "type": "hysteria2",
+      "server": "de2205.cdn-video.pro",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://fc8383a6-51fd-4ac7-b2ea-a88e234239f3@nl2.shifro-team.site:443?sni=nl2.shifro-team.site#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
+      "type": "hysteria2",
+      "server": "nl2.shifro-team.site",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://fr9p9ji70krwnup6@giftcard.gateway-stream.com:52056?security=tls&obfs=salamander&obfs-password=fuw2k1ddrouwxr3u&insecure=0&sni=giftcard.gateway-stream.com#%40v2rayingvless://a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a@tg.riotvpn.eu:443?security=reality&encryption=none&pbk=8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho&headerType=none&fp=chrome&type=tcp&sni=ads.x5.ru&sid=2f49bccf11150ef2#%40v2rayingsocks://Og%3D%3D@91.213.151.4:1070#%40v2raying",
+      "name": "@v2rayingvless://a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a@tg.riotvpn.eu:443?security=reality&encryption=none&pbk=8h8t5eBWL9o",
+      "type": "hysteria2",
+      "server": "giftcard.gateway-stream.com",
+      "port": 52056,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://github.com%2FAlvin9999-newpac%2Ffanqiang@62.210.7.139:60111?insecure=1&sni=google.com#%F0%9F%87%AB%F0%9F%87%B7%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E6%B3%95%E5%9B%BD%2016",
+      "name": "🇫🇷 机场推荐:dafei.de 法国 16",
+      "type": "hysteria2",
+      "server": "62.210.7.139",
+      "port": 60111,
       "ok": true,
       "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT@103.246.248.227:8443?sni=hopp-legend-se.roxa.org#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Warsaw%20%7C%20%5BBL%5D",
+      "name": "🇵🇱 Poland, Warsaw | [BL]",
+      "type": "hysteria2",
+      "server": "103.246.248.227",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT@103.246.248.231:8443?sni=hopp-legend-se.roxa.org#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Warsaw%20%7C%20%5BBL%5D",
+      "name": "🇵🇱 Poland, Warsaw | [BL]",
+      "type": "hysteria2",
+      "server": "103.246.248.231",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT@103.246.248.237:8443?sni=hopp-legend-se.roxa.org#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Warsaw%20%7C%20%5BBL%5D",
+      "name": "🇵🇱 Poland, Warsaw | [BL]",
+      "type": "hysteria2",
+      "server": "103.246.248.237",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT@222.167.212.81:8080?sni=hopp-legend-se.roxa.org#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
+      "name": "🇬🇧 United Kingdom, London | [BL]",
+      "type": "hysteria2",
+      "server": "222.167.212.81",
+      "port": 8080,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://hysteria2_fastlane_0w714uuli%3A4VnAvMp3WwKxTciga4mV7PRitYxAHDFc@84.23.54.203:1935?sni=ru2.h.smartaisupport.ru#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%5B%2ACIDR%5D%20VK",
+      "name": "🇩🇪 Germany [*CIDR] VK",
+      "type": "hysteria2",
+      "server": "84.23.54.203",
+      "port": 1935,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://hysteria2_fastlane_9r63hua9f%3AKR0ayzwokB6pZySqiZ15Erm6cQHR7C4E@144.31.135.204:1935?sni=nl2.h.fastlanehosting.ru&fp=chrome#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%28Amsterdam-Centrum%29%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Amsterdam (Amsterdam-Centrum) | [BL]",
+      "type": "hysteria2",
+      "server": "144.31.135.204",
+      "port": 1935,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://hysteria2_fastlane_gzb4hxj1x%3Av2ZouAxFjACFgBpLjV9GkorKw9Hf0AMq@64.188.107.79:1935?sni=fn1.h.fastlanehosting.ru#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
+      "name": "🇫🇮 Finland, Helsinki | [BL]",
+      "type": "hysteria2",
+      "server": "64.188.107.79",
+      "port": 1935,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://hysteria2_fastlane_qsf4v6mt0%3A8rPEjLjgG1Rt9gV7EcmqqtLbZcS77Zvv@144.31.134.98:1935?sni=nl1.h.smartaisupport.ru#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%28Amsterdam-Centrum%29%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Amsterdam (Amsterdam-Centrum) | [BL]",
+      "type": "hysteria2",
+      "server": "144.31.134.98",
+      "port": 1935,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://kewr0929_M9ic23iqe_m9E2R93Js8034c_Rt10@222.167.212.160:8443?sni=new-finland-september.bumbleshrimp.com#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%5BBL%5D",
+      "name": "🇫🇮 Finland, Helsinki | [BL]",
+      "type": "hysteria2",
+      "server": "222.167.212.160",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj@91.196.32.163:443/?insecure=1&amp;sni=germany3.h2corp.local#",
+      "name": "hysteria2-280",
+      "type": "hysteria2",
+      "server": "91.196.32.163",
+      "port": 443,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://netherlands_3_hysteria2_fastlane_37iv1dn3d%3A67gccDlB7WkApL23iP6HbwAkDpbxCBr6@5.35.69.164:1935?sni=nl7.h.fastlanehosting.ru#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
+      "type": "hysteria2",
+      "server": "5.35.69.164",
+      "port": 1935,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1@109.206.241.10:8443?insecure=0&sni=russiapower.accesscam.org#%F0%9F%87%AA%F0%9F%87%AA%20Estonia%2C%20Tallinn%20%7C%20%5BBL%5D",
+      "name": "🇪🇪 Estonia, Tallinn | [BL]",
+      "type": "hysteria2",
+      "server": "109.206.241.10",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://p%40ss%2Fword@203.0.113.10:8001/",
+      "name": "hysteria2-283",
+      "type": "hysteria2",
+      "server": "203.0.113.10",
+      "port": 8001,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://qQe1z5kU8kN6SlKnDt9Ru3Qp@13.212.52.5:443?sni=vk.com#1104",
+      "name": "1104",
+      "type": "hysteria2",
+      "server": "13.212.52.5",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://qQe1z5kU8kN6SlKnDt9Ru3Qp@18.143.134.50:443?sni=vk.com#1593",
+      "name": "1593",
+      "type": "hysteria2",
+      "server": "18.143.134.50",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://qQe1z5kU8kN6SlKnDt9Ru3Qp@47.129.241.226:443?insecure=1&sni=vpn-sg-001.fastervpn.world#%E5%92%95%20%231",
+      "name": "咕 #1",
+      "type": "hysteria2",
+      "server": "47.129.241.226",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://qQe1z5kU8kN6SlKnDt9Ru3Qp@54.254.241.184:443?sni=vk.com#1144",
+      "name": "1144",
+      "type": "hysteria2",
+      "server": "54.254.241.184",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z@205.237.109.212:8443/?sni=grape-turbo-fr.roxa.org#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
+      "name": "🇬🇧 United Kingdom, London | [BL]",
+      "type": "hysteria2",
+      "server": "205.237.109.212",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z@205.237.109.220:8443/?sni=grape-turbo-fr.roxa.org#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D",
+      "name": "🇬🇧 United Kingdom, London | [BL]",
+      "type": "hysteria2",
+      "server": "205.237.109.220",
+      "port": 8443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z@46.229.243.133:8443/?sni=grape-turbo-fr.roxa.org#",
+      "name": "hysteria2-290",
+      "type": "hysteria2",
+      "server": "46.229.243.133",
+      "port": 8443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z@46.229.243.139:8080?sni=grape-turbo-fr.roxa.org#%F0%9F%87%B7%F0%9F%87%B8%20Serbia%2C%20Belgrade%20%7C%20%5BBL%5D",
+      "name": "🇷🇸 Serbia, Belgrade | [BL]",
+      "type": "hysteria2",
+      "server": "46.229.243.139",
+      "port": 8080,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z@46.229.243.142:8080?sni=grape-turbo-fr.roxa.org#%F0%9F%87%B7%F0%9F%87%B8%20Serbia%2C%20Belgrade%20%7C%20%5BBL%5D",
+      "name": "🇷🇸 Serbia, Belgrade | [BL]",
+      "type": "hysteria2",
+      "server": "46.229.243.142",
+      "port": 8080,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z@46.229.243.145:8080?sni=grape-turbo-fr.roxa.org#%F0%9F%87%B7%F0%9F%87%B8%20Serbia%2C%20Belgrade%20%7C%20%5BBL%5D",
+      "name": "🇷🇸 Serbia, Belgrade | [BL]",
+      "type": "hysteria2",
+      "server": "46.229.243.145",
+      "port": 8080,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z@77.74.123.99:8443?insecure=1&sni=grape-test-italy.dynuddns.net#%E8%8D%B7%E5%85%B0%20%7C%20NLD%203",
+      "name": "荷兰 | NLD 3",
+      "type": "hysteria2",
+      "server": "77.74.123.99",
+      "port": 8443,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX@faq.wwwinternetvideo.click:443?insecure=1&sni=cabinet.wwwinternetvideo.click#RU",
+      "name": "RU",
+      "type": "hysteria2",
+      "server": "faq.wwwinternetvideo.click",
+      "port": 443,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://uj7XGZGUqRlmdpk6rysyZMN333RWsxTFj0hBIMaFV-NUCd5r@185.225.19.39:443/?sni=ro.h2corp.org#%F0%9F%87%B7%F0%9F%87%B4%20Romania%2C%20Ia%C8%99i%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D",
+      "name": "🇷🇴 Romania, Iași | 🌐 | [BL]",
+      "type": "hysteria2",
+      "server": "185.225.19.39",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://umndu7jgfyujpvjvm2sw9hl0rryljngzvwru2hzwehyzkkrx@hold.wwwinternetvideo.click:443/?insecure=1",
+      "name": "hysteria2-297",
+      "type": "hysteria2",
+      "server": "hold.wwwinternetvideo.click",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH@82.38.64.229:8443?insecure=1&sni=hopp-swizland-new.mysynology.net#52%40oneclickvpnkeys",
+      "name": "52@oneclickvpnkeys",
+      "type": "hysteria2",
+      "server": "82.38.64.229",
+      "port": 8443,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://wrSuBorIlf@hys9.wba-pn.ru:443?insecure=1#NL",
+      "name": "NL",
+      "type": "hysteria2",
+      "server": "hys9.wba-pn.ru",
+      "port": 443,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://{HY2_PASSWORD}@{SERVER_IP}:9444?sni=www.microsoft.com&alpn=h3&obfs=salamander&obfs-password={SALAMANDER_PASS}{pin_param}#Fortress-Hysteria2-Salamander",
+      "name": "Fortress-Hysteria2-Salamander",
+      "type": "hysteria2",
+      "server": "{server_ip}",
+      "port": 9444,
+      "ok": false,
+      "reason": "placeholder_endpoint"
     }
   ]
 }

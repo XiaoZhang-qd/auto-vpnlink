@@ -1,12 +1,12 @@
 {
-  "candidate_limit": 6,
-  "tested": 6,
+  "candidate_limit": 4,
+  "tested": 4,
   "skipped": 0,
-  "healthy": 4,
-  "failed": 2,
+  "healthy": 1,
+  "failed": 3,
   "success_target": 10,
   "target_reached": false,
-  "runner_public_ip": "4.154.22.5",
+  "runner_public_ip": "20.106.183.52",
   "allowed_types": [
     "hysteria",
     "hysteria2",
@@ -28,49 +28,31 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:%2FpYDD9iRDQlBUa4aL0lBTCSp6ZNStfL6xHNn4mSFqFE%3D@129.151.77.63:61312#GB",
-      "name": "GB",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2NExiS0huQjNJTzc1OXVlRW5oZ01HQDUyLjE0Mi4xNjEuOTozNDQyNA==#%DA%A9%D8%A7%D9%86%D8%A7%D9%84+%3A+%40V2rayNGvpni",
+      "name": "کانال+:+@V2rayNGvpni",
       "type": "ss",
-      "server": "129.151.77.63",
-      "port": 61312,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:4nphreJpAUpxvkVQmO2l37kEup8qRu7pcSYU0JbJLVM%3D@158.178.229.235:56927#SG",
-      "name": "SG",
-      "type": "ss",
-      "server": "158.178.229.235",
-      "port": 56927,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:7%2B83lYmtkC1TL9F5THnzEGaaF24mquCQgoT%2BDqJDrlE%3D@129.151.83.115:61312#GB",
-      "name": "GB",
-      "type": "ss",
-      "server": "129.151.83.115",
-      "port": 61312,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:L3QqnA71GxRRmLGUEdybwjBm99YOB%2BVNxYv9WWhazJA%3D@144.24.229.35:61312#GB",
-      "name": "GB",
-      "type": "ss",
-      "server": "144.24.229.35",
-      "port": 61312,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:g726%2FIWhhF3bdXPIKc6vbtEUOpBVQU1EHNTFoJJtLsU%3D@129.151.78.252:61312#GB",
-      "name": "GB",
-      "type": "ss",
-      "server": "129.151.78.252",
-      "port": 61312,
+      "server": "52.142.161.9",
+      "port": 34424,
       "ok": false,
-      "reason": "round_1_public_test_failed"
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3YjU2YWVhYS04ZTJkLTRiZGYtYjFkNy0yMzNlY2NhMTVmNTZAbmFtcmNnMDAxNjQwbHJtLmN5YmVydmVuYS5jb206NTAwOTk=#%F0%9F%87%B9%F0%9F%87%BC%20%5BBL%5D%20%D0%A1%D0%B5%D1%80%D0%B2%D0%B5%D1%80%2013",
+      "name": "🇹🇼 [BL] Сервер 13",
+      "type": "ss",
+      "server": "namrcg001640lrm.cybervena.com",
+      "port": 50099,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3ZTczMWVjMy1mOGUxLTQzZjYtOTJjZi0zOTc4ZDE0NzA1YzRANjEuMjMxLjI1LjE3Mjo1MDA5OQ==#[8911][TW][0][SS][None][ext_raw.githubusercontent.com][2026-09-25][2026-09-25",
+      "name": "[8911][TW][0][SS][None][ext_raw.githubusercontent.com][2026-09-25][2026-09-25",
+      "type": "ss",
+      "server": "61.231.25.172",
+      "port": 50099,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
     }
   ]
 }

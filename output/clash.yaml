@@ -3,42 +3,18 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: GB
+- name: 🇹🇼 [BL] Сервер 13
   type: ss
-  server: 129.151.77.63
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: /pYDD9iRDQlBUa4aL0lBTCSp6ZNStfL6xHNn4mSFqFE=
-  udp: true
-- name: SG
-  type: ss
-  server: 158.178.229.235
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 4nphreJpAUpxvkVQmO2l37kEup8qRu7pcSYU0JbJLVM=
-  udp: true
-- name: GB [2]
-  type: ss
-  server: 129.151.83.115
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 7+83lYmtkC1TL9F5THnzEGaaF24mquCQgoT+DqJDrlE=
-  udp: true
-- name: GB [3]
-  type: ss
-  server: 144.24.229.35
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: L3QqnA71GxRRmLGUEdybwjBm99YOB+VNxYv9WWhazJA=
+  server: namrcg001640lrm.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7b56aeaa-8e2d-4bdf-b1d7-233ecca15f56
   udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - GB
-  - SG
-  - GB [2]
-  - GB [3]
+  - 🇹🇼 [BL] Сервер 13
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
