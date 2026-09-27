@@ -3,18 +3,18 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 [BL] Сервер 13
+- name: 🇮🇱IL_1|84KB/s|V003-260618
   type: ss
-  server: namrcg001640lrm.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7b56aeaa-8e2d-4bdf-b1d7-233ecca15f56
+  server: 85.209.157.184
+  port: 8388
+  cipher: 2022-blake3-aes-128-gcm
+  password: EIIwJPg8YqgnjLLd58zoTg==:MwxxR64bpSmXVU+ufX6xvw==
   udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇹🇼 [BL] Сервер 13
+  - 🇮🇱IL_1|84KB/s|V003-260618
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
