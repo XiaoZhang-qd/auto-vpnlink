@@ -1,12 +1,12 @@
 {
-  "candidate_limit": 21,
-  "tested": 13,
+  "candidate_limit": 19,
+  "tested": 19,
   "skipped": 0,
-  "healthy": 10,
-  "failed": 3,
+  "healthy": 9,
+  "failed": 10,
   "success_target": 10,
-  "target_reached": true,
-  "runner_public_ip": "20.25.34.34",
+  "target_reached": false,
+  "runner_public_ip": "64.236.153.82",
   "allowed_types": [
     "hysteria",
     "hysteria2",
@@ -19,11 +19,29 @@
   "rounds": 3,
   "results": [
     {
-      "uri": "ss://2022-blake3-aes-128-gcm:ABpp50oz%2F6gDZGxZQhVyKA%3D%3D@47.90.153.88:8388#%40SylphNet%20%7C%201405-07-07%20%23269",
-      "name": "@SylphNet | 1405-07-07 #269",
+      "uri": "ss://2022-blake3-aes-128-gcm:EIIwJPg8YqgnjLLd58zoTg%3D%3D%3Aa74cobINsD2rxrS1sjJSCg%3D%3D@85.209.157.184:8388#%F0%9F%87%AE%F0%9F%87%B1IL_2%7C1.9MB%2Fs%7CV001-260618",
+      "name": "🇮🇱IL_2|1.9MB/s|V001-260618",
       "type": "ss",
-      "server": "47.90.153.88",
+      "server": "85.209.157.184",
       "port": 8388,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "ss://2022-blake3-aes-128-gcm:NzJlOTQ5NWYtM2ZkYi00Cg%3D%3D@103.11.76.248:28679#%F0%9F%87%BA%F0%9F%87%B8US_474%7C252KB%2Fs%7CA004-260618",
+      "name": "🇺🇸US_474|252KB/s|A004-260618",
+      "type": "ss",
+      "server": "103.11.76.248",
+      "port": 28679,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "ss://2022-blake3-aes-256-gcm:Elufj0iAypXyPyJLiMqnxvK9fOXO1irCvGXNhV1fQ7E=:dg4NRB7UFFrpn1SE5a4MaehJoC4TbcC10UAxp8tSlB4=@46.226.166.205:56324#🇫🇷FR-🚀@VPNine1",
+      "name": "🇫🇷FR-🚀@VPNine1",
+      "type": "ss",
+      "server": "46.226.166.205",
+      "port": 56324,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
@@ -37,103 +55,139 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://2022-blake3-aes-256-gcm:fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=@167.150.100.115:27755#%F0%9F%87%B8%F0%9F%87%ACSG_20%7C258KB%2Fs%2001",
-      "name": "🇸🇬SG_20|258KB/s 01",
+      "uri": "ss://2022-blake3-aes-256-gcm:Zjc0N2QyYTkyNzc2NGRiZDhjY2NjYTU5Mzk2N2NkOTk=%3AYmNhN2UyNzdlNTg3NGFkMjkxNGY4ZjEzYWM2MzQ2NGQ=@84.32.131.61:18610#🇺🇸",
+      "name": "🇺🇸",
       "type": "ss",
-      "server": "167.150.100.115",
-      "port": 27755,
+      "server": "84.32.131.61",
+      "port": 18610,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:%2BNt5IdazH1gH7Cg7OvFoDX8Rx3koZi3YnHbunnlAuUM%3D@129.151.66.142:61312#%40SylphNet%20%7C%201405-07-07%20%2364",
-      "name": "@SylphNet | 1405-07-07 #64",
+      "uri": "ss://2022-blake3-aes-256-gcm:cOiC%2B3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4%3D%3AHWFFJN19JkvbTKo%2F79AfnbRBK9uHUUaFNZJyLjEoJGs%3D@51.222.107.43:2083#%F0%9F%87%A8%F0%9F%87%A6CA_18%7C1.5MB%2Fs%7CA004-260618",
+      "name": "🇨🇦CA_18|1.5MB/s|A004-260618",
       "type": "ss",
-      "server": "129.151.66.142",
-      "port": 61312,
+      "server": "51.222.107.43",
+      "port": 2083,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://2022-blake3-aes-256-gcm:dyL+KqX8hIMn+UyADwSJOPm72A0A83TsDOFXBn6I2mA=@49.13.3.249:23997#[1372][DE][0][SS][None][OpenSSTPVpn][2026-06-03][2026-10-01",
+      "name": "[1372][DE][0][SS][None][OpenSSTPVpn][2026-06-03][2026-10-01",
+      "type": "ss",
+      "server": "49.13.3.249",
+      "port": 23997,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://2022-blake3-aes-256-gcm:rrR97O6JIRzSRG8uHimVCgLEssjipthiC4Hlieq%2F4%2Fw=%3AB+gmrP1txQliTTw0NNVoHZ+wjNAL3nKHZopLtqlEAnI=@65.109.215.50:13049#🇫🇮",
+      "name": "🇫🇮",
+      "type": "ss",
+      "server": "65.109.215.50",
+      "port": 13049,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:3vkiRCxBVuoIaNr1JDwI2U5J8NdF0xUQG9aCerKc6jM%3D@129.150.57.198:56927#%F0%9F%87%B8%F0%9F%87%ACSG_75%7C396KB%2Fs%7CA004-260618",
+      "name": "🇸🇬SG_75|396KB/s|A004-260618",
+      "type": "ss",
+      "server": "129.150.57.198",
+      "port": 56927,
       "ok": true,
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:9ISnjQzxrbopifGW%2F50s3KTVx19cK6T07QlyzeExBRw%3D@130.61.84.200:59924#%40SylphNet%20%7C%201405-07-07%20%23246",
-      "name": "@SylphNet | 1405-07-07 #246",
+      "uri": "ss://2022-blake3-chacha20-poly1305:7V16oHuTUxMQAfyrAro%2Fm7NXdWktRoYZvIcoV7E0eHE%3D@129.146.56.197:50356#Shadowsocks%20003",
+      "name": "Shadowsocks 003",
       "type": "ss",
-      "server": "130.61.84.200",
-      "port": 59924,
+      "server": "129.146.56.197",
+      "port": 50356,
       "ok": true,
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:Aa5ruIBxlM7EdchzgDPJSS4Qs8sGtE2jaapL%2B288G34%3D@129.151.77.138:61312#%40SylphNet%20%7C%201405-07-07%20%2345",
-      "name": "@SylphNet | 1405-07-07 #45",
+      "uri": "ss://2022-blake3-chacha20-poly1305:9Biq%2FbLYu1Dmcuj4yhbtgnOVwa2pzAUAK0kPEL2FOJY%3D@129.146.38.47:50356#%F0%9F%87%BA%F0%9F%87%B8US_466%7C72KB%2Fs%7CA004-260618",
+      "name": "🇺🇸US_466|72KB/s|A004-260618",
       "type": "ss",
-      "server": "129.151.77.138",
-      "port": 61312,
+      "server": "129.146.38.47",
+      "port": 50356,
       "ok": true,
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:BtbUy0WbUk0zMteivmHloMnVJvH1AXCSV2MPpOzu1os%3D@134.65.60.121:61312#%40SylphNet%20%7C%201405-07-07%20%2328",
-      "name": "@SylphNet | 1405-07-07 #28",
+      "uri": "ss://2022-blake3-chacha20-poly1305:FWlUCAS9IBNg+5FoZ+U0kRs3dcz+oQnQkjGI%2FiKZMR0=@146.235.25.6:59319#🇧🇷",
+      "name": "🇧🇷",
       "type": "ss",
-      "server": "134.65.60.121",
-      "port": 61312,
+      "server": "146.235.25.6",
+      "port": 59319,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:MKzw1HxJdrY1+Pm12sIuiKt277hbryrPFKlSVTBWyMY=@134.98.147.129:45819#🇳🇱",
+      "name": "🇳🇱",
+      "type": "ss",
+      "server": "134.98.147.129",
+      "port": 45819,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:a8ii2yncuhwoLpYzpTs14Ctz33WtPwqsVKGqwoRGLBA=@158.178.146.109:45819#",
+      "name": "ss-14",
+      "type": "ss",
+      "server": "158.178.146.109",
+      "port": 45819,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://2022-blake3-chacha20-poly1305:blx2KcSxsvosK2DSiBqOj%2FQotc%2FYsdMOs0wTF9uSX7I%3D@168.107.77.7:56927#%F0%9F%87%B8%F0%9F%87%ACSG_85%7C305KB%2Fs%7CR002-260618",
+      "name": "🇸🇬SG_85|305KB/s|R002-260618",
+      "type": "ss",
+      "server": "168.107.77.7",
+      "port": 56927,
       "ok": true,
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:FQrzr8AfOOU7hZ4%2B8Cr8iDUUzlHz0S6dvyS44jdUe1o%3D@129.151.75.241:61312#%40SylphNet%20%7C%201405-07-07%20%2341",
-      "name": "@SylphNet | 1405-07-07 #41",
+      "uri": "ss://2022-blake3-chacha20-poly1305:f1gzyT3H7Eu6g%2Bj4WAD5IdouUwyt6vEmyjaYQSi8N%2Bw%3D@168.107.73.109:56927#%F0%9F%87%B8%F0%9F%87%ACSG_86%7C1.0MB%2Fs%7CR002-260618",
+      "name": "🇸🇬SG_86|1.0MB/s|R002-260618",
       "type": "ss",
-      "server": "129.151.75.241",
-      "port": 61312,
+      "server": "168.107.73.109",
+      "port": 56927,
       "ok": true,
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:OLSE823mI1o8K0A56QvU38ZcxIjpyhMayqkmo2vnDIs%3D@129.151.93.216:61312#%40SylphNet%20%7C%201405-07-07%20%23218",
-      "name": "@SylphNet | 1405-07-07 #218",
+      "uri": "ss://2022-blake3-chacha20-poly1305:oPlv4%2B8UGEF0KZ5f4kDFxpvV5SsW%2B3veVs23YwxFmBk%3D@129.146.164.199:50356#Shadowsocks%20007",
+      "name": "Shadowsocks 007",
       "type": "ss",
-      "server": "129.151.93.216",
-      "port": 61312,
+      "server": "129.146.164.199",
+      "port": 50356,
       "ok": true,
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:Sm4F5fX%2BZJpWpkXMNbw0yYrWolYIiwknVYDwx8eus78%3D@134.65.57.26:61312#%40SylphNet%20%7C%201405-07-07%20%2354",
-      "name": "@SylphNet | 1405-07-07 #54",
+      "uri": "ss://2022-blake3-chacha20-poly1305:rn3fzP%2B5S%2FuNM95%2F6uQr3rQEowZWgWUG3e2f853i1Ww%3D@129.146.60.110:50356#Shadowsocks%20008",
+      "name": "Shadowsocks 008",
       "type": "ss",
-      "server": "134.65.57.26",
-      "port": 61312,
+      "server": "129.146.60.110",
+      "port": 50356,
       "ok": true,
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:T1bAAqVlY6NI%2FtQyT8OEP6Sm7kh5JLYiNuHLqQWMvWE%3D@130.61.177.191:59924#%40SylphNet%20%7C%201405-07-07%20%2386",
-      "name": "@SylphNet | 1405-07-07 #86",
+      "uri": "ss://2022-blake3-chacha20-poly1305:viIh4ZhymCsvjIfhXYuFGQkeJEWkCHrqf3oNjsT0z00=@164.152.62.150:59319#🇧🇷",
+      "name": "🇧🇷",
       "type": "ss",
-      "server": "130.61.177.191",
-      "port": 59924,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:UNZ0W60AIJtxUPqtW9sZxhk3229fO2tam%2Befe3LvqZs%3D@134.65.57.214:61312#%40SylphNet%20%7C%201405-07-07%20%23150",
-      "name": "@SylphNet | 1405-07-07 #150",
-      "type": "ss",
-      "server": "134.65.57.214",
-      "port": 61312,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:ZEntWGl0SEq0qUIMx4UiTN482RzOg2VeZ2N5Qrte1Xc%3D@130.61.45.158:59924#%40SylphNet%20%7C%201405-07-07%20%23317",
-      "name": "@SylphNet | 1405-07-07 #317",
-      "type": "ss",
-      "server": "130.61.45.158",
-      "port": 59924,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
+      "server": "164.152.62.150",
+      "port": 59319,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
     }
   ]
 }

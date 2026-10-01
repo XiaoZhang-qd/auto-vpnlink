@@ -3,162 +3,82 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: '@SylphNet | 1405-07-07 #269'
+- name: 🇮🇱IL_2|1.9MB/s|V001-260618
   type: ss
-  server: 47.90.153.88
+  server: 85.209.157.184
   port: 8388
   cipher: 2022-blake3-aes-128-gcm
-  password: ABpp50oz/6gDZGxZQhVyKA==
+  password: EIIwJPg8YqgnjLLd58zoTg==:a74cobINsD2rxrS1sjJSCg==
   udp: true
-- name: '@SylphNet | 1405-07-07 #64'
+- name: 🇺🇸US_474|252KB/s|A004-260618
   type: ss
-  server: 129.151.66.142
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: +Nt5IdazH1gH7Cg7OvFoDX8Rx3koZi3YnHbunnlAuUM=
+  server: 103.11.76.248
+  port: 28679
+  cipher: 2022-blake3-aes-128-gcm
+  password: NzJlOTQ5NWYtM2ZkYi00Cg==
   udp: true
-- name: '@SylphNet | 1405-07-07 #246'
+- name: 🇸🇬SG_75|396KB/s|A004-260618
   type: ss
-  server: 130.61.84.200
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 9ISnjQzxrbopifGW/50s3KTVx19cK6T07QlyzeExBRw=
-  udp: true
-- name: '@SylphNet | 1405-07-07 #45'
-  type: ss
-  server: 129.151.77.138
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Aa5ruIBxlM7EdchzgDPJSS4Qs8sGtE2jaapL+288G34=
-  udp: true
-- name: '@SylphNet | 1405-07-07 #28'
-  type: ss
-  server: 134.65.60.121
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: BtbUy0WbUk0zMteivmHloMnVJvH1AXCSV2MPpOzu1os=
-  udp: true
-- name: '@SylphNet | 1405-07-07 #41'
-  type: ss
-  server: 129.151.75.241
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: FQrzr8AfOOU7hZ4+8Cr8iDUUzlHz0S6dvyS44jdUe1o=
-  udp: true
-- name: '@SylphNet | 1405-07-07 #218'
-  type: ss
-  server: 129.151.93.216
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: OLSE823mI1o8K0A56QvU38ZcxIjpyhMayqkmo2vnDIs=
-  udp: true
-- name: '@SylphNet | 1405-07-07 #54'
-  type: ss
-  server: 134.65.57.26
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Sm4F5fX+ZJpWpkXMNbw0yYrWolYIiwknVYDwx8eus78=
-  udp: true
-- name: '@SylphNet | 1405-07-07 #86'
-  type: ss
-  server: 130.61.177.191
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: T1bAAqVlY6NI/tQyT8OEP6Sm7kh5JLYiNuHLqQWMvWE=
-  udp: true
-- name: '@SylphNet | 1405-07-07 #150'
-  type: ss
-  server: 134.65.57.214
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: UNZ0W60AIJtxUPqtW9sZxhk3229fO2tam+efe3LvqZs=
-  udp: true
-- name: '@SylphNet | 1405-07-07 #317'
-  type: ss
-  server: 130.61.45.158
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ZEntWGl0SEq0qUIMx4UiTN482RzOg2VeZ2N5Qrte1Xc=
-  udp: true
-- name: '@SylphNet | 1405-07-07 #36'
-  type: ss
-  server: 129.151.87.174
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ZGdl9Z9O3TiObPZgqNPxdpI+CtXARkebB5TNOpqZJH0=
-  udp: true
-- name: '@SylphNet | 1405-07-07 #72'
-  type: ss
-  server: 129.151.64.23
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: bgO5KO6o1ZQJ2Jm3nMXWkUplEqHxOjE5qHAgSYvDw4A=
-  udp: true
-- name: '@SylphNet | 1405-07-07 #261'
-  type: ss
-  server: 168.107.78.228
+  server: 129.150.57.198
   port: 56927
   cipher: 2022-blake3-chacha20-poly1305
-  password: bkirkeLNxhjqSpiH40KS1FGcpKSwnAEWm8+DN3QLPoU=
+  password: 3vkiRCxBVuoIaNr1JDwI2U5J8NdF0xUQG9aCerKc6jM=
   udp: true
-- name: '@SylphNet | 1405-07-07 #11'
+- name: Shadowsocks 003
   type: ss
-  server: 130.61.113.67
-  port: 59924
+  server: 129.146.56.197
+  port: 50356
   cipher: 2022-blake3-chacha20-poly1305
-  password: blAJWikPmYuU27XuzkTPQc+WLKHKmK5PluU5rt1miwU=
+  password: 7V16oHuTUxMQAfyrAro/m7NXdWktRoYZvIcoV7E0eHE=
   udp: true
-- name: '@SylphNet | 1405-07-07 #325'
+- name: 🇺🇸US_466|72KB/s|A004-260618
   type: ss
-  server: 213.35.124.191
+  server: 129.146.38.47
+  port: 50356
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 9Biq/bLYu1Dmcuj4yhbtgnOVwa2pzAUAK0kPEL2FOJY=
+  udp: true
+- name: 🇸🇬SG_85|305KB/s|R002-260618
+  type: ss
+  server: 168.107.77.7
   port: 56927
   cipher: 2022-blake3-chacha20-poly1305
-  password: f3lz1aPywEuTpS4I3mmarFU+LDABF1eDBRHJ2zNgiRM=
+  password: blx2KcSxsvosK2DSiBqOj/Qotc/YsdMOs0wTF9uSX7I=
   udp: true
-- name: '@SylphNet | 1405-07-07 #30'
+- name: 🇸🇬SG_86|1.0MB/s|R002-260618
   type: ss
-  server: 134.65.63.84
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: lzhjI3jtrWa2fM7GAWa3TNPZievCEkTqTlOzW+A0Ct8=
-  udp: true
-- name: '@SylphNet | 1405-07-07 #311'
-  type: ss
-  server: 168.107.84.41
+  server: 168.107.73.109
   port: 56927
   cipher: 2022-blake3-chacha20-poly1305
-  password: s9CVCQlH8SB/LXByDobKTOMdTjJ7WScGfA57wZhHbek=
+  password: f1gzyT3H7Eu6g+j4WAD5IdouUwyt6vEmyjaYQSi8N+w=
   udp: true
-- name: '@SylphNet | 1405-07-07 #121'
+- name: Shadowsocks 007
   type: ss
-  server: 130.61.84.196
-  port: 59924
+  server: 129.146.164.199
+  port: 50356
   cipher: 2022-blake3-chacha20-poly1305
-  password: zwbOr/I/6+EK8ln8DB8N3/w+EGgtGtwGscxeRXRk53A=
+  password: oPlv4+8UGEF0KZ5f4kDFxpvV5SsW+3veVs23YwxFmBk=
+  udp: true
+- name: Shadowsocks 008
+  type: ss
+  server: 129.146.60.110
+  port: 50356
+  cipher: 2022-blake3-chacha20-poly1305
+  password: rn3fzP+5S/uNM95/6uQr3rQEowZWgWUG3e2f853i1Ww=
   udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - '@SylphNet | 1405-07-07 #269'
-  - '@SylphNet | 1405-07-07 #64'
-  - '@SylphNet | 1405-07-07 #246'
-  - '@SylphNet | 1405-07-07 #45'
-  - '@SylphNet | 1405-07-07 #28'
-  - '@SylphNet | 1405-07-07 #41'
-  - '@SylphNet | 1405-07-07 #218'
-  - '@SylphNet | 1405-07-07 #54'
-  - '@SylphNet | 1405-07-07 #86'
-  - '@SylphNet | 1405-07-07 #150'
-  - '@SylphNet | 1405-07-07 #317'
-  - '@SylphNet | 1405-07-07 #36'
-  - '@SylphNet | 1405-07-07 #72'
-  - '@SylphNet | 1405-07-07 #261'
-  - '@SylphNet | 1405-07-07 #11'
-  - '@SylphNet | 1405-07-07 #325'
-  - '@SylphNet | 1405-07-07 #30'
-  - '@SylphNet | 1405-07-07 #311'
-  - '@SylphNet | 1405-07-07 #121'
+  - 🇮🇱IL_2|1.9MB/s|V001-260618
+  - 🇺🇸US_474|252KB/s|A004-260618
+  - 🇸🇬SG_75|396KB/s|A004-260618
+  - Shadowsocks 003
+  - 🇺🇸US_466|72KB/s|A004-260618
+  - 🇸🇬SG_85|305KB/s|R002-260618
+  - 🇸🇬SG_86|1.0MB/s|R002-260618
+  - Shadowsocks 007
+  - Shadowsocks 008
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
