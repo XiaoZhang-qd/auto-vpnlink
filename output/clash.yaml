@@ -3,82 +3,26 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇱IL_2|1.9MB/s|V001-260618
+- name: 🇮🇱IL_4|269KB/s|V001-260618
   type: ss
   server: 85.209.157.184
   port: 8388
   cipher: 2022-blake3-aes-128-gcm
   password: EIIwJPg8YqgnjLLd58zoTg==:a74cobINsD2rxrS1sjJSCg==
   udp: true
-- name: 🇺🇸US_474|252KB/s|A004-260618
+- name: 🇩🇪DE_136|5.1MB/s|A001-260618
   type: ss
-  server: 103.11.76.248
-  port: 28679
-  cipher: 2022-blake3-aes-128-gcm
-  password: NzJlOTQ5NWYtM2ZkYi00Cg==
-  udp: true
-- name: 🇸🇬SG_75|396KB/s|A004-260618
-  type: ss
-  server: 129.150.57.198
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 3vkiRCxBVuoIaNr1JDwI2U5J8NdF0xUQG9aCerKc6jM=
-  udp: true
-- name: Shadowsocks 003
-  type: ss
-  server: 129.146.56.197
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 7V16oHuTUxMQAfyrAro/m7NXdWktRoYZvIcoV7E0eHE=
-  udp: true
-- name: 🇺🇸US_466|72KB/s|A004-260618
-  type: ss
-  server: 129.146.38.47
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 9Biq/bLYu1Dmcuj4yhbtgnOVwa2pzAUAK0kPEL2FOJY=
-  udp: true
-- name: 🇸🇬SG_85|305KB/s|R002-260618
-  type: ss
-  server: 168.107.77.7
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: blx2KcSxsvosK2DSiBqOj/Qotc/YsdMOs0wTF9uSX7I=
-  udp: true
-- name: 🇸🇬SG_86|1.0MB/s|R002-260618
-  type: ss
-  server: 168.107.73.109
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: f1gzyT3H7Eu6g+j4WAD5IdouUwyt6vEmyjaYQSi8N+w=
-  udp: true
-- name: Shadowsocks 007
-  type: ss
-  server: 129.146.164.199
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: oPlv4+8UGEF0KZ5f4kDFxpvV5SsW+3veVs23YwxFmBk=
-  udp: true
-- name: Shadowsocks 008
-  type: ss
-  server: 129.146.60.110
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: rn3fzP+5S/uNM95/6uQr3rQEowZWgWUG3e2f853i1Ww=
+  server: 141.95.29.163
+  port: 2083
+  cipher: 2022-blake3-aes-256-gcm
+  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:JTou+JSmZOAyrMLdvNBcXFm0Y9luZ/8u17ie48jQfVc=
   udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇮🇱IL_2|1.9MB/s|V001-260618
-  - 🇺🇸US_474|252KB/s|A004-260618
-  - 🇸🇬SG_75|396KB/s|A004-260618
-  - Shadowsocks 003
-  - 🇺🇸US_466|72KB/s|A004-260618
-  - 🇸🇬SG_85|305KB/s|R002-260618
-  - 🇸🇬SG_86|1.0MB/s|R002-260618
-  - Shadowsocks 007
-  - Shadowsocks 008
+  - 🇮🇱IL_4|269KB/s|V001-260618
+  - 🇩🇪DE_136|5.1MB/s|A001-260618
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
