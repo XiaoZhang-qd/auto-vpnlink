@@ -3,122 +3,50 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸US_306|1.1MB/s|A004-260618
+- name: 🇺🇸US_375|827KB/s|A004-260618
   type: ss
   server: 103.11.76.248
   port: 28679
   cipher: 2022-blake3-aes-128-gcm
   password: NzJlOTQ5NWYtM2ZkYi00Cg==
   udp: true
-- name: 🇺🇸US_513|1.7MB/s|A004-260618
+- name: '@SylphNet | 1405-07-26 #198'
   type: ss
-  server: 172.86.108.79
-  port: 30832
-  cipher: 2022-blake3-aes-128-gcm
-  password: jr+T2RS0sCHBmC4u6aY6Vg==
+  server: 129.150.59.74
+  port: 14384
+  cipher: 2022-blake3-aes-256-gcm
+  password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
   udp: true
-- name: '🇳🇱 [SS] Нидерланды #4124 | РосТуннель t.me/rjsxrd'
+- name: 🇩🇪DE-209.46.102.22-0133
   type: ss
-  server: 193.29.139.234
-  port: 8080
+  server: 209.46.102.22
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
+  password: 1hhrqrokj3ag
   udp: true
-- name: ss-4
+- name: 🇩🇪DE-57.129.113.16-0235
   type: ss
-  server: sth.free-outline.giize.com
-  port: 1081
+  server: 57.129.113.16
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: 6qmp91myp2jj13dt
+  password: NcAXc0UZI6yQJE1p8QmOv8
   udp: true
-- name: '🇧🇷 [SS] Бразилия #15099 | РосТуннель t.me/rjsxrd'
+- name: 🇨🇳CN-8.209.74.72-0146
   type: ss
-  server: 206.1.99.116
-  port: 1080
+  server: 8.209.74.72
+  port: 20001
   cipher: chacha20-ietf-poly1305
-  password: CM-_ISRcHPz4cetu7grgSEv0VpT5MTRE
-  udp: true
-- name: '🇺🇸 [SS] США #707 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: j3PKOCj7wHl5Pk6thI9HyXtCa6JU180IlBpWANgFjkY=
-  udp: true
-- name: ss-7
-  type: ss
-  server: 77.221.155.75
-  port: 12576
-  cipher: chacha20-ietf-poly1305
-  password: kXN5NlzjYJEQG8ofMHwlzE
-  udp: true
-- name: 1.🇳🇱Нидерланды | @LimeVPNFREE t.me/rjsxrd
-  type: ss
-  server: 193.29.139.151
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 32.🇳🇱Нидерланды | @LimeVPNFREE t.me/rjsxrd
-  type: ss
-  server: 193.29.139.235
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: ss-10
-  type: ss
-  server: 82.38.31.171
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 582.🇳🇱Нидерланды | @LimeVPNFREE t.me/rjsxrd
-  type: ss
-  server: 82.38.31.9
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: filembad-26
-  type: ss
-  server: 86.106.84.194
-  port: 13261
-  cipher: aes-128-gcm
-  password: 2bf536a4bd6008511734a505d248de2c
-  udp: true
-- name: '🇺🇸 [SS] США #11069 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 64.74.163.67
-  port: 18764
-  cipher: aes-128-gcm
-  password: 4efe1af272e7292139b889f6a63ee071
-  udp: true
-- name: '🇮🇹 [SS] Италия #12998 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 95.141.37.24
-  port: 18172
-  cipher: aes-128-gcm
-  password: b6af4bce5459c412a0d6dcdd6921259b
+  password: PWpjPo3tqhPN4yRZ
   udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸US_306|1.1MB/s|A004-260618
-  - 🇺🇸US_513|1.7MB/s|A004-260618
-  - '🇳🇱 [SS] Нидерланды #4124 | РосТуннель t.me/rjsxrd'
-  - ss-4
-  - '🇧🇷 [SS] Бразилия #15099 | РосТуннель t.me/rjsxrd'
-  - '🇺🇸 [SS] США #707 | РосТуннель t.me/rjsxrd'
-  - ss-7
-  - 1.🇳🇱Нидерланды | @LimeVPNFREE t.me/rjsxrd
-  - 32.🇳🇱Нидерланды | @LimeVPNFREE t.me/rjsxrd
-  - ss-10
-  - 582.🇳🇱Нидерланды | @LimeVPNFREE t.me/rjsxrd
-  - filembad-26
-  - '🇺🇸 [SS] США #11069 | РосТуннель t.me/rjsxrd'
-  - '🇮🇹 [SS] Италия #12998 | РосТуннель t.me/rjsxrd'
+  - 🇺🇸US_375|827KB/s|A004-260618
+  - '@SylphNet | 1405-07-26 #198'
+  - 🇩🇪DE-209.46.102.22-0133
+  - 🇩🇪DE-57.129.113.16-0235
+  - 🇨🇳CN-8.209.74.72-0146
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50

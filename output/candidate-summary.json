@@ -1,14 +1,14 @@
 {
   "search_limit": 5000,
   "discovered_lines_considered": 5000,
-  "rejected_malformed": 3341,
-  "unique_candidates": 483,
+  "rejected_malformed": 2218,
+  "unique_candidates": 723,
   "protocol_candidates": {
-    "vless": 1,
+    "vless": 3,
     "vmess": 0,
     "trojan": 0,
-    "ss": 51,
-    "hysteria2": 431,
+    "ss": 32,
+    "hysteria2": 688,
     "hysteria": 0,
     "hy2": 0,
     "tuic": 0
@@ -16,11 +16,11 @@
   "health_candidate_limit": 300,
   "selected": 300,
   "selected_protocols": {
-    "vless": 1,
+    "vless": 3,
     "vmess": 0,
     "trojan": 0,
-    "ss": 48,
-    "hysteria2": 251,
+    "ss": 32,
+    "hysteria2": 265,
     "hysteria": 0,
     "hy2": 0,
     "tuic": 0

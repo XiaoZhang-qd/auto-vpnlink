@@ -5,6 +5,42 @@
       "settings": {
         "vnext": [
           {
+            "address": "1.1.1.1",
+            "port": 443,
+            "users": [
+              {
+                "id": "u",
+                "encryption": "none",
+                "flow": null
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "example.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "uuid",
+                "encryption": "none",
+                "flow": null
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "host.com",
             "port": 443,
             "users": [
