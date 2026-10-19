@@ -5,21 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-2",
-      "server": "1.1.1.1",
-      "server_port": 443,
-      "uuid": "u"
-    },
-    {
-      "type": "vless",
-      "tag": "vless-3",
-      "server": "example.com",
-      "server_port": 443,
-      "uuid": "uuid"
-    },
-    {
-      "type": "vless",
-      "tag": "vless-4",
+      "tag": "vless-1",
       "server": "host.com",
       "server_port": 443,
       "uuid": "uuid",
@@ -33,9 +19,7 @@
       "type": "selector",
       "tag": "AUTO",
       "outbounds": [
-        "vless-2",
-        "vless-3",
-        "vless-4"
+        "vless-1"
       ]
     }
   ]

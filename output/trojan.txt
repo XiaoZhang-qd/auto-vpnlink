@@ -1,0 +1,1 @@
+trojan://19877587-ed94-4033-88cd-4ac50a5e8718@104.16.148.5:443?security=tls&type=ws&path=%2FWangCai-8&sni=dimskiee.biz.id#%F0%9F%8F%B3%EF%B8%8F_%E6%9C%AA%E7%9F%A5_118

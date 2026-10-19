@@ -3,50 +3,86 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸US_375|827KB/s|A004-260618
+- name: 🇺🇸US_293|1.1MB/s|A004-260618
   type: ss
   server: 103.11.76.248
   port: 28679
   cipher: 2022-blake3-aes-128-gcm
   password: NzJlOTQ5NWYtM2ZkYi00Cg==
   udp: true
-- name: '@SylphNet | 1405-07-26 #198'
+- name: '🇨🇭 [SS] Швейцария #8387 | РосТуннель t.me/rjsxrd'
   type: ss
-  server: 129.150.59.74
-  port: 14384
-  cipher: 2022-blake3-aes-256-gcm
-  password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
-  udp: true
-- name: 🇩🇪DE-209.46.102.22-0133
-  type: ss
-  server: 209.46.102.22
+  server: 132.243.175.144
   port: 8388
   cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-- name: 🇩🇪DE-57.129.113.16-0235
+- name: '🇳🇱 [SS] Нидерланды #3354 | РосТуннель t.me/rjsxrd'
   type: ss
-  server: 57.129.113.16
-  port: 8388
+  server: 193.29.139.204
+  port: 8080
   cipher: chacha20-ietf-poly1305
-  password: NcAXc0UZI6yQJE1p8QmOv8
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇨🇳CN-8.209.74.72-0146
+- name: '🇳🇱 [SS] Нидерланды #854 | РосТуннель t.me/rjsxrd'
   type: ss
-  server: 8.209.74.72
-  port: 20001
+  server: 82.38.31.149
+  port: 8080
   cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
+- name: '🇬🇧 [SS] Великобритания #2343 | РосТуннель t.me/rjsxrd'
+  type: ss
+  server: 82.38.31.171
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: '🇯🇵 [SS] Япония #5761 | РосТуннель t.me/rjsxrd'
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: '🇺🇸 [SS] США #11619 | РосТуннель t.me/rjsxrd'
+  type: ss
+  server: 15.204.246.107
+  port: 8888
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: '🇷🇺 [SS] Россия #14124 | РосТуннель t.me/rjsxrd'
+  type: ss
+  server: 176.32.33.143
+  port: 18443
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+  udp: true
+- name: 🏳️_未知_118
+  type: trojan
+  server: 104.16.148.5
+  port: 443
+  password: 19877587-ed94-4033-88cd-4ac50a5e8718
+  sni: dimskiee.biz.id
+  udp: true
+  network: ws
+  ws-opts:
+    path: /WangCai-8
+    headers: {}
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸US_375|827KB/s|A004-260618
-  - '@SylphNet | 1405-07-26 #198'
-  - 🇩🇪DE-209.46.102.22-0133
-  - 🇩🇪DE-57.129.113.16-0235
-  - 🇨🇳CN-8.209.74.72-0146
+  - 🇺🇸US_293|1.1MB/s|A004-260618
+  - '🇨🇭 [SS] Швейцария #8387 | РосТуннель t.me/rjsxrd'
+  - '🇳🇱 [SS] Нидерланды #3354 | РосТуннель t.me/rjsxrd'
+  - '🇳🇱 [SS] Нидерланды #854 | РосТуннель t.me/rjsxrd'
+  - '🇬🇧 [SS] Великобритания #2343 | РосТуннель t.me/rjsxrd'
+  - '🇯🇵 [SS] Япония #5761 | РосТуннель t.me/rjsxrd'
+  - '🇺🇸 [SS] США #11619 | РосТуннель t.me/rjsxrd'
+  - '🇷🇺 [SS] Россия #14124 | РосТуннель t.me/rjsxrd'
+  - 🏳️_未知_118
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
