@@ -1,0 +1,2 @@
+trojan://19877587-ed94-4033-88cd-4ac50a5e8718@104.16.148.5:443?security=tls&type=ws&path=%2FWangCai-8&sni=dimskiee.biz.id#CA
+trojan://4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA@de7.dedushka.top:443?allowInsecure=0&sni=de7.dedushka.top#%5Bwww.v2nodes.com%5D%20trojan-DE-...%20%235
