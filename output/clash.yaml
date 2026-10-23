@@ -3,170 +3,74 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸US_330|1.0MB/s|A004-260618
-  type: ss
-  server: 103.11.76.248
-  port: 28679
-  cipher: 2022-blake3-aes-128-gcm
-  password: NzJlOTQ5NWYtM2ZkYi00Cg==
-  udp: true
-- name: 🇳🇱NL_326|1.9MB/s|A004-260618
-  type: ss
-  server: 31.57.185.124
-  port: 51018
-  cipher: 2022-blake3-aes-256-gcm
-  password: kda5bBwQnLkzeEmGDz6GFXm/+nilgt/2CP5+EM3wCIg=:fAOnN6mVpRrUS/wj1fMBE/kXRRLzD715DCL9bZddeWo=
-  udp: true
-- name: 🇸🇬SG_73|1001KB/s|B007-260618
+- name: '@SylphNet | 1405-08-01 #159'
   type: ss
   server: 129.150.59.74
   port: 14384
   cipher: 2022-blake3-aes-256-gcm
   password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
   udp: true
-- name: '🇳🇱 [SS] Нидерланды #9058 | РосТуннель t.me/rjsxrd'
+- name: 🇩🇪
   type: ss
   server: 193.29.139.234
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: 4a2rfixophdjffa8KVA4Aa
   udp: true
-- name: '🇨🇭 [SS] Швейцария #1606 | РосТуннель t.me/rjsxrd'
+- name: 🇩🇪 [2]
+  type: ss
+  server: 193.29.139.212
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  udp: true
+- name: 🇨🇭
   type: ss
   server: 132.243.175.144
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-- name: '🇺🇸 [SS] США #12098 | РосТуннель t.me/rjsxrd'
+- name: '🇳🇱 [SS] Нидерланды #1288 | РосТуннель t.me/rjsxrd'
   type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: nQeEoXC5Yl5PZnPLvKUpFTU9cyQcNG902zpibWkwGbo=
-  udp: true
-- name: '🇳🇱 [SS] Нидерланды #2049 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 193.29.139.151
+  server: 193.29.139.197
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: '🇳🇱 [SS] Нидерланды #11265 | РосТуннель t.me/rjsxrd'
+- name: '🇳🇱 [SS] Нидерланды #11864 | РосТуннель t.me/rjsxrd'
   type: ss
   server: 82.38.31.149
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: '🇳🇱 [SS] Нидерланды #13718 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 82.38.31.16
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: '🇬🇧 [SS] Великобритания #7927 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 82.38.31.171
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: '🇳🇱 [SS] Нидерланды #10772 | РосТуннель t.me/rjsxrd'
+- name: '🇳🇱 [SS] Нидерланды #11354 | РосТуннель t.me/rjsxrd'
   type: ss
   server: 82.38.31.11
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: '🇯🇵 [SS] Япония #9982 | РосТуннель t.me/rjsxrd'
+- name: '🇳🇱 [SS] Нидерланды #8297 | РосТуннель t.me/rjsxrd'
   type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: '🇧🇷 [SS] Бразилия #10522 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 191.223.221.53
-  port: 8388
-  cipher: aes-256-gcm
-  password: JuD6MNgtX3nVpCzFzXYVYjDTZ7nsmaTv
-  udp: true
-- name: '🇬🇧 [SS] Великобритания #6280 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 185.176.206.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: '🇺🇸 [SS] США #8221 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 185.215.132.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: '🇿🇦 [SS] ЮАР #1651 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 185.230.230.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: '🇺🇸 [SS] США #8574 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 193.151.160.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: '🇺🇸 [SS] США #86 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 193.151.163.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: '🇳🇱 [SS] Нидерланды #6235 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 202.50.253.45
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: '🇳🇱 [SS] Нидерланды #10666 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 202.50.253.54
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  server: 82.38.31.9
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸US_330|1.0MB/s|A004-260618
-  - 🇳🇱NL_326|1.9MB/s|A004-260618
-  - 🇸🇬SG_73|1001KB/s|B007-260618
-  - '🇳🇱 [SS] Нидерланды #9058 | РосТуннель t.me/rjsxrd'
-  - '🇨🇭 [SS] Швейцария #1606 | РосТуннель t.me/rjsxrd'
-  - '🇺🇸 [SS] США #12098 | РосТуннель t.me/rjsxrd'
-  - '🇳🇱 [SS] Нидерланды #2049 | РосТуннель t.me/rjsxrd'
-  - '🇳🇱 [SS] Нидерланды #11265 | РосТуннель t.me/rjsxrd'
-  - '🇳🇱 [SS] Нидерланды #13718 | РосТуннель t.me/rjsxrd'
-  - '🇬🇧 [SS] Великобритания #7927 | РосТуннель t.me/rjsxrd'
-  - '🇳🇱 [SS] Нидерланды #10772 | РосТуннель t.me/rjsxrd'
-  - '🇯🇵 [SS] Япония #9982 | РосТуннель t.me/rjsxrd'
-  - '🇧🇷 [SS] Бразилия #10522 | РосТуннель t.me/rjsxrd'
-  - '🇬🇧 [SS] Великобритания #6280 | РосТуннель t.me/rjsxrd'
-  - '🇺🇸 [SS] США #8221 | РосТуннель t.me/rjsxrd'
-  - '🇿🇦 [SS] ЮАР #1651 | РосТуннель t.me/rjsxrd'
-  - '🇺🇸 [SS] США #8574 | РосТуннель t.me/rjsxrd'
-  - '🇺🇸 [SS] США #86 | РосТуннель t.me/rjsxrd'
-  - '🇳🇱 [SS] Нидерланды #6235 | РосТуннель t.me/rjsxrd'
-  - '🇳🇱 [SS] Нидерланды #10666 | РосТуннель t.me/rjsxrd'
+  - '@SylphNet | 1405-08-01 #159'
+  - 🇩🇪
+  - 🇩🇪 [2]
+  - 🇨🇭
+  - '🇳🇱 [SS] Нидерланды #1288 | РосТуннель t.me/rjsxrd'
+  - '🇳🇱 [SS] Нидерланды #11864 | РосТуннель t.me/rjsxrd'
+  - '🇳🇱 [SS] Нидерланды #11354 | РосТуннель t.me/rjsxrd'
+  - '🇳🇱 [SS] Нидерланды #8297 | РосТуннель t.me/rjsxrd'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
