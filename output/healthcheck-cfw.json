@@ -1,12 +1,12 @@
 {
-  "candidate_limit": 16,
-  "tested": 15,
+  "candidate_limit": 39,
+  "tested": 27,
   "skipped": 1,
-  "healthy": 8,
-  "failed": 7,
+  "healthy": 10,
+  "failed": 17,
   "success_target": 10,
-  "target_reached": false,
-  "runner_public_ip": "134.33.67.120",
+  "target_reached": true,
+  "runner_public_ip": "4.236.159.227",
   "allowed_types": [
     "hysteria",
     "hysteria2",
@@ -19,17 +19,17 @@
   "rounds": 3,
   "results": [
     {
-      "uri": "ss://2022-blake3-aes-256-gcm:WAqeGA+dU+HZYSipCio+Jmt7SSVfHjwMH7j8xmsm7%2Fs=:althddZ27iu261I+568pk7HZzBFDCyIx6pvG8H9oXow=@172.104.129.6:2087#https://t.me/ShadowsocksM9",
-      "name": "https://t.me/ShadowsocksM9",
+      "uri": "ss://2022-blake3-aes-256-gcm:Q2YsIzc5YkchSFjsqUZWrQAFtsSpqf7XxYxkG4%2BJbsk%3D%3AzT1SecPttPY%2FXPW6NwjK5Wql%2B%2F6zbcGSDJK21Jk8uLo%3D@216.9.225.189:443#%F0%9F%87%BA%F0%9F%87%B8US_390%7C1.9MB%2Fs%7CA004-260618",
+      "name": "🇺🇸US_390|1.9MB/s|A004-260618",
       "type": "ss",
-      "server": "172.104.129.6",
-      "port": 2087,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
+      "server": "216.9.225.189",
+      "port": 443,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-aes-256-gcm:sUR6Ny8Y6PSvHhl%2FDUxconwxg6VZyFdsdfaVCvEatJo%3D%3A7bTEhHgpErKiRjE1ega%2BH6pcpJsNLFB0CjQseujAHrA%3D@129.150.59.74:14384#%40SylphNet%20%7C%201405-08-01%20%23159",
-      "name": "@SylphNet | 1405-08-01 #159",
+      "uri": "ss://2022-blake3-aes-256-gcm:sUR6Ny8Y6PSvHhl%2FDUxconwxg6VZyFdsdfaVCvEatJo%3D%3A7bTEhHgpErKiRjE1ega%2BH6pcpJsNLFB0CjQseujAHrA%3D@129.150.59.74:14384#%40SylphNet%20%7C%201405-08-02%20%23182",
+      "name": "@SylphNet | 1405-08-02 #182",
       "type": "ss",
       "server": "129.150.59.74",
       "port": 14384,
@@ -55,29 +55,11 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFhQDE5My4yOS4xMzkuMjM0OjgwODA=#🇩🇪",
-      "name": "🇩🇪",
-      "type": "ss",
-      "server": "193.29.139.234",
-      "port": 8080,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
       "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2NExiS0huQjNJTzc1OXVlRW5oZ01HQDUyLjE0Mi4xNjEuOTozNDQyNA==#%DA%A9%D8%A7%D9%86%D8%A7%D9%84+%3A+%40V2rayNGvpni",
       "name": "کانال+:+@V2rayNGvpni",
       "type": "ss",
       "server": "52.142.161.9",
       "port": 34424,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3ZTY4ZTMyZi04MDE1LTRmMzctOTA4Mi03MGU4YjBiNTgwNDNANTQuMTc5LjIwMy45NTo4NDQz#🇩🇪",
-      "name": "🇩🇪",
-      "type": "ss",
-      "server": "54.179.203.95",
-      "port": 8443,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
@@ -91,22 +73,13 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRQ1hEeHVEbFRUTUQ3anRnSFVqSW9qQDE5My4yOS4xMzkuMjEyOjgwODA=#🇩🇪",
-      "name": "🇩🇪",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYNmJ0YlJ2SkNvM3VUUS0teWFhVDhNdmgwQ2dxaFlUTEAyLjI3LjcuMjUwOjgzODg=#",
+      "name": "ss-8",
       "type": "ss",
-      "server": "193.29.139.212",
-      "port": 8080,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplOEtnUzhmRDB5RHFZRnBnTjRHNXBpQ090OWFGeXFBM0AxMzIuMjQzLjE3NS4xNDQ6ODM4OA==#🇨🇭",
-      "name": "🇨🇭",
-      "type": "ss",
-      "server": "132.243.175.144",
+      "server": "2.27.7.250",
       "port": 8388,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
+      "ok": false,
+      "reason": "no_proxied_public_ip"
     },
     {
       "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1ZnQHNlcmllcy1hMi5zYW1hbmVoaGEuY286NDQz#%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_4",
@@ -118,26 +91,26 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNBQDE5My4yOS4xMzkuMTk3OjgwODA=#%F0%9F%87%B3%F0%9F%87%B1%20%5BSS%5D%20%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%8B%20%231288%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me%2Frjsxrd",
-      "name": "🇳🇱 [SS] Нидерланды #1288 | РосТуннель t.me/rjsxrd",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNBQDgyLjM4LjMxLjE2NTo0NDM=#%F0%9F%87%AC%F0%9F%87%A7%20%5BSS%5D%20%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B1%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F%20%238081%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me%2Frjsxrd",
+      "name": "🇬🇧 [SS] Великобритания #8081 | РосТуннель t.me/rjsxrd",
       "type": "ss",
-      "server": "193.29.139.197",
+      "server": "82.38.31.165",
+      "port": 443,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNBQDgyLjM4LjMxLjE2OjgwODA=#%F0%9F%87%B3%F0%9F%87%B1%20%5BSS%5D%20%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%8B%20%2314368%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me%2Frjsxrd",
+      "name": "🇳🇱 [SS] Нидерланды #14368 | РосТуннель t.me/rjsxrd",
+      "type": "ss",
+      "server": "82.38.31.16",
       "port": 8080,
       "ok": true,
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNBQDgyLjM4LjMxLjE0OTo4MDgw#%F0%9F%87%B3%F0%9F%87%B1%20%5BSS%5D%20%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%8B%20%2311864%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me%2Frjsxrd",
-      "name": "🇳🇱 [SS] Нидерланды #11864 | РосТуннель t.me/rjsxrd",
-      "type": "ss",
-      "server": "82.38.31.149",
-      "port": 8080,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNBQDgyLjM4LjMxLjExOjgwODA=#%F0%9F%87%B3%F0%9F%87%B1%20%5BSS%5D%20%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%8B%20%2311354%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me%2Frjsxrd",
-      "name": "🇳🇱 [SS] Нидерланды #11354 | РосТуннель t.me/rjsxrd",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNBQDgyLjM4LjMxLjExOjgwODA=#%F0%9F%87%B3%F0%9F%87%B1%20%5BSS%5D%20%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%8B%20%2311208%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me%2Frjsxrd",
+      "name": "🇳🇱 [SS] Нидерланды #11208 | РосТуннель t.me/rjsxrd",
       "type": "ss",
       "server": "82.38.31.11",
       "port": 8080,
@@ -145,11 +118,146 @@
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNBQDgyLjM4LjMxLjk6ODA4MA==#%F0%9F%87%B3%F0%9F%87%B1%20%5BSS%5D%20%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%8B%20%238297%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me%2Frjsxrd",
-      "name": "🇳🇱 [SS] Нидерланды #8297 | РосТуннель t.me/rjsxrd",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpyV0lnMTZwbGdaODJWN01UTmN3MVVUZ2lZSzRvb1BVQjk1cVZoS0l3SURjPUAxMzAuNDkuMTg5LjE1ODo0MzU1OA==#%F0%9F%87%BA%F0%9F%87%B8%20%5BSS%5D%20%D0%A1%D0%A8%D0%90%20%233931%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me%2Frjsxrd",
+      "name": "🇺🇸 [SS] США #3931 | РосТуннель t.me/rjsxrd",
       "type": "ss",
-      "server": "82.38.31.9",
-      "port": 8080,
+      "server": "130.49.189.158",
+      "port": 43558,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtcG9seTEzMDU6dTE3VDNCdnBZYWFpdVcyY0BzZXJpZXMtYTItbWVjLnNhbWFuZWhoYS5jbzo0NDM=#%DA%A9%D8%A7%D9%86%D8%A7%D9%84+%3A+%40V2rayNGvpni",
+      "name": "کانال+:+@V2rayNGvpni",
+      "type": "ss",
+      "server": "series-a2-mec.samanehha.co",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "ss://YWVzLTEyOC1jZmI6UWF6RWRjVGdiMTU5QCQqQDE0LjI5LjEyNC4xNjg6MjUyOTQ#🏴‍☠️",
+      "name": "🏴‍☠️",
+      "type": "ss",
+      "server": "14.29.124.168",
+      "port": 25294,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://YWVzLTEyOC1jZmI6c2hhZG93c29ja3NAMTA5LjIwMS4xNTIuMTgxOjQ0Mw==:443#%F0%9F%87%BA%F0%9F%87%B3%20%40MrMeshkyChannel%20200769",
+      "name": "🇺🇳 @MrMeshkyChannel 200769",
+      "type": "ss",
+      "server": "109.201.152.181",
+      "port": 443,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "ss://YWVzLTEyOC1nY206OTA1NDcwMTA2ZjZjNDlkNjhlOTBhNWM1NWMwMjAxOTBAMTkzLjE0OC4xOS4yMTI6MTI3OTY=#%5BOpenRay%5D%20%F0%9F%87%AA%F0%9F%87%B8ES-2",
+      "name": "[OpenRay] 🇪🇸ES-2",
+      "type": "ss",
+      "server": "193.148.19.212",
+      "port": 12796,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDVANTQuMTk5LjE1LjcwOjQ0Mw==#%F0%9F%87%AF%F0%9F%87%B5_JP_%E6%97%A5%E6%9C%AC_6",
+      "name": "🇯🇵_JP_日本_6",
+      "type": "ss",
+      "server": "54.199.15.70",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwM0A0Ni4xODMuMTg1LjE1Ojk4OQ==:443#%F0%9F%87%BA%F0%9F%87%B3%20%40MrMeshkyChannel%20979491",
+      "name": "🇺🇳 @MrMeshkyChannel 979491",
+      "type": "ss",
+      "server": "46.183.185.15",
+      "port": 989,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwM0AxNzEuMjIuMjU0LjE3Ojk4OQ==:443#%F0%9F%87%BA%F0%9F%87%B3%20%40MrMeshkyChannel%20132697",
+      "name": "🇺🇳 @MrMeshkyChannel 132697",
+      "type": "ss",
+      "server": "171.22.254.17",
+      "port": 989,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwM0AxOTIuNzEuMTY2LjEwMjo5ODk=:443#%F0%9F%87%BA%F0%9F%87%B3%20%40MrMeshkyChannel%20868285",
+      "name": "🇺🇳 @MrMeshkyChannel 868285",
+      "type": "ss",
+      "server": "192.71.166.102",
+      "port": 989,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQEAyMjEuMTUwLjEwOS44MTo0Mjk3OA==#%F0%9F%87%B0%F0%9F%87%B7_KR_%E9%9F%A9%E5%9B%BD_10",
+      "name": "🇰🇷_KR_韩国_10",
+      "type": "ss",
+      "server": "221.150.109.81",
+      "port": 42978,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://YWVzLTI1Ni1nY206M2VPRmVOc3NkZTdQWVlNdkA4NC4yNDcuMTU1LjE5Njo4MA==#%F0%9F%87%AF%F0%9F%87%B5%20%5BSS%5D%20%D0%AF%D0%BF%D0%BE%D0%BD%D0%B8%D1%8F%20%2310380%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me%2Frjsxrd",
+      "name": "🇯🇵 [SS] Япония #10380 | РосТуннель t.me/rjsxrd",
+      "type": "ss",
+      "server": "84.247.155.196",
+      "port": 80,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "ss://YWVzLTI1Ni1nY206S2l4THZLendqZWtHMDBybUAzOC4xMTAuMS4xMTE6ODAwMA==#%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_6",
+      "name": "🇺🇸_US_美国_6",
+      "type": "ss",
+      "server": "38.110.1.111",
+      "port": 8000,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://YWVzLTI1Ni1nY206UENubkg2U1FTbmZvUzI3QDM4LjExMC4xLjUxOjgwOTA=#%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_1",
+      "name": "🇺🇸_US_美国_1",
+      "type": "ss",
+      "server": "38.110.1.51",
+      "port": 8090,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhHQDg1LjIwOC4xMDguMTg6NzAwMg#🏴‍☠️",
+      "name": "🏴‍☠️",
+      "type": "ss",
+      "server": "85.208.108.18",
+      "port": 7002,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND1AMTg1LjE3Ni4yMDQuMTg6MTk5OTk=#%F0%9F%87%AC%F0%9F%87%A7%20%5BSS%5D%20%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B1%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F%20%2310992%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me%2Frjsxrd",
+      "name": "🇬🇧 [SS] Великобритания #10992 | РосТуннель t.me/rjsxrd",
+      "type": "ss",
+      "server": "185.176.204.18",
+      "port": 19999,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND1AMTg1LjIxNS4xMzIuOToxOTk5OQ==#%F0%9F%87%BA%F0%9F%87%B8%20%5BSS%5D%20%D0%A1%D0%A8%D0%90%20%238578%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me%2Frjsxrd",
+      "name": "🇺🇸 [SS] США #8578 | РосТуннель t.me/rjsxrd",
+      "type": "ss",
+      "server": "185.215.132.9",
+      "port": 19999,
       "ok": true,
       "reason": "internet_stable_real_egress"
     }
