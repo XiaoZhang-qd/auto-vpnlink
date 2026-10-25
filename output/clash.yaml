@@ -3,170 +3,94 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸US_390|1.9MB/s|A004-260618
+- name: 🇺🇸US_389|1.6MB/s|A004-260618
   type: ss
   server: 216.9.225.189
   port: 443
   cipher: 2022-blake3-aes-256-gcm
   password: Q2YsIzc5YkchSFjsqUZWrQAFtsSpqf7XxYxkG4+Jbsk=:zT1SecPttPY/XPW6NwjK5Wql+/6zbcGSDJK21Jk8uLo=
   udp: true
-- name: '@SylphNet | 1405-08-02 #182'
+- name: 🇸🇬SG_42|317KB/s|B007-260618
   type: ss
   server: 129.150.59.74
   port: 14384
   cipher: 2022-blake3-aes-256-gcm
   password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
   udp: true
-- name: '🇬🇧 [SS] Великобритания #8081 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 82.38.31.165
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: '🇳🇱 [SS] Нидерланды #14368 | РосТуннель t.me/rjsxrd'
+- name: '🇳🇱 [SS] Нидерланды #14876 | РосТуннель t.me/rjsxrd'
   type: ss
   server: 82.38.31.16
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: '🇳🇱 [SS] Нидерланды #11208 | РосТуннель t.me/rjsxrd'
+- name: '🇬🇧 [SS] Великобритания #8499 | РосТуннель t.me/rjsxrd'
   type: ss
-  server: 82.38.31.11
-  port: 8080
+  server: 82.38.31.171
+  port: 443
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: '🇺🇸 [SS] США #3931 | РосТуннель t.me/rjsxrd'
+- name: '🇺🇸 [SS] США #3997 | РосТуннель t.me/rjsxrd'
   type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
   password: rWIg16plgZ82V7MTNcw1UTgiYK4ooPUB95qVhKIwIDc=
   udp: true
-- name: 🇺🇳 @MrMeshkyChannel 200769
+- name: '🇷🇺 [SS] Россия #7411 | РосТуннель t.me/rjsxrd'
   type: ss
-  server: 109.201.152.181
+  server: 195.133.23.50
+  port: 18443
+  cipher: aes-256-gcm
+  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
+  udp: true
+- name: '🇹🇭 [SS] Таиланд #5817 | РосТуннель t.me/rjsxrd'
+  type: ss
+  server: 103.107.52.106
+  port: 52351
+  cipher: aes-256-gcm
+  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
+  udp: true
+- name: '🇺🇸 [SS] США #5236 | РосТуннель t.me/rjsxrd'
+  type: ss
+  server: 15.204.247.244
   port: 443
-  cipher: aes-128-cfb
-  password: shadowsocks
-  udp: true
-- name: '🇯🇵 [SS] Япония #10380 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 84.247.155.196
-  port: 80
   cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
+  password: pKEW8JPByTVTLtM
   udp: true
-- name: '🇬🇧 [SS] Великобритания #10992 | РосТуннель t.me/rjsxrd'
+- name: 🇬🇧
   type: ss
-  server: 185.176.204.18
+  server: 185.176.206.9
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: '🇺🇸 [SS] США #8578 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 185.215.132.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇩🇪DE_118|334KB/s|M002-260618
+  type: trojan
+  server: 104.21.65.43
+  port: 2087
+  password: 0y7hid61k3k2vuy1
+  sni: uwu.dianaw.cc.cd
   udp: true
-- name: '🇿🇦 [SS] ЮАР #1732 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 185.230.230.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: '🇺🇸 [SS] США #11243 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 193.151.160.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: '[OpenRay] 🇺🇸US-31'
-  type: ss
-  server: 193.151.163.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: '🇳🇱 [SS] Нидерланды #11103 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 202.50.253.54
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: '🇳🇱 [SS] Нидерланды #7604 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 202.50.253.63
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: '🇳🇱 [SS] Нидерланды #11831 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 202.50.253.72
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: '🇳🇱 [SS] Нидерланды #11804 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 202.50.253.99
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: '🇳🇱 [SS] Нидерланды #4318 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 202.50.253.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: '🇳🇱 [SS] Нидерланды #7980 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 202.50.253.36
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: '[OpenRay] 🇫🇷FR-2'
-  type: ss
-  server: 95.215.201.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    headers: {}
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸US_390|1.9MB/s|A004-260618
-  - '@SylphNet | 1405-08-02 #182'
-  - '🇬🇧 [SS] Великобритания #8081 | РосТуннель t.me/rjsxrd'
-  - '🇳🇱 [SS] Нидерланды #14368 | РосТуннель t.me/rjsxrd'
-  - '🇳🇱 [SS] Нидерланды #11208 | РосТуннель t.me/rjsxrd'
-  - '🇺🇸 [SS] США #3931 | РосТуннель t.me/rjsxrd'
-  - 🇺🇳 @MrMeshkyChannel 200769
-  - '🇯🇵 [SS] Япония #10380 | РосТуннель t.me/rjsxrd'
-  - '🇬🇧 [SS] Великобритания #10992 | РосТуннель t.me/rjsxrd'
-  - '🇺🇸 [SS] США #8578 | РосТуннель t.me/rjsxrd'
-  - '🇿🇦 [SS] ЮАР #1732 | РосТуннель t.me/rjsxrd'
-  - '🇺🇸 [SS] США #11243 | РосТуннель t.me/rjsxrd'
-  - '[OpenRay] 🇺🇸US-31'
-  - '🇳🇱 [SS] Нидерланды #11103 | РосТуннель t.me/rjsxrd'
-  - '🇳🇱 [SS] Нидерланды #7604 | РосТуннель t.me/rjsxrd'
-  - '🇳🇱 [SS] Нидерланды #11831 | РосТуннель t.me/rjsxrd'
-  - '🇳🇱 [SS] Нидерланды #11804 | РосТуннель t.me/rjsxrd'
-  - '🇳🇱 [SS] Нидерланды #4318 | РосТуннель t.me/rjsxrd'
-  - '🇳🇱 [SS] Нидерланды #7980 | РосТуннель t.me/rjsxrd'
-  - '[OpenRay] 🇫🇷FR-2'
+  - 🇺🇸US_389|1.6MB/s|A004-260618
+  - 🇸🇬SG_42|317KB/s|B007-260618
+  - '🇳🇱 [SS] Нидерланды #14876 | РосТуннель t.me/rjsxrd'
+  - '🇬🇧 [SS] Великобритания #8499 | РосТуннель t.me/rjsxrd'
+  - '🇺🇸 [SS] США #3997 | РосТуннель t.me/rjsxrd'
+  - '🇷🇺 [SS] Россия #7411 | РосТуннель t.me/rjsxrd'
+  - '🇹🇭 [SS] Таиланд #5817 | РосТуннель t.me/rjsxrd'
+  - '🇺🇸 [SS] США #5236 | РосТуннель t.me/rjsxrd'
+  - 🇬🇧
+  - 🇩🇪DE_118|334KB/s|M002-260618
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
