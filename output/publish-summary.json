@@ -5,7 +5,8 @@
   "clash_proxies": 20,
   "rejected_after_health": 0,
   "protocols": {
-    "ss": 20
+    "ss": 18,
+    "trojan": 2
   },
   "cfw_types": [
     "ss",
