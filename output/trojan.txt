@@ -1,2 +1,0 @@
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@169.197.140.214:443?fp=firefox&security=tls&sni=courses.discoverfreshgraduatejobsstartyourprofessionaljourney.com&type=tcp#%F0%9F%87%BA%F0%9F%87%B8+US+%2301+%E2%80%A2+TROJAN+TLS+%2831ms%29
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.152.155.23:443?allowInsecure=0&sni=courses.nextjobopportunityandclaimyouridealrole.com#%40SylphNet%20%7C%201405-08-06%20%23223
