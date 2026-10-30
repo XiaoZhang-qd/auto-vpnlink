@@ -7,27 +7,3 @@ proxy-providers:
       enable: true
       interval: 300
       url: https://www.gstatic.com/generate_204
-  source_2:
-    type: http
-    url: http://103.170.185.226:80
-    interval: 86400
-    health-check:
-      enable: true
-      interval: 300
-      url: https://www.gstatic.com/generate_204
-  source_3:
-    type: http
-    url: http://103.65.237.92:5678
-    interval: 86400
-    health-check:
-      enable: true
-      interval: 300
-      url: https://www.gstatic.com/generate_204
-  source_4:
-    type: http
-    url: http://106.14.91.83:3128
-    interval: 86400
-    health-check:
-      enable: true
-      interval: 300
-      url: https://www.gstatic.com/generate_204

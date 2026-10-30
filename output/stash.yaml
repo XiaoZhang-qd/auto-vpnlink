@@ -3,146 +3,122 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸US_285|250KB/s|A004-260618
+- name: 🇺🇸US_468|274KB/s|A004-260618
   type: ss
   server: 103.11.76.248
   port: 28679
   cipher: 2022-blake3-aes-128-gcm
   password: NzJlOTQ5NWYtM2ZkYi00Cg==
   udp: true
-- name: 🇬🇧GB_48|414KB/s|B007-260618
+- name: 🇬🇧GB_38|3.6MB/s|B007-260618
   type: ss
   server: 51.38.71.51
   port: 2083
   cipher: 2022-blake3-aes-256-gcm
   password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
   udp: true
-- name: 🇸🇬 AetrisVPN
+- name: '@SylphNet | 1405-08-08 #209'
   type: ss
   server: 129.150.59.74
   port: 14384
   cipher: 2022-blake3-aes-256-gcm
   password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
   udp: true
-- name: '@SylphNet | 1405-08-07 #23'
-  type: ss
-  server: 8.211.196.252
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Cg2Dw4OhdBZhqbeO9ZTA3g/Gk/AvsrYZGhAJeGnQIx4=
-  udp: true
-- name: '[OpenRay] 🇳🇱NL-456'
-  type: ss
-  server: 193.29.139.234
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
-  udp: true
-- name: '[OpenRay] 🇬🇷GR-1'
-  type: ss
-  server: 178.253.16.185
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: x2A6AsyZ-rAllz0wbKHzWA
-  udp: true
-- name: '[OpenRay] 🇬🇧GB-324'
-  type: ss
-  server: 104.239.12.81
-  port: 43385
-  cipher: chacha20-ietf-poly1305
-  password: AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa
-  udp: true
-- name: '[OpenRay] 🇳🇱NL-457'
-  type: ss
-  server: 193.29.139.212
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  udp: true
-- name: '[OpenRay] 🇨🇭CH-28'
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-  udp: true
-- name: '[OpenRay] 🇳🇱NL-63'
+- name: '🇳🇱 [SS] Нидерланды #1237 | РосТуннель t.me/rjsxrd'
   type: ss
   server: 193.29.139.197
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: '[OpenRay] 🇳🇱NL-468'
+- name: nukcrow
   type: ss
-  server: 193.29.139.204
+  server: 193.29.139.235
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: '[OpenRay] 🇳🇱NL-593'
-  type: ss
-  server: 82.38.31.149
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: '[OpenRay] 🇬🇧GB-203'
+- name: '🇬🇧 [SS] Великобритания #7715 | РосТуннель t.me/rjsxrd'
   type: ss
   server: 82.38.31.165
   port: 443
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: '[OpenRay] 🇬🇧GB-213'
+- name: '🇺🇸 [SS] США #8804 | РосТуннель t.me/rjsxrd'
   type: ss
-  server: 82.38.31.171
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: '[OpenRay] 🇬🇧GB-356'
-  type: ss
-  server: 82.38.31.171
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: '[OpenRay] 🇳🇱NL-400'
-  type: ss
-  server: 82.38.31.9
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: '[OpenRay] 🇯🇵JP-137'
-  type: ss
-  server: 84.247.155.196
-  port: 80
+  server: 15.204.246.132
+  port: 7307
   cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
+  password: FoOiGlkAA9yPEGP
+  udp: true
+- name: '🇺🇸 [SS] США #10733 | РосТуннель t.me/rjsxrd'
+  type: ss
+  server: 15.204.246.107
+  port: 8888
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: '🇿🇦 [SS] ЮАР #1641 | РосТуннель t.me/rjsxrd'
+  type: ss
+  server: 185.230.230.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: '🇺🇸 [SS] США #90 | РосТуннель t.me/rjsxrd'
+  type: ss
+  server: 193.151.163.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 新西兰+V2CROSS.COM
+  type: ss
+  server: 202.50.253.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: '🇳🇱 [SS] Нидерланды #11783 | РосТуннель t.me/rjsxrd'
+  type: ss
+  server: 202.50.253.27
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: '🇫🇷 [SS] Франция #82 | РосТуннель t.me/rjsxrd'
+  type: ss
+  server: 95.215.201.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: ss-14
+  type: ss
+  server: 82.38.31.62
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸US_285|250KB/s|A004-260618
-  - 🇬🇧GB_48|414KB/s|B007-260618
-  - 🇸🇬 AetrisVPN
-  - '@SylphNet | 1405-08-07 #23'
-  - '[OpenRay] 🇳🇱NL-456'
-  - '[OpenRay] 🇬🇷GR-1'
-  - '[OpenRay] 🇬🇧GB-324'
-  - '[OpenRay] 🇳🇱NL-457'
-  - '[OpenRay] 🇨🇭CH-28'
-  - '[OpenRay] 🇳🇱NL-63'
-  - '[OpenRay] 🇳🇱NL-468'
-  - '[OpenRay] 🇳🇱NL-593'
-  - '[OpenRay] 🇬🇧GB-203'
-  - '[OpenRay] 🇬🇧GB-213'
-  - '[OpenRay] 🇬🇧GB-356'
-  - '[OpenRay] 🇳🇱NL-400'
-  - '[OpenRay] 🇯🇵JP-137'
+  - 🇺🇸US_468|274KB/s|A004-260618
+  - 🇬🇧GB_38|3.6MB/s|B007-260618
+  - '@SylphNet | 1405-08-08 #209'
+  - '🇳🇱 [SS] Нидерланды #1237 | РосТуннель t.me/rjsxrd'
+  - nukcrow
+  - '🇬🇧 [SS] Великобритания #7715 | РосТуннель t.me/rjsxrd'
+  - '🇺🇸 [SS] США #8804 | РосТуннель t.me/rjsxrd'
+  - '🇺🇸 [SS] США #10733 | РосТуннель t.me/rjsxrd'
+  - '🇿🇦 [SS] ЮАР #1641 | РосТуннель t.me/rjsxrd'
+  - '🇺🇸 [SS] США #90 | РосТуннель t.me/rjsxrd'
+  - 新西兰+V2CROSS.COM
+  - '🇳🇱 [SS] Нидерланды #11783 | РосТуннель t.me/rjsxrd'
+  - '🇫🇷 [SS] Франция #82 | РосТуннель t.me/rjsxrd'
+  - ss-14
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
