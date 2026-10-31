@@ -1,12 +1,12 @@
 {
-  "candidate_limit": 59,
-  "tested": 35,
-  "skipped": 0,
+  "candidate_limit": 26,
+  "tested": 23,
+  "skipped": 1,
   "healthy": 10,
-  "failed": 25,
+  "failed": 13,
   "success_target": 10,
   "target_reached": true,
-  "runner_public_ip": "13.86.110.209",
+  "runner_public_ip": "172.212.151.225",
   "allowed_types": [
     "hysteria",
     "hysteria2",
@@ -19,8 +19,8 @@
   "rounds": 3,
   "results": [
     {
-      "uri": "ss://2022-blake3-aes-128-gcm:NzJlOTQ5NWYtM2ZkYi00Cg%3D%3D@103.11.76.248:28679#%F0%9F%87%BA%F0%9F%87%B8US_468%7C274KB%2Fs%7CA004-260618",
-      "name": "🇺🇸US_468|274KB/s|A004-260618",
+      "uri": "ss://2022-blake3-aes-128-gcm:NzJlOTQ5NWYtM2ZkYi00Cg%3D%3D@103.11.76.248:28679#%F0%9F%87%BA%F0%9F%87%B8US_326%7C1.0MB%2Fs%7CA004-260618",
+      "name": "🇺🇸US_326|1.0MB/s|A004-260618",
       "type": "ss",
       "server": "103.11.76.248",
       "port": 28679,
@@ -28,58 +28,67 @@
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-aes-256-gcm:NjcyNmVjMTU1ZWU5NDA5ZDk0ODg1NWM1MzJjZTE3NDk%3D%3AMmRhODU5Mzc5M2Q5NDUwOTg0OTE2M2IxOTIxY2Y0NDc%3D@6.bmi.ir.asopardaz.ir:35176#",
+      "uri": "ss://2022-blake3-aes-128-gcm:UVqvTTy4pr77CJ2linjEnA%3D%3D%3A8qSj542xKUIn6p0pU1ahNg%3D%3D@ser1.plasmoon.ir:2028#",
       "name": "ss-2",
       "type": "ss",
-      "server": "6.bmi.ir.asopardaz.ir",
-      "port": 35176,
+      "server": "ser1.plasmoon.ir",
+      "port": 2028,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://2022-blake3-aes-256-gcm:cOiC%2B3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4%3D%3A2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho%3D@51.38.71.51:2083#%F0%9F%87%AC%F0%9F%87%A7GB_38%7C3.6MB%2Fs%7CB007-260618",
-      "name": "🇬🇧GB_38|3.6MB/s|B007-260618",
+      "uri": "ss://2022-blake3-aes-256-gcm:Q2YsIzc5YkchSFjsqUZWrQAFtsSpqf7XxYxkG4%2BJbsk%3D%3AzT1SecPttPY%2FXPW6NwjK5Wql%2B%2F6zbcGSDJK21Jk8uLo%3D@216.9.225.189:443#%F0%9F%87%BA%F0%9F%87%B8US_233%7C778KB%2Fs%7CA004-260618",
+      "name": "🇺🇸US_233|778KB/s|A004-260618",
+      "type": "ss",
+      "server": "216.9.225.189",
+      "port": 443,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "ss://2022-blake3-aes-256-gcm:cOiC%2B3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4%3D%3A2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho%3D@51.38.71.51:2083#%F0%9F%87%AC%F0%9F%87%A7GB_26%7C491KB%2Fs%7CB007-260618",
+      "name": "🇬🇧GB_26|491KB/s|B007-260618",
       "type": "ss",
       "server": "51.38.71.51",
       "port": 2083,
-      "ok": false,
-      "reason": "egress_ip_changed"
+      "ok": true,
+      "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-aes-256-gcm:sUR6Ny8Y6PSvHhl%2FDUxconwxg6VZyFdsdfaVCvEatJo%3D%3A7bTEhHgpErKiRjE1ega%2BH6pcpJsNLFB0CjQseujAHrA%3D@129.150.59.74:14384#%40SylphNet%20%7C%201405-08-08%20%23209",
-      "name": "@SylphNet | 1405-08-08 #209",
+      "uri": "ss://2022-blake3-aes-256-gcm:cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:HWFFJN19JkvbTKo/79AfnbRBK9uHUUaFNZJyLjEoJGs=@51.222.107.43:2083#🇨🇦174574",
+      "name": "🇨🇦174574",
+      "type": "ss",
+      "server": "51.222.107.43",
+      "port": 2083,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://2022-blake3-aes-256-gcm:sUR6Ny8Y6PSvHhl%2FDUxconwxg6VZyFdsdfaVCvEatJo%3D%3A7bTEhHgpErKiRjE1ega%2BH6pcpJsNLFB0CjQseujAHrA%3D@129.150.59.74:14384#%F0%9F%91%89%F0%9F%86%94%40Goodbaye_filtering%0A%F0%9F%93%A1%F0%9F%87%B8%F0%9F%87%AC%20%D8%B3%D9%86%DA%AF%D8%A7%D9%BE%D9%88%D8%B1%0A%C2%AE%EF%B8%8FOracle%20Cloud%20Inf%0A%F0%9F%85%BF%EF%B8%8Fping%3A128ms%0A%E2%9A%A1VIP%20Strict%20%7C%20SS%20IPv4",
+      "name": "👉🆔@Goodbaye_filtering\n📡🇸🇬 سنگاپور\n®️Oracle Cloud Inf\n🅿️ping:128ms\n⚡VIP Strict | SS IPv4",
       "type": "ss",
       "server": "129.150.59.74",
       "port": 14384,
       "ok": false,
-      "reason": "no_proxied_public_ip"
+      "reason": "round_1_public_test_failed"
     },
     {
-      "uri": "ss://2022-blake3-chacha20-poly1305:3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=@47.85.168.157:443#Channel%20id:%20@ShadowProxy66%20%F0%9F%87%BA%F0%9F%87%B8",
-      "name": "Channel id: @ShadowProxy66 🇺🇸",
+      "uri": "ss://2022-blake3-chacha20-poly1305:Cg2Dw4OhdBZhqbeO9ZTA3g%2FGk%2FAvsrYZGhAJeGnQIx4%3D@8.211.196.252:443#",
+      "name": "ss-7",
       "type": "ss",
-      "server": "47.85.168.157",
+      "server": "8.211.196.252",
       "port": 443,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://MjAyMi1ibGFrZTMtYWVzLTI1Ni1nY206WW1RNVkyRTNNR1JsTm1VMU5EVmtaVE5oWkdJeU1tSXlaREpqWmpNM05HST06T1dVNE0yUTNOemN0TldNeVl5MDBNRE5sTFdJeFlUWXRNbUUzT0RSbU9UTT1AY2NjY3QuMjg0LnBpY3M6NjUwNDI#nukcrow",
-      "name": "nukcrow",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFhQDE5My4yOS4xMzkuMjM0OjgwODA=#%F0%9F%87%B3%F0%9F%87%B1%20%5BSS%5D%20%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%8B%20%238936%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me%2Frjsxrd",
+      "name": "🇳🇱 [SS] Нидерланды #8936 | РосТуннель t.me/rjsxrd",
       "type": "ss",
-      "server": "cccct.284.pics",
-      "port": 65042,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://MjAyMi1ibGFrZTMtYWVzLTI1Ni1nY206WlRFeVkyVmlPR1UwTVdKaU5EY3dOMlZsWWpVM016a3pPRGxoTmpsaU5HWT06TXpZd1lUYzRaVEF0WVdZeFl5MDBOVE5tTFRrME5HSXRZMkZsTVRobVlXVT1AY2NjY3QuMjg0LnBpY3M6NjUwMTI#nukcrow",
-      "name": "nukcrow",
-      "type": "ss",
-      "server": "cccct.284.pics",
-      "port": 65012,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
+      "server": "193.29.139.234",
+      "port": 8080,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
     },
     {
       "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2NExiS0huQjNJTzc1OXVlRW5oZ01HQDUyLjE0Mi4xNjEuOTozNDQyNA==#%DA%A9%D8%A7%D9%86%D8%A7%D9%84+%3A+%40V2rayNGvpni",
@@ -100,10 +109,28 @@
       "reason": "no_proxied_public_ip"
     },
     {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1dktOdWRWLU44QVVDcnlrUGl5em5BQDE3Ny4yMDIuMTExLjIyOjU2MTM3#%F0%9F%87%A7%F0%9F%87%B7%20%5BSS%5D%20%D0%91%D1%80%D0%B0%D0%B7%D0%B8%D0%BB%D0%B8%D1%8F%20%2310374%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me%2Frjsxrd",
+      "name": "🇧🇷 [SS] Бразилия #10374 | РосТуннель t.me/rjsxrd",
+      "type": "ss",
+      "server": "177.202.111.22",
+      "port": 56137,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
       "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1dktOdWRWLU44QVVDcnlrUGl5em5BQDM3LjE1My4xNTguMTM2OjU2MTM3#%F0%9F%87%A9%F0%9F%87%AA%20%5BSS%5D%20%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D1%8F%20%2311134%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me%2Frjsxrd",
       "name": "🇩🇪 [SS] Германия #11134 | РосТуннель t.me/rjsxrd",
       "type": "ss",
       "server": "37.153.158.136",
+      "port": 56137,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1dktOdWRWLU44QVVDcnlrUGl5em5BQDM3LjE1My4xNTguMTY3OjU2MTM3#%F0%9F%87%A9%F0%9F%87%AA%20%5BSS%5D%20%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D1%8F%20%232422%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me%2Frjsxrd",
+      "name": "🇩🇪 [SS] Германия #2422 | РосТуннель t.me/rjsxrd",
+      "type": "ss",
+      "server": "37.153.158.167",
       "port": 56137,
       "ok": false,
       "reason": "no_proxied_public_ip"
@@ -118,56 +145,20 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1dktOdWRWLU44QVVDcnlrUGl5em5BQDg3LjIzNi4xNjYuMTAwOjU2MTM3#nukcrow",
-      "name": "nukcrow",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1dktOdWRWLU44QVVDcnlrUGl5em5BQDg3LjIzNi4xNjYuMTgxOjU2MTM3#%F0%9F%87%A6%F0%9F%87%BA%20%5BSS%5D%20%D0%90%D0%B2%D1%81%D1%82%D1%80%D0%B0%D0%BB%D0%B8%D1%8F%20%238427%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me%2Frjsxrd",
+      "name": "🇦🇺 [SS] Австралия #8427 | РосТуннель t.me/rjsxrd",
       "type": "ss",
-      "server": "87.236.166.100",
+      "server": "87.236.166.181",
       "port": 56137,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PUAyMy45NS43Ni41OTo5OTA=#nukcrow",
-      "name": "nukcrow",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCb2cwRUxtTU05RFN4RGRRQHNlcmllcy1hMi1tZS52YXJ6ZXNoMzYwLmNvOjQ0Mw==#%F0%9F%87%A7%F0%9F%87%AD_BH_%E5%B7%B4%E6%9E%97_2",
+      "name": "🇧🇭_BH_巴林_2",
       "type": "ss",
-      "server": "23.95.76.59",
-      "port": 990,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpPRGZ4aW9LMFZrS3hUZHBWUUo0cnY4SGdsQXUwdnp2NkAxNDYuMTkuNDkuMjUxOjQ0Mw==#nukcrow",
-      "name": "nukcrow",
-      "type": "ss",
-      "server": "146.19.49.251",
+      "server": "series-a2-me.varzesh360.co",
       "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpVNUprMEJoUk5LamI1d1FCQk9YeDJ3d2tXWl95V1UwTkBkbnMzLm0zaHJ6ZC5pcjo4MDQ0#nukcrow",
-      "name": "nukcrow",
-      "type": "ss",
-      "server": "dns3.m3hrzd.ir",
-      "port": 8044,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYRjBrbHc3ODcwdlhuM3VRSXhlMTlRQDMxLjIxMC43OC42NjoxMDgw#nukcrow",
-      "name": "nukcrow",
-      "type": "ss",
-      "server": "31.210.78.66",
-      "port": 1080,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpnZWx3dlU5bVVSMG9yRUZTNUQ2dTdBQDE5NC41NC44MC4zNzoxMDgw#nukcrow",
-      "name": "nukcrow",
-      "type": "ss",
-      "server": "194.54.80.37",
-      "port": 1080,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
@@ -181,22 +172,13 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpub2Rlcy1iMjExZjI4YUBub2RlLWRlLTEudjJzdi50b3A6OTkw#nukcrow",
-      "name": "nukcrow",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNBQDE5My4yOS4xMzkuMTUxOjgwODA=#%F0%9F%87%B3%F0%9F%87%B1%20%5BSS%5D%20%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%8B%20%232030%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me%2Frjsxrd",
+      "name": "🇳🇱 [SS] Нидерланды #2030 | РосТуннель t.me/rjsxrd",
       "type": "ss",
-      "server": "node-de-1.v2sv.top",
-      "port": 990,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpub2Rlcy1iMjExZjI4YUBub2RlLXRyLTEudjJzdi50b3A6OTkw#nukcrow",
-      "name": "nukcrow",
-      "type": "ss",
-      "server": "node-tr-1.v2sv.top",
-      "port": 990,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
+      "server": "193.29.139.151",
+      "port": 8080,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
     },
     {
       "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNBQDE5My4yOS4xMzkuMTk3OjgwODA=#%F0%9F%87%B3%F0%9F%87%B1%20%5BSS%5D%20%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%8B%20%231237%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me%2Frjsxrd",
@@ -208,10 +190,19 @@
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNBQDE5My4yOS4xMzkuMjM1OjgwODA=#nukcrow",
-      "name": "nukcrow",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNBQDE5My4yOS4xMzkuMjA0OjgwODA=#%F0%9F%87%B3%F0%9F%87%B1%20%5BSS%5D%20%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%8B%20%239129%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me%2Frjsxrd",
+      "name": "🇳🇱 [SS] Нидерланды #9129 | РосТуннель t.me/rjsxrd",
       "type": "ss",
-      "server": "193.29.139.235",
+      "server": "193.29.139.204",
+      "port": 8080,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNBQDgyLjM4LjMxLjE0OTo4MDgw#%F0%9F%87%B3%F0%9F%87%B1%20%5BSS%5D%20%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%8B%20%2311223%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me%2Frjsxrd",
+      "name": "🇳🇱 [SS] Нидерланды #11223 | РосТуннель t.me/rjsxrd",
+      "type": "ss",
+      "server": "82.38.31.149",
       "port": 8080,
       "ok": true,
       "reason": "internet_stable_real_egress"
@@ -226,110 +217,11 @@
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpyV0lnMTZwbGdaODJWN01UTmN3MVVUZ2lZSzRvb1BVQjk1cVZoS0l3SURjPUAxMzAuNDkuMTg5LjE1ODo0MzU1OA==#nukcrow",
-      "name": "nukcrow",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNBQDgyLjM4LjMxLjExOjgwODA=#%F0%9F%87%B3%F0%9F%87%B1%20%5BSS%5D%20%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%8B%20%2310678%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me%2Frjsxrd",
+      "name": "🇳🇱 [SS] Нидерланды #10678 | РосТуннель t.me/rjsxrd",
       "type": "ss",
-      "server": "130.49.189.158",
-      "port": 43558,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://YWVzLTEyOC1jZmI6UWF6RWRjVGdiMTU5QCQqQDE0LjI5LjEyNC4xNjg6MjUyOTQ#🏴‍☠️",
-      "name": "🏴‍☠️",
-      "type": "ss",
-      "server": "14.29.124.168",
-      "port": 25294,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQEAyMjEuMTUwLjEwOS44MTo0Mjk3OA==#%F0%9F%87%B0%F0%9F%87%B7_KR_%E9%9F%A9%E5%9B%BD_10",
-      "name": "🇰🇷_KR_韩国_10",
-      "type": "ss",
-      "server": "221.150.109.81",
-      "port": 42978,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://YWVzLTI1Ni1nY206Rm9PaUdsa0FBOXlQRUdQQDE1LjIwNC4yNDYuMTMyOjczMDc=#%F0%9F%87%BA%F0%9F%87%B8%20%5BSS%5D%20%D0%A1%D0%A8%D0%90%20%238804%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me%2Frjsxrd",
-      "name": "🇺🇸 [SS] США #8804 | РосТуннель t.me/rjsxrd",
-      "type": "ss",
-      "server": "15.204.246.132",
-      "port": 7307,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://YWVzLTI1Ni1nY206S2l4THZLendqZWtHMDBybUAzOC4xMTAuMS4xMTE6ODAwMA==#%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_6",
-      "name": "🇺🇸_US_美国_6",
-      "type": "ss",
-      "server": "38.110.1.111",
-      "port": 8000,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://YWVzLTI1Ni1nY206UENubkg2U1FTbmZvUzI3QDM4LjExMC4xLjUxOjgwOTA=#%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_1",
-      "name": "🇺🇸_US_美国_1",
-      "type": "ss",
-      "server": "38.110.1.51",
-      "port": 8090,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhHQDg1LjIwOC4xMDguMTg6NzAwMg#🏴‍☠️",
-      "name": "🏴‍☠️",
-      "type": "ss",
-      "server": "85.208.108.18",
-      "port": 7002,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0NAMTUuMjA0LjI0Ni4xMDc6ODg4OA==#%F0%9F%87%BA%F0%9F%87%B8%20%5BSS%5D%20%D0%A1%D0%A8%D0%90%20%2310733%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me%2Frjsxrd",
-      "name": "🇺🇸 [SS] США #10733 | РосТуннель t.me/rjsxrd",
-      "type": "ss",
-      "server": "15.204.246.107",
-      "port": 8888,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND1AMTg1LjIzMC4yMzAuMTg6MTk5OTk=#%F0%9F%87%BF%F0%9F%87%A6%20%5BSS%5D%20%D0%AE%D0%90%D0%A0%20%231641%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me%2Frjsxrd",
-      "name": "🇿🇦 [SS] ЮАР #1641 | РосТуннель t.me/rjsxrd",
-      "type": "ss",
-      "server": "185.230.230.18",
-      "port": 19999,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND1AMTkzLjE1MS4xNjMuMTg6MTk5OTk=#%F0%9F%87%BA%F0%9F%87%B8%20%5BSS%5D%20%D0%A1%D0%A8%D0%90%20%2390%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me%2Frjsxrd",
-      "name": "🇺🇸 [SS] США #90 | РосТуннель t.me/rjsxrd",
-      "type": "ss",
-      "server": "193.151.163.18",
-      "port": 19999,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND1AMjAyLjUwLjI1My44MToxOTk5OQ==#%E6%96%B0%E8%A5%BF%E5%85%B0+V2CROSS.COM",
-      "name": "新西兰+V2CROSS.COM",
-      "type": "ss",
-      "server": "202.50.253.81",
-      "port": 19999,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND1AMjAyLjUwLjI1My4yNzoxOTk5OQ==#%F0%9F%87%B3%F0%9F%87%B1%20%5BSS%5D%20%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%8B%20%2311783%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me%2Frjsxrd",
-      "name": "🇳🇱 [SS] Нидерланды #11783 | РосТуннель t.me/rjsxrd",
-      "type": "ss",
-      "server": "202.50.253.27",
-      "port": 19999,
+      "server": "82.38.31.11",
+      "port": 8080,
       "ok": true,
       "reason": "internet_stable_real_egress"
     }

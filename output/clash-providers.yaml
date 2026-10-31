@@ -1,5 +1,5 @@
 proxy-providers:
-  source_1:
+  source_3:
     type: http
     url: http://103.156.17.83:8080
     interval: 86400
