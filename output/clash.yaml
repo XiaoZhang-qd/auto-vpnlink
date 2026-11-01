@@ -3,90 +3,26 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸US_326|1.0MB/s|A004-260618
-  type: ss
-  server: 103.11.76.248
-  port: 28679
-  cipher: 2022-blake3-aes-128-gcm
-  password: NzJlOTQ5NWYtM2ZkYi00Cg==
-  udp: true
-- name: 🇺🇸US_233|778KB/s|A004-260618
+- name: 🇺🇸US_328|1.0MB/s|A004-260618
   type: ss
   server: 216.9.225.189
   port: 443
   cipher: 2022-blake3-aes-256-gcm
   password: Q2YsIzc5YkchSFjsqUZWrQAFtsSpqf7XxYxkG4+Jbsk=:zT1SecPttPY/XPW6NwjK5Wql+/6zbcGSDJK21Jk8uLo=
   udp: true
-- name: 🇬🇧GB_26|491KB/s|B007-260618
+- name: 🇬🇧GB_52|3.5MB/s|B007-260618
   type: ss
   server: 51.38.71.51
   port: 2083
   cipher: 2022-blake3-aes-256-gcm
   password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
   udp: true
-- name: '🇳🇱 [SS] Нидерланды #8936 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 193.29.139.234
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
-  udp: true
-- name: '🇳🇱 [SS] Нидерланды #2030 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 193.29.139.151
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: '🇳🇱 [SS] Нидерланды #1237 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 193.29.139.197
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: '🇳🇱 [SS] Нидерланды #9129 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 193.29.139.204
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: '🇳🇱 [SS] Нидерланды #11223 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 82.38.31.149
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: '🇬🇧 [SS] Великобритания #7715 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 82.38.31.165
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: '🇳🇱 [SS] Нидерланды #10678 | РосТуннель t.me/rjsxrd'
-  type: ss
-  server: 82.38.31.11
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸US_326|1.0MB/s|A004-260618
-  - 🇺🇸US_233|778KB/s|A004-260618
-  - 🇬🇧GB_26|491KB/s|B007-260618
-  - '🇳🇱 [SS] Нидерланды #8936 | РосТуннель t.me/rjsxrd'
-  - '🇳🇱 [SS] Нидерланды #2030 | РосТуннель t.me/rjsxrd'
-  - '🇳🇱 [SS] Нидерланды #1237 | РосТуннель t.me/rjsxrd'
-  - '🇳🇱 [SS] Нидерланды #9129 | РосТуннель t.me/rjsxrd'
-  - '🇳🇱 [SS] Нидерланды #11223 | РосТуннель t.me/rjsxrd'
-  - '🇬🇧 [SS] Великобритания #7715 | РосТуннель t.me/rjsxrd'
-  - '🇳🇱 [SS] Нидерланды #10678 | РосТуннель t.me/rjsxrd'
+  - 🇺🇸US_328|1.0MB/s|A004-260618
+  - 🇬🇧GB_52|3.5MB/s|B007-260618
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
