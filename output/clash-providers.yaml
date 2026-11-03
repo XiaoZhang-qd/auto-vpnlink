@@ -1,55 +1,15 @@
 proxy-providers:
-  source_2:
-    type: http
-    url: http://101.35.129.165:80
-    interval: 86400
-    health-check:
-      enable: true
-      interval: 300
-      url: https://www.gstatic.com/generate_204
-  source_3:
-    type: http
-    url: http://103.111.122.2:80
-    interval: 86400
-    health-check:
-      enable: true
-      interval: 300
-      url: https://www.gstatic.com/generate_204
   source_4:
     type: http
-    url: http://103.122.64.232:80
+    url: http://101.132.249.207:8090
     interval: 86400
     health-check:
       enable: true
       interval: 300
       url: https://www.gstatic.com/generate_204
-  source_5:
+  source_10:
     type: http
-    url: http://103.125.117.54:8080
-    interval: 86400
-    health-check:
-      enable: true
-      interval: 300
-      url: https://www.gstatic.com/generate_204
-  source_6:
-    type: http
-    url: http://103.156.17.83:8080
-    interval: 86400
-    health-check:
-      enable: true
-      interval: 300
-      url: https://www.gstatic.com/generate_204
-  source_7:
-    type: http
-    url: http://103.158.252.99:80
-    interval: 86400
-    health-check:
-      enable: true
-      interval: 300
-      url: https://www.gstatic.com/generate_204
-  source_8:
-    type: http
-    url: http://103.165.245.23:8080
+    url: http://101.255.166.134:80
     interval: 86400
     health-check:
       enable: true
