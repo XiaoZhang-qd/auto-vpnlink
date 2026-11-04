@@ -1,12 +1,12 @@
 {
   "candidate_limit": 300,
-  "tested": 60,
-  "skipped": 1,
+  "tested": 58,
+  "skipped": 3,
   "healthy": 20,
-  "failed": 40,
+  "failed": 38,
   "success_target": 20,
   "target_reached": true,
-  "runner_public_ip": "4.154.85.166",
+  "runner_public_ip": "130.131.215.86",
   "allowed_types": [
     "hysteria",
     "hysteria2",
@@ -19,8 +19,8 @@
   "rounds": 2,
   "results": [
     {
-      "uri": "ss://2022-blake3-aes-128-gcm:NzJlOTQ5NWYtM2ZkYi00Cg%3D%3D@103.11.76.248:28679#%F0%9F%87%BA%F0%9F%87%B8US_198%7C996KB%2Fs%7CA004-260618",
-      "name": "🇺🇸US_198|996KB/s|A004-260618",
+      "uri": "ss://2022-blake3-aes-128-gcm:NzJlOTQ5NWYtM2ZkYi00Cg%3D%3D@103.11.76.248:28679#%F0%9F%87%BA%F0%9F%87%B8US_283%7C1.1MB%2Fs%7CA004-260618",
+      "name": "🇺🇸US_283|1.1MB/s|A004-260618",
       "type": "ss",
       "server": "103.11.76.248",
       "port": 28679,
@@ -28,8 +28,17 @@
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-aes-128-gcm:jUbDNsFamcyDfpm%2BrI3Zyw%3D%3D@38.145.220.193:8443#%F0%9F%87%BA%F0%9F%87%B8US_624%7C984KB%2Fs%7CM003-260806",
-      "name": "🇺🇸US_624|984KB/s|M003-260806",
+      "uri": "ss://2022-blake3-aes-128-gcm:bad@example.net:1",
+      "name": "ss-3",
+      "type": "ss",
+      "server": "example.net",
+      "port": 1,
+      "ok": false,
+      "reason": "placeholder_endpoint"
+    },
+    {
+      "uri": "ss://2022-blake3-aes-128-gcm:jUbDNsFamcyDfpm%2BrI3Zyw%3D%3D@38.145.220.193:8443#%F0%9F%87%BA%F0%9F%87%B8US_593%7C1.0MB%2Fs%7CM003-260806",
+      "name": "🇺🇸US_593|1.0MB/s|M003-260806",
       "type": "ss",
       "server": "38.145.220.193",
       "port": 8443,
@@ -37,31 +46,31 @@
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-aes-256-gcm:Q2YsIzc5YkchSFjsqUZWrQAFtsSpqf7XxYxkG4%2BJbsk%3D%3AzT1SecPttPY%2FXPW6NwjK5Wql%2B%2F6zbcGSDJK21Jk8uLo%3D@216.9.225.189:443#%F0%9F%87%BA%F0%9F%87%B8US_91%7C329KB%2Fs%7CA004-260618",
-      "name": "🇺🇸US_91|329KB/s|A004-260618",
+      "uri": "ss://2022-blake3-aes-128-gcm:key..key@proxy.example.com:8388",
+      "name": "ss-5",
+      "type": "ss",
+      "server": "proxy.example.com",
+      "port": 8388,
+      "ok": false,
+      "reason": "placeholder_endpoint"
+    },
+    {
+      "uri": "ss://2022-blake3-aes-256-gcm:Q2YsIzc5YkchSFjsqUZWrQAFtsSpqf7XxYxkG4%2BJbsk%3D%3AzT1SecPttPY%2FXPW6NwjK5Wql%2B%2F6zbcGSDJK21Jk8uLo%3D@216.9.225.189:443#%F0%9F%87%BA%F0%9F%87%B8US_70%7C1.3MB%2Fs%7CA004-260618",
+      "name": "🇺🇸US_70|1.3MB/s|A004-260618",
       "type": "ss",
       "server": "216.9.225.189",
       "port": 443,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://2022-blake3-aes-256-gcm:ZV9gr1G1kn%2BMtegpmGMVOqXbSUwnCHtaS%2F8vuccEKJU%3D%3A6P%2FmJmwaHFp5FDdB9l04qOY4pmYKFt%2Fbq65iOCP%2BoBU%3D@31.57.185.203:53799#%F0%9F%87%B3%F0%9F%87%B1NL_289%7C2.1MB%2Fs%7CM003-260806",
-      "name": "🇳🇱NL_289|2.1MB/s|M003-260806",
-      "type": "ss",
-      "server": "31.57.185.203",
-      "port": 53799,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://2022-blake3-aes-256-gcm:cOiC%2B3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4%3D%3A2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho%3D@51.38.71.51:2083#%F0%9F%87%AC%F0%9F%87%A7GB_29%7C7.5MB%2Fs%7CB007-260618",
-      "name": "🇬🇧GB_29|7.5MB/s|B007-260618",
+      "uri": "ss://2022-blake3-aes-256-gcm:cOiC%2B3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4%3D%3A2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho%3D@51.38.71.51:2083#%F0%9F%87%AC%F0%9F%87%A7GB_21%7C2.9MB%2Fs%7CB007-260618",
+      "name": "🇬🇧GB_21|2.9MB/s|B007-260618",
       "type": "ss",
       "server": "51.38.71.51",
       "port": 2083,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
+      "ok": false,
+      "reason": "no_proxied_public_ip"
     },
     {
       "uri": "ss://2022-blake3-aes-256-gcm:cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:HWFFJN19JkvbTKo/79AfnbRBK9uHUUaFNZJyLjEoJGs=@51.222.107.43:2083#🇨🇦",
@@ -73,31 +82,13 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://2022-blake3-aes-256-gcm:sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega%2BH6pcpJsNLFB0CjQseujAHrA=@129.150.59.74:14384#",
-      "name": "ss-7",
+      "uri": "ss://2022-blake3-aes-256-gcm:sUR6Ny8Y6PSvHhl%2FDUxconwxg6VZyFdsdfaVCvEatJo%3D%3A7bTEhHgpErKiRjE1ega%2BH6pcpJsNLFB0CjQseujAHrA%3D@129.150.59.74:14384#%40SylphNet%20%7C%201405-08-13%20%23199",
+      "name": "@SylphNet | 1405-08-13 #199",
       "type": "ss",
       "server": "129.150.59.74",
       "port": 14384,
-      "ok": false,
-      "reason": "round_1_public_test_failed"
-    },
-    {
-      "uri": "ss://2022-blake3-chacha20-poly1305:Cg2Dw4OhdBZhqbeO9ZTA3g%2FGk%2FAvsrYZGhAJeGnQIx4%3D@8.211.196.252:443#%5BOpenRay%5D%20%F0%9F%87%AC%F0%9F%87%A7GB-172",
-      "name": "[OpenRay] 🇬🇧GB-172",
-      "type": "ss",
-      "server": "8.211.196.252",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFhQDE5My4yOS4xMzkuMjM0OjgwODA=#%5BOpenRay%5D%20%F0%9F%87%B3%F0%9F%87%B1NL-452",
-      "name": "[OpenRay] 🇳🇱NL-452",
-      "type": "ss",
-      "server": "193.29.139.234",
-      "port": 8080,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
+      "ok": true,
+      "reason": "internet_stable_real_egress"
     },
     {
       "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2NExiS0huQjNJTzc1OXVlRW5oZ01HQDUyLjE0Mi4xNjEuOTozNDQyNA==#%DA%A9%D8%A7%D9%86%D8%A7%D9%84+%3A+%40V2rayNGvpni",
@@ -109,132 +100,6 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3ZTY4ZTMyZi04MDE1LTRmMzctOTA4Mi03MGU4YjBiNTgwNDNAMTMuMTI1Ljk4LjEyOjg0NDM=#%5BOpenRay%5D%20%F0%9F%87%B0%F0%9F%87%B7KR-100",
-      "name": "[OpenRay] 🇰🇷KR-100",
-      "type": "ss",
-      "server": "13.125.98.12",
-      "port": 8443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo4ejJPQl9ndkZ2cEtnakZpOHM5Q3Z3QDE4NS4yMjMuNTcuMTc0OjgzODg=#%5BOpenRay%5D%20%F0%9F%87%A7%F0%9F%87%ACBG-105",
-      "name": "[OpenRay] 🇧🇬BG-105",
-      "type": "ss",
-      "server": "185.223.57.174",
-      "port": 8388,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyODc4OTk4OC04ODdlLTRlNDEtODNjZC0yN2JiZmI3OTk5YWRANTguMTUyLjU4LjE5Mzo0MDAwNg==#%5BOpenRay%5D%20%F0%9F%87%AD%F0%9F%87%B0HK-71",
-      "name": "[OpenRay] 🇭🇰HK-71",
-      "type": "ss",
-      "server": "58.152.58.193",
-      "port": 40006,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyODc4OTk4OC04ODdlLTRlNDEtODNjZC0yN2JiZmI3OTk5YWRAeHVubGlua25vZGUuY3NkamhhamtzaGRqa2FzLmNvbTo0MDAwNg==#%5BOpenRay%5D%20%F0%9F%8C%90XX-1587",
-      "name": "[OpenRay] 🌐XX-1587",
-      "type": "ss",
-      "server": "xunlinknode.csdjhajkshdjkas.com",
-      "port": 40006,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp2MWMtaTVTU0ZYUDhuNGcxV2JjMEw5Z1g4Mng1TzJRYUBkbnMyMi5tM2hyemQuaXI6ODA0NA==#%5BOpenRay%5D%20%F0%9F%8C%90XX-2303",
-      "name": "[OpenRay] 🌐XX-2303",
-      "type": "ss",
-      "server": "dns22.m3hrzd.ir",
-      "port": 8044,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp2MWMtaTVTU0ZYUDhuNGcxV2JjMEw5Z1g4Mng1TzJRYUBkbnMyNC5tM2hyemQuaXI6MTM0OQ==#%5BOpenRay%5D%20%F0%9F%8C%90XX-1288",
-      "name": "[OpenRay] 🌐XX-1288",
-      "type": "ss",
-      "server": "dns24.m3hrzd.ir",
-      "port": 1349,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp2MWMtaTVTU0ZYUDhuNGcxV2JjMEw5Z1g4Mng1TzJRYUBkbnMyNC5tM2hyemQuaXI6MTM1Mg==#%5BOpenRay%5D%20%F0%9F%8C%90XX-1988",
-      "name": "[OpenRay] 🌐XX-1988",
-      "type": "ss",
-      "server": "dns24.m3hrzd.ir",
-      "port": 1352,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp2MWMtaTVTU0ZYUDhuNGcxV2JjMEw5Z1g4Mng1TzJRYUBkbnMyNC5tM2hyemQuaXI6ODA0NA==#%5BOpenRay%5D%20%F0%9F%8C%90XX-1147",
-      "name": "[OpenRay] 🌐XX-1147",
-      "type": "ss",
-      "server": "dns24.m3hrzd.ir",
-      "port": 8044,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp2MWMtaTVTU0ZYUDhuNGcxV2JjMEw5Z1g4Mng1TzJRYUBkbnMyNy5tM2hyemQuaXI6MTM1Mw==#%5BOpenRay%5D%20%F0%9F%8C%90XX-2600",
-      "name": "[OpenRay] 🌐XX-2600",
-      "type": "ss",
-      "server": "dns27.m3hrzd.ir",
-      "port": 1353,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp2MWMtaTVTU0ZYUDhuNGcxV2JjMEw5Z1g4Mng1TzJRYUBkbnMyNy5tM2hyemQuaXI6ODA0NA==#%5BOpenRay%5D%20%F0%9F%8C%90XX-1785",
-      "name": "[OpenRay] 🌐XX-1785",
-      "type": "ss",
-      "server": "dns27.m3hrzd.ir",
-      "port": 8044,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp4MkE2QXN5Wi1yQWxsejB3YktIeldBQDE3OC4yNTMuMTYuMTg1OjgzODg=#%5BOpenRay%5D%20%F0%9F%87%AC%F0%9F%87%B7GR-3",
-      "name": "[OpenRay] 🇬🇷GR-3",
-      "type": "ss",
-      "server": "178.253.16.185",
-      "port": 8388,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp4MkE2QXN5Wi1yQWxsejB3YktIeldBQGFtczEucnZwbi5hcHA6ODM4OA==#%5BOpenRay%5D%20%F0%9F%8C%90XX-1290",
-      "name": "[OpenRay] 🌐XX-1290",
-      "type": "ss",
-      "server": "ams1.rvpn.app",
-      "port": 8388,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp4c0daOThheUxUVDNPcmlFQjF0S29QTXo2WXV4UVE0WEBncjFzLnN1YmxpbmtwbGFzLmlyOjUzNzMx#%5BOpenRay%5D%20%F0%9F%8C%90XX-4",
-      "name": "[OpenRay] 🌐XX-4",
-      "type": "ss",
-      "server": "gr1s.sublinkplas.ir",
-      "port": 53731,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBd1cxZlY2b0REUUtoOHIyem5tcHR2NTl0UGd0NGVIVlRnRmFUcWdLUzJqaVNkaWtKN0d5R0NCWWVoRGFLMzhTOHlNZ0hGZGJKcWNUbVJKU2ZZUzVDRnczNDViTmhGWmFAMTA0LjIzOS4xMi44MTo0MzM4NQ==#%5BOpenRay%5D%20%F0%9F%87%AC%F0%9F%87%A7GB-294",
-      "name": "[OpenRay] 🇬🇧GB-294",
-      "type": "ss",
-      "server": "104.239.12.81",
-      "port": 43385,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
       "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCb2cwRUxtTU05RFN4RGRRQHNlcmllcy1hMi1tZS52YXJ6ZXNoMzYwLmNvOjQ0Mw==#%F0%9F%87%A7%F0%9F%87%AD_BH_%E5%B7%B4%E6%9E%97_2",
       "name": "🇧🇭_BH_巴林_2",
       "type": "ss",
@@ -244,89 +109,17 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMQ3Zwcy0xOTktMTY4LTEzNi0xOTMtYmFrODQ0M0A0OS41MS4zOS4xNDg6NDQz#%5BOpenRay%5D%20%F0%9F%87%BA%F0%9F%87%B8US-1866",
-      "name": "[OpenRay] 🇺🇸US-1866",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1ZnQHNlcmllcy1hMi5zYW1hbmVoaGEuY286NDQz#%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_4",
+      "name": "🇺🇸_US_美国_4",
       "type": "ss",
-      "server": "49.51.39.148",
+      "server": "series-a2.samanehha.co",
       "port": 443,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRQ1hEeHVEbFRUTUQ3anRnSFVqSW9qQDE5My4yOS4xMzkuMjEyOjgwODA=#%5BOpenRay%5D%20%F0%9F%87%B3%F0%9F%87%B1NL-453",
-      "name": "[OpenRay] 🇳🇱NL-453",
-      "type": "ss",
-      "server": "193.29.139.212",
-      "port": 8080,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRcUZBNHh0bmZ2NkdwYUM1Z3k1TFcyN25DSGg5VTlxS0A0NS45Mi4yMTguMTIwOjEwODA=#%5BOpenRay%5D%20%F0%9F%87%AB%F0%9F%87%B7FR-150",
-      "name": "[OpenRay] 🇫🇷FR-150",
-      "type": "ss",
-      "server": "45.92.218.120",
-      "port": 1080,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZbXlqaTExZVp6U3psNUFZdzlIeWpBUWQ3ZGpmS3BwYkBoLm5vdmV4b3JhLmlyOjEwODA=#%5BOpenRay%5D%20%F0%9F%8C%90XX-2586",
-      "name": "[OpenRay] 🌐XX-2586",
-      "type": "ss",
-      "server": "h.novexora.ir",
-      "port": 1080,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpiZjUxMjlmMS0zMWY1LTRlZGYtYTA3YS0yN2VjMzFiMjZjMWRANTIuMjIxLjIwOS43MjoyMDk2#%5BOpenRay%5D%20%F0%9F%87%B8%F0%9F%87%ACSG-154",
-      "name": "[OpenRay] 🇸🇬SG-154",
-      "type": "ss",
-      "server": "52.221.209.72",
-      "port": 2096,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplOEtnUzhmRDB5RHFZRnBnTjRHNXBpQ090OWFGeXFBM0AxMzIuMjQzLjE3NS4xNDQ6ODM4OA==#%5BOpenRay%5D%20%F0%9F%87%A8%F0%9F%87%ADCH-33",
-      "name": "[OpenRay] 🇨🇭CH-33",
-      "type": "ss",
-      "server": "132.243.175.144",
-      "port": 8388,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpoTmZlTENOM1h6WWdMRlNBV29fZnhPbDRIQzFnTncwVkBkbnMyMy5tM2hyemQuaXI6ODA0NA==#%5BOpenRay%5D%20%F0%9F%8C%90XX-2268",
-      "name": "[OpenRay] 🌐XX-2268",
-      "type": "ss",
-      "server": "dns23.m3hrzd.ir",
-      "port": 8044,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpoTmZlTENOM1h6WWdMRlNBV29fZnhPbDRIQzFnTncwVkBkbnMyNy5tM2hyemQuaXI6ODA0NA==#%5BOpenRay%5D%20%F0%9F%8C%90XX-2742",
-      "name": "[OpenRay] 🌐XX-2742",
-      "type": "ss",
-      "server": "dns27.m3hrzd.ir",
-      "port": 8044,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpoVFRnN2x3UU16cGFGN0tYcFkzQTh3QGFsYi5ydnBuLmFwcDo4Mzg4#%5BOpenRay%5D%20%F0%9F%8C%90XX-1002",
-      "name": "[OpenRay] 🌐XX-1002",
-      "type": "ss",
-      "server": "alb.rvpn.app",
-      "port": 8388,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
       "uri": "VLESS://uuid@host.com:443?security=tls",
-      "name": "vless-36",
+      "name": "vless-15",
       "type": "vless",
       "server": "host.com",
       "port": 443,
@@ -335,7 +128,7 @@
     },
     {
       "uri": "hysteria2://${config.sops.placeholder.hy2_password}@cdn.example.com:443?obfs=salamander&obfs-password=${config.sops.placeholder.hy2_obfs}&sni=cdn.example.com&alpn=h3",
-      "name": "hysteria2-37",
+      "name": "hysteria2-16",
       "type": "hysteria2",
       "server": "cdn.example.com",
       "port": 443,
@@ -343,106 +136,79 @@
       "reason": "placeholder_endpoint"
     },
     {
-      "uri": "hysteria2://0abd5d38-fdf1-11ed-bade-f23c91369f2d@112.120.123.140:443?sni=f3ca53e4-tmm5c0-txkkcl-1fli7.nw4.hyhuawei.com#🇭🇰",
-      "name": "🇭🇰",
+      "uri": "hysteria2://099830134df5ac3a04a4b21d39b8c395@163.192.14.135:50160?insecure=1&sni=www.bing.com#%F0%9F%87%BA%F0%9F%87%B8US_164%7C1.1MB%2Fs%7CA001-260618",
+      "name": "🇺🇸US_164|1.1MB/s|A001-260618",
       "type": "hysteria2",
-      "server": "112.120.123.140",
-      "port": 443,
+      "server": "163.192.14.135",
+      "port": 50160,
       "ok": true,
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "hysteria2://10be1dad-9952-4c5e-aa30-db435f69b727@pl3.nexfile.net:4444?sni=pl3.nexfile.net&security=tls#@OutlineReleasedKey",
-      "name": "@OutlineReleasedKey",
+      "uri": "hysteria2://10be1dad-9952-4c5e-aa30-db435f69b727@bl3.nexfile.net:4444/#@V2ray_Collector",
+      "name": "@V2ray_Collector",
       "type": "hysteria2",
-      "server": "pl3.nexfile.net",
+      "server": "bl3.nexfile.net",
       "port": 4444,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://10f02d23-1d74-4b6e-b830-815be053281d@dfsbqwca.459921.xyz:8080/?insecure=1&sni=sg21.459921.xyz#%E6%96%B0%E5%8A%A0%E5%9D%A114aws",
-      "name": "新加坡14aws",
+      "uri": "hysteria2://10f02d23-1d74-4b6e-b830-815be053281d@d3e887dc.459292.xyz:8443/?insecure=1&sni=localhost#%E6%97%A5%E6%9C%AC11aws",
+      "name": "日本11aws",
       "type": "hysteria2",
-      "server": "dfsbqwca.459921.xyz",
+      "server": "d3e887dc.459292.xyz",
+      "port": 8443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://10f02d23-1d74-4b6e-b830-815be053281d@sg01.459292.xyz:8443/?insecure=1&sni=localhost#%E5%89%A9%E4%BD%99%E6%B5%81%E9%87%8F%EF%BC%9A0",
+      "name": "剩余流量：0",
+      "type": "hysteria2",
+      "server": "sg01.459292.xyz",
+      "port": 8443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://10f02d23-1d74-4b6e-b830-815be053281d@tw11.344211.cc:8080/?insecure=1&sni=localhost#hy2%E5%8F%B0%E6%B9%BE08",
+      "name": "hy2台湾08",
+      "type": "hysteria2",
+      "server": "tw11.344211.cc",
       "port": 8080,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://10f02d23-1d74-4b6e-b830-815be053281d@sg05.459292.xyz:8443/?insecure=1&sni=localhost#%E6%96%B0%E5%8A%A0%E5%9D%A105aws",
-      "name": "新加坡05aws",
+      "uri": "hysteria2://146d567c-6335-4e63-a8aa-7ec068642440@nlll.obxodvpn.us:4443?sni=nl1.obxodvpn.us#%F0%9F%87%BA%F0%9F%87%B8%20%5BHY%5D%20%D0%A1%D0%A8%D0%90%20%2311744%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me%2Frjsxrd",
+      "name": "🇺🇸 [HY] США #11744 | РосТуннель t.me/rjsxrd",
       "type": "hysteria2",
-      "server": "sg05.459292.xyz",
-      "port": 8443,
+      "server": "nlll.obxodvpn.us",
+      "port": 4443,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://10f02d23-1d74-4b6e-b830-815be053281d@tw5.459921.xyz:30001/?insecure=1&sni=localhost#hy2%E5%8F%B0%E6%B9%BE03",
-      "name": "hy2台湾03",
+      "uri": "hysteria2://19dd9c70-e4a5-11ed-8347-f23c9164ca5d@24f1571a-tmm5c0-tug19l-1go3q.hk3.hyhuawei.com:443?sni=24f1571a-tmm5c0-tug19l-1go3q.hk3.hyhuawei.com#%F0%9F%87%AD%F0%9F%87%B0HK_91%7C852KB%2Fs%7CM002-260618",
+      "name": "🇭🇰HK_91|852KB/s|M002-260618",
       "type": "hysteria2",
-      "server": "tw5.459921.xyz",
+      "server": "24f1571a-tmm5c0-tug19l-1go3q.hk3.hyhuawei.com",
+      "port": 443,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://1aa84841-8701-4700-ad46-2923dc2900d0@bibncobac.459921.xyz:30001/?insecure=1&sni=localhost#%E7%BE%8E%E5%9B%BD07aws",
+      "name": "美国07aws",
+      "type": "hysteria2",
+      "server": "bibncobac.459921.xyz",
       "port": 30001,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://171a4d7a-a1f0-499c-9fc5-3915c8b1f47b@36.232.91.193:22700?sni=api-q5.yuetong.online&obfs=salamander&obfs-password=RCsFxWZG3IaIukDE3U9l3bIv#🇸🇬",
-      "name": "🇸🇬",
-      "type": "hysteria2",
-      "server": "36.232.91.193",
-      "port": 22700,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://1aa84841-8701-4700-ad46-2923dc2900d0@5gzdx.344211.cc:30001/?insecure=1&sni=localhost#hy2%E5%8F%B0%E6%B9%BE09",
-      "name": "hy2台湾09",
-      "type": "hysteria2",
-      "server": "5gzdx.344211.cc",
-      "port": 30001,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://1aa84841-8701-4700-ad46-2923dc2900d0@jp03.459292.xyz:8443/?insecure=1&sni=localhost#%E6%97%A5%E6%9C%AC05aws",
-      "name": "日本05aws",
-      "type": "hysteria2",
-      "server": "jp03.459292.xyz",
-      "port": 8443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://1aa84841-8701-4700-ad46-2923dc2900d0@sg19.459921.xyz:8080/?insecure=1&sni=sg19.459921.xyz#%E6%96%B0%E5%8A%A0%E5%9D%A112aws",
-      "name": "新加坡12aws",
-      "type": "hysteria2",
-      "server": "sg19.459921.xyz",
-      "port": 8080,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://1aa84841-8701-4700-ad46-2923dc2900d0@vsdfgcasvag.459921.xyz:8443/?insecure=1&sni=localhost#%E6%97%A5%E6%9C%AC14aws",
-      "name": "日本14aws",
-      "type": "hysteria2",
-      "server": "vsdfgcasvag.459921.xyz",
-      "port": 8443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://1c74e77e-2a82-4932-8a08-429951c0df7c@asfdbabcwg.459921.xyz:8443/?insecure=1&sni=localhost#%E6%97%A5%E6%9C%AC18aws",
-      "name": "日本18aws",
-      "type": "hysteria2",
-      "server": "asfdbabcwg.459921.xyz",
-      "port": 8443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://1c74e77e-2a82-4932-8a08-429951c0df7c@sdfagasfe.459921.xyz:8443/?insecure=1&sni=localhost#%E6%97%A5%E6%9C%AC13aws",
+      "uri": "hysteria2://1aa84841-8701-4700-ad46-2923dc2900d0@sdfagasfe.459921.xyz:8443/?insecure=1&sni=localhost#%E6%97%A5%E6%9C%AC13aws",
       "name": "日本13aws",
       "type": "hysteria2",
       "server": "sdfagasfe.459921.xyz",
@@ -451,52 +217,178 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://1c74e77e-2a82-4932-8a08-429951c0df7c@tw1.459292.xyz:8443/?insecure=1&sni=tw1.459292.xyz#hy2%E5%8F%B0%E6%B9%BE01",
-      "name": "hy2台湾01",
+      "uri": "hysteria2://1aa84841-8701-4700-ad46-2923dc2900d0@tw07.344211.cc:8443/?insecure=1&sni=tw07.344211.cc#hy2%E5%8F%B0%E6%B9%BE04",
+      "name": "hy2台湾04",
       "type": "hysteria2",
-      "server": "tw1.459292.xyz",
+      "server": "tw07.344211.cc",
       "port": 8443,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://1r0d8slwbpg1iebe@129.153.77.162:8443?insecure=1&obfs=salamander&obfs-password=f7yrrbc9h6b1krnk&sni=www.apple.com#%40SylphNet%20%7C%201405-08-12%20%23100",
-      "name": "@SylphNet | 1405-08-12 #100",
+      "uri": "hysteria2://1beb216e3f60aea9555dae60d219a5ca@152.69.231.175:50160/?insecure=1&sni=152-69-231-175.liao.kdns.fr#🇨🇦",
+      "name": "🇨🇦",
       "type": "hysteria2",
-      "server": "129.153.77.162",
-      "port": 8443,
+      "server": "152.69.231.175",
+      "port": 50160,
       "ok": true,
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "hysteria2://29794dae-06ca-4b62-94f2-220b5858d39b@hk-hkg-dc23-003.node.valaccess.com:443/?sni=na.node.valaccess.com&insecure=0&obfs=salamander&obfs-password=TB3NFWHCbuXajqux&mport=20000-40000#HK-HKG-DC23-003%5BUDP%5D",
-      "name": "HK-HKG-DC23-003[UDP]",
+      "uri": "hysteria2://1c74e77e-2a82-4932-8a08-429951c0df7c@cfus01.459292.xyz:30001/?insecure=1&sni=localhost#%E7%BE%8E%E5%9B%BD05aws",
+      "name": "美国05aws",
       "type": "hysteria2",
-      "server": "hk-hkg-dc23-003.node.valaccess.com",
+      "server": "cfus01.459292.xyz",
+      "port": 30001,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://1c74e77e-2a82-4932-8a08-429951c0df7c@sg01.459292.xyz:8443/?insecure=1&sni=localhost#%E5%89%A9%E4%BD%99%E6%B5%81%E9%87%8F%EF%BC%9A0",
+      "name": "剩余流量：0",
+      "type": "hysteria2",
+      "server": "sg01.459292.xyz",
+      "port": 8443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://1c74e77e-2a82-4932-8a08-429951c0df7c@tw11.344211.cc:8080/?insecure=1&sni=localhost#hy2%E5%8F%B0%E6%B9%BE08",
+      "name": "hy2台湾08",
+      "type": "hysteria2",
+      "server": "tw11.344211.cc",
+      "port": 8080,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://1cce7df2-251c-11ee-9409-f23c9164ca5d@7be5fe79-tmm5c0-ttx5yr-1j0y6.los.hyhuawei.com:443#ProxyRift%20078",
+      "name": "ProxyRift 078",
+      "type": "hysteria2",
+      "server": "7be5fe79-tmm5c0-ttx5yr-1j0y6.los.hyhuawei.com",
+      "port": 443,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://2691cbe7c20cced8b0aeb12c812d09077e5b3eec7669fb8f@144.31.148.87:443/?insecure=1&sni=replay.wwwinternetvideo.click#%3E%3E%40oneclickvpnkeys%3A%3ADE",
+      "name": ">>@oneclickvpnkeys::DE",
+      "type": "hysteria2",
+      "server": "144.31.148.87",
       "port": 443,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://29794dae-06ca-4b62-94f2-220b5858d39b@tw-tpe-dc07-003.node.valaccess.com:443/?sni=na.node.valaccess.com&insecure=0&obfs=salamander&obfs-password=TB3NFWHCbuXajqux&mport=20000-40000#TW-TPE-DC07-003%5BUDP%5D",
-      "name": "TW-TPE-DC07-003[UDP]",
+      "uri": "hysteria2://29794dae-06ca-4b62-94f2-220b5858d39b@kr-icn-dc12-004.node.valaccess.com:443/?sni=na.node.valaccess.com&insecure=0&obfs=salamander&obfs-password=TB3NFWHCbuXajqux&mport=20000-40000#KR-ICN-DC12-004%5BUDP%5D",
+      "name": "KR-ICN-DC12-004[UDP]",
       "type": "hysteria2",
-      "server": "tw-tpe-dc07-003.node.valaccess.com",
+      "server": "kr-icn-dc12-004.node.valaccess.com",
       "port": 443,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://2a0fc918-9c61-451b-a9ad-e8f796e70f52@177.3.220.9:443/?sni=nl1.obxodvpn.us#%5BOpenRay%5D%20%F0%9F%87%A7%F0%9F%87%B7BR-234",
-      "name": "[OpenRay] 🇧🇷BR-234",
+      "uri": "hysteria2://2_hysteria2_fastlane_yxh4pck4j:uSAclXU4qlmSihCfyMvu0RDGnTMEYJNf@89.23.107.7:1935?sni=nl3.h.fastlanehosting.ru#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D",
+      "name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
       "type": "hysteria2",
-      "server": "177.3.220.9",
+      "server": "89.23.107.7",
+      "port": 1935,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://2e42c1ee-aaaa-11ec-bb74-f23c9164ca5d@a91af2af-tmm5c0-twnp5a-ahsb.hk3.hyhuawei.com:443?sni=a91af2af-tmm5c0-twnp5a-ahsb.hk3.hyhuawei.com#%F0%9F%87%AD%F0%9F%87%B0HK_89%7C923KB%2Fs%7CM002-260618",
+      "name": "🇭🇰HK_89|923KB/s|M002-260618",
+      "type": "hysteria2",
+      "server": "a91af2af-tmm5c0-twnp5a-ahsb.hk3.hyhuawei.com",
+      "port": 443,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://37a4f1e6-c0d8-44c1-9a09-f25a8290da82@156.229.165.91:55000?insecure=1&sni=www.bing.com#%F0%9F%87%BA%F0%9F%87%B8US_676%7C127KB%2Fs%7CM003-260806",
+      "name": "🇺🇸US_676|127KB/s|M003-260806",
+      "type": "hysteria2",
+      "server": "156.229.165.91",
+      "port": 55000,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://3a2f9f47-dbd7-473d-98f9-4e918a7e1e54@bibncobac.459921.xyz:30001/?insecure=1&sni=localhost#%E7%BE%8E%E5%9B%BD07aws",
+      "name": "美国07aws",
+      "type": "hysteria2",
+      "server": "bibncobac.459921.xyz",
+      "port": 30001,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://3a2f9f47-dbd7-473d-98f9-4e918a7e1e54@sdfagasfe.459921.xyz:8443/?insecure=1&sni=localhost#%E6%97%A5%E6%9C%AC13aws",
+      "name": "日本13aws",
+      "type": "hysteria2",
+      "server": "sdfagasfe.459921.xyz",
+      "port": 8443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://3a2f9f47-dbd7-473d-98f9-4e918a7e1e54@tw07.344211.cc:8443/?insecure=1&sni=tw07.344211.cc#hy2%E5%8F%B0%E6%B9%BE04",
+      "name": "hy2台湾04",
+      "type": "hysteria2",
+      "server": "tw07.344211.cc",
+      "port": 8443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://3bd247a8-993e-11ec-a8bf-f23c91cfbbc9@0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com:443#ProxyRift%20012",
+      "name": "ProxyRift 012",
+      "type": "hysteria2",
+      "server": "0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com",
+      "port": 443,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://3f514ea2-4662-11ed-a8bf-f23c91cfbbc9@112.120.123.140:443?sni=9fc34650-tmm5c0-tmj4pk-1kcpe.nw4.hyhuawei.com#%F0%9F%87%AD%F0%9F%87%B0%20Hong%20Kong%2C%20Central%20%7C%20%5BBL%5D",
+      "name": "🇭🇰 Hong Kong, Central | [BL]",
+      "type": "hysteria2",
+      "server": "112.120.123.140",
+      "port": 443,
+      "ok": false,
+      "reason": "core_not_ready"
+    },
+    {
+      "uri": "hysteria2://41edb44c8e@srv-17e124.21freedom.net:11592?insecure=1&sni=127.0.0.1#ProxyRift%20544",
+      "name": "ProxyRift 544",
+      "type": "hysteria2",
+      "server": "srv-17e124.21freedom.net",
+      "port": 11592,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://48ef13ac-d89e-4da0-8db4-c6aa72db4918@fr.song69.fun:28152?sni=fr.song69.fun&security=tls#@V2ray_Collector",
+      "name": "@V2ray_Collector",
+      "type": "hysteria2",
+      "server": "fr.song69.fun",
+      "port": 28152,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://51362ab6-b5e6-11ea-ad28-f23c913c8d2b@64.32.13.230:443?sni=4e5b2b98-tmm5c0-tnkuks-wujn.los.hyhuawei.com#🇺🇸",
+      "name": "🇺🇸",
+      "type": "hysteria2",
+      "server": "64.32.13.230",
       "port": 443,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://31676725-b0fd-fed2-c857-2da8ce5a6e4f@64.32.13.230:443?sni=24407910-tmm5c0-trnd2c-jjv2.los.hyhuawei.com#🇺🇸",
+      "uri": "hysteria2://5a4c13ae-6673-11ee-a149-f23c9164ca5d@64.32.13.230:443?sni=f452bbe9-tmm5c0-tpda83-1lkbs.los.hyhuawei.com#🇺🇸",
       "name": "🇺🇸",
       "type": "hysteria2",
       "server": "64.32.13.230",
@@ -505,55 +397,145 @@
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "hysteria2://3a2f9f47-dbd7-473d-98f9-4e918a7e1e54@27add0b5.459921.xyz:8443/?insecure=1&sni=localhost#%E6%97%A5%E6%9C%AC07aws",
-      "name": "日本07aws",
+      "uri": "hysteria2://633bc3be486b646190661ac2387c150a@152.67.115.203:443?insecure=1&obfs=salamander&obfs-password=850a3fb1cd33a28f12d837578ae1a2e7&sni=www.bing.com#%F0%9F%87%A6%F0%9F%87%BAAU_3%7C623KB%2Fs%7CR002-260618",
+      "name": "🇦🇺AU_3|623KB/s|R002-260618",
       "type": "hysteria2",
-      "server": "27add0b5.459921.xyz",
-      "port": 8443,
+      "server": "152.67.115.203",
+      "port": 443,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://6a3fe9d0-0d68-4f29-ae99-5771d4217a45@202.61.205.86:4433?sni=de1.xiaoliyu.cyou#@OutlineReleasedKey",
+      "name": "@OutlineReleasedKey",
+      "type": "hysteria2",
+      "server": "202.61.205.86",
+      "port": 4433,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "hysteria2://3a2f9f47-dbd7-473d-98f9-4e918a7e1e54@grqwbqvwv.459921.xyz:30001/?insecure=1&sni=localhost#%E7%BE%8E%E5%9B%BD08aws",
-      "name": "美国08aws",
+      "uri": "hysteria2://769f34f0-1500-488f-b414-03bc90666502@185.153.55.28:443?sni=se.mimowhat.online#🇸🇪",
+      "name": "🇸🇪",
       "type": "hysteria2",
-      "server": "grqwbqvwv.459921.xyz",
-      "port": 30001,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
+      "server": "185.153.55.28",
+      "port": 443,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "hysteria2://3a2f9f47-dbd7-473d-98f9-4e918a7e1e54@sg07.459292.xyz:8080/?insecure=1&sni=localhost#%E6%96%B0%E5%8A%A0%E5%9D%A107aws",
-      "name": "新加坡07aws",
+      "uri": "hysteria2://84a506ca5aca505696a454d828420b3f@140.238.213.114:50160?insecure=1&sni=www.bing.com#%F0%9F%87%A8%F0%9F%87%ADCH_14%7C2.7MB%2Fs%7CR002-260618",
+      "name": "🇨🇭CH_14|2.7MB/s|R002-260618",
       "type": "hysteria2",
-      "server": "sg07.459292.xyz",
-      "port": 8080,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://3a2f9f47-dbd7-473d-98f9-4e918a7e1e54@us04.459292.xyz:20001/?insecure=1&sni=localhost#%E7%BE%8E%E5%9B%BD04aws",
-      "name": "美国04aws",
-      "type": "hysteria2",
-      "server": "us04.459292.xyz",
-      "port": 20001,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "hysteria2://3d7634af8cb2c6cb4bac1c0efad8b43d@152.67.200.82:50160?insecure=1&sni=speedtest.tinkoff.ru#%F0%9F%87%B0%F0%9F%87%B7KR_17%7C670KB%2Fs%7CA004-260618",
-      "name": "🇰🇷KR_17|670KB/s|A004-260618",
-      "type": "hysteria2",
-      "server": "152.67.200.82",
+      "server": "140.238.213.114",
       "port": 50160,
       "ok": true,
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "hysteria2://40fb1315-191a-11ed-b0ca-f23c91cfbbc9@112.120.123.140:443?sni=fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com#🇭🇰",
-      "name": "🇭🇰",
+      "uri": "hysteria2://8d9ddfb4-7583-45b3-acf1-5343db385a38@1jp001.459292.xyz:8443/?insecure=1&sni=localhost#%E6%97%A5%E6%9C%AC02aws",
+      "name": "日本02aws",
       "type": "hysteria2",
-      "server": "112.120.123.140",
+      "server": "1jp001.459292.xyz",
+      "port": 8443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://8d9ddfb4-7583-45b3-acf1-5343db385a38@dbb53608.459921.xyz:8443/?insecure=1&sni=localhost#%E7%BE%8E%E5%9B%BD01aws",
+      "name": "美国01aws",
+      "type": "hysteria2",
+      "server": "dbb53608.459921.xyz",
+      "port": 8443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://8d9ddfb4-7583-45b3-acf1-5343db385a38@sg03.459292.xyz:8443/?insecure=1&sni=localhost#%E6%96%B0%E5%8A%A0%E5%9D%A103aws",
+      "name": "新加坡03aws",
+      "type": "hysteria2",
+      "server": "sg03.459292.xyz",
+      "port": 8443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://8d9ddfb4-7583-45b3-acf1-5343db385a38@tw4.459921.xyz:30001/?insecure=1&sni=localhost#hy2%E5%8F%B0%E6%B9%BE05",
+      "name": "hy2台湾05",
+      "type": "hysteria2",
+      "server": "tw4.459921.xyz",
+      "port": 30001,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://8fa4bea0-8703-11ef-83cc-f23c913c8d2b@0b28dbb8-tmm5c0-tn3jhp-1qthu.los.hyhuawei.com:443?insecure=1&sni=0b28dbb8-tmm5c0-tn3jhp-1qthu.los.hyhuawei.com#%F0%9F%87%BA%F0%9F%87%B8US_559%7C1.6MB%2Fs%7CM003-260806",
+      "name": "🇺🇸US_559|1.6MB/s|M003-260806",
+      "type": "hysteria2",
+      "server": "0b28dbb8-tmm5c0-tn3jhp-1qthu.los.hyhuawei.com",
+      "port": 443,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://94d40708-8273-11ea-8fc9-f23c913c8d2b@6d889de6-tly2o0-tn28ki-mv7m.nw4.hyhuawei.com:443?sni=6d889de6-tly2o0-tn28ki-mv7m.nw4.hyhuawei.com#ProxyRift%201795",
+      "name": "ProxyRift 1795",
+      "type": "hysteria2",
+      "server": "6d889de6-tly2o0-tn28ki-mv7m.nw4.hyhuawei.com",
+      "port": 443,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z@162.249.127.137:8443?sni=hop-germany-september.dynuddns.com#@V2ray_Collector",
+      "name": "@V2ray_Collector",
+      "type": "hysteria2",
+      "server": "162.249.127.137",
+      "port": 8443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://BWAFlp8g53@72.56.102.31:443/?insecure=1#%3E%3E%40oneclickvpnkeys%3A%3ANL",
+      "name": ">>@oneclickvpnkeys::NL",
+      "type": "hysteria2",
+      "server": "72.56.102.31",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://H7mP2xY9kJ4nQ8wR5tF6vB3z@103.115.109.49:443?insecure=1&sni=https%253A#%F0%9F%87%B9%F0%9F%87%BCTW_37%7C498KB%2Fs%7CM003-260806",
+      "name": "🇹🇼TW_37|498KB/s|M003-260806",
+      "type": "hysteria2",
+      "server": "103.115.109.49",
+      "port": 443,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://H7mP2xY9kJ4nQ8wR5tF6vB3z@15.223.183.81:443/?insecure=1&sni=t.me#%3E%3E%40oneclickvpnkeys%3A%3ACA",
+      "name": ">>@oneclickvpnkeys::CA",
+      "type": "hysteria2",
+      "server": "15.223.183.81",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "hysteria2://H7mP2xY9kJ4nQ8wR5tF6vB3z@202.146.222.174:443?insecure=1&sni=202.146.222.174#%F0%9F%87%AD%F0%9F%87%B0HK_12%7C685KB%2Fs%7CC002-260622",
+      "name": "🇭🇰HK_12|685KB/s|C002-260622",
+      "type": "hysteria2",
+      "server": "202.146.222.174",
+      "port": 443,
+      "ok": true,
+      "reason": "internet_stable_real_egress"
+    },
+    {
+      "uri": "hysteria2://H7mP2xY9kJ4nQ8wR5tF6vB3z@202.146.222.29:443?insecure=1&sni=https%253A%252F%252Ft.me%252Fwangcai2%25E2%2589%25A1%25C6%2592%25C3%25A7#%F0%9F%87%AD%F0%9F%87%B0HK_78%7C647KB%2Fs%7CM003-260806",
+      "name": "🇭🇰HK_78|647KB/s|M003-260806",
+      "type": "hysteria2",
+      "server": "202.146.222.29",
       "port": 443,
       "ok": true,
       "reason": "internet_stable_real_egress"

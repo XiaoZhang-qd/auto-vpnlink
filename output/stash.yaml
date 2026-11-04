@@ -3,130 +3,34 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸US_198|996KB/s|A004-260618
+- name: 🇺🇸US_283|1.1MB/s|A004-260618
   type: ss
   server: 103.11.76.248
   port: 28679
   cipher: 2022-blake3-aes-128-gcm
   password: NzJlOTQ5NWYtM2ZkYi00Cg==
   udp: true
-- name: 🇺🇸US_624|984KB/s|M003-260806
+- name: 🇺🇸US_593|1.0MB/s|M003-260806
   type: ss
   server: 38.145.220.193
   port: 8443
   cipher: 2022-blake3-aes-128-gcm
   password: jUbDNsFamcyDfpm+rI3Zyw==
   udp: true
-- name: 🇺🇸US_91|329KB/s|A004-260618
+- name: '@SylphNet | 1405-08-13 #199'
   type: ss
-  server: 216.9.225.189
-  port: 443
+  server: 129.150.59.74
+  port: 14384
   cipher: 2022-blake3-aes-256-gcm
-  password: Q2YsIzc5YkchSFjsqUZWrQAFtsSpqf7XxYxkG4+Jbsk=:zT1SecPttPY/XPW6NwjK5Wql+/6zbcGSDJK21Jk8uLo=
-  udp: true
-- name: 🇬🇧GB_29|7.5MB/s|B007-260618
-  type: ss
-  server: 51.38.71.51
-  port: 2083
-  cipher: 2022-blake3-aes-256-gcm
-  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
-  udp: true
-- name: '[OpenRay] 🇭🇰HK-71'
-  type: ss
-  server: 58.152.58.193
-  port: 40006
-  cipher: chacha20-ietf-poly1305
-  password: 28789988-887e-4e41-83cd-27bbfb7999ad
-  udp: true
-- name: '[OpenRay] 🌐XX-1587'
-  type: ss
-  server: xunlinknode.csdjhajkshdjkas.com
-  port: 40006
-  cipher: chacha20-ietf-poly1305
-  password: 28789988-887e-4e41-83cd-27bbfb7999ad
-  udp: true
-- name: '[OpenRay] 🌐XX-2303'
-  type: ss
-  server: dns22.m3hrzd.ir
-  port: 8044
-  cipher: chacha20-ietf-poly1305
-  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
-  udp: true
-- name: '[OpenRay] 🌐XX-1288'
-  type: ss
-  server: dns24.m3hrzd.ir
-  port: 1349
-  cipher: chacha20-ietf-poly1305
-  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
-  udp: true
-- name: '[OpenRay] 🌐XX-1988'
-  type: ss
-  server: dns24.m3hrzd.ir
-  port: 1352
-  cipher: chacha20-ietf-poly1305
-  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
-  udp: true
-- name: '[OpenRay] 🌐XX-1147'
-  type: ss
-  server: dns24.m3hrzd.ir
-  port: 8044
-  cipher: chacha20-ietf-poly1305
-  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
-  udp: true
-- name: '[OpenRay] 🌐XX-2600'
-  type: ss
-  server: dns27.m3hrzd.ir
-  port: 1353
-  cipher: chacha20-ietf-poly1305
-  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
-  udp: true
-- name: '[OpenRay] 🌐XX-1785'
-  type: ss
-  server: dns27.m3hrzd.ir
-  port: 8044
-  cipher: chacha20-ietf-poly1305
-  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
-  udp: true
-- name: '[OpenRay] 🇬🇧GB-294'
-  type: ss
-  server: 104.239.12.81
-  port: 43385
-  cipher: chacha20-ietf-poly1305
-  password: AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa
-  udp: true
-- name: '[OpenRay] 🇺🇸US-1866'
-  type: ss
-  server: 49.51.39.148
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: LCvps-199-168-136-193-bak8443
-  udp: true
-- name: '[OpenRay] 🇳🇱NL-453'
-  type: ss
-  server: 193.29.139.212
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
+  password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
   udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸US_198|996KB/s|A004-260618
-  - 🇺🇸US_624|984KB/s|M003-260806
-  - 🇺🇸US_91|329KB/s|A004-260618
-  - 🇬🇧GB_29|7.5MB/s|B007-260618
-  - '[OpenRay] 🇭🇰HK-71'
-  - '[OpenRay] 🌐XX-1587'
-  - '[OpenRay] 🌐XX-2303'
-  - '[OpenRay] 🌐XX-1288'
-  - '[OpenRay] 🌐XX-1988'
-  - '[OpenRay] 🌐XX-1147'
-  - '[OpenRay] 🌐XX-2600'
-  - '[OpenRay] 🌐XX-1785'
-  - '[OpenRay] 🇬🇧GB-294'
-  - '[OpenRay] 🇺🇸US-1866'
-  - '[OpenRay] 🇳🇱NL-453'
+  - 🇺🇸US_283|1.1MB/s|A004-260618
+  - 🇺🇸US_593|1.0MB/s|M003-260806
+  - '@SylphNet | 1405-08-13 #199'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
