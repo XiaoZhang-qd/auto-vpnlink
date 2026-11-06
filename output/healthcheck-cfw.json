@@ -1,12 +1,12 @@
 {
-  "candidate_limit": 25,
-  "tested": 24,
-  "skipped": 1,
-  "healthy": 7,
-  "failed": 17,
+  "candidate_limit": 50,
+  "tested": 48,
+  "skipped": 2,
+  "healthy": 3,
+  "failed": 45,
   "success_target": 10,
   "target_reached": false,
-  "runner_public_ip": "20.99.236.254",
+  "runner_public_ip": "40.74.231.22",
   "allowed_types": [
     "hysteria",
     "hysteria2",
@@ -19,8 +19,17 @@
   "rounds": 3,
   "results": [
     {
-      "uri": "ss://2022-blake3-aes-128-gcm:NzJlOTQ5NWYtM2ZkYi00Cg%3D%3D@103.11.76.248:28679#%F0%9F%87%BA%F0%9F%87%B8US_252%7C349KB%2Fs%7CA004-260618",
-      "name": "🇺🇸US_252|349KB/s|A004-260618",
+      "uri": "ss://2022-blake3-aes-128-gcm%3AAAAAAAAAAAAAAAAAAAAAAA%3D%3D@a.com:8388#x",
+      "name": "x",
+      "type": "ss",
+      "server": "a.com",
+      "port": 8388,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://2022-blake3-aes-128-gcm:NzJlOTQ5NWYtM2ZkYi00Cg==@103.11.76.248:28679#🇺🇸191374",
+      "name": "🇺🇸191374",
       "type": "ss",
       "server": "103.11.76.248",
       "port": 28679,
@@ -28,22 +37,13 @@
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-aes-128-gcm:UVqvTTy4pr77CJ2linjEnA%3D%3D%3A8qSj542xKUIn6p0pU1ahNg%3D%3D@ser1.plasmoon.ir:2028#%F0%9F%91%89%F0%9F%86%94%40Goodbaye_filtering%0A%F0%9F%93%A1%F0%9F%87%AE%F0%9F%87%B7%20%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%0A%C2%AE%EF%B8%8FAbr%20Baran%20Inform%0A%F0%9F%85%BF%EF%B8%8Fping%3A128ms%0A%E2%9A%A1VIP%20Strict%20%7C%20SS%20IPv4",
-      "name": "👉🆔@Goodbaye_filtering\n📡🇮🇷 ایران\n®️Abr Baran Inform\n🅿️ping:128ms\n⚡VIP Strict | SS IPv4",
+      "uri": "ss://2022-blake3-aes-128-gcm:key..key@proxy.example.com:8388",
+      "name": "ss-3",
       "type": "ss",
-      "server": "ser1.plasmoon.ir",
-      "port": 2028,
+      "server": "proxy.example.com",
+      "port": 8388,
       "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://2022-blake3-aes-128-gcm:jUbDNsFamcyDfpm%2BrI3Zyw%3D%3D@38.145.220.193:8443#%F0%9F%87%BA%F0%9F%87%B8US_608%7C1.1MB%2Fs%7CM003-260806",
-      "name": "🇺🇸US_608|1.1MB/s|M003-260806",
-      "type": "ss",
-      "server": "38.145.220.193",
-      "port": 8443,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
+      "reason": "placeholder_endpoint"
     },
     {
       "uri": "ss://2022-blake3-aes-256-gcm:cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=@51.38.71.51:2083#🇫🇷",
@@ -55,44 +55,98 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://2022-blake3-aes-256-gcm:cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:HWFFJN19JkvbTKo/79AfnbRBK9uHUUaFNZJyLjEoJGs=@51.222.107.43:2083#🇨🇦",
-      "name": "🇨🇦",
+      "uri": "ss://2022-blake3-aes-256-gcm:pRCipSixOSlsNAigMmwfYttz5VmVznoCYX4Pw1G4LxM=:ovtz25KfnF29DC8nL8tMIpBaQuGoUupwCRQIZUHECks=@195.201.32.108:8083#💻",
+      "name": "💻",
       "type": "ss",
-      "server": "51.222.107.43",
-      "port": 2083,
+      "server": "195.201.32.108",
+      "port": 8083,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://2022-blake3-aes-256-gcm:sUR6Ny8Y6PSvHhl%2FDUxconwxg6VZyFdsdfaVCvEatJo%3D%3A7bTEhHgpErKiRjE1ega%2BH6pcpJsNLFB0CjQseujAHrA%3D@129.150.59.74:14384#%40SylphNet%20%7C%201405-08-14%20%23145",
-      "name": "@SylphNet | 1405-08-14 #145",
+      "uri": "ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6c0dkYmloT2IvcS9FYkFOVzI2T0RrWnZXK2JGeHRMNU9JU29oQTY0dkNxUT1AMTYzLjE3Ni4yMTMuMzQ6NTkzMTk=#%5BOpenRay%5D%20%F0%9F%87%A7%F0%9F%87%B7%20BR-288",
+      "name": "[OpenRay] 🇧🇷 BR-288",
       "type": "ss",
-      "server": "129.150.59.74",
-      "port": 14384,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFhQDE5My4yOS4xMzkuMjM0OjgwODA=#%5BOpenRay%5D%20%F0%9F%87%B3%F0%9F%87%B1NL-484",
-      "name": "[OpenRay] 🇳🇱NL-484",
-      "type": "ss",
-      "server": "193.29.139.234",
-      "port": 8080,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2NExiS0huQjNJTzc1OXVlRW5oZ01HQDUyLjE0Mi4xNjEuOTozNDQyNA==#%DA%A9%D8%A7%D9%86%D8%A7%D9%84+%3A+%40V2rayNGvpni",
-      "name": "کانال+:+@V2rayNGvpni",
-      "type": "ss",
-      "server": "52.142.161.9",
-      "port": 34424,
+      "server": "163.176.213.34",
+      "port": 59319,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyODc4OTk4OC04ODdlLTRlNDEtODNjZC0yN2JiZmI3OTk5YWRANTguMTUyLjU4LjE5Mzo0MDAwNg==#%5BOpenRay%5D%20%F0%9F%87%AD%F0%9F%87%B0HK-56",
-      "name": "[OpenRay] 🇭🇰HK-56",
+      "uri": "ss://MjAyMi1ibGFrZTMtYWVzLTEyOC1nY206cVBQVTRjR1U1OWhqUm5PeU5UamFjQT09QHNkLXNoLmJ4LXhiLnh5ejo2Mjc0MA#%5BOpenRay%5D%20%F0%9F%87%A8%F0%9F%87%B3%20CN-68",
+      "name": "[OpenRay] 🇨🇳 CN-68",
+      "type": "ss",
+      "server": "sd-sh.bx-xb.xyz",
+      "port": 62740,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://MjAyMi1ibGFrZTMtYWVzLTEyOC1nY206cVBQVTRjR1U1OWhqUm5PeU5UamFjQT09QHNkLXNoLmJ4LXhiLnh5ejo2Mjc4MA#%5BOpenRay%5D%20%F0%9F%87%A8%F0%9F%87%B3%20CN-69",
+      "name": "[OpenRay] 🇨🇳 CN-69",
+      "type": "ss",
+      "server": "sd-sh.bx-xb.xyz",
+      "port": 62780,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1ZDc5OTA2ZC04OWFiLTQzMGItYWNiYy0zMzI3NTY4YTViZTNAMTI5LjE1MS45OS45NDoyMzM0NQ==#%5BOpenRay%5D%20%F0%9F%87%A8%F0%9F%87%B1%20CL-4",
+      "name": "[OpenRay] 🇨🇱 CL-4",
+      "type": "ss",
+      "server": "129.151.99.94",
+      "port": 23345,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2OG1MMlFrWkVCbHhXYTNoY3NsR0R3QGJhbGUueHY5OC5pcjo1MDUx#%5BOpenRay%5D%20%F0%9F%87%B9%F0%9F%87%B7%20TR-2011",
+      "name": "[OpenRay] 🇹🇷 TR-2011",
+      "type": "ss",
+      "server": "bale.xv98.ir",
+      "port": 5051,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3YjU2YWVhYS04ZTJkLTRiZGYtYjFkNy0yMzNlY2NhMTVmNTZAbmFtcmNnMDAxNjQwbHJtLmN5YmVydmVuYS5jb206NTAwOTk=#%5BOpenRay%5D%20%F0%9F%87%B9%F0%9F%87%BC%20TW-639",
+      "name": "[OpenRay] 🇹🇼 TW-639",
+      "type": "ss",
+      "server": "namrcg001640lrm.cybervena.com",
+      "port": 50099,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo4QzV2YWxoT2Q4dmZ3YVRYVVNaNlp5YjBJcDM0bFJSNXo3UDhhekAxMDMuMTYwLjYzLjE5OTozMTM0OA==#%5BOpenRay%5D%20%F0%9F%87%AE%F0%9F%87%A9%20ID-8",
+      "name": "[OpenRay] 🇮🇩 ID-8",
+      "type": "ss",
+      "server": "103.160.63.199",
+      "port": 31348,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5YmlubVZUNThXbnI2dk56eHVfSm1wekVXNmktRmdBakA4MC45Ny4yNy4xMDY6MTE3#%5BOpenRay%5D%20%F0%9F%87%B7%F0%9F%87%B4%20RO-109",
+      "name": "[OpenRay] 🇷🇴 RO-109",
+      "type": "ss",
+      "server": "80.97.27.106",
+      "port": 117,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxa1ZyMEtBVElKSTdtd09GQGFkbWluLmMxLmhhdmlqLmNvOjQ0Mw==#",
+      "name": "ss-15",
+      "type": "ss",
+      "server": "admin.c1.havij.co",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyODc4OTk4OC04ODdlLTRlNDEtODNjZC0yN2JiZmI3OTk5YWRANTguMTUyLjU4LjE5Mzo0MDAwNg==#%5BOpenRay%5D%20%F0%9F%87%AD%F0%9F%87%B0HK-54",
+      "name": "[OpenRay] 🇭🇰HK-54",
       "type": "ss",
       "server": "58.152.58.193",
       "port": 40006,
@@ -100,17 +154,17 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyODc4OTk4OC04ODdlLTRlNDEtODNjZC0yN2JiZmI3OTk5YWRAeHVubGlua25vZGUuY3NkamhhamtzaGRqa2FzLmNvbTo0MDAwNg==#%5BOpenRay%5D%20%F0%9F%8C%90XX-1206",
-      "name": "[OpenRay] 🌐XX-1206",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozSkI5MWw1b2wySHZrUFVkdXcyaGo0QDE1Ny4yMi4yNDAuMTQxOjU3OTI1#%5BOpenRay%5D%20%F0%9F%87%A6%F0%9F%87%B1%20AL-8",
+      "name": "[OpenRay] 🇦🇱 AL-8",
       "type": "ss",
-      "server": "xunlinknode.csdjhajkshdjkas.com",
-      "port": 40006,
+      "server": "157.22.240.141",
+      "port": 57925,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp2MWMtaTVTU0ZYUDhuNGcxV2JjMEw5Z1g4Mng1TzJRYUBkbnMyMi5tM2hyemQuaXI6ODA0NA==#%5BOpenRay%5D%20%F0%9F%8C%90XX-1747",
-      "name": "[OpenRay] 🌐XX-1747",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp2MWMtaTVTU0ZYUDhuNGcxV2JjMEw5Z1g4Mng1TzJRYUBkbnMyMi5tM2hyemQuaXI6ODA0NA==#%5BOpenRay%5D%20%F0%9F%8C%90XX-1526",
+      "name": "[OpenRay] 🌐XX-1526",
       "type": "ss",
       "server": "dns22.m3hrzd.ir",
       "port": 8044,
@@ -118,8 +172,8 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp2MWMtaTVTU0ZYUDhuNGcxV2JjMEw5Z1g4Mng1TzJRYUBkbnMyNC5tM2hyemQuaXI6MTM0OQ==#%5BOpenRay%5D%20%F0%9F%8C%90XX-968",
-      "name": "[OpenRay] 🌐XX-968",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp2MWMtaTVTU0ZYUDhuNGcxV2JjMEw5Z1g4Mng1TzJRYUBkbnMyNC5tM2hyemQuaXI6MTM0OQ==#%5BOpenRay%5D%20%F0%9F%8C%90XX-854",
+      "name": "[OpenRay] 🌐XX-854",
       "type": "ss",
       "server": "dns24.m3hrzd.ir",
       "port": 1349,
@@ -127,17 +181,8 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp2MWMtaTVTU0ZYUDhuNGcxV2JjMEw5Z1g4Mng1TzJRYUBkbnMyNC5tM2hyemQuaXI6MTM1Mg==#%5BOpenRay%5D%20%F0%9F%8C%90XX-1516",
-      "name": "[OpenRay] 🌐XX-1516",
-      "type": "ss",
-      "server": "dns24.m3hrzd.ir",
-      "port": 1352,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp2MWMtaTVTU0ZYUDhuNGcxV2JjMEw5Z1g4Mng1TzJRYUBkbnMyNC5tM2hyemQuaXI6ODA0NA==#%5BOpenRay%5D%20%F0%9F%8C%90XX-850",
-      "name": "[OpenRay] 🌐XX-850",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp2MWMtaTVTU0ZYUDhuNGcxV2JjMEw5Z1g4Mng1TzJRYUBkbnMyNC5tM2hyemQuaXI6ODA0NA==#%5BOpenRay%5D%20%F0%9F%8C%90XX-748",
+      "name": "[OpenRay] 🌐XX-748",
       "type": "ss",
       "server": "dns24.m3hrzd.ir",
       "port": 8044,
@@ -145,17 +190,8 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp2MWMtaTVTU0ZYUDhuNGcxV2JjMEw5Z1g4Mng1TzJRYUBkbnMyNy5tM2hyemQuaXI6MTM1Mw==#%5BOpenRay%5D%20%F0%9F%8C%90XX-1972",
-      "name": "[OpenRay] 🌐XX-1972",
-      "type": "ss",
-      "server": "dns27.m3hrzd.ir",
-      "port": 1353,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp2MWMtaTVTU0ZYUDhuNGcxV2JjMEw5Z1g4Mng1TzJRYUBkbnMyNy5tM2hyemQuaXI6ODA0NA==#%5BOpenRay%5D%20%F0%9F%8C%90XX-1363",
-      "name": "[OpenRay] 🌐XX-1363",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp2MWMtaTVTU0ZYUDhuNGcxV2JjMEw5Z1g4Mng1TzJRYUBkbnMyNy5tM2hyemQuaXI6ODA0NA==#%5BOpenRay%5D%20%F0%9F%8C%90XX-1194",
+      "name": "[OpenRay] 🌐XX-1194",
       "type": "ss",
       "server": "dns27.m3hrzd.ir",
       "port": 8044,
@@ -172,8 +208,8 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBd1cxZlY2b0REUUtoOHIyem5tcHR2NTl0UGd0NGVIVlRnRmFUcWdLUzJqaVNkaWtKN0d5R0NCWWVoRGFLMzhTOHlNZ0hGZGJKcWNUbVJKU2ZZUzVDRnczNDViTmhGWmFAMTA0LjIzOS4xMi44MTo0MzM4NQ==#%5BOpenRay%5D%20%F0%9F%87%AC%F0%9F%87%A7GB-259",
-      "name": "[OpenRay] 🇬🇧GB-259",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBd1cxZlY2b0REUUtoOHIyem5tcHR2NTl0UGd0NGVIVlRnRmFUcWdLUzJqaVNkaWtKN0d5R0NCWWVoRGFLMzhTOHlNZ0hGZGJKcWNUbVJKU2ZZUzVDRnczNDViTmhGWmFAMTA0LjIzOS4xMi44MTo0MzM4NQ==#%5BOpenRay%5D%20%F0%9F%87%AC%F0%9F%87%A7GB-240",
+      "name": "[OpenRay] 🇬🇧GB-240",
       "type": "ss",
       "server": "104.239.12.81",
       "port": 43385,
@@ -181,26 +217,35 @@
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCb2cwRUxtTU05RFN4RGRRQHNlcmllcy1hMi1tZS52YXJ6ZXNoMzYwLmNvOjQ0Mw==#%F0%9F%87%A7%F0%9F%87%AD_BH_%E5%B7%B4%E6%9E%97_2",
-      "name": "🇧🇭_BH_巴林_2",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDSm1UQ0N4N0x0dWRAMTA4LjE4MS41OC4yMzk6ODM4OA==#%5BOpenRay%5D%20%F0%9F%87%B3%F0%9F%87%B1%20NL-3608",
+      "name": "[OpenRay] 🇳🇱 NL-3608",
       "type": "ss",
-      "server": "series-a2-me.varzesh360.co",
-      "port": 443,
+      "server": "108.181.58.239",
+      "port": 8388,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMQ3Zwcy0xOTktMTY4LTEzNi0xOTMtYmFrODQ0M0A0OS41MS4zOS4xNDg6NDQz#%5BOpenRay%5D%20%F0%9F%87%BA%F0%9F%87%B8US-1993",
-      "name": "[OpenRay] 🇺🇸US-1993",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpEOGZnblIyOE1jVGJneEVuU0d3WmZQQVlHUEpEWXNlWnZKZlRDazh0dmVvPUAxMTkuNTkuMTE2LjE2OTo0MTkxMQ==#%5BOpenRay%5D%20%F0%9F%87%B9%F0%9F%87%AD%20TH-61",
+      "name": "[OpenRay] 🇹🇭 TH-61",
       "type": "ss",
-      "server": "49.51.39.148",
-      "port": 443,
-      "ok": true,
-      "reason": "internet_stable_real_egress"
+      "server": "119.59.116.169",
+      "port": 41911,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRQ1hEeHVEbFRUTUQ3anRnSFVqSW9qQDE5My4yOS4xMzkuMjEyOjgwODA=#%5BOpenRay%5D%20%F0%9F%87%B3%F0%9F%87%B1NL-485",
-      "name": "[OpenRay] 🇳🇱NL-485",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpKMUludVU2UVJUNUpPaDFtUWZralUyQDE0NC4zMS4yNDMuMjoxNjAxNQ==#%5BOpenRay%5D%20%F0%9F%87%B1%F0%9F%87%B9%20LT-600",
+      "name": "[OpenRay] 🇱🇹 LT-600",
+      "type": "ss",
+      "server": "144.31.243.2",
+      "port": 16015,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRQ1hEeHVEbFRUTUQ3anRnSFVqSW9qQDE5My4yOS4xMzkuMjEyOjgwODA=#%5BOpenRay%5D%20%F0%9F%87%B3%F0%9F%87%B1%20NL-10352",
+      "name": "[OpenRay] 🇳🇱 NL-10352",
       "type": "ss",
       "server": "193.29.139.212",
       "port": 8080,
@@ -208,17 +253,125 @@
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZbXlqaTExZVp6U3psNUFZdzlIeWpBUWQ3ZGpmS3BwYkBoLm5vdmV4b3JhLmlyOjEwODA=#%5BOpenRay%5D%20%F0%9F%8C%90XX-1963",
-      "name": "[OpenRay] 🌐XX-1963",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpUV0c3SjFLUjVLc1BhVjVxWkkrcmlldWVLeHhhZlpTcENIQDQ1Ljc3LjIzMi4yMTM6MTU2NzU=#%5BOpenRay%5D%20%F0%9F%87%A6%F0%9F%87%BA%20AU-49",
+      "name": "[OpenRay] 🇦🇺 AU-49",
       "type": "ss",
-      "server": "h.novexora.ir",
+      "server": "45.77.232.213",
+      "port": 15675,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYRjBrbHc3ODcwdlhuM3VRSXhlMTlRQDE5NC4xODcuMjUxLjI6MTA4MA==#%5BOpenRay%5D%20%F0%9F%87%A7%F0%9F%87%AA%20BE-12",
+      "name": "[OpenRay] 🇧🇪 BE-12",
+      "type": "ss",
+      "server": "194.187.251.2",
       "port": 1080,
       "ok": false,
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpiSU9vaTVUdUltRzJLY2N4VjctamNBN0Nleit2dW4tY19FQGF1MS5sZXZpa29namdmZGQuaXI6MjcxMTY=#[002343",
-      "name": "[002343",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZamxpWW1GbE56Vm1NbUU0Wm1Ka1lqQXhOelEyTldVeU56WmxOamhrWkdVPUAxMzYuMjQ4Ljg1LjgxOjU5MzE5#%5BOpenRay%5D%20%F0%9F%87%A7%F0%9F%87%B7%20BR-222",
+      "name": "[OpenRay] 🇧🇷 BR-222",
+      "type": "ss",
+      "server": "136.248.85.81",
+      "port": 59319,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZamxpWW1GbE56Vm1NbUU0Wm1Ka1lqQXhOelEyTldVeU56WmxOamhrWkdVPUAxMzcuMTMxLjE0Mi4xNTo1OTMxOQ==#%5BOpenRay%5D%20%F0%9F%87%A7%F0%9F%87%B7%20BR-213",
+      "name": "[OpenRay] 🇧🇷 BR-213",
+      "type": "ss",
+      "server": "137.131.142.15",
+      "port": 59319,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZamxpWW1GbE56Vm1NbUU0Wm1Ka1lqQXhOelEyTldVeU56WmxOamhrWkdVPUAxMzcuMTMxLjE3MC40Mjo1OTMxOQ==#%5BOpenRay%5D%20%F0%9F%87%A7%F0%9F%87%B7%20BR-199",
+      "name": "[OpenRay] 🇧🇷 BR-199",
+      "type": "ss",
+      "server": "137.131.170.42",
+      "port": 59319,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZamxpWW1GbE56Vm1NbUU0Wm1Ka1lqQXhOelEyTldVeU56WmxOamhrWkdVPUAxMzcuMTMxLjIyMy4yMzM6NTkzMTk=#%5BOpenRay%5D%20%F0%9F%87%A7%F0%9F%87%B7%20BR-214",
+      "name": "[OpenRay] 🇧🇷 BR-214",
+      "type": "ss",
+      "server": "137.131.223.233",
+      "port": 59319,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZamxpWW1GbE56Vm1NbUU0Wm1Ka1lqQXhOelEyTldVeU56WmxOamhrWkdVPUAxNDcuMTUuMTEuMTQ2OjU5MzE5#%5BOpenRay%5D%20%F0%9F%87%A7%F0%9F%87%B7%20BR-203",
+      "name": "[OpenRay] 🇧🇷 BR-203",
+      "type": "ss",
+      "server": "147.15.11.146",
+      "port": 59319,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZamxpWW1GbE56Vm1NbUU0Wm1Ka1lqQXhOelEyTldVeU56WmxOamhrWkdVPUAxNDcuMTUuMTIwLjEyMzo1OTMxOQ==#%5BOpenRay%5D%20%F0%9F%87%A7%F0%9F%87%B7%20BR-216",
+      "name": "[OpenRay] 🇧🇷 BR-216",
+      "type": "ss",
+      "server": "147.15.120.123",
+      "port": 59319,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZamxpWW1GbE56Vm1NbUU0Wm1Ka1lqQXhOelEyTldVeU56WmxOamhrWkdVPUAxNjMuMTc2LjE2MS4yNDI6NTkzMTk=#%5BOpenRay%5D%20%F0%9F%87%A7%F0%9F%87%B7%20BR-217",
+      "name": "[OpenRay] 🇧🇷 BR-217",
+      "type": "ss",
+      "server": "163.176.161.242",
+      "port": 59319,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZamxpWW1GbE56Vm1NbUU0Wm1Ka1lqQXhOelEyTldVeU56WmxOamhrWkdVPUAxNjMuMTc2LjIxLjE4Nzo1OTMxOQ==#%5BOpenRay%5D%20%F0%9F%87%A7%F0%9F%87%B7%20BR-215",
+      "name": "[OpenRay] 🇧🇷 BR-215",
+      "type": "ss",
+      "server": "163.176.21.187",
+      "port": 59319,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZamxpWW1GbE56Vm1NbUU0Wm1Ka1lqQXhOelEyTldVeU56WmxOamhrWkdVPUAxNjMuMTc2LjUxLjE2NTo1OTMxOQ==#%5BOpenRay%5D%20%F0%9F%87%A7%F0%9F%87%B7%20BR-204",
+      "name": "[OpenRay] 🇧🇷 BR-204",
+      "type": "ss",
+      "server": "163.176.51.165",
+      "port": 59319,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZamxpWW1GbE56Vm1NbUU0Wm1Ka1lqQXhOelEyTldVeU56WmxOamhrWkdVPUAxNjguNzUuMTA4LjIyNDo1OTMxOQ==#%5BOpenRay%5D%20%F0%9F%87%A7%F0%9F%87%B7%20BR-195",
+      "name": "[OpenRay] 🇧🇷 BR-195",
+      "type": "ss",
+      "server": "168.75.108.224",
+      "port": 59319,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphOWEwZDA5Mi02ZjBlLTQ3MDEtODFlZS00NTQ2NDNkNmQ1MDZAbmFtcmNnMDAxNjQwbHJtLmN5YmVydmVuYS5jb206NTAwOTk=#%5BOpenRay%5D%20%F0%9F%87%B9%F0%9F%87%BC%20TW-802",
+      "name": "[OpenRay] 🇹🇼 TW-802",
+      "type": "ss",
+      "server": "namrcg001640lrm.cybervena.com",
+      "port": 50099,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpiSU9vaTVUdUltRzJLY2N4VjctamNBN0Nleit2dW4tY19FQGF1MS5sZXZpa29namdmZGQuaXI6MjcxMTY=#%5BOpenRay%5D%20%F0%9F%87%A6%F0%9F%87%BA%20AU-102",
+      "name": "[OpenRay] 🇦🇺 AU-102",
       "type": "ss",
       "server": "au1.levikogjgfdd.ir",
       "port": 27116,
@@ -226,11 +379,74 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpiZjUxMjlmMS0zMWY1LTRlZGYtYTA3YS0yN2VjMzFiMjZjMWRANTIuMjIxLjIwOS43MjoyMDk2#%5BOpenRay%5D%20%F0%9F%87%B8%F0%9F%87%ACSG-136",
-      "name": "[OpenRay] 🇸🇬SG-136",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplOEtnUzhmRDB5RHFZRnBnTjRHNXBpQ090OWFGeXFBM0AxMzIuMjQzLjE3NS4xNDQ6ODM4OA==#%5BOpenRay%5D%20%F0%9F%87%A8%F0%9F%87%AD%20CH-1083",
+      "name": "[OpenRay] 🇨🇭 CH-1083",
       "type": "ss",
-      "server": "52.221.209.72",
-      "port": 2096,
+      "server": "132.243.175.144",
+      "port": 8388,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpnZWx3dlU5bVVSMG9yRUZTNUQ2dTdBQDE5NC41NC44MC4zNzoxMDgw#%5BOpenRay%5D%20%F0%9F%87%BA%F0%9F%87%A6%20UA-3",
+      "name": "[OpenRay] 🇺🇦 UA-3",
+      "type": "ss",
+      "server": "194.54.80.37",
+      "port": 1080,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpnZWx3dlU5bVVSMG9yRUZTNUQ2dTdBQDEzNS4xMzYuMzMuMTM0OjEwODA=#%5BOpenRay%5D%20%F0%9F%87%A9%F0%9F%87%B0%20DK-5",
+      "name": "[OpenRay] 🇩🇰 DK-5",
+      "type": "ss",
+      "server": "135.136.33.134",
+      "port": 1080,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpqSWxRaTlqR1BKZDdLSE14Nlk0K0piYU5vV1NXZmUyQTczVTRKNG8wUXJzPUAxMzAuNDkuMTg5LjE1ODo0MzU1OA==#%5BOpenRay%5D%20%F0%9F%87%A6%F0%9F%87%B1%20AL-65",
+      "name": "[OpenRay] 🇦🇱 AL-65",
+      "type": "ss",
+      "server": "130.49.189.158",
+      "port": 43558,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "Trojan://$uuid@c.com:443?sni=c.com",
+      "name": "trojan-46",
+      "type": "trojan",
+      "server": "c.com",
+      "port": 443,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5YmlubVZUNThXbnI2dk56eHVfSm1wekVXNmktRmdBakA4MC45Ny4yNy4xMDY6MTE0#%5BOpenRay%5D%20%F0%9F%87%B7%F0%9F%87%B4%20RO-110",
+      "name": "[OpenRay] 🇷🇴 RO-110",
+      "type": "ss",
+      "server": "80.97.27.106",
+      "port": 114,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpFVFVPT1FUcGRycktsbjcyVVl4d2lvQDEzMC40OS4xODkuMTU4OjEwNzky#%5BOpenRay%5D%20%F0%9F%87%A6%F0%9F%87%B1%20AL-7",
+      "name": "[OpenRay] 🇦🇱 AL-7",
+      "type": "ss",
+      "server": "130.49.189.158",
+      "port": 10792,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZamxpWW1GbE56Vm1NbUU0Wm1Ka1lqQXhOelEyTldVeU56WmxOamhrWkdVPUAxNjMuMTc2LjExNC4yNDM6NTkzMTk=#%5BOpenRay%5D%20%F0%9F%87%A7%F0%9F%87%B7%20BR-202",
+      "name": "[OpenRay] 🇧🇷 BR-202",
+      "type": "ss",
+      "server": "163.176.114.243",
+      "port": 59319,
       "ok": false,
       "reason": "no_proxied_public_ip"
     }
