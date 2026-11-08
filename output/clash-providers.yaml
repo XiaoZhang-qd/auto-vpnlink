@@ -1,7 +1,7 @@
 proxy-providers:
-  source_6:
+  source_1:
     type: http
-    url: http://101.255.166.134:80
+    url: http://103.156.17.83:8080
     interval: 86400
     health-check:
       enable: true
