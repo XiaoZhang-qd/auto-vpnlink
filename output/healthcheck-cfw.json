@@ -1,12 +1,12 @@
 {
-  "candidate_limit": 15,
-  "tested": 14,
-  "skipped": 1,
+  "candidate_limit": 9,
+  "tested": 9,
+  "skipped": 0,
   "healthy": 4,
-  "failed": 10,
+  "failed": 5,
   "success_target": 10,
   "target_reached": false,
-  "runner_public_ip": "64.236.134.211",
+  "runner_public_ip": "172.182.211.23",
   "allowed_types": [
     "hysteria",
     "hysteria2",
@@ -19,8 +19,8 @@
   "rounds": 3,
   "results": [
     {
-      "uri": "ss://2022-blake3-aes-128-gcm:NzJlOTQ5NWYtM2ZkYi00Cg%3D%3D@103.11.76.248:28679#%F0%9F%87%BA%F0%9F%87%B8US_506%7C309KB%2Fs%7CA004-260618",
-      "name": "🇺🇸US_506|309KB/s|A004-260618",
+      "uri": "ss://2022-blake3-aes-128-gcm:NzJlOTQ5NWYtM2ZkYi00Cg%3D%3D@103.11.76.248:28679#%F0%9F%87%BA%F0%9F%87%B8US_84%7C1.0MB%2Fs%7CA004-260618",
+      "name": "🇺🇸US_84|1.0MB/s|A004-260618",
       "type": "ss",
       "server": "103.11.76.248",
       "port": 28679,
@@ -28,8 +28,8 @@
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-aes-128-gcm:b7I6g7l7fJhBaMInJ+zkzw==@amasoid.ddns.net:14514#@DeltaKroneckerGithub",
-      "name": "@DeltaKroneckerGithub",
+      "uri": "ss://2022-blake3-aes-128-gcm:b7I6g7l7fJhBaMInJ+zkzw==@amasoid.ddns.net:14514#0261",
+      "name": "0261",
       "type": "ss",
       "server": "amasoid.ddns.net",
       "port": 14514,
@@ -37,8 +37,17 @@
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-aes-128-gcm:jUbDNsFamcyDfpm%2BrI3Zyw%3D%3D@38.145.220.193:8443#%F0%9F%87%BA%F0%9F%87%B8US_503%7C1.0MB%2Fs%7CM003-260806",
-      "name": "🇺🇸US_503|1.0MB/s|M003-260806",
+      "uri": "ss://2022-blake3-aes-128-gcm:bM7oNtOWU6N4CgenbB+W7g==%3Aj+ddudexkbstk2A3x7+t6w==@plusgum.lol:888#nukcrow",
+      "name": "nukcrow",
+      "type": "ss",
+      "server": "plusgum.lol",
+      "port": 888,
+      "ok": false,
+      "reason": "no_proxied_public_ip"
+    },
+    {
+      "uri": "ss://2022-blake3-aes-128-gcm:jUbDNsFamcyDfpm%2BrI3Zyw%3D%3D@38.145.220.193:8443#%F0%9F%87%BA%F0%9F%87%B8US_253%7C514KB%2Fs%7CM003-260806",
+      "name": "🇺🇸US_253|514KB/s|M003-260806",
       "type": "ss",
       "server": "38.145.220.193",
       "port": 8443,
@@ -46,22 +55,13 @@
       "reason": "internet_stable_real_egress"
     },
     {
-      "uri": "ss://2022-blake3-aes-256-gcm:Zvik9nOMN9iCGHR8GXQqvGP%2BS7LJG%2FMWA2DvoLxIv3w%3D%3Ag%2F6oV8zes%2BtB9StYhLIoc6mXmP8WMcInHMKNvGGflX8%3D@13.61.187.228:443#%F0%9F%87%B8%F0%9F%87%AASE_28%7C3.7MB%2Fs%7CM003-260806",
-      "name": "🇸🇪SE_28|3.7MB/s|M003-260806",
+      "uri": "ss://2022-blake3-aes-256-gcm:OfCykwIeres6gv3WyRLQ%2B9AytWwwY6tqB5wmiF2q3x4%3D%3AmB14mq0Ff2EIIBnZEZl5pvVENExUevvxGruVlg65Rs0%3D@51.68.34.78:20327#[🇫🇷",
+      "name": "[🇫🇷",
       "type": "ss",
-      "server": "13.61.187.228",
-      "port": 443,
+      "server": "51.68.34.78",
+      "port": 20327,
       "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://2022-blake3-aes-256-gcm:k8IgRTFAIZdpbdRBVtNQpsYvc9ey30MXxTXzjhRs0Uw%3D%3AHaUACYvs7z4EUqvZCtOryKvG02thRCZezfzusIfPlMQ%3D@16.171.44.134:443#%40SylphNet%20%7C%201405-08-18%20%2333",
-      "name": "@SylphNet | 1405-08-18 #33",
-      "type": "ss",
-      "server": "16.171.44.134",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
+      "reason": "round_1_public_test_failed"
     },
     {
       "uri": "ss://2022-blake3-aes-256-gcm:pRCipSixOSlsNAigMmwfYttz5VmVznoCYX4Pw1G4LxM=:ovtz25KfnF29DC8nL8tMIpBaQuGoUupwCRQIZUHECks=@195.201.32.108:8083#💻",
@@ -73,8 +73,8 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://2022-blake3-aes-256-gcm:sUR6Ny8Y6PSvHhl%2FDUxconwxg6VZyFdsdfaVCvEatJo%3D%3A7bTEhHgpErKiRjE1ega%2BH6pcpJsNLFB0CjQseujAHrA%3D@129.150.59.74:14384#SG",
-      "name": "SG",
+      "uri": "ss://2022-blake3-aes-256-gcm:sUR6Ny8Y6PSvHhl%2FDUxconwxg6VZyFdsdfaVCvEatJo%3D%3A7bTEhHgpErKiRjE1ega%2BH6pcpJsNLFB0CjQseujAHrA%3D@129.150.59.74:14384#@DeltaKroneckerGithub",
+      "name": "@DeltaKroneckerGithub",
       "type": "ss",
       "server": "129.150.59.74",
       "port": 14384,
@@ -91,56 +91,11 @@
       "reason": "no_proxied_public_ip"
     },
     {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxa1ZyMEtBVElKSTdtd09GQGFkbWluLmMxLmhhdmlqLmNvOjQ0Mw==#",
-      "name": "ss-9",
+      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3NGNmN2dzWEpnZDlaNE1BVzQyTEAxNjkuNjIuMTA5LjE0MDo4Mzg5#[🇺🇸",
+      "name": "[🇺🇸",
       "type": "ss",
-      "server": "admin.c1.havij.co",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCb2cwRUxtTU05RFN4RGRRQHNlcmllcy1hMi1tZS52YXJ6ZXNoMzYwLmNvOjQ0Mw==#%F0%9F%87%A7%F0%9F%87%AD_BH_%E5%B7%B4%E6%9E%97_2",
-      "name": "🇧🇭_BH_巴林_2",
-      "type": "ss",
-      "server": "series-a2-me.varzesh360.co",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1ZnQHNlcmllcy1hMi5zYW1hbmVoaGEuY286NDQz#%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_4",
-      "name": "🇺🇸_US_美国_4",
-      "type": "ss",
-      "server": "series-a2.samanehha.co",
-      "port": 443,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpub2Rlcy1iMjExZjI4YUBub2RlLWlkLTEudjJzdi50b3A6OTkw#[6887][ID][0][SS][None][kiava][2026-01-23][2026-11-07",
-      "name": "[6887][ID][0][SS][None][kiava][2026-01-23][2026-11-07",
-      "type": "ss",
-      "server": "node-id-1.v2sv.top",
-      "port": 990,
-      "ok": false,
-      "reason": "no_proxied_public_ip"
-    },
-    {
-      "uri": "ss://Y2hhY2hhMjAtcG9seTEzMDU6dTE3VDNCdnBZYWFpdVcyY0BzZXJpZXMtYTItbWVjLnNhbWFuZWhoYS5jbzo0NDM=#%DA%A9%D8%A7%D9%86%D8%A7%D9%84+%3A+%40V2rayNGvpni",
-      "name": "کانال+:+@V2rayNGvpni",
-      "type": "ss",
-      "server": "series-a2-mec.samanehha.co",
-      "port": 443,
-      "ok": false,
-      "reason": "core_not_ready"
-    },
-    {
-      "uri": "ss://YWVzLTEyOC1jZmI6UWF6RWRjVGdiMTU5QCQqQDE0LjI5LjEyNC4xNjg6MjUyOTQ#🏴‍☠️",
-      "name": "🏴‍☠️",
-      "type": "ss",
-      "server": "14.29.124.168",
-      "port": 25294,
+      "server": "169.62.109.140",
+      "port": 8389,
       "ok": false,
       "reason": "no_proxied_public_ip"
     }
