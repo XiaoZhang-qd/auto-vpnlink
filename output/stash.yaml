@@ -3,42 +3,42 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸US_84|1.0MB/s|A004-260618
+- name: '@DeltaKroneckerGithub'
   type: ss
   server: 103.11.76.248
   port: 28679
   cipher: 2022-blake3-aes-128-gcm
   password: NzJlOTQ5NWYtM2ZkYi00Cg==
   udp: true
-- name: '0261'
+- name: '@DeltaKroneckerGithub [2]'
   type: ss
   server: amasoid.ddns.net
   port: 14514
   cipher: 2022-blake3-aes-128-gcm
   password: b7I6g7l7fJhBaMInJ+zkzw==
   udp: true
-- name: 🇺🇸US_253|514KB/s|M003-260806
+- name: ❓Other_84|76KB/s|M003-260806
   type: ss
   server: 38.145.220.193
   port: 8443
   cipher: 2022-blake3-aes-128-gcm
   password: jUbDNsFamcyDfpm+rI3Zyw==
   udp: true
-- name: '@DeltaKroneckerGithub'
+- name: '@SylphNet | 1405-08-20 #73'
   type: ss
-  server: 129.150.59.74
-  port: 14384
+  server: 18.118.166.169
+  port: 52791
   cipher: 2022-blake3-aes-256-gcm
-  password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
+  password: efRFzZhBfWimE7+3kxHNV62scjj9D/hRm1MKpP8jMhg=:K2g3F+JSfU5q/ecm9fxao+Z3FmkENTuFKkELs5gfNGo=
   udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸US_84|1.0MB/s|A004-260618
-  - '0261'
-  - 🇺🇸US_253|514KB/s|M003-260806
   - '@DeltaKroneckerGithub'
+  - '@DeltaKroneckerGithub [2]'
+  - ❓Other_84|76KB/s|M003-260806
+  - '@SylphNet | 1405-08-20 #73'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
