@@ -10,51 +10,43 @@ proxies:
   cipher: 2022-blake3-aes-128-gcm
   password: NzJlOTQ5NWYtM2ZkYi00Cg==
   udp: true
-- name: 🇹🇼TW_29|399KB/s|M003-260806
+- name: '@DeltaKroneckerGithub'
   type: ss
   server: 35.236.180.222
   port: 14514
   cipher: 2022-blake3-aes-128-gcm
   password: b7I6g7l7fJhBaMInJ+zkzw==
   udp: true
-- name: 🇹🇼TW_27|603KB/s|B007-260618
+- name: '@DeltaKroneckerGithub [2]'
   type: ss
   server: amasoid.ddns.net
   port: 14514
   cipher: 2022-blake3-aes-128-gcm
   password: b7I6g7l7fJhBaMInJ+zkzw==
   udp: true
-- name: 🇺🇸US_361|1.1MB/s|M003-260806
+- name: '@DeltaKroneckerGithub [3]'
   type: ss
   server: 38.145.220.193
   port: 8443
   cipher: 2022-blake3-aes-128-gcm
   password: jUbDNsFamcyDfpm+rI3Zyw==
   udp: true
-- name: 🇸🇬SG_49|148KB/s|B007-260618
+- name: '@DeltaKroneckerGithub [4]'
   type: ss
   server: 129.150.59.74
   port: 14384
   cipher: 2022-blake3-aes-256-gcm
   password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
   udp: true
-- name: '@DeltaKroneckerGithub'
-  type: ss
-  server: 8.220.81.25
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
   - 🇺🇸 US | SS t.me/rjsxrd
-  - 🇹🇼TW_29|399KB/s|M003-260806
-  - 🇹🇼TW_27|603KB/s|B007-260618
-  - 🇺🇸US_361|1.1MB/s|M003-260806
-  - 🇸🇬SG_49|148KB/s|B007-260618
   - '@DeltaKroneckerGithub'
+  - '@DeltaKroneckerGithub [2]'
+  - '@DeltaKroneckerGithub [3]'
+  - '@DeltaKroneckerGithub [4]'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
