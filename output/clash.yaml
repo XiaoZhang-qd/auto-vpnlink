@@ -3,35 +3,21 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 US | SS t.me/rjsxrd
+- name: 🇺🇸US_551|964KB/s|A004-260618
   type: ss
   server: 103.11.76.248
   port: 28679
   cipher: 2022-blake3-aes-128-gcm
   password: NzJlOTQ5NWYtM2ZkYi00Cg==
   udp: true
-- name: '@DeltaKroneckerGithub'
-  type: ss
-  server: 35.236.180.222
-  port: 14514
-  cipher: 2022-blake3-aes-128-gcm
-  password: b7I6g7l7fJhBaMInJ+zkzw==
-  udp: true
-- name: '@DeltaKroneckerGithub [2]'
-  type: ss
-  server: amasoid.ddns.net
-  port: 14514
-  cipher: 2022-blake3-aes-128-gcm
-  password: b7I6g7l7fJhBaMInJ+zkzw==
-  udp: true
-- name: '@DeltaKroneckerGithub [3]'
+- name: 🇺🇸 United States 011
   type: ss
   server: 38.145.220.193
   port: 8443
   cipher: 2022-blake3-aes-128-gcm
   password: jUbDNsFamcyDfpm+rI3Zyw==
   udp: true
-- name: '@DeltaKroneckerGithub [4]'
+- name: 🇸🇬SG_27|91KB/s|B007-260618
   type: ss
   server: 129.150.59.74
   port: 14384
@@ -42,11 +28,9 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸 US | SS t.me/rjsxrd
-  - '@DeltaKroneckerGithub'
-  - '@DeltaKroneckerGithub [2]'
-  - '@DeltaKroneckerGithub [3]'
-  - '@DeltaKroneckerGithub [4]'
+  - 🇺🇸US_551|964KB/s|A004-260618
+  - 🇺🇸 United States 011
+  - 🇸🇬SG_27|91KB/s|B007-260618
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50

@@ -1,12 +1,4 @@
 proxy-providers:
-  source_5:
-    type: http
-    url: http://101.132.249.207:4443
-    interval: 86400
-    health-check:
-      enable: true
-      interval: 300
-      url: https://www.gstatic.com/generate_204
   source_11:
     type: http
     url: http://101.255.166.134:80
@@ -41,7 +33,15 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
   source_15:
     type: http
-    url: http://103.124.227.36:8090
+    url: http://103.156.17.83:8080
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 300
+      url: https://www.gstatic.com/generate_204
+  source_16:
+    type: http
+    url: http://103.158.252.99:80
     interval: 86400
     health-check:
       enable: true
