@@ -3,34 +3,98 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸US_551|964KB/s|A004-260618
+- name: 🇺🇸US_389|1.0MB/s|A004-260618
   type: ss
   server: 103.11.76.248
   port: 28679
   cipher: 2022-blake3-aes-128-gcm
   password: NzJlOTQ5NWYtM2ZkYi00Cg==
   udp: true
-- name: 🇺🇸 United States 011
+- name: 🇺🇸US_387|563KB/s|M003-260806
   type: ss
   server: 38.145.220.193
   port: 8443
   cipher: 2022-blake3-aes-128-gcm
   password: jUbDNsFamcyDfpm+rI3Zyw==
   udp: true
-- name: 🇸🇬SG_27|91KB/s|B007-260618
+- name: 🇩🇪DE_149|84KB/s|S004-260618
   type: ss
-  server: 129.150.59.74
-  port: 14384
-  cipher: 2022-blake3-aes-256-gcm
-  password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
+  server: 47.85.201.22
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
+  udp: true
+- name: 🇩🇪DE_148|1.7MB/s|S004-260618
+  type: ss
+  server: 3.71.19.239
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  udp: true
+- name: 🇩🇪DE_125|339KB/s|B007-260618
+  type: ss
+  server: 47.245.167.223
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  udp: true
+- name: 🇩🇪DE_150|4.8MB/s|S004-260618
+  type: ss
+  server: 47.245.173.25
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  udp: true
+- name: 🇩🇪DE_137|5.2MB/s|M003-260806
+  type: ss
+  server: 47.245.174.67
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  udp: true
+- name: 🇩🇪DE_114|979KB/s|B007-260618
+  type: ss
+  server: 8.220.81.25
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  udp: true
+- name: 🇩🇪DE_138|1.2MB/s|M003-260806
+  type: ss
+  server: 18.134.252.228
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Cg2Dw4OhdBZhqbeO9ZTA3g/Gk/AvsrYZGhAJeGnQIx4=
+  udp: true
+- name: 🇩🇪DE_147|2.1MB/s|S004-260618
+  type: ss
+  server: 18.175.238.57
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Cg2Dw4OhdBZhqbeO9ZTA3g/Gk/AvsrYZGhAJeGnQIx4=
+  udp: true
+- name: hamedp71::🏴‍☠️
+  type: ss
+  server: 82.38.31.165
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸US_551|964KB/s|A004-260618
-  - 🇺🇸 United States 011
-  - 🇸🇬SG_27|91KB/s|B007-260618
+  - 🇺🇸US_389|1.0MB/s|A004-260618
+  - 🇺🇸US_387|563KB/s|M003-260806
+  - 🇩🇪DE_149|84KB/s|S004-260618
+  - 🇩🇪DE_148|1.7MB/s|S004-260618
+  - 🇩🇪DE_125|339KB/s|B007-260618
+  - 🇩🇪DE_150|4.8MB/s|S004-260618
+  - 🇩🇪DE_137|5.2MB/s|M003-260806
+  - 🇩🇪DE_114|979KB/s|B007-260618
+  - 🇩🇪DE_138|1.2MB/s|M003-260806
+  - 🇩🇪DE_147|2.1MB/s|S004-260618
+  - hamedp71::🏴‍☠️
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
