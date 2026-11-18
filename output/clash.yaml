@@ -3,14 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: '@DeltaKroneckerGithub'
-  type: ss
-  server: 38.145.220.193
-  port: 8443
-  cipher: 2022-blake3-aes-128-gcm
-  password: jUbDNsFamcyDfpm+rI3Zyw==
-  udp: true
-- name: 🇩🇪DE_33|380KB/s|B007-260618
+- name: ❓Other_96|270KB/s|B007-260618
   type: ss
   server: 144.31.217.18
   port: 1883
@@ -24,77 +17,44 @@ proxies:
   cipher: 2022-blake3-aes-256-gcm
   password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
   udp: true
-- name: '@DeltaKroneckerGithub [2]'
-  type: ss
-  server: 47.245.167.223
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: ❓Other_77|172KB/s|M003-260806
-  type: ss
-  server: 47.245.174.67
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: '@DeltaKroneckerGithub [3]'
-  type: ss
-  server: 47.254.143.251
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: '@DeltaKroneckerGithub [4]'
-  type: ss
-  server: 47.254.169.3
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: '@DeltaKroneckerGithub [5]'
-  type: ss
-  server: 47.254.174.203
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: 🇩🇪DE_27|170KB/s|B007-260618
-  type: ss
-  server: 47.254.175.2
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: '@DeltaKroneckerGithub [6]'
+- name: 🇩🇪DE_23|434KB/s|B007-260618
   type: ss
   server: 8.211.38.49
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: ❓Other_70|86KB/s|B007-260618
+- name: DE
   type: ss
   server: 8.220.81.25
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
+- name: US
+  type: ss
+  server: 129.146.61.90
+  port: 50356
+  cipher: 2022-blake3-chacha20-poly1305
+  password: qG5HzrJO2OAzMFY6WDz991qHHonSP2ix6l6jKlHwokY=
+  udp: true
+- name: '[✅'
+  type: ss
+  server: 144.21.35.158
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: rx1e8SsjGM7ZKlR0tLnzSWoxhyRRJJrcTccM3uMu+Rc=
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - '@DeltaKroneckerGithub'
-  - 🇩🇪DE_33|380KB/s|B007-260618
+  - ❓Other_96|270KB/s|B007-260618
   - 👉🆔@Goodbaye_filtering📡🇸🇬®️Singapore©️Singapore🅿️ping:186.4ms~±4.1ms⚡️TLS-Tunnel
-  - '@DeltaKroneckerGithub [2]'
-  - ❓Other_77|172KB/s|M003-260806
-  - '@DeltaKroneckerGithub [3]'
-  - '@DeltaKroneckerGithub [4]'
-  - '@DeltaKroneckerGithub [5]'
-  - 🇩🇪DE_27|170KB/s|B007-260618
-  - '@DeltaKroneckerGithub [6]'
-  - ❓Other_70|86KB/s|B007-260618
+  - 🇩🇪DE_23|434KB/s|B007-260618
+  - DE
+  - US
+  - '[✅'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
