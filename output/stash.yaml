@@ -3,90 +3,162 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸US_52|123KB/s|M003-260806
-  type: ss
-  server: 38.145.220.193
-  port: 8443
-  cipher: 2022-blake3-aes-128-gcm
-  password: jUbDNsFamcyDfpm+rI3Zyw==
-  udp: true
-- name: ❓Other_105|150KB/s|B007-260618
+- name: 🇩🇪DE_135|141KB/s|B007-260618
   type: ss
   server: 144.31.217.18
   port: 1883
   cipher: 2022-blake3-aes-256-gcm
   password: dfINKWLXoOgH3Ox72CAmkCvWmDlP+idaTuu/DdDG4FU=:V9v8Fd5AvDk3+nyah0WxCeqzv8Q5+cMXUj7WjVCgQz0=
   udp: true
-- name: '@DeltaKroneckerGithub'
+- name: 🇺🇸US_549|413KB/s|B007-260618
   type: ss
   server: 77.90.10.175
   port: 8086
   cipher: 2022-blake3-aes-256-gcm
   password: f2Nq5YLnyclPaWR8my7/Vdd3ZX8URncXZNly5+HcUSs=:dQ6WYcPpGX5xIxUVPAR8w1A9eY6kEVoKKW3HleJ6o8Y=
   udp: true
-- name: SG
+- name: 🇸🇬SG_47|399KB/s|B007-260618
+  type: ss
+  server: 129.150.59.74
+  port: 14384
+  cipher: 2022-blake3-aes-256-gcm
+  password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
+  udp: true
+- name: '@SylphNet | 1405-08-29 #101'
   type: ss
   server: 43.106.81.90
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8SrAY2kEk9UHKSgUJjQvfdTJP9oPlSPVP1wICL7n3hk=
   udp: true
-- name: 🇩🇪DE_32|3.6MB/s|S004-260618
+- name: 🇩🇪DE_129|7.9MB/s|S004-260618
   type: ss
   server: 47.245.173.25
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: 🇩🇪DE_31|176KB/s|M003-260806
+- name: 🇩🇪DE_126|9.4MB/s|M003-260806
   type: ss
   server: 47.245.174.67
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: '@DeltaKroneckerGithub [2]'
+- name: 🇩🇪DE_158|492KB/s|M003-260806
+  type: ss
+  server: 47.254.167.157
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  udp: true
+- name: 🇩🇪DE_96|288KB/s|M003-260806
+  type: ss
+  server: 47.254.169.3
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  udp: true
+- name: 🇩🇪DE_132|266KB/s|B007-260618
   type: ss
   server: 47.254.174.203
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: '@DeltaKroneckerGithub [3]'
+- name: 🇩🇪DE_123|8.0MB/s|B007-260618
   type: ss
-  server: 8.211.38.49
+  server: 47.254.175.2
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: '@DeltaKroneckerGithub [4]'
+- name: 🇩🇪DE_90|9.1MB/s|B007-260618
   type: ss
   server: 8.220.81.25
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: '@DeltaKroneckerGithub [5]'
+- name: '@DeltaKroneckerGithub'
+  type: ss
+  server: 8.209.106.54
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  udp: true
+- name: 🇩🇪DE_153|12.4MB/s|A001-260618
+  type: ss
+  server: 79.76.105.62
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: FmB4HBM/+63LZr+sjxs5zkFIvZmB//5BPqdf8W+wntg=
+  udp: true
+- name: ❓Other_19|626KB/s|A001-260618
+  type: ss
+  server: 158.178.230.120
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: GMhXRpy/pfPMVrZeCAxOxI5MpuH3llOtZKoeNLUT0n8=
+  udp: true
+- name: '@SylphNet | 1405-08-29 #98'
+  type: ss
+  server: 129.221.200.94
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: TlIl4pvlkROaoDMfiB/8bjOx4cXMnCc7rXLWwqPJDTc=
+  udp: true
+- name: '@DeltaKroneckerGithub [2]'
+  type: ss
+  server: 147.224.251.204
+  port: 50356
+  cipher: 2022-blake3-chacha20-poly1305
+  password: ZF5zVVjNvtcTkEWiK1sNAzCVZB+Hgu9hHzeOdjBoKMQ=
+  udp: true
+- name: '@SylphNet | 1405-08-29 #24'
+  type: ss
+  server: 144.24.229.13
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: eAqTrby7a6ZOcClxTOl08kuthoCrZovFCmQj0BDqXB0=
+  udp: true
+- name: '@SylphNet | 1405-08-29 #109'
   type: ss
   server: 144.21.35.158
   port: 45819
   cipher: 2022-blake3-chacha20-poly1305
   password: rx1e8SsjGM7ZKlR0tLnzSWoxhyRRJJrcTccM3uMu+Rc=
   udp: true
+- name: 🇩🇪DE_167|214KB/s|A001-260618
+  type: ss
+  server: 129.159.0.53
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: zpdYERRY+i9wkj3G766aELYAVoITvCv9kKrIGG8ykzY=
+  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸US_52|123KB/s|M003-260806
-  - ❓Other_105|150KB/s|B007-260618
+  - 🇩🇪DE_135|141KB/s|B007-260618
+  - 🇺🇸US_549|413KB/s|B007-260618
+  - 🇸🇬SG_47|399KB/s|B007-260618
+  - '@SylphNet | 1405-08-29 #101'
+  - 🇩🇪DE_129|7.9MB/s|S004-260618
+  - 🇩🇪DE_126|9.4MB/s|M003-260806
+  - 🇩🇪DE_158|492KB/s|M003-260806
+  - 🇩🇪DE_96|288KB/s|M003-260806
+  - 🇩🇪DE_132|266KB/s|B007-260618
+  - 🇩🇪DE_123|8.0MB/s|B007-260618
+  - 🇩🇪DE_90|9.1MB/s|B007-260618
   - '@DeltaKroneckerGithub'
-  - SG
-  - 🇩🇪DE_32|3.6MB/s|S004-260618
-  - 🇩🇪DE_31|176KB/s|M003-260806
+  - 🇩🇪DE_153|12.4MB/s|A001-260618
+  - ❓Other_19|626KB/s|A001-260618
+  - '@SylphNet | 1405-08-29 #98'
   - '@DeltaKroneckerGithub [2]'
-  - '@DeltaKroneckerGithub [3]'
-  - '@DeltaKroneckerGithub [4]'
-  - '@DeltaKroneckerGithub [5]'
+  - '@SylphNet | 1405-08-29 #24'
+  - '@SylphNet | 1405-08-29 #109'
+  - 🇩🇪DE_167|214KB/s|A001-260618
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
