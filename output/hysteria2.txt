@@ -1,1 +1,1 @@
-hysteria2://1beb216e3f60aea9555dae60d219a5ca@152-69-231-175.liao.kdns.fr:50160?insecure=1&sni=127.0.0.1#%F0%9F%87%B0%F0%9F%87%B7KR_5%7C639KB%2Fs%7CA004-260618
+hysteria2://184cdec28da5a09450803c8debcd2cc9@138.3.208.26:50160?insecure=1&security=tls&sni=www.bing.com#[🌐
