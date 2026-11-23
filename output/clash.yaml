@@ -3,162 +3,114 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: خرید وی پی ان ارزان @NoraPingBot|||14050830|farahvpn|V2rayCh
+- name: 🇩🇪DE_127|1.7MB/s|M003-260806
   type: ss
-  server: 103.238.140.162
-  port: 10002
-  cipher: 2022-blake3-aes-128-gcm
-  password: qryl6xVLkWXZlqD7CccpQw==
+  server: 144.31.217.18
+  port: 1883
+  cipher: 2022-blake3-aes-256-gcm
+  password: IqYm/a1m3w3gmmXd9Jji+o4Mzb5YR2HWsYcruSGECXI=:evS5UrA2kUBmeVXGrcY4bN1nZSKln3oE/ja9ppCbxN0=
   udp: true
-- name: 🇩🇪DE_164|1.6MB/s|M003-260806
+- name: 🇩🇪DE_99|1.9MB/s|M003-260806
   type: ss
   server: 144.31.217.18
   port: 554
   cipher: 2022-blake3-aes-256-gcm
   password: eDmysaMyRZh7JTEka6eOtgCOcA+T7tmC5DnaTZBRQgg=:UjiUW/roKULY/zO9XJnbR0vCPcXxWUg03WUuVvZ2ipo=
   udp: true
-- name: 🇺🇸US_576|421KB/s|B007-260618
+- name: 🇩🇪DE_123|1.7MB/s|M003-260806
   type: ss
-  server: 77.90.10.175
-  port: 8086
+  server: leviko-no2500.shopingggg.ir
+  port: 554
   cipher: 2022-blake3-aes-256-gcm
-  password: f2Nq5YLnyclPaWR8my7/Vdd3ZX8URncXZNly5+HcUSs=:dQ6WYcPpGX5xIxUVPAR8w1A9eY6kEVoKKW3HleJ6o8Y=
+  password: eDmysaMyRZh7JTEka6eOtgCOcA+T7tmC5DnaTZBRQgg=:UjiUW/roKULY/zO9XJnbR0vCPcXxWUg03WUuVvZ2ipo=
   udp: true
-- name: 🇸🇬 | @WhiteDNS | SG141|1.7MB/s|DNSOK|GPT⁺-SG
+- name: 🇭🇰HK_100|441KB/s|R002-260618
+  type: ss
+  server: 27.124.5.86
+  port: 8388
+  cipher: 2022-blake3-aes-256-gcm
+  password: j4DddfVh3zON1s3Wfbmdn2WWhLCWAaOJyKqdeKvxh4A=
+  udp: true
+- name: 🇸🇬SG_52|214KB/s|B007-260618
   type: ss
   server: 129.150.59.74
   port: 14384
   cipher: 2022-blake3-aes-256-gcm
   password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
   udp: true
-- name: 🇸🇬 | @WhiteDNS | SG142|1.6MB/s|DNSOK|GPT⁺-SG
+- name: ProxyRift 732
   type: ss
-  server: 43.106.81.90
-  port: 443
+  server: 129.146.200.49
+  port: 50356
   cipher: 2022-blake3-chacha20-poly1305
-  password: 8SrAY2kEk9UHKSgUJjQvfdTJP9oPlSPVP1wICL7n3hk=
+  password: 011mfoSmYFVhBNbKk0V5DxqGs9PwrsqY+9EAhOll+58=
   udp: true
-- name: 🇩🇪DE_162|1.2MB/s|M003-260806
+- name: 🇩🇪DE_71|4.7MB/s|S004-260618
   type: ss
-  server: 18.159.146.93
+  server: 47.245.173.25
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: 🇩🇪DE_121|5.1MB/s|M003-260806
+- name: 🇩🇪DE_68|5.0MB/s|M003-260806
   type: ss
   server: 47.245.174.67
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: 🇩🇪DE_114|9.3MB/s|B007-260618
+- name: 🇩🇪DE_66|8.0MB/s|B007-260618
   type: ss
   server: 47.254.175.2
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: 🇩🇪DE_106|8.2MB/s|B007-260618
+- name: 🇩🇪DE_103|1.5MB/s|M003-260806
+  type: ss
+  server: 8.209.117.187
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  udp: true
+- name: ❓Other_11|566KB/s|M003-260806
+  type: ss
+  server: 8.209.119.13
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  udp: true
+- name: 🇩🇪DE_57|5.3MB/s|B007-260618
   type: ss
   server: 8.220.81.25
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: 🇩🇪DE_163|7.5MB/s|M003-260806
+- name: 🇩🇪DE_122|1.1MB/s|M003-260806
   type: ss
-  server: 3.8.210.56
+  server: 18.134.240.81
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: Cg2Dw4OhdBZhqbeO9ZTA3g/Gk/AvsrYZGhAJeGnQIx4=
-  udp: true
-- name: 🇩🇪 | @WhiteDNS | DE267|42.1MB/s|DNSOK|GPT⁺-DE
-  type: ss
-  server: 79.76.105.62
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: FmB4HBM/+63LZr+sjxs5zkFIvZmB//5BPqdf8W+wntg=
-  udp: true
-- name: 🇩🇪DE_152|385KB/s|A001-260618
-  type: ss
-  server: 92.5.114.103
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: GmAn0fXarz+xB3bw2aCzwnZxcNuDx8xpqI+vGufI3jI=
-  udp: true
-- name: 🇺🇸US_610|419KB/s|F003-260618
-  type: ss
-  server: 132.226.77.186
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: YG3nrWleyOJy8hUVHF1Nc8vOY0JgKdiT4n627Bj32+8=
-  udp: true
-- name: ❓Other_25|1.0MB/s|M003-260806
-  type: ss
-  server: 147.224.251.204
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ZF5zVVjNvtcTkEWiK1sNAzCVZB+Hgu9hHzeOdjBoKMQ=
-  udp: true
-- name: 🇸🇬SG_54|1009KB/s|M003-260806
-  type: ss
-  server: 168.138.177.98
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: c11JMfCMQ3Y4aGlhMX5LrMpM13uvw+UVbjGfHP+eKkY=
-  udp: true
-- name: ❓Other_24|281KB/s|A001-260618
-  type: ss
-  server: 84.235.170.154
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: hZ3VbN592JZsuzZ9ou+pGOBFMSRGBiSVczJFghcRaEY=
-  udp: true
-- name: 🇳🇱 | @WhiteDNS | NL437|7.7MB/s|DNSOK|GPT⁺-NL
-  type: ss
-  server: 144.21.35.158
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: rx1e8SsjGM7ZKlR0tLnzSWoxhyRRJJrcTccM3uMu+Rc=
-  udp: true
-- name: 🇺🇸 | @WhiteDNS | US642|2.6MB/s|DNSOK|GPT⁺-US
-  type: ss
-  server: 129.146.116.143
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: tFlI+GCNnBcKUE0GuoHOahvh6g0HzdU8YJNyRDgGWTU=
-  udp: true
-- name: 🇳🇱 | @WhiteDNS | NL402|31.9MB/s|DNSOK|GPT⁺-NL
-  type: ss
-  server: 158.101.205.73
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: yoow9zuAW2IUx29EL25NzX29/xx20FpSEKOsnu/TnBE=
   udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - خرید وی پی ان ارزان @NoraPingBot|||14050830|farahvpn|V2rayCh
-  - 🇩🇪DE_164|1.6MB/s|M003-260806
-  - 🇺🇸US_576|421KB/s|B007-260618
-  - 🇸🇬 | @WhiteDNS | SG141|1.7MB/s|DNSOK|GPT⁺-SG
-  - 🇸🇬 | @WhiteDNS | SG142|1.6MB/s|DNSOK|GPT⁺-SG
-  - 🇩🇪DE_162|1.2MB/s|M003-260806
-  - 🇩🇪DE_121|5.1MB/s|M003-260806
-  - 🇩🇪DE_114|9.3MB/s|B007-260618
-  - 🇩🇪DE_106|8.2MB/s|B007-260618
-  - 🇩🇪DE_163|7.5MB/s|M003-260806
-  - 🇩🇪 | @WhiteDNS | DE267|42.1MB/s|DNSOK|GPT⁺-DE
-  - 🇩🇪DE_152|385KB/s|A001-260618
-  - 🇺🇸US_610|419KB/s|F003-260618
-  - ❓Other_25|1.0MB/s|M003-260806
-  - 🇸🇬SG_54|1009KB/s|M003-260806
-  - ❓Other_24|281KB/s|A001-260618
-  - 🇳🇱 | @WhiteDNS | NL437|7.7MB/s|DNSOK|GPT⁺-NL
-  - 🇺🇸 | @WhiteDNS | US642|2.6MB/s|DNSOK|GPT⁺-US
-  - 🇳🇱 | @WhiteDNS | NL402|31.9MB/s|DNSOK|GPT⁺-NL
+  - 🇩🇪DE_127|1.7MB/s|M003-260806
+  - 🇩🇪DE_99|1.9MB/s|M003-260806
+  - 🇩🇪DE_123|1.7MB/s|M003-260806
+  - 🇭🇰HK_100|441KB/s|R002-260618
+  - 🇸🇬SG_52|214KB/s|B007-260618
+  - ProxyRift 732
+  - 🇩🇪DE_71|4.7MB/s|S004-260618
+  - 🇩🇪DE_68|5.0MB/s|M003-260806
+  - 🇩🇪DE_66|8.0MB/s|B007-260618
+  - 🇩🇪DE_103|1.5MB/s|M003-260806
+  - ❓Other_11|566KB/s|M003-260806
+  - 🇩🇪DE_57|5.3MB/s|B007-260618
+  - 🇩🇪DE_122|1.1MB/s|M003-260806
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
