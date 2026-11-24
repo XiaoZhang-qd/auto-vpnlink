@@ -3,114 +3,74 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇪DE_127|1.7MB/s|M003-260806
-  type: ss
-  server: 144.31.217.18
-  port: 1883
-  cipher: 2022-blake3-aes-256-gcm
-  password: IqYm/a1m3w3gmmXd9Jji+o4Mzb5YR2HWsYcruSGECXI=:evS5UrA2kUBmeVXGrcY4bN1nZSKln3oE/ja9ppCbxN0=
-  udp: true
-- name: 🇩🇪DE_99|1.9MB/s|M003-260806
-  type: ss
-  server: 144.31.217.18
-  port: 554
-  cipher: 2022-blake3-aes-256-gcm
-  password: eDmysaMyRZh7JTEka6eOtgCOcA+T7tmC5DnaTZBRQgg=:UjiUW/roKULY/zO9XJnbR0vCPcXxWUg03WUuVvZ2ipo=
-  udp: true
-- name: 🇩🇪DE_123|1.7MB/s|M003-260806
-  type: ss
-  server: leviko-no2500.shopingggg.ir
-  port: 554
-  cipher: 2022-blake3-aes-256-gcm
-  password: eDmysaMyRZh7JTEka6eOtgCOcA+T7tmC5DnaTZBRQgg=:UjiUW/roKULY/zO9XJnbR0vCPcXxWUg03WUuVvZ2ipo=
-  udp: true
-- name: 🇭🇰HK_100|441KB/s|R002-260618
-  type: ss
-  server: 27.124.5.86
-  port: 8388
-  cipher: 2022-blake3-aes-256-gcm
-  password: j4DddfVh3zON1s3Wfbmdn2WWhLCWAaOJyKqdeKvxh4A=
-  udp: true
-- name: 🇸🇬SG_52|214KB/s|B007-260618
+- name: 👉🆔@Goodbaye_filtering📡🇸🇬®️Singapore©️Singapore🅿️ping:186.4ms~±4.1ms⚡️TLS-Tunnel
   type: ss
   server: 129.150.59.74
   port: 14384
   cipher: 2022-blake3-aes-256-gcm
   password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
   udp: true
-- name: ProxyRift 732
+- name: 🇺🇸US_339|204KB/s|P002-260618
   type: ss
   server: 129.146.200.49
   port: 50356
   cipher: 2022-blake3-chacha20-poly1305
   password: 011mfoSmYFVhBNbKk0V5DxqGs9PwrsqY+9EAhOll+58=
   udp: true
-- name: 🇩🇪DE_71|4.7MB/s|S004-260618
+- name: 🇺🇸 | @WhiteDNS | US522|1.1MB/s|DNSOK|GPT⁺-US
+  type: ss
+  server: 129.146.200.42
+  port: 50356
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 1KRWYoNOBU1OXV+dLChiRageSP9uIRY2wsJPieRC7kY=
+  udp: true
+- name: 🇩🇪DE_76|185KB/s|M003-260806
+  type: ss
+  server: 47.85.227.36
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
+  udp: true
+- name: 🇩🇪DE_24|4.8MB/s|S004-260618
   type: ss
   server: 47.245.173.25
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: 🇩🇪DE_68|5.0MB/s|M003-260806
+- name: 🇩🇪DE_13|80KB/s|M003-260806
   type: ss
   server: 47.245.174.67
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: 🇩🇪DE_66|8.0MB/s|B007-260618
+- name: 🇩🇪DE_12|4.1MB/s|B007-260618
   type: ss
   server: 47.254.175.2
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: 🇩🇪DE_103|1.5MB/s|M003-260806
-  type: ss
-  server: 8.209.117.187
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: ❓Other_11|566KB/s|M003-260806
-  type: ss
-  server: 8.209.119.13
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: 🇩🇪DE_57|5.3MB/s|B007-260618
+- name: 🇩🇪DE_11|6.2MB/s|B007-260618
   type: ss
   server: 8.220.81.25
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: 🇩🇪DE_122|1.1MB/s|M003-260806
-  type: ss
-  server: 18.134.240.81
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Cg2Dw4OhdBZhqbeO9ZTA3g/Gk/AvsrYZGhAJeGnQIx4=
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪DE_127|1.7MB/s|M003-260806
-  - 🇩🇪DE_99|1.9MB/s|M003-260806
-  - 🇩🇪DE_123|1.7MB/s|M003-260806
-  - 🇭🇰HK_100|441KB/s|R002-260618
-  - 🇸🇬SG_52|214KB/s|B007-260618
-  - ProxyRift 732
-  - 🇩🇪DE_71|4.7MB/s|S004-260618
-  - 🇩🇪DE_68|5.0MB/s|M003-260806
-  - 🇩🇪DE_66|8.0MB/s|B007-260618
-  - 🇩🇪DE_103|1.5MB/s|M003-260806
-  - ❓Other_11|566KB/s|M003-260806
-  - 🇩🇪DE_57|5.3MB/s|B007-260618
-  - 🇩🇪DE_122|1.1MB/s|M003-260806
+  - 👉🆔@Goodbaye_filtering📡🇸🇬®️Singapore©️Singapore🅿️ping:186.4ms~±4.1ms⚡️TLS-Tunnel
+  - 🇺🇸US_339|204KB/s|P002-260618
+  - 🇺🇸 | @WhiteDNS | US522|1.1MB/s|DNSOK|GPT⁺-US
+  - 🇩🇪DE_76|185KB/s|M003-260806
+  - 🇩🇪DE_24|4.8MB/s|S004-260618
+  - 🇩🇪DE_13|80KB/s|M003-260806
+  - 🇩🇪DE_12|4.1MB/s|B007-260618
+  - 🇩🇪DE_11|6.2MB/s|B007-260618
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
