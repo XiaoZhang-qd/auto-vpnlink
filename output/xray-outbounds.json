@@ -1,22 +1,3 @@
 {
-  "outbounds": [
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "host.com",
-            "port": 443,
-            "users": [
-              {
-                "id": "uuid",
-                "encryption": "none",
-                "flow": null
-              }
-            ]
-          }
-        ]
-      }
-    }
-  ]
+  "outbounds": []
 }

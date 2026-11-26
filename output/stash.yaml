@@ -3,58 +3,90 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇪DE_99|484KB/s|M003-260806
+- name: 🇭🇰 Гонконг | [KP]
   type: ss
-  server: 47.85.227.36
+  server: 27.124.5.86
+  port: 8388
+  cipher: 2022-blake3-aes-256-gcm
+  password: j4DddfVh3zON1s3Wfbmdn2WWhLCWAaOJyKqdeKvxh4A=
+  udp: true
+- name: 🇸🇬SG_32|108KB/s|B007-260618
+  type: ss
+  server: 129.150.59.74
+  port: 14384
+  cipher: 2022-blake3-aes-256-gcm
+  password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
+  udp: true
+- name: 🇩🇪DE_43|373KB/s|S004-260618
+  type: ss
+  server: 47.245.170.82
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
-  password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: 🇩🇪DE_16|5.1MB/s|S004-260618
+- name: 🇩🇪DE_23|932KB/s|S004-260618
   type: ss
   server: 47.245.173.25
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: 🇩🇪DE_52|4.0MB/s|M003-260806
+- name: 🇩🇪DE_61|374KB/s|M003-260806
   type: ss
   server: 47.245.174.67
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: 🇩🇪DE_77|1.1MB/s|B007-260618
+- name: 🇩🇪DE_60|9.9MB/s|B007-260618
   type: ss
-  server: 47.254.143.251
+  server: 47.254.175.2
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: 🇩🇪DE_13|1.5MB/s|B007-260618
+- name: 🇩🇪DE_41|5.2MB/s|B007-260618
+  type: ss
+  server: 47.91.74.232
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  udp: true
+- name: 🇩🇪DE_28|8.2MB/s|B007-260618
   type: ss
   server: 8.220.81.25
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: ProxyRift 061
+- name: 🇩🇪218901
   type: ss
-  server: 18.169.167.165
+  server: 8.209.72.224
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
-  password: Cg2Dw4OhdBZhqbeO9ZTA3g/Gk/AvsrYZGhAJeGnQIx4=
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  udp: true
+- name: 🇧🇷+BR+#01+•+SS+(1748ms)
+  type: ss
+  server: 147.15.115.239
+  port: 59319
+  cipher: 2022-blake3-chacha20-poly1305
+  password: ufRQNoVmSBchwcY7p814u5uoMZKgu/hJMN9RgfLrR7I=
   udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪DE_99|484KB/s|M003-260806
-  - 🇩🇪DE_16|5.1MB/s|S004-260618
-  - 🇩🇪DE_52|4.0MB/s|M003-260806
-  - 🇩🇪DE_77|1.1MB/s|B007-260618
-  - 🇩🇪DE_13|1.5MB/s|B007-260618
-  - ProxyRift 061
+  - 🇭🇰 Гонконг | [KP]
+  - 🇸🇬SG_32|108KB/s|B007-260618
+  - 🇩🇪DE_43|373KB/s|S004-260618
+  - 🇩🇪DE_23|932KB/s|S004-260618
+  - 🇩🇪DE_61|374KB/s|M003-260806
+  - 🇩🇪DE_60|9.9MB/s|B007-260618
+  - 🇩🇪DE_41|5.2MB/s|B007-260618
+  - 🇩🇪DE_28|8.2MB/s|B007-260618
+  - 🇩🇪218901
+  - 🇧🇷+BR+#01+•+SS+(1748ms)
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
