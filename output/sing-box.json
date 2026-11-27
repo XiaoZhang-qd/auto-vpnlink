@@ -1,8 +1,26 @@
 {
+  "log": {
+    "level": "warn"
+  },
   "outbounds": [
     {
-      "type": "direct",
-      "tag": "direct"
+      "type": "vless",
+      "tag": "vless-1",
+      "server": "host.com",
+      "server_port": 443,
+      "uuid": "uuid",
+      "tls": {
+        "enabled": true,
+        "server_name": "host.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "AUTO",
+      "outbounds": [
+        "vless-1"
+      ]
     }
   ]
 }

@@ -3,90 +3,106 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 Гонконг | [KP]
+- name: SG
+  type: ss
+  server: 45.77.170.234
+  port: 9443
+  cipher: 2022-blake3-aes-128-gcm
+  password: OzBviDR7xPkOMv24xwouYQ==:vnkLoKGWxu6RHEPSCrAaxw==
+  udp: true
+- name: 🇭🇰HK_86|76KB/s|R002-260618
   type: ss
   server: 27.124.5.86
   port: 8388
   cipher: 2022-blake3-aes-256-gcm
   password: j4DddfVh3zON1s3Wfbmdn2WWhLCWAaOJyKqdeKvxh4A=
   udp: true
-- name: 🇸🇬SG_32|108KB/s|B007-260618
+- name: 🇹🇷 Турция | [KP]
+  type: ss
+  server: 2.144.31.62
+  port: 43123
+  cipher: 2022-blake3-aes-256-gcm
+  password: mnW7Q5HYqXgnLQO9UbBa/Hyk497TaOfQ8bTocv4HuG8=:pHotuRcxo5MS3H8GjY5f5pm3uDbzb8gMqYpr1HOWWug=
+  udp: true
+- name: 🇸🇬SG_36|753KB/s|B007-260618
   type: ss
   server: 129.150.59.74
   port: 14384
   cipher: 2022-blake3-aes-256-gcm
   password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
   udp: true
-- name: 🇩🇪DE_43|373KB/s|S004-260618
-  type: ss
-  server: 47.245.170.82
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: 🇩🇪DE_23|932KB/s|S004-260618
+- name: 🇩🇪DE_54|9.1MB/s|S004-260618
   type: ss
   server: 47.245.173.25
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: 🇩🇪DE_61|374KB/s|M003-260806
+- name: 🇩🇪DE_52|7.0MB/s|M003-260806
   type: ss
   server: 47.245.174.67
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: 🇩🇪DE_60|9.9MB/s|B007-260618
+- name: 🇩🇪DE_51|8.3MB/s|B007-260618
   type: ss
   server: 47.254.175.2
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: 🇩🇪DE_41|5.2MB/s|B007-260618
+- name: 🇩🇪DE_47|3.8MB/s|B007-260618
   type: ss
   server: 47.91.74.232
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: 🇩🇪DE_28|8.2MB/s|B007-260618
+- name: 🇩🇪DE_59|573KB/s|M003-260806
   type: ss
-  server: 8.220.81.25
+  server: 8.209.119.13
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: 🇩🇪218901
+- name: 🇩🇪DE_60|1.2MB/s|B007-260618
   type: ss
   server: 8.209.72.224
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: 🇧🇷+BR+#01+•+SS+(1748ms)
+- name: 🇩🇪 Германия | [KP]
   type: ss
-  server: 147.15.115.239
-  port: 59319
+  server: 8.209.80.17
+  port: 443
   cipher: 2022-blake3-chacha20-poly1305
-  password: ufRQNoVmSBchwcY7p814u5uoMZKgu/hJMN9RgfLrR7I=
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  udp: true
+- name: 🇩🇪DE_30|10.2MB/s|B007-260618
+  type: ss
+  server: 8.220.81.25
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇭🇰 Гонконг | [KP]
-  - 🇸🇬SG_32|108KB/s|B007-260618
-  - 🇩🇪DE_43|373KB/s|S004-260618
-  - 🇩🇪DE_23|932KB/s|S004-260618
-  - 🇩🇪DE_61|374KB/s|M003-260806
-  - 🇩🇪DE_60|9.9MB/s|B007-260618
-  - 🇩🇪DE_41|5.2MB/s|B007-260618
-  - 🇩🇪DE_28|8.2MB/s|B007-260618
-  - 🇩🇪218901
-  - 🇧🇷+BR+#01+•+SS+(1748ms)
+  - SG
+  - 🇭🇰HK_86|76KB/s|R002-260618
+  - 🇹🇷 Турция | [KP]
+  - 🇸🇬SG_36|753KB/s|B007-260618
+  - 🇩🇪DE_54|9.1MB/s|S004-260618
+  - 🇩🇪DE_52|7.0MB/s|M003-260806
+  - 🇩🇪DE_51|8.3MB/s|B007-260618
+  - 🇩🇪DE_47|3.8MB/s|B007-260618
+  - 🇩🇪DE_59|573KB/s|M003-260806
+  - 🇩🇪DE_60|1.2MB/s|B007-260618
+  - 🇩🇪 Германия | [KP]
+  - 🇩🇪DE_30|10.2MB/s|B007-260618
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
